@@ -1,6 +1,17 @@
 WHAT'S INCLUDED HERE?
 
-These are the config files for my site. 
+These are the basic structure files for my site. 
+
+CREDIT
+
+Jekyll was created by Tom Preston-Warner at Github.
+http://github.com/mojombo-jekyll
+
+An excellent walkthrough at Vito Botta.
+http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/
+
+Dave Perrett's Jekyll tag page generator is awesome.
+http://recursive-design.com/projects/jekyll-plugins/
 
 MY PLAN
 
