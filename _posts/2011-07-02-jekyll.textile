@@ -1,0 +1,35 @@
+--- 
+layout: post-sblog
+title: Serving this site with Jekyll
+category: summerblog
+---
+
+... because everyone who implements Jekyll has to talk about it.
+
+<h5 style="border: 0px;">Reasons to Switch</h5>
+
+I dislike Wordpress because I didn't understand how it worked. I'm not entirely sure how Jekyll works but implementing it made me feel like I had more control. 
+
+My first site went up in 1997. It was an Earth: Final Conflict fan site, I think, and I was twelve so it had <div style="display:inline; color: #0000C3; background: #000;">bright blue text on a black background</div> on Geocities. Nevertheless, I miss it, and by extension I miss static sites.
+
+I hate PHP with the fire of a thousand suns. I've built Wordpress templates and I just hate them. I was big in roleplaying and writing as a teenager, so I moved to Wordpress mostly because I was building unwieldy websites with hundreds of pages. I think the divorce of structure (HTML) and design (CSS) is one of the best things ever.  
+
+Jekyll preserves that. I write my posts in plain text as .textile files. Each text file contains a header with the post title, description, any relevant tag, and layout. 
+
+<code>
+layout: post-sblog
+title: Serving this site with Jekyll
+category: summerblog
+</code>
+
+When I apply the jekyll gem to generate the site, each post is turned into an html file by grabbing the appropriate layout and css file. The final .html page sits in a folder called _site that I then upload to my webspace at compendiarious.net. There isn't any dynamic content.
+
+I haven't figured out comments yet because I'll need to use Disqus and I'm also not sure about whether I want comments on posts or not. I'm mostly interested in deeper conversations these days and anyone who wants to comment on a post could always email me.
+
+(That might be the better solution: a spam-defended comment box that comes to my email if you want to have a conversation.)
+
+Learning to use Jekyll was a good way to learn more about package dependencies, Ruby and Rubygems, Github, what a local server is, and how best to push finished static pages to a site. I recommend it to other noobs because every step of the process appears to be customizable. There are enough options at each step that it takes a good understanding to make decisions to move forward. 
+
+Jekyll was created by <a href="https://github.com/mojombo">Tom Preston-Warner</a> and can be found at its <a href="https://github.com/mojombo/jekyll">GitHub repository here</a>. 
+
+My own config and layout files are available at <a href="

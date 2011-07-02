@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div id="post-header">
+  <div class="inside">
+    <h4 style="margin:bottom-5px;"> Summerblog :: {{ page.title }} </h4>
+    <h6>{{ page.date | date:"%B %d, %Y" }}</h6>
+  </div>
+</div>
+
+<div class="inside-justify">
+  {{ content }}
+</div>
+
+<div id="footer" class="comments">
+	<div class="inside">
+
+		<h4>Comments</h4>
+
+		{% if (site.compendiarious) %}
+	
+		<div id="disqus_thread">
+		<script type="text/javascript">
+					 
+		 var disqus_shortname = '{{ site.compendiarious }}'; // required: replace example with your forum shortname
+		 // The following are highly recommended additional parameters. Remove the slashes in front to use.
+		 // var disqus_identifier = '{{ page.id }}';
+		 // var disqus_url = '{{ site.base }}{{ page.url }}/index.html';
+			 (function() {
+			  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			 })();
+		</script>
+	<noscript>
+	Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+	</noscript>
+		</div>
+			{% endif %}
+
+	</div>
+</div>

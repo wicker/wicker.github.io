@@ -1,0 +1,36 @@
+--- 
+layout: post
+title: Bruny Island, Tasmania
+tags: 
+- travels
+- australia
+- ocean
+category: uss-tarawa
+image: /images/thumbs/brunyisland.png
+description: Southern Tasmania
+---
+
+<img src="/images/uss-tarawa/brunyisland/dscf0482.jpg-51.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0484.jpg-52.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0491.jpg-57.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0492.jpg-58.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0502.jpg-60.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0507.jpg-63.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0512.jpg-97.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0525.jpg-67.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0530.jpg-69.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0537.jpg-98.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0538.jpg-72.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0544.jpg-74.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0552.jpg-75.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0559.jpg-100.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0561.jpg-77.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0567.jpg-79.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0579.jpg-83.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0582.jpg-85.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0586.jpg-102.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0597.jpg-89.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0599.jpg-90.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0604.jpg-92.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0608.jpg-94.png" class="dropshadow">
+<img src="/images/uss-tarawa/brunyisland/dscf0613.jpg-96.png" class="dropshadow">

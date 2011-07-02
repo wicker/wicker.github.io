@@ -1,0 +1,117 @@
+---
+title: travelblog
+permalink: /travels/
+layout: default
+---
+
+    <h5 style="border-top: 0px;"> My Deserts: Sonora, Mojave, Iraqi </h5>
+
+<div class="inside">
+{% for post in site.categories.desert %}
+
+  {% if (post.image) %}
+    <div style="width: 210px; display: inline-block; clear: both; margin-top: 10px; text-align:center; font-size: 14px; vertical-align:text-top;">
+      <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" /></a>
+      <br />
+      <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    </div>
+  {% endif %}
+
+{% endfor %}
+</div>
+
+    <h5> Road Trips in the Western States </h5>
+
+<div class="inside">
+{% for post in site.categories.western-states %}
+
+  {% if (post.image) %}
+    <div style="width: 210px; display: inline-block; clear: both; margin-top: 10px; text-align:center; font-size: 14px; vertical-align:text-top;">
+      <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" /></a>
+      <br />
+      <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    </div>
+  {% endif %}
+
+{% endfor %}
+</div>
+
+    <h5> Private Pilot </h5>
+
+<div class="inside">
+{% for post in site.categories.private-pilot %}
+
+  {% if (post.image) %}
+    <div style="width: 210px; display: inline-block; clear: both; margin-top: 10px; text-align:center; font-size: 14px; vertical-align:text-top;">
+      <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" /></a>
+      <br />
+      <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    </div>
+  {% endif %}
+
+{% endfor %}
+</div>
+
+    <h5> Oregon Hikes </h5>
+
+<div class="inside">
+{% for post in site.categories.oregon-hikes %}
+
+  {% if (post.image) %}
+    <div style="width: 210px; display: inline-block; clear: both; margin-top: 10px; text-align:center; font-size: 14px; vertical-align:text-top;">
+      <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" /></a>
+      <br />
+      <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+    <h5> Backpacking Solo in Europe for Three Months </h5>
+
+<div class="inside">
+{% for post in site.categories.backpack-europe %}
+
+  {% if (post.image) %}
+    <div style="width: 210px; display: inline-block; clear: both; margin-top: 10px; text-align:center; font-size: 14px; vertical-align:text-top;">
+      <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" /></a>
+      <br />
+      <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    </div>
+  {% endif %}
+
+{% endfor %}
+</div>
+
+    <h5> USS Tarawa (Westpac) </h5>
+
+<div class="inside">
+{% for post in site.categories.uss-tarawa %}
+
+  {% if (post.image) %}
+    <div style="width: 210px; display: inline-block; clear: both; margin-top: 10px; text-align:center; font-size: 14px; vertical-align:text-top;">
+      <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" /></a>
+      <br />
+      <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    </div>
+  {% endif %}
+
+{% endfor %}
+</div>
+
+    <h5> Camp Cupcake, Iraq </h5>
+
+<div class="inside">
+{% for post in site.categories.camp-cupcake %}
+
+  {% if (post.image) %}
+    <div style="width: 210px; display: inline-block; clear: both; margin-top: 10px; text-align:center; font-size: 14px; vertical-align:text-top;">
+      <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" /></a>
+      <br />
+      <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    </div>
+  {% endif %}
+
+{% endfor %}
+</div>
+

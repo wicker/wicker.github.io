@@ -1,0 +1,206 @@
+/*****************************************************************************
+ *
+ * Common
+ *
+ *****************************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.dropshadow {
+  border: 4px solid #080052;
+  margin: 0 auto;
+  text-align:center;
+}
+
+body {
+  background-color: #8c9cb6;
+  font: 15px helvetica, "Liberation Sans",sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 100%;
+  font-weight: normal;
+  font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+}
+
+h5 {
+  padding: 5px;
+  border-top:4px solid #080052;
+  border-bottom: 4px solid #080052;
+  text-align:center;
+}
+
+h6 {
+  margin: 0px;
+  font-weight: normal;
+  font-size: 80%;
+}
+
+a {
+  color: #080052;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #080052;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+p {
+  margin: 1em 0;
+}
+
+/*****************************************************************************
+ *
+ * Site Container
+ *
+ *****************************************************************************/
+
+.site {
+  background-color: #e5e5ef;
+  width: 670px;
+  border: 4px solid #080052;
+  margin: 10px auto;
+  padding: 0px;
+  line-height: 1.5em;
+}
+
+.inside {
+  padding: 10px;
+  font-size: 100%;
+  color: #000;
+  text-align: center;
+}
+
+.inside-justify {
+  text-align: justify;
+  padding: 10px;
+  font-size: 100%;
+  color: #000;
+}
+
+#post-header {
+  font-size: 100%;
+  text-align: justify;
+  border-bottom: 4px solid #080052;
+}
+
+/*****************************************************************************
+ *
+ * Header & Nav
+ *
+ *****************************************************************************/
+
+header {
+  text-align: justify;
+}
+
+header h1 {
+  color: #000;
+  font-size: 1em;
+  font-weight: normal;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #000;
+  margin: 5px;
+  font-family: "Lucida Grande", Helvetica, "Lucida Sans Unicode", "Lucida Sans", Tahoma, Arial, sans-serif;
+}
+
+header h1 a:link {
+  color: #080052;
+  text-decoration: none;
+}
+
+header h1 a:visited {
+  color: #080052;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color:#000;
+  border-bottom:1px solid #080052;
+  padding-bottom:1px;
+  text-decoration:none;
+}
+
+#nav {
+  margin: 5px;
+  font-size: 1em;
+}
+
+#nav a:link {
+  color: #666;
+  text-decoration: none;
+  margin-right:1em;
+}
+
+#nav a:visited {
+  color: #666;
+  text-decoration: none;
+  margin-right:1em;
+}
+
+#nav a:hover {
+  color: #080052;
+  padding-bottom:1px;
+  border-bottom:1px solid #000
+  text-decoration:none;
+} 
+
+/*****************************************************************************
+ *
+ * Rotate
+ *
+ *****************************************************************************/
+
+.rotate {
+  border-top: 4px solid #080052;
+  border-bottom: 4px solid #080052;
+  padding: 0px;
+  margin: 0px;
+  height: 216px;
+}
+
+/*****************************************************************************
+ *
+ * Footer
+ *
+ *****************************************************************************/
+
+#footer {
+  color:#000;
+  border-top:4px solid #080052; 
+  margin: 0px;
+  font-size: 0.8em;
+  text-align:center;
+  clear: both;
+}
+
+#footer a:link, #footer a:visited {
+  color:#080052;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #000;
+  text-decoration: underline;
+}

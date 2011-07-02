@@ -1,0 +1,15 @@
+---
+title: Summer Blog
+permalink: /summerblog/
+layout: default
+---
+
+<h5 style="border-top: 0px;">{{ page.title }}</h5>
+
+<div class="inside-justify" style="width: 500px; margin: 10px auto;">
+  {% for post in site.categories.summerblog %}
+    {{ post.date | date:"%Y-%m-%d" }} : <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    <br />
+  {% endfor %}
+</div>
+

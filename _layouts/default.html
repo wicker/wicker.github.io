@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jen Hanni">
+  <meta name="viewport" content="width=700" />
+  <title>{{ page.title }} &laquo; {{ site.title }}</title>
+  <link rel="stylesheet" href="/css/screen-blue.css" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:title" content="{{ page.title }}"/>
+  {% if (page.description) %}
+    <meta property="og:description" content="{{ page.description }}"/>
+  {% endif %}
+  {% if (page.images) %}
+    <meta property="og:image" content="{{ page.images[0] | format_teaser_image }}"/>
+  {% endif %}
+</head>
+
+<body>
+
+<div class="site">
+
+  <div class="inside">
+   <header>
+    <h1>
+       <a class="title" href="/" title="compendiarious" tabindex="0">{{ site.title }}</a> : {{ site.description }}
+    </h1>
+    <div id="nav">
+       <a href="/" title="Home" tabindex="1">home</a> 
+       <a href="/about/" title="About" tabindex="2">about</a> 
+       &nbsp; :: &nbsp;
+       <a href="/summerblog/" title="Summerblog" tabindex="3">summerblog</a>
+       <a href="/travels/" title="Travels" tabindex="4">travels</a>
+    </div>
+   </header>
+  </div>
+
+  <div class="rotate">
+    <img src="/images/header/header10.png">
+  </div>
+
+  {{ content }}
+ 
+  <div id="footer">
+    <div style="float: left; width:260px;">
+       <div class="inside" style="text-align:left">
+	<div align="center" style="padding-bottom:7px;"><strong>Favorite Photo Posts</strong></div>
+	&nbsp; &nbsp; &raquo; <a href="/desert/landscape-desert/">my world deserts</a><br />
+	&nbsp; &nbsp; &raquo; <a href="/desert/chihuly/">chihuly exhibit</a><br />
+	&nbsp; &nbsp; &raquo; <a href="/western-states/yellowstone/">yellowstone national park</a><br />
+	&nbsp; &nbsp; &raquo; <a href="/private-pilot/oshkosh/">oshkosh and inspiring kids</a>
+       </div>
+    </div>
+    <div style="float: right;">
+       <div class="inside" style="width:360px; border-left:4px solid #080052;">
+	<div align="center"><strong>Tag Cloud</strong></div>
+	<div class="text tag-cloud">{{ site.tags | tag_cloud }}</div>
+
+       </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="inside" style="text-align:center;">
+<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-by-SA 3.0</a> by <a class="url" href="http://compendiarious.net/" title="portfolio">Jen Hanni</a>. Hosted by <a href="http://www.asmallorange.com/">A Small Orange</a>. Made with love and <a href="https://github.com/mojombo/jekyll">Jekyll</a> from <a href="http://en.wikipedia.org/wiki/Portland,_Oregon">Portland, Oregon</a>.
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
