@@ -1,0 +1,28 @@
+--- 
+layout: post
+title: Berlin-Icthyosaur State Park, Nevada
+tags: 
+- travels
+- hiking
+- nevada
+category: western-states
+image: /images/thumbs/icthyosaur.png
+section: Western States
+header: /images/header/header-west.png
+---
+
+<img src="/images/western-states/berlinicthyosaur/IMG_0636.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0640.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0644.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0645.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0648.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0655.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0657.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0660.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0663.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0665.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0668.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0672.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0674.png" class="dropshadow">
+<img src="/images/western-states/berlinicthyosaur/IMG_0678.png" class="dropshadow">
+

@@ -7,7 +7,8 @@ tags:
 - ocean
 category: uss-tarawa
 image: /images/thumbs/brunyisland.png
-description: Southern Tasmania
+section: USS Tarawa
+header: /images/header/header.png
 ---
 
 <img src="/images/uss-tarawa/brunyisland/dscf0482.jpg-51.png" class="dropshadow">

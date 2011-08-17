@@ -15,9 +15,6 @@
   {% if (page.description) %}
     <meta property="og:description" content="{{ page.description }}"/>
   {% endif %}
-  {% if (page.images) %}
-    <meta property="og:image" content="{{ page.images[0] | format_teaser_image }}"/>
-  {% endif %}
 </head>
 
 <body>
@@ -27,44 +24,47 @@
   <div class="inside">
    <header>
     <h1>
-       <a class="title" href="/" title="compendiarious" tabindex="0">{{ site.title }}</a> : {{ site.description }}
+       <a class="title" href="/" title="compendiarious">{{ site.title }}</a> : {{ site.description }}
     </h1>
     <div id="nav">
-       <a href="/" title="Home" tabindex="1">home</a> 
-       <a href="/about/" title="About" tabindex="2">about</a> 
+       <a href="/" title="Home">home</a> 
+       <a href="/about/" title="About">about</a> 
        &nbsp; :: &nbsp;
-       <a href="/summerblog/" title="Summerblog" tabindex="3">summerblog</a>
-       <a href="/travels/" title="Travels" tabindex="4">travels</a>
+       <a href="/summerblog/" title="Summerblog">summerblog</a>
+       <a href="/travels/" title="Travels">travels</a>
+       <a href="/projects/" title="Projects">projects</a>
+       <a href="/endurance-days" title="Endurance Days">endurance days</a>
+       <a href="/two-cats" title="Two Cats">two cats</a>
     </div>
    </header>
   </div>
 
-  <div class="rotate">
-    <img src="/images/header/header10.png">
+  <div id="header">
+    <img src="{{ page.header }}">
   </div>
+
+  <div class="inside">
+    <h4>{{ page.section }} :: {{ page.title }} </h4>
+  </div>
+
+</div>
+
+<div class="site">
 
   {{ content }}
- 
-  <div id="footer">
-    <div style="float: left; width:260px;">
-       <div class="inside" style="text-align:left">
-	<div align="center" style="padding-bottom:7px;"><strong>Favorite Photo Posts</strong></div>
-	&nbsp; &nbsp; &raquo; <a href="/desert/landscape-desert/">my world deserts</a><br />
-	&nbsp; &nbsp; &raquo; <a href="/desert/chihuly/">chihuly exhibit</a><br />
-	&nbsp; &nbsp; &raquo; <a href="/western-states/yellowstone/">yellowstone national park</a><br />
-	&nbsp; &nbsp; &raquo; <a href="/private-pilot/oshkosh/">oshkosh and inspiring kids</a>
-       </div>
-    </div>
-    <div style="float: right;">
-       <div class="inside" style="width:360px; border-left:4px solid #080052;">
-	<div align="center"><strong>Tag Cloud</strong></div>
-	<div class="text tag-cloud">{{ site.tags | tag_cloud }}</div>
 
-       </div>
+</div>
+
+<div class="site">
+
+  <div id="footer">
+    <div class="inside">
+      <h4>Tags</h4>
+      <div class="text tag-cloud">{{ site.tags | tag_cloud }}</div>
     </div>
   </div>
 
-  <div id="footer">
+  <div id="license">
     <div class="inside" style="text-align:center;">
 <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-by-SA 3.0</a> by <a class="url" href="http://compendiarious.net/" title="portfolio">Jen Hanni</a>. Hosted by <a href="http://www.asmallorange.com/">A Small Orange</a>. Made with love and <a href="https://github.com/mojombo/jekyll">Jekyll</a> from <a href="http://en.wikipedia.org/wiki/Portland,_Oregon">Portland, Oregon</a>.
     </div>

@@ -1,0 +1,24 @@
+--- 
+layout: post
+title: Grimes Point Archaeological Site, Nevada
+tags: 
+- travels
+- hiking
+- nevada
+category: western-states
+image: /images/thumbs/grimespoint.png
+section: Western States
+header: /images/header/header-west.png
+---
+
+<img src="/images/western-states/grimespoint/IMG_0615.png" class="dropshadow">
+<img src="/images/western-states/grimespoint/IMG_0616.png" class="dropshadow">
+<img src="/images/western-states/grimespoint/IMG_0617.png" class="dropshadow">
+<img src="/images/western-states/grimespoint/IMG_0618.png" class="dropshadow">
+<img src="/images/western-states/grimespoint/IMG_0620.png" class="dropshadow">
+<img src="/images/western-states/grimespoint/IMG_0624.png" class="dropshadow">
+<img src="/images/western-states/grimespoint/IMG_0625.png" class="dropshadow">
+<img src="/images/western-states/grimespoint/IMG_0627.png" class="dropshadow">
+<img src="/images/western-states/grimespoint/IMG_0628.png" class="dropshadow">
+<img src="/images/western-states/grimespoint/IMG_0630.png" class="dropshadow">
+

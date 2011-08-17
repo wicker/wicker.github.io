@@ -1,0 +1,49 @@
+--- 
+layout: post
+title: Confidence, questions, and my design process
+category: summerblog
+section: Summerblog
+header: /images/header/header3.png
+---
+
+It occurred to me this weekend that my biggest weakness is my lack of confidence. It occurred to me in class, when the professor asks a question and nobody answers him. Nobody's willing to put themselves out there, to take the risk of engaging when they might reveal their ignorance.
+
+I realized that I'm really afraid to say what I think out loud around engineers and scientists I respect for fear of sounding like an idiot. This is partly because I'm very young and still very much feeling like I'm a student to be taught, because I have sounded like an idiot in the past in front of people I respected, and also because I've experienced a lot of people telling me I'm wrong or naive once they hear what I have to say.
+
+I think that last part is the most damaging. It's one thing to tell someone they're wrong -- see emacs vs. vim or which microcontroller should I buy? -- but to tell someone that they're naive, that their choices are inadvisable and their dreams are impossible? Saying it often enough will undermine anybody's confidence.
+
+The catch is, of course, that the only way to make finding my voice easier is to suck it up and talk until I'm not scared anymore. Great. Thanks, universe.
+
+But this lack of confidence shows when I'm starting projects, too. I'm afraid to ask questions to clarify requirements because I'm terrified of looking like an idiot. Of course it's all in my head. When I do ask questions and engage with the material, which has been easier lately now that I'm hanging with such a supportive group at school, everything is a million times easier. There's less frustration for me in the long run, my questions are revealed to be fairly intelligent, and I'm able to take comfort in knowing that I do have the experience to tackle the design process.
+
+This is my chosen field, after all. I've been involved with airplanes and computers for a living since 2004, not to mention as a hobby since my early teens. I have just as much right to be here as anybody else -- which is something I wish I could print out and stick up on the wall, since I see quite a bit of faltering or choosing-not-to-speak in the engineering and computer science disciplines.
+
+<div style="text-align:center; font-size:20px;">You have a right to be here,
+<br />just like everybody else.</div>
+
+For my part, I think this lack of confidence stems from enduring years of sniping comments about how much I don't know, how much I can't know, because I don't fit the visual stereotype of someone who does what I do. But that's another post I haven't yet been able to write.
+
+So how am I making the changes in my brains? One project at a time.
+
+So I have two projects this term: one for class and one for an open-source project. The first is an accelerometer-based frequency meter; the other is the control board for four brushed DC motors which are the propellers on a quadcopter. I joined the quadcopter project to get more comfortable with programming but I should've known, being surrounded by computer scientists, that I'd be handling the hardware.
+
+Both are challenging and really, really exciting.
+
+My first response when I get a new project is to take as many notes as I can, ask any questions that come to mind, and then to walk far away from people to get a minute while I mentally chew on it. This is bad in interview questions because there's nothing like a long silence to ramp up the nervousness -- but it's great for me personally because I can sit somewhere with a notebook and just collect my thoughts.
+
+The first thing I did with the motor control board project was ask a ton of questions. The team leader is also a devotee in the Cult of the Whiteboard so we scribed it up on the board until I figured I had the basics. Then I took iphone pictures and went home to think about it.
+
+The second thing I like to do is make a plan -- in this case, what textbook(s) will I need? My microelectronics one from last term. Is there a way to simplify this design? Are we being redundant in any way? In this case, we were, and actually we talked about that in detail. If something looks too complicated, it probably is. What's the initial, enthusiastic, sleep?-who-needs-sleep? timeline? What's the realistic timeline? What about materials?
+
+It turns out that they've already ordered a bunch of stuff so at least I know what I'll be working with ... but this is a thing with CS vs. ECE -- they just buy stuff and make to order; we design and design and design and then we order. So I'm really getting a taste of rapid prototyping vs. the long-term solution. So I need the materials list.
+
+So by now my plan is made and my lists of stuff are solid enough to make it worth the time to sit down for a few hours to pound out an initial design.
+
+The third thing is apparently to write a blog post at Starbucks instead of setting to work, but that's pretty normal, too.
+
+Next is to sit down with the textbook and crunch numbers, get a first draft of the circuit, and collect a list of questions that need answering from the control team. Oddly, my shyness vanishes once I get going in the project and I get more sure-footed. It's my design, dude. I'm gonna do it right, trust me. I can take criticism and incorporate suggestions without feeling personally on the defensive. I might ask an ignorant question but something about having an active project half-done insulates my self-confidence from the pain of momentary stupidity.
+
+Partly this is comes from the structure of the project, not to mention discussions with other team members, keeping me heading in the right direction. It's the blank whiteboard, the plain white sheet of paper, or the sound of an open-ended question ("design me a system...") fading into silence that scares me. Do I really know what to do or have I just been winging it this entire time?
+
+It's hard to trust myself that I can pick the right path, the right point of view, to start, which is really just letting fear rule me. If I start off wrong, I could conceivably get a long, long way down the road before I realized it -- but if I don't start off at all, then what's the point of being here?
+

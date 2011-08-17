@@ -1,0 +1,33 @@
+--- 
+layout: post
+title: Cohunu Park, West Australia
+tags: 
+- travels
+- australia
+- marine corps
+category: uss-tarawa
+image: /images/thumbs/koala.png
+section: USS Tarawa
+header: /images/header/header.png
+---
+
+<img src="/images/uss-tarawa/koala/dscf0351.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0373.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0374.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0375.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0376.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0377.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0384.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0395.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0403.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0405.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0410.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0435.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0442.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0455.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0459.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0465.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0474.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0477.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0478.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/koala/dscf0479.jpg" class="dropshadow">

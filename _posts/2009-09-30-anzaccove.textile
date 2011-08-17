@@ -1,0 +1,35 @@
+--- 
+layout: post
+title: Gallipoli, Turkey
+tags: 
+- travels
+- hiking
+- turkey
+category: backpack-europe
+image: /images/thumbs/anzaccove.png
+section: Solo Backpacking in Europe
+header: /images/header/header4.png
+---
+
+Anzac Cove, Shrapnel Valley, and Plugge's Plateau at Gallipoli in Turkey
+
+<img src="/images/backpack-europe/anzaccove/DSCF2412.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2418.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2428.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2435.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2441.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2442.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2450.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2452.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2453.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2456.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2457.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2480.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2485.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2486.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2487.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2488.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2489.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2493.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2495.JPG" class="dropshadow">
+<img src="/images/backpack-europe/anzaccove/DSCF2496.JPG" class="dropshadow">

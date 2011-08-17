@@ -1,0 +1,34 @@
+--- 
+layout: post
+title: Mesa Verde National Park, Colorado
+tags: 
+- travels
+- colorado
+category: western-states
+image: /images/thumbs/mesaverde.png
+section: Western States
+header: /images/header/header-west.png
+---
+
+<img src="/images/western-states/mesaverde/DSCF3642.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3643.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3647.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3649.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3650.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3652.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3655.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3658.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3667.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3671.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3673.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3675.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3677.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3683.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3691.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3692.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3703.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3704.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3705.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3706.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3710.png" class="dropshadow">
+<img src="/images/western-states/mesaverde/DSCF3716.png" class="dropshadow">

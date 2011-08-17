@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: Crater Lake National Park, Oregon
+tags: 
+- travels
+- hiking
+- oregon
+category: western-states
+image: /images/thumbs/craterlake.png
+section: Western States
+header: /images/header/header-west.png
+---
+
+<img src="/images/western-states/craterlake/IMG_0583.png" class="dropshadow">
+<img src="/images/western-states/craterlake/IMG_0586.png" class="dropshadow">
+<img src="/images/western-states/craterlake/IMG_0588.png" class="dropshadow">
+<img src="/images/western-states/craterlake/IMG_0593.png" class="dropshadow">
+<img src="/images/western-states/craterlake/IMG_0600.png" class="dropshadow">
+<img src="/images/western-states/craterlake/IMG_0603.png" class="dropshadow">
+<img src="/images/western-states/craterlake/IMG_0605.png" class="dropshadow">
+

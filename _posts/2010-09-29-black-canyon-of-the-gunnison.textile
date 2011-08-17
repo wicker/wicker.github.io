@@ -1,0 +1,24 @@
+--- 
+layout: post
+title: Black Canyon of the Gunnison, Colorado
+tags: 
+- travels
+- hiking
+- colorado
+category: western-states
+image: /images/thumbs/blackcanyon.png
+section: Western States
+header: /images/header/header-west.png
+---
+
+<img src="/images/western-states/blackcanyon/DSCF3548.png" class="dropshadow">
+<img src="/images/western-states/blackcanyon/DSCF3551.png" class="dropshadow">
+<img src="/images/western-states/blackcanyon/DSCF3563.png" class="dropshadow">
+<img src="/images/western-states/blackcanyon/DSCF3568.png" class="dropshadow">
+<img src="/images/western-states/blackcanyon/DSCF3569.png" class="dropshadow">
+<img src="/images/western-states/blackcanyon/DSCF3595.png" class="dropshadow">
+<img src="/images/western-states/blackcanyon/DSCF3597.png" class="dropshadow">
+<img src="/images/western-states/blackcanyon/DSCF3601.png" class="dropshadow">
+<img src="/images/western-states/blackcanyon/DSCF3613.png" class="dropshadow">
+<img src="/images/western-states/blackcanyon/DSCF3616.png" class="dropshadow">
+

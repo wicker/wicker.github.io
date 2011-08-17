@@ -1,0 +1,32 @@
+--- 
+layout: post
+title: Pamukkale, Turkey
+tags: 
+- travels
+- turkey
+category: backpack-europe
+image: /images/thumbs/pamukkale.png
+section: Solo Backpacking in Europe
+header: /images/header/header4.png
+---
+
+Ancient, terraced travertine deposits near the ancient ruined city of Hierapolis.
+
+<img src="/images/backpack-europe/pamukkale/DSCF2551.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2560.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2561.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2563.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2565.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2566.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2567.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2569.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2570.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2571.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2573.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2574.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2575.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2576.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2577.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2578.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2580.JPG" class="dropshadow">
+<img src="/images/backpack-europe/pamukkale/DSCF2582.JPG" class="dropshadow">

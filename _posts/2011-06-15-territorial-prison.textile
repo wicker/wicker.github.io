@@ -1,0 +1,34 @@
+--- 
+layout: post
+title: Arizona's Territorial Prison
+tags: 
+- desert
+- travels
+- arizona
+- yuma
+category: desert
+image: /images/thumbs/prison.png
+section: The Desert
+header: /images/header/header-desert.png
+---
+
+<img src="/images/the-desert/territorialprison/dscf1234.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1235.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1258.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1262.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1269.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1274.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1277.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1279.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1283.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1285.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1286.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1295.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1300.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1302.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1312.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1331.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1333.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1334.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1340.jpg" class="dropshadow">
+<img src="/images/the-desert/territorialprison/dscf1341.jpg" class="dropshadow">

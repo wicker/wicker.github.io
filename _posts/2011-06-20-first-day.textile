@@ -1,0 +1,25 @@
+--- 
+layout: post
+title: First day
+category: summerblog
+section: Summerblog
+header: /images/header/header3.png
+---
+
+I don't write on the internet as much as I used to. I started out arguing in AOL chat rooms as a preteen, moved onto Livejournal and then Dreamwidth, had a couple private message boards with discerning, interesting conversations I just couldn't find in high school or the Marine Corps. I've fallen out of practice since finding a smart, nerdy, social group of computer science and engineering students at Portland State.
+
+I used to sit and churn out thoughtful posts in no time. Now I'm having a crisis of confidence every time I open an email. Maybe this particular crisis stems partly from my wrestling with a cover letter for a local internship. I'm in that place in the knowledge pyramid where every bit of learned stuff, particularly the processes and algorithms, comes with a terrifying glimpse of an <em>impossible</em> amount of stuff I don't know. How can I hope to ever learn it? Where do I start? 
+
+Today was the first day of class: Modeling and Analysis of Embedded Computing Systems, which sounds like it'll be an awesome class from a high-level perspective and will also involve research papers. The prof asked us for areas of interest and will send me a bunch of stuff on avionics, which is an excellent start. 
+
+But I feel like I've forgotten how to write! I wrote a term paper in spring and really didn't enjoy it. I wasn't pleased with my performance in my classes at <em>all</em> anyway so I've spent the last week, while driving from Portland to Denver and back, thinking about ways in which I can hack the dubiously constructed architecture that is my brain. 
+
+I've decided to blog the eight weeks of summer term in an attempt to work through some brainstuff, keep myself accountable, practice my writing skillz, and have a record for myself when I'm having imposter syndrome days. I'm pretty hard on myself and I think it's often counterproductive. Come on, self, the two options are not loser and genius. There's plenty of middle ground. Is this some insidious cultural thing that's got into my head when I wasn't looking? 
+
+So the other class this summer is a review of electrical circuits. I don't need it but it comes with a term project wherein I build an accelerometer on a stick connected to a display that lights up one of three colored LEDs depending on the frequency the stick is being waved around. I saw a bunch of my friends doing the class last term and realized that I wasn't sure I could do it, so clearly I need the refresher.
+
+I'll be in morning classes from Monday to Thursday. I'm also in the Computer Action Team at PSU's College of Engineering so I have help desk hours on Friday. My weekends and afternoons are mostly free for homework, personal projects, and backpacking. I hope to attend the big airshow in Oshkosh, Wisconsin, at the end of July. 
+
+Eight weeks is a manageable amount of time to think about, to plan for, to write about. 
+
+Here's to a more successful summer.

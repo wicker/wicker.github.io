@@ -1,0 +1,87 @@
+--- 
+layout: post
+title: Collected Articles
+category: endurance-days
+image: /images/thumbs/yed-articles.png
+section: Yuma Endurance Days
+header: /images/header/header-yed.png
+tags: 
+- endurance flight
+- flying
+- arizona
+- eaa
+---
+
+<div style="margin: 0 auto; padding-top: 5px; text-align:center; width: 640px">
+
+<div style="float: left; text-align: center; width: 210px;">
+<a href="/endurance-days/1949-highways.pdf"><img src="/images/yed/articles/1949-highways.jpg"></a>
+Flight of the City of Yuma
+<a href="/endurance-days/1949-highways.pdf">Highways Magazine, 1949</a>
+</div>
+
+<div style="float: left; text-align: center; width: 210px;">
+<a href="/endurance-days/1950-ontour.pdf/"><img src="/images/yed/articles/1950-ontour.jpg"></a>
+On Tour
+<a href="/endurance-days/1950-ontour.pdf">Unknown, 1950</a>
+</div>
+
+<div style="float: left; text-align: center; width: 210px;">
+<a href="/endurance-days/1999-flyways.pdf"><img src="/images/yed/articles/1999-flyways.jpg"></a>
+Yuma's PR Rainbow
+<a href="/endurance-days/1999-flyways.pdf">Flyways Magazine</a>
+</div>
+
+<div style="clear:both;">&nbsp;</div>
+</div>
+
+
+
+
+<div style="margin: 0 auto; padding-top: 10px; text-align:center; width: 640px">
+
+<div style="float: left; text-align: center; width: 210px;">
+<a href="/endurance-days/1999-jayceeflyer.pdf"><img src="/images/yed/articles/1999-jayceeflyer.jpg"></a>
+Promotional Flyer
+<a href="/endurance-days/1999-jayceeflyer.pdf">Yuma Jaycees, 1999</a>
+</div>
+
+<div style="float: left; text-align: center; width: 210px;">
+<a href="/endurance-days/2000-flying-hangtime.pdf"><img src="/images/yed/articles/2000-flying-hangtime.jpg"></a>
+"Hang Time"
+<a href="/endurance-days/2000-flying-hangtime.pdf">Flying Magazine, 2000</a>
+</div>
+
+<div style="float: left; text-align: center; width: 210px;">
+<a href="/endurance-days/2000-jimsiemens.pdf"><img src="/images/yed/articles/2000-jimsiemens.jpg"></a>
+Pilot Profile: Jim Siemens
+<a href="/endurance-days/2000-jimsiemens.pdf">Unknown, 2000</a>
+</div>
+
+<div style="clear:both;">&nbsp;</div>
+</div>
+
+<div style="margin: 0 auto; padding-top: 10px; text-align:center; width: 640px">
+
+<div style="float: left; text-align: center; width: 210px;">
+<a href="/endurance-days/2003-airclassics-oleary.pdf"><img src="/images/yed/articles/2003-airclassics-oleary.jpg"></a>
+City of Yuma
+<a href="/endurance-days/2003-airclassics-oleary.pdf">Air Classics, 2003</a>
+</div>
+
+<div style="float: left; text-align: center; width: 210px;">
+<a href="/endurance-days/2004-inventletter.pdf"><img src="/images/yed/articles/2004-inventletter.jpg"></a>
+Letter to the Editor
+<a href="/endurance-days/2004-inventletter.pdf">Inventions and Tech, 2004</a>
+</div>
+
+<div style="float: left; text-align: center; width: 210px;">
+<a href="/endurance-days/2006-yuma-crossing-legacy.pdf"><img src="/images/yed/articles/yuma-crossing-legacy.jpg"></a>
+The Yuma Crossing Legacy
+<a href="/endurance-days/2006-yuma-crossing-legacy.pdf">Yuma Jaycees, 2006</a>
+</div>
+
+<div style="clear:both;">&nbsp;</div>
+
+</div>
+

@@ -1,26 +1,30 @@
 --- 
-layout: post-sblog
+layout: post
 title: Serving this site with Jekyll
 category: summerblog
+section: Summerblog
+header: /images/header/header3.png
 ---
 
 ... because everyone who implements Jekyll has to talk about it.
 
-<h5 style="border: 0px;">Reasons to Switch</h5>
+Why switch?
 
-I dislike Wordpress because I didn't understand how it worked. I'm not entirely sure how Jekyll works but implementing it made me feel like I had more control. 
+I dislike Wordpress because I didn't entirely understand how it worked but it never inspired me enough to find out. I'm admittedly not entirely sure how Jekyll works but implementing it makes me feel like I have more control -- and whenever I want to find out how it works, I'm able to be right in there up to my elbows. There's a hacker or geek factor with Jekyll that's probably just mostly marketing but I like the idea of static sites in general. 
 
-My first site went up in 1997. It was an Earth: Final Conflict fan site, I think, and I was twelve so it had <div style="display:inline; color: #0000C3; background: #000;">bright blue text on a black background</div> on Geocities. Nevertheless, I miss it, and by extension I miss static sites.
+Why not webgen or nanoc or Hyde? Only because Jekyll got to me first ... and because it was on Github. The big thing everybody around me is switching to for version control is git.
+
+<div style="padding: 0px; margin: 0px; margin-bottom: 10px; float:left; display:inline; color: #0000C3; background: #000;">My first site went up in 1997. It was an Earth: Final Conflict fan site, I think, and I was twelve so it looked a lot like this. I hand-coded all my pages in the Geocities HTML box. </div> 
+
+Nevertheless, I miss it -- and by extension I miss static sites.
 
 I hate PHP with the fire of a thousand suns. I've built Wordpress templates and I just hate them. I was big in roleplaying and writing as a teenager, so I moved to Wordpress mostly because I was building unwieldy websites with hundreds of pages. I think the divorce of structure (HTML) and design (CSS) is one of the best things ever.  
 
 Jekyll preserves that. I write my posts in plain text as .textile files. Each text file contains a header with the post title, description, any relevant tag, and layout. 
 
-<code>
 layout: post-sblog
 title: Serving this site with Jekyll
 category: summerblog
-</code>
 
 When I apply the jekyll gem to generate the site, each post is turned into an html file by grabbing the appropriate layout and css file. The final .html page sits in a folder called _site that I then upload to my webspace at compendiarious.net. There isn't any dynamic content.
 
@@ -32,4 +36,4 @@ Learning to use Jekyll was a good way to learn more about package dependencies, 
 
 Jekyll was created by <a href="https://github.com/mojombo">Tom Preston-Warner</a> and can be found at its <a href="https://github.com/mojombo/jekyll">GitHub repository here</a>. 
 
-My own config and layout files are available at <a href="
+My own config and layout files are available at <a href="http://wicker.github.com/compendiarious.net">my Github account</a>. 

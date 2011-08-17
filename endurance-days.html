@@ -1,0 +1,35 @@
+---
+title: Aviation History 
+permalink: /endurance-days/
+layout: default
+section: Yuma Endurance Days
+header: /images/header/header-yed.png
+---
+
+  <div class="inside">
+
+One of my interests is aviation history. I was a member of EAA Chapter 590 while I lived in Yuma, Arizona, and learned about a historic world record of 47 days aloft set by Bob Woodhouse and Woody Jongeward in an Aeronca Sedan called the <em>City of Yuma</em>. The two men were airborne from August to October, 1949, in a publicity stunt to showcase Yuma's year-round flying weather and to bring aviation back to the city. By all accounts it worked. Nowadays the area is home to the small private Somerton Airport championing the cause of general aviation, a very active EAA chapter, and one of the longest runways in the United States which is shared by the Marine Corps Air Station Yuma and Yuma International Airport.
+<br /><br />
+In preparation for the flight's 60th anniversary celebration in 2009, called the Yuma Endurance Days, I cleaned up the photos and prepared them for the web. I now host them here and have copies of the full-size originals if anyone would like them. The <em>City of Yuma</em> herself is currently in storage but the city of Yuma plans to put the airplane on display in a welcome center in the future.
+<br /><br />
+
+  </div>
+</div>
+
+<div class="site">
+
+  <div class="inside">
+  {% for post in site.categories.endurance-days %}
+
+    {% if (post.image) %}
+      <div style="width: 210px; display: inline-block; clear: both; margin-top: 10px; text-align:center; font-size: 14px; vertical-align:text-top;">
+        <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" /></a>
+        <br />
+        <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+      </div>
+    {% endif %}
+
+  {% endfor %}
+  </div>
+
+

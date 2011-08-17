@@ -1,0 +1,30 @@
+--- 
+layout: post
+title: Ship Life
+tags: 
+- travels
+- ocean
+- marine corps
+category: uss-tarawa
+image: /images/thumbs/shiplife.png
+section: USS Tarawa
+header: /images/header/header.png
+---
+
+<img src="/images/uss-tarawa/shiplife/dscf0035.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0039.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0040.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0196.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0264.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0268.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0627.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0653.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0662.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0700.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0775.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0807.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0820.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0834.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0861.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/dscf0862.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/shiplife/hardatwork.jpg" class="dropshadow">

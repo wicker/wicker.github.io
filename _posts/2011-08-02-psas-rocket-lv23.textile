@@ -1,0 +1,35 @@
+--- 
+layout: post
+title: PSAS LV2.3 Launch
+tags: 
+- travels
+- oregon
+- rockets
+category: desert
+image: /images/thumbs/psaslv23.png
+section: The Desert
+header: /images/header/header-desert.png
+---
+
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3359.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3367.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3369.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3373.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3374.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3375.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3386.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3389.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3392.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3399.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3402.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3420.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3424.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3427.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3429.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3433.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3435.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3438.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3444.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3449.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3451.JPG" class="dropshadow">
+<img src="/images/the-desert/psasrocketlv2-3/DSCF3452.JPG" class="dropshadow">

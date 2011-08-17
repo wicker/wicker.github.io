@@ -1,0 +1,32 @@
+--- 
+layout: post
+title: Saddle Mountain
+tags: 
+- travels
+- hiking
+- oregon
+category: oregon-hikes
+image: /images/thumbs/saddlemt.png
+section: Oregon Hikes
+header: /images/header/header-oregon.png
+---
+
+Saddle Mountain is a local hike that usually has a view.
+
+<img src="http://compendiarious.net/images/saddlemt-110410/DSCF3835.png" class="dropshadow">
+
+<img src="http://compendiarious.net/images/saddlemt-110410/DSCF3842.png" class="dropshadow">
+
+<img src="http://compendiarious.net/images/saddlemt-110410/DSCF3845.png" class="dropshadow">
+
+<img src="http://compendiarious.net/images/saddlemt-110410/DSCF3848.png" class="dropshadow">
+
+<img src="http://compendiarious.net/images/saddlemt-110410/DSCF3849.png" class="dropshadow">
+
+<img src="http://compendiarious.net/images/saddlemt-110410/DSCF3853.png" class="dropshadow">
+
+<img src="http://compendiarious.net/images/saddlemt-110410/DSCF3854.png" class="dropshadow">
+
+<img src="http://compendiarious.net/images/saddlemt-110410/saddlemt-view.png" class="dropshadow">
+
+

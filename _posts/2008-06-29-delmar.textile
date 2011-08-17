@@ -1,0 +1,28 @@
+--- 
+layout: post
+title: Del Mar at Camp Pendleton
+tags: 
+- travels
+- marine corps
+- california
+- ocean
+category: uss-tarawa
+image: /images/thumbs/delmar.png
+section: USS Tarawa
+header: /images/header/header.png
+---
+
+<img src="/images/uss-tarawa/delmar/dscf0886.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0887.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0893.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0896.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0898.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0901.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0902.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0906.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0907.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0910.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0919.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0920.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0921.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/delmar/dscf0922.jpg" class="dropshadow">

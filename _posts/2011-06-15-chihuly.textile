@@ -1,0 +1,31 @@
+--- 
+layout: post
+title: Chihuly Exhibit at the Phoenix Desert Garden
+tags: 
+- desert
+- travels
+- arizona
+- phoenix
+- botanical
+category: desert
+image: /images/thumbs/chihuly.png
+section: The Desert
+header: /images/header/header-desert.png
+---
+
+<img src="/images/the-desert/chihuly/1.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/3.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1244.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1251.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1259.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1284.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1286.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1312.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1317.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1320.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1342.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1343.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1347.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1350.jpg" class="dropshadow">
+<img src="/images/the-desert/chihuly/dscf1361.jpg" class="dropshadow">
+

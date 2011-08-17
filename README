@@ -1,6 +1,8 @@
+This is my code for my personal site and blog, compendiarious.net, without images. I use A Small Orange for hosting. I've used a couple of plugins from other people but the template and CSS are mine.
+
 WHAT'S INCLUDED HERE?
 
-These are the basic structure files for my site. 
+Everything related to my website: over a hundred files. 
 
 CREDIT
 
@@ -15,7 +17,9 @@ http://recursive-design.com/projects/jekyll-plugins/
 
 MY PLAN
 
-I'd like to automate the process of uploading to my host (asmallorange.com) at some point, but that's for another day. The files here are a sample, an example for others.
+I'd like to automate the process of uploading to my host (asmallorange.com).
+
+The current process involves running jekyll locally and manually uploading via SSH. 
 
 THE LICENSE
 

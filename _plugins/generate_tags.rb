@@ -64,8 +64,7 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
       self.data['tag']    = tag
       # Set the title for this page.
-      title_prefix             = site.config['tag_title_prefix'] || 'Tag: '
-      self.data['title']       = "#{title_prefix}#{tag}"
+      self.data['title']       = "#{tag}"
       # Set the meta-description for this page.
       meta_description_prefix  = site.config['tag_meta_description_prefix'] || 'Tag: '
       self.data['description'] = "#{meta_description_prefix}#{tag}"
@@ -159,7 +158,7 @@ module Jekyll
 			weight = (Math.log(val.length)-Math.log(smallest_item[1].size))/(Math.log(biggest_item[1].size)-Math.log(smallest_item[1].size));
 			font_size = weight.nan? ? 100 : minFontSize + ((maxFontSize-minFontSize) * weight).round;
 
-			html << '<a href="/tags/' + Site.slugify(key) + '/" title="Pages tagged ' + key + '" style="font-size: ' + font_size.to_s + '%" rel=\"tag\">' + key + '</a> '
+			html << '&nbsp; &nbsp; <a href="/tags/' + Site.slugify(key) + '/" title="Pages tagged ' + key + '" style="font-size: ' + font_size.to_s + '%" rel=\"tag\">' + key + '</a> &nbsp; &nbsp;'
 
 		end
 

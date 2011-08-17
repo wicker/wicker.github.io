@@ -2,17 +2,15 @@
 layout: default
 ---
 
-<div id="post-header">
   <div class="inside">
-    <h4> {{ page.title }} </h4>
+
+    {{ content }}
+
   </div>
 </div>
 
-<div class="inside">
-  {{ content }}
-</div>
-
-<div id="footer" class="comments">
+<div class="site">
+  <div id="comment" class="comments">
 	<div class="inside">
 
 		<h4>Comments</h4>
@@ -39,4 +37,5 @@ layout: default
 			{% endif %}
 
 	</div>
-</div>
+  </div>
+

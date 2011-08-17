@@ -1,0 +1,27 @@
+--- 
+layout: post
+title: Replenishment at Sea
+tags: 
+- travels
+- ocean
+- marine corps
+category: uss-tarawa
+image: /images/thumbs/ras.png
+section: USS Tarawa
+header: /images/header/header.png
+---
+
+<img src="/images/uss-tarawa/ras/dscf0215.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0219.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0231.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0244.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0246.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0248.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0256.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0865.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0870.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0872.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0875.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0876.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0878.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/ras/dscf0880.jpg" class="dropshadow"> 

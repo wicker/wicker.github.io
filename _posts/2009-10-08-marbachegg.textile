@@ -1,0 +1,34 @@
+--- 
+layout: post
+title: Marbachegg, Switzerland
+tags: 
+- travels
+- hiking
+- switzerland
+category: backpack-europe
+image: /images/thumbs/marbachegg.png
+section: Solo Backpacking in Europe
+header: /images/header/header4.png
+---
+
+<img src="/images/backpack-europe/marbachegg/DSCF1916.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1924.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1943.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1947.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1952.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1956.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1957.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1963.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1964.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1971.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1976.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1980.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1983.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1990.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF1995.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF2006.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF2007.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF2014.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF2025.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF2027.JPG" class="dropshadow">
+<img src="/images/backpack-europe/marbachegg/DSCF2029.JPG" class="dropshadow">

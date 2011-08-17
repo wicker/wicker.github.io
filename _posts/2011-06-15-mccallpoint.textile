@@ -1,0 +1,29 @@
+--- 
+layout: post
+title: McCall Point
+tags: 
+- hiking
+- oregon 
+- travels
+category: oregon-hikes
+image: /images/thumbs/mccallpoint.png
+section: Oregon Hikes
+header: /images/header/header-oregon.png
+---
+
+<img src="/images/oregon-hikes/mccallpoint/amber-waves-of-grass.jpg" class="dropshadow">
+
+<img src="/images/oregon-hikes/mccallpoint/gorge-view.jpg" class="dropshadow">
+
+<img src="/images/oregon-hikes/mccallpoint/gorge-view2.jpg" class="dropshadow">
+
+<img src="/images/oregon-hikes/mccallpoint/looking-at-mccall-point.jpg" class="dropshadow">
+
+<img src="/images/oregon-hikes/mccallpoint/mccallpoint.png
+
+<img src="/images/oregon-hikes/mccallpoint/trail.jpg" class="dropshadow">
+
+<img src="/images/oregon-hikes/mccallpoint/trees.jpg" class="dropshadow">
+
+<img src="/images/oregon-hikes/mccallpoint/view.jpg" class="dropshadow">
+

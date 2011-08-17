@@ -1,0 +1,40 @@
+--- 
+layout: post
+title: Copperstate Fly-In 2005
+tags: 
+- desert
+- travels
+- arizona
+- phoenix
+- flying
+category: private-pilot
+image: /images/thumbs/copperstate.png
+section: Private Pilot
+header: /images/header/header-pilot.png
+---
+
+<img src="/images/private-pilot/copperstate/biplane.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/coolbox.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/farend.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/georgebearfeat.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/glider.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/greenwhite.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/hatinway.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/kr-2.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/longez.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/longline.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/redwhite.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/redwhite-jim.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/skyline.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/stinson.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/symmetry.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/symmetryjimcory.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/symmetrylong.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/tcart.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/transients.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/variez.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/whale.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/whale-front.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/wingdesign.jpg" class="dropshadow">
+<img src="/images/private-pilot/copperstate/yellow.jpg" class="dropshadow">
+

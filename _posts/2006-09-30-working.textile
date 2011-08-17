@@ -1,0 +1,24 @@
+--- 
+layout: post
+title: Working
+tags: 
+- travels
+- iraq
+- marine corps
+- desert
+category: camp-cupcake
+image: /images/thumbs/working.png
+section: Iraq
+header: /images/header/header-iraq.png
+---
+
+<img src="/images/camp-cupcake/working/00033.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/working/00035.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/working/00041.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/working/00350.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/working/bighangar.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/working/fueltruck.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/working/inspectingthehole.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/working/kam.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/working/lookoutwithmoon.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/working/motoboy.jpg" class="dropshadow">

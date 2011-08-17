@@ -1,0 +1,36 @@
+--- 
+layout: post
+title: Over the Hescos
+tags: 
+- travels
+- iraq
+- marine corps
+- desert
+category: camp-cupcake
+image: /images/thumbs/overthehescos.png
+section: Iraq
+header: /images/header/header-iraq.png
+---
+
+<img src="/images/camp-cupcake/overthehescos/00009.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/00021.jpg" class="dropshadow">
+
+<img src="/images/camp-cupcake/overthehescos/00149.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/dawnwithstar.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/rising1.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/sky2.jpg" class="dropshadow">
+
+<img src="/images/camp-cupcake/overthehescos/birdy.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/encroaching.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/frominside.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/leadingedge.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/lookingout.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/orangewarehouse.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/overthehescos.jpg" class="dropshadow">
+
+<img src="/images/camp-cupcake/overthehescos/diagonalrain.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/groundlevel.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/incoming.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/post-rainstorm.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/rainbowposthawk.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/overthehescos/shininglamp.jpg" class="dropshadow">

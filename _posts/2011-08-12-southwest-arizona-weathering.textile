@@ -1,0 +1,71 @@
+---
+layout: post
+title: Geology of Yuma County, Arizona
+category: geolabs
+image: /images/thumbs/geoyuma.png
+description: A tour.
+section: Projects
+header: /images/header/header9.png
+tags: 
+- geology
+- flying
+- arizona
+---
+
+I lived in Yuma, Arizona, for four years and I did a lot of flying. I would drive and read the Roadside Geology of Arizona but I never thought to ask about the bigger picture until I got to Portland and enrolled in the geology program.
+
+<div align="center"><img src="/images/project/geoswaz/introduction.gif"></div>
+
+The eastern part of Arizona is part of the Colorado Plateau; the escarpment, or steep drop-off, that leads down to the desert in the south and west is called teh Mogollon Rim. The floor of the desert below the Mogollon Rim includes the cities of high desert Tucson and low desert Yuma. This lower region is part of the Basin and Range region of North America that's characterized by flat valleys between seemingly random outcroppings of rock pushed up by the constant extending of the bedrock, causing weak points through which underlying volcanic material can push up to the surface.
+
+<div align="center"><img src="/images/project/geoswaz/reynolds-asu.gif"><br /><img src="/images/project/geoswaz/horst-graben.gif"></div>
+
+On the map, they look like this:
+
+<div align="center"><img src="/images/project/geoswaz/map.png"></div>
+
+Why do these ranges look the way they do? They're made of granite and they're 'volcanic intrusions' pushed up from deep in the earth so they break through the crust. 
+
+<div align="center"><img src="/images/project/geoswaz/ranges.png"></div>
+
+The rain pouring down on the mountains washes out loose soil into vast floodplains called alluvial fans.
+
+<div align="center"><img src="/images/project/geoswaz/alluvial.png"></div>
+
+Several processes are occurring simultaneously. The granite mountains are being pushed up from below and erosion simultaneous moves sediment down to the valleys, which can be many feet of packed sand between surface and bedrock.
+
+<div align="center"><img src="/images/project/geoswaz/cross-section.gif"></div>
+
+The valley fill caused by erosion is called pediment by scientists and 'bajada' locally.
+
+<div align="center"><img src="/images/project/geoswaz/pediment.png"></div>
+
+It's hard to explain an Arizona sandstorm to someone who hasn't experienced one. Sandstorms can rip paint off cars.
+
+<div align="center"><iframe width="480" height="390" src="http://www.youtube.com/embed/8vHAYRaSLWk" frameborder="0" allowfullscreen></iframe></div>
+
+The result can be nicely rounded, smoothed rock formations.
+
+<div align="center"><img src="/images/project/geoswaz/granite-weathering.png"></div>
+
+And then there's the "chocolate drop" which is a distinctive shape and color. It's actually a dike, an igneous extrusion that comes from the same material that forms the "chocolate mountains" several miles north of Yuma. 
+
+<div align="center"><img src="/images/project/geoswaz/choco-drop.png"></div>
+
+A weakness in the crust to the south allowed a small amount of igneous material, under tremendous force, to split away south and make a new path until it pushed through the surface.
+
+<div align="center"><img src="/images/project/geoswaz/chocodrop-closer.png"></div>
+
+It also shows the effects of weathering and of desert life, accustomed to harsh conditions, growing right up to its edges.
+ 
+<div align="center"><img src="/images/project/geoswaz/choco-closeup.png"></div>
+
+</div>
+
+<h5>References</h5>
+
+<div class="inside-justify">
+
+Chronic, Halka. Roadside Geology of Arizona. 1983. Mt Press Publishing Co.
+
+Marshak, Stephen. Essentials of Geology. 3rd Ed. 2009. W. W. Norton Co.

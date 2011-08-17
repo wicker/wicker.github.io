@@ -1,0 +1,19 @@
+--- 
+layout: post
+title: Ouray, Colorado
+tags: 
+- travels
+- colorado
+category: western-states
+image: /images/thumbs/ouray.png
+section: Western States
+header: /images/header/header-west.png
+---
+
+<img src="/images/western-states/ouray/DSCF3618.png" class="dropshadow">
+<img src="/images/western-states/ouray/DSCF3627.png" class="dropshadow">
+<img src="/images/western-states/ouray/DSCF3630.png" class="dropshadow">
+<img src="/images/western-states/ouray/DSCF3632.png" class="dropshadow">
+<img src="/images/western-states/ouray/DSCF3636.png" class="dropshadow">
+<img src="/images/western-states/ouray/DSCF3640.png" class="dropshadow">
+

@@ -1,0 +1,28 @@
+--- 
+layout: post
+title: Young Eagles
+tags: 
+- desert
+- travels
+- flying
+- arizona
+category: private-pilot
+image: /images/thumbs/youngeagles.png
+section: Private Pilot
+header: /images/header/header-pilot.png
+---
+
+<img src="/images/private-pilot/youngeagles/dscf1445.jpg" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/dscf1446.jpg" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/dscf1450.jpg" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/dscf1453.jpg" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/DSCF1630.JPG" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/DSCF1632.JPG" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/DSCF1633.JPG" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/DSCF1637.JPG" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/DSCF1638.JPG" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/DSCF1640.JPG" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/DSCF1643.JPG" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/DSCF1645.JPG" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/DSCF1646.JPG" class="dropshadow">
+<img src="/images/private-pilot/youngeagles/DSCF1647.JPG" class="dropshadow">

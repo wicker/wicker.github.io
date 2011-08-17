@@ -1,0 +1,59 @@
+---
+layout: post
+title: Marie Curie
+category: robots
+image: /images/thumbs/marie.png
+section: Projects
+header: /images/header/header10.png
+tags: 
+- robots
+---
+
+The Intelligent Robotics Lab at Portland State has a robot theater which uses a variety of human and animal faces on mobile bases. Students focus on implementing speech, vision, and decision-making so that the robots perform plays. The idea is to have intelligence such that the robots never perform the play in the same way twice, but currently the robots are all on script.
+
+<div align="center"><img src="/images/project/marie-curie/cybertheater.png"></div>
+
+Still, creating a robot head that sees and speaks is not particularly easy. I chose Marie Curie as my project because I wanted to add a woman to our lineup of otherwise famous scientists (Bohr, Schroedinger Cat, and Einstein) who are all used in the robot theater. The problem with animatronic faces is that people are trained over a lifetime to detect the slightest hints of facial movement and draw conclusions about a person's emotional state. Animatronic faces just aren't capable of making the fluid, minute changes which are necessary to communicating the sense of being a real person. They tend to end up with that waxy robotic look. However, at this level in the lab, there's not a lot to be done about that.
+
+A servo is essentially an actuator that contains a gear with an attached wire rod. The wire rod moves back and forth over a predetermined distance as the gear turns a limited number of degrees. The idea behind attaching servos to a face is to have the servo move back and forth to twitch the latex, so the latex must be compromise between being thin and light enough that facial expressions are made without tearing the latex. We use servos from Pololu in the lab.
+
+<div align="center"><img src="/images/project/marie-curie/marie1.png"></div>
+
+We use Brookshire Sotware's Visual Show Automation program to predetermine a routine. It's a graphical interface that presents a timeline and allows servo movements to be indicated visually. Audio files can be synced as well so testing can be done on the computer before downloading. 
+
+When I got her, she had a ripped latex face connected from behind to fourteen servos, some of them inoperable, wired to an ASC16 microcontroller on a wooden base. The ASC16 wasn't supported by Medonis anymore (the software won't work on anything past Windows 2000) so we switched to the MiniSSC II serial servo controller and installed two of them on a plate behind her head. MiniSSC II cards are one of the oldest servo controllers on the market but they work for this simple application. I mapped the mess of fourteen servo wires between the PWM slots, servos, and her face points. She's wired so her forehead wrinkles in four places and the latex around her mouth flexes at six points. She can nod, shake her head, and move her eyes both up/down and left/right; I'd like to make her able to blink.
+
+<div align="center"><img src="/images/project/marie-curie/marie3.png"></div>
+
+Her latex face is ripped along her mouth because her jaw is actually structurally broken. I wanted to make a new mold for a new latex face. She looks very classically pin-up beautiful now, very long face with long eyelashes, and I'd like to make her a little closer to the pictures of Marie that I've found. Marie was beautiful, too. 
+
+I soon discovered that the other reason she would benefit from a completely new latex face is that her facial expressions (determined by the servo wire contact points chosen behind her face) were badly designed. Not only that but the tear in the corner of her mouth meant a part of her face had lost tension and the whole face would need to be replaced. There isn't any easy way to repair that tear while maintaining her ability to make faces and the lab priority was not in making another latex face so I moved on to another project. 
+
+She's obviously been sitting in storage for some time and she came with no documentation. I think the previous team leaped too quickly to installing servos without laying out their plan of action. This would be an excellent high school project because the tasks are all very self-contained and the result is both eery and cool. The steps would be something like this:
+
+First, the team ought to set up a Redmine project for her and make it a priority to maintain the wiki, explaining the reasoning behind all design choices.
+
+Next, decide what speech they want Marie to be capable of before they do anything else because the speech choices will determine which facial expressions they will want to accommodate. They'll need to find a board with a speaker to play the audio file produced by Visual Show Automation.
+
+Once these choices have been made and the face has been drawn out for the record, they will need to make a new mold, pour a new latex face, reattach the servos, and develop the order of servo movements in VSA to match an audio file.
+
+Once she's capable of speaking and making fairly simple expressions, she would benefit from a wheeled base and robot arm so she can interact with the other scientist-robots (high-fiving Bohr?). Adding a webcam and integrating vision would let her tailor responses to particular faces -- thought at this point Visual Show Automation would need to be exchanged for C++ -- and be capable of navigating without bumping into things. 
+
+A platform capable of all these things with a platform microcontroller capable of higher-level logic could probably be handed off to a graduate student for a thesis. 
+
+<div align="center"><img src="/images/project/marie-curie/marie2.png"></div>
+
+</div>
+
+<h5>References</h5>
+
+<div class="inside">
+
+Visual Show Automation
+<a href="http://www.brookshiresoftware.com/">http://www.brookshiresoftware.com/</a>
+
+Intelligent Robotics Lab
+<a href="http://web.cecs.pdx.edu/~ras/">http://web.cecs.pdx.edu/~ras/</a>
+
+Introduction to Servos
+<a href="http://pololu.com/blog/12/introduction-to-servos/">http://pololu.com/blog/12/introduction-to-servos/</a>

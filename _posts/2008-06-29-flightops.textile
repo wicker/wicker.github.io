@@ -1,0 +1,38 @@
+--- 
+layout: post
+title: Flight Operations
+tags: 
+- travels
+- marine corps
+- flying
+- ocean
+category: uss-tarawa
+image: /images/thumbs/flightops.png
+section: USS Tarawa
+header: /images/header/header.png
+---
+
+My dad took most of these photos.
+
+<img src="/images/uss-tarawa/flightops/dscf0669.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0672.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0673.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0675.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0689.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0692.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0694.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0703.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0707.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0716.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0719.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0721.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0731.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0739.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0744.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0747.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0822.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0823.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0827.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0852.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0853.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/flightops/dscf0884.jpg" class="dropshadow">

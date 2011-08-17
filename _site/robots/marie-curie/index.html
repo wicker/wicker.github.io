@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jen Hanni">
+  <meta name="viewport" content="width=700" />
+  <title>Marie Curie &laquo; compendiarious</title>
+  <link rel="stylesheet" href="/css/screen-blue.css" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <meta property="og:site_name" content="compendiarious"/>
+  <meta property="og:title" content="Marie Curie"/>
+  
+</head>
+
+<body>
+
+<div class="site">
+
+  <div class="inside">
+   <header>
+    <h1>
+       <a class="title" href="/" title="compendiarious">compendiarious</a> : airplanes, space, rockets, robots, linux and two cats
+    </h1>
+    <div id="nav">
+       <a href="/" title="Home">home</a> 
+       <a href="/about/" title="About">about</a> 
+       &nbsp; :: &nbsp;
+       <a href="/summerblog/" title="Summerblog">summerblog</a>
+       <a href="/travels/" title="Travels">travels</a>
+       <a href="/projects/" title="Projects">projects</a>
+       <a href="/endurance-days" title="Endurance Days">endurance days</a>
+       <a href="/two-cats" title="Two Cats">two cats</a>
+    </div>
+   </header>
+  </div>
+
+  <div id="header">
+    <img src="/images/header/header10.png">
+  </div>
+
+  <div class="inside">
+    <h4>Projects :: Marie Curie </h4>
+  </div>
+
+</div>
+
+<div class="site">
+
+    <div class="inside">
+
+    <p>The Intelligent Robotics Lab at Portland State has a robot theater which uses a variety of human and animal faces on mobile bases. Students focus on implementing speech, vision, and decision-making so that the robots perform plays. The idea is to have intelligence such that the robots never perform the play in the same way twice, but currently the robots are all on script.</p>
+<div align="center"><img src="/images/project/marie-curie/cybertheater.png"></div>
+<p>Still, creating a robot head that sees and speaks is not particularly easy. I chose Marie Curie as my project because I wanted to add a woman to our lineup of otherwise famous scientists (Bohr, Schroedinger Cat, and Einstein) who are all used in the robot theater. The problem with animatronic faces is that people are trained over a lifetime to detect the slightest hints of facial movement and draw conclusions about a person&#8217;s emotional state. Animatronic faces just aren&#8217;t capable of making the fluid, minute changes which are necessary to communicating the sense of being a real person. They tend to end up with that waxy robotic look. However, at this level in the lab, there&#8217;s not a lot to be done about that.</p>
+<p>A servo is essentially an actuator that contains a gear with an attached wire rod. The wire rod moves back and forth over a predetermined distance as the gear turns a limited number of degrees. The idea behind attaching servos to a face is to have the servo move back and forth to twitch the latex, so the latex must be compromise between being thin and light enough that facial expressions are made without tearing the latex. We use servos from Pololu in the lab.</p>
+<div align="center"><img src="/images/project/marie-curie/marie1.png"></div>
+<p>We use Brookshire Sotware&#8217;s Visual Show Automation program to predetermine a routine. It&#8217;s a graphical interface that presents a timeline and allows servo movements to be indicated visually. Audio files can be synced as well so testing can be done on the computer before downloading.</p>
+<p>When I got her, she had a ripped latex face connected from behind to fourteen servos, some of them inoperable, wired to an ASC16 microcontroller on a wooden base. The ASC16 wasn&#8217;t supported by Medonis anymore (the software won&#8217;t work on anything past Windows 2000) so we switched to the MiniSSC II serial servo controller and installed two of them on a plate behind her head. MiniSSC II cards are one of the oldest servo controllers on the market but they work for this simple application. I mapped the mess of fourteen servo wires between the <span class="caps">PWM</span> slots, servos, and her face points. She&#8217;s wired so her forehead wrinkles in four places and the latex around her mouth flexes at six points. She can nod, shake her head, and move her eyes both up/down and left/right; I&#8217;d like to make her able to blink.</p>
+<div align="center"><img src="/images/project/marie-curie/marie3.png"></div>
+<p>Her latex face is ripped along her mouth because her jaw is actually structurally broken. I wanted to make a new mold for a new latex face. She looks very classically pin-up beautiful now, very long face with long eyelashes, and I&#8217;d like to make her a little closer to the pictures of Marie that I&#8217;ve found. Marie was beautiful, too.</p>
+<p>I soon discovered that the other reason she would benefit from a completely new latex face is that her facial expressions (determined by the servo wire contact points chosen behind her face) were badly designed. Not only that but the tear in the corner of her mouth meant a part of her face had lost tension and the whole face would need to be replaced. There isn&#8217;t any easy way to repair that tear while maintaining her ability to make faces and the lab priority was not in making another latex face so I moved on to another project.</p>
+<p>She&#8217;s obviously been sitting in storage for some time and she came with no documentation. I think the previous team leaped too quickly to installing servos without laying out their plan of action. This would be an excellent high school project because the tasks are all very self-contained and the result is both eery and cool. The steps would be something like this:</p>
+<p>First, the team ought to set up a Redmine project for her and make it a priority to maintain the wiki, explaining the reasoning behind all design choices.</p>
+<p>Next, decide what speech they want Marie to be capable of before they do anything else because the speech choices will determine which facial expressions they will want to accommodate. They&#8217;ll need to find a board with a speaker to play the audio file produced by Visual Show Automation.</p>
+<p>Once these choices have been made and the face has been drawn out for the record, they will need to make a new mold, pour a new latex face, reattach the servos, and develop the order of servo movements in <span class="caps">VSA</span> to match an audio file.</p>
+<p>Once she&#8217;s capable of speaking and making fairly simple expressions, she would benefit from a wheeled base and robot arm so she can interact with the other scientist-robots (high-fiving Bohr?). Adding a webcam and integrating vision would let her tailor responses to particular faces &#8212; thought at this point Visual Show Automation would need to be exchanged for C++ &#8212; and be capable of navigating without bumping into things.</p>
+<p>A platform capable of all these things with a platform microcontroller capable of higher-level logic could probably be handed off to a graduate student for a thesis.</p>
+<div align="center"><img src="/images/project/marie-curie/marie2.png"></div>
+</div>
+<h5>References</h5>
+<div class="inside">
+<p>Visual Show Automation<br />
+<a href="http://www.brookshiresoftware.com/">http://www.brookshiresoftware.com/</a></p>
+<p>Intelligent Robotics Lab<br />
+<a href="http://web.cecs.pdx.edu/~ras/">http://web.cecs.pdx.edu/~ras/</a></p>
+<p>Introduction to Servos<br />
+<a href="http://pololu.com/blog/12/introduction-to-servos/">http://pololu.com/blog/12/introduction-to-servos/</a></p>
+
+  </div>
+</div>
+
+<div class="site">
+  <div id="comment" class="comments">
+	<div class="inside">
+
+		<h4>Comments</h4>
+
+		
+
+	</div>
+  </div>
+
+
+
+</div>
+
+<div class="site">
+
+  <div id="footer">
+    <div class="inside">
+      <h4>Tags</h4>
+      <div class="text tag-cloud">&nbsp; &nbsp; <a href="/tags/arizona/" title="Pages tagged arizona" style="font-size: 175%" rel=\"tag\">arizona</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/australia/" title="Pages tagged australia" style="font-size: 117%" rel=\"tag\">australia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/book/" title="Pages tagged book" style="font-size: 100%" rel=\"tag\">book</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/bosnia/" title="Pages tagged bosnia" style="font-size: 100%" rel=\"tag\">bosnia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/botanical/" title="Pages tagged botanical" style="font-size: 126%" rel=\"tag\">botanical</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/california/" title="Pages tagged california" style="font-size: 117%" rel=\"tag\">california</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/code/" title="Pages tagged code" style="font-size: 117%" rel=\"tag\">code</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/colorado/" title="Pages tagged colorado" style="font-size: 133%" rel=\"tag\">colorado</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/croatia/" title="Pages tagged croatia" style="font-size: 100%" rel=\"tag\">croatia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/desert/" title="Pages tagged desert" style="font-size: 174%" rel=\"tag\">desert</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/eaa/" title="Pages tagged eaa" style="font-size: 143%" rel=\"tag\">eaa</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/endurance-flight/" title="Pages tagged endurance flight" style="font-size: 152%" rel=\"tag\">endurance flight</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/england/" title="Pages tagged england" style="font-size: 117%" rel=\"tag\">england</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/flying/" title="Pages tagged flying" style="font-size: 172%" rel=\"tag\">flying</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/geology/" title="Pages tagged geology" style="font-size: 138%" rel=\"tag\">geology</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hiking/" title="Pages tagged hiking" style="font-size: 165%" rel=\"tag\">hiking</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/iraq/" title="Pages tagged iraq" style="font-size: 143%" rel=\"tag\">iraq</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/marine-corps/" title="Pages tagged marine corps" style="font-size: 157%" rel=\"tag\">marine corps</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/minnesota/" title="Pages tagged minnesota" style="font-size: 100%" rel=\"tag\">minnesota</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/mojave/" title="Pages tagged mojave" style="font-size: 100%" rel=\"tag\">mojave</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/nevada/" title="Pages tagged nevada" style="font-size: 117%" rel=\"tag\">nevada</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ninety-nines/" title="Pages tagged ninety-nines" style="font-size: 100%" rel=\"tag\">ninety-nines</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/norway/" title="Pages tagged norway" style="font-size: 100%" rel=\"tag\">norway</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ocean/" title="Pages tagged ocean" style="font-size: 143%" rel=\"tag\">ocean</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/oregon/" title="Pages tagged oregon" style="font-size: 152%" rel=\"tag\">oregon</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/oskhosh/" title="Pages tagged oskhosh" style="font-size: 100%" rel=\"tag\">oskhosh</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/phoenix/" title="Pages tagged phoenix" style="font-size: 117%" rel=\"tag\">phoenix</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/robots/" title="Pages tagged robots" style="font-size: 126%" rel=\"tag\">robots</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/rockets/" title="Pages tagged rockets" style="font-size: 100%" rel=\"tag\">rockets</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/singapore/" title="Pages tagged singapore" style="font-size: 100%" rel=\"tag\">singapore</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/slovenia/" title="Pages tagged slovenia" style="font-size: 100%" rel=\"tag\">slovenia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/solar-system/" title="Pages tagged solar system" style="font-size: 100%" rel=\"tag\">solar system</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sonora/" title="Pages tagged sonora" style="font-size: 117%" rel=\"tag\">sonora</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sweden/" title="Pages tagged sweden" style="font-size: 100%" rel=\"tag\">sweden</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/switzerland/" title="Pages tagged switzerland" style="font-size: 126%" rel=\"tag\">switzerland</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tortoise/" title="Pages tagged tortoise" style="font-size: 100%" rel=\"tag\">tortoise</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/travels/" title="Pages tagged travels" style="font-size: 200%" rel=\"tag\">travels</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tucson/" title="Pages tagged tucson" style="font-size: 100%" rel=\"tag\">tucson</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/turkey/" title="Pages tagged turkey" style="font-size: 157%" rel=\"tag\">turkey</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/utah/" title="Pages tagged utah" style="font-size: 126%" rel=\"tag\">utah</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/washington/" title="Pages tagged washington" style="font-size: 100%" rel=\"tag\">washington</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/yuma/" title="Pages tagged yuma" style="font-size: 150%" rel=\"tag\">yuma</a> &nbsp; &nbsp;</div>
+    </div>
+  </div>
+
+  <div id="license">
+    <div class="inside" style="text-align:center;">
+<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-by-SA 3.0</a> by <a class="url" href="http://compendiarious.net/" title="portfolio">Jen Hanni</a>. Hosted by <a href="http://www.asmallorange.com/">A Small Orange</a>. Made with love and <a href="https://github.com/mojombo/jekyll">Jekyll</a> from <a href="http://en.wikipedia.org/wiki/Portland,_Oregon">Portland, Oregon</a>.
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

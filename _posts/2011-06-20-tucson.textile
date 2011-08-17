@@ -1,0 +1,41 @@
+--- 
+layout: post
+title: Ajo, Ryan, Pinal, Nogales
+tags: 
+- desert
+- travels
+- flying
+- arizona
+category: private-pilot
+image: /images/thumbs/tucsontrip.png
+section: Private Pilot
+header: /images/header/header-pilot.png
+---
+
+<img src="/images/private-pilot/tucsontrip/1sunriseoverbase2.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/2morn-albert2.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/2waitingtotaxi.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/aho-maybe.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/ajoland.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/ajomine.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/ajo-minebighole.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/ajo-perpective.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/albertlfy.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/centurycactus.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/fields-flood.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/interesting.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/kittpeakdist.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/nogales.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/pinal-bluejet.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/pinal-evergreen.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/pinal-jet.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/pinal-yellow.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/rays.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/rickryan-me.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/ricksaves.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/ryan-f4l.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/ryan-marinvy.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/ryan-toxic.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/smallalbert.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/tilted.jpg" class="dropshadow">
+<img src="/images/private-pilot/tucsontrip/tiltsunwallpaper.jpg" class="dropshadow">

@@ -1,0 +1,27 @@
+--- 
+layout: post
+title: Ocean Views
+tags: 
+- travels
+- ocean
+category: uss-tarawa
+image: /images/thumbs/oceanviews.png
+section: USS Tarawa
+header: /images/header/header.png
+---
+
+<img src="/images/uss-tarawa/oceanviews/9.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/14.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/15.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf0018.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf0019.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf0025.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf0032.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf0033.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf0057.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf0059.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf0061.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf0780.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf0782.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf2157.jpg" class="dropshadow">
+<img src="/images/uss-tarawa/oceanviews/dscf2161.jpg" class="dropshadow">

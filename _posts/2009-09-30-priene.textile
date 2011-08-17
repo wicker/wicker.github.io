@@ -1,0 +1,42 @@
+--- 
+layout: post
+title: Priene, Turkey
+tags: 
+- travels
+- turkey
+category: backpack-europe
+image: /images/thumbs/priene.png
+section: Solo Backpacking in Europe
+header: /images/header/header4.png
+---
+
+<img src="/images/backpack-europe/priene/DSCF2584.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2587.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2588.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2589.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2596.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2597.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2598.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2599.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2602.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2603.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2604.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2606.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2607.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2608.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2611.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2612.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2616.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2620.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2621.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2622.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2623.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2624.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2625.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2626.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2627.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2630.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2631.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2632.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2633.JPG" class="dropshadow">
+<img src="/images/backpack-europe/priene/DSCF2635.JPG" class="dropshadow">

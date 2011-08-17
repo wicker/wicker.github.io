@@ -1,0 +1,20 @@
+--- 
+layout: post
+title: Basilica Cistern, Turkey
+tags: 
+- travels
+- turkey
+category: backpack-europe
+image: /images/thumbs/basilica.png
+section: Solo Backpacking in Europe
+header: /images/header/header4.png
+---
+
+<img src="/images/backpack-europe/basilica/DSCF2258.JPG" class="dropshadow">
+<img src="/images/backpack-europe/basilica/DSCF2259.JPG" class="dropshadow">
+<img src="/images/backpack-europe/basilica/DSCF2297.JPG" class="dropshadow">
+<img src="/images/backpack-europe/basilica/DSCF2299.JPG" class="dropshadow">
+<img src="/images/backpack-europe/basilica/DSCF2300.JPG" class="dropshadow">
+<img src="/images/backpack-europe/basilica/DSCF2307.JPG" class="dropshadow">
+<img src="/images/backpack-europe/basilica/DSCF2313.JPG" class="dropshadow">
+<img src="/images/backpack-europe/basilica/DSCF2317.JPG" class="dropshadow">

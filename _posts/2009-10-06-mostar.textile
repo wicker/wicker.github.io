@@ -1,0 +1,29 @@
+--- 
+layout: post
+title: Mostar, Bosnia
+tags: 
+- travels
+- bosnia
+category: backpack-europe
+image: /images/thumbs/mostar.png
+section: Solo Backpacking in Europe
+header: /images/header/header4.png
+---
+
+<img src="/images/backpack-europe/mostar/DSCF2135.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2139.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2140.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2143.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2144.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2146.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2147.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2148.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2149.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2150.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2151.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2155.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2157.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2161.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2162.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2164.JPG" class="dropshadow">
+<img src="/images/backpack-europe/mostar/DSCF2166.JPG" class="dropshadow">

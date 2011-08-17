@@ -1,0 +1,28 @@
+--- 
+layout: post
+title: Warwick Castle, England
+tags: 
+- travels
+- england
+category: backpack-europe
+image: /images/thumbs/warwick.png
+section: Solo Backpacking in Europe
+header: /images/header/header4.png
+---
+
+<img src="/images/backpack-europe/warwickcastle/DSCF1817.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1822.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1826.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1827.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1829.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1832.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1838.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1841.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1843.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1857.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1860.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1865.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1870.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1878.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1882.JPG" class="dropshadow">
+<img src="/images/backpack-europe/warwickcastle/DSCF1887.JPG" class="dropshadow">

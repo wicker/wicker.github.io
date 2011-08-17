@@ -1,0 +1,38 @@
+--- 
+layout: post
+title: Mittry Lake
+tags: 
+- desert
+- travels
+- arizona
+- yuma
+category: desert
+image: /images/thumbs/mittry.png
+section: The Desert
+header: /images/header/header-desert.png
+---
+
+<img src="/images/the-desert/mittrylake/dscf0279.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0281.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0292.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0294.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0296.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0297.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0298.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0301.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0319.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0327.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0329.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0335.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0342.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0350.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0353.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf0355.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf1141.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf1166.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf1167.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf1171.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf1179.png" class="dropshadow">
+<img src="/images/the-desert/mittrylake/dscf1182.png" class="dropshadow">
+
+

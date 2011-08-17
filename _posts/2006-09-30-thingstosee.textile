@@ -1,0 +1,44 @@
+--- 
+layout: post
+title: Things to See
+tags: 
+- travels
+- iraq
+- marine corps
+- desert
+category: camp-cupcake
+image: /images/thumbs/thingstosee.png
+section: Iraq
+header: /images/header/header-iraq.png
+---
+
+<img src="/images/camp-cupcake/thingstosee/00371.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00380.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00383.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00386.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00408.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00419.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00442.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00444.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00461.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00477.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00500.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00506.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00515.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00524.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/00582.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1283.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1341.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1419.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1448.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1467.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1468.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1504.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1556.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1559.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1564.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1570.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1578.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/img_1583.jpg" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/mp.png" class="dropshadow">
+<img src="/images/camp-cupcake/thingstosee/mytruck.jpg" class="dropshadow">

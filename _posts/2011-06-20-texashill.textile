@@ -1,0 +1,53 @@
+--- 
+layout: post
+title: Texas Hill
+tags: 
+- desert
+- travels
+- flying
+- arizona
+- yuma
+category: private-pilot
+image: /images/thumbs/texashill.png
+section: Private Pilot
+header: /images/header/header-pilot.png
+---
+
+<img src="/images/private-pilot/texashill/paulcessna.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/shadow.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/suntailpaul2.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/paultakeoff.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/sunoversomerton.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/airportyuma.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/barn.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/gilariverbed.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/mcasyuma.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/memodel.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/merv9.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/mohawk.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/mohawkhills.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/mtstofoothills.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/scorpion.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/scorpion2.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/sergioalbertrv9.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/somerton-helicopter.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/texashill.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/texashillsstrip.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/ultralight.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/ultralight2.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/texashilltree.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/wingbase.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/yumafields.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/yumalandscape.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/johnandalbert.jpg" class="dropshadow">
+
+<img src="/images/private-pilot/texashill/part2/dscf1383.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/part2/dscf1391.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/part2/dscf1393.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/part2/dscf1394.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/part2/dscf1395.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/part2/dscf1398.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/part2/dscf1406.jpg" class="dropshadow">
+<img src="/images/private-pilot/texashill/part2/dscf1443.jpg" class="dropshadow">
+
+

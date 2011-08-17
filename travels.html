@@ -1,12 +1,27 @@
 ---
-title: travelblog
+title: Photography
 permalink: /travels/
 layout: default
+section: World Travels
+header: /images/header/header4.png
 ---
 
-    <h5 style="border-top: 0px;"> My Deserts: Sonora, Mojave, Iraqi </h5>
+<div class="inside">
+<a href="#desert">Deserts</a> &nbsp; &nbsp; 
+<a href="#western">Western States</a> &nbsp; &nbsp; 
+<a href="#pilot">Private Pilot</a> &nbsp; &nbsp; 
+<a href="#oregon">Oregon</a> &nbsp; &nbsp; 
+<a href="#europe">Backpack Europe</a> &nbsp; &nbsp; 
+<a href="#usstarawa">USS Tarawa</a> &nbsp; &nbsp;
+<a href="#iraq">Iraq</a>
+</div>
+</div>
+
+<div class="site">
+<h5 style="border-top: 0px;"><a name="desert">My Deserts: Sonora, Mojave, Iraqi</a></h5>
 
 <div class="inside">
+  
 {% for post in site.categories.desert %}
 
   {% if (post.image) %}
@@ -19,10 +34,14 @@ layout: default
 
 {% endfor %}
 </div>
+</div>
 
-    <h5> Road Trips in the Western States </h5>
+<div class="site">
+
+<h5 style="border-top: 0px;"><a name="western">Road Trips in the Western States</a></h5>
 
 <div class="inside">
+  
 {% for post in site.categories.western-states %}
 
   {% if (post.image) %}
@@ -35,10 +54,14 @@ layout: default
 
 {% endfor %}
 </div>
+</div>
 
-    <h5> Private Pilot </h5>
+<div class="site">
+
+<h5 style="border-top: 0px;"><a name="pilot">Private Pilot</a></h5>
 
 <div class="inside">
+
 {% for post in site.categories.private-pilot %}
 
   {% if (post.image) %}
@@ -51,8 +74,11 @@ layout: default
 
 {% endfor %}
 </div>
+</div>
 
-    <h5> Oregon Hikes </h5>
+<div class="site">
+
+<h5 style="border-top: 0px;"><a name="oregon">Oregon Hikes</a></h5>
 
 <div class="inside">
 {% for post in site.categories.oregon-hikes %}
@@ -66,10 +92,15 @@ layout: default
   {% endif %}
 {% endfor %}
 </div>
+</div>
 
-    <h5> Backpacking Solo in Europe for Three Months </h5>
+<div class="site">
+
+<h5 style="border-top: 0px;"><a name="europe">Backpacking Solo in Europe for Three Months</a></h5>
+
 
 <div class="inside">
+
 {% for post in site.categories.backpack-europe %}
 
   {% if (post.image) %}
@@ -82,10 +113,15 @@ layout: default
 
 {% endfor %}
 </div>
+</div>
 
-    <h5> USS Tarawa (Westpac) </h5>
+<div class="site">
+
+<h5 style="border-top: 0px;"><a name="usstarawa">USS Tarawa (Westpac)</a></h5>
+
 
 <div class="inside">
+
 {% for post in site.categories.uss-tarawa %}
 
   {% if (post.image) %}
@@ -98,10 +134,14 @@ layout: default
 
 {% endfor %}
 </div>
+</div>
 
-    <h5> Camp Cupcake, Iraq </h5>
+<div class="site">
+
+<h5 style="border-top: 0px;"><a name="iraq">Camp Cupcake, Iraq</a></h5>
 
 <div class="inside">
+
 {% for post in site.categories.camp-cupcake %}
 
   {% if (post.image) %}
@@ -114,4 +154,6 @@ layout: default
 
 {% endfor %}
 </div>
+</div>
+
 
