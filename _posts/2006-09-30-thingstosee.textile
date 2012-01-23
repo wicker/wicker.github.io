@@ -1,0 +1,18 @@
+--- 
+layout: post
+title: Things to see on base
+tags: 
+- travels
+- iraq
+- marine corps
+- desert
+category: iraq
+image: /images/thumbs/thingstosee.png
+location: Al Asad, Iraq
+purpose: photo
+year: 2006
+userid: 117081002500022017940
+useralbum: AlAsadThingsToSee
+---
+
+The base itself was the second-largest U.S. air base in Iraq.

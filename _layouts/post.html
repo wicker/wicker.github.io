@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="container mainbox">
+  <div class="row">
+    <div class="col_1">&nbsp;</div>
+    <div class="col_10 whitebox">
+      <h3>{{ page.title }}</h3>
+      <h4>{{ page.location }} ~ {{ page.year }}</h4>
+    </div>
+    <div class="col_1 last">&nbsp;</div>
+  </div>
+
+  <div class="row" style="margin-top: -30px;">
+
+    <div class="col_1">&nbsp;</div>
+
+    <div class="col_10 textbox whitebox">
+
+       {% case page.purpose %}
+         {% when 'photo' %}
+         <div id="galleria">  </div>
+         <script>
+            Galleria.loadTheme('/galleria/themes/classic/galleria.twelve.min.js');
+            $('#galleria').galleria({
+            picasa: 'useralbum:{{ page.userid }}/{{ page.useralbum}}'
+            });
+         </script>
+         {% when 'writing' %}
+       
+         {% when 'project' %}
+       
+       {% endcase %}
+       <div class="inside">{{ content }}</div>
+ 
+   </div>
+
+    <div class="col_1 last">&nbsp;</div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col_12 last">
+        {{ site.tags | tag_cloud }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+--- 
+layout: post
+title: It's all about the birds
+tags: 
+- travels
+- flying
+- iraq
+- marine corps
+- desert
+category: iraq
+image: /images/thumbs/aviation.png
+location: Al Asad, Iraq
+purpose: photo
+year: 2006
+userid: 117081002500022017940
+useralbum: AlAsadAviation
+---
+
+test

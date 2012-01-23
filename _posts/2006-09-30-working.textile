@@ -1,0 +1,18 @@
+--- 
+layout: post
+title: Caution, Marines at Work
+tags: 
+- travels
+- iraq
+- marine corps
+- desert
+category: iraq
+image: /images/thumbs/working.png
+location: Al Asad, Iraq
+purpose: photo
+year: 2006
+userid: 117081002500022017940
+useralbum: AlAsadMarinesAtWork
+---
+
+work work work

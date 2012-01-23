@@ -1,0 +1,18 @@
+--- 
+layout: post
+title: Good times off-duty
+tags: 
+- travels
+- iraq
+- marine corps
+- desert
+category: iraq
+image: /images/thumbs/barbecue.png
+location: Al Asad, Iraq
+purpose: photo
+year: 2006
+userid: 117081002500022017940
+useralbum: AlAsadBarbecue
+---
+
+barbecue
