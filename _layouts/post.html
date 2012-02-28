@@ -8,11 +8,14 @@ layout: default
     <div class="col_10 whitebox">
 
       <h3>{{ page.title }}</h3>
-      <h4><strong>When:</strong> {{ page.year }}<br /> 
-          <strong>Where:</strong> {{ page.location}}<br /> 
-          <strong>Tags: </strong> iraq, al asad, marines <br />
-          <strong>Comments: </strong> 4 
-      </h4>
+      {% case page.purpose %}
+        {% when 'photo' %}
+          <h4><strong>When:</strong> {{ page.year }}<br /> 
+              <strong>Where:</strong> {{ page.location}}<br /> 
+              <strong>Tags: </strong> tags <br />
+              <strong>Comments: </strong> #
+          </h4>
+      {% endcase %}
       <br /><br />
     </div>
     <div class="col_1 last">&nbsp;</div>
