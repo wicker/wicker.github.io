@@ -16,15 +16,12 @@ body {
 
 h3 {
    text-align: left; 
-   margin-left: 10px;
    font-size: 20px;
    color: #000;
 }
 
 h4 {
    text-align: left;
-   margin-bottom:15px;
-   margin-left: 10px;
    font-size: 13px;
    color: #000;
    font-weight: normal;
@@ -47,7 +44,7 @@ h5 {
    width: 100%;
 }
 
-/* Central white box for all main content */
+/* Central box for all main content */
 
 .mainbox {
   margin: 0px auto;
@@ -64,10 +61,6 @@ h5 {
   display: inline-block;
   }
 
-.whitebox {
-  display: inline;
-}
-
 .nopadding {
   padding:0px;
   margin:0px auto;
@@ -77,7 +70,12 @@ h5 {
 
 .textbox {
   text-align: justify;
+  color: #000;
   }
+
+p {
+  padding: 15px;
+}
 
 .inside {
   padding: 15px;
@@ -87,6 +85,7 @@ h5 {
 
 #galleria { 
   height:450px;
+  margin-top: 25px;
   border: 2px solid #000;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
@@ -97,12 +96,20 @@ h5 {
 
 /* Header */
 
-.header {
+.header,
+.footer {
   background-image: url(../images/bar.png);
   background-color: #202d41;
-  border-bottom: 3px solid #cecbc6;
   overflow:hidden;
   }
+
+.header {
+  border-bottom: 3px solid #cecbc6;
+}
+
+.footer {
+  border-top: 3px solid #cecbc6;
+}
 
 .header h1 {
   margin: 0px;
@@ -114,12 +121,15 @@ h5 {
   }
 
 .header a, 
-.header a:visited {
+.header a:visited,
+.footer a,
+.footer a:visited {
   text-decoration: none; 
   color: #fff;
   }
 
-.header a:hover {
+.header a:hover,
+.footer a:hover {
   color: #c0c0c0;
   }
 
@@ -151,21 +161,15 @@ h5 {
   color: #c0c0c0;
   }
 
-.footer {
-  text-align:center;
-  margin: 10px;
-  padding: 10px;
-  }
-
 /* __________________________________________
 Mobile version - preset code from cssgrid.net */
 
 @media handheld, only screen and (max-width: 767px) {
 
-body {}	
+body {
 }
 
-
+}
 
 /*
 _______________________________

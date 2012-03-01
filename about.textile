@@ -3,12 +3,14 @@ title: About Wicker
 permalink: /about/
 layout: post
 type: headerpage
-description: Jen Hanni, aka wicker, an avionics technician, junior linux sysadmin, systems engineering intern, and hardware hacker finishing grad school in computer engineering.
+description: About Jen Hanni, aka Wicker, grad student in computer engineering.
+year: 2012
+location: Portland, Oregon
 ---
 
 <div style="text-align:center;"><img src="/images/melarge.png"></div>
 
-Hi. I'm Jen Hanni. I'm a 26 year hardware hacker and aspiring embedded systems programmer from Portland, Oregon. I'm a systems engineering intern at a local aerospace company while attending graduate school in Electrical & Computer Engineering at Portland State University. I want to work with design and control of remotely operated and unmanned aerial vehicles in space exploration. I've mentored FIRST Robotics, taught aeronautics to elementary school kids, and served five years in the U.S. Marines as an avionics technician on Harrier jump jets. I travel, hike, take pictures, read, and can be found both on Starcraft 2 and Reddit.
+Hi! I'm Jen Hanni. I an embedded systems geek from Portland, Oregon, where by day I'm a systems engineering intern at a local aerospace company while attending graduate school in Electrical & Computer Engineering at Portland State University. I want to work with design and control of remotely operated and unmanned aerial vehicles in space exploration. I've mentored FIRST Robotics, taught aeronautics to elementary school kids, and served five years in the U.S. Marines as an avionics technician on Harrier jump jets. I travel, hike, take pictures, read, and build stuff.
 
 <img src="/images/about.png" style="float:right;">
 
@@ -20,8 +22,7 @@ o engineering grad student
 o circuit board design
 o lab manager
 o junior linux/unix sysadmin
-o vice president, IEEE-RAS student chapter
-<img src="/images/projects.png" style="float:right;">
+o vice president, IEEE-RAS student chapter<img src="/images/projects.png" style="float:right;">
 o assistant coach, high school robotics team
 o 4th and 5th grade aeronautics instructor
 o avionics technician
@@ -31,8 +32,7 @@ o U.S. Marine sergeant
 
 <strong>My current interests</strong>
 
-o C/C++
-<img src="/images/travels.png" style="float:right;">
+o C<img src="/images/travels.png" style="float:right;">
 o ARM & x86 assembly
 o printed circuit boards
 o device drivers
@@ -40,15 +40,13 @@ o rockets
 o flying robots
 o swarms
 o high-level modeling of embedded systems
-o bond graphs
-o linux
-o space exploration
-<img src="/images/summerblog.png" style="float:right;">
+o SysML
+o Linux
+o space exploration<img src="/images/summerblog.png" style="float:right;">
 o inspiring kids to STEM fields
-o mobile development
 
 <strong>And down at the airport...</strong>
 
+o private pilot
 o member of EAA
 o looking to build my own airplane
-o private pilot

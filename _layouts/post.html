@@ -4,28 +4,19 @@ layout: default
 
 <div class="container mainbox">
   <div class="row">
-    <div class="col_1">&nbsp;</div>
-    <div class="col_10 whitebox">
-
+    <div class="col_2">&nbsp;</div>
+    <div class="col_8">
       <h3>{{ page.title }}</h3>
-      {% case page.purpose %}
-        {% when 'photo' %}
-          <h4><strong>When:</strong> {{ page.year }}<br /> 
-              <strong>Where:</strong> {{ page.location}}<br /> 
-              <strong>Tags: </strong> tags <br />
-              <strong>Comments: </strong> #
-          </h4>
-      {% endcase %}
-      <br /><br />
+      <h4>{{ page.year }} . {{ page.location }}</h4>
     </div>
-    <div class="col_1 last">&nbsp;</div>
+    <div class="col_2 last">&nbsp;</div>
   </div>
 
-  <div class="row" style="margin-top: -30px;">
+  <div class="row">
 
-    <div class="col_1">&nbsp;</div>
+    <div class="col_2">&nbsp;</div>
 
-    <div class="col_10 textbox whitebox">
+    <div class="col_8 textbox">
 
        {% case page.purpose %}
          {% when 'photo' %}
@@ -36,22 +27,17 @@ layout: default
             picasa: 'useralbum:{{ page.userid }}/{{ page.useralbum}}'
             });
          </script>
-         {% when 'writing' %}
-       
-         {% when 'project' %}
-       
        {% endcase %}
        <div class="inside">{{ content }}</div>
  
    </div>
+   <div class="col_2 last">&nbsp;</div>
+ </div><!-- end row -->
+</div><!-- end container -->
 
-    <div class="col_1 last">&nbsp;</div>
-
-  </div>
-
+<div class="container footer">
   <div class="row">
-
-    <div class="col_12 last">
+    <div class="col_12 last inside">
         {{ site.tags | tag_cloud }}
     </div>
   </div>
