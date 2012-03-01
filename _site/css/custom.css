@@ -1,0 +1,187 @@
+/*
+_______________________________
+Desktop version layout - place your custom code here */
+
+body {
+  background-color: #cacaca;
+  
+  }
+
+/* h1   site title 	default.html
+   h2   thumb titles	index.html
+   h3   post title	post.html
+   h4   post meta	post.html
+   h5   
+*/
+
+h3 {
+   text-align: left; 
+   font-size: 20px;
+   color: #000;
+}
+
+h4 {
+   text-align: left;
+   font-size: 13px;
+   color: #000;
+   font-weight: normal;
+   border-top: 1px solid #000;
+}
+
+h2 span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+h5 {
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
+}
+
+/* Central box for all main content */
+
+.mainbox {
+  margin: 0px auto;
+  color: #ECF2D9;
+  -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  }
+
+/* Front page thumb gallery */
+
+.thumbrow {
+  margin: 20px 0 20px 0;
+  display: inline-block;
+  }
+
+.nopadding {
+  padding:0px;
+  margin:0px auto;
+}
+
+/* Content box */
+
+.textbox {
+  text-align: justify;
+  color: #000;
+  }
+
+p {
+  padding: 15px;
+}
+
+.inside {
+  padding: 15px;
+  }
+
+/* This rule is read by Galleria to define the gallery height */
+
+#galleria { 
+  height:450px;
+  margin-top: 25px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;  
+  margin-bottom: 25px;
+  overflow:hidden;
+  }
+
+/* Header */
+
+.header,
+.footer {
+  background-image: url(../images/bar.png);
+  background-color: #202d41;
+  overflow:hidden;
+  }
+
+.header {
+  border-bottom: 3px solid #cecbc6;
+}
+
+.footer {
+  border-top: 3px solid #cecbc6;
+}
+
+.header h1 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 34px;
+  text-shadow: 0px 2px 2px #000; 
+  text-align: center;
+  line-height: 70px;
+  }
+
+.header a, 
+.header a:visited,
+.footer a,
+.footer a:visited {
+  text-decoration: none; 
+  color: #fff;
+  }
+
+.header a:hover,
+.footer a:hover {
+  color: #c0c0c0;
+  }
+
+#navcontainer li,
+#logocontainer li {
+  margin: 0px 5px 0px 5px;
+  padding: 0;
+  display: inline-block;
+  text-align:center;
+  line-height: 70px;
+  }
+
+#logocontainer img {
+  vertical-align: bottom;
+  display:inline-block;
+  }
+
+#navcontainer a:link,
+#navcontainer a:visited {
+  padding: 9px;
+  margin: 0px;
+  border: 1px solid #cecbc6;
+  color: #fff;
+  text-decoration: none;
+  font-family: georgia;
+  }
+
+#navcontainer a:hover {
+  color: #c0c0c0;
+  }
+
+/* __________________________________________
+Mobile version - preset code from cssgrid.net */
+
+@media handheld, only screen and (max-width: 767px) {
+
+body {
+}
+
+}
+
+/*
+_______________________________
+Provide higher res assets for iPhone 4 - preset code from cssgrid.net */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+	/* An example of how to override an image with one twice the size for iPhone 4. Specify the original pixel size with background-size.
+	.download {
+	background: url(../img/downarrow@2x.png) no-repeat;
+	background-size: 27px 28px;
+	}
+	*/
+
+}

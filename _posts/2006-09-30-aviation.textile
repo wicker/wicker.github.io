@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: It's all about the birds
+title:  
 tags: 
 - travels
 - flying
@@ -12,8 +12,9 @@ image: /images/thumbs/aviation.png
 location: Al Asad, Iraq
 purpose: photo
 year: 2006
+description: 
 userid: 117081002500022017940
 useralbum: AlAsadAviation
 ---
 
-test
+
