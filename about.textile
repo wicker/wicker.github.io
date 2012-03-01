@@ -3,7 +3,7 @@ title: About Wicker
 permalink: /about/
 layout: post
 type: headerpage
-description: About Jen Hanni, aka Wicker, grad student in computer engineering.
+description: About Jen Hanni, aka Wicker, grad student at Portland State in computer engineering.
 year: 2012
 location: Portland, Oregon
 ---
