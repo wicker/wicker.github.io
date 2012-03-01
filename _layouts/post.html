@@ -19,17 +19,7 @@ layout: default
     <div class="col_2">&nbsp;</div>
 
     <div class="col_8 textbox">
-       {% case page.purpose %}
-         {% when 'photo' %}
-         <div id="galleria">  </div>
-         <script>
-            Galleria.loadTheme('/galleria/themes/classic/galleria.twelve.min.js');
-            $('#galleria').galleria({
-            picasa: 'useralbum:{{ page.userid }}/{{ page.useralbum}}'
-            });
-         </script>
-       {% endcase %}
-       <div class="inside">{{ content }}</div>
+      <div class="inside">{{ content }}</div>
    </div>
    <div class="col_2 last">&nbsp;</div>
  </div><!-- end row -->
