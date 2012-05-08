@@ -3,8 +3,8 @@ _______________________________
 Desktop version layout - place your custom code here */
 
 body {
-  background-color: #cacaca;
-  
+  background-color: #fff;
+  color: #000; 
   }
 
 /* h1   site title 	default.html
@@ -48,7 +48,6 @@ h5 {
 
 .mainbox {
   margin: 0px auto;
-  color: #ECF2D9;
   -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
   padding: 50px;
@@ -70,7 +69,6 @@ h5 {
 
 .textbox {
   text-align: justify;
-  color: #000;
   }
 
 p {
