@@ -14,6 +14,14 @@ body {
    h5   
 */
 
+h1 {
+   text-align:center;
+}
+
+h2 {
+   text-align:left;
+}
+
 h3 {
    text-align: left; 
    font-size: 20px;
@@ -26,15 +34,6 @@ h4 {
    color: #000;
    font-weight: normal;
    border-top: 1px solid #000;
-}
-
-h2 span {
-   color: white;
-   font: bold 24px/45px Helvetica, Sans-Serif;
-   letter-spacing: -1px;
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px;
 }
 
 h5 {
