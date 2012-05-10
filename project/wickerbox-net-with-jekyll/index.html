@@ -143,114 +143,73 @@
 <p>&#8230; the free version of <a href="https://typekit.com/fonts">Typekit</a> to provide the title fonts over the web.</p>
 <p>I also used the <a href="http://www.picasaweb.google.com">Picasa Web Albums</a> albumid and userid to identify from which album to source images. This was all external so those albums had to be marked ‘public’ to be seen.</p>
 <p>The source files were collected as shown below. _folders are standard folders required by Jekyll. The _config.yml file ignores the drafts and scripts folder. Drafts/ contains unfinished posts with proper headers. Scripts contains the wickerbox script to update with one input line in a terminal with internet access.</p>
-<p><code>css/</p>
-<p>drafts/</p>
-<p>images/</p>
-<p>_layouts/</p>
-<p>_plugins/</p>
-<p>_posts/</p>
-<p>scripts/</p>
-<p>_site/</p>
-<p>The html files below are the main pages of the site that you see linked in the menu above.</p>
-<p>about.html<br />
-index.html<br />
-projects.html<br />
-travels.html<br />
-two-cats.html<br />
-writing.html</p>
-<p>The configuration file gives Jekyll its rules for the actual generation of the site files which are stored in _site.</p>
-<p>_config.yml</code></p>
+</notextile> 
+
+The html files below are the main pages of the site that you see linked in the menu above.
+
+<notextile><p>The configuration file gives Jekyll its rules for the actual generation of the site files which are stored in _site.</p>
+</notextile>
+
 <h2>Tags</h2>
-<p>I’m using a <a href=”http://recursive-design.com/projects/jekyll-plugins/”>Jekyll page tag generator</a> written by Dave Perrett which Just Works.</p>
-<h2><span class="caps">YAML</span> Header</h2>
-<p>All posts, no matter the type, contain the layout, title, tags, purpose, year, description, and location lines. Description is served up in the header as well as on social networking sites like Google Plus. The section pages collect their lists of posts by testing category.</p>
-<p>Photos additionally contain the albumid and userid of the associated Picasa album.</p>
-<p>Photo and project posts both contain an image tag which calls a thumbnail for display on travels.html and projects.html.</p>
-<p>Any post which contains explicitly sets comments:true will place a Disqus comment thread following the text and images of the post.</p>
-<p>- &#8211; -<br />
-layout: post<br />
-title: Making Wickerbox<br />
-category: project<br />
-tags:<br />
-- jekyll<br />
-- sites<br />
-- projects<br />
-purpose: project<br />
-year: 2012<br />
-description: Building Wickerbox as a dynamically-generated static site.<br />
-location: Portland, Oregon</p>
-<p>image: /images/thumbs/wickerbox.png</p>
-<p>userid: 117081002500022017940<br />
-useralbum: FlyingOshkosh030708</p>
-<p>comments: true<br />
-- &#8211; -</p>
-<h2>_config.yml</h2>
+
+I’m using a <a href=”http://recursive-design.com/projects/jekyll-plugins/”>Jekyll page tag generator</a> written by Dave Perrett which Just Works. 
+
+<h2>YAML Header</h2>
+
+All posts, no matter the type, contain the layout, title, tags, purpose, year, description, and location lines. Description is served up in the header as well as on social networking sites like Google Plus. The section pages collect their lists of posts by testing category.
+
+Photos additionally contain the albumid and userid of the associated Picasa album.
+
+Photo and project posts both contain an image tag which calls a thumbnail for display on travels.html and projects.html.
+
+Any post which contains explicitly sets comments:true will place a Disqus comment thread following the text and images of the post.
+
+<notextile><h2>_config.yml</h2>
 <p>This is a standard setup for Jekyll sites.</p>
 <p>I test updates locally by running jekyll &#8212;server in the base back-end directory. This applies all the posts to the layout files and puts the generated pages into _site, then serves up _site to a local webserver instance which can be viewed by entering http://localhost:4000/ into a browser.</p>
 <p>This allows for local fixes before pushing to Github. Typekit and Disqus do not display on my local server instance so I found it necessary to do some live testing.</p>
-<p>safe:        false<br />
-auto:        false<br />
-server:      false<br />
-server_port:     4000</p>
-<p>source:      .<br />
-destination:     ./<em>site<br />
-plugins:     ./</em>plugins</p>
-<p>future:      true<br />
-lsi:             false<br />
-pygments:    false<br />
-markdown:    liquid<br />
-permalink:       /:categories/:title</p>
-<p>title:           Wickerbox<br />
-description:     World travel photos, airplanes, avionics, rockets, robots, linux, and two cats.<br />
-base:        http://www.wickerbox.net/<br />
-author:      Jen &#8216;wicker&#8217; Hanni<br />
-email:       jeh.wicker@gmail.com</p>
-<p>disqus_id:       wickerbox</p>
-<p>exclude:     [drafts, endurance-days, _site, scripts]</p>
+</notextile>
+
 <h2>The idea behind the script</h2>
-<p>I’ve since put up a Gitolite instance on my own webserver but I haven’t got around to moving away from Github yet. I’m deeply in debt to Charlie Park for his <a href=”http://charliepark.org/jekyll-with-plugins/”>Jekyll with Plugins</a> approach that splits the frontend and backend into two separate directories and scripts the update.</p>
-<p>I created the two repositories on Github and keep a local copy of them both. The first, wicker.github.com.raw, contains all the files above. I write a new post and save it in _posts/. I test with jekyll &#8212;server and then (from any directory) I run ./wickerbox and pass a string that will be my git comment.</p>
-<p>I have two github repositories associated with the site<br />
-wicker.github.com.raw holds the backend files to put through jekyll<br />
-wicker.github.com holds the actual site pointed to by wickerbox.net</p>
-<p>This script may be run in any directory because <span class="caps">SRCDIR</span> and <span class="caps">PUSHDIR</span> are defined below.<br />
-It pushes to the backend repo, runs the jekyll gem, rsyncs the _site<br />
-output to the frontend directory, and pushes to the frontend repo.</p>
-<p>Pass a single argument enclosed in double quotes for the comment. For example:</p>
-<p><code>./wickerbox "Updated two-cats.html, testing the script."</code></p>
-<p>Warning; you must have _site/ specifically excluded in your $<span class="caps">SRCDIR</span><br />
+
+I’ve since put up a Gitolite instance on my own webserver but I haven’t got around to moving away from Github yet. I’m deeply in debt to Charlie Park for his <a href=”http://charliepark.org/jekyll-with-plugins/”>Jekyll with Plugins</a> approach that splits the frontend and backend into two separate directories and scripts the update.
+
+I created the two repositories on Github and keep a local copy of them both. The first, wicker.github.com.raw, contains all the files above. I write a new post and save it in _posts/. I test with jekyll --server and then (from any directory) I run ./wickerbox and pass a string that will be my git comment.
+
+I have two github repositories associated with the site
+wicker.github.com.raw holds the backend files to put through jekyll
+wicker.github.com holds the actual site pointed to by wickerbox.net
+
+This script may be run in any directory because SRCDIR and PUSHDIR are defined below.
+It pushes to the backend repo, runs the jekyll gem, rsyncs the _site
+output to the frontend directory, and pushes to the frontend repo.
+
+Pass a single argument enclosed in double quotes for the comment. For example:
+
+<notextile><p>Warning; you must have _site/ specifically excluded in your $<span class="caps">SRCDIR</span><br />
 _config.yml file or this will push the contents of _site to the your backend repo.</p>
 <h2>The script itself</h2>
-<p><code>SRCDIR=/home/wicker/proj/wicker.github.com.raw/</p>
-<p><span class="caps">PUSHDIR</span>=/home/wicker/proj/wicker.github.com/</code></p>
-<ol>
-	<li>Start in the backend directory</li>
-</ol>
-<p><code>cd $SRCDIR/</code></p>
-<ol>
+</notextile>
+
+# Start in the backend directory
+
+<notextile><ol>
 	<li>Add backend files, commit, push to backend Github repo</li>
 </ol>
-<p><code>git add -A</p>
-<p>git commit -m &#8220;$1&#8221;</p>
-<p>git push origin master</code></p>
-<ol>
-	<li>Once working files are done, use them to generate the site</li>
-</ol>
-<p><code>jekyll</code></p>
-<ol>
+</notextile>
+
+# Once working files are done, use them to generate the site
+
+<notextile><ol>
 	<li>Output of the rubygem is put into the _site directory</li>
 </ol>
-<p><code>cd $SRCDIR/_site/</code></p>
-<ol>
-	<li>Rsync the contents of the backend _site to the frontend directory</li>
-</ol>
-<p><code>rsync -avz . $PUSHDIR</p>
-<p>cd $<span class="caps">PUSHDIR</span></code></p>
-<p>Add new files, commit with message, push to frontend repo<br />
+</notextile>
+
+# Rsync the contents of the backend _site to the frontend directory
+
+<notextile><p>Add new files, commit with message, push to frontend repo<br />
 Github pages will send a note to you when they&#8217;ve built the new page.</p>
-<p><code>git add -A</p>
-<p>git commit -m &#8220;$1&#8221;</p>
-<p>git push origin master</code></p>
+<p></notextile></p>
 <h2>Further reading&#8230;</h2>
 <p>Jekyll was created by <a href=”https://github.com/mojombo/”>Tom Preston-Warner</a> at Github. The wiki for the project is useful, but I’d recommend starting at the <a href=”https://github.com/mojombo/jekyll/wiki/Sites”>Sites</a> page first to see the many, many varied implementations.</p>
 <p>Klepas has a nice <a href=”http://klepas.org/jekyll-a-static-site-generator/“>longer-form explanation</a> of how to get started.</p>
