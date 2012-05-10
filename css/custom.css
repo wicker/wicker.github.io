@@ -14,6 +14,11 @@ body {
    h5   
 */
 
+small {
+   font-family: courier;
+   font-size: 0.8em;
+}
+
 h1 {
    text-align:center;
 }
