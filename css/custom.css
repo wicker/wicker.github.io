@@ -86,14 +86,13 @@ p {
 /* This rule is read by Galleria to define the gallery height */
 
 #galleria { 
-  height:450px;
+  height: 450px;
   margin-top: 25px;
   border: 2px solid #000;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;  
   margin-bottom: 25px;
-  overflow:hidden;
   }
 
 /* Header */
@@ -102,7 +101,6 @@ p {
 .footer {
   background-image: url(../images/bar.png);
   background-color: #202d41;
-  overflow:hidden;
   }
 
 .header {
@@ -111,6 +109,7 @@ p {
 
 .footer {
   border-top: 3px solid #cecbc6;
+  text-align: center;
 }
 
 .header h1 {
@@ -169,6 +168,7 @@ Mobile version - preset code from cssgrid.net */
 @media handheld, only screen and (max-width: 767px) {
 
 body {
+  background-color: #fff;
 }
 
 }
