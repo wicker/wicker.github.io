@@ -59,6 +59,8 @@
         <script type="text/javascript" src="http://use.typekit.com/xvs6rfx.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+  
+
  	</head>
 <body>
 
@@ -115,7 +117,7 @@
        <div class="inside"><p>Wickerbox is a dynamically-generated static site served to you using Jekyll and Github Pages.</p>
 <p>Originally a place to store my travel photos so I could pass the link around to family and friends, Wickerbox didn’t become a proper portfolio until I realized much of my schoolwork at Portland State was already digital and therefore easy to display.</p>
 <p>Wickerbox is static in that it does not require a server-side database in order to serve up pages. I came from Wordpress using MySQL and <span class="caps">PHP</span> and wanted something simpler. (ha!) Also, I’m a big fan of git for revision control.</p>
-<h2>Requirements for the <span class="caps">YAML</span> header</h2>
+<h2>Requirements</h2>
 <p>Wickerbox will be&#8230;</p>
 <p>- a static site<br />
 - support tagged entries<br />
@@ -128,12 +130,14 @@
 <p>- contain a gallery box that will source photos from Picasa<br />
 - allow for text after the gallery box<br />
 - be collected on their own page<br />
-- be tagged</p>
+- be tagged<br />
+- have a very short descriptor for the travel page</p>
 <p>Project posts will</p>
 <p>- optionally contain a gallery to source photos from Picasa   <br />
 - support in-line photos sourced from images folder<br />
 - collected on their own page<br />
-- be tagged</p>
+- be tagged<br />
+- optionally call the MathJax script</p>
 <p>Writing posts will</p>
 <p>- not contain a gallery<br />
 - be text-only blog posts<br />
@@ -146,15 +150,14 @@
 <p>&#8230; the free version of <a href="https://typekit.com/fonts">Typekit</a> to provide the title fonts over the web.</p>
 <p>I also used the <a href="http://www.picasaweb.google.com">Picasa Web Albums</a> albumid and userid to identify from which album to source images. This was all external so those albums had to be marked ‘public’ to be seen.</p>
 <p>The source files were collected as shown below. _folders are standard folders required by Jekyll. The _config.yml file ignores the drafts and scripts folder. Drafts/ contains unfinished posts with proper headers. Scripts contains the wickerbox script to update with one input line in a terminal with internet access.</p>
-<p><small><br />
-css/</p>
-<p>drafts/</p>
-<p>images/</p>
-<p>_layouts/</p>
-<p>_plugins/</p>
-<p>_posts/</p>
-<p>scripts/</p>
-<p>_site/<br />
+<p><small>css/ <br />
+drafts/ <br />
+images/ <br />
+_layouts/ <br />
+_plugins/ <br />
+_posts/ <br />
+scripts/ <br />
+_site/<br />
 </small></p>
 <p>The html files below are the main pages of the site that you see linked in the menu above.</p>
 <p><small>about.html<br />
@@ -172,8 +175,7 @@ writing.html</small></p>
 <p>Photos additionally contain the albumid and userid of the associated Picasa album.</p>
 <p>Photo and project posts both contain an image tag which calls a thumbnail for display on travels.html and projects.html.</p>
 <p>Any post which contains explicitly sets comments:true will place a Disqus comment thread following the text and images of the post.</p>
-<p><small><br />
-- &#8211; -<br />
+<p><small>- &#8211; -<br />
 layout: post<br />
 title: Making Wickerbox<br />
 category: project<br />
@@ -194,8 +196,7 @@ useralbum: FlyingOshkosh030708</p>
 <p>This is a standard setup for Jekyll sites.</p>
 <p>I test updates locally by running jekyll &#8212;server in the base back-end directory. This applies all the posts to the layout files and puts the generated pages into _site, then serves up _site to a local webserver instance which can be viewed by entering http://localhost:4000/ into a browser.</p>
 <p>This allows for local fixes before pushing to Github. Typekit and Disqus do not display on my local server instance so I found it necessary to do some live testing.</p>
-<p><small><br />
-safe:        false<br />
+<p><small>safe:        false<br />
 auto:        false<br />
 server:      false<br />
 server_port:     4000</p>
@@ -210,7 +211,7 @@ permalink:       /:categories/:title</p>
 <p>title:           Wickerbox<br />
 description:     World travel photos, airplanes, avionics, rockets, robots, linux, and two cats.<br />
 base:        http://www.wickerbox.net/<br />
-author:      Jen &#8216;wicker&#8217; Hanni<br />
+author:      Jenner &#8216;wicker&#8217; Hanni<br />
 email:       jeh.wicker@gmail.com</p>
 <p>disqus_id:       wickerbox</p>
 <p>exclude:     [drafts, endurance-days, _site, scripts]<br />
@@ -229,8 +230,8 @@ output to the frontend directory, and pushes to the frontend repo.</p>
 <p>Warning; you must have _site/ specifically excluded in your $<span class="caps">SRCDIR</span><br />
 _config.yml file or this will push the contents of _site to the your backend repo.</p>
 <h2>The script itself</h2>
-<p><small><span class="caps">SRCDIR</span>=/home/wicker/proj/wicker.github.com.raw/</p>
-<p><span class="caps">PUSHDIR</span>=/home/wicker/proj/wicker.github.com/</small></p>
+<p><small><span class="caps">SRCDIR</span>=/home/wicker/proj/wicker.github.com.raw/<br />
+<span class="caps">PUSHDIR</span>=/home/wicker/proj/wicker.github.com/</small></p>
 <ol>
 	<li>Start in the backend directory</li>
 </ol>
@@ -238,9 +239,9 @@ _config.yml file or this will push the contents of _site to the your backend rep
 <ol>
 	<li>Add backend files, commit, push to backend Github repo</li>
 </ol>
-<p><small>git add -A</p>
-<p>git commit -m &#8220;$1&#8221;</p>
-<p>git push origin master</small></p>
+<p><small>git add -A<br />
+git commit -m &#8220;$1&#8221;<br />
+git push origin master</small></p>
 <ol>
 	<li>Once working files are done, use them to generate the site</li>
 </ol>
@@ -256,9 +257,9 @@ _config.yml file or this will push the contents of _site to the your backend rep
 <p>cd $<span class="caps">PUSHDIR</span></small></p>
 <p>Add new files, commit with message, push to frontend repo<br />
 Github pages will send a note to you when they&#8217;ve built the new page.</p>
-<p><small>git add -A</p>
-<p>git commit -m &#8220;$1&#8221;</p>
-<p>git push origin master</small></p>
+<p><small>git add -A<br />
+git commit -m &#8220;$1&#8221;<br />
+git push origin master</small></p>
 <h2>Further reading&#8230;</h2>
 <p>Jekyll was created by <a href=”https://github.com/mojombo/”>Tom Preston-Warner</a> at Github. The wiki for the project is useful, but I’d recommend starting at the <a href=”https://github.com/mojombo/jekyll/wiki/Sites”>Sites</a> page first to see the many, many varied implementations.</p>
 <p>Klepas has a nice <a href=”http://klepas.org/jekyll-a-static-site-generator/“>longer-form explanation</a> of how to get started.</p>
@@ -281,7 +282,7 @@ Github pages will send a note to you when they&#8217;ve built the new page.</p>
     <div class="row">
       <div class="col_12 last">
         <div style="padding: 10px;">
-          &nbsp; &nbsp; <a href="/tags/arizona/" title="Pages tagged arizona" style="font-size: 177%" rel=\"tag\">arizona</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/australia/" title="Pages tagged australia" style="font-size: 116%" rel=\"tag\">australia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/bosnia/" title="Pages tagged bosnia" style="font-size: 100%" rel=\"tag\">bosnia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/botanical/" title="Pages tagged botanical" style="font-size: 126%" rel=\"tag\">botanical</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/california/" title="Pages tagged california" style="font-size: 142%" rel=\"tag\">california</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/code/" title="Pages tagged code" style="font-size: 100%" rel=\"tag\">code</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/colorado/" title="Pages tagged colorado" style="font-size: 138%" rel=\"tag\">colorado</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/croatia/" title="Pages tagged croatia" style="font-size: 100%" rel=\"tag\">croatia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/desert/" title="Pages tagged desert" style="font-size: 175%" rel=\"tag\">desert</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/endurance-days/" title="Pages tagged endurance days" style="font-size: 154%" rel=\"tag\">endurance days</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/england/" title="Pages tagged england" style="font-size: 116%" rel=\"tag\">england</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/flying/" title="Pages tagged flying" style="font-size: 175%" rel=\"tag\">flying</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/geology/" title="Pages tagged geology" style="font-size: 149%" rel=\"tag\">geology</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hardware/" title="Pages tagged hardware" style="font-size: 126%" rel=\"tag\">hardware</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hiking/" title="Pages tagged hiking" style="font-size: 165%" rel=\"tag\">hiking</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/historic/" title="Pages tagged historic" style="font-size: 154%" rel=\"tag\">historic</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/iraq/" title="Pages tagged iraq" style="font-size: 138%" rel=\"tag\">iraq</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/jekyll/" title="Pages tagged jekyll" style="font-size: 100%" rel=\"tag\">jekyll</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/marine-corps/" title="Pages tagged marine corps" style="font-size: 156%" rel=\"tag\">marine corps</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/nevada/" title="Pages tagged nevada" style="font-size: 116%" rel=\"tag\">nevada</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ninety-nines/" title="Pages tagged ninety-nines" style="font-size: 100%" rel=\"tag\">ninety-nines</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/norway/" title="Pages tagged norway" style="font-size: 100%" rel=\"tag\">norway</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ocean/" title="Pages tagged ocean" style="font-size: 142%" rel=\"tag\">ocean</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/oregon/" title="Pages tagged oregon" style="font-size: 154%" rel=\"tag\">oregon</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/phoenix/" title="Pages tagged phoenix" style="font-size: 116%" rel=\"tag\">phoenix</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/projects/" title="Pages tagged projects" style="font-size: 156%" rel=\"tag\">projects</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/robots/" title="Pages tagged robots" style="font-size: 133%" rel=\"tag\">robots</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/rockets/" title="Pages tagged rockets" style="font-size: 100%" rel=\"tag\">rockets</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/singapore/" title="Pages tagged singapore" style="font-size: 100%" rel=\"tag\">singapore</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sites/" title="Pages tagged sites" style="font-size: 100%" rel=\"tag\">sites</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/slovenia/" title="Pages tagged slovenia" style="font-size: 100%" rel=\"tag\">slovenia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/solar-system/" title="Pages tagged solar system" style="font-size: 100%" rel=\"tag\">solar system</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sonora/" title="Pages tagged sonora" style="font-size: 116%" rel=\"tag\">sonora</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sweden/" title="Pages tagged sweden" style="font-size: 100%" rel=\"tag\">sweden</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/switzerland/" title="Pages tagged switzerland" style="font-size: 126%" rel=\"tag\">switzerland</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tortoise/" title="Pages tagged tortoise" style="font-size: 100%" rel=\"tag\">tortoise</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/trains/" title="Pages tagged trains" style="font-size: 116%" rel=\"tag\">trains</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/travels/" title="Pages tagged travels" style="font-size: 200%" rel=\"tag\">travels</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tucson/" title="Pages tagged tucson" style="font-size: 100%" rel=\"tag\">tucson</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/turkey/" title="Pages tagged turkey" style="font-size: 156%" rel=\"tag\">turkey</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/utah/" title="Pages tagged utah" style="font-size: 133%" rel=\"tag\">utah</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/washington/" title="Pages tagged washington" style="font-size: 100%" rel=\"tag\">washington</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/water/" title="Pages tagged water" style="font-size: 100%" rel=\"tag\">water</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/wildlife/" title="Pages tagged wildlife" style="font-size: 126%" rel=\"tag\">wildlife</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/yuma/" title="Pages tagged yuma" style="font-size: 149%" rel=\"tag\">yuma</a> &nbsp; &nbsp;
+          &nbsp; &nbsp; <a href="/tags/arizona/" title="Pages tagged arizona" style="font-size: 176%" rel=\"tag\">arizona</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/australia/" title="Pages tagged australia" style="font-size: 116%" rel=\"tag\">australia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/avt/" title="Pages tagged avt" style="font-size: 100%" rel=\"tag\">avt</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/boards/" title="Pages tagged boards" style="font-size: 100%" rel=\"tag\">boards</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/bosnia/" title="Pages tagged bosnia" style="font-size: 100%" rel=\"tag\">bosnia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/botanical/" title="Pages tagged botanical" style="font-size: 126%" rel=\"tag\">botanical</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/california/" title="Pages tagged california" style="font-size: 142%" rel=\"tag\">california</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/code/" title="Pages tagged code" style="font-size: 100%" rel=\"tag\">code</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/colorado/" title="Pages tagged colorado" style="font-size: 138%" rel=\"tag\">colorado</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/croatia/" title="Pages tagged croatia" style="font-size: 100%" rel=\"tag\">croatia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/desert/" title="Pages tagged desert" style="font-size: 175%" rel=\"tag\">desert</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/endurance-days/" title="Pages tagged endurance days" style="font-size: 154%" rel=\"tag\">endurance days</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/england/" title="Pages tagged england" style="font-size: 116%" rel=\"tag\">england</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/flying/" title="Pages tagged flying" style="font-size: 175%" rel=\"tag\">flying</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/geology/" title="Pages tagged geology" style="font-size: 149%" rel=\"tag\">geology</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hardware/" title="Pages tagged hardware" style="font-size: 126%" rel=\"tag\">hardware</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hiking/" title="Pages tagged hiking" style="font-size: 166%" rel=\"tag\">hiking</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/historic/" title="Pages tagged historic" style="font-size: 154%" rel=\"tag\">historic</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/iraq/" title="Pages tagged iraq" style="font-size: 138%" rel=\"tag\">iraq</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/jekyll/" title="Pages tagged jekyll" style="font-size: 100%" rel=\"tag\">jekyll</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/marine-corps/" title="Pages tagged marine corps" style="font-size: 156%" rel=\"tag\">marine corps</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/nevada/" title="Pages tagged nevada" style="font-size: 116%" rel=\"tag\">nevada</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ninety-nines/" title="Pages tagged ninety-nines" style="font-size: 100%" rel=\"tag\">ninety-nines</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/norway/" title="Pages tagged norway" style="font-size: 100%" rel=\"tag\">norway</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ocean/" title="Pages tagged ocean" style="font-size: 142%" rel=\"tag\">ocean</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/oregon/" title="Pages tagged oregon" style="font-size: 156%" rel=\"tag\">oregon</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/phoenix/" title="Pages tagged phoenix" style="font-size: 116%" rel=\"tag\">phoenix</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/projects/" title="Pages tagged projects" style="font-size: 158%" rel=\"tag\">projects</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/quadcopter/" title="Pages tagged quadcopter" style="font-size: 100%" rel=\"tag\">quadcopter</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/robots/" title="Pages tagged robots" style="font-size: 133%" rel=\"tag\">robots</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/rockets/" title="Pages tagged rockets" style="font-size: 100%" rel=\"tag\">rockets</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/singapore/" title="Pages tagged singapore" style="font-size: 100%" rel=\"tag\">singapore</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sites/" title="Pages tagged sites" style="font-size: 100%" rel=\"tag\">sites</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/slovenia/" title="Pages tagged slovenia" style="font-size: 100%" rel=\"tag\">slovenia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/solar-system/" title="Pages tagged solar system" style="font-size: 100%" rel=\"tag\">solar system</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sonora/" title="Pages tagged sonora" style="font-size: 116%" rel=\"tag\">sonora</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sweden/" title="Pages tagged sweden" style="font-size: 100%" rel=\"tag\">sweden</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/switzerland/" title="Pages tagged switzerland" style="font-size: 126%" rel=\"tag\">switzerland</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tortoise/" title="Pages tagged tortoise" style="font-size: 100%" rel=\"tag\">tortoise</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/trains/" title="Pages tagged trains" style="font-size: 116%" rel=\"tag\">trains</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/travels/" title="Pages tagged travels" style="font-size: 200%" rel=\"tag\">travels</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tucson/" title="Pages tagged tucson" style="font-size: 100%" rel=\"tag\">tucson</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/turkey/" title="Pages tagged turkey" style="font-size: 156%" rel=\"tag\">turkey</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/utah/" title="Pages tagged utah" style="font-size: 133%" rel=\"tag\">utah</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/washington/" title="Pages tagged washington" style="font-size: 100%" rel=\"tag\">washington</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/water/" title="Pages tagged water" style="font-size: 100%" rel=\"tag\">water</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/wildlife/" title="Pages tagged wildlife" style="font-size: 126%" rel=\"tag\">wildlife</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/yuma/" title="Pages tagged yuma" style="font-size: 149%" rel=\"tag\">yuma</a> &nbsp; &nbsp;
         </div>
       </div>
     </div>
