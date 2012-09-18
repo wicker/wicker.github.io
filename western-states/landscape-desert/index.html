@@ -49,11 +49,14 @@
   <!-- load jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-  <!-- load Galleria -->
-	<script src="/galleria/galleria-1.2.7.min.js"></script>
+  <!-- PWI Scripts and CSS -->
+        <link href="/pwi/css/pwi.css" rel="stylesheet" type="text/css"/>
+	<link href="/pwi/js/jquery.fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+	<link href="/pwi/js/jquery.fancybox/helpers/jquery.fancybox-buttons.css?v=2.0.5" rel="stylesheet" type="text/css"/>
 
-  <!-- load Picasa plugin for Galleria -->
-        <script src="/galleria/plugins/galleria.picasa.min.js"></script>
+	<script src="/pwi/js/jquery.pwi.js" type="text/javascript"></script>
+	<script src="/pwi/js/jquery.fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script src="/pwi/js/jquery.fancybox/helpers/jquery.fancybox-buttons.js?v=2.0.5" type="text/javascript"></script>
 
   <!-- Typekit --> 
         <script type="text/javascript" src="http://use.typekit.com/xvs6rfx.js"></script>
@@ -61,7 +64,8 @@
 
   
 
- 	</head>
+</head>
+
 <body>
 
 <div class="container header">
@@ -90,45 +94,63 @@
       </ul>
     </div>
   </div>
-</div><!--class="container" -->
+</div>
 
 <div style="text-align:center;">
 
 <div class="container">
 
-  <div class="row">
-    <div class="col_2">&nbsp;</div>
-    <div class="col_8">
-      <h3>Deserts of the World</h3>
-      <h4>2006-2011, The World. A selection of my deserts. More to come.</h4>
-    </div>
-    <div class="col_2 last">&nbsp;</div>
-  </div>
+  
+    <div class="row">
 
-  <div class="row">
+      <div class="col_5 textbox">
+        <h3>Deserts of the World</h3>
+        <h4 style="text-align:center;">2006-2011 ~ The World</h4>
+        <h4 style="text-align:justify;">A selection of my deserts. More to come.</h4>
+        <div class="inside"><p>I&#8217;m from lush old growth forests full of ferns but I fell in love with fairydusters and ocotillo and the wide open expanse of the desert. Good flying weather and you can see where you&#8217;re going. These are from North America and the Middle East.</p></div>
 
-    <div class="col_12 textbox">
-       
-         <div id="galleria"> </div>
-         <script>
-            Galleria.loadTheme('/galleria/themes/classic/galleria.twelve.min.js');
-            $('#galleria').galleria({
-            picasa: 'useralbum:117081002500022017940/DesertsOfTheWorld',
-            imageCrop: false,
-            responsive: true,
-            showInfo: true,
-            });
+        <div id="disqus_thread"></div>
+	    <script type="text/javascript">
+	    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	    var disqus_shortname = 'wickerbox'; 
 
-         </script>
-       
+	    /* * * DON'T EDIT BELOW THIS LINE * * */
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	    </script>
 
-      <br /><br />
-     <div class="inside"><p>I&#8217;m from lush old growth forests full of ferns but I fell in love with fairydusters and ocotillo and the wide open expanse of the desert. Good flying weather and you can see where you&#8217;re going. These are from North America and the Middle East.</p></div>
+	    <noscript>
+		Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+	    </noscript>
+      </div>
 
-   </div>
- </div><!-- end row -->
+      <div class="col_7 textbox last">
+        <div class="pwi" style="margin: 15px auto;"> </div>
+        <script type="text/javascript">
+	  $(document).ready(function() {
+	    $(".pwi").pwi({  
+	      username: '117081002500022017940',
+	      mode: 'album',
+	      album: 'DesertsOfTheWorld',
+	      showAlbumDescription: false,
+	      showAlbumPhotoCount: false,
+	      showAlbumLocation: false,
+	      showPhotoCaption: false,
+	      maxResults: '9999',
+	      thumbSize: '200',
+	      thumbAlign: true,
+	     });
+	   });
+	</script>
+      </div>
 
- 
+    </div><!-- end row -->
+  
+
+  
     <div class="row">
 
       <div class="col_3">&nbsp;</div>
@@ -145,7 +167,10 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <noscript>
+        Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
 
      <div class="col_3 last">&nbsp;</div>
    </div><!-- end row -->
@@ -161,8 +186,8 @@
   <div class="container footer">
     <div class="row">
       <div class="col_12 last">
-        <div style="padding: 10px;">
-          &nbsp; &nbsp; <a href="/tags/arizona/" title="Pages tagged arizona" style="font-size: 176%" rel=\"tag\">arizona</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/australia/" title="Pages tagged australia" style="font-size: 116%" rel=\"tag\">australia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/avt/" title="Pages tagged avt" style="font-size: 100%" rel=\"tag\">avt</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/boards/" title="Pages tagged boards" style="font-size: 100%" rel=\"tag\">boards</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/bosnia/" title="Pages tagged bosnia" style="font-size: 100%" rel=\"tag\">bosnia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/botanical/" title="Pages tagged botanical" style="font-size: 126%" rel=\"tag\">botanical</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/c/" title="Pages tagged c" style="font-size: 100%" rel=\"tag\">c</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/california/" title="Pages tagged california" style="font-size: 142%" rel=\"tag\">california</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/code/" title="Pages tagged code" style="font-size: 116%" rel=\"tag\">code</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/colorado/" title="Pages tagged colorado" style="font-size: 138%" rel=\"tag\">colorado</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/croatia/" title="Pages tagged croatia" style="font-size: 100%" rel=\"tag\">croatia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/desert/" title="Pages tagged desert" style="font-size: 175%" rel=\"tag\">desert</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/endurance-days/" title="Pages tagged endurance days" style="font-size: 154%" rel=\"tag\">endurance days</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/england/" title="Pages tagged england" style="font-size: 116%" rel=\"tag\">england</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/flying/" title="Pages tagged flying" style="font-size: 175%" rel=\"tag\">flying</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/geology/" title="Pages tagged geology" style="font-size: 149%" rel=\"tag\">geology</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hardware/" title="Pages tagged hardware" style="font-size: 126%" rel=\"tag\">hardware</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hiking/" title="Pages tagged hiking" style="font-size: 166%" rel=\"tag\">hiking</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/historic/" title="Pages tagged historic" style="font-size: 154%" rel=\"tag\">historic</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/iraq/" title="Pages tagged iraq" style="font-size: 138%" rel=\"tag\">iraq</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/jekyll/" title="Pages tagged jekyll" style="font-size: 100%" rel=\"tag\">jekyll</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/marine-corps/" title="Pages tagged marine corps" style="font-size: 156%" rel=\"tag\">marine corps</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/nevada/" title="Pages tagged nevada" style="font-size: 116%" rel=\"tag\">nevada</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ninety-nines/" title="Pages tagged ninety-nines" style="font-size: 100%" rel=\"tag\">ninety-nines</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/norway/" title="Pages tagged norway" style="font-size: 100%" rel=\"tag\">norway</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ocean/" title="Pages tagged ocean" style="font-size: 142%" rel=\"tag\">ocean</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/oregon/" title="Pages tagged oregon" style="font-size: 156%" rel=\"tag\">oregon</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/phoenix/" title="Pages tagged phoenix" style="font-size: 116%" rel=\"tag\">phoenix</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/projects/" title="Pages tagged projects" style="font-size: 162%" rel=\"tag\">projects</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/quadcopter/" title="Pages tagged quadcopter" style="font-size: 100%" rel=\"tag\">quadcopter</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/robots/" title="Pages tagged robots" style="font-size: 133%" rel=\"tag\">robots</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/rockets/" title="Pages tagged rockets" style="font-size: 100%" rel=\"tag\">rockets</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/singapore/" title="Pages tagged singapore" style="font-size: 100%" rel=\"tag\">singapore</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sites/" title="Pages tagged sites" style="font-size: 100%" rel=\"tag\">sites</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/slovenia/" title="Pages tagged slovenia" style="font-size: 100%" rel=\"tag\">slovenia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/solar-system/" title="Pages tagged solar system" style="font-size: 100%" rel=\"tag\">solar system</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sonora/" title="Pages tagged sonora" style="font-size: 116%" rel=\"tag\">sonora</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sweden/" title="Pages tagged sweden" style="font-size: 100%" rel=\"tag\">sweden</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/switzerland/" title="Pages tagged switzerland" style="font-size: 126%" rel=\"tag\">switzerland</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tortoise/" title="Pages tagged tortoise" style="font-size: 100%" rel=\"tag\">tortoise</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/trains/" title="Pages tagged trains" style="font-size: 116%" rel=\"tag\">trains</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/travels/" title="Pages tagged travels" style="font-size: 200%" rel=\"tag\">travels</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tucson/" title="Pages tagged tucson" style="font-size: 100%" rel=\"tag\">tucson</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/turkey/" title="Pages tagged turkey" style="font-size: 156%" rel=\"tag\">turkey</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/utah/" title="Pages tagged utah" style="font-size: 133%" rel=\"tag\">utah</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/washington/" title="Pages tagged washington" style="font-size: 100%" rel=\"tag\">washington</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/water/" title="Pages tagged water" style="font-size: 100%" rel=\"tag\">water</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/wildlife/" title="Pages tagged wildlife" style="font-size: 126%" rel=\"tag\">wildlife</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/yuma/" title="Pages tagged yuma" style="font-size: 149%" rel=\"tag\">yuma</a> &nbsp; &nbsp;
+        <div style="padding: 10px 25px 10px 25px;">
+          &nbsp; &nbsp; <a href="/tags/arizona/" title="Pages tagged arizona" style="font-size: 176%" rel=\"tag\">arizona</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/australia/" title="Pages tagged australia" style="font-size: 116%" rel=\"tag\">australia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/avt/" title="Pages tagged avt" style="font-size: 100%" rel=\"tag\">avt</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/boards/" title="Pages tagged boards" style="font-size: 100%" rel=\"tag\">boards</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/bosnia/" title="Pages tagged bosnia" style="font-size: 100%" rel=\"tag\">bosnia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/botanical/" title="Pages tagged botanical" style="font-size: 126%" rel=\"tag\">botanical</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/c/" title="Pages tagged c" style="font-size: 100%" rel=\"tag\">c</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/california/" title="Pages tagged california" style="font-size: 142%" rel=\"tag\">california</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/code/" title="Pages tagged code" style="font-size: 116%" rel=\"tag\">code</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/colorado/" title="Pages tagged colorado" style="font-size: 138%" rel=\"tag\">colorado</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/croatia/" title="Pages tagged croatia" style="font-size: 100%" rel=\"tag\">croatia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/desert/" title="Pages tagged desert" style="font-size: 174%" rel=\"tag\">desert</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/endurance-days/" title="Pages tagged endurance days" style="font-size: 154%" rel=\"tag\">endurance days</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/england/" title="Pages tagged england" style="font-size: 116%" rel=\"tag\">england</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/flying/" title="Pages tagged flying" style="font-size: 174%" rel=\"tag\">flying</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/geology/" title="Pages tagged geology" style="font-size: 151%" rel=\"tag\">geology</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hardware/" title="Pages tagged hardware" style="font-size: 126%" rel=\"tag\">hardware</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hiking/" title="Pages tagged hiking" style="font-size: 168%" rel=\"tag\">hiking</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/historic/" title="Pages tagged historic" style="font-size: 154%" rel=\"tag\">historic</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/iraq/" title="Pages tagged iraq" style="font-size: 138%" rel=\"tag\">iraq</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/jekyll/" title="Pages tagged jekyll" style="font-size: 100%" rel=\"tag\">jekyll</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/marine-corps/" title="Pages tagged marine corps" style="font-size: 156%" rel=\"tag\">marine corps</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/nevada/" title="Pages tagged nevada" style="font-size: 116%" rel=\"tag\">nevada</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ninety-nines/" title="Pages tagged ninety-nines" style="font-size: 100%" rel=\"tag\">ninety-nines</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/norway/" title="Pages tagged norway" style="font-size: 100%" rel=\"tag\">norway</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ocean/" title="Pages tagged ocean" style="font-size: 142%" rel=\"tag\">ocean</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/oregon/" title="Pages tagged oregon" style="font-size: 158%" rel=\"tag\">oregon</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/phoenix/" title="Pages tagged phoenix" style="font-size: 116%" rel=\"tag\">phoenix</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/projects/" title="Pages tagged projects" style="font-size: 162%" rel=\"tag\">projects</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/quadcopter/" title="Pages tagged quadcopter" style="font-size: 100%" rel=\"tag\">quadcopter</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/robots/" title="Pages tagged robots" style="font-size: 132%" rel=\"tag\">robots</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/rockets/" title="Pages tagged rockets" style="font-size: 100%" rel=\"tag\">rockets</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/singapore/" title="Pages tagged singapore" style="font-size: 100%" rel=\"tag\">singapore</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sites/" title="Pages tagged sites" style="font-size: 100%" rel=\"tag\">sites</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/slovenia/" title="Pages tagged slovenia" style="font-size: 100%" rel=\"tag\">slovenia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/solar-system/" title="Pages tagged solar system" style="font-size: 100%" rel=\"tag\">solar system</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sonora/" title="Pages tagged sonora" style="font-size: 116%" rel=\"tag\">sonora</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sweden/" title="Pages tagged sweden" style="font-size: 100%" rel=\"tag\">sweden</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/switzerland/" title="Pages tagged switzerland" style="font-size: 126%" rel=\"tag\">switzerland</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tortoise/" title="Pages tagged tortoise" style="font-size: 100%" rel=\"tag\">tortoise</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/trains/" title="Pages tagged trains" style="font-size: 116%" rel=\"tag\">trains</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/travels/" title="Pages tagged travels" style="font-size: 200%" rel=\"tag\">travels</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tucson/" title="Pages tagged tucson" style="font-size: 100%" rel=\"tag\">tucson</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/turkey/" title="Pages tagged turkey" style="font-size: 156%" rel=\"tag\">turkey</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/utah/" title="Pages tagged utah" style="font-size: 132%" rel=\"tag\">utah</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/washington/" title="Pages tagged washington" style="font-size: 100%" rel=\"tag\">washington</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/water/" title="Pages tagged water" style="font-size: 100%" rel=\"tag\">water</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/wildlife/" title="Pages tagged wildlife" style="font-size: 126%" rel=\"tag\">wildlife</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/yuma/" title="Pages tagged yuma" style="font-size: 149%" rel=\"tag\">yuma</a> &nbsp; &nbsp;
         </div>
       </div>
     </div>
@@ -171,7 +196,8 @@
 
 </div>
 
-<script type="text/javascript">
+
+  <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'wickerbox'; 
 
@@ -182,7 +208,8 @@
         s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
-</script>
+  </script>
+
 
 </body>
 </html>

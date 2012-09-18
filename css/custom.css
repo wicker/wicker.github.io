@@ -48,6 +48,22 @@ h5 {
    width: 100%;
 }
 
+/* Body Links */
+
+a, 
+a:visited,
+a,
+a:visited {
+  text-decoration: none; 
+  color: #1B3F8B;
+  }
+
+.a:hover,
+.a:hover {
+  color: #174038;
+  }
+
+
 /* Central box for all main content */
 
 .mainbox {
