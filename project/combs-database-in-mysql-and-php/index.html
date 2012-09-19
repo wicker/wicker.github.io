@@ -102,12 +102,17 @@
 
     <div class="row">
 
-  
+    <!-- This is probably a project page -->
 
-    <div class="col_12 last textbox">
+    <div class="col_3 textbox">
         <h3>Catacombs Database</h3>
         <h4 style="text-align:center;">2012 ~ Portland State University</h4>
-        <h4 style="text-align:justify;">Building a database to track claimed servers.</h4>
+          <div style="text-align:center; margin: 0 auto; width:100%;">
+          <img src="/images/thumbs/combsdb.png" style="border: 3px solid #000; margin: 0 auto; text-align:center; width: 100px; height: 75px; margin: 10px;" />
+          </div>
+    </div>
+
+    <div class="col_9 textbox last">
         <div class="inside"><p>The Computer Action Team at Portland State runs an annual sysadmin training program that includes four hours weekly help desk duty, four hours weekly Friday night lectures, and tiered access to actual college servers. The CATacombs are a training room full of servers where new CATs select a box and start familiarizing themselves with services by installing them from scratch.</p>
 <p>Students have the choice of Windows or Unix/Linux. With upwards of seventy people in an annual program, the catacombs can be a confusing and complicated place to keep track of. Boxes are frequently abandoned as students move on to bigger and better things. The combs database is a MySQL db with a <span class="caps">PHP</span> web interface to help the combs denizens organize themselves.</p>
 <p>I hosted the database on my own server instance because the catacombs are always in flux and boxes are constantly reloaded. I got together with the current combs elf to figure out how best to complement the documentation being written for 2012&#8217;s combs group and came away with a few requirements.</p>

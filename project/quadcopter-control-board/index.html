@@ -102,13 +102,18 @@
 
     <div class="row">
 
-  
+    <!-- This is probably a project page -->
 
-    <div class="col_12 last textbox">
+    <div class="col_3 textbox">
         <h3>Quadcopter Control Board</h3>
         <h4 style="text-align:center;">2012 ~ Portland State University</h4>
-        <h4 style="text-align:justify;">Design, board layout, and testing of a control board.</h4>
-        <div class="inside"><p>I was responsible for designing and laying out the control board for an autonomous quadcopter built by the <a href="http://psu-avt.github.com">Portland State Autonomous Vehicles Team</a>. I’ve wanted to write about the process and collect some lessons learned.</p>
+          <div style="text-align:center; margin: 0 auto; width:100%;">
+          <img src="/images/thumbs/quadcoptercontrol.png" style="border: 3px solid #000; margin: 0 auto; text-align:center; width: 100px; height: 75px; margin: 10px;" />
+          </div>
+    </div>
+
+    <div class="col_9 textbox last">
+        <div class="inside"><p>I was responsible for designing and laying out the control board for an autonomous quadcopter built by the <a href="http://psu-avt.github.com">Portland State Autonomous Vehicles Team</a>.</p>
 <p>Final schema, layout, and Gerber files are available <a href="http://github.com/wicker/Quadcopter-Control-Board">at my Github</a>.</p>
 <h2>Board Specs</h2>
 <p>I used the standard version of Eagle to create a four-layer board with internal ground and power planes. The board carries an LPC1343 microprocessor which takes input from an onboard sensor stick containing accelerometer, compass, and gyro chips. After some sensor fusion and optionally in response to joystick input, the board provides <span class="caps">PWM</span> signals to four brushless DC motor controllers at a rate of 200Hz.</p>

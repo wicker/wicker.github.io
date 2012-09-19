@@ -102,12 +102,17 @@
 
     <div class="row">
 
-  
+    <!-- This is probably a project page -->
 
-    <div class="col_12 last textbox">
+    <div class="col_3 textbox">
         <h3>L2 Cache Simulator</h3>
         <h4 style="text-align:center;">2012 ~ Portland State University</h4>
-        <h4 style="text-align:justify;">Simulates a set associative, write-allocate, MESI L2 cache.</h4>
+          <div style="text-align:center; margin: 0 auto; width:100%;">
+          <img src="/images/thumbs/l2cache.png" style="border: 3px solid #000; margin: 0 auto; text-align:center; width: 100px; height: 75px; margin: 10px;" />
+          </div>
+    </div>
+
+    <div class="col_9 textbox last">
         <div class="inside"><p>Our term project for the microprocessor system design course at Portland State in the Fall 2011 quarter was to write a small program in Verilog, C, or C++ to simulate (not synthesize) the behavior of a write-allocate, <span class="caps">MESI</span> protocol, four-way set associative L2 cache with 4K lines of 64 bytes data each.</p>
 <p>We successfully wrote our program in C and passed the course. Having written most of the code myself, I could see a lot of areas where I could improve it and so, with permission from my partners, I rewrote the code over winter break to be easily extensible to different sizes and set associativities of cache. I shrunk the program from 646 lines to 377 lines, cutting it by 42%, and made it much cleaner and easier to follow. The sample input and output are at the bottom, and all the files (and commit history) are available at my <a href="http://github.com/wicker/l2cache/">GitHub repository</a> under the <span class="caps">MIT</span> license.</p>
 <h2>Background</h2>
