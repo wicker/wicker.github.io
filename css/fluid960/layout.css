@@ -24,6 +24,8 @@ img {max-width: 100%;}
 
 .hidden: { display: none; visibility: hidden }
 
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
 /* headings
 ----------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {line-height:1.2em; margin-bottom:.3em;}
