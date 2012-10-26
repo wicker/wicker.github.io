@@ -3,7 +3,8 @@ _______________________________
 Desktop version layout - place your custom code here */
 
 body {
-  background-color: #fff;
+  background-image: url(../images/bar.png);
+  background-color: #202d41;
   color: #000; 
   }
 
@@ -65,6 +66,12 @@ a:visited {
 
 
 /* Central box for all main content */
+
+.content {
+  background-color: #fff;
+  border: #000 solid 3px;
+  padding: 20px;
+}
 
 .mainbox {
   margin: 0px auto;
@@ -134,10 +141,6 @@ p {
   background-image: url(../images/bar.png);
   background-color: #202d41;
   }
-
-.header {
-  border-bottom: 3px solid #cecbc6;
-}
 
 .footer {
   margin-top: 10px;

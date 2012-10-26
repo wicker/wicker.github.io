@@ -8,7 +8,7 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
   <meta charset="utf-8">
-  <meta name="author" content="Jen Hanni">
+  <meta name="author" content="Jenner Hanni">
 
   
     <title>Somerton Airport | Wickerbox</title>
@@ -16,28 +16,24 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <!-- The Columnal Grid (1140px wide base, load first), Type and image presets, and mobile stylesheet -->
-        <link rel="stylesheet" href="/css/columnal.css" type="text/css" media="screen" />
+<script>
+$(function() {
+  $("#gallery-nav").tabs();
+});
+</script>
 
-  <!-- Fixes for IE -->
-        <!--[if lt IE 9]>
-        <link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" />
-        <![endif]-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 
-  <!-- use "fixed-984px-ie.css" or "fixed-960px-ie.css for a 984px or 960px fixed width for IE6 and 7 -->
-        <!--[if lte IE 7]>
-        <link rel="stylesheet" href="/css/fixed-984px-ie.css" type="text/css" media="screen" />
-        <![endif]-->
-
-  <!-- Fixes for IE6, only needed if IE 6 will be supported - width must match 984px or 960px of css file used above -->
-  <!-- Use .imagescale to fix IE6 issues with full-column width images (class must be added to any image wider than the column it is placed into) -->
-        <!--[if lte IE 6]>
-        <link rel="stylesheet" href="/css/ie6-984px.css" type="text/css" media="screen" />
-        <![endif]-->
-  <!-- End fixes for IE -->
-
-  <!-- Customizations here --> 
-       <link rel="stylesheet" href="/css/custom.css" type="text/css" media="screen" />
+  <!-- Fluid 960 Grid System -->
+  <link rel="stylesheet" type="text/css" href="/css/fluid960/reset.css" />
+  <link rel="stylesheet" type="text/css" href="/css/fluid960/text.css" />
+  <link rel="stylesheet" type="text/css" href="/css/fluid960/grid.css" />
+  <link rel="stylesheet" type="text/css" href="/css/fluid960/layout.css" />
+  <link rel="stylesheet" type="text/css" href="/css/fluid960/nav.css" />
+  <!--[if IE 6]><link rel="stylesheet" type="text/css" href="/css/fluid960/ie6.css" /><![endif]-->
+  <!--[if IE 7]><link rel="stylesheet" type="text/css" href="/css/fluid960/ie.css" /><![endif]-->
 
   <!-- Properties -->
        <meta property="og:site_name" content="Wickerbox"/>
@@ -49,6 +45,11 @@
   <!-- load jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
+  <!-- Typekit --> 
+        <script type="text/javascript" src="http://use.typekit.com/xvs6rfx.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  
   <!-- PWI Scripts and CSS -->
         <link href="/pwi/css/pwi.css" rel="stylesheet" type="text/css"/>
 	<link href="/pwi/js/jquery.fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
@@ -57,10 +58,7 @@
 	<script src="/pwi/js/jquery.pwi.js" type="text/javascript"></script>
 	<script src="/pwi/js/jquery.fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
 	<script src="/pwi/js/jquery.fancybox/helpers/jquery.fancybox-buttons.js?v=2.0.5" type="text/javascript"></script>
-
-  <!-- Typekit --> 
-        <script type="text/javascript" src="http://use.typekit.com/xvs6rfx.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
 
   
 
@@ -68,42 +66,41 @@
 
 <body>
 
-<div class="container header">
-  <div class="row">
-    <div class="col_2">
+<header class="container_12">
+
+    <div class="grid_3">
       <h1><a href="/index.html">Wickerbox</a></h1>
     </div>
 
-    <div class="col_7" style="text-align:center;">
-    <ul id="navcontainer">
-      <li><a href="/about/">About</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/projects/">Projects</a></li>
-      <li><a href="/travels/">Travels</a></li>
-      <li><a href="/aviation-history/">History</a></li>
-      <li><a href="/two-cats/">Cats</a></li>
-    </ul>
+    <div class="nav grid_6">
+      <ul>
+	<li><a href="/about/">About</a></li>
+	<li><a href="/projects/">Projects</a></li>
+	<li><a href="/travels/">Travels</a></li>
+	<li><a href="/aviation-history/">History</a></li>
+	<li><a href="/blog/">Blog</a></li>
+	<li><a href="/two-cats/">Cats</a></li>
+      </ul>
     </div>
 
-    <div class="col_3 last" style="text-align:center;">
-      <ul id="logocontainer">
+    <div class="logo grid_3">
+      <ul>
         <li><a href="https://plus.google.com/117081002500022017940/" rel="publisher" target="_new"><img align="middle" src="/images/icons/googleplus.png" alt="G+"></a></li>
         <li><a href="http://github.com/wicker"><img src="/images/icons/github.png" alt="GH" align="middle"></a></li>
         <li><a href="http://www.linkedin.com/profile/view?id=43039351&trk=tab_pro"><img src="/images/icons/linkedin.png" alt="LIn" align="middle"></a></li>
         <li><a href="#"><img src="/images/icons/feed.png" alt="RSS" align="middle"></a></li>
       </ul>
     </div>
-  </div>
-</div>
 
-<div style="text-align:center;">
+  <div class="clear"></div>
 
-<div class="container">
+</header>
 
-    <div class="row">
+<section class="container_12 mainbody">
 
     <!-- This is a photo page -->
-      <div class="col_6 textbox">
+      <div class="grid_1">&nbsp;</div>
+      <div class="grid_5 textbox">
         <h3>Somerton Airport</h3>
         <h4 style="text-align:center;">2007-2009 ~ Somerton Airport, Arizona</h4>
           <div style="text-align:center; margin: 0 auto; width:100%;">
@@ -112,7 +109,7 @@
         <div class="inside"></div>
       </div>
 
-      <div class="col_6 textbox last">
+      <div class="grid_5 textbox" style="text-align:center;">
         <div class="pwi" style="margin: 15px auto;"> </div>
         <script type="text/javascript">
 	  $(document).ready(function() {
@@ -131,28 +128,26 @@
 	   });
 	</script>
       </div>
+      <div class="grid_1">&nbsp;</div>
 
   
-
-    </div><!-- end row -->
-
-
-</div><!-- end container -->
+    <div class="clear">&nbsp;</div>
 
 
 
-</div>
+  <div class="clear"></div>
+
+</section>
 
  
-  <div class="container footer">
-    <div class="row">
-      <div class="col_12 last">
-        <div style="padding: 10px 25px 10px 25px;">
-          &nbsp; &nbsp; <a href="/tags/arizona/" title="Pages tagged arizona" style="font-size: 176%" rel=\"tag\">arizona</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/australia/" title="Pages tagged australia" style="font-size: 116%" rel=\"tag\">australia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/avt/" title="Pages tagged avt" style="font-size: 100%" rel=\"tag\">avt</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/boards/" title="Pages tagged boards" style="font-size: 100%" rel=\"tag\">boards</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/bosnia/" title="Pages tagged bosnia" style="font-size: 100%" rel=\"tag\">bosnia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/botanical/" title="Pages tagged botanical" style="font-size: 126%" rel=\"tag\">botanical</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/c/" title="Pages tagged c" style="font-size: 100%" rel=\"tag\">c</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/california/" title="Pages tagged california" style="font-size: 142%" rel=\"tag\">california</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/code/" title="Pages tagged code" style="font-size: 116%" rel=\"tag\">code</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/colorado/" title="Pages tagged colorado" style="font-size: 138%" rel=\"tag\">colorado</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/croatia/" title="Pages tagged croatia" style="font-size: 100%" rel=\"tag\">croatia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/desert/" title="Pages tagged desert" style="font-size: 174%" rel=\"tag\">desert</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/endurance-days/" title="Pages tagged endurance days" style="font-size: 154%" rel=\"tag\">endurance days</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/england/" title="Pages tagged england" style="font-size: 116%" rel=\"tag\">england</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/flying/" title="Pages tagged flying" style="font-size: 174%" rel=\"tag\">flying</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/geology/" title="Pages tagged geology" style="font-size: 151%" rel=\"tag\">geology</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hardware/" title="Pages tagged hardware" style="font-size: 126%" rel=\"tag\">hardware</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hiking/" title="Pages tagged hiking" style="font-size: 168%" rel=\"tag\">hiking</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/historic/" title="Pages tagged historic" style="font-size: 154%" rel=\"tag\">historic</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/iraq/" title="Pages tagged iraq" style="font-size: 138%" rel=\"tag\">iraq</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/jekyll/" title="Pages tagged jekyll" style="font-size: 100%" rel=\"tag\">jekyll</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/marine-corps/" title="Pages tagged marine corps" style="font-size: 156%" rel=\"tag\">marine corps</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/nevada/" title="Pages tagged nevada" style="font-size: 116%" rel=\"tag\">nevada</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ninety-nines/" title="Pages tagged ninety-nines" style="font-size: 100%" rel=\"tag\">ninety-nines</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/norway/" title="Pages tagged norway" style="font-size: 100%" rel=\"tag\">norway</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ocean/" title="Pages tagged ocean" style="font-size: 142%" rel=\"tag\">ocean</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/oregon/" title="Pages tagged oregon" style="font-size: 158%" rel=\"tag\">oregon</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/phoenix/" title="Pages tagged phoenix" style="font-size: 116%" rel=\"tag\">phoenix</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/projects/" title="Pages tagged projects" style="font-size: 162%" rel=\"tag\">projects</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/quadcopter/" title="Pages tagged quadcopter" style="font-size: 100%" rel=\"tag\">quadcopter</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/robots/" title="Pages tagged robots" style="font-size: 132%" rel=\"tag\">robots</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/rockets/" title="Pages tagged rockets" style="font-size: 100%" rel=\"tag\">rockets</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/singapore/" title="Pages tagged singapore" style="font-size: 100%" rel=\"tag\">singapore</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sites/" title="Pages tagged sites" style="font-size: 100%" rel=\"tag\">sites</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/slovenia/" title="Pages tagged slovenia" style="font-size: 100%" rel=\"tag\">slovenia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/solar-system/" title="Pages tagged solar system" style="font-size: 100%" rel=\"tag\">solar system</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sonora/" title="Pages tagged sonora" style="font-size: 116%" rel=\"tag\">sonora</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sweden/" title="Pages tagged sweden" style="font-size: 100%" rel=\"tag\">sweden</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/switzerland/" title="Pages tagged switzerland" style="font-size: 126%" rel=\"tag\">switzerland</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tortoise/" title="Pages tagged tortoise" style="font-size: 100%" rel=\"tag\">tortoise</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/trains/" title="Pages tagged trains" style="font-size: 116%" rel=\"tag\">trains</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/travels/" title="Pages tagged travels" style="font-size: 200%" rel=\"tag\">travels</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tucson/" title="Pages tagged tucson" style="font-size: 100%" rel=\"tag\">tucson</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/turkey/" title="Pages tagged turkey" style="font-size: 156%" rel=\"tag\">turkey</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/utah/" title="Pages tagged utah" style="font-size: 132%" rel=\"tag\">utah</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/washington/" title="Pages tagged washington" style="font-size: 100%" rel=\"tag\">washington</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/water/" title="Pages tagged water" style="font-size: 100%" rel=\"tag\">water</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/wildlife/" title="Pages tagged wildlife" style="font-size: 126%" rel=\"tag\">wildlife</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/yuma/" title="Pages tagged yuma" style="font-size: 149%" rel=\"tag\">yuma</a> &nbsp; &nbsp;
-        </div>
-      </div>
+<footer class="container_16 tagcloud">
+  <div class="grid_16">
+    <div style="padding: 10px 25px 10px 25px;">
+      &nbsp; &nbsp; <a href="/tags/arizona/" title="Pages tagged arizona" style="font-size: 176%" rel=\"tag\">arizona</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/australia/" title="Pages tagged australia" style="font-size: 116%" rel=\"tag\">australia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/avt/" title="Pages tagged avt" style="font-size: 100%" rel=\"tag\">avt</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/boards/" title="Pages tagged boards" style="font-size: 100%" rel=\"tag\">boards</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/bosnia/" title="Pages tagged bosnia" style="font-size: 100%" rel=\"tag\">bosnia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/botanical/" title="Pages tagged botanical" style="font-size: 126%" rel=\"tag\">botanical</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/c/" title="Pages tagged c" style="font-size: 100%" rel=\"tag\">c</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/california/" title="Pages tagged california" style="font-size: 142%" rel=\"tag\">california</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/code/" title="Pages tagged code" style="font-size: 116%" rel=\"tag\">code</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/colorado/" title="Pages tagged colorado" style="font-size: 138%" rel=\"tag\">colorado</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/croatia/" title="Pages tagged croatia" style="font-size: 100%" rel=\"tag\">croatia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/desert/" title="Pages tagged desert" style="font-size: 174%" rel=\"tag\">desert</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/endurance-days/" title="Pages tagged endurance days" style="font-size: 154%" rel=\"tag\">endurance days</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/england/" title="Pages tagged england" style="font-size: 116%" rel=\"tag\">england</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/flying/" title="Pages tagged flying" style="font-size: 174%" rel=\"tag\">flying</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/geology/" title="Pages tagged geology" style="font-size: 151%" rel=\"tag\">geology</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hardware/" title="Pages tagged hardware" style="font-size: 126%" rel=\"tag\">hardware</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/hiking/" title="Pages tagged hiking" style="font-size: 168%" rel=\"tag\">hiking</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/historic/" title="Pages tagged historic" style="font-size: 154%" rel=\"tag\">historic</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/iraq/" title="Pages tagged iraq" style="font-size: 138%" rel=\"tag\">iraq</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/jekyll/" title="Pages tagged jekyll" style="font-size: 100%" rel=\"tag\">jekyll</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/marine-corps/" title="Pages tagged marine corps" style="font-size: 156%" rel=\"tag\">marine corps</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/nevada/" title="Pages tagged nevada" style="font-size: 116%" rel=\"tag\">nevada</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ninety-nines/" title="Pages tagged ninety-nines" style="font-size: 100%" rel=\"tag\">ninety-nines</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/norway/" title="Pages tagged norway" style="font-size: 100%" rel=\"tag\">norway</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/ocean/" title="Pages tagged ocean" style="font-size: 142%" rel=\"tag\">ocean</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/oregon/" title="Pages tagged oregon" style="font-size: 158%" rel=\"tag\">oregon</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/phoenix/" title="Pages tagged phoenix" style="font-size: 116%" rel=\"tag\">phoenix</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/projects/" title="Pages tagged projects" style="font-size: 162%" rel=\"tag\">projects</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/quadcopter/" title="Pages tagged quadcopter" style="font-size: 100%" rel=\"tag\">quadcopter</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/robots/" title="Pages tagged robots" style="font-size: 132%" rel=\"tag\">robots</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/rockets/" title="Pages tagged rockets" style="font-size: 100%" rel=\"tag\">rockets</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/singapore/" title="Pages tagged singapore" style="font-size: 100%" rel=\"tag\">singapore</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sites/" title="Pages tagged sites" style="font-size: 100%" rel=\"tag\">sites</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/slovenia/" title="Pages tagged slovenia" style="font-size: 100%" rel=\"tag\">slovenia</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/solar-system/" title="Pages tagged solar system" style="font-size: 100%" rel=\"tag\">solar system</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sonora/" title="Pages tagged sonora" style="font-size: 116%" rel=\"tag\">sonora</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/sweden/" title="Pages tagged sweden" style="font-size: 100%" rel=\"tag\">sweden</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/switzerland/" title="Pages tagged switzerland" style="font-size: 126%" rel=\"tag\">switzerland</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tortoise/" title="Pages tagged tortoise" style="font-size: 100%" rel=\"tag\">tortoise</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/trains/" title="Pages tagged trains" style="font-size: 116%" rel=\"tag\">trains</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/travels/" title="Pages tagged travels" style="font-size: 200%" rel=\"tag\">travels</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/tucson/" title="Pages tagged tucson" style="font-size: 100%" rel=\"tag\">tucson</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/turkey/" title="Pages tagged turkey" style="font-size: 156%" rel=\"tag\">turkey</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/utah/" title="Pages tagged utah" style="font-size: 132%" rel=\"tag\">utah</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/washington/" title="Pages tagged washington" style="font-size: 100%" rel=\"tag\">washington</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/water/" title="Pages tagged water" style="font-size: 100%" rel=\"tag\">water</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/wildlife/" title="Pages tagged wildlife" style="font-size: 126%" rel=\"tag\">wildlife</a> &nbsp; &nbsp;&nbsp; &nbsp; <a href="/tags/yuma/" title="Pages tagged yuma" style="font-size: 149%" rel=\"tag\">yuma</a> &nbsp; &nbsp;
     </div>
   </div>
+  <div class="clear"></div>
+</footer>
 
 
 </div>
