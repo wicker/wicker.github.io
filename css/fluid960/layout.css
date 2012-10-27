@@ -6,7 +6,7 @@ Grey Box Method - Layout CSS
 body {
   font-size: 20px;
   color: #000;
-  padding: 0px 0px 40px;
+  padding: 0px 0px;
   background-color: #fff;
 }
 
@@ -14,7 +14,7 @@ body {
 ----------------------------------------------- */
 a {color: #1B3F8B; text-decoration: none;}
 
-a:hover {color: #174038;}
+a:hover {color: #000033;}
 
 img {max-width: 100%;}
 
@@ -23,8 +23,6 @@ img {max-width: 100%;}
 .white {color: #fff;}
 
 .hidden: { display: none; visibility: hidden }
-
-.hide { position: absolute; top: -9999px; left: -9999px; }
 
 /* headings
 ----------------------------------------------- */
@@ -50,6 +48,14 @@ header {
   background-color: #202d41;
   border-bottom: 7px solid #000;
   border-top: 3px solid #000;
+}
+
+footer {
+  background-image: url(../images/bar.png);
+  background-color: #202d41;
+  border-top: 3px solid #000;
+  border-bottom: 7px solid #000;
+  margin-bottom: 0px;
 }
 
 header h1 {
@@ -140,7 +146,52 @@ footer a:hover {
 /* photo gallery 
 ----------------------------------------------- */
 
+.album-header {
+  margin-bottom: 20px;
+}
 
+.album-header ul {
+  text-align:center;
+  margin: 0 auto;
+}
+
+.album-header li {
+  font-size: 1em;
+  margin: 0px 10px 0px 10px;
+  padding: 0;
+  display: inline-block;
+  text-align:center;
+  line-height: 40px;
+  background-color: #202d41;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  font-variant:small-caps;
+  }
+
+.album-header a,
+.album-header a:visited {
+  padding: 9px;
+  margin: 0px;
+  color: #fff;
+  text-decoration: none;
+  font-family: georgia;
+  }
+
+.album-header a:hover {
+  color: #0c0c0c;
+  }
+
+.photobox {
+  float: left;
+  margin: 20px 10px 0px 10px;
+  width: 130px;
+  text-align:center;
+}
+
+.photobox img {
+  width: 100%;
+}
 
 /* boxes
 ----------------------------------------------- */

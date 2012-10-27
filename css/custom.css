@@ -92,6 +92,58 @@ a:visited {
   margin:0px auto;
 }
 
+/* Photo gallery tabs */
+
+ 
+#tabs {
+float:left;
+width:100%;
+background:#fff;
+border-bottom:4px solid #000;
+overflow:hidden;
+position:relative;
+}
+#tabs ul {
+clear:left;
+float:left;
+list-style:none;
+margin:0;
+padding:0;
+position:relative;
+left:50%;
+text-align:center;
+}
+#tabs ul li {
+display:block;
+float:left;
+list-style:none;
+margin:0;
+padding:0;
+position:relative;
+right:50%;
+}
+#tabs ul li a {
+display:block;
+margin:0 0 0 1px;
+padding:3px 10px;
+background:#ddd;
+color:#000;
+text-decoration:none;
+line-height:1.3em;
+}
+#tabs ul li a:hover {
+background:#369;
+color:#fff;
+}
+#tabs ul li a.active,
+#tabs ul li a.active:hover {
+color:#fff;
+background:#000;
+font-weight:bold;
+}
+
+
+
 /* Content box */
 
 .textbox {

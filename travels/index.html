@@ -3,7 +3,7 @@
 <!--[if IE 7 ]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en-us" class="no-js ie9"> <![endif]-->   
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us"> <!--<![endif]-->
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
@@ -16,15 +16,18 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+  <!-- Load jQuery and jQuery UI -->
   <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 
+  
+  <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />-->
+  <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
   <script>
     $(function() {
         $( "#tabs" ).tabs();
     });
   </script>
+  
 
   <!-- Fluid 960 Grid System -->
   <link rel="stylesheet" type="text/css" href="/css/fluid960/reset.css" />
@@ -41,9 +44,6 @@
        
           <meta property="og:description" content="Photos from backpacking in Europe, flying a small plane over and road tripping through the United States, living in the desert, and from military service in the Middle East and at sea in the Pacific."/>
        
-
-  <!-- load jQuery -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
   <!-- Typekit --> 
         <script type="text/javascript" src="http://use.typekit.com/xvs6rfx.js"></script>
@@ -89,869 +89,824 @@
 
 <section class="container_12 mainbody">
 
-  <h1>World Travel Photos</h1>
+  <div class="grid_1">&nbsp;</div>
 
-<div id="tabs">
-    <ul>
-        <li><a href="#tabs-1">Nunc tincidunt</a></li>
-        <li><a href="#tabs-2">Proin dolor</a></li>
-        <li><a href="#tabs-3">Aenean lacinia</a></li>
-    </ul>
-    <div id="tabs-1">
-        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-    </div>
-    <div id="tabs-2">
-        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-    </div>
-    <div id="tabs-3">
-        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-    </div>
-</div>
-<br /><br />
+<div id="tabs" class="grid_10">
+ <div class="album-header">
+  <ul>
+    <li><a href="#all-photos">All Photos</a></li>
+    <li><a href="#private-pilot">Private Pilot</a></li>
+    <li><a href="#al-asad-iraq">Al Asad, Iraq</a></li>
+    <li><a href="#uss-tarawa">USS Tarawa</a></li>
+    <li><a href="#backpacking-europe">Backpacking Europe</a></li>
+    <li><a href="#western-states">Western States</a></li>
+  </ul>
+ </div>
 
+  <div id="all-photos">
+    
+      
+      <div class="photobox">
+      <a href="/western-states/pct-willamette-pass-to-mckenzie-pass" title="Deschutes National Forest"><img src="/images/thumbs/polecreek.png" style="border: 3px solid #000; margin-bottom: 5px;" />Three Sisters</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/wahtum-lake" title="Wahtum Lake"><img src="/images/thumbs/wahtum.png" style="border: 3px solid #000; margin-bottom: 5px;" />Wahtum Lake</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/death-valley" title="Visiting Death Valley"><img src="/images/thumbs/deathvalley.png" style="border: 3px solid #000; margin-bottom: 5px;" />Death Valley</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/multnomah-falls-wahkneena-loop" title="Multnomah-Wahkeena Loop"><img src="/images/thumbs/multnomahwahkeena.png" style="border: 3px solid #000; margin-bottom: 5px;" />Falls Loop</a>
+    </div> 
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/kelso-depot-mojave-preserve" title="Kelso Depot"><img src="/images/thumbs/kelsodepot.png" style="border: 3px solid #000; margin-bottom: 5px;" />Kelso Depot</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/tehachapi-loop" title="Watching a Freight take the Tehachapi Loop"><img src="/images/thumbs/tehachloop.png" style="border: 3px solid #000; margin-bottom: 5px;" />Tehachapi</a>
+    </div> 
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <div class="photobox">
+      <a href="/private-pilot/bowermanfield" title="Bowerman Field"><img src="/images/thumbs/bowerman.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bowerman</a>
+    </div> 
+      
+    
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/saddle-mountain" title="Saddle Mountain"><img src="/images/thumbs/saddlemt.png" style="border: 3px solid #000; margin-bottom: 5px;" />Saddle Mt</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/mccallpoint" title="McCall Point"><img src="/images/thumbs/mccallpoint.png" style="border: 3px solid #000; margin-bottom: 5px;" />McCall Point</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/landscape-desert" title="Deserts of the World"><img src="/images/thumbs/coloradoriver.png" style="border: 3px solid #000; margin-bottom: 5px;" />Deserts</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/elk-rock-garden" title="Elk Rock Garden"><img src="/images/thumbs/elkrock.png" style="border: 3px solid #000; margin-bottom: 5px;" />Elk Rock</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/hoyt" title="Hoyt Arboretum"><img src="/images/thumbs/hoyt.png" style="border: 3px solid #000; margin-bottom: 5px;" />Forest Park</a>
+    </div> 
+      
+    
+      
+    
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/zion" title="Zion National Park"><img src="/images/thumbs/zion.png" style="border: 3px solid #000; margin-bottom: 5px;" />Zion</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/ouray" title="Ouray"><img src="/images/thumbs/ouray.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ouray</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/mesa-verde" title="Mesa Verde"><img src="/images/thumbs/mesaverde.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mesa Verde</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/grimes-point-archaeological-site" title="Grimes Archaeological Site"><img src="/images/thumbs/grimespoint.png" style="border: 3px solid #000; margin-bottom: 5px;" />Grimes Site</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/crater-lake" title="Crater Lake"><img src="/images/thumbs/craterlake.png" style="border: 3px solid #000; margin-bottom: 5px;" />Crater Lake</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/bryce-canyon" title="Bryce Canyon"><img src="/images/thumbs/brycecanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bryce</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/black-canyon-of-the-gunnison" title="I'd never heard of it"><img src="/images/thumbs/blackcanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Gunnison</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/berlin-icthyosaur" title="Where I went instead of Burning Man"><img src="/images/thumbs/icthyosaur.png" style="border: 3px solid #000; margin-bottom: 5px;" />Icthyosaurs</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/arches" title="All I could think about was Edward Abbey"><img src="/images/thumbs/arches.png" style="border: 3px solid #000; margin-bottom: 5px;" />Arches</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/warwickcastle" title="Warwick Castle"><img src="/images/thumbs/warwick.png" style="border: 3px solid #000; margin-bottom: 5px;" />Warwick</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/midlandairmuseum" title="Midland Air Museum"><img src="/images/thumbs/midlandair.png" style="border: 3px solid #000; margin-bottom: 5px;" />Midland</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/valais" title="Day hike in Valais"><img src="/images/thumbs/valais.png" style="border: 3px solid #000; margin-bottom: 5px;" />Valais</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/marbachegg" title="Wasserbüffel, meringue, and paragliders"><img src="/images/thumbs/marbachegg.png" style="border: 3px solid #000; margin-bottom: 5px;" />Marbach</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/bietschhorn" title="Bietschhorn"><img src="/images/thumbs/bietschhorn.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bietschhorn</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/soltasplit" title="An island on the Dalmation Coast"><img src="/images/thumbs/soltasplit.png" style="border: 3px solid #000; margin-bottom: 5px;" />Solta</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/mostar" title="Visiting Mostar"><img src="/images/thumbs/mostar.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mostar</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/ljubljana" title="My first city east of Switzerland"><img src="/images/thumbs/ljubljana.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ljubljana</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/kungsleden" title="Eight days from Abisko to Kebnekaise"><img src="/images/thumbs/kungsleden.png" style="border: 3px solid #000; margin-bottom: 5px;" />Kungsleden</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/flam" title="Among the fjords"><img src="/images/thumbs/flam.png" style="border: 3px solid #000; margin-bottom: 5px;" />Flam</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/troy" title="Generally accepted location of Troy"><img src="/images/thumbs/troy.png" style="border: 3px solid #000; margin-bottom: 5px;" />Troy</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/topkapi" title="Topkapi Palace"><img src="/images/thumbs/topkapi.png" style="border: 3px solid #000; margin-bottom: 5px;" />Topkapi</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/priene" title="Ruined Temple of Athena"><img src="/images/thumbs/priene.png" style="border: 3px solid #000; margin-bottom: 5px;" />Priene</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/pamukkale" title="Pamukkale and Hierapolis"><img src="/images/thumbs/pamukkale.png" style="border: 3px solid #000; margin-bottom: 5px;" />Pamukkale</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/miletus" title="Ruins of Miletus"><img src="/images/thumbs/miletus.png" style="border: 3px solid #000; margin-bottom: 5px;" />Miletus</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/istanbul" title="Istanbul, capital of Turkey"><img src="/images/thumbs/istanbul.png" style="border: 3px solid #000; margin-bottom: 5px;" />Istanbul</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/ephesus" title="Birthplace of Heraclitus"><img src="/images/thumbs/ephesus.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ephesus</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/didymaapollon" title="Temple of Apollon"><img src="/images/thumbs/didymapollon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Didyma</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/basilica" title="Basilica Cistern"><img src="/images/thumbs/basilica.png" style="border: 3px solid #000; margin-bottom: 5px;" />Cistern</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/ayasofia" title="Aya Sofia, Hagia Sophia, in Istanbul"><img src="/images/thumbs/ayasofia.png" style="border: 3px solid #000; margin-bottom: 5px;" />Aya Sofia</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/backpack-europe/anzaccove" title="Graveyard of ninety-thousand souls"><img src="/images/thumbs/anzaccove.png" style="border: 3px solid #000; margin-bottom: 5px;" />Gallipoli</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/private-pilot/yumaaz" title="Flying near MCAS Yuma"><img src="/images/thumbs/yumaaz.png" style="border: 3px solid #000; margin-bottom: 5px;" />Yuma</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/private-pilot/youngeagles" title="Young Eagles"><img src="/images/thumbs/youngeagles.png" style="border: 3px solid #000; margin-bottom: 5px;" />EAA Flights</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/private-pilot/texashill" title="Fly-out to Texas Hill"><img src="/images/thumbs/texashill.png" style="border: 3px solid #000; margin-bottom: 5px;" />Texas Hill</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/private-pilot/somerton-airport" title="Somerton Airport"><img src="/images/thumbs/somerton.png" style="border: 3px solid #000; margin-bottom: 5px;" />Somerton</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/private-pilot/ballooning" title="Suburban Hot-Air Ballooning"><img src="/images/thumbs/ballooning.png" style="border: 3px solid #000; margin-bottom: 5px;" />Balloons</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/chihuly" title="Chihuly Exhibit at the Phoenix Desert Garden"><img src="/images/thumbs/chihuly.png" style="border: 3px solid #000; margin-bottom: 5px;" />Chihuly</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/private-pilot/tucson" title="Ajo, Ryan, Pinal, Nogales"><img src="/images/thumbs/tucsontrip.png" style="border: 3px solid #000; margin-bottom: 5px;" />Arizona</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/mojave-preserve" title="Camping past Hole in the Wall"><img src="/images/thumbs/mojave.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mojave</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/territorial-prison" title="Arizona's Territorial Prison"><img src="/images/thumbs/prison.png" style="border: 3px solid #000; margin-bottom: 5px;" />Old Prison</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/private-pilot/oshkosh" title="Oshkosh, or Inspiring Kids"><img src="/images/thumbs/oshkosh.png" style="border: 3px solid #000; margin-bottom: 5px;" />Oshkosh</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/uss-tarawa/shiplife" title="Ship Life"><img src="/images/thumbs/shiplife.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ship Life</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/uss-tarawa/ras" title="Replenishment at Sea"><img src="/images/thumbs/ras.png" style="border: 3px solid #000; margin-bottom: 5px;" />Replenishment</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/uss-tarawa/oceanviews" title="Ocean Views"><img src="/images/thumbs/oceanviews.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ocean Views</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/uss-tarawa/koala" title="Volunteering at the Cohunu Koala Park"><img src="/images/thumbs/koala.png" style="border: 3px solid #000; margin-bottom: 5px;" />Cohunu Park</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/uss-tarawa/jurongpark" title="Jurong Bird Park, Singapore"><img src="/images/thumbs/jurongpark.png" style="border: 3px solid #000; margin-bottom: 5px;" />Jurong Park</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/uss-tarawa/flightops" title="Flight Operations"><img src="/images/thumbs/flightops.png" style="border: 3px solid #000; margin-bottom: 5px;" />Flight Ops</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/uss-tarawa/delmar" title="Amphibious landing at Camp Pendleton"><img src="/images/thumbs/delmar.png" style="border: 3px solid #000; margin-bottom: 5px;" />Homecoming</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/uss-tarawa/brunyisland" title="Port call in Tasmania"><img src="/images/thumbs/brunyisland.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bruny Island</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/mittry-lake" title="Mittry Lake"><img src="/images/thumbs/mittry.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mittry Lake</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/kofa-palm-canyon" title="Palm Canyon in Kofa NWR"><img src="/images/thumbs/palmcanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Palm Canyon</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/west-saguaro" title="West Saguaro National Park"><img src="/images/thumbs/saguaro.png" style="border: 3px solid #000; margin-bottom: 5px;" />W. Saguaro</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/arizona-sonora-desert-museum" title="Arizona-Sonora Desert Museum"><img src="/images/thumbs/asdm.png" style="border: 3px solid #000; margin-bottom: 5px;" />ASDM</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/private-pilot/yodaville" title="Yodaville"><img src="/images/thumbs/yodaville.png" style="border: 3px solid #000; margin-bottom: 5px;" />Yodaville</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/western-states/canaldam" title="Canal Dam"><img src="/images/thumbs/canaldam.png" style="border: 3px solid #000; margin-bottom: 5px;" />Canal Dam</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/iraq/working" title="Caution, Marines at Work"><img src="/images/thumbs/working.png" style="border: 3px solid #000; margin-bottom: 5px;" />Working</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/iraq/thingstosee" title="Things to see on base"><img src="/images/thumbs/thingstosee.png" style="border: 3px solid #000; margin-bottom: 5px;" />On Base</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/iraq/overthehescos" title="Over the Hescos"><img src="/images/thumbs/overthehescos.png" style="border: 3px solid #000; margin-bottom: 5px;" />Off Base</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/iraq/barbecue" title="Downtime"><img src="/images/thumbs/barbecue.png" style="border: 3px solid #000; margin-bottom: 5px;" />Downtime</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/iraq/aviation" title="Aviation"><img src="/images/thumbs/aviation.png" style="border: 3px solid #000; margin-bottom: 5px;" />Aviation</a>
+    </div> 
+      
+    
+      
+      <div class="photobox">
+      <a href="/private-pilot/copperstate-2005" title="Copperstate Fly-In"><img src="/images/thumbs/copperstate.png" style="border: 3px solid #000; margin-bottom: 5px;" />Copperstate</a>
+    </div> 
+      
+    
+  </div>
 
-<div class="gallery-nav">
-Filters: 
-<ul>
-<li><a href="#all-photos">ALL</a></li>
-<li><a href="#private-pilot">Private Pilot</a></li>
-<li><a href="#al-asad-iraq">Al Asad, Iraq</a></li>
-<li><a href="#uss-tarawa">USS Tarawa</a></li>
-<li><a href="#backpacking-europe">Backpacking Europe</a></li>
-<li><a href="#western-states">Western States</a></li>
-</ul>
+  <div id="al-asad-iraq">
+    
+      <div class="photobox">
+      <a href="/iraq/working" title="Caution, Marines at Work"><img src="/images/thumbs/working.png" style="border: 3px solid #000; margin-bottom: 5px;" />Working</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/iraq/thingstosee" title="Things to see on base"><img src="/images/thumbs/thingstosee.png" style="border: 3px solid #000; margin-bottom: 5px;" />On Base</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/iraq/overthehescos" title="Over the Hescos"><img src="/images/thumbs/overthehescos.png" style="border: 3px solid #000; margin-bottom: 5px;" />Off Base</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/iraq/barbecue" title="Downtime"><img src="/images/thumbs/barbecue.png" style="border: 3px solid #000; margin-bottom: 5px;" />Downtime</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/iraq/aviation" title="Aviation"><img src="/images/thumbs/aviation.png" style="border: 3px solid #000; margin-bottom: 5px;" />Aviation</a>
+    </div> 
+    
+  </div>
 
-<div class="grid_1">&nbsp;</div>
+  <div id="uss-tarawa">
+    
+      <div class="photobox">
+      <a href="/uss-tarawa/shiplife" title="Ship Life"><img src="/images/thumbs/shiplife.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ship Life</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/uss-tarawa/ras" title="Replenishment at Sea"><img src="/images/thumbs/ras.png" style="border: 3px solid #000; margin-bottom: 5px;" />Replenishment</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/uss-tarawa/oceanviews" title="Ocean Views"><img src="/images/thumbs/oceanviews.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ocean Views</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/uss-tarawa/koala" title="Volunteering at the Cohunu Koala Park"><img src="/images/thumbs/koala.png" style="border: 3px solid #000; margin-bottom: 5px;" />Cohunu Park</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/uss-tarawa/jurongpark" title="Jurong Bird Park, Singapore"><img src="/images/thumbs/jurongpark.png" style="border: 3px solid #000; margin-bottom: 5px;" />Jurong Park</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/uss-tarawa/flightops" title="Flight Operations"><img src="/images/thumbs/flightops.png" style="border: 3px solid #000; margin-bottom: 5px;" />Flight Ops</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/uss-tarawa/delmar" title="Amphibious landing at Camp Pendleton"><img src="/images/thumbs/delmar.png" style="border: 3px solid #000; margin-bottom: 5px;" />Homecoming</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/uss-tarawa/brunyisland" title="Port call in Tasmania"><img src="/images/thumbs/brunyisland.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bruny Island</a>
+      </div>
+    
+  </div>
 
-<div class="grid_10" id="all-photos">
-  <h1>All photos ordered by date</h1>
-  
+  <div id="private-pilot">
     
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/pct-willamette-pass-to-mckenzie-pass" title="Deschutes National Forest"><img src="/images/thumbs/polecreek.png" style="border: 3px solid #000; margin-bottom: 5px;" />Three Sisters</a>
-  </div> 
+      <div class="photobox">
+      <a href="/private-pilot/bowermanfield" title="Bowerman Field"><img src="/images/thumbs/bowerman.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bowerman</a>
+    </div> 
     
-  
+      <div class="photobox">
+      <a href="/private-pilot/yumaaz" title="Flying near MCAS Yuma"><img src="/images/thumbs/yumaaz.png" style="border: 3px solid #000; margin-bottom: 5px;" />Yuma</a>
+    </div> 
     
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/wahtum-lake" title="Wahtum Lake"><img src="/images/thumbs/wahtum.png" style="border: 3px solid #000; margin-bottom: 5px;" />Wahtum Lake</a>
-  </div> 
+      <div class="photobox">
+      <a href="/private-pilot/youngeagles" title="Young Eagles"><img src="/images/thumbs/youngeagles.png" style="border: 3px solid #000; margin-bottom: 5px;" />EAA Flights</a>
+    </div> 
     
-  
+      <div class="photobox">
+      <a href="/private-pilot/texashill" title="Fly-out to Texas Hill"><img src="/images/thumbs/texashill.png" style="border: 3px solid #000; margin-bottom: 5px;" />Texas Hill</a>
+    </div> 
     
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/death-valley" title="Visiting Death Valley"><img src="/images/thumbs/deathvalley.png" style="border: 3px solid #000; margin-bottom: 5px;" />Death Valley</a>
-  </div> 
+      <div class="photobox">
+      <a href="/private-pilot/somerton-airport" title="Somerton Airport"><img src="/images/thumbs/somerton.png" style="border: 3px solid #000; margin-bottom: 5px;" />Somerton</a>
+    </div> 
     
-  
+      <div class="photobox">
+      <a href="/private-pilot/ballooning" title="Suburban Hot-Air Ballooning"><img src="/images/thumbs/ballooning.png" style="border: 3px solid #000; margin-bottom: 5px;" />Balloons</a>
+    </div> 
     
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/multnomah-falls-wahkneena-loop" title="Multnomah-Wahkeena Loop"><img src="/images/thumbs/multnomahwahkeena.png" style="border: 3px solid #000; margin-bottom: 5px;" />Falls Loop</a>
-  </div> 
+      <div class="photobox">
+      <a href="/private-pilot/tucson" title="Ajo, Ryan, Pinal, Nogales"><img src="/images/thumbs/tucsontrip.png" style="border: 3px solid #000; margin-bottom: 5px;" />Arizona</a>
+    </div> 
     
-  
+      <div class="photobox">
+      <a href="/private-pilot/oshkosh" title="Oshkosh, or Inspiring Kids"><img src="/images/thumbs/oshkosh.png" style="border: 3px solid #000; margin-bottom: 5px;" />Oshkosh</a>
+    </div> 
     
-  
+      <div class="photobox">
+      <a href="/private-pilot/yodaville" title="Yodaville"><img src="/images/thumbs/yodaville.png" style="border: 3px solid #000; margin-bottom: 5px;" />Yodaville</a>
+    </div> 
     
-  
+      <div class="photobox">
+      <a href="/private-pilot/copperstate-2005" title="Copperstate Fly-In"><img src="/images/thumbs/copperstate.png" style="border: 3px solid #000; margin-bottom: 5px;" />Copperstate</a>
+    </div> 
     
-  
-    
-  
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/kelso-depot-mojave-preserve" title="Kelso Depot"><img src="/images/thumbs/kelsodepot.png" style="border: 3px solid #000; margin-bottom: 5px;" />Kelso Depot</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/tehachapi-loop" title="Watching a Freight take the Tehachapi Loop"><img src="/images/thumbs/tehachloop.png" style="border: 3px solid #000; margin-bottom: 5px;" />Tehachapi</a>
-  </div> 
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/endurance-days/yuma-endurance-days-original-flight-1949" title="The original world record endurance flight"><img src="/images/thumbs/yed-original.png" style="border: 3px solid #000; margin-bottom: 5px;" /></a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/endurance-days/yuma-endurance-days-minnesota-1997" title="Found in Minnesota"><img src="/images/thumbs/yed-minnesota.png" style="border: 3px solid #000; margin-bottom: 5px;" /></a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/endurance-days/yuma-endurance-days-trip-home-1997" title="Trip home from Minnesota to Yuma"><img src="/images/thumbs/yed-triphome.png" style="border: 3px solid #000; margin-bottom: 5px;" /></a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/endurance-days/yuma-endurance-days-homecoming-1997" title="The City of Yuma comes home"><img src="/images/thumbs/yed-homecoming.png" style="border: 3px solid #000; margin-bottom: 5px;" /></a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/endurance-days/yuma-endurance-days-on-display-1999" title="On display for fundraising"><img src="/images/thumbs/yed-ondisplay.png" style="border: 3px solid #000; margin-bottom: 5px;" /></a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/endurance-days/yuma-endurance-days-reenactment-1999" title="Fifty-year Reenactment Flight"><img src="/images/thumbs/yed-reenactment.png" style="border: 3px solid #000; margin-bottom: 5px;" /></a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/endurance-days/yuma-endurance-days-longest-flight-book-1999" title="Book signing for The Longest Flight"><img src="/images/thumbs/yed-book.png" style="border: 3px solid #000; margin-bottom: 5px;" /></a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/endurance-days/yuma-endurance-days-woodhouse-funeral-2003" title="Bob Woodhouse Funeral"><img src="/images/thumbs/yed-flown-west.png" style="border: 3px solid #000; margin-bottom: 5px;" /></a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/psas-rocket-lv23" title="Failed PSAS LV2.3 Launch"><img src="/images/thumbs/psaslv23.png" style="border: 3px solid #000; margin-bottom: 5px;" />Launch</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/endurance-days/yuma-endurance-days-into-storage-2005" title="Putting the City of Yuma Into Storage"><img src="/images/thumbs/yed-into-storage.png" style="border: 3px solid #000; margin-bottom: 5px;" /></a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/bowermanfield" title="Bowerman Field"><img src="/images/thumbs/bowerman.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bowerman</a>
-  </div> 
-    
-  
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/saddle-mountain" title="Saddle Mountain"><img src="/images/thumbs/saddlemt.png" style="border: 3px solid #000; margin-bottom: 5px;" />Saddle Mt</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/mccallpoint" title="McCall Point"><img src="/images/thumbs/mccallpoint.png" style="border: 3px solid #000; margin-bottom: 5px;" />McCall Point</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/landscape-desert" title="Deserts of the World"><img src="/images/thumbs/coloradoriver.png" style="border: 3px solid #000; margin-bottom: 5px;" />Deserts</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/elk-rock-garden" title="Elk Rock Garden"><img src="/images/thumbs/elkrock.png" style="border: 3px solid #000; margin-bottom: 5px;" />Elk Rock</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/hoyt" title="Hoyt Arboretum"><img src="/images/thumbs/hoyt.png" style="border: 3px solid #000; margin-bottom: 5px;" />Forest Park</a>
-  </div> 
-    
-  
-    
-  
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/zion" title="Zion National Park"><img src="/images/thumbs/zion.png" style="border: 3px solid #000; margin-bottom: 5px;" />Zion</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/ouray" title="Ouray"><img src="/images/thumbs/ouray.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ouray</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/mesa-verde" title="Mesa Verde"><img src="/images/thumbs/mesaverde.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mesa Verde</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/grimes-point-archaeological-site" title="Grimes Archaeological Site"><img src="/images/thumbs/grimespoint.png" style="border: 3px solid #000; margin-bottom: 5px;" />Grimes Site</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/crater-lake" title="Crater Lake"><img src="/images/thumbs/craterlake.png" style="border: 3px solid #000; margin-bottom: 5px;" />Crater Lake</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/bryce-canyon" title="Bryce Canyon"><img src="/images/thumbs/brycecanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bryce</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/black-canyon-of-the-gunnison" title="I'd never heard of it"><img src="/images/thumbs/blackcanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Gunnison</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/berlin-icthyosaur" title="Where I went instead of Burning Man"><img src="/images/thumbs/icthyosaur.png" style="border: 3px solid #000; margin-bottom: 5px;" />Icthyosaurs</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/arches" title="All I could think about was Edward Abbey"><img src="/images/thumbs/arches.png" style="border: 3px solid #000; margin-bottom: 5px;" />Arches</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/warwickcastle" title="Warwick Castle"><img src="/images/thumbs/warwick.png" style="border: 3px solid #000; margin-bottom: 5px;" />Warwick</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/midlandairmuseum" title="Midland Air Museum"><img src="/images/thumbs/midlandair.png" style="border: 3px solid #000; margin-bottom: 5px;" />Midland</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/valais" title="Day hike in Valais"><img src="/images/thumbs/valais.png" style="border: 3px solid #000; margin-bottom: 5px;" />Valais</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/marbachegg" title="Wasserbüffel, meringue, and paragliders"><img src="/images/thumbs/marbachegg.png" style="border: 3px solid #000; margin-bottom: 5px;" />Marbach</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/bietschhorn" title="Bietschhorn"><img src="/images/thumbs/bietschhorn.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bietschhorn</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/soltasplit" title="An island on the Dalmation Coast"><img src="/images/thumbs/soltasplit.png" style="border: 3px solid #000; margin-bottom: 5px;" />Solta</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/mostar" title="Visiting Mostar"><img src="/images/thumbs/mostar.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mostar</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/ljubljana" title="My first city east of Switzerland"><img src="/images/thumbs/ljubljana.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ljubljana</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/kungsleden" title="Eight days from Abisko to Kebnekaise"><img src="/images/thumbs/kungsleden.png" style="border: 3px solid #000; margin-bottom: 5px;" />Kungsleden</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/flam" title="Among the fjords"><img src="/images/thumbs/flam.png" style="border: 3px solid #000; margin-bottom: 5px;" />Flam</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/troy" title="Generally accepted location of Troy"><img src="/images/thumbs/troy.png" style="border: 3px solid #000; margin-bottom: 5px;" />Troy</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/topkapi" title="Topkapi Palace"><img src="/images/thumbs/topkapi.png" style="border: 3px solid #000; margin-bottom: 5px;" />Topkapi</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/priene" title="Ruined Temple of Athena"><img src="/images/thumbs/priene.png" style="border: 3px solid #000; margin-bottom: 5px;" />Priene</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/pamukkale" title="Pamukkale and Hierapolis"><img src="/images/thumbs/pamukkale.png" style="border: 3px solid #000; margin-bottom: 5px;" />Pamukkale</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/miletus" title="Ruins of Miletus"><img src="/images/thumbs/miletus.png" style="border: 3px solid #000; margin-bottom: 5px;" />Miletus</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/istanbul" title="Istanbul, capital of Turkey"><img src="/images/thumbs/istanbul.png" style="border: 3px solid #000; margin-bottom: 5px;" />Istanbul</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/ephesus" title="Birthplace of Heraclitus"><img src="/images/thumbs/ephesus.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ephesus</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/didymaapollon" title="Temple of Apollon"><img src="/images/thumbs/didymapollon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Didyma</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/basilica" title="Basilica Cistern"><img src="/images/thumbs/basilica.png" style="border: 3px solid #000; margin-bottom: 5px;" />Cistern</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/ayasofia" title="Aya Sofia, Hagia Sophia, in Istanbul"><img src="/images/thumbs/ayasofia.png" style="border: 3px solid #000; margin-bottom: 5px;" />Aya Sofia</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/anzaccove" title="Graveyard of ninety-thousand souls"><img src="/images/thumbs/anzaccove.png" style="border: 3px solid #000; margin-bottom: 5px;" />Gallipoli</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/yumaaz" title="Flying near MCAS Yuma"><img src="/images/thumbs/yumaaz.png" style="border: 3px solid #000; margin-bottom: 5px;" />Yuma</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/youngeagles" title="Young Eagles"><img src="/images/thumbs/youngeagles.png" style="border: 3px solid #000; margin-bottom: 5px;" />EAA Flights</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/texashill" title="Fly-out to Texas Hill"><img src="/images/thumbs/texashill.png" style="border: 3px solid #000; margin-bottom: 5px;" />Texas Hill</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/somerton-airport" title="Somerton Airport"><img src="/images/thumbs/somerton.png" style="border: 3px solid #000; margin-bottom: 5px;" />Somerton</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/ballooning" title="Suburban Hot-Air Ballooning"><img src="/images/thumbs/ballooning.png" style="border: 3px solid #000; margin-bottom: 5px;" />Balloons</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/chihuly" title="Chihuly Exhibit at the Phoenix Desert Garden"><img src="/images/thumbs/chihuly.png" style="border: 3px solid #000; margin-bottom: 5px;" />Chihuly</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/tucson" title="Ajo, Ryan, Pinal, Nogales"><img src="/images/thumbs/tucsontrip.png" style="border: 3px solid #000; margin-bottom: 5px;" />Arizona</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/mojave-preserve" title="Camping past Hole in the Wall"><img src="/images/thumbs/mojave.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mojave</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/territorial-prison" title="Arizona's Territorial Prison"><img src="/images/thumbs/prison.png" style="border: 3px solid #000; margin-bottom: 5px;" />Old Prison</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/oshkosh" title="Oshkosh, or Inspiring Kids"><img src="/images/thumbs/oshkosh.png" style="border: 3px solid #000; margin-bottom: 5px;" />Oshkosh</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/shiplife" title="Ship Life"><img src="/images/thumbs/shiplife.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ship Life</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/ras" title="Replenishment at Sea"><img src="/images/thumbs/ras.png" style="border: 3px solid #000; margin-bottom: 5px;" />Replenishment</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/oceanviews" title="Ocean Views"><img src="/images/thumbs/oceanviews.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ocean Views</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/koala" title="Volunteering at the Cohunu Koala Park"><img src="/images/thumbs/koala.png" style="border: 3px solid #000; margin-bottom: 5px;" />Cohunu Park</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/jurongpark" title="Jurong Bird Park, Singapore"><img src="/images/thumbs/jurongpark.png" style="border: 3px solid #000; margin-bottom: 5px;" />Jurong Park</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/flightops" title="Flight Operations"><img src="/images/thumbs/flightops.png" style="border: 3px solid #000; margin-bottom: 5px;" />Flight Ops</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/delmar" title="Amphibious landing at Camp Pendleton"><img src="/images/thumbs/delmar.png" style="border: 3px solid #000; margin-bottom: 5px;" />Homecoming</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/brunyisland" title="Port call in Tasmania"><img src="/images/thumbs/brunyisland.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bruny Island</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/mittry-lake" title="Mittry Lake"><img src="/images/thumbs/mittry.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mittry Lake</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/kofa-palm-canyon" title="Palm Canyon in Kofa NWR"><img src="/images/thumbs/palmcanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Palm Canyon</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/west-saguaro" title="West Saguaro National Park"><img src="/images/thumbs/saguaro.png" style="border: 3px solid #000; margin-bottom: 5px;" />W. Saguaro</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/arizona-sonora-desert-museum" title="Arizona-Sonora Desert Museum"><img src="/images/thumbs/asdm.png" style="border: 3px solid #000; margin-bottom: 5px;" />ASDM</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/yodaville" title="Yodaville"><img src="/images/thumbs/yodaville.png" style="border: 3px solid #000; margin-bottom: 5px;" />Yodaville</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/canaldam" title="Canal Dam"><img src="/images/thumbs/canaldam.png" style="border: 3px solid #000; margin-bottom: 5px;" />Canal Dam</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/iraq/working" title="Caution, Marines at Work"><img src="/images/thumbs/working.png" style="border: 3px solid #000; margin-bottom: 5px;" />Working</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/iraq/thingstosee" title="Things to see on base"><img src="/images/thumbs/thingstosee.png" style="border: 3px solid #000; margin-bottom: 5px;" />On Base</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/iraq/overthehescos" title="Over the Hescos"><img src="/images/thumbs/overthehescos.png" style="border: 3px solid #000; margin-bottom: 5px;" />Off Base</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/iraq/barbecue" title="Downtime"><img src="/images/thumbs/barbecue.png" style="border: 3px solid #000; margin-bottom: 5px;" />Downtime</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/iraq/aviation" title="Aviation"><img src="/images/thumbs/aviation.png" style="border: 3px solid #000; margin-bottom: 5px;" />Aviation</a>
-  </div> 
-    
-  
-    
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/copperstate-2005" title="Copperstate Fly-In"><img src="/images/thumbs/copperstate.png" style="border: 3px solid #000; margin-bottom: 5px;" />Copperstate</a>
-  </div> 
-    
-  
-</div>
+  </div>
 
-<div class="grid_10 hidden" id="al-asad-iraq">
-  <h1>Al Asad, Iraq</h1>
-  
-</div>
+  <div id="backpacking-europe">
+    
+      <div class="photobox">
+      <a href="/backpack-europe/warwickcastle" title="Warwick Castle"><img src="/images/thumbs/warwick.png" style="border: 3px solid #000; margin-bottom: 5px;" />Warwick</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/midlandairmuseum" title="Midland Air Museum"><img src="/images/thumbs/midlandair.png" style="border: 3px solid #000; margin-bottom: 5px;" />Midland</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/valais" title="Day hike in Valais"><img src="/images/thumbs/valais.png" style="border: 3px solid #000; margin-bottom: 5px;" />Valais</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/marbachegg" title="Wasserbüffel, meringue, and paragliders"><img src="/images/thumbs/marbachegg.png" style="border: 3px solid #000; margin-bottom: 5px;" />Marbach</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/bietschhorn" title="Bietschhorn"><img src="/images/thumbs/bietschhorn.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bietschhorn</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/soltasplit" title="An island on the Dalmation Coast"><img src="/images/thumbs/soltasplit.png" style="border: 3px solid #000; margin-bottom: 5px;" />Solta</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/mostar" title="Visiting Mostar"><img src="/images/thumbs/mostar.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mostar</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/ljubljana" title="My first city east of Switzerland"><img src="/images/thumbs/ljubljana.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ljubljana</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/kungsleden" title="Eight days from Abisko to Kebnekaise"><img src="/images/thumbs/kungsleden.png" style="border: 3px solid #000; margin-bottom: 5px;" />Kungsleden</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/flam" title="Among the fjords"><img src="/images/thumbs/flam.png" style="border: 3px solid #000; margin-bottom: 5px;" />Flam</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/troy" title="Generally accepted location of Troy"><img src="/images/thumbs/troy.png" style="border: 3px solid #000; margin-bottom: 5px;" />Troy</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/topkapi" title="Topkapi Palace"><img src="/images/thumbs/topkapi.png" style="border: 3px solid #000; margin-bottom: 5px;" />Topkapi</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/priene" title="Ruined Temple of Athena"><img src="/images/thumbs/priene.png" style="border: 3px solid #000; margin-bottom: 5px;" />Priene</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/pamukkale" title="Pamukkale and Hierapolis"><img src="/images/thumbs/pamukkale.png" style="border: 3px solid #000; margin-bottom: 5px;" />Pamukkale</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/miletus" title="Ruins of Miletus"><img src="/images/thumbs/miletus.png" style="border: 3px solid #000; margin-bottom: 5px;" />Miletus</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/istanbul" title="Istanbul, capital of Turkey"><img src="/images/thumbs/istanbul.png" style="border: 3px solid #000; margin-bottom: 5px;" />Istanbul</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/ephesus" title="Birthplace of Heraclitus"><img src="/images/thumbs/ephesus.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ephesus</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/didymaapollon" title="Temple of Apollon"><img src="/images/thumbs/didymapollon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Didyma</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/basilica" title="Basilica Cistern"><img src="/images/thumbs/basilica.png" style="border: 3px solid #000; margin-bottom: 5px;" />Cistern</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/ayasofia" title="Aya Sofia, Hagia Sophia, in Istanbul"><img src="/images/thumbs/ayasofia.png" style="border: 3px solid #000; margin-bottom: 5px;" />Aya Sofia</a>
+    </div> 
+    
+      <div class="photobox">
+      <a href="/backpack-europe/anzaccove" title="Graveyard of ninety-thousand souls"><img src="/images/thumbs/anzaccove.png" style="border: 3px solid #000; margin-bottom: 5px;" />Gallipoli</a>
+    </div> 
+    
+  </div>
 
-<div class="grid_10 hidden" id="uss-tarawa">
-  <h1>USS Tarawa</h1>
-  
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/shiplife" title="Ship Life"><img src="/images/thumbs/shiplife.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ship Life</a>
-    </div>
-  
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/ras" title="Replenishment at Sea"><img src="/images/thumbs/ras.png" style="border: 3px solid #000; margin-bottom: 5px;" />Replenishment</a>
-    </div>
-  
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/oceanviews" title="Ocean Views"><img src="/images/thumbs/oceanviews.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ocean Views</a>
-    </div>
-  
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/koala" title="Volunteering at the Cohunu Koala Park"><img src="/images/thumbs/koala.png" style="border: 3px solid #000; margin-bottom: 5px;" />Cohunu Park</a>
-    </div>
-  
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/jurongpark" title="Jurong Bird Park, Singapore"><img src="/images/thumbs/jurongpark.png" style="border: 3px solid #000; margin-bottom: 5px;" />Jurong Park</a>
-    </div>
-  
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/flightops" title="Flight Operations"><img src="/images/thumbs/flightops.png" style="border: 3px solid #000; margin-bottom: 5px;" />Flight Ops</a>
-    </div>
-  
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/delmar" title="Amphibious landing at Camp Pendleton"><img src="/images/thumbs/delmar.png" style="border: 3px solid #000; margin-bottom: 5px;" />Homecoming</a>
-    </div>
-  
-    <div style="float: left; margin-left: 5px; margin-right: 5px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/uss-tarawa/brunyisland" title="Port call in Tasmania"><img src="/images/thumbs/brunyisland.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bruny Island</a>
-    </div>
-  
-</div>
+  <div id="western-states">
+    
+      <div class="photobox">
+      <a href="/western-states/pct-willamette-pass-to-mckenzie-pass" title="Deschutes National Forest"><img src="/images/thumbs/polecreek.png" style="border: 3px solid #000; margin-bottom: 5px;" />Three Sisters</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/wahtum-lake" title="Wahtum Lake"><img src="/images/thumbs/wahtum.png" style="border: 3px solid #000; margin-bottom: 5px;" />Wahtum Lake</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/death-valley" title="Visiting Death Valley"><img src="/images/thumbs/deathvalley.png" style="border: 3px solid #000; margin-bottom: 5px;" />Death Valley</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/multnomah-falls-wahkneena-loop" title="Multnomah-Wahkeena Loop"><img src="/images/thumbs/multnomahwahkeena.png" style="border: 3px solid #000; margin-bottom: 5px;" />Falls Loop</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/kelso-depot-mojave-preserve" title="Kelso Depot"><img src="/images/thumbs/kelsodepot.png" style="border: 3px solid #000; margin-bottom: 5px;" />Kelso Depot</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/tehachapi-loop" title="Watching a Freight take the Tehachapi Loop"><img src="/images/thumbs/tehachloop.png" style="border: 3px solid #000; margin-bottom: 5px;" />Tehachapi</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/psas-rocket-lv23" title="Failed PSAS LV2.3 Launch"><img src="/images/thumbs/psaslv23.png" style="border: 3px solid #000; margin-bottom: 5px;" />Launch</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/yellowstone" title="Ravens gonna rave"><img src="/images/thumbs/yellowstone.png" style="border: 3px solid #000; margin-bottom: 5px;" />Yellowstone</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/saddle-mountain" title="Saddle Mountain"><img src="/images/thumbs/saddlemt.png" style="border: 3px solid #000; margin-bottom: 5px;" />Saddle Mt</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/mccallpoint" title="McCall Point"><img src="/images/thumbs/mccallpoint.png" style="border: 3px solid #000; margin-bottom: 5px;" />McCall Point</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/landscape-desert" title="Deserts of the World"><img src="/images/thumbs/coloradoriver.png" style="border: 3px solid #000; margin-bottom: 5px;" />Deserts</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/elk-rock-garden" title="Elk Rock Garden"><img src="/images/thumbs/elkrock.png" style="border: 3px solid #000; margin-bottom: 5px;" />Elk Rock</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/hoyt" title="Hoyt Arboretum"><img src="/images/thumbs/hoyt.png" style="border: 3px solid #000; margin-bottom: 5px;" />Forest Park</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/zion" title="Zion National Park"><img src="/images/thumbs/zion.png" style="border: 3px solid #000; margin-bottom: 5px;" />Zion</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/ouray" title="Ouray"><img src="/images/thumbs/ouray.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ouray</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/mesa-verde" title="Mesa Verde"><img src="/images/thumbs/mesaverde.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mesa Verde</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/grimes-point-archaeological-site" title="Grimes Archaeological Site"><img src="/images/thumbs/grimespoint.png" style="border: 3px solid #000; margin-bottom: 5px;" />Grimes Site</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/crater-lake" title="Crater Lake"><img src="/images/thumbs/craterlake.png" style="border: 3px solid #000; margin-bottom: 5px;" />Crater Lake</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/bryce-canyon" title="Bryce Canyon"><img src="/images/thumbs/brycecanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bryce</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/black-canyon-of-the-gunnison" title="I'd never heard of it"><img src="/images/thumbs/blackcanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Gunnison</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/berlin-icthyosaur" title="Where I went instead of Burning Man"><img src="/images/thumbs/icthyosaur.png" style="border: 3px solid #000; margin-bottom: 5px;" />Icthyosaurs</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/arches" title="All I could think about was Edward Abbey"><img src="/images/thumbs/arches.png" style="border: 3px solid #000; margin-bottom: 5px;" />Arches</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/chihuly" title="Chihuly Exhibit at the Phoenix Desert Garden"><img src="/images/thumbs/chihuly.png" style="border: 3px solid #000; margin-bottom: 5px;" />Chihuly</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/mojave-preserve" title="Camping past Hole in the Wall"><img src="/images/thumbs/mojave.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mojave</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/territorial-prison" title="Arizona's Territorial Prison"><img src="/images/thumbs/prison.png" style="border: 3px solid #000; margin-bottom: 5px;" />Old Prison</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/mittry-lake" title="Mittry Lake"><img src="/images/thumbs/mittry.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mittry Lake</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/kofa-palm-canyon" title="Palm Canyon in Kofa NWR"><img src="/images/thumbs/palmcanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Palm Canyon</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/west-saguaro" title="West Saguaro National Park"><img src="/images/thumbs/saguaro.png" style="border: 3px solid #000; margin-bottom: 5px;" />W. Saguaro</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/arizona-sonora-desert-museum" title="Arizona-Sonora Desert Museum"><img src="/images/thumbs/asdm.png" style="border: 3px solid #000; margin-bottom: 5px;" />ASDM</a>
+      </div>
+    
+      <div class="photobox">
+      <a href="/western-states/canaldam" title="Canal Dam"><img src="/images/thumbs/canaldam.png" style="border: 3px solid #000; margin-bottom: 5px;" />Canal Dam</a>
+      </div>
+    
+  </div>
 
-<div class="grid_10 hidden" id="private-pilot">
-  <h1>Private Pilot</h1>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/bowermanfield" title="Bowerman Field"><img src="/images/thumbs/bowerman.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bowerman</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/yumaaz" title="Flying near MCAS Yuma"><img src="/images/thumbs/yumaaz.png" style="border: 3px solid #000; margin-bottom: 5px;" />Yuma</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/youngeagles" title="Young Eagles"><img src="/images/thumbs/youngeagles.png" style="border: 3px solid #000; margin-bottom: 5px;" />EAA Flights</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/texashill" title="Fly-out to Texas Hill"><img src="/images/thumbs/texashill.png" style="border: 3px solid #000; margin-bottom: 5px;" />Texas Hill</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/somerton-airport" title="Somerton Airport"><img src="/images/thumbs/somerton.png" style="border: 3px solid #000; margin-bottom: 5px;" />Somerton</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/ballooning" title="Suburban Hot-Air Ballooning"><img src="/images/thumbs/ballooning.png" style="border: 3px solid #000; margin-bottom: 5px;" />Balloons</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/tucson" title="Ajo, Ryan, Pinal, Nogales"><img src="/images/thumbs/tucsontrip.png" style="border: 3px solid #000; margin-bottom: 5px;" />Arizona</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/oshkosh" title="Oshkosh, or Inspiring Kids"><img src="/images/thumbs/oshkosh.png" style="border: 3px solid #000; margin-bottom: 5px;" />Oshkosh</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/yodaville" title="Yodaville"><img src="/images/thumbs/yodaville.png" style="border: 3px solid #000; margin-bottom: 5px;" />Yodaville</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/private-pilot/copperstate-2005" title="Copperstate Fly-In"><img src="/images/thumbs/copperstate.png" style="border: 3px solid #000; margin-bottom: 5px;" />Copperstate</a>
-  </div> 
-  
-</div>
-
-<div class="grid_10 hidden" id="backpacking-europe">
-  <h1>Backpacking in Europe</h1>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/warwickcastle" title="Warwick Castle"><img src="/images/thumbs/warwick.png" style="border: 3px solid #000; margin-bottom: 5px;" />Warwick</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/midlandairmuseum" title="Midland Air Museum"><img src="/images/thumbs/midlandair.png" style="border: 3px solid #000; margin-bottom: 5px;" />Midland</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/valais" title="Day hike in Valais"><img src="/images/thumbs/valais.png" style="border: 3px solid #000; margin-bottom: 5px;" />Valais</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/marbachegg" title="Wasserbüffel, meringue, and paragliders"><img src="/images/thumbs/marbachegg.png" style="border: 3px solid #000; margin-bottom: 5px;" />Marbach</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/bietschhorn" title="Bietschhorn"><img src="/images/thumbs/bietschhorn.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bietschhorn</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/soltasplit" title="An island on the Dalmation Coast"><img src="/images/thumbs/soltasplit.png" style="border: 3px solid #000; margin-bottom: 5px;" />Solta</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/mostar" title="Visiting Mostar"><img src="/images/thumbs/mostar.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mostar</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/ljubljana" title="My first city east of Switzerland"><img src="/images/thumbs/ljubljana.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ljubljana</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/kungsleden" title="Eight days from Abisko to Kebnekaise"><img src="/images/thumbs/kungsleden.png" style="border: 3px solid #000; margin-bottom: 5px;" />Kungsleden</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/flam" title="Among the fjords"><img src="/images/thumbs/flam.png" style="border: 3px solid #000; margin-bottom: 5px;" />Flam</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/troy" title="Generally accepted location of Troy"><img src="/images/thumbs/troy.png" style="border: 3px solid #000; margin-bottom: 5px;" />Troy</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/topkapi" title="Topkapi Palace"><img src="/images/thumbs/topkapi.png" style="border: 3px solid #000; margin-bottom: 5px;" />Topkapi</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/priene" title="Ruined Temple of Athena"><img src="/images/thumbs/priene.png" style="border: 3px solid #000; margin-bottom: 5px;" />Priene</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/pamukkale" title="Pamukkale and Hierapolis"><img src="/images/thumbs/pamukkale.png" style="border: 3px solid #000; margin-bottom: 5px;" />Pamukkale</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/miletus" title="Ruins of Miletus"><img src="/images/thumbs/miletus.png" style="border: 3px solid #000; margin-bottom: 5px;" />Miletus</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/istanbul" title="Istanbul, capital of Turkey"><img src="/images/thumbs/istanbul.png" style="border: 3px solid #000; margin-bottom: 5px;" />Istanbul</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/ephesus" title="Birthplace of Heraclitus"><img src="/images/thumbs/ephesus.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ephesus</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/didymaapollon" title="Temple of Apollon"><img src="/images/thumbs/didymapollon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Didyma</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/basilica" title="Basilica Cistern"><img src="/images/thumbs/basilica.png" style="border: 3px solid #000; margin-bottom: 5px;" />Cistern</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/ayasofia" title="Aya Sofia, Hagia Sophia, in Istanbul"><img src="/images/thumbs/ayasofia.png" style="border: 3px solid #000; margin-bottom: 5px;" />Aya Sofia</a>
-  </div> 
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/backpack-europe/anzaccove" title="Graveyard of ninety-thousand souls"><img src="/images/thumbs/anzaccove.png" style="border: 3px solid #000; margin-bottom: 5px;" />Gallipoli</a>
-  </div> 
-  
-</div>
-
-<div class="grid_10 hidden" id="western-states">
-  <h1>Western United States</h1>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/pct-willamette-pass-to-mckenzie-pass" title="Deschutes National Forest"><img src="/images/thumbs/polecreek.png" style="border: 3px solid #000; margin-bottom: 5px;" />Three Sisters</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/wahtum-lake" title="Wahtum Lake"><img src="/images/thumbs/wahtum.png" style="border: 3px solid #000; margin-bottom: 5px;" />Wahtum Lake</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/death-valley" title="Visiting Death Valley"><img src="/images/thumbs/deathvalley.png" style="border: 3px solid #000; margin-bottom: 5px;" />Death Valley</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/multnomah-falls-wahkneena-loop" title="Multnomah-Wahkeena Loop"><img src="/images/thumbs/multnomahwahkeena.png" style="border: 3px solid #000; margin-bottom: 5px;" />Falls Loop</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/kelso-depot-mojave-preserve" title="Kelso Depot"><img src="/images/thumbs/kelsodepot.png" style="border: 3px solid #000; margin-bottom: 5px;" />Kelso Depot</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/tehachapi-loop" title="Watching a Freight take the Tehachapi Loop"><img src="/images/thumbs/tehachloop.png" style="border: 3px solid #000; margin-bottom: 5px;" />Tehachapi</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/psas-rocket-lv23" title="Failed PSAS LV2.3 Launch"><img src="/images/thumbs/psaslv23.png" style="border: 3px solid #000; margin-bottom: 5px;" />Launch</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/yellowstone" title="Ravens gonna rave"><img src="/images/thumbs/yellowstone.png" style="border: 3px solid #000; margin-bottom: 5px;" />Yellowstone</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/saddle-mountain" title="Saddle Mountain"><img src="/images/thumbs/saddlemt.png" style="border: 3px solid #000; margin-bottom: 5px;" />Saddle Mt</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/mccallpoint" title="McCall Point"><img src="/images/thumbs/mccallpoint.png" style="border: 3px solid #000; margin-bottom: 5px;" />McCall Point</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/landscape-desert" title="Deserts of the World"><img src="/images/thumbs/coloradoriver.png" style="border: 3px solid #000; margin-bottom: 5px;" />Deserts</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/elk-rock-garden" title="Elk Rock Garden"><img src="/images/thumbs/elkrock.png" style="border: 3px solid #000; margin-bottom: 5px;" />Elk Rock</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/hoyt" title="Hoyt Arboretum"><img src="/images/thumbs/hoyt.png" style="border: 3px solid #000; margin-bottom: 5px;" />Forest Park</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/zion" title="Zion National Park"><img src="/images/thumbs/zion.png" style="border: 3px solid #000; margin-bottom: 5px;" />Zion</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/ouray" title="Ouray"><img src="/images/thumbs/ouray.png" style="border: 3px solid #000; margin-bottom: 5px;" />Ouray</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/mesa-verde" title="Mesa Verde"><img src="/images/thumbs/mesaverde.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mesa Verde</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/grimes-point-archaeological-site" title="Grimes Archaeological Site"><img src="/images/thumbs/grimespoint.png" style="border: 3px solid #000; margin-bottom: 5px;" />Grimes Site</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/crater-lake" title="Crater Lake"><img src="/images/thumbs/craterlake.png" style="border: 3px solid #000; margin-bottom: 5px;" />Crater Lake</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/bryce-canyon" title="Bryce Canyon"><img src="/images/thumbs/brycecanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Bryce</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/black-canyon-of-the-gunnison" title="I'd never heard of it"><img src="/images/thumbs/blackcanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Gunnison</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/berlin-icthyosaur" title="Where I went instead of Burning Man"><img src="/images/thumbs/icthyosaur.png" style="border: 3px solid #000; margin-bottom: 5px;" />Icthyosaurs</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/arches" title="All I could think about was Edward Abbey"><img src="/images/thumbs/arches.png" style="border: 3px solid #000; margin-bottom: 5px;" />Arches</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/chihuly" title="Chihuly Exhibit at the Phoenix Desert Garden"><img src="/images/thumbs/chihuly.png" style="border: 3px solid #000; margin-bottom: 5px;" />Chihuly</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/mojave-preserve" title="Camping past Hole in the Wall"><img src="/images/thumbs/mojave.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mojave</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/territorial-prison" title="Arizona's Territorial Prison"><img src="/images/thumbs/prison.png" style="border: 3px solid #000; margin-bottom: 5px;" />Old Prison</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/mittry-lake" title="Mittry Lake"><img src="/images/thumbs/mittry.png" style="border: 3px solid #000; margin-bottom: 5px;" />Mittry Lake</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/kofa-palm-canyon" title="Palm Canyon in Kofa NWR"><img src="/images/thumbs/palmcanyon.png" style="border: 3px solid #000; margin-bottom: 5px;" />Palm Canyon</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/west-saguaro" title="West Saguaro National Park"><img src="/images/thumbs/saguaro.png" style="border: 3px solid #000; margin-bottom: 5px;" />W. Saguaro</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/arizona-sonora-desert-museum" title="Arizona-Sonora Desert Museum"><img src="/images/thumbs/asdm.png" style="border: 3px solid #000; margin-bottom: 5px;" />ASDM</a>
-    </div>
-  
-    <div style="float: left; margin-left: 10px; margin-right: 10px;  margin-top: 20px; width: 110px; text-align:center;">
-    <a href="/western-states/canaldam" title="Canal Dam"><img src="/images/thumbs/canaldam.png" style="border: 3px solid #000; margin-bottom: 5px;" />Canal Dam</a>
-    </div>
-  
 </div>
 
 <div class="grid_1">&nbsp;</div>
@@ -975,8 +930,6 @@ Filters:
   <div class="clear"></div>
 </footer>
 
-
-</div>
 
 </body>
 </html>
