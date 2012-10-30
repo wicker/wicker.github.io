@@ -11,7 +11,7 @@
   <meta name="author" content="Jenner Hanni">
 
   
-    <title>Blog Posts and Daily Photos | Wickerbox</title>
+    <title>Writing | Wickerbox</title>
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -32,7 +32,7 @@
 
   <!-- Properties -->
        <meta property="og:site_name" content="Wickerbox"/>
-       <meta property="og:title" content="Blog Posts and Daily Photos"/>
+       <meta property="og:title" content="Writing"/>
        
           <meta property="og:description" content="Thoughts in longer form."/>
        
@@ -81,53 +81,7 @@
 
 <section class="container_12 mainbody">
 
-  <!-- This picasaStream code is from Amanda Fazani at 
-     http://www.bloggingtips.com/author/amanda_fazani/ -->
-
-<style>
-#picasaStream img {border: 1px solid #000; margin: 0 5px 5px 0;}
-</style>
-<script src="http://bloggerbuster-tools.googlecode.com/files/jquery.min.js" type="text/javascript"></script>    
-
-    <script type="text/javascript">
-        $j = jQuery.noConflict();
-        $j(document).ready(function(){
-        $j.getJSON("https://picasaweb.google.com/data/feed/base/user/117081002500022017940/albumid/5783412056663094049?kind=photo&thumbsize=150c&access=public&alt=json&callback=?",
-                function(data){
-                  var thumbCount = 6;
-                  var smallThumb = 0;
-                  var mediumThumb = 1;
-                  var largeThumb = 2;
-                  var picsCount = data.feed.entry.length - 1;
-                  for (var i = picsCount; i > picsCount - thumbCount; i--) {
-                        var pic = data.feed.entry[i];
-                        $j("<img/>").attr("src", pic.media$group.media$thumbnail[smallThumb].url).attr("alt", pic.summary.$t).appendTo("#picasaStream");
-                  }
-                  });
-                });
-      </script>
-
-<div class="container">
-  <div class="row">
-    <div class="col_6">
-      <h1>Daily Photo</h1>
-      <div style="text-align:center; padding-bottom: 10px;">&raquo; <a href="https://picasaweb.google.com/117081002500022017940/DailyPhotos2012">The whole album</a></div>
-      <div id="picasaStream" style="margin-top: 15px;"></div>
-    </div>
-    <div class="col_6 last" style="text-align:left;">
-      <h1>Selected Posts</h1>
-      <div style="text-align:center; padding-bottom: 10px;">&raquo; <a href="http://kenning.dreamwidth.org/">My working notebook</a></div>
-      <div id="blogposts" style="margin-top: 15px;">
-	<ul>
-	  <li>18 Sep : <a href="http://kenning.dreamwidth.org/891.html">This is a test</a></li>
-	</ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div style="clear:both;">&nbsp;</div>
-
+  
 
   <div class="clear"></div>
 

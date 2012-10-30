@@ -102,10 +102,11 @@
 <p>This is called cache coherency and it can be addressed in a wide variety of ways. Our solution implemented the <a href="http://en.wikipedia.org/wiki/MESI_protocol"><span class="caps">MESI</span></a> (Modified-Exclusive-Shared-Invalid) protocol which depended on modifying two bits (for the four possibilities) and checking those and the <span class="caps">LRU</span> bit to make eviction and write decisions.</p>
 <h2>Simulating the L2 Cache in C</h2>
 <p>Our term project for the microprocessor system design course at Portland State in the Fall 2011 quarter was to write a small program in Verilog, C, or C++ to simulate (not synthesize) the behavior of a write-allocate, <span class="caps">MESI</span> protocol, four-way set associative L2 cache with 4K lines of 64 bytes data each. Our C program was tested by our professor by running a text file containing lines of the type</p>
-<p><small>&#8216;n address&#8217;</small></p>
+<div class="code">&#8216;n address&#8217;</div>
 <p>where</p>
-<p><small>&#8216;n&#8217; could be 0-9 and indicated the desired operation type and<br />
-&#8216;address&#8217; was some 32-bit address.</small></p>
+<div class="code">&#8216;n&#8217; could be 0-9 and indicated the desired operation type and&#8217;<br />
+<br />
+&#8216;address&#8217; was some 32-bit address.</div>
 <p>Upon a command input of &#8216;9&#8217; the cache would send (in a somewhat pretty format) all the lines that had been accessed to an output file. We were not required to move, track, or otherwise handle any actual data in the cache. We only had to track addresses and cache locations.</p>
 <h2>Extending the Cache</h2>
 <p>I felt that the quality of the code, especially after last-minute fixes, could be improved. Our prof challenged me to improve extensibility so that it would take less than fifteen minutes to change the size (number of lines) or set associativity (direct-mapped, fully associative).</p>
@@ -116,26 +117,30 @@
 <h2>Get the Code</h2>
 <p>&raquo; <a href="http://github.com/wicker/l2cache/">GitHub repository</a></p>
 <p>To run this cache, you will need the following files:</p>
-<p><a href="https://raw.github.com/wicker/l2cache/master/main.c">main.c</a> &#8211; contains the program itself<br />
+<div class="code"><a href="https://raw.github.com/wicker/l2cache/master/main.c">main.c</a> &#8211; contains the program itself<br />
+<br />
 <a href="https://raw.github.com/wicker/l2cache/master/testfile.din">testfile.din</a> &#8211; the list of &#8216;n&#8217; &#8216;address&#8217; inputs<br />
+<br />
 <a href="https://raw.github.com/wicker/l2cache/master/Makefile">Makefile</a> &#8211; for ease of removing and compiling files during test<br />
-<a href="https://raw.github.com/wicker/l2cache/master/run">run</a> &#8211; this is the script</p>
+<br />
+<a href="https://raw.github.com/wicker/l2cache/master/run">run</a> &#8211; this is the script</div>
 <p>Download these four files into one directory and cd to that directory. Then give the script &#8216;run&#8217; permission to run and then &#8230; run it.</p>
-<p><small>chmod u+x run</small><br />
-<small>./run</small></p>
+<div class="code">chmod u+x run<br />
+./run</div>
 <h2>Script</h2>
 <p>main.c will take in the testfile.din and printf the stats of the entire run.</p>
 <p>It will also generate a display.txt on every iteration where n = 9. This will display everything in the cache but make no changes. The cache will be reset on every iteration where n = 8.</p>
-<p><small>#!/bin/bash</small><br />
-<small># Test the L2 cache</small><br />
-<small>make clean</small><br />
-<small>make all</small><br />
-<small>./main</small><br />
-<small>cat display.txt</small></p>
+<div class="code">#!/bin/bash<br />
+# Test the L2 cache<br />
+make clean<br />
+make all<br />
+./main<br />
+cat display.txt</div>
 <h2>Sample Input</h2>
-<p><img src="/images/project/l2cache/l2cache-input.png"></p>
+<div align="center"><img src="/images/project/l2cache/l2cache-input.png"></div>
 <h2>Sample Output</h2>
-<p><img src="/images/project/l2cache/l2cache-output.png"></p></div>
+<div align="center"><img src="/images/project/l2cache/l2cache-output.png"></div>
+</div>
     </div>
     <div class="grid_1">&nbsp;</div>
 

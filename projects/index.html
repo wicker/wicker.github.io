@@ -20,6 +20,14 @@
   <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 
   
+  <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />-->
+  <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script>
+    $(function() {
+        $( "#tabs" ).tabs();
+    });
+  </script>
+  
 
   <!-- Fluid 960 Grid System -->
   <link rel="stylesheet" type="text/css" href="/css/fluid960/reset.css" />
@@ -81,149 +89,115 @@
 
 <section class="container_12 mainbody">
 
-      <div class="grid_6">
-      <h1>My Groups</h1>
+  <div class="grid_2">&nbsp;</div>
 
-      <div class="project" style="float: left; padding: 0; margin: 0;">
-	<div class="proj_pic">
-	  <a href="http://psas.pdx.edu/" title="PSAS"><img src="/images/thumbs/psas.png" style="border: 3px solid #000" /></a>
-	</div>
-	<div class="proj_item">PSAS : <a href="http://psas.pdx.edu/">Portland State Aerospace Society</a>
-			       <br />Ultra-low-cost, open source rockets.
-        </div>
-      </div>
+<div class="grid_8">
+  <h1>Projects</h1>
 
-      <div style="clear: both;"></div>
-
-      <h1>Geology</h1>
-
-    
-      <div style="width: 300px; margin-top: 15px; background: #fff; color: #000; text-align:center;">
-        <a href="/project/surface-water-streamforms-flooding" title="Streamforms and flooding"><img src="/images/thumbs/geostream.png" class="front"/><br />Streamforms and flooding<br />
-        <div style="font-family: georgia; font-size: 13px; margin-top: 6px; margin-bottom: 6px;">PROJECT</a></div>
-	</div>
-    
-      <div style="width: 300px; margin-top: 15px; background: #fff; color: #000; text-align:center;">
-        <a href="/project/playing-with-mars-maps-with-pigwad-and-arcgis" title="Geomapping Olympus Mons"><img src="/images/thumbs/geomars.png" class="front"/><br />Geomapping Olympus Mons<br />
-        <div style="font-family: georgia; font-size: 13px; margin-top: 6px; margin-bottom: 6px;">PROJECT</a></div>
-	</div>
-    
-      <div style="width: 300px; margin-top: 15px; background: #fff; color: #000; text-align:center;">
-        <a href="/project/pdx-geology-portland-landslides" title="Landslide Frequency and Bedrock Types"><img src="/images/thumbs/geolandslides.png" class="front"/><br />Landslide Frequency and Bedrock Types<br />
-        <div style="font-family: georgia; font-size: 13px; margin-top: 6px; margin-bottom: 6px;">PROJECT</a></div>
-	</div>
-    
-      <div style="width: 300px; margin-top: 15px; background: #fff; color: #000; text-align:center;">
-        <a href="/project/groundwater-path" title="Likely Groundwater Path Analysis"><img src="/images/thumbs/geogroundwater.png" class="front"/><br />Likely Groundwater Path Analysis<br />
-        <div style="font-family: georgia; font-size: 13px; margin-top: 6px; margin-bottom: 6px;">PROJECT</a></div>
-	</div>
-    
-      <div style="width: 300px; margin-top: 15px; background: #fff; color: #000; text-align:center;">
-        <a href="/project/bull-run-reservoir-watershed-analysis" title="Watershed Analysis in the Bull Run Reservoir"><img src="/images/thumbs/bullrun.png" class="front"/><br />Watershed Analysis in the Bull Run Reservoir<br />
-        <div style="font-family: georgia; font-size: 13px; margin-top: 6px; margin-bottom: 6px;">PROJECT</a></div>
-	</div>
-    
-
-    </div>      
-
-    <div class="grid_6">
-    <h1>Recent Projects</h1>
-
-    
-      <div class="project" style="float: left; padding: 0; margin: 0;">
-	<div class="proj_pic">
-	  <a href="/project/wickerbox-net-with-jekyll" title="Making Wickerbox"><img src="/images/thumbs/wickerbox.png" style="border: 3px solid #000" /></a>
-	</div>
-	<div class="proj_item">2012 : <a href="/project/wickerbox-net-with-jekyll">Making Wickerbox</a>
-			       <br />Building Wickerbox as a dynamically-generated static site.
-	</div>
-      </div>
-    
-      <div class="project" style="float: left; padding: 0; margin: 0;">
-	<div class="proj_pic">
-	  <a href="/project/quadcopter-control-board" title="Quadcopter Control Board"><img src="/images/thumbs/quadcoptercontrol.png" style="border: 3px solid #000" /></a>
-	</div>
-	<div class="proj_item">2012 : <a href="/project/quadcopter-control-board">Quadcopter Control Board</a>
-			       <br />Design, board layout, and testing of a control board.
-	</div>
-      </div>
-    
-      <div class="project" style="float: left; padding: 0; margin: 0;">
-	<div class="proj_pic">
-	  <a href="/project/l2-cache-simulator" title="L2 Cache Simulator"><img src="/images/thumbs/l2cache.png" style="border: 3px solid #000" /></a>
-	</div>
-	<div class="proj_item">2012 : <a href="/project/l2-cache-simulator">L2 Cache Simulator</a>
-			       <br />Simulates a set associative, write-allocate, MESI L2 cache.
-	</div>
-      </div>
-    
-      <div class="project" style="float: left; padding: 0; margin: 0;">
-	<div class="proj_pic">
-	  <a href="/project/combs-database-in-mysql-and-php" title="Catacombs Database"><img src="/images/thumbs/combsdb.png" style="border: 3px solid #000" /></a>
-	</div>
-	<div class="proj_item">2012 : <a href="/project/combs-database-in-mysql-and-php">Catacombs Database</a>
-			       <br />Building a database to track claimed servers.
-	</div>
-      </div>
-    
-      <div class="project" style="float: left; padding: 0; margin: 0;">
-	<div class="proj_pic">
-	  <a href="/project/AVT-poster-innovation-presentation" title="AVTv4 Quadcopter Poster"><img src="/images/thumbs/avtposter.png" style="border: 3px solid #000" /></a>
-	</div>
-	<div class="proj_item">2011 : <a href="/project/AVT-poster-innovation-presentation">AVTv4 Quadcopter Poster</a>
-			       <br />My poster for our quadcopter presentation.
-	</div>
-      </div>
-    
-      <div class="project" style="float: left; padding: 0; margin: 0;">
-	<div class="proj_pic">
-	  <a href="/project/mate-competition" title="MATE Competition 2010 & 2011"><img src="/images/thumbs/mate-bots.png" style="border: 3px solid #000" /></a>
-	</div>
-	<div class="proj_item">2011 : <a href="/project/mate-competition">MATE Competition 2010 & 2011</a>
-			       <br />Mentoring a high school underwater robotics team.
-	</div>
-      </div>
-    
-      <div class="project" style="float: left; padding: 0; margin: 0;">
-	<div class="proj_pic">
-	  <a href="/project/manipulating-underwater-images-with-opencv" title="Manipulating underwater images with OpenCV"><img src="/images/thumbs/underwater.png" style="border: 3px solid #000" /></a>
-	</div>
-	<div class="proj_item">2011 : <a href="/project/manipulating-underwater-images-with-opencv">Manipulating underwater images with OpenCV</a>
-			       <br />Investigating a cheap underwater vision system.
-	</div>
-      </div>
-    
-      <div class="project" style="float: left; padding: 0; margin: 0;">
-	<div class="proj_pic">
-	  <a href="/project/marie-curie-bot" title="Marie Curie Bot"><img src="/images/thumbs/marie.png" style="border: 3px solid #000" /></a>
-	</div>
-	<div class="proj_item">2011 : <a href="/project/marie-curie-bot">Marie Curie Bot</a>
-			       <br />Making a robot able to smile.
-	</div>
-      </div>
-    
-      <div class="project" style="float: left; padding: 0; margin: 0;">
-	<div class="proj_pic">
-	  <a href="/project/building-a-tortoise-house" title="Building a tortoise pen"><img src="/images/thumbs/turtlehouse.png" style="border: 3px solid #000" /></a>
-	</div>
-	<div class="proj_item">2010 : <a href="/project/building-a-tortoise-house">Building a tortoise pen</a>
-			       <br />Have tortoise, need habitat.
-	</div>
-      </div>
-    
-      <div style="clear: both;">&nbsp;</div>
-    </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/wickerbox-net-with-jekyll" title="Making Wickerbox" class="white">
+      <img src="/images/thumbs/wickerbox.png" class="front"/>
+      <div class="project-subtitle">Making Wickerbox</div>
+    </a>
   </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/quadcopter-control-board" title="Quadcopter Control Board" class="white">
+      <img src="/images/thumbs/quadcoptercontrol.png" class="front"/>
+      <div class="project-subtitle">Quadcopter Control Board</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/l2-cache-simulator" title="L2 Cache Simulator" class="white">
+      <img src="/images/thumbs/l2cache.png" class="front"/>
+      <div class="project-subtitle">L2 Cache Simulator</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/combs-database-in-mysql-and-php" title="Catacombs Database" class="white">
+      <img src="/images/thumbs/combsdb.png" class="front"/>
+      <div class="project-subtitle">Catacombs Database</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/AVT-poster-innovation-presentation" title="Quadcopter Poster" class="white">
+      <img src="/images/thumbs/avtposter.png" class="front"/>
+      <div class="project-subtitle">Quadcopter Poster</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/mate-competition" title="MATE ROV Competition" class="white">
+      <img src="/images/thumbs/mate-bots.png" class="front"/>
+      <div class="project-subtitle">MATE ROV Competition</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/manipulating-underwater-images-with-opencv" title="Underwater Vision System" class="white">
+      <img src="/images/thumbs/underwater.png" class="front"/>
+      <div class="project-subtitle">Underwater Vision System</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/surface-water-streamforms-flooding" title="Streamforms and flooding" class="white">
+      <img src="/images/thumbs/geostream.png" class="front"/>
+      <div class="project-subtitle">Streamforms and flooding</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/playing-with-mars-maps-with-pigwad-and-arcgis" title="Geomapping Olympus Mons, Mars" class="white">
+      <img src="/images/thumbs/geomars.png" class="front"/>
+      <div class="project-subtitle">Geomapping Olympus Mons, Mars</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/pdx-geology-portland-landslides" title="Landslide Frequency and Bedrock Types" class="white">
+      <img src="/images/thumbs/geolandslides.png" class="front"/>
+      <div class="project-subtitle">Landslide Frequency and Bedrock Types</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/groundwater-path" title="Likely Groundwater Path Analysis" class="white">
+      <img src="/images/thumbs/geogroundwater.png" class="front"/>
+      <div class="project-subtitle">Likely Groundwater Path Analysis</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/bull-run-reservoir-watershed-analysis" title="Watershed Analysis in the Bull Run Reservoir" class="white">
+      <img src="/images/thumbs/bullrun.png" class="front"/>
+      <div class="project-subtitle">Watershed Analysis in the Bull Run Reservoir</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/marie-curie-bot" title="Marie Curie Bot" class="white">
+      <img src="/images/thumbs/marie.png" class="front"/>
+      <div class="project-subtitle">Marie Curie Bot</div>
+    </a>
+  </div>
+  
+  <div class="projectbox front shadow">
+    <a href="/project/building-a-tortoise-house" title="Building a tortoise pen" class="white">
+      <img src="/images/thumbs/turtlehouse.png" class="front"/>
+      <div class="project-subtitle">Building a tortoise pen</div>
+    </a>
+  </div>
+  
+</div>
 
-	
-	<div class="col_3" style="margin-top: 15px; background: #202d41; color: #fff;">
-	  <a href="" style="color: #fff;" title=""><img src="" /><br />
-	  <div style="font-family: georgia; font-size: 13px; color: #fff; margin-top: 6px; margin-bottom: 6px;"></a></div>
-	</div>
-	
+<div class="grid_2">&nbsp;</div>
 
-
-</div><!-- end container -->
+<div class="clear">&nbsp;</div>
 
 
 
