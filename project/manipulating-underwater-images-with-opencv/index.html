@@ -61,19 +61,19 @@ Lincoln High School Competition Bots in 2010</div>
 <p>The Pacific Northwest regional competition took place on May 7, 2011, at the Weyerhauser King County Aquatic Center in Federal Way, WA. The international competition took place at the <span class="caps">NASA</span> Johnson Space Center’s Neutral Buoyancy Lab from June 16-18, 2011, in Houston, Texas.</p>
 <p>The Lincoln High School robotics team has competed in this competition since 2008, when they won the Pacific Northwest regional and took fourth place in the international competition at University of California San Diego.</p>
 <p>I joined this team as the assistant coach in 2010 and attended the Northwest regional in 2010 and 2011. No <span class="caps">ROV</span> at the competition was autonomous and I was curious how much cost and effort would be necessary to make an autonomous bot that could be developed by high schoolers. The first step in a robot making its own decisions is giving it input to work with so I decided to explore the visual C++ libraries of OpenCV and our current, proven underwater camera system.</p>
-<h2><span class="caps">ROV</span> vs <span class="caps">AUV</span></h2>
+<p><strong><span class="caps">ROV</span> vs <span class="caps">AUV</span></strong></p>
 <p>Underwater robots are either remotely controlled by human operators on nearby ships or engaged in repetitive, simple autonomous tasks. they may transmit their data regularly or store it and await retrieval. These robots can be tethered for power and pneumatic control, or they may operate solely on battery power.</p>
 <p>Remotely operated vehicles are used today primarily in situations requiring advanced decision-making, such as the rapidly changing environment after the 2010 BP oil spill in the Gulf of Mexico. ROVs traditionally are tethered and have manipulator arms for repair or investigatory work. They are commonly used in shipwrecks and cave exploration but recent work has resulted in a touchpad for a diver to accompany the <span class="caps">ROV</span> and control it wirelessly from nearby. This is not yet an <span class="caps">AUV</span> but it has the benefit of no tether.</p>
 <p>Autonomous underwater vehicles are becoming more common in oceanographic surveys, especially in deep sea exploration, geotechnical mapping, and pipeline maintenance. They can be gliders or buoys. These applications are still limited as the <span class="caps">AUV</span> is generally a very simple platform and extensively preprogrammed to follow a preplanned path to collect sensor data. In pipeline maintenance, for example, the <span class="caps">AUV</span> only needs to follow the pipe and determine whether damage has occurred; i.e., to compare the current pipe image and its known-good reference image.</p>
-<h2>Note</h2>
+<p><strong>Note</strong></p>
 <p>The three example programs (ellipse.c, houghlines.c, edge.c) are all included in the package download of OpenCV and were written by the referenced authors. I’ve linked them here.</p>
 <p>Click here for more pictures of our underwater robots.</p>
 <p>All the images of robots were taken by two former students of Lincoln High School for their documentary video in 2010. The images aren’t mine.</p>
-<h2>Goals and Results</h2>
+<p><strong>Goals and Results</strong></p>
 <p>The first goal was to explore an option for an underwater camera system which could feed video to a Linux laptop or other microprocessor-containing board running embedded Linux capable of image processing. We currently use the Harbor Freight underwater camera system because of significant problems in the past with waterproofing webcams. This system has served us well for several years because it is waterproof, battery-powered, and capable of transmitting video from the bottom of a pool without interruption. Unfortunately the video didn’t come in a format that could be easily processed and the hardware to interface it with Linux wasn’t reliable.</p>
 <p>The second goal was for me personally to get a better understanding of the challenges an underwater environment poses to image processing. I processed still images from the underwater camera Canny/Sobel edge detection and Hough lines and Hough ellipses detection. I varied the parameters as described and generally got a feel for the practical difficulties of imaging underwater.</p>
 <p>The third goal was to see if this system, for under $250, would be reliable enough to have tutorials written for it and a site set up from Lincoln High School to distribute to other teams. The answer was pretty much ‘no’ and I reluctantly recommend that someone look into buying a cheap, reliable underwater camera system and try again using Windows video capture software.</p>
-<h2>Camera System</h2>
+<p><strong>Camera System</strong></p>
 <p>$120 Harbor Freight Underwater B/W Camera on 60’ Cable with Monitor<br />
 $20 EasyCap DC60 Capture Card Surveillance Dongle</p>
 <p>The team wanted to adapt their existing Harbor Freight Underwater Camera to send composite video to a laptop running Ubuntu 10.04 (Lucid Lynx). The laptop in question had no <span class="caps">PCI</span> slot so it was decided to find an external capture card with a <span class="caps">USB</span> connector. The EasyCap DC60 was inexpensive and open-source drivers for Linux were available from SourceForge.</p>
@@ -82,7 +82,7 @@ $20 EasyCap DC60 Capture Card Surveillance Dongle</p>
 <div align="center"> <img src="/images/project/underwater/figure1.gif"><br />
 <br />
  <img src="/images/project/underwater/figure2.gif"> <img src="/images/project/underwater/figure3.gif"></div>
-<h2>Setting up the EasyCap DC60</h2>
+<p><strong>Setting up the EasyCap DC60</strong></p>
 <p>There are two models (DC60 and DC60+) of the EasyCap made by three manufacturers and distributed by at least four companies under similar names on Amazon for prices ranging from $5 to $20. Unfortunately, there doesn’t seem to be any way to determine which one you’ll receive in advance without contacting the particular company. For this, the DC60 made by Syntek is supported.</p>
 <p>First, it’s necessary to determine which EasyCap is present by plugging it into the <span class="caps">USB</span> slot and running the following command,</p>
 <div class="code">lsusb</div>
@@ -119,11 +119,11 @@ lsmod | grep easycap</div>
 <div class="code">mencoder tv:// -tv device=/dev/video1:input=1:norm=NTSC_M:width=640:<br />
 +height=480:noaudio -vf pp=md -o Recording -ovc lavc -lavcopts<br />
 +vcodec=mpeg4:vbitrate=8000</div>
-<h2>Mission Task Props</h2>
+<p><strong>Mission Task Props</strong></p>
 <p>The <span class="caps">MATE</span> Center releases complete descriptions so that props for that a replica field may be built by a team for practice; a sample are shown below. The upper-leftmost and upper-rightmost props require the robot to locate ellipsoids autonomously and then the operator would take over to manipulate the wellcap or collect the agar sample using a specially manipulator arm with pneumatic controls. There will be three identical props, as shown in the bottom left, scattered about the mission field. The <span class="caps">ROV</span> will be required to identify the one that is vibrating, which can be done easily using the EasyCap DC60 because it supports and audio input from a hydrophone attached to the robot.</p>
 <p>The center prop emits hot water from each ‘vent’. The long, straight lines of this prop set it apart visually, making it easily identifiable. An <span class="caps">ROV</span> could easily approach and await the operator’s takeover to get temperature readings at each vent. The last task, as shown in the bottom right, is the collection of ‘grubs’, gummy fishing lures. They are irregularly shaped and may be hidden or entwined but will show on images in stark contrast to the long, narrow, dark cave so they should be easily identifiable.</p>
 <div align="center"> <img src="/images/project/underwater/figure5.gif"></div>
-<h2>Canny Edge Detection</h2>
+<p><strong>Canny Edge Detection</strong></p>
 <p>Edge detection is a fundamental first step in image processing. An edge is not essentially a tangible element. It is instead the relationship between two neighboring blocks of pixels of different colors. These neighboring blocks of pixels may be lines or they may be large blocks with irregular borders. In either case, the simple edge.c program applied the cvSmooth, cvNot, and cvCanny functions as shown in the following code selection:</p>
 <div class="code">cvSmooth( gray, edge, CV_BLUR, 3, 3, 0, 0 );<br />
 cvNot( gray, edge );<br />
@@ -134,7 +134,7 @@ cvCanny(gray, edge, (float)edge_thresh, (float)edge_thresh*3, 3);</div>
 <p>Finally, cvCanny takes this inverted, convoluted image and compares each pixel in turn to each of its neighbors to identify the edges according to the threshold values as determined by the user. The level of threshold is used to limit how much linking can occur between possibly-unrelated edges. This is particularly noticeable in the figure below.</p>
 <p>Because an edge could occur at any angle, the vertical and horizontal derivatives of each set of identified edge components are used to calculate the angle and set a tracked ridge. All pixels not on the tracked ridge are set to zero. Because of the way light breaks in water and because the <span class="caps">PVC</span> can curve, there needs to be hysteresis applied to follow the lines as far as they are continuous, but that was not called for in this simple program.</p>
 <div align="center"> <img src="/images/project/underwater/figure6.gif"></div>
-<h2>Hough Lines</h2>
+<p><strong>Hough Lines</strong></p>
 <p>Where cvCanny identifies edges, the relationships of blocks to other blocks, the Hough transform uses the image that has been processed with Canny edge detection and inverted so that the background is black; by checking each pixel for color value, the Hough transform identifies the non-black pixels (for i = 0) and plots their slope and intercept data in gradient space where slope is the y-axis and y-intercept is the x-axis.</p>
 <p>Though the relationships of pixels can be realized graphically in this gradient space, all of the data is actually passed from the previous array produced by the Canny edge detect into a new accumulator array of dimensions slope (m) and intercept (b). The transform samples each pixel and sorts it into a cell of a new array based on its slope and intercept parameters. Once all of the pixels in the source image have been slotted into new cells, those cells with the highest number of pixels are identified as lines. The minimum number of necessary pixels in a cell to generate a line (in red, see below) is determined in the program code.</p>
 <p>This is a sample from houghlines.c:</p>
@@ -168,7 +168,7 @@ cvLine( color_dst, line0, line1, CV_RGB(255,0,0), 3, CV_AA, 0 );</div>
 <br /><br />
 <br />
  <img src="/images/project/underwater/figure8.gif"></div>
-<h2>Additional Hough Geometry</h2>
+<p><strong>Additional Hough Geometry</strong></p>
 <p>The problem of irregular shapes can be solved by applying transform functions like cvFindContours, cvHoughCircles, and cvFitEllipse2. Adding contours (a curved edge where the function is continuous) requires creating memory storage in the form of cvSeq, which creates a linked list of related pixels. cvThreshold is used to binarize the image by creating a trackbar in the same way as in houghlines.c and edge.c, because cvFindContours requires pixels of value 0 or 1 only. The following code from fitellipse.c demonstrates this sequence of steps.</p>
 <div class="code">storage = cvCreateMemStorage(0);<br />
 contour = cvCreateSeq(CV_SEQ_ELTYPE_POINT, sizeof(CvSeq), sizeof(CvPoint) , storage);<br />
@@ -182,11 +182,11 @@ cvFitEllipse2 applied with CV_RETR_LIST<br />
  <img src="/images/project/underwater/figure11.gif"><br />
 cvFitEllipse2 applied with CV_RETR_EXTERNAL</div>
 <p>This result leads to the question of whether it would be worth redesigning the <span class="caps">MATE</span> Center’s props to be more friendly to image processing. The answer is likely ‘no’ and more effort should be put into refining the geometry-detecting algorithms. This may be application-dependent: AUVs being designed for the sealife surveys will need more refined algorithms but AUVs designed to crawl pipelines and service deep-sea drilling stations would benefit from a structure built as simple geometrically as possible.</p>
-<h2>Conclusion</h2>
+<p><strong>Conclusion</strong></p>
 <p>I came into this project with no previous experience in image processing and was able in a few weeks to gain a basic understanding of underwater imaging, the OpenCV libraries, Hough and Canny transforms, and video processing on Linux. Hough and Canny are enough to get started with OpenCV. They can be applied without a detailed understanding of the mathematics but the math is also accessible for a dedicated, interested high school student. I believe programming an <span class="caps">ROV</span> with some basic autonomous functions in the seven months of the program is not outside the abilities of an average robotics team competing in the <span class="caps">MATE</span> competition.</p>
 <p>However, the weak link in this system is the lack of reliable hardware that streams video to Linux.</p>
 <p>I didn’t even examine the issue of using webcams, which would be the easiest and most common way to get usable streaming video to a Linux laptop, because the process of waterproofing them is something we’ve had very little success at. A professionally manufactured underwater camera system is the way to go. If this system could be made to work on Windows, it might be worth pursuing because of the low cost.</p>
-<h2>Resources</h2>
+<p><strong>Resources</strong></p>
 <p>EasyCap DC60 Linux drivers are available at SourceForge.<br />
 <a href="http://sourceforge.net/projects/easycapdc60/">http://sourceforge.net/projects/easycapdc60/</a></p>
 <p>TV viewing and recording solutions for Linux.<br />
@@ -216,9 +216,7 @@ cvFitEllipse2 applied with CV_RETR_EXTERNAL</div>
       </div>
       <div class="grid_4" >
 
-        
    		    <h1 id="branding"><a href="/project/manipulating-underwater-images-with-opencv">Underwater Vision System</a></h1>
-        
 
       </div>
 
