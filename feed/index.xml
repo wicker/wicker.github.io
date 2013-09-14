@@ -4,13 +4,103 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-07-24T18:11:09-07:00</updated>
+ <updated>2013-09-14T10:01:14-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Building and GIFing a simple timer circuit</title>
+   <link href="http://wickerbox.net/project/simple-timer-circuit"/>
+   <updated>2013-08-25T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/project/simple-timer-circuit</id>
+   <content type="html">&lt;p&gt;Just screwing around with circuits.&lt;/p&gt;
+&lt;p&gt;I recently bought a house and set up a little home office. In the process, I found a bunch of through-hole components that I got from parts unknown and ended up sorting and messing around with them. All of this high-level ChibiOS stuff has been stressing me out so I did something I haven&amp;#8217;t done in maybe forever &amp;#8212; made a bunch of little circuits for the hell of it.&lt;/p&gt;
+&lt;p&gt;By the way, Parts Unknown would be an awesome name for an electronics component business.&lt;/p&gt;
+&lt;img src=&quot;/images/project/blinky/IMG_0187.png&quot;&gt;
+&lt;p&gt;The first question I asked was hey, does this potentiometer work? Do these LEDs? It&amp;#8217;s a three-pin pot powered off a 9V with output voltage over the &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt;.&lt;/p&gt;
+&lt;img src=&quot;/images/project/blinky/IMG_0194a.png&quot;&gt;
+&lt;p&gt;I wanted some sort of switch to turn off all power without having to keep unsnapping the 9V header but all I could come up with in my box of parts was a 8-pin switch.&lt;/p&gt;
+&lt;p&gt;I went through all my through-hole ICs and found that I&amp;#8217;ve accumulated all the usual: logic gates, comparators, muxes, op amps&amp;#8230; and 555 timers, which I know of but have never actually used.&lt;/p&gt;
+&lt;p&gt;I used a schematic from Forrest Mims&amp;#8217; 555 Timer cookbook and wired it up. Then I looked into how to make a gif to post here so it&amp;#8217;s clear the light is blinking. I figured ffmpeg would work but it&amp;#8217;s got a note that this feature is deprecated and to use avconv instead. I tried with ffmpeg anyway and got a 141 MB file.&lt;/p&gt;
+&lt;p&gt;I went looking for better instructions and found &lt;a href=&quot;https://scottlinux.com/2011/07/31/create-animated-gif-in-linux-from-command-line/&quot;&gt;Scott&amp;#8217;s Linux blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I took the picture with an iPhone 4S and used avconv to grab a photo every second. That gave me four still iamges to put into the gif.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;avconv -i IMG_0196.MOV -vsync 1 -r 1 -an -y 'frame%d.jpg'&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then I used Scott&amp;#8217;s instructions to make what turned out to be a pretty crappy gif, through no fault of his.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mogrify -resize 640x480 *.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;convert -delay 20 -loop 0 *.jpg 555blink.gif&lt;/code&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/project/blinky/555blink1.gif&quot;&gt;
+&lt;p&gt;Lesson learned: I need a camera tripod and also to automate this process. I looked around and found another movie that was much longer, so I repeated the process and took the first eight frames.&lt;/p&gt;
+&lt;img src=&quot;/images/project/blinky/555blink2.gif&quot;&gt;
+&lt;p&gt;&lt;code&gt; mogrify -resize 640x480 *.jpg&lt;/p&gt;
+&lt;p&gt;convert -delay 30 -loop 0 *.jpg 555blink1.gif&lt;/p&gt;
+&lt;p&gt;avconv -i IMG_0196.&lt;span class=&quot;caps&quot;&gt;MOV&lt;/span&gt; -vsync 1 -r 2 -an -y &amp;#8216;frame%d.jpg&amp;#8217;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I should probably have taken twice as many frames per second in the avconv process because it doesn&amp;#8217;t show that the light should be on the same amount of time each blink. So I did that on the longer movie and ended up selecting the first 10 frames in the sequence, which includes two cycles of the blinking &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt;.&lt;/p&gt;
+&lt;img src=&quot;/images/project/blinky/555blink3.gif&quot;&gt;
+&lt;p&gt;I kept going for the hell of it, since I had 8 switches to work with. I added a little push-button switch to turn on the &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt; on the button press. Having both hooked up at the same time meant the &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt; up top was blinking as per the 555 timer but pressing the button down below sunk all current through the bottom &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt;.&lt;/p&gt;
+&lt;img src=&quot;/images/project/blinky/IMG_0199.png&quot;&gt;
+&lt;p&gt;It seems like it&amp;#8217;d be pretty easy to fake a &lt;span class=&quot;caps&quot;&gt;GIF&lt;/span&gt;, to do sleight of hand, and to demonstrate performance or meeting a spec that isn&amp;#8217;t actually there. This last gif is the longest, the largest, with 2fps to pull the still images, but it&amp;#8217;s still not anywhere near acceptable.&lt;/p&gt;
+&lt;p&gt;Kind of a cool thing to think about.&lt;/p&gt;
+&lt;img src=&quot;/images/project/blinky/buttonblink.gif&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Getting into hobby electronics in Portland</title>
+   <link href="http://wickerbox.net/blog/making-stuff-in-portland"/>
+   <updated>2013-08-10T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/blog/making-stuff-in-portland</id>
+   <content type="html">&lt;p&gt;A technician at work recently asked me about getting started making stuff in Portland and in general so I braindumped into an email. I’ve cleaned up and added a lot before posting it here. These are only things I’ve actively been to or seen, which means there’s a whole city of awesome out there.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Community&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First off, Portland is pretty awesome and it&amp;#8217;s got an awesome calendar. Keep an eye on &lt;a href=&quot;http://calagator.org/&quot;&gt;Calagator&lt;/a&gt;, the Portland Tech calendar.&lt;/p&gt;
+&lt;p&gt;You might want to get a &lt;a href=&quot;github.com&quot;&gt;GitHub&lt;/a&gt; account. Feel free to follow &amp;#8216;wicker&amp;#8217;.&lt;/p&gt;
+&lt;p&gt;If you have a Monday evening free, all kinds of electronics hackers bring their projects to &lt;a href=&quot;http://dorkbotpdx.org/&quot;&gt;Dorkbot&lt;/a&gt; on every other Monday at Backspace Café in downtown Portland.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://psu-epl.github.io&quot;&gt;Electronics Prototyping Lab&lt;/a&gt; at Portland State has walk-in lab hours to use their laser cutter, 3D printer, &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; board router, soldering stations, and reflow oven.&lt;/p&gt;
+&lt;p&gt;There&amp;#8217;s the &lt;a href=&quot;http://pdxdrones.com&quot;&gt;PDXDrones&lt;/a&gt; group with a monthly fly-out and invited speakers as well as the &lt;a href=&quot;http://psas.pdx.edu&quot;&gt;Portland State Aerospace Society&lt;/a&gt; building rockets and related avionics every Tuesday night on campus.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Linux&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve learned a ton about how computers, electronics, and networking works by being able to look under the hood of my laptop.&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re not comfortable with dual-booting your current laptop, where you add Linux alongside your current operating system and choose one every time you boot up, then I suggest buying a second-hand laptop running Ubuntu Linux from &lt;a href=&quot;http://freegeek.org&quot;&gt;FreeGeek&lt;/a&gt;&amp;#8217;s thrift shop on SE Hawthorne. They run a couple hundred dollars and you’re supporting a great cause, but if that’s too steep you can also volunteer in their Build Program to earn your own.&lt;/p&gt;
+&lt;p&gt;Using &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt;, &lt;a href=&quot;http://www.debian.org/&quot;&gt;Debian&lt;/a&gt;, &lt;a href=&quot;http://fedoraproject.org/&quot;&gt;Fedora&lt;/a&gt;, &lt;a href=&quot;http://www.linuxmint.com/&quot;&gt;Mint&lt;/a&gt;, or whatever brand of Linux you prefer, get set up with &lt;span class=&quot;caps&quot;&gt;SSH&lt;/span&gt; keys and be able to clone git repositories from GitHub. Read all the &lt;a href=&quot;http://help.github.com&quot;&gt;GitHub help documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Looking around GitHub, you&amp;#8217;ll find the same two files over and over. One is &lt;span class=&quot;caps&quot;&gt;README&lt;/span&gt; and by looking you&amp;#8217;ll see what should be in a good &lt;span class=&quot;caps&quot;&gt;README&lt;/span&gt; and what&amp;#8217;s lacking in the bad ones. The other is a &lt;span class=&quot;caps&quot;&gt;LICENSE&lt;/span&gt; file and this is where you&amp;#8217;ll tell other developers what you do and don&amp;#8217;t want them to do with your code.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Open Source Licenses&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I feel strongly that one of the great things about the electronics maker community is in being very pro-open source where source code and hardware schematics are made freely available. I don&amp;#8217;t just want to know what you made, I want to know how you made it.&lt;/p&gt;
+&lt;p&gt;I do want to note that there are a vocal crowd out there that says &lt;a href=&quot;http://www.gnu.org/philosophy/free-sw.html&quot;&gt;all software should be free&lt;/a&gt;. Do them the favor of reading up on their points of view and adjust your philosophy accordingly. Then realize that the way things are right now is really &lt;a href=&quot;http://opensource.org/&quot;&gt;open source&lt;/a&gt; instead, where you choose a license that allows others to use your code and schematics but limit them to obey certain conditions.&lt;/p&gt;
+&lt;p&gt;You can read up on &lt;a href=&quot;http://opensource.org/licenses&quot;&gt;the current open source licenses&lt;/a&gt; and pick one that you like. LadyAda has an intro to &lt;a href=&quot;http://www.ladyada.net/library/openhardware/license.html&quot;&gt;open hardware licenses&lt;/a&gt;, which is something that&amp;#8217;s still evolving.&lt;/p&gt;
+&lt;p&gt;I tend to license my hardware and software under the 3-clause &lt;span class=&quot;caps&quot;&gt;BSD&lt;/span&gt; license, which says you can take my work but you must include the copyright notice and my name whether you&amp;#8217;re releasing (a) my source code or (b) a compiled binary, and &amp;#169; you can&amp;#8217;t use my name or the name of my orgnaization to endorse or promote products you make by changing my software.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Make Your Own Boards&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s typical to start out with a breadboard but pretty soon you&amp;#8217;re going to want something a little more durable. Also, you&amp;#8217;ll want to put the project up on a shelf and re-use that breadboard.&lt;/p&gt;
+&lt;p&gt;Make your own boards by designing your circuit and laying out the traces on your own circuit board in a schematic/board layout editor using &lt;a href=&quot;http://cadsoftusa.com&quot;&gt;Eagle&lt;/a&gt; or &lt;a href=&quot;http://kicad-pcb.org&quot;&gt;KiCad&lt;/a&gt;. You’ll probably want to start with 2-layer boards so don’t pay money for the standard version of Eagle until you&amp;#8217;re absolutely sure you want it. The hobby version lets you build small 2-layer boards for free.&lt;/p&gt;
+&lt;p&gt;I recommend not starting out on Eagle but, if you feel you must, don&amp;#8217;t think you can&amp;#8217;t switch later. Any good open source schematics editor will open Eagle files. I started out with Eagle, got the standard Eagle, and while I like the program, I got somebody else to pay for it and would not have paid for it myself. Plus it&amp;#8217;s closed source, I was never able to get a copy of the license, and their customer service is nonexistent.&lt;/p&gt;
+&lt;p&gt;Get your board fabbed locally for $5/sq inch through &lt;a href=&quot;http://oshpark.com/&quot;&gt;OSHPark&lt;/a&gt; by ordering online, uploading your &lt;span class=&quot;caps&quot;&gt;CAD&lt;/span&gt; files, and getting it mailed to your house in a couple of weeks.&lt;/p&gt;
+&lt;p&gt;When you’re designing the board, figure out your bill of materials using &lt;a href=&quot;http://digikey.com&quot;&gt;Digikey&lt;/a&gt;, &lt;a href=&quot;http://mouser.com&quot;&gt;Mouser&lt;/a&gt;, &lt;a href=&quot;http://newark.com&quot;&gt;Newark&lt;/a&gt;, &lt;a href=&quot;http://sparkfun.com&quot;&gt;Sparkfun&lt;/a&gt;, and &lt;a href=&quot;http://adafruit.com&quot;&gt;Adafruit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Always order the parts when you order the board to be sure everything&amp;#8217;s in stock. Double check your packages and footprints so the parts you order will fit your board!&lt;/p&gt;
+&lt;p&gt;Digikey tip: order it &lt;span class=&quot;caps&quot;&gt;USPS&lt;/span&gt; regular shipping, you generally get it in like two days for $5. Consider overnight shipping a last resort.&lt;/p&gt;
+&lt;p&gt;Are you completely lost and confused when it comes to laying or building boards? The &lt;a href=&quot;http://psu-epl.github.io&quot;&gt;Electronics Prototyping Lab&lt;/a&gt; at Portland State has a calendar of open lab walk-in hours.&lt;/p&gt;
+&lt;p&gt;For local parts retailers, make the pilgrimage to &lt;a href=&quot;http://www.oregon-electronics.com&quot;&gt;Oregon Electronics&lt;/a&gt; in Beaverton, &lt;a href=&quot;http://norvac.net&quot;&gt;Norvac&lt;/a&gt; in Salem, or &lt;a href=&quot;http://www.frys.com/&quot;&gt;Fry&amp;#8217;s&lt;/a&gt; in Wilsonville.&lt;/p&gt;
+&lt;p&gt;All the places above link you to the datasheet. Read every datasheet. Start to learn the words.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use a Development Platform&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For basic introduction to C on microcontrollers, you really can’t beat a basic &lt;a href=&quot;http://arduino.cc&quot;&gt;Arduino&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For &lt;span class=&quot;caps&quot;&gt;FPGA&lt;/span&gt;, go with a &lt;a href=&quot;http://papilio.cc&quot;&gt;Papilio&lt;/a&gt; kit or an &lt;a href=&quot;http://www.adafruit.com/products/451&quot;&gt;Altera DE0-Nano from Adafruit&lt;/a&gt; and check out the &lt;a href=&quot;http://fpga4fun.com&quot;&gt;FPGA4Fun&lt;/a&gt; for a place to start.&lt;/p&gt;
+&lt;p&gt;There are a great set of introductory tutorial systems at &lt;a href=&quot;http://learn.sparkfun.com&quot;&gt;Learn at SparkFun&lt;/a&gt; and &lt;a href=&quot;http://learn.adafruit.com&quot;&gt;Adafruit Learning&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you’ve maxed out your Arduino, move on to a &lt;a href=&quot;http://beagleboard.org&quot;&gt;Beagleboard&lt;/a&gt; or &lt;a href=&quot;http://raspberrypi.org&quot;&gt;Raspberry Pi&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Two common, beginner-friendly embedded operating systems are the &lt;a href=&quot;http://ros.org/wiki&quot;&gt;Robot Operating System&lt;/a&gt; and &lt;a href=&quot;http://www.chibios.org&quot;&gt;ChibiOS&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For fun project ideas and community, check out &lt;a href=&quot;http://makezine.com&quot;&gt;Make Magazine&lt;/a&gt; and the &lt;a href=&quot;http://hackaday.com&quot;&gt;Hackaday Blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Writing Code&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Need to learn a new language or framework? Pick a language, find a challenge, start writing code, and commit commit commit. Your early code can be terrible. One of the best ways to get good is to write a lot of code, write mountains of code, and keep it so you can look back and learn from it.&lt;/p&gt;
+&lt;p&gt;For example, I chose C and wrote a bunch of simple solutions for &lt;a href=&quot;http://projecteuler.net&quot;&gt;Project Euler&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Jennifer DeWalt is learning website front-end by building &lt;a href=&quot;http://blog.jenniferdewalt.com&quot;&gt;180 Websites in 180 Days&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Knowledge&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Once you’ve done some random projects, get more systematic.&lt;/p&gt;
+&lt;p&gt;Try to do a project for each protocol, from I2C to &lt;span class=&quot;caps&quot;&gt;SPI&lt;/span&gt; to serial.&lt;/p&gt;
+&lt;p&gt;Read all the Wikipedia pages and be able to draw the different protocol timing diagram shapes.&lt;/p&gt;
+&lt;p&gt;Learn when and when not to use each. Start to learn what physically works and what doesn’t.&lt;/p&gt;
+&lt;p&gt;Ask not only ‘what is this unfamiliar term?’ but also ‘what are its alternatives?’.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://jacquesricher.com/NEETS/&quot;&gt;Navy Electricity and Electronics Training Series&lt;/a&gt; is available for free.&lt;/p&gt;
+&lt;p&gt;One place for explanations/answers is the &lt;a href=&quot;http://electronics.stackexchange.com&quot;&gt;Electronics StackExchange&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The big online resource for drones is &lt;a href=&quot;http://diydrones.com&quot;&gt;DIYDrones&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>PSAS Launch 10 and NXRS 2013</title>
@@ -26,21 +116,6 @@
 &lt;img src=&quot;https://lh4.googleusercontent.com/-L0ubdUlroyg/UdW1r_PSseI/AAAAAAAAFcw/nlUfRLb6l8o/w740-h494-no/DSCF1872-post.png&quot;&gt;
 &lt;img src=&quot;https://lh4.googleusercontent.com/-GDNMvj2ZNmI/UdW1s-v_6iI/AAAAAAAAFdA/9cwAyRsKDRY/w348-h521-no/DSCF1881-post.png&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/-WeGOZ4bdhfo/UdW1xyizqII/AAAAAAAAFdw/AN6f_LxVaZQ/w740-h494-no/DSCF1915-post.png&quot;&gt;</content>
- </entry>
- 
- <entry>
-   <title>Tualatin River Wildlife Refuge</title>
-   <link href="http://wickerbox.net/western-states/tualatin-river-wildlife-refuge"/>
-   <updated>2013-06-18T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/western-states/tualatin-river-wildlife-refuge</id>
-   <content type="html">&lt;img src=&quot;https://lh3.googleusercontent.com/-55wuRpZbooE/UcFEDX7zf3I/AAAAAAAAE-4/jEOMqCmUGKM/w640-h480-no/photo12.postable.JPG&quot;&gt;
-&lt;img src=&quot;https://lh6.googleusercontent.com/-uzLVnWPhHiM/UcFED39I85I/AAAAAAAAE_I/ZOYQLrDJtgo/w640-h480-no/photo7.postable.JPG&quot;&gt;
-&lt;img src=&quot;https://lh3.googleusercontent.com/-LSfqsFaO4P8/UcFED_5PsRI/AAAAAAAAE_A/9HV1A5s0Qc0/w640-h480-no/photo6.postable.JPG&quot;&gt;
-&lt;img src=&quot;https://lh3.googleusercontent.com/-Yk0Iu6Bs1dU/UcFED17pI-I/AAAAAAAAE_Q/e7UYAO0siyU/w640-h480-no/photo5.postable.JPG&quot;&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-YNg87ABQejE/UcFEEqpZpdI/AAAAAAAAE_Y/3YqwPqKuWbY/w640-h480-no/photo9.postable.JPG&quot;&gt;
-&lt;img src=&quot;https://lh5.googleusercontent.com/-yod1KgTp3iI/UcFEEs7OYzI/AAAAAAAAE_c/ZSHcvcmZXec/w640-h480-no/photo8.postable.JPG&quot;&gt;
-&lt;img src=&quot;https://lh6.googleusercontent.com/-XaQe_GUQAoA/UcFEDS3CyiI/AAAAAAAAE-0/MQMbrID0MZg/w640-h480-no/photo10.postable.JPG&quot;&gt;
-&lt;img src=&quot;https://lh3.googleusercontent.com/-s6NsBL8uVoY/UcFEDRxpqEI/AAAAAAAAE-s/AeDj4tA3-7c/w640-h480-no/photo3.postable.JPG&quot;&gt;</content>
  </entry>
  
  <entry>
