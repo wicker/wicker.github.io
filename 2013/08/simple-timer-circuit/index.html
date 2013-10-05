@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Building and GIFing a timer circuit | Jenner Hanni</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Patrick+Hand+SC">
+
+  </head>
+
+	<body>
+
+    <header>
+      <a href="">&nbsp;</a>
+      <div style="clear:both;"></div>
+    </header>
+
+    <section>
+
+      <div class="sidebar">
+        <div class="inside">
+          <div class="title"><a href="/">Jenner Hanni</a></div>
+          <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+
+          <nav>
+            <ul>
+              <h4>Travels</h4>
+              <li><a href="/travels/europe/">Europe</a></li>
+              <li><a href="/travels/southwest/">Desert Southwest</a></li>
+              <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+              <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+              <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+              <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+              <li><a href="/private-pilot/">Private Pilot</a></li>
+              <h4>Projects</h4>
+              <li><a href="/projects/geology/">Geology</a></li>
+              <li><a href="/projects/software/">Software</a></li>
+              <li><a href="/projects/hardware/">Hardware</a></li>
+              <li><a href="/projects/rockets/">Rockets</a></li>
+              <li><a href="/writing/">Writing</a></li>
+              <h4>Other Stuff</h4>
+              <li><a href="/endurance-days/">Endurance Days</a></li>
+              <h4>License</h4>
+              <li><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></li>
+              <h4>Elsewhere</h4>
+              <li><a href="http://www.linkedin.com/pub/jenner-hanni/12/4b7/47">LinkedIn</a></li>
+              <li><a href="https://github.com/wicker">GitHub</a></li>
+              <li><a href="https://plus.google.com/117081002500022017940">Google+</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>    
+
+      <article>
+
+          <p><strong>Building and GIFing a timer circuit</strong><br />
+  August 2013 - Portland State University</p>
+
+  <p>Just screwing around with circuits.</p>
+<p>I recently bought a house and set up a little home office. In the process, I found a bunch of through-hole components that I got from parts unknown and ended up sorting and messing around with them. All of this high-level ChibiOS stuff has been stressing me out so I did something I haven&#8217;t done in maybe forever &#8212; made a bunch of little circuits for the hell of it.</p>
+<p>By the way, Parts Unknown would be an awesome name for an electronics component business.</p>
+<img src="/images/project/blinky/IMG_0187.png">
+<p>The first question I asked was hey, does this potentiometer work? Do these LEDs? It&#8217;s a three-pin pot powered off a 9V with output voltage over the <span class="caps">LED</span>.</p>
+<img src="/images/project/blinky/IMG_0194a.png">
+<p>I wanted some sort of switch to turn off all power without having to keep unsnapping the 9V header but all I could come up with in my box of parts was a 8-pin switch.</p>
+<p>I went through all my through-hole ICs and found that I&#8217;ve accumulated all the usual: logic gates, comparators, muxes, op amps&#8230; and 555 timers, which I know of but have never actually used.</p>
+<p>I used a schematic from Forrest Mims&#8217; 555 Timer cookbook and wired it up. Then I looked into how to make a gif to post here so it&#8217;s clear the light is blinking. I figured ffmpeg would work but it&#8217;s got a note that this feature is deprecated and to use avconv instead. I tried with ffmpeg anyway and got a 141 MB file.</p>
+<p>I went looking for better instructions and found <a href="https://scottlinux.com/2011/07/31/create-animated-gif-in-linux-from-command-line/">Scott&#8217;s Linux blog</a>.</p>
+<p>I took the picture with an iPhone 4S and used avconv to grab a photo every second. That gave me four still iamges to put into the gif.</p>
+<p><code>avconv -i IMG_0196.MOV -vsync 1 -r 1 -an -y 'frame%d.jpg'</code></p>
+<p>Then I used Scott&#8217;s instructions to make what turned out to be a pretty crappy gif, through no fault of his.</p>
+<p><code>mogrify -resize 640x480 *.jpg</code></p>
+<p><code>convert -delay 20 -loop 0 *.jpg 555blink.gif</code></p>
+<img src="/images/project/blinky/555blink1.gif">
+<p>Lesson learned: I need a camera tripod and also to automate this process. I looked around and found another movie that was much longer, so I repeated the process and took the first eight frames.</p>
+<img src="/images/project/blinky/555blink2.gif">
+<p><code> mogrify -resize 640x480 *.jpg</p>
+<p>convert -delay 30 -loop 0 *.jpg 555blink1.gif</p>
+<p>avconv -i IMG_0196.<span class="caps">MOV</span> -vsync 1 -r 2 -an -y &#8216;frame%d.jpg&#8217;</code></p>
+<p>I should probably have taken twice as many frames per second in the avconv process because it doesn&#8217;t show that the light should be on the same amount of time each blink. So I did that on the longer movie and ended up selecting the first 10 frames in the sequence, which includes two cycles of the blinking <span class="caps">LED</span>.</p>
+<img src="/images/project/blinky/555blink3.gif">
+<p>I kept going for the hell of it, since I had 8 switches to work with. I added a little push-button switch to turn on the <span class="caps">LED</span> on the button press. Having both hooked up at the same time meant the <span class="caps">LED</span> up top was blinking as per the 555 timer but pressing the button down below sunk all current through the bottom <span class="caps">LED</span>.</p>
+<img src="/images/project/blinky/IMG_0199.png">
+<p>It seems like it&#8217;d be pretty easy to fake a <span class="caps">GIF</span>, to do sleight of hand, and to demonstrate performance or meeting a spec that isn&#8217;t actually there. This last gif is the longest, the largest, with 2fps to pull the still images, but it&#8217;s still not anywhere near acceptable.</p>
+<p>Kind of a cool thing to think about.</p>
+<img src="/images/project/blinky/buttonblink.gif">
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>

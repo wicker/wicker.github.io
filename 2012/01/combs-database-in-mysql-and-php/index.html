@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Catacombs Database | Jenner Hanni</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Patrick+Hand+SC">
+
+  </head>
+
+	<body>
+
+    <header>
+      <a href="">&nbsp;</a>
+      <div style="clear:both;"></div>
+    </header>
+
+    <section>
+
+      <div class="sidebar">
+        <div class="inside">
+          <div class="title"><a href="/">Jenner Hanni</a></div>
+          <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+
+          <nav>
+            <ul>
+              <h4>Travels</h4>
+              <li><a href="/travels/europe/">Europe</a></li>
+              <li><a href="/travels/southwest/">Desert Southwest</a></li>
+              <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+              <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+              <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+              <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+              <li><a href="/private-pilot/">Private Pilot</a></li>
+              <h4>Projects</h4>
+              <li><a href="/projects/geology/">Geology</a></li>
+              <li><a href="/projects/software/">Software</a></li>
+              <li><a href="/projects/hardware/">Hardware</a></li>
+              <li><a href="/projects/rockets/">Rockets</a></li>
+              <li><a href="/writing/">Writing</a></li>
+              <h4>Other Stuff</h4>
+              <li><a href="/endurance-days/">Endurance Days</a></li>
+              <h4>License</h4>
+              <li><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></li>
+              <h4>Elsewhere</h4>
+              <li><a href="http://www.linkedin.com/pub/jenner-hanni/12/4b7/47">LinkedIn</a></li>
+              <li><a href="https://github.com/wicker">GitHub</a></li>
+              <li><a href="https://plus.google.com/117081002500022017940">Google+</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>    
+
+      <article>
+
+          <p><strong>Catacombs Database</strong><br />
+  January 2012 - Portland State University</p>
+
+  <p>The Computer Action Team at Portland State runs an annual sysadmin training program that includes four hours weekly help desk duty, four hours weekly Friday night lectures, and tiered access to actual college servers. The CATacombs are a training room full of servers where new CATs select a box and start familiarizing themselves with services by installing them from scratch.</p>
+<p>Students have the choice of Windows or Unix/Linux. With upwards of seventy people in an annual program, the catacombs can be a confusing and complicated place to keep track of. Boxes are frequently abandoned as students move on to bigger and better things. The combs database is a MySQL db with a <span class="caps">PHP</span> web interface to help the combs denizens organize themselves.</p>
+<p>I hosted the database on my own server instance because the catacombs are always in flux and boxes are constantly reloaded. I got together with the current combs elf to figure out how best to complement the documentation being written for 2012&#8217;s combs group and came away with a few requirements.</p>
+<p>First, there needed to be a splash page with instructions, on the off chance that somebody would read it. I took it as a chance to flex my documentation-writing and sarcasm muscles, which were out of shape.</p>
+<img src="/images/project/combsdb/combs_intro.png">
+<p>Second, the combs had two VLANs and needed two separate tables. I called the tables for these VLANs &#8216;combs_vlan_noobz&#8217; and &#8216;combs_vlan_projects&#8217;. I made the two tables and indexed them by IP address, then decided to have a single combs login and password with the ability to update but not add or remove any of items. That way the list would be consistent.</p>
+<img src="/images/project/combsdb/combs_vlan.png">
+<p>Third, this being a training ground for <s>hackers</s> baby sysadmins keen on proving themselves, I did my best to sanitize my inputs and then invited some of my peers to mess with it. They were mostly unsuccessful and I made corrections where necessary.</p>
+<img src="/images/project/combsdb/combs_form.png">
+<p>Once the tables were built and the user accounts created, I built the web front-end using <span class="caps">HTML</span> and <span class="caps">PHP</span>. I password-protected the entire directory using .htaccess so only combs residents could see it. I whipped up some very simple custom <span class="caps">CSS</span> and released the database to the wilds.</p>
+<p>It hasn&#8217;t been used much recently because of the nature of the combs but it was a good experience for me and I was able to give out admin accounts to my peers who wanted to do things like implement a <a href="https://github.com/Whopper92/CombsBot">CombsBot</a> for <span class="caps">IRC</span> that could be queried for who owned what IP address. I&#8217;m pretty happy with it.</p>
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>
