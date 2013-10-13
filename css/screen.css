@@ -73,7 +73,7 @@ header {
 
 section {
   width: 1024px;
-  margin: 0px auto 0px;
+  margin: 0px;
   padding: 0px;
   color: #000;
   background-color: #fff;
@@ -136,6 +136,7 @@ article {
   float: right;
   margin: 0px;
   padding: 0px; 
+  border-left: 5px solid #000;
 }
 
 article .item {
