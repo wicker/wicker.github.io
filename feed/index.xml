@@ -4,13 +4,33 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-10-12T18:26:48-07:00</updated>
+ <updated>2013-10-19T17:48:35-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>18 Oct 2013</title>
+   <link href="http://wickerbox.net/2013/10/note"/>
+   <updated>2013-10-19T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/10/note</id>
+   <content type="html">&lt;p&gt;I still liked the website layout this morning. I haven&amp;#8217;t checked it on anything but Firefox&amp;#8230;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m using the &lt;a
+href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-communication-fpga-debug-module/54-de0-nano-serial-communications-tutorial&quot;&gt;DE0-Nano Serial Communications Protocol from ReconTech&lt;/a&gt; to get the DE0-Nano talking over serial.&lt;/p&gt;
+&lt;p&gt;Knee bars and ankle locks at &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; today. My gym is the opposite of macho so there was a lot of emphasis on communication with your partner and training safely without ego. I felt safe even when we were moving quickly.&lt;/p&gt;
+&lt;p&gt;I feel terrible at writing. My words are all clunky. But I guess getting over that is one point of this daily note thing. The other is to keep a quick written record so I can be accurate when I look back to see how long a project took or so I can easily find a paper I referenced. We&amp;#8217;ll see how it goes.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>18 Oct 2013</title>
+   <link href="http://wickerbox.net/2013/10/note"/>
+   <updated>2013-10-18T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/10/note</id>
+   <content type="html">&lt;p&gt;I&amp;#8217;m a note&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Building and GIFing a timer circuit</title>
@@ -405,6 +425,7 @@ layout: post&lt;br /&gt;
 title: Making Wickerbox&lt;br /&gt;
 category: project&lt;br /&gt;
 tags:&lt;br /&gt;
+- all&lt;br /&gt;
 - jekyll&lt;br /&gt;
 - sites&lt;br /&gt;
 - projects&lt;br /&gt;
@@ -1298,14 +1319,6 @@ honor of Bob Woodhouse at Desert Lawn on December 23, 2003.&lt;/p&gt;
 &lt;img src=&quot;https://lh4.googleusercontent.com/-2ErO7iuHXm0/T6MLmszZszI/AAAAAAAAELQ/6vyhB1LVz-w/w624-h480-no/preparation-5.jpg&quot;&gt;
 &lt;img src=&quot;https://lh5.googleusercontent.com/-AN0WJ7zqQ8o/T6MLmzjkOeI/AAAAAAAAELo/LN4V_T89DWs/w621-h480-no/preparation-6.jpg&quot;&gt;
 &lt;img src=&quot;https://lh4.googleusercontent.com/-a4OCyKCKUAs/T6MLnLmJHoI/AAAAAAAAELk/hKx_z-d8D7A/w596-h480-no/preparation-7.jpg&quot;&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bowerman Field</title>
-   <link href="http://wickerbox.net/2011/07/bowermanfield"/>
-   <updated>2011-07-23T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2011/07/bowermanfield</id>
-   <content type="html"></content>
  </entry>
  
  <entry>

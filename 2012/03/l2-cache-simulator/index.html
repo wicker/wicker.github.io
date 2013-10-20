@@ -12,59 +12,74 @@
     
 
     <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Patrick+Hand+SC">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
 
   </head>
 
 	<body>
 
-<!--
+
     <header>
-      <a href="">&nbsp;</a>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+
       <div style="clear:both;"></div>
     </header> 
--->
+
 
     <section>
 
       <div class="sidebar">
-        <div class="inside">
-          <div class="title"><a href="/">Wickerbox</a></div>
-          <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
 
-          <nav>
-            <ul>
-              <h4>Travels</h4>
-              <li><a href="/travels/europe/">Europe</a></li>
-              <li><a href="/travels/southwest/">Desert Southwest</a></li>
-              <li><a href="/travels/northwest/">Pacific Northwest</a></li>
-              <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
-              <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
-              <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
-              <li><a href="/private-pilot/">Private Pilot</a></li>
-              <h4>Projects</h4>
-              <li><a href="/projects/geology/">Geology</a></li>
-              <li><a href="/projects/software/">Software</a></li>
-              <li><a href="/projects/hardware/">Hardware</a></li>
-              <li><a href="/projects/rockets/">Rockets</a></li>
-              <li><a href="/writing/">Writing</a></li>
-              <h4>Other Stuff</h4>
-              <li><a href="/endurance-days/">Endurance Days</a></li>
-              <h4>License</h4>
-              <li><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></li>
-              <h4>Elsewhere</h4>
-              <li><a href="http://www.linkedin.com/pub/jenner-hanni/12/4b7/47">LinkedIn</a></li>
-              <li><a href="https://github.com/wicker">GitHub</a></li>
-              <li><a href="https://plus.google.com/117081002500022017940">Google+</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight</a>
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive
+          </ul>
+        </nav>
+          
       </div>    
 
-      <article>
+      
+      <article class="border">
+      
 
-          <p><strong>L2 Cache Simulator</strong><br />
-  March 2012 - Portland State University</p>
+          <div class="title">L2 Cache Simulator</div>
+  <p>March 2012 - Portland State University</p>
 
   <p>Our term project for the microprocessor system design course at Portland State in the Fall 2011 quarter was to write a small program in Verilog, C, or C++ to simulate (not synthesize) the behavior of a write-allocate, <span class="caps">MESI</span> protocol, four-way set associative L2 cache with 4K lines of 64 bytes data each.</p>
 <p>We successfully wrote our program in C and passed the course. Having written most of the code myself, I could see a lot of areas where I could improve it and so, with permission from my partners, I rewrote the code over winter break to be easily extensible to different sizes and set associativities of cache. I shrunk the program from 646 lines to 377 lines, cutting it by 42%, and made it much cleaner and easier to follow. The sample input and output are at the bottom, and all the files (and commit history) are available at my <a href="http://github.com/wicker/l2cache/">GitHub repository</a> under the <span class="caps">MIT</span> license.</p>
