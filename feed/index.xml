@@ -4,7 +4,7 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-10-19T17:48:35-07:00</updated>
+ <updated>2013-10-24T21:03:34-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
@@ -13,7 +13,54 @@
 
  
  <entry>
-   <title>18 Oct 2013</title>
+   <title>24 Oct 2013</title>
+   <link href="http://wickerbox.net/2013/10/notes"/>
+   <updated>2013-10-24T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/10/notes</id>
+   <content type="html">&lt;p&gt;Still foggy.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m still having some forearm pain so I skipped &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; and came home to figure out how to break the reading-of-articles that I want to do away from my compulsive browsing-of-Reddit. I have a wifi-only, first-gen iPad for reading and a first-gen (I think) Kindle for reading on backpacking/hiking trips. I added Instapaper to my Firefox on all my computers (work, home desktop, laptop) and dropped all pending bookmarks in there.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m using Trello for a general tracking-of-everything and I don&amp;#8217;t want this to be a part of that at all. I also can email PDFs to myself to get them into the Kindle App. That should be enough to make this stuff available to me. And I can save links from Ars or Reddit or whatever for later, without wasting cycles worrying that I&amp;#8217;ll never see it again.&lt;/p&gt;
+&lt;p&gt;Hopefully this&amp;#8217;ll help clear my head. I have a pile of autonomous quadcopter papers I want to read.&lt;/p&gt;
+&lt;p&gt;I posted the photos from building my 38mm Sentinel rocket from Binder Designs.&lt;/p&gt;
+&lt;p&gt;I made lemon poppyseed scones that were actually pretty amazing. Also have discovered lemon curd.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Building the 38mm Sentinel Rocket</title>
+   <link href="http://wickerbox.net/2013/10/building-the-sentinel-38mm"/>
+   <updated>2013-10-24T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/10/building-the-sentinel-38mm</id>
+   <content type="html">&lt;img src=&quot;https://lh4.googleusercontent.com/-CZgrbd9d2cw/Umnm6yUttII/AAAAAAAAFlA/cWAh3ZgdTck/w782-h1043-no/IMG_0255.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-Mo52RxgkeJs/Umnm6ym3WYI/AAAAAAAAFlM/2azg5tpMJZc/w782-h1043-no/IMG_0258.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-bKk6UpzWek4/Umnm61XlWxI/AAAAAAAAFlE/rL-Un-2s8u8/w782-h1043-no/IMG_0260.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-Mkmge5V7pbY/Umnm7mR875I/AAAAAAAAFlI/XoDS9B4sQgs/w855-h641-no/IMG_0261.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-n5MFfOdLESE/Umnm8bSjrOI/AAAAAAAAFlg/34_loFgaSJw/w611-h815-no/IMG_0308.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-9VXvOeBSOYk/Umnm8WL69nI/AAAAAAAAFlk/-72Ahy16YUE/w611-h815-no/IMG_0311.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/--tXFt6fFQU4/Umnm8abDXmI/AAAAAAAAFls/JRsfQ8xn_WI/w611-h815-no/IMG_0312.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-YbWAvCl71sA/Umnm9RkV5dI/AAAAAAAAFlo/zxf7uWVN5bY/w855-h437-no/IMG_0360.JPG&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>23 Oct 2013</title>
+   <link href="http://wickerbox.net/2013/10/note"/>
+   <updated>2013-10-23T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/10/note</id>
+   <content type="html">&lt;p&gt;Americana and crossover choke at &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt;. The forearm pain that took me out on Saturday is still there. Not sure if it&amp;#8217;s tendonitis or what but lizard crawls, the scissor-leg hopping drill just kind of sucked. I ended up mostly watching the technique portion.&lt;/p&gt;
+&lt;p&gt;Aleve and icing it is.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>20 Oct 2013</title>
+   <link href="http://wickerbox.net/2013/10/note"/>
+   <updated>2013-10-20T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/10/note</id>
+   <content type="html">&lt;p&gt;Incredibly foggy this morning.&lt;/p&gt;
+&lt;p&gt;http://hackaday.com/2009/09/22/introduction-to-ftdi-bitbang-mode/ for bitbang mode.&lt;/p&gt;
+&lt;p&gt;These were the instructions that finally worked: http://developer.intra2net.com/mailarchive/html/libftdi/2013/msg00014.html&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>19 Oct 2013</title>
    <link href="http://wickerbox.net/2013/10/note"/>
    <updated>2013-10-19T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2013/10/note</id>

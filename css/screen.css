@@ -170,6 +170,10 @@ article .item {
 
 article .item h3 {
   font-family: 'Belleza', sans-serif;
+  line-height: 1.1em;
+  font-size: 1em;
+  overflow: hidden;
+  height: 1.1em;
 }
 
 
