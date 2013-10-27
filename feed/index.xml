@@ -4,13 +4,62 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-10-24T21:03:34-07:00</updated>
+ <updated>2013-10-27T12:43:54-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Replacing the IMEX Firefox guts</title>
+   <link href="http://wickerbox.net/2013/10/replacing-imex-firefox-guts"/>
+   <updated>2013-10-27T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/10/replacing-imex-firefox-guts</id>
+   <content type="html">&lt;p&gt;The Open Tech Lab just bought an &lt;span class=&quot;caps&quot;&gt;IMEX&lt;/span&gt; Firefox brushed 1/10th RC truck. I want to make an autonomous RC car that can be a vision testing platform for our quadcopter.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m calling this project the Foxcar.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/IMG_0385.png&quot;&gt;
+&lt;p&gt;I opened up the truck to see if I could solder my Raspberry Pi directly to the motor controller board but there were a couple chips I couldn&amp;#8217;t identify, one of which looked like the microcontroller, so I decided to rip the guts out and replace them with my own electronics.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/IMEXBoard.png&quot;&gt;
+&lt;p&gt;The Firefox has a single DC RC 550 motor and a 5-wire servo, running on a single 7.6V NiMH 1800 mAh battery. Probably this means the motor is a 6V motor. The parts were:&lt;/p&gt;
+&lt;p&gt;1x AT1206 74C02N 8-pin &lt;span class=&quot;caps&quot;&gt;DIP&lt;/span&gt; Probably a Quad 2-input &lt;span class=&quot;caps&quot;&gt;NAND&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;NOR&lt;/span&gt;, or Hex Inverter&lt;br /&gt;
+6x 531 T70 3-pin 72 A 25V N-channel Power MOSFETs. &lt;br /&gt;
+1x MC34063 8-pin &lt;span class=&quot;caps&quot;&gt;DIP&lt;/span&gt; 1.5A Inverted Switching Regulator which is for the DC-DC converters. &lt;br /&gt;
+1x D1116 16-pin &lt;span class=&quot;caps&quot;&gt;DIP&lt;/span&gt; unknown&lt;br /&gt;
+1x LM339L 14-pin &lt;span class=&quot;caps&quot;&gt;DIP&lt;/span&gt; Quad-Differential Comparator&lt;br /&gt;
+1x AMP26002 25-pin square unknown&lt;br /&gt;
+1x MX117 8-pin &lt;span class=&quot;caps&quot;&gt;DIP&lt;/span&gt; Electric Toy DC Motor Drive Circuit H-Bridge Drive&lt;/p&gt;
+&lt;p&gt;I took a good look at the configuration of the car. I didn&amp;#8217;t want to replace the motor unless I had to, but the servo had to go.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/IMG_0377.png&quot;&gt;
+&lt;p&gt;This is the board. I was surprised that the antenna is just a long piece of wire tucked up inside the antenna cover. The car ran great when I tested it back before I tore it apart. Hopefully it&amp;#8217;ll work great after it&amp;#8217;s all put back together&amp;#8230;&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/IMG_0384.png&quot;&gt;
+&lt;p&gt;I already had an Adafruit Motor Shield and an Arduino. I hooked up a 6V DC motor and a 3-wire servo just to be sure it worked. I swapped servos on the car and hooked up the Arduino.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/IMG_0380.png&quot;&gt;
+&lt;p&gt;My other 6V DC motor ran happily on the Adafruit example sketch but this motor just clicks in one direction or the other. I tried swapping the red and black wires (though it&amp;#8217;s bi-directional, so not sure why that would make a difference) and I checked to be sure it has the three capacitors soldered to the motor itself for noise control.&lt;/p&gt;
+&lt;p&gt;So figuring out the DC motor is the next piece. My three-wire servo works great, though.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/foxcar_turns.gif&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>26 Oct 2013</title>
+   <link href="http://wickerbox.net/2013/10/notes"/>
+   <updated>2013-10-26T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/10/notes</id>
+   <content type="html">&lt;p&gt;Still foggy but the afternoons have been clear blue sky.&lt;/p&gt;
+&lt;p&gt;I drove in to downtown to hack with greh at Portland State. Started out by putting Raspbian on my Raspberry Pi. I&amp;#8217;ve exhausted Wicker Man references for my servers so on greh&amp;#8217;s advice, I&amp;#8217;m calling it rasputin. At least this way, I should be unable to kill it.&lt;/p&gt;
+&lt;p&gt;I picked up the &lt;span class=&quot;caps&quot;&gt;IMEX&lt;/span&gt; Firefox that showed up in the lab and ripped the guts out, replacing the &lt;span class=&quot;caps&quot;&gt;IMEX&lt;/span&gt; control board with an Arduino and Adafruit motor shield. The motor clicks but I swapped servos as well and that works great.&lt;/p&gt;
+&lt;p&gt;My cat has decided that waking at 3am and show me affection by licking my head until I get out of bed is an A++ way to contribute to a happy and functioning household. I&amp;#8217;m not sure how to convince my cat that it&amp;#8217;s pretty fucking wrong.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>25 Oct 2013</title>
+   <link href="http://wickerbox.net/2013/10/notes"/>
+   <updated>2013-10-25T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/10/notes</id>
+   <content type="html">&lt;p&gt;Not only did I not write for this day, I have only the foggiest memories of what I did.&lt;/p&gt;
+&lt;p&gt;Went to work, sure. Apparently not much else.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>24 Oct 2013</title>
@@ -80,13 +129,50 @@ href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-com
  </entry>
  
  <entry>
+   <title>Little Keyboard</title>
+   <link href="http://wickerbox.net/2013/09/little-keyboard"/>
+   <updated>2013-09-12T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/09/little-keyboard</id>
+   <content type="html">&lt;p&gt;This is an attempt at the Toy Organ from page 19 of Forrest Mims III&amp;#8217;s 555 Circuits Mini-Notebook.&lt;/p&gt;
+&lt;p&gt;Hand-drawn circuit copied out.&lt;/p&gt;
+&lt;img src=&quot;/images/project/musicbot/musicbot-schema.png&quot;&gt;
+&lt;p&gt;Eagle-drawn schematic.&lt;/p&gt;
+&lt;img src=&quot;/images/project/musicbot/musicbot-board.png&quot;&gt;
+&lt;p&gt;Board layout. I tried to make it as small as possible. I have an idea that later on I&amp;#8217;d be able to solder something else up to the buttons and make music from environmental stimuli &amp;#8230; but right now I just wanted a little hand-held toy organ.&lt;/p&gt;
+&lt;img src=&quot;/images/project/musicbot/musicbot-oshpark.png&quot;&gt;
+&lt;p&gt;The board on its way to OSHPark!&lt;/p&gt;
+&lt;img src=&quot;/images/project/musicbot/musicbot-v1.png&quot;&gt;
+&lt;p&gt;The board back from OSHPark!&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Little Photobot</title>
+   <link href="http://wickerbox.net/2013/09/little-photobot"/>
+   <updated>2013-09-05T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/09/little-photobot</id>
+   <content type="html">&lt;p&gt;Two photoresistors are wired as shown below so this bot can be either photophobic or photophilic based on how the motors are installed. This bot will be photophobic, turning away from the light source, if the wired motor is installed on the same side as its photoresistor. If photoresistor and motor are on opposite sides, the bot will appear photophilic, turning towards the light source.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/project/photobot/simplebot-light-phobic.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;First try at using draw.io to draw a circuit. I think I&amp;#8217;ll probably leave circuits for Eagle.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/project/photobot/photobot-one.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Simple photobot diagram. Arrows indicate the direction of the current flow.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/project/photobot/photobot1-schema.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Simple photobot schematic.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/project/photobot/photobot1-board.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Simple photobot board layout. Headers are the motor pads.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/project/photobot/photobot1-oshpark.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is the board as it looks heading to fab.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/project/photobot/photobot-v1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This is the little board back from OSHPark!&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>Building and GIFing a timer circuit</title>
    <link href="http://wickerbox.net/2013/08/simple-timer-circuit"/>
    <updated>2013-08-25T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2013/08/simple-timer-circuit</id>
    <content type="html">&lt;p&gt;Just screwing around with circuits.&lt;/p&gt;
 &lt;p&gt;I recently bought a house and set up a little home office. In the process, I found a bunch of through-hole components that I got from parts unknown and ended up sorting and messing around with them. All of this high-level ChibiOS stuff has been stressing me out so I did something I haven&amp;#8217;t done in maybe forever &amp;#8212; made a bunch of little circuits for the hell of it.&lt;/p&gt;
-&lt;p&gt;By the way, Parts Unknown would be an awesome name for an electronics component business.&lt;/p&gt;
+&lt;p&gt;(Parts Unknown would be an awesome name for an electronics component business.)&lt;/p&gt;
 &lt;img src=&quot;/images/project/blinky/IMG_0187.png&quot;&gt;
 &lt;p&gt;The first question I asked was hey, does this potentiometer work? Do these LEDs? It&amp;#8217;s a three-pin pot powered off a 9V with output voltage over the &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt;.&lt;/p&gt;
 &lt;img src=&quot;/images/project/blinky/IMG_0194a.png&quot;&gt;
@@ -94,9 +180,9 @@ href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-com
 &lt;p&gt;I went through all my through-hole ICs and found that I&amp;#8217;ve accumulated all the usual: logic gates, comparators, muxes, op amps&amp;#8230; and 555 timers, which I know of but have never actually used.&lt;/p&gt;
 &lt;p&gt;I used a schematic from Forrest Mims&amp;#8217; 555 Timer cookbook and wired it up. Then I looked into how to make a gif to post here so it&amp;#8217;s clear the light is blinking. I figured ffmpeg would work but it&amp;#8217;s got a note that this feature is deprecated and to use avconv instead. I tried with ffmpeg anyway and got a 141 MB file.&lt;/p&gt;
 &lt;p&gt;I went looking for better instructions and found &lt;a href=&quot;https://scottlinux.com/2011/07/31/create-animated-gif-in-linux-from-command-line/&quot;&gt;Scott&amp;#8217;s Linux blog&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I took the picture with an iPhone 4S and used avconv to grab a photo every second. That gave me four still iamges to put into the gif.&lt;/p&gt;
+&lt;p&gt;I made the video with an iPhone 4S and used avconv to grab a photo every second. That gave me four still images to put into the gif.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;avconv -i IMG_0196.MOV -vsync 1 -r 1 -an -y 'frame%d.jpg'&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Then I used Scott&amp;#8217;s instructions to make what turned out to be a pretty crappy gif, through no fault of his.&lt;/p&gt;
+&lt;p&gt;Then I used Scott&amp;#8217;s instructions to make what turned out to be a pretty crappy gif, through no fault of his. I didn&amp;#8217;t realize that having fewer frames in an animation means you really have to hold the camera very still, which I didn&amp;#8217;t.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;mogrify -resize 640x480 *.jpg&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;convert -delay 20 -loop 0 *.jpg 555blink.gif&lt;/code&gt;&lt;/p&gt;
 &lt;img src=&quot;/images/project/blinky/555blink1.gif&quot;&gt;

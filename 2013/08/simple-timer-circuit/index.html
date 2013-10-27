@@ -83,7 +83,7 @@
 
   <p>Just screwing around with circuits.</p>
 <p>I recently bought a house and set up a little home office. In the process, I found a bunch of through-hole components that I got from parts unknown and ended up sorting and messing around with them. All of this high-level ChibiOS stuff has been stressing me out so I did something I haven&#8217;t done in maybe forever &#8212; made a bunch of little circuits for the hell of it.</p>
-<p>By the way, Parts Unknown would be an awesome name for an electronics component business.</p>
+<p>(Parts Unknown would be an awesome name for an electronics component business.)</p>
 <img src="/images/project/blinky/IMG_0187.png">
 <p>The first question I asked was hey, does this potentiometer work? Do these LEDs? It&#8217;s a three-pin pot powered off a 9V with output voltage over the <span class="caps">LED</span>.</p>
 <img src="/images/project/blinky/IMG_0194a.png">
@@ -91,9 +91,9 @@
 <p>I went through all my through-hole ICs and found that I&#8217;ve accumulated all the usual: logic gates, comparators, muxes, op amps&#8230; and 555 timers, which I know of but have never actually used.</p>
 <p>I used a schematic from Forrest Mims&#8217; 555 Timer cookbook and wired it up. Then I looked into how to make a gif to post here so it&#8217;s clear the light is blinking. I figured ffmpeg would work but it&#8217;s got a note that this feature is deprecated and to use avconv instead. I tried with ffmpeg anyway and got a 141 MB file.</p>
 <p>I went looking for better instructions and found <a href="https://scottlinux.com/2011/07/31/create-animated-gif-in-linux-from-command-line/">Scott&#8217;s Linux blog</a>.</p>
-<p>I took the picture with an iPhone 4S and used avconv to grab a photo every second. That gave me four still iamges to put into the gif.</p>
+<p>I made the video with an iPhone 4S and used avconv to grab a photo every second. That gave me four still images to put into the gif.</p>
 <p><code>avconv -i IMG_0196.MOV -vsync 1 -r 1 -an -y 'frame%d.jpg'</code></p>
-<p>Then I used Scott&#8217;s instructions to make what turned out to be a pretty crappy gif, through no fault of his.</p>
+<p>Then I used Scott&#8217;s instructions to make what turned out to be a pretty crappy gif, through no fault of his. I didn&#8217;t realize that having fewer frames in an animation means you really have to hold the camera very still, which I didn&#8217;t.</p>
 <p><code>mogrify -resize 640x480 *.jpg</code></p>
 <p><code>convert -delay 20 -loop 0 *.jpg 555blink.gif</code></p>
 <img src="/images/project/blinky/555blink1.gif">
