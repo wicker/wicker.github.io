@@ -4,7 +4,7 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-10-27T12:43:54-07:00</updated>
+ <updated>2013-11-01T13:49:18-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
@@ -126,43 +126,6 @@ href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-com
    <updated>2013-10-18T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2013/10/note</id>
    <content type="html">&lt;p&gt;I&amp;#8217;m a note&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Little Keyboard</title>
-   <link href="http://wickerbox.net/2013/09/little-keyboard"/>
-   <updated>2013-09-12T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/09/little-keyboard</id>
-   <content type="html">&lt;p&gt;This is an attempt at the Toy Organ from page 19 of Forrest Mims III&amp;#8217;s 555 Circuits Mini-Notebook.&lt;/p&gt;
-&lt;p&gt;Hand-drawn circuit copied out.&lt;/p&gt;
-&lt;img src=&quot;/images/project/musicbot/musicbot-schema.png&quot;&gt;
-&lt;p&gt;Eagle-drawn schematic.&lt;/p&gt;
-&lt;img src=&quot;/images/project/musicbot/musicbot-board.png&quot;&gt;
-&lt;p&gt;Board layout. I tried to make it as small as possible. I have an idea that later on I&amp;#8217;d be able to solder something else up to the buttons and make music from environmental stimuli &amp;#8230; but right now I just wanted a little hand-held toy organ.&lt;/p&gt;
-&lt;img src=&quot;/images/project/musicbot/musicbot-oshpark.png&quot;&gt;
-&lt;p&gt;The board on its way to OSHPark!&lt;/p&gt;
-&lt;img src=&quot;/images/project/musicbot/musicbot-v1.png&quot;&gt;
-&lt;p&gt;The board back from OSHPark!&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Little Photobot</title>
-   <link href="http://wickerbox.net/2013/09/little-photobot"/>
-   <updated>2013-09-05T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/09/little-photobot</id>
-   <content type="html">&lt;p&gt;Two photoresistors are wired as shown below so this bot can be either photophobic or photophilic based on how the motors are installed. This bot will be photophobic, turning away from the light source, if the wired motor is installed on the same side as its photoresistor. If photoresistor and motor are on opposite sides, the bot will appear photophilic, turning towards the light source.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/project/photobot/simplebot-light-phobic.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;First try at using draw.io to draw a circuit. I think I&amp;#8217;ll probably leave circuits for Eagle.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/project/photobot/photobot-one.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Simple photobot diagram. Arrows indicate the direction of the current flow.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/project/photobot/photobot1-schema.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Simple photobot schematic.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/project/photobot/photobot1-board.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Simple photobot board layout. Headers are the motor pads.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/project/photobot/photobot1-oshpark.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Here is the board as it looks heading to fab.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/project/photobot/photobot-v1.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;This is the little board back from OSHPark!&lt;/p&gt;</content>
  </entry>
  
  <entry>
