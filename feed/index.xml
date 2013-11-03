@@ -4,7 +4,7 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-11-03T15:03:48-08:00</updated>
+ <updated>2013-11-03T15:09:01-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
@@ -22,9 +22,10 @@
 &lt;p&gt;- an STM32F4 processor&lt;/p&gt;
 &lt;p&gt;- XBee wireless (need to explore RF transceivers &amp;#8211; I know nothing about RC hobby RF stuff, except that there&amp;#8217;s a ton of it out there and has been forever.&lt;/p&gt;
 &lt;p&gt;- camera that&amp;#8217;s fast enough for real-time analysis, so I had to discard a couple I found through Adafruit and Sparkfun.&lt;/p&gt;
-&lt;p&gt;- &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;- &lt;span class=&quot;caps&quot;&gt;JTAG&lt;/span&gt; mini&lt;/p&gt;
-&lt;p&gt;Actually, putting a Node 6 from &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; on it might be a good idea. I&amp;#8217;ll have to think about it.&lt;/p&gt;</content>
+&lt;p&gt;- 9DOF Sparkfun sensor board&lt;/p&gt;
+&lt;p&gt;- micro SD card for data logging or image logging&lt;/p&gt;
+&lt;p&gt;- micro-&lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;JTAG&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Actually, putting a Node 6 from &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; on it might be a good idea.&lt;/p&gt;</content>
  </entry>
  
  <entry>
