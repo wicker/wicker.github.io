@@ -4,13 +4,28 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-11-01T13:49:18-07:00</updated>
+ <updated>2013-11-03T15:03:48-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>3 Nov 2013</title>
+   <link href="http://wickerbox.net/2013/11/note"/>
+   <updated>2013-11-03T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/11/note</id>
+   <content type="html">&lt;p&gt;Drove over to Cape Lookout on the coast for the morning. Low fog in the valleys and it&amp;#8217;s finally tilted over into &lt;em&gt;cold&lt;/em&gt;. Turned the heat on when I realized the cats were cuddling a little more desperately than normal.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve focused on work and &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; this week but I bought the Pololu VNH5019 motor driver shield which can handle over 10 A for a single motor. I figured out the wiring I&amp;#8217;ll need for the Foxcar once that gets here. I&amp;#8217;m probably going to do a custom board with:&lt;/p&gt;
+&lt;p&gt;- an STM32F4 processor&lt;/p&gt;
+&lt;p&gt;- XBee wireless (need to explore RF transceivers &amp;#8211; I know nothing about RC hobby RF stuff, except that there&amp;#8217;s a ton of it out there and has been forever.&lt;/p&gt;
+&lt;p&gt;- camera that&amp;#8217;s fast enough for real-time analysis, so I had to discard a couple I found through Adafruit and Sparkfun.&lt;/p&gt;
+&lt;p&gt;- &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;- &lt;span class=&quot;caps&quot;&gt;JTAG&lt;/span&gt; mini&lt;/p&gt;
+&lt;p&gt;Actually, putting a Node 6 from &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; on it might be a good idea. I&amp;#8217;ll have to think about it.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Replacing the IMEX Firefox guts</title>
@@ -43,9 +58,9 @@
  
  <entry>
    <title>26 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/notes"/>
+   <link href="http://wickerbox.net/2013/10/note"/>
    <updated>2013-10-26T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/notes</id>
+   <id>http://wickerbox.net/2013/10/note</id>
    <content type="html">&lt;p&gt;Still foggy but the afternoons have been clear blue sky.&lt;/p&gt;
 &lt;p&gt;I drove in to downtown to hack with greh at Portland State. Started out by putting Raspbian on my Raspberry Pi. I&amp;#8217;ve exhausted Wicker Man references for my servers so on greh&amp;#8217;s advice, I&amp;#8217;m calling it rasputin. At least this way, I should be unable to kill it.&lt;/p&gt;
 &lt;p&gt;I picked up the &lt;span class=&quot;caps&quot;&gt;IMEX&lt;/span&gt; Firefox that showed up in the lab and ripped the guts out, replacing the &lt;span class=&quot;caps&quot;&gt;IMEX&lt;/span&gt; control board with an Arduino and Adafruit motor shield. The motor clicks but I swapped servos as well and that works great.&lt;/p&gt;
@@ -54,18 +69,18 @@
  
  <entry>
    <title>25 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/notes"/>
+   <link href="http://wickerbox.net/2013/10/note"/>
    <updated>2013-10-25T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/notes</id>
+   <id>http://wickerbox.net/2013/10/note</id>
    <content type="html">&lt;p&gt;Not only did I not write for this day, I have only the foggiest memories of what I did.&lt;/p&gt;
 &lt;p&gt;Went to work, sure. Apparently not much else.&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>24 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/notes"/>
+   <link href="http://wickerbox.net/2013/10/note"/>
    <updated>2013-10-24T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/notes</id>
+   <id>http://wickerbox.net/2013/10/note</id>
    <content type="html">&lt;p&gt;Still foggy.&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;m still having some forearm pain so I skipped &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; and came home to figure out how to break the reading-of-articles that I want to do away from my compulsive browsing-of-Reddit. I have a wifi-only, first-gen iPad for reading and a first-gen (I think) Kindle for reading on backpacking/hiking trips. I added Instapaper to my Firefox on all my computers (work, home desktop, laptop) and dropped all pending bookmarks in there.&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;m using Trello for a general tracking-of-everything and I don&amp;#8217;t want this to be a part of that at all. I also can email PDFs to myself to get them into the Kindle App. That should be enough to make this stuff available to me. And I can save links from Ars or Reddit or whatever for later, without wasting cycles worrying that I&amp;#8217;ll never see it again.&lt;/p&gt;
