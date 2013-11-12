@@ -4,13 +4,26 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-11-03T15:09:01-08:00</updated>
+ <updated>2013-11-11T22:09:57-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Foxcar Drive and Turn Demo</title>
+   <link href="http://wickerbox.net/2013/11/basic-driving-demo"/>
+   <updated>2013-11-11T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2013/11/basic-driving-demo</id>
+   <content type="html">&lt;p&gt;I bought a Pololu VNH5019 Dual Motor Driver Carrier Shield for Arduino and wired in the DC motor. With stacking headers I could use pin 2 for the servo and control both from the Arduino. I&amp;#8217;m using &lt;a href=&quot;http://forum.arduino.cc/index.php/topic,21975.0.html&quot;&gt;mem&amp;#8217;s ServoTimer2&lt;/a&gt; and &lt;a href=&quot;https://github.com/pololu/dual-vnh5019-motor-shield&quot;&gt;Pololu&amp;#8217;s VNH5019 Motor Driver Shield&lt;/a&gt; libraries.&lt;/p&gt;
+&lt;p&gt;The code&amp;#8217;s in the &lt;a href=&quot;https://github.com/wicker/Self-Driving-RC-Car&quot;&gt;Github repo&lt;/a&gt; under &amp;#8216;hardware-test&amp;#8217;.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/foxcar-drive.png&quot;&gt;
+&lt;p&gt;This is the hardware test. You can see in the video that I&amp;#8217;m driving a servo to turn the front wheels and a heavy-duty motor to roll the wheels forward and backward.&lt;/p&gt;
+&lt;p&gt;Next step: custom control board.&lt;/p&gt;
+  &lt;div style=&quot;width: 100%; margin: 0px auto;&quot;&gt;&lt;iframe width=&quot;100%&quot; height=&quot;480&quot;src=&quot;//www.youtube.com/embed/N1pncB94zRU&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</content>
+ </entry>
  
  <entry>
    <title>3 Nov 2013</title>
