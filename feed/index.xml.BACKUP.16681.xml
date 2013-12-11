@@ -4,7 +4,11 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-12-10T19:31:20-08:00</updated>
+<<<<<<< HEAD
+ <updated>2013-12-10T19:21:02-08:00</updated>
+=======
+ <updated>2013-11-11T22:09:57-08:00</updated>
+>>>>>>> 2877064e9650bb42c0d0e61606c4af207b414db9
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
@@ -13,6 +17,7 @@
 
  
  <entry>
+<<<<<<< HEAD
    <title>10 Nov 2013</title>
    <link href="http://wickerbox.net/2013/12/note"/>
    <updated>2013-12-10T00:00:00-08:00</updated>
@@ -35,6 +40,8 @@
  </entry>
  
  <entry>
+=======
+>>>>>>> 2877064e9650bb42c0d0e61606c4af207b414db9
    <title>Foxcar Drive and Turn Demo</title>
    <link href="http://wickerbox.net/2013/11/basic-driving-demo"/>
    <updated>2013-11-11T00:00:00-08:00</updated>

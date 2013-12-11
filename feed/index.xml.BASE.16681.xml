@@ -4,48 +4,13 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-12-10T19:31:20-08:00</updated>
+ <updated>2013-11-03T15:09:01-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
- 
- <entry>
-   <title>10 Nov 2013</title>
-   <link href="http://wickerbox.net/2013/12/note"/>
-   <updated>2013-12-10T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/12/note</id>
-   <content type="html">&lt;p&gt;Hahahaha, and then I didn&amp;#8217;t write at all again for three weeks.&lt;/p&gt;
-&lt;p&gt;I enjoyed the holiday and I&amp;#8217;ve been hacking away at this Foxcar control board. I&amp;#8217;ve started journaling in a real actual physical journal and I&amp;#8217;ve found it helpful to not have an audience to worry about.&lt;/p&gt;
-&lt;p&gt;The RF front-end board schematic is done, though I&amp;#8217;m still a little unhappy with the power section, but there&amp;#8217;s another &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; member who&amp;#8217;s working on a separate board that&amp;#8217;s also set up for the same power source so if he arrives at a nicer solution before I get the layout finished (I&amp;#8217;m starting from the RF side) then I&amp;#8217;ll change my choice of chips.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m unhappy because the current switching power supply is a 60-pin &lt;span class=&quot;caps&quot;&gt;LGA&lt;/span&gt; so you can&amp;#8217;t get to the traces once it&amp;#8217;s been soldered to the board. I&amp;#8217;m ordering the board through OSHPark then reflow it so probably everything will be fine but I still get worried about parts I only get one chance with.&lt;/p&gt;
-&lt;p&gt;Also, it&amp;#8217;s expensive, but it&amp;#8217;s designed to handle 20V on the rocket Power over Ethernet bus so I guess you get what you pay for. I have a micro-&lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; connector for at-laptop debug.&lt;/p&gt;
-&lt;p&gt;Annnd the Foxcar control board schematic is done and I pushed to github. I started on the layout, started the trace calculations, and then reinstalled Starcraft II. I can&amp;#8217;t stop thinking about playing it.  I think I might be slightly burned out&amp;#8230;&lt;/p&gt;
-&lt;p&gt;Tonight I cleaned up little things on the website that were bothering me, including the Endurance Days part, and now I&amp;#8217;m going to go home and hunt me some Zerg.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>22 Nov 2013</title>
-   <link href="http://wickerbox.net/2013/11/note"/>
-   <updated>2013-11-22T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/11/note</id>
-   <content type="html">&lt;p&gt;Found Sumana&amp;#8217;s blog this week and I keep returning to it. I&amp;#8217;m afraid of writing the wrong thing and so I don&amp;#8217;t write at all, but it&amp;#8217;s like there&amp;#8217;s this idea of what I&amp;#8217;ll write and how I&amp;#8217;ll feel writing it that when I don&amp;#8217;t achieve that headspace then I&amp;#8217;m like &amp;#8220;oops, can&amp;#8217;t write today, oh well&amp;#8221; and blow it off. I&amp;#8217;d like to stop doing that. Just write.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Foxcar Drive and Turn Demo</title>
-   <link href="http://wickerbox.net/2013/11/basic-driving-demo"/>
-   <updated>2013-11-11T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/11/basic-driving-demo</id>
-   <content type="html">&lt;p&gt;I bought a Pololu VNH5019 Dual Motor Driver Carrier Shield for Arduino and wired in the DC motor. With stacking headers I could use pin 2 for the servo and control both from the Arduino. I&amp;#8217;m using &lt;a href=&quot;http://forum.arduino.cc/index.php/topic,21975.0.html&quot;&gt;mem&amp;#8217;s ServoTimer2&lt;/a&gt; and &lt;a href=&quot;https://github.com/pololu/dual-vnh5019-motor-shield&quot;&gt;Pololu&amp;#8217;s VNH5019 Motor Driver Shield&lt;/a&gt; libraries.&lt;/p&gt;
-&lt;p&gt;The code&amp;#8217;s in the &lt;a href=&quot;https://github.com/wicker/Self-Driving-RC-Car&quot;&gt;Github repo&lt;/a&gt; under &amp;#8216;hardware-test&amp;#8217;.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/foxcar-drive.png&quot;&gt;
-&lt;p&gt;This is the hardware test. You can see in the video that I&amp;#8217;m driving a servo to turn the front wheels and a heavy-duty motor to roll the wheels forward and backward.&lt;/p&gt;
-&lt;p&gt;Next step: custom control board.&lt;/p&gt;
-  &lt;div style=&quot;width: 100%; margin: 0px auto;&quot;&gt;&lt;iframe width=&quot;100%&quot; height=&quot;480&quot;src=&quot;//www.youtube.com/embed/N1pncB94zRU&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</content>
- </entry>
  
  <entry>
    <title>3 Nov 2013</title>
@@ -2856,14 +2821,6 @@ Bubbling springs, meet my delighted inner twelve-year old.&lt;/p&gt;
 &lt;img src=&quot;https://lh5.googleusercontent.com/-FF8hNwEUUec/T2Kw13Mv2pI/AAAAAAAADDs/XMk8jQ0PkmY/w600-h450-no/dscf1867.png&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/-KrvJtY_ozuo/T2Kw39lhA2I/AAAAAAAADEE/GwjZxSwi62E/w600-h450-no/dscf1870.png&quot;&gt;
 &lt;img src=&quot;https://lh5.googleusercontent.com/-jnvTvJkdrcA/T2Kw2_NLy4I/AAAAAAAADD8/pT2SgelCc2c/w600-h450-no/dscf1873.png&quot;&gt;</content>
- </entry>
- 
- <entry>
-   <title>What and Where was Al Asad?</title>
-   <link href="http://wickerbox.net/2006/10/what-was-al-asad"/>
-   <updated>2006-10-01T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2006/10/what-was-al-asad</id>
-   <content type="html"></content>
  </entry>
  
  <entry>

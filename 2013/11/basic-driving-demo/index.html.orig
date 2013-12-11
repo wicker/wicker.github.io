@@ -58,7 +58,10 @@
             <li><a href="/projects/software/">Software</a></li>
             <li><a href="/projects/hardware/">Hardware</a></li>
             <li><a href="/projects/rockets/">Rockets</a></li>
+<<<<<<< HEAD
             <li><a href="/projects/foxcar/">Foxcar</a></li>
+=======
+>>>>>>> 2877064e9650bb42c0d0e61606c4af207b414db9
           </ul>
           <h4>Other Stuff</h4>
           <ul> 
@@ -67,6 +70,7 @@
         </nav>
 
         <nav class="inside">
+<<<<<<< HEAD
           <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
           <img src="/images/endurance-days.png" style="margin: 10px auto;">
           Photo Archive</a>
@@ -74,6 +78,12 @@
           
         <nav class="inside">
           <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+=======
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight</a>
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive
+          </ul>
+>>>>>>> 2877064e9650bb42c0d0e61606c4af207b414db9
         </nav>
           
       </div>    
