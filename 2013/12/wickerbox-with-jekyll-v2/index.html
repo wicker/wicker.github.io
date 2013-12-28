@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Making Wickerbox - v2 | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div class="title">Making Wickerbox - v2</div>
+  <p>December 2013 - Portland, Oregon</p>
+
+  <p>Wickerbox is a dynamically-generated static site served using Jekyll and Github Pages. I recently redesigned it with an eye to a more simple back-end and a minimum of Javascript. I ended up directly linking from Google+ Photos for photo posts and from Github for project posts.</p>
+<p>Wickerbox is static in that it does not require a server-side database in order to serve up pages. I came from Wordpress using MySQL and <span class="caps">PHP</span> and wanted something simpler. (ha!) Also, I’m a big fan of git for revision control.</p>
+<p><strong>What&#8217;s a Post?</strong></p>
+<p>A post is a post is a post. I originally split posts into different layouts with photo posts containing a gallery sourced from a Picasa photo album so I could just put the userid and albumid in the header and it would automatically populate. That ended up being really awkward to browse and I prefer just putting the photos in the document. It works for projects, too.</p>
+<p>I write the posts in Textile and save as .textile documents, which are then turned by Jekyll into <span class="caps">HTML</span> pages. Jekyll takes any otherwise-unmarked piece of text and renders it with paragraph tags, which I gave some padding to get the indented effect.</p>
+<img src="/images/project/wickerv2/indent-textile.png">
+<p>By starting the line with two spaces, I can avoid wrapping my images in paragraph tags and make sure they take up the entire width of the content box.</p>
+<img src="/images/project/wickerv2/indent.png">
+<p>Posts do need to be sorted for display purposes in the category and front pages, so I&#8217;m still using a lot of header:</p>
+<div style="margin-left: 20px;">
+<div class="highlight"><pre><code class="yaml"><span class="nn">---</span>
+<span class="l-Scalar-Plain">layout</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">post</span>
+<span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Making Wickerbox - v2</span>
+<span class="l-Scalar-Plain">category</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">software</span>
+<span class="l-Scalar-Plain">image</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/images/thumbs/wickerbox-v2.png</span>
+<span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span>
+<span class="p-Indicator">-</span> <span class="l-Scalar-Plain">all</span>
+<span class="p-Indicator">-</span> <span class="l-Scalar-Plain">jekyll</span>
+<span class="p-Indicator">-</span> <span class="l-Scalar-Plain">sites</span>
+<span class="p-Indicator">-</span> <span class="l-Scalar-Plain">projects</span>
+<span class="l-Scalar-Plain">purpose</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">project</span>
+<span class="l-Scalar-Plain">year</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">2013</span>
+<span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Combination of content and design changes.</span>
+<span class="l-Scalar-Plain">location</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Portland, Oregon</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+<p><strong>Implementation</strong></p>
+<p>I wrote the layout file to be as simple as possible. I&#8217;m stopped using an out-of-the-box responsive framework and intend to just put in some mobile tweaks some time in the future. I&#8217;m not too worried about making the site look fantastic on mobile because the photos are integral and they&#8217;re huge, so I&#8217;m not really sure who&#8217;s spending a lot of time on mobile browsing.</p>
+<p>I stopped using the Galleria plugin for photos but I did switch fonts to use Google.</p>
+<p>My intent was to make posts as simple and standard as possible while putting the complicated sorting and display details on the front page and on the category pages. The goal was to lower the transaction cost of writing a post as much as possible.</p>
+<p><strong>To Tag or Not To Tag</strong></p>
+<p>I&#8217;m still adding tags to posts but I&#8217;m not displaying them because there isn&#8217;t a nice design-friendly place to put them. I used to love tag clouds; now I&#8217;m sort of ambivalent.</p>
+<p><strong>Notebook</strong></p>
+<p>The biggest thing I wanted was to make a blog-like page which would display all the posts under the &#8216;notes&#8217; category. It would be fine to drop photos here but the goal was to lower the transaction cost <em>even lower</em> so I&#8217;d err on the side of a quick post instead of letting all these ideas pile up until I burn the whole pile and vow to start over, which is basically what happened in 2013.</p>
+<p><strong><span class="caps">RSS</span> Feed</strong></p>
+<p>I&#8217;m using the basic template from <a href="http://github.com/snaptortoise/jekyll-rss-feeds">snaptortoise&#8217;s Jekyll <span class="caps">RSS</span> Feeds repo</a> and it works fine.</p>
+<p><strong>Source</strong></p>
+<p>Github serves wickerbox.net from <a href="http://github.com/wicker/wicker.github.com/">the wicker.github.com repo</a> but I still keep the back-end of the site under version control by using <a href="http://github.com/wicker/wickerbox-jekyll-backend">wickerbox-jekyll-backend</a> and I serve the site using a script from my command line.</p>
+<p>I serve the site using a script which I wrote about <a href="http://localhost:4000/2012/03/wickerbox-net-with-jekyll/">in my original Making Wickerbox v1 post</a> and which is basically unchanged.</p>
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>

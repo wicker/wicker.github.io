@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Using ChibiOS and OpenOCD | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div class="title">Using ChibiOS and OpenOCD</div>
+  <p>December 2013 - Portland, Oregon</p>
+
+  <p>I chose ChibiOS for the <span class="caps">GPS</span> RF board because <span class="caps">PSAS</span> has it set up. These are rough notes for myself for doing development on the <span class="caps">GPS</span> RF board.</p>
+<p>The <a href="http://psas.pdx.edu/avionics/av3_firmware/av3-stm32-openocd/">stm32 section on the <span class="caps">PSAS</span> wiki</a> was useful.</p>
+<p>/opt/psas is where I&#8217;ve put all the psas ChibiOS stuff on my machine.</p>
+<p>I put the following commands in ~/.bash_aliases:</p>
+<p><code>alias psas_stm="echo Path is $PATH &amp;&amp; export PATH=$PATH:/opt/psas/openocd/bin:/opt/psas/x-tools/stm32f407/arm-psas-eabi/bin:/opt/eclipse/ &amp;&amp; echo \nNew path is \$PATH"</code></p>
+<p><code>alias gpsdev1="cd /opt/psas/openocd/bin &amp;&amp; ./openocd -f ../share/openocd/scripts/interface/stlink-v2.cfg -f ../share/openocd/scripts/target/stm32f4x_stlink.cfg"</code></p>
+<p><code>alias gpsdev2="cd /opt/psas/openocd/bin &amp;&amp; telnet localhost 4444"</code></p>
+<p>To program the board, first I make sure I&#8217;ve updated the software in the main repo, which in <span class="caps">GPS</span> case is <a href="http://github.com/psas/stm32/src/gps/">here</a>.</p>
+<p>Not sure where my code is actually compiled but I&#8217;m going to use the ch.hex that&#8217;s created when I do compile to program the board.</p>
+<p>Then I run psas_stm, which adds the paths I need.</p>
+<p>Then I open two terminals.</p>
+<p>In the first, I run gpsdev1 to run openocd on the config files.</p>
+<p>In the second, I run gpsdev2 to open communication with the board.</p>
+<p>The openocd commands to run inside the second terminal are</p>
+<div style="margin-left: 20px;">
+<div class="highlight"><pre><code class="c"><span class="n">reset</span> <span class="n">halt</span>
+<span class="n">flash</span> <span class="n">write</span> <span class="n">write_image</span> <span class="n">erase</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">wicker</span><span class="o">/</span><span class="n">proj</span><span class="o">/</span><span class="n">psas</span><span class="o">/</span><span class="n">stm32</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">ch</span><span class="p">.</span><span class="n">hex</span>
+<span class="n">reset</span>
+</code></pre></div></div>
+<p>Then the board should be programmed correctly.</p>
+<p>Huge thanks to Kay and Dave for helping me get started.</p>
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Wickerbox</title>
+		<description>Adventures of an aerospace geek in Portland, Oregon.</description>
+		<link></link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>27 Dec 2013</title>
+				<description>&lt;p&gt;Spent a couple days in a cabin at Kalaloch Lodge on the Olympic Peninsula. I edited some posts and got everything ready for when I get home to just push the site.&lt;/p&gt;
+&lt;p&gt;I have a couple interesting projects in the pipeline, including the RF board and an implementation of Timo Bergmann&amp;#8217;s Sound of Sorting. I never had the algorithms class at school so writing fifteen sorts with the help of the Intro to Algorithms, 3rd Ed, has introduced me to a bunch of concepts &amp;#8211; optimization among them.&lt;/p&gt;</description>
+				<pubDate>Fri, 27 Dec 2013</pubDate>
+				<link>{ site.base }}//2013/12/note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/note</guid>
+			</item>
+		
+			<item>
+				<title>25 Dec 2013</title>
+				<description>&lt;p&gt;This note is trying out my new script. It first gets the current date in the right format.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;NAME=$(date +&quot;%Y-%m-%d&quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then it copies a template I made in _layouts/ and names it using that date output.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cp $SRCDIR/_layouts/note_  .textile $SRCDIR/_posts/$NAME-note.textile&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then it opens it for editing so I can do my thing.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vim $SRCDIR/_posts/$NAME-note.textile&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;And here it is. Yay for lowering transaction costs.&lt;/p&gt;
+&lt;p&gt;I also figured out a way to add image to posts but they only show up on the notebook page, not the &lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; feed, because they&amp;#8217;re slid in from the yaml header and sit above the title. They look nice so I&amp;#8217;m calling it good.&lt;/p&gt;</description>
+				<pubDate>Wed, 25 Dec 2013</pubDate>
+				<link>{ site.base }}//2013/12/note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/note</guid>
+			</item>
+		
+			<item>
+				<title>Foxcar Control Board v1</title>
+				<description>&lt;p&gt;It&amp;#8217;s time to add a control board to my RC car. My goal is a car that does basically everything by itself so I looked into robot exploration algorithms and figured out I need to have localization (where am I?), mapping (what&amp;#8217;s around me?), and planning (where am I going?). I broke up the design of the control board into four parts: power and motors, microcontroller, networking and logging, and all the sensor inputs.&lt;/p&gt;
+&lt;p&gt;I scrounged up sensors in the Open Tech Lab, where I originally scrounged up the car, and came up with a couple of rangefinders, a PX4FLOW, a 9DOF sensor stick with accel/gyro/mag, and a &lt;span class=&quot;caps&quot;&gt;CMOS&lt;/span&gt; camera which has no markings except for its chip, a VC0706.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/sensors.png&quot;&gt;
+&lt;p&gt;I knew I&amp;#8217;d want an output for the servo now but I also wanted to provide the same interface for &lt;span class=&quot;caps&quot;&gt;ESC&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;PWM&lt;/span&gt; signals as I had on my previous quadcopter control board. Ideally this board could go on a quad without any modifications. As for power, I already knew that the VNH5019 carrier board from Pololu works fine for my car so I designed the board for over 20A of stall current.&lt;/p&gt;
+&lt;p&gt;I added a micro-&lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; connector and hooked the 5V through a diode to the linear regulator so I can&amp;#8217;t power the car from &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; (it&amp;#8217;s not big enough to carry a laptop anyway) but I&amp;#8217;ll be able to debug directly.&lt;/p&gt;
+&lt;p&gt;I decided I&amp;#8217;d also want logging via a microSD card and networked control over XBees I also have on hand. Overall, the system looks like this.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/v1-system.png&quot;&gt;
+
+&lt;p&gt;I chose the STM32F4 because &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; is using it so one of my other boards is using it, I&amp;#8217;ve already got a dev environment for it, I&amp;#8217;d like to use ChibiOS, and it&amp;#8217;s basically capable of anything I would want for its size. It&amp;#8217;s also ubiquitous so there are tons of help forums and it&amp;#8217;s got all the pins, &lt;span class=&quot;caps&quot;&gt;DAC&lt;/span&gt;, and memory I could want.&lt;/p&gt;
+&lt;p&gt;I got this far and was looking into which &lt;span class=&quot;caps&quot;&gt;IMU&lt;/span&gt; sensors to buy when I talked to a guy who does IMUs who flipped out when I suggested writing a Kalman filter. He stressed that I could do whatever the hell I wanted but he asked if what I really wanted was really to actually spend a year writing a decent &lt;span class=&quot;caps&quot;&gt;IMU&lt;/span&gt;, really? &lt;em&gt;really? think hard now&amp;#8230;&lt;/em&gt; and I agreed, okay, no, I want to make my car drive around and get into trouble.&lt;/p&gt;
+&lt;p&gt;I also realized a basic requirement of this car is to use optical flow instead of &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; for absolute position correction. This is the root problem I&amp;#8217;m interested in and I&amp;#8217;ve started to read up on possible solutions.&lt;/p&gt;
+&lt;p&gt;I went looking at the other autopilot boards to find out which sensors they&amp;#8217;re using, then I looked up open source IMUs which already have ports to the STM32F4, and I decided to use FreeIMU with the MPU6000 and HMC5883L. Note that originally I figured I&amp;#8217;d use the MPU6050 and then realized that the 6000 comes with &lt;span class=&quot;caps&quot;&gt;SPI&lt;/span&gt; as well as I2C so the 6000 is the better deal for the faster speed.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/autopilots.png&quot;&gt;
+&lt;p&gt;I went back to my pile of sensors, took the STM32F4, broke out all the peripherals I could use, and matched up sensors to the chip. I hooked up the compass and Invensense gyro/accelometer chip, then broke all the other &lt;span class=&quot;caps&quot;&gt;GPIO&lt;/span&gt; points left over into as many header as I could. Finally, I worked up a schematic using my proven previous design for the XBee, &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt;, and SD card.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/foxcar-control-board-v1-sch-sheet1.png&quot;&gt;
+
+&lt;img src=&quot;/images/project/foxcar/foxcar-control-board-v1-sch-sheet2.png&quot;&gt;
+
+&lt;p&gt;I started the schematic on November 22nd and finished on December 15th, which was exactly on target. I worked in two crunch weeks, the first for the schematic and the second for layout, with a break between them to let the schematic linger a little.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/foxcar-control-board-v1-brd.png&quot;&gt;
+&lt;p&gt;The &lt;a href=&quot;http://github.com/wicker/Self-Driving-RC-Car/&quot;&gt;final schematics and boards are up on Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The final 4-layer board comes out to 3.5&amp;#215;2.2 inches for an OSHPark cost of $77 for three.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/oshpark-ship.png&quot;&gt;</description>
+				<pubDate>Sun, 15 Dec 2013</pubDate>
+				<link>{ site.base }}//2013/12/custom-foxcar-control-board</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/custom-foxcar-control-board</guid>
+			</item>
+		
+			<item>
+				<title>Using ChibiOS and OpenOCD</title>
+				<description>&lt;p&gt;I chose ChibiOS for the &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; RF board because &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; has it set up. These are rough notes for myself for doing development on the &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; RF board.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://psas.pdx.edu/avionics/av3_firmware/av3-stm32-openocd/&quot;&gt;stm32 section on the &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; wiki&lt;/a&gt; was useful.&lt;/p&gt;
+&lt;p&gt;/opt/psas is where I&amp;#8217;ve put all the psas ChibiOS stuff on my machine.&lt;/p&gt;
+&lt;p&gt;I put the following commands in ~/.bash_aliases:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;alias psas_stm=&quot;echo Path is $PATH &amp;amp;&amp;amp; export PATH=$PATH:/opt/psas/openocd/bin:/opt/psas/x-tools/stm32f407/arm-psas-eabi/bin:/opt/eclipse/ &amp;amp;&amp;amp; echo \nNew path is \$PATH&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;alias gpsdev1=&quot;cd /opt/psas/openocd/bin &amp;amp;&amp;amp; ./openocd -f ../share/openocd/scripts/interface/stlink-v2.cfg -f ../share/openocd/scripts/target/stm32f4x_stlink.cfg&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;alias gpsdev2=&quot;cd /opt/psas/openocd/bin &amp;amp;&amp;amp; telnet localhost 4444&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To program the board, first I make sure I&amp;#8217;ve updated the software in the main repo, which in &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; case is &lt;a href=&quot;http://github.com/psas/stm32/src/gps/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Not sure where my code is actually compiled but I&amp;#8217;m going to use the ch.hex that&amp;#8217;s created when I do compile to program the board.&lt;/p&gt;
+&lt;p&gt;Then I run psas_stm, which adds the paths I need.&lt;/p&gt;
+&lt;p&gt;Then I open two terminals.&lt;/p&gt;
+&lt;p&gt;In the first, I run gpsdev1 to run openocd on the config files.&lt;/p&gt;
+&lt;p&gt;In the second, I run gpsdev2 to open communication with the board.&lt;/p&gt;
+&lt;p&gt;The openocd commands to run inside the second terminal are&lt;/p&gt;
+&lt;div style=&quot;margin-left: 20px;&quot;&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;reset&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;halt&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;write&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;write_image&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;erase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;proj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;psas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stm32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hex&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;reset&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then the board should be programmed correctly.&lt;/p&gt;
+&lt;p&gt;Huge thanks to Kay and Dave for helping me get started.&lt;/p&gt;</description>
+				<pubDate>Wed, 11 Dec 2013</pubDate>
+				<link>{ site.base }}//2013/12/getting-started-with-psas-chibios</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/getting-started-with-psas-chibios</guid>
+			</item>
+		
+			<item>
+				<title>Making Wickerbox - v2</title>
+				<description>&lt;p&gt;Wickerbox is a dynamically-generated static site served using Jekyll and Github Pages. I recently redesigned it with an eye to a more simple back-end and a minimum of Javascript. I ended up directly linking from Google+ Photos for photo posts and from Github for project posts.&lt;/p&gt;
+&lt;p&gt;Wickerbox is static in that it does not require a server-side database in order to serve up pages. I came from Wordpress using MySQL and &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; and wanted something simpler. (ha!) Also, I’m a big fan of git for revision control.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What&amp;#8217;s a Post?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A post is a post is a post. I originally split posts into different layouts with photo posts containing a gallery sourced from a Picasa photo album so I could just put the userid and albumid in the header and it would automatically populate. That ended up being really awkward to browse and I prefer just putting the photos in the document. It works for projects, too.&lt;/p&gt;
+&lt;p&gt;I write the posts in Textile and save as .textile documents, which are then turned by Jekyll into &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; pages. Jekyll takes any otherwise-unmarked piece of text and renders it with paragraph tags, which I gave some padding to get the indented effect.&lt;/p&gt;
+&lt;img src=&quot;/images/project/wickerv2/indent-textile.png&quot;&gt;
+&lt;p&gt;By starting the line with two spaces, I can avoid wrapping my images in paragraph tags and make sure they take up the entire width of the content box.&lt;/p&gt;
+&lt;img src=&quot;/images/project/wickerv2/indent.png&quot;&gt;
+&lt;p&gt;Posts do need to be sorted for display purposes in the category and front pages, so I&amp;#8217;m still using a lot of header:&lt;/p&gt;
+&lt;div style=&quot;margin-left: 20px;&quot;&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Making Wickerbox - v2&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;software&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/images/thumbs/wickerbox-v2.png&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;all&lt;/span&gt;
+&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;jekyll&lt;/span&gt;
+&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sites&lt;/span&gt;
+&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;projects&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;purpose&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;project&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;2013&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Combination of content and design changes.&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Portland, Oregon&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Implementation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I wrote the layout file to be as simple as possible. I&amp;#8217;m stopped using an out-of-the-box responsive framework and intend to just put in some mobile tweaks some time in the future. I&amp;#8217;m not too worried about making the site look fantastic on mobile because the photos are integral and they&amp;#8217;re huge, so I&amp;#8217;m not really sure who&amp;#8217;s spending a lot of time on mobile browsing.&lt;/p&gt;
+&lt;p&gt;I stopped using the Galleria plugin for photos but I did switch fonts to use Google.&lt;/p&gt;
+&lt;p&gt;My intent was to make posts as simple and standard as possible while putting the complicated sorting and display details on the front page and on the category pages. The goal was to lower the transaction cost of writing a post as much as possible.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To Tag or Not To Tag&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m still adding tags to posts but I&amp;#8217;m not displaying them because there isn&amp;#8217;t a nice design-friendly place to put them. I used to love tag clouds; now I&amp;#8217;m sort of ambivalent.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Notebook&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The biggest thing I wanted was to make a blog-like page which would display all the posts under the &amp;#8216;notes&amp;#8217; category. It would be fine to drop photos here but the goal was to lower the transaction cost &lt;em&gt;even lower&lt;/em&gt; so I&amp;#8217;d err on the side of a quick post instead of letting all these ideas pile up until I burn the whole pile and vow to start over, which is basically what happened in 2013.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; Feed&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m using the basic template from &lt;a href=&quot;http://github.com/snaptortoise/jekyll-rss-feeds&quot;&gt;snaptortoise&amp;#8217;s Jekyll &lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; Feeds repo&lt;/a&gt; and it works fine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Github serves wickerbox.net from &lt;a href=&quot;http://github.com/wicker/wicker.github.com/&quot;&gt;the wicker.github.com repo&lt;/a&gt; but I still keep the back-end of the site under version control by using &lt;a href=&quot;http://github.com/wicker/wickerbox-jekyll-backend&quot;&gt;wickerbox-jekyll-backend&lt;/a&gt; and I serve the site using a script from my command line.&lt;/p&gt;
+&lt;p&gt;I serve the site using a script which I wrote about &lt;a href=&quot;http://localhost:4000/2012/03/wickerbox-net-with-jekyll/&quot;&gt;in my original Making Wickerbox v1 post&lt;/a&gt; and which is basically unchanged.&lt;/p&gt;</description>
+				<pubDate>Tue, 10 Dec 2013</pubDate>
+				<link>{ site.base }}//2013/12/wickerbox-with-jekyll-v2</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/wickerbox-with-jekyll-v2</guid>
+			</item>
+		
+			<item>
+				<title>10 Nov 2013</title>
+				<description>&lt;p&gt;Hahahaha, and then I didn&amp;#8217;t write at all again for three weeks.&lt;/p&gt;
+&lt;p&gt;I enjoyed the holiday and I&amp;#8217;ve been hacking away at this Foxcar control board. I&amp;#8217;ve started journaling in a real actual physical journal and I&amp;#8217;ve found it helpful to not have an audience to worry about.&lt;/p&gt;
+&lt;p&gt;The RF front-end board schematic is done, though I&amp;#8217;m still a little unhappy with the power section, but there&amp;#8217;s another &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; member who&amp;#8217;s working on a separate board that&amp;#8217;s also set up for the same power source so if he arrives at a nicer solution before I get the layout finished (I&amp;#8217;m starting from the RF side) then I&amp;#8217;ll change my choice of chips.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m unhappy because the current switching power supply is a 60-pin &lt;span class=&quot;caps&quot;&gt;LGA&lt;/span&gt; so you can&amp;#8217;t get to the traces once it&amp;#8217;s been soldered to the board. I&amp;#8217;m ordering the board through OSHPark then reflow it so probably everything will be fine but I still get worried about parts I only get one chance with.&lt;/p&gt;
+&lt;p&gt;Also, it&amp;#8217;s expensive, but it&amp;#8217;s designed to handle 20V on the rocket Power over Ethernet bus so I guess you get what you pay for. I have a micro-&lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; connector for at-laptop debug.&lt;/p&gt;
+&lt;p&gt;Annnd the Foxcar control board schematic is done and I pushed to github. I started on the layout, started the trace calculations, and then reinstalled Starcraft II. I can&amp;#8217;t stop thinking about playing it.  I think I might be slightly burned out&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Tonight I cleaned up little things on the website that were bothering me, including the Endurance Days part, and now I&amp;#8217;m going to go home and hunt me some Zerg.&lt;/p&gt;</description>
+				<pubDate>Tue, 10 Dec 2013</pubDate>
+				<link>{ site.base }}//2013/12/note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/note</guid>
+			</item>
+		
+			<item>
+				<title>Arduino and a Rangefinder</title>
+				<description>&lt;p&gt;So there&amp;#8217;s something like eighty years of history behind a theremin. This isn&amp;#8217;t a theremin. This is me fucking around on a sleepy Saturday in Seattle with an ultrasonic rangefinder, an Arduino, and &lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt; headers. But I got the idea because of theremins.&lt;/p&gt;
+&lt;p&gt;I basically wanted to use the Arduino to sample the rangefinder and produce musical notes.&lt;/p&gt;
+&lt;img src=&quot;/images/project/rangefinder/rangefinder.png&quot;&gt;
+&lt;p&gt;I needed a reference for what the text of a &lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt; file looks like in comma-separated values so I downloaded Avicii&amp;#8217;s Wake Me Up and used the midicsv script from Fourmilab to get the &lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt; file. Then I stripped out as much of the header as possible to see what it takes for timidity to still play it. Turns out a file with just this header will still play:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;0, 0, Header, 0, 1, 120&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;1, 0, Start_track&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I wired the Maxbotix LV-EZ4 ultrasonic rangefinder to the Arduino via a protoshield and wrote a script to sample the rangefinder for a finite period of time and turn the distance measurements into octaves. I didn&amp;#8217;t make it output a file; you have to actually copy the results from the Arduino&amp;#8217;s serial monitor. Obviously it&amp;#8217;d be better to just get a file and script the whole process.&lt;/p&gt;
+&lt;div style=&quot;margin-left: 20px;&quot;&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;c++&quot;&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pwPin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pulse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0, 0, Header, 0, 1, 120&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1, 0, Start_track&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;pinMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pwPin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  
+  &lt;span class=&quot;n&quot;&gt;pulse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pulseIn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pwPin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HIGH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pulse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;147&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;cm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.54&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;250&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1, &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;, Note_on_c, 11, &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;, 127&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1, &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;, End_track&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0, 0, End_of_file&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;I took the &lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt; file I&amp;#8217;d made by copying and pasting and applied the csvmidi script in the other direction (&lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt;&amp;#8594;&lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt;). It&amp;#8217;s a pretty limited file, which you can play using timidity.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/wicker/ardu-midi-ping/blob/master/results/wicker.mid?raw=true&quot;&gt;Song is here&lt;/a&gt; (&lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/wicker/ardu-midi-ping/&quot;&gt;Code is here&lt;/a&gt; (Github)&lt;/p&gt;</description>
+				<pubDate>Sun, 01 Dec 2013</pubDate>
+				<link>{ site.base }}//2013/12/arduino-rangefinder</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/arduino-rangefinder</guid>
+			</item>
+		
+			<item>
+				<title>22 Nov 2013</title>
+				<description>&lt;p&gt;Found Sumana&amp;#8217;s blog this week and I keep returning to it. I&amp;#8217;m afraid of writing the wrong thing and so I don&amp;#8217;t write at all, but it&amp;#8217;s like there&amp;#8217;s this idea of what I&amp;#8217;ll write and how I&amp;#8217;ll feel writing it that when I don&amp;#8217;t achieve that headspace then I&amp;#8217;m like &amp;#8220;oops, can&amp;#8217;t write today, oh well&amp;#8221; and blow it off. I&amp;#8217;d like to stop doing that. Just write.&lt;/p&gt;</description>
+				<pubDate>Fri, 22 Nov 2013</pubDate>
+				<link>{ site.base }}//2013/11/note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/11/note</guid>
+			</item>
+		
+			<item>
+				<title>Arduino Sketch with XBees</title>
+				<description>&lt;p&gt;Step three of Foxcar development came full circle and made the car once again remote controlled, this time with XBee. I stacked an XBee on the protoshield on top of the motor driver board on top of the Arduino Uno and connected the other XBee via a Sparkfun XBee Explorer Board to my laptop on port /dev/ttyUSB0. I came up with some commands and was able to wirelessly drive the motor and servo.&lt;/p&gt;
+&lt;p&gt;I found a couple of Series 2 XBees and an Explorer Board from Sparkfun.&lt;/p&gt;
+&lt;img src=&quot;/images/project/networks/xbee-mounted.png&quot;&gt;
+&lt;p&gt;I used the Explorer board to verify both XBees were on the same baud rate. Series 2 XBees are also called Zigbee Modules that use the ZNet 2.5 protocol. They&amp;#8217;re good for mesh networks.&lt;/p&gt;
+&lt;p&gt;A couple of tutorials were helpful:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.pjrc.com/teensy/td_uart.html&quot;&gt;Using the &lt;span class=&quot;caps&quot;&gt;UART&lt;/span&gt; (Real Serial Port)&lt;/a&gt; &amp;#8211; on the Teensy.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://arduino.cc/en/Reference/SoftwareSerial&quot;&gt;Arduino SoftwareSerial library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The newest version of the SoftwareSerial library incorporates the best of NewSoftSerial so it&amp;#8217;s interrupt-driven and fast enough for my purposes. It supports 9600 baud so I set both XBees to 9600 using the command mode.&lt;/p&gt;
+&lt;p&gt;The two resources I used for setting commands were the XBee 2.5 Datasheet and User Manual.&lt;/p&gt;
+&lt;p&gt;I programmed one Arduino with Ladyada&amp;#8217;s ASCIITable test sketch and detached it from the laptop. I wired the 3V3, Rx, Tx, and Gnd connections from the Arduino to one of the XBees using the Protoshield.&lt;/p&gt;
+&lt;p&gt;Then I hooked up the XBee Explorer to my laptop and read the incoming &lt;span class=&quot;caps&quot;&gt;ASCII&lt;/span&gt; table on /dev/ttyUSB0. My XBee can receive!&lt;/p&gt;
+&lt;img src=&quot;/images/project/networks/xbee-rx.png&quot;&gt;
+&lt;p&gt;Now I want to see that I can send strings to the Arduino-based XBee from Minicom and read them on the Arduino&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt; Serial Monitor. Success!&lt;/p&gt;
+&lt;img src=&quot;/images/project/networks/xbee-tx.png&quot;&gt;</description>
+				<pubDate>Sat, 16 Nov 2013</pubDate>
+				<link>{ site.base }}//2013/11/wireless-control-with-xbees</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/11/wireless-control-with-xbees</guid>
+			</item>
+		
+			<item>
+				<title>Foxcar Drive and Turn Demo</title>
+				<description>&lt;p&gt;I bought a Pololu VNH5019 Dual Motor Driver Carrier Shield for Arduino and wired in the DC motor. With stacking headers I could use pin 2 for the servo and control both from the Arduino. I&amp;#8217;m using &lt;a href=&quot;http://forum.arduino.cc/index.php/topic,21975.0.html&quot;&gt;mem&amp;#8217;s ServoTimer2&lt;/a&gt; and &lt;a href=&quot;https://github.com/pololu/dual-vnh5019-motor-shield&quot;&gt;Pololu&amp;#8217;s VNH5019 Motor Driver Shield&lt;/a&gt; libraries.&lt;/p&gt;
+&lt;p&gt;The code&amp;#8217;s in the &lt;a href=&quot;https://github.com/wicker/Self-Driving-RC-Car&quot;&gt;Github repo&lt;/a&gt; under &amp;#8216;hardware-test&amp;#8217;.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/foxcar-drive.png&quot;&gt;
+&lt;p&gt;This is the hardware test. You can see in the video that I&amp;#8217;m driving a servo to turn the front wheels and a heavy-duty motor to roll the wheels forward and backward.&lt;/p&gt;
+&lt;p&gt;Next step: custom control board.&lt;/p&gt;
+  &lt;div style=&quot;width: 100%; margin: 0px auto;&quot;&gt;&lt;iframe width=&quot;100%&quot; height=&quot;480&quot;src=&quot;//www.youtube.com/embed/N1pncB94zRU&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</description>
+				<pubDate>Mon, 11 Nov 2013</pubDate>
+				<link>{ site.base }}//2013/11/basic-driving-demo</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/11/basic-driving-demo</guid>
+			</item>
+		
+	</channel>
+</rss>
