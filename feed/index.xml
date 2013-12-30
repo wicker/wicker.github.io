@@ -4,7 +4,7 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-12-29T21:14:58-08:00</updated>
+ <updated>2013-12-29T21:16:05-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
@@ -21,7 +21,7 @@
 &lt;p&gt;I finished the RF board layout this afternoon but need to review it tomorrow, particularly in the RF side around LNA2 and &lt;span class=&quot;caps&quot;&gt;ANTBIAS&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;I stayed in Ocean City last night and came home today through Astoria and Forest Grove and the valley, sneaking into Newberg the back way. Much better than I-5 and not all that much longer a drive.&lt;/p&gt;
 &lt;p&gt;There&amp;#8217;s a This American Life story where one of the editors has her mom on the show to talk about her seven (or however many) things nobody wants to hear about in conversation when you show up for a dinner party. I&amp;#8217;m pretty sure the weather and the route are two of the however many.&lt;/p&gt;
-&lt;p&gt;We had a nice sunset, anyway. And it&amp;#8217;s nice to be home. I&amp;#8217;m always kind of overwhelmed by how beautiful the world can be.&lt;/p&gt;
+&lt;p&gt;We had a nice sunset, anyway. And it&amp;#8217;s nice to be home. I&amp;#8217;m always kind of overwhelmed by how beautiful the forests and coast can be.&lt;/p&gt;
 &lt;p&gt;I stacked the motor driver board and the XBee-bearing protoshield on top of my Arduino and was able to control the steering of the Foxcar by way of characters typed in minicom on my laptop through another XBee. I also investigated robot libraries and realized I should really be using &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt;, not ChibiOS, which is the Robot Operating System.&lt;/p&gt;
 &lt;p&gt;I have an STM32F Discovery board so I&amp;#8217;m going to put &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt; on that next.&lt;/p&gt;</content>
  </entry>
