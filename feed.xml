@@ -7,6 +7,20 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>29 Dec 2013</title>
+				<description>&lt;p&gt;This makenote script is nifty.&lt;/p&gt;
+&lt;p&gt;I finished the RF board layout this afternoon but need to review it tomorrow, particularly in the RF side around LNA2 and &lt;span class=&quot;caps&quot;&gt;ANTBIAS&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I stayed in Ocean City last night and came home today through Astoria and Forest Grove and the valley, sneaking into Newberg the back way. Much better than I-5 and not all that much longer a drive.&lt;/p&gt;
+&lt;p&gt;There&amp;#8217;s a This American Life story where one of the editors has her mom on the show to talk about her seven (or however many) things nobody wants to hear about in conversation when you show up for a dinner party. I&amp;#8217;m pretty sure the weather and the route are two of the however many.&lt;/p&gt;
+&lt;p&gt;We had a nice sunset, anyway. And it&amp;#8217;s nice to be home. I&amp;#8217;m always kind of overwhelmed by how beautiful the world can be.&lt;/p&gt;
+&lt;p&gt;I stacked the motor driver board and the XBee-bearing protoshield on top of my Arduino and was able to control the steering of the Foxcar by way of characters typed in minicom on my laptop through another XBee. I also investigated robot libraries and realized I should really be using &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt;, not ChibiOS, which is the Robot Operating System.&lt;/p&gt;
+&lt;p&gt;I have an STM32F Discovery board so I&amp;#8217;m going to put &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt; on that next.&lt;/p&gt;</description>
+				<pubDate>Sun, 29 Dec 2013</pubDate>
+				<link>{ site.base }}//2013/12/note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/note</guid>
+			</item>
+		
+			<item>
 				<title>27 Dec 2013</title>
 				<description>&lt;p&gt;Spent a couple days in a cabin at Kalaloch Lodge on the Olympic Peninsula. I edited some posts and got everything ready for when I get home to just push the site.&lt;/p&gt;
 &lt;p&gt;I have a couple interesting projects in the pipeline, including the RF board and an implementation of Timo Bergmann&amp;#8217;s Sound of Sorting. I never had the algorithms class at school so writing fifteen sorts with the help of the Intro to Algorithms, 3rd Ed, has introduced me to a bunch of concepts &amp;#8211; optimization among them.&lt;/p&gt;</description>
@@ -238,19 +252,6 @@
 				<pubDate>Sat, 16 Nov 2013</pubDate>
 				<link>{ site.base }}//2013/11/wireless-control-with-xbees</link>
 				<guid isPermaLink="true">http://www.wickerbox.net///2013/11/wireless-control-with-xbees</guid>
-			</item>
-		
-			<item>
-				<title>Foxcar Drive and Turn Demo</title>
-				<description>&lt;p&gt;I bought a Pololu VNH5019 Dual Motor Driver Carrier Shield for Arduino and wired in the DC motor. With stacking headers I could use pin 2 for the servo and control both from the Arduino. I&amp;#8217;m using &lt;a href=&quot;http://forum.arduino.cc/index.php/topic,21975.0.html&quot;&gt;mem&amp;#8217;s ServoTimer2&lt;/a&gt; and &lt;a href=&quot;https://github.com/pololu/dual-vnh5019-motor-shield&quot;&gt;Pololu&amp;#8217;s VNH5019 Motor Driver Shield&lt;/a&gt; libraries.&lt;/p&gt;
-&lt;p&gt;The code&amp;#8217;s in the &lt;a href=&quot;https://github.com/wicker/Self-Driving-RC-Car&quot;&gt;Github repo&lt;/a&gt; under &amp;#8216;hardware-test&amp;#8217;.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/foxcar-drive.png&quot;&gt;
-&lt;p&gt;This is the hardware test. You can see in the video that I&amp;#8217;m driving a servo to turn the front wheels and a heavy-duty motor to roll the wheels forward and backward.&lt;/p&gt;
-&lt;p&gt;Next step: custom control board.&lt;/p&gt;
-  &lt;div style=&quot;width: 100%; margin: 0px auto;&quot;&gt;&lt;iframe width=&quot;100%&quot; height=&quot;480&quot;src=&quot;//www.youtube.com/embed/N1pncB94zRU&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</description>
-				<pubDate>Mon, 11 Nov 2013</pubDate>
-				<link>{ site.base }}//2013/11/basic-driving-demo</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/11/basic-driving-demo</guid>
 			</item>
 		
 	</channel>
