@@ -4,7 +4,7 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2013-12-29T21:16:05-08:00</updated>
+ <updated>2013-12-31T12:27:44-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>29 Dec 2013</title>
-   <link href="http://wickerbox.net/2013/12/note"/>
+   <link href="http://wickerbox.net/2013/12/29-note"/>
    <updated>2013-12-29T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/12/note</id>
+   <id>http://wickerbox.net/2013/12/29-note</id>
    <content type="html">&lt;p&gt;This makenote script is nifty.&lt;/p&gt;
 &lt;p&gt;I finished the RF board layout this afternoon but need to review it tomorrow, particularly in the RF side around LNA2 and &lt;span class=&quot;caps&quot;&gt;ANTBIAS&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;I stayed in Ocean City last night and came home today through Astoria and Forest Grove and the valley, sneaking into Newberg the back way. Much better than I-5 and not all that much longer a drive.&lt;/p&gt;
@@ -28,18 +28,18 @@
  
  <entry>
    <title>27 Dec 2013</title>
-   <link href="http://wickerbox.net/2013/12/note"/>
+   <link href="http://wickerbox.net/2013/12/27-note"/>
    <updated>2013-12-27T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/12/note</id>
+   <id>http://wickerbox.net/2013/12/27-note</id>
    <content type="html">&lt;p&gt;Spent a couple days in a cabin at Kalaloch Lodge on the Olympic Peninsula. I edited some posts and got everything ready for when I get home to just push the site.&lt;/p&gt;
 &lt;p&gt;I have a couple interesting projects in the pipeline, including the RF board and an implementation of Timo Bergmann&amp;#8217;s Sound of Sorting. I never had the algorithms class at school so writing fifteen sorts with the help of the Intro to Algorithms, 3rd Ed, has introduced me to a bunch of concepts &amp;#8211; optimization among them.&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>25 Dec 2013</title>
-   <link href="http://wickerbox.net/2013/12/note"/>
+   <link href="http://wickerbox.net/2013/12/25-note"/>
    <updated>2013-12-25T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/12/note</id>
+   <id>http://wickerbox.net/2013/12/25-note</id>
    <content type="html">&lt;p&gt;This note is trying out my new script. It first gets the current date in the right format.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;NAME=$(date +&quot;%Y-%m-%d&quot;)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Then it copies a template I made in _layouts/ and names it using that date output.&lt;/p&gt;
@@ -156,9 +156,9 @@
  
  <entry>
    <title>10 Nov 2013</title>
-   <link href="http://wickerbox.net/2013/12/note"/>
+   <link href="http://wickerbox.net/2013/12/10-note"/>
    <updated>2013-12-10T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/12/note</id>
+   <id>http://wickerbox.net/2013/12/10-note</id>
    <content type="html">&lt;p&gt;Hahahaha, and then I didn&amp;#8217;t write at all again for three weeks.&lt;/p&gt;
 &lt;p&gt;I enjoyed the holiday and I&amp;#8217;ve been hacking away at this Foxcar control board. I&amp;#8217;ve started journaling in a real actual physical journal and I&amp;#8217;ve found it helpful to not have an audience to worry about.&lt;/p&gt;
 &lt;p&gt;The RF front-end board schematic is done, though I&amp;#8217;m still a little unhappy with the power section, but there&amp;#8217;s another &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; member who&amp;#8217;s working on a separate board that&amp;#8217;s also set up for the same power source so if he arrives at a nicer solution before I get the layout finished (I&amp;#8217;m starting from the RF side) then I&amp;#8217;ll change my choice of chips.&lt;/p&gt;
@@ -233,9 +233,9 @@
  
  <entry>
    <title>22 Nov 2013</title>
-   <link href="http://wickerbox.net/2013/11/note"/>
+   <link href="http://wickerbox.net/2013/11/22-note"/>
    <updated>2013-11-22T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/11/note</id>
+   <id>http://wickerbox.net/2013/11/22-note</id>
    <content type="html">&lt;p&gt;Found Sumana&amp;#8217;s blog this week and I keep returning to it. I&amp;#8217;m afraid of writing the wrong thing and so I don&amp;#8217;t write at all, but it&amp;#8217;s like there&amp;#8217;s this idea of what I&amp;#8217;ll write and how I&amp;#8217;ll feel writing it that when I don&amp;#8217;t achieve that headspace then I&amp;#8217;m like &amp;#8220;oops, can&amp;#8217;t write today, oh well&amp;#8221; and blow it off. I&amp;#8217;d like to stop doing that. Just write.&lt;/p&gt;</content>
  </entry>
  
@@ -275,9 +275,9 @@
  
  <entry>
    <title>3 Nov 2013</title>
-   <link href="http://wickerbox.net/2013/11/note"/>
+   <link href="http://wickerbox.net/2013/11/03-note"/>
    <updated>2013-11-03T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/11/note</id>
+   <id>http://wickerbox.net/2013/11/03-note</id>
    <content type="html">&lt;p&gt;Drove over to Cape Lookout on the coast for the morning. Low fog in the valleys and it&amp;#8217;s finally tilted over into &lt;em&gt;cold&lt;/em&gt;. Turned the heat on when I realized the cats were cuddling a little more desperately than normal.&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;ve focused on work and &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; this week but I bought the Pololu VNH5019 motor driver shield which can handle over 10 A for a single motor. I figured out the wiring I&amp;#8217;ll need for the Foxcar once that gets here. I&amp;#8217;m probably going to do a custom board with:&lt;/p&gt;
 &lt;p&gt;- an STM32F4 processor&lt;/p&gt;
@@ -320,9 +320,9 @@
  
  <entry>
    <title>26 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/note"/>
+   <link href="http://wickerbox.net/2013/10/26-note"/>
    <updated>2013-10-26T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/note</id>
+   <id>http://wickerbox.net/2013/10/26-note</id>
    <content type="html">&lt;p&gt;Still foggy but the afternoons have been clear blue sky.&lt;/p&gt;
 &lt;p&gt;I drove in to downtown to hack with greh at Portland State. Started out by putting Raspbian on my Raspberry Pi. I&amp;#8217;ve exhausted Wicker Man references for my servers so on greh&amp;#8217;s advice, I&amp;#8217;m calling it rasputin. At least this way, I should be unable to kill it.&lt;/p&gt;
 &lt;p&gt;I picked up the &lt;span class=&quot;caps&quot;&gt;IMEX&lt;/span&gt; Firefox that showed up in the lab and ripped the guts out, replacing the &lt;span class=&quot;caps&quot;&gt;IMEX&lt;/span&gt; control board with an Arduino and Adafruit motor shield. The motor clicks but I swapped servos as well and that works great.&lt;/p&gt;
@@ -331,24 +331,11 @@
  
  <entry>
    <title>25 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/note"/>
+   <link href="http://wickerbox.net/2013/10/25-note"/>
    <updated>2013-10-25T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/note</id>
+   <id>http://wickerbox.net/2013/10/25-note</id>
    <content type="html">&lt;p&gt;Not only did I not write for this day, I have only the foggiest memories of what I did.&lt;/p&gt;
 &lt;p&gt;Went to work, sure. Apparently not much else.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>24 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/note"/>
-   <updated>2013-10-24T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/note</id>
-   <content type="html">&lt;p&gt;Still foggy.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m still having some forearm pain so I skipped &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; and came home to figure out how to break the reading-of-articles that I want to do away from my compulsive browsing-of-Reddit. I have a wifi-only, first-gen iPad for reading and a first-gen (I think) Kindle for reading on backpacking/hiking trips. I added Instapaper to my Firefox on all my computers (work, home desktop, laptop) and dropped all pending bookmarks in there.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m using Trello for a general tracking-of-everything and I don&amp;#8217;t want this to be a part of that at all. I also can email PDFs to myself to get them into the Kindle App. That should be enough to make this stuff available to me. And I can save links from Ars or Reddit or whatever for later, without wasting cycles worrying that I&amp;#8217;ll never see it again.&lt;/p&gt;
-&lt;p&gt;Hopefully this&amp;#8217;ll help clear my head. I have a pile of autonomous quadcopter papers I want to read.&lt;/p&gt;
-&lt;p&gt;I posted the photos from building my 38mm Sentinel rocket from Binder Designs.&lt;/p&gt;
-&lt;p&gt;I made lemon poppyseed scones that were actually pretty amazing. Also have discovered lemon curd.&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -367,19 +354,32 @@
  </entry>
  
  <entry>
+   <title>24 Oct 2013</title>
+   <link href="http://wickerbox.net/2013/10/24-note"/>
+   <updated>2013-10-24T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/10/24-note</id>
+   <content type="html">&lt;p&gt;Still foggy.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m still having some forearm pain so I skipped &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; and came home to figure out how to break the reading-of-articles that I want to do away from my compulsive browsing-of-Reddit. I have a wifi-only, first-gen iPad for reading and a first-gen (I think) Kindle for reading on backpacking/hiking trips. I added Instapaper to my Firefox on all my computers (work, home desktop, laptop) and dropped all pending bookmarks in there.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m using Trello for a general tracking-of-everything and I don&amp;#8217;t want this to be a part of that at all. I also can email PDFs to myself to get them into the Kindle App. That should be enough to make this stuff available to me. And I can save links from Ars or Reddit or whatever for later, without wasting cycles worrying that I&amp;#8217;ll never see it again.&lt;/p&gt;
+&lt;p&gt;Hopefully this&amp;#8217;ll help clear my head. I have a pile of autonomous quadcopter papers I want to read.&lt;/p&gt;
+&lt;p&gt;I posted the photos from building my 38mm Sentinel rocket from Binder Designs.&lt;/p&gt;
+&lt;p&gt;I made lemon poppyseed scones that were actually pretty amazing. Also have discovered lemon curd.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>23 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/note"/>
+   <link href="http://wickerbox.net/2013/10/23-note"/>
    <updated>2013-10-23T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/note</id>
+   <id>http://wickerbox.net/2013/10/23-note</id>
    <content type="html">&lt;p&gt;Americana and crossover choke at &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt;. The forearm pain that took me out on Saturday is still there. Not sure if it&amp;#8217;s tendonitis or what but lizard crawls, the scissor-leg hopping drill just kind of sucked. I ended up mostly watching the technique portion.&lt;/p&gt;
 &lt;p&gt;Aleve and icing it is.&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>20 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/note"/>
+   <link href="http://wickerbox.net/2013/10/20-note"/>
    <updated>2013-10-20T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/note</id>
+   <id>http://wickerbox.net/2013/10/20-note</id>
    <content type="html">&lt;p&gt;Incredibly foggy this morning.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://hackaday.com/2009/09/22/introduction-to-ftdi-bitbang-mode/&quot;&gt;Found a Hackadday Intro to &lt;span class=&quot;caps&quot;&gt;FTDI&lt;/span&gt; tutorial&lt;/a&gt; for bitbang mode.&lt;/p&gt;
 &lt;p&gt;These were the instructions that finally worked: &lt;a href=&quot;http://developer.intra2net.com/mailarchive/html/libftdi/2013/msg00014.html&quot;&gt;libftdi&lt;/a&gt;&lt;/p&gt;</content>
@@ -387,9 +387,9 @@
  
  <entry>
    <title>19 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/note"/>
+   <link href="http://wickerbox.net/2013/10/19-note"/>
    <updated>2013-10-19T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/note</id>
+   <id>http://wickerbox.net/2013/10/19-note</id>
    <content type="html">&lt;p&gt;I still liked the website layout this morning. I haven&amp;#8217;t checked it on anything but Firefox&amp;#8230;&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;m using the &lt;a
 href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-communication-fpga-debug-module/54-de0-nano-serial-communications-tutorial&quot;&gt;DE0-Nano Serial Communications Protocol from ReconTech&lt;/a&gt; to get the DE0-Nano talking over serial.&lt;/p&gt;
@@ -399,10 +399,10 @@ href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-com
  
  <entry>
    <title>18 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/note"/>
+   <link href="http://wickerbox.net/2013/10/18-note"/>
    <updated>2013-10-18T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/note</id>
-   <content type="html">&lt;p&gt;I&amp;#8217;m a note&lt;/p&gt;</content>
+   <id>http://wickerbox.net/2013/10/18-note</id>
+   <content type="html">&lt;p&gt;I&amp;#8217;m a note!&lt;/p&gt;</content>
  </entry>
  
  <entry>

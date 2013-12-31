@@ -87,53 +87,53 @@
 
 <img src="/images/notes/false">
 
-  <p><a href="/2013/12/note"><strong>Sunday, December 29 2013</strong></a></p>
-  <p><p>This makenote script is nifty.</p>
+<p><a href="/2013/12/29-note"><strong>Sunday, December 29 2013</strong></a></p>
+  <p>This makenote script is nifty.</p>
 <p>I finished the RF board layout this afternoon but need to review it tomorrow, particularly in the RF side around LNA2 and <span class="caps"><span class="caps">ANTBIAS</span></span>.</p>
 <p>I stayed in Ocean City last night and came home today through Astoria and Forest Grove and the valley, sneaking into Newberg the back way. Much better than I-5 and not all that much longer a drive.</p>
 <p>There&#8217;s a This American Life story where one of the editors has her mom on the show to talk about her seven (or however many) things nobody wants to hear about in conversation when you show up for a dinner party. I&#8217;m pretty sure the weather and the route are two of the however many.</p>
 <p>We had a nice sunset, anyway. And it&#8217;s nice to be home. I&#8217;m always kind of overwhelmed by how beautiful the forests and coast can be.</p>
 <p>I stacked the motor driver board and the XBee-bearing protoshield on top of my Arduino and was able to control the steering of the Foxcar by way of characters typed in minicom on my laptop through another XBee. I also investigated robot libraries and realized I should really be using <span class="caps"><span class="caps">ROS</span></span>, not ChibiOS, which is the Robot Operating System.</p>
-<p>I have an STM32F Discovery board so I&#8217;m going to put <span class="caps"><span class="caps">ROS</span></span> on that next.</p></p>
+<p>I have an STM32F Discovery board so I&#8217;m going to put <span class="caps"><span class="caps">ROS</span></span> on that next.</p>
 
 <img src="/images/notes/kalaloch.png">
 
-  <p><a href="/2013/12/note"><strong>Friday, December 27 2013</strong></a></p>
-  <p><p>Spent a couple days in a cabin at Kalaloch Lodge on the Olympic Peninsula. I edited some posts and got everything ready for when I get home to just push the site.</p>
-<p>I have a couple interesting projects in the pipeline, including the RF board and an implementation of Timo Bergmann&#8217;s Sound of Sorting. I never had the algorithms class at school so writing fifteen sorts with the help of the Intro to Algorithms, 3rd Ed, has introduced me to a bunch of concepts &#8211; optimization among them.</p></p>
+<p><a href="/2013/12/27-note"><strong>Friday, December 27 2013</strong></a></p>
+  <p>Spent a couple days in a cabin at Kalaloch Lodge on the Olympic Peninsula. I edited some posts and got everything ready for when I get home to just push the site.</p>
+<p>I have a couple interesting projects in the pipeline, including the RF board and an implementation of Timo Bergmann&#8217;s Sound of Sorting. I never had the algorithms class at school so writing fifteen sorts with the help of the Intro to Algorithms, 3rd Ed, has introduced me to a bunch of concepts &#8211; optimization among them.</p>
 
 <img src="/images/notes/false">
 
-  <p><a href="/2013/12/note"><strong>Wednesday, December 25 2013</strong></a></p>
-  <p><p>This note is trying out my new script. It first gets the current date in the right format.</p>
+<p><a href="/2013/12/25-note"><strong>Wednesday, December 25 2013</strong></a></p>
+  <p>This note is trying out my new script. It first gets the current date in the right format.</p>
 <p><code>NAME=$(date +"%Y-%m-%d")</code></p>
 <p>Then it copies a template I made in _layouts/ and names it using that date output.</p>
 <p><code>cp $SRCDIR/_layouts/note_  .textile $SRCDIR/_posts/$NAME-note.textile</code></p>
 <p>Then it opens it for editing so I can do my thing.</p>
 <p><code>vim $SRCDIR/_posts/$NAME-note.textile</code></p>
 <p>And here it is. Yay for lowering transaction costs.</p>
-<p>I also figured out a way to add image to posts but they only show up on the notebook page, not the <span class="caps"><span class="caps">RSS</span></span> feed, because they&#8217;re slid in from the yaml header and sit above the title. They look nice so I&#8217;m calling it good.</p></p>
+<p>I also figured out a way to add image to posts but they only show up on the notebook page, not the <span class="caps"><span class="caps">RSS</span></span> feed, because they&#8217;re slid in from the yaml header and sit above the title. They look nice so I&#8217;m calling it good.</p>
 
 <img src="/images/notes/">
 
-  <p><a href="/2013/12/note"><strong>Tuesday, December 10 2013</strong></a></p>
-  <p><p>Hahahaha, and then I didn&#8217;t write at all again for three weeks.</p>
+<p><a href="/2013/12/10-note"><strong>Tuesday, December 10 2013</strong></a></p>
+  <p>Hahahaha, and then I didn&#8217;t write at all again for three weeks.</p>
 <p>I enjoyed the holiday and I&#8217;ve been hacking away at this Foxcar control board. I&#8217;ve started journaling in a real actual physical journal and I&#8217;ve found it helpful to not have an audience to worry about.</p>
 <p>The RF front-end board schematic is done, though I&#8217;m still a little unhappy with the power section, but there&#8217;s another <span class="caps"><span class="caps">PSAS</span></span> member who&#8217;s working on a separate board that&#8217;s also set up for the same power source so if he arrives at a nicer solution before I get the layout finished (I&#8217;m starting from the RF side) then I&#8217;ll change my choice of chips.</p>
 <p>I&#8217;m unhappy because the current switching power supply is a 60-pin <span class="caps"><span class="caps">LGA</span></span> so you can&#8217;t get to the traces once it&#8217;s been soldered to the board. I&#8217;m ordering the board through OSHPark then reflow it so probably everything will be fine but I still get worried about parts I only get one chance with.</p>
 <p>Also, it&#8217;s expensive, but it&#8217;s designed to handle 20V on the rocket Power over Ethernet bus so I guess you get what you pay for. I have a micro-<span class="caps"><span class="caps">USB</span></span> connector for at-laptop debug.</p>
 <p>Annnd the Foxcar control board schematic is done and I pushed to github. I started on the layout, started the trace calculations, and then reinstalled Starcraft II. I can&#8217;t stop thinking about playing it.  I think I might be slightly burned out&#8230;</p>
-<p>Tonight I cleaned up little things on the website that were bothering me, including the Endurance Days part, and now I&#8217;m going to go home and hunt me some Zerg.</p></p>
+<p>Tonight I cleaned up little things on the website that were bothering me, including the Endurance Days part, and now I&#8217;m going to go home and hunt me some Zerg.</p>
 
 <img src="/images/notes/">
 
-  <p><a href="/2013/11/note"><strong>Friday, November 22 2013</strong></a></p>
-  <p><p>Found Sumana&#8217;s blog this week and I keep returning to it. I&#8217;m afraid of writing the wrong thing and so I don&#8217;t write at all, but it&#8217;s like there&#8217;s this idea of what I&#8217;ll write and how I&#8217;ll feel writing it that when I don&#8217;t achieve that headspace then I&#8217;m like &#8220;oops, can&#8217;t write today, oh well&#8221; and blow it off. I&#8217;d like to stop doing that. Just write.</p></p>
+<p><a href="/2013/11/22-note"><strong>Friday, November 22 2013</strong></a></p>
+  <p>Found Sumana&#8217;s blog this week and I keep returning to it. I&#8217;m afraid of writing the wrong thing and so I don&#8217;t write at all, but it&#8217;s like there&#8217;s this idea of what I&#8217;ll write and how I&#8217;ll feel writing it that when I don&#8217;t achieve that headspace then I&#8217;m like &#8220;oops, can&#8217;t write today, oh well&#8221; and blow it off. I&#8217;d like to stop doing that. Just write.</p>
 
 <img src="/images/notes/">
 
-  <p><a href="/2013/11/note"><strong>Sunday, November 3 2013</strong></a></p>
-  <p><p>Drove over to Cape Lookout on the coast for the morning. Low fog in the valleys and it&#8217;s finally tilted over into <em>cold</em>. Turned the heat on when I realized the cats were cuddling a little more desperately than normal.</p>
+<p><a href="/2013/11/03-note"><strong>Sunday, November 3 2013</strong></a></p>
+  <p>Drove over to Cape Lookout on the coast for the morning. Low fog in the valleys and it&#8217;s finally tilted over into <em>cold</em>. Turned the heat on when I realized the cats were cuddling a little more desperately than normal.</p>
 <p>I&#8217;ve focused on work and <span class="caps"><span class="caps">BJJ</span></span> this week but I bought the Pololu VNH5019 motor driver shield which can handle over 10 A for a single motor. I figured out the wiring I&#8217;ll need for the Foxcar once that gets here. I&#8217;m probably going to do a custom board with:</p>
 <p>- an STM32F4 processor</p>
 <p>- XBee wireless (need to explore RF transceivers &#8211; I know nothing about RC hobby RF stuff, except that there&#8217;s a ton of it out there and has been forever.</p>
@@ -141,58 +141,58 @@
 <p>- 9DOF Sparkfun sensor board</p>
 <p>- micro SD card for data logging or image logging</p>
 <p>- micro-<span class="caps"><span class="caps">USB</span></span> and <span class="caps"><span class="caps">JTAG</span></span></p>
-<p>Actually, putting a Node 6 from <span class="caps"><span class="caps">PSAS</span></span> on it might be a good idea.</p></p>
+<p>Actually, putting a Node 6 from <span class="caps"><span class="caps">PSAS</span></span> on it might be a good idea.</p>
 
 <img src="/images/notes/">
 
-  <p><a href="/2013/10/note"><strong>Saturday, October 26 2013</strong></a></p>
-  <p><p>Still foggy but the afternoons have been clear blue sky.</p>
+<p><a href="/2013/10/26-note"><strong>Saturday, October 26 2013</strong></a></p>
+  <p>Still foggy but the afternoons have been clear blue sky.</p>
 <p>I drove in to downtown to hack with greh at Portland State. Started out by putting Raspbian on my Raspberry Pi. I&#8217;ve exhausted Wicker Man references for my servers so on greh&#8217;s advice, I&#8217;m calling it rasputin. At least this way, I should be unable to kill it.</p>
 <p>I picked up the <span class="caps"><span class="caps">IMEX</span></span> Firefox that showed up in the lab and ripped the guts out, replacing the <span class="caps"><span class="caps">IMEX</span></span> control board with an Arduino and Adafruit motor shield. The motor clicks but I swapped servos as well and that works great.</p>
-<p>My cat has decided that waking at 3am and show me affection by licking my head until I get out of bed is an A++ way to contribute to a happy and functioning household. I&#8217;m not sure how to convince my cat that it&#8217;s pretty fucking wrong.</p></p>
+<p>My cat has decided that waking at 3am and show me affection by licking my head until I get out of bed is an A++ way to contribute to a happy and functioning household. I&#8217;m not sure how to convince my cat that it&#8217;s pretty fucking wrong.</p>
 
 <img src="/images/notes/false">
 
-  <p><a href="/2013/10/note"><strong>Friday, October 25 2013</strong></a></p>
-  <p><p>Not only did I not write for this day, I have only the foggiest memories of what I did.</p>
-<p>Went to work, sure. Apparently not much else.</p></p>
+<p><a href="/2013/10/25-note"><strong>Friday, October 25 2013</strong></a></p>
+  <p>Not only did I not write for this day, I have only the foggiest memories of what I did.</p>
+<p>Went to work, sure. Apparently not much else.</p>
 
 <img src="/images/notes/IMG_0304.png">
 
-  <p><a href="/2013/10/note"><strong>Thursday, October 24 2013</strong></a></p>
-  <p><p>Still foggy.</p>
+<p><a href="/2013/10/24-note"><strong>Thursday, October 24 2013</strong></a></p>
+  <p>Still foggy.</p>
 <p>I&#8217;m still having some forearm pain so I skipped <span class="caps"><span class="caps">BJJ</span></span> and came home to figure out how to break the reading-of-articles that I want to do away from my compulsive browsing-of-Reddit. I have a wifi-only, first-gen iPad for reading and a first-gen (I think) Kindle for reading on backpacking/hiking trips. I added Instapaper to my Firefox on all my computers (work, home desktop, laptop) and dropped all pending bookmarks in there.</p>
 <p>I&#8217;m using Trello for a general tracking-of-everything and I don&#8217;t want this to be a part of that at all. I also can email PDFs to myself to get them into the Kindle App. That should be enough to make this stuff available to me. And I can save links from Ars or Reddit or whatever for later, without wasting cycles worrying that I&#8217;ll never see it again.</p>
 <p>Hopefully this&#8217;ll help clear my head. I have a pile of autonomous quadcopter papers I want to read.</p>
 <p>I posted the photos from building my 38mm Sentinel rocket from Binder Designs.</p>
-<p>I made lemon poppyseed scones that were actually pretty amazing. Also have discovered lemon curd.</p></p>
+<p>I made lemon poppyseed scones that were actually pretty amazing. Also have discovered lemon curd.</p>
 
 <img src="/images/notes/false">
 
-  <p><a href="/2013/10/note"><strong>Wednesday, October 23 2013</strong></a></p>
-  <p><p>Americana and crossover choke at <span class="caps"><span class="caps">BJJ</span></span>. The forearm pain that took me out on Saturday is still there. Not sure if it&#8217;s tendonitis or what but lizard crawls, the scissor-leg hopping drill just kind of sucked. I ended up mostly watching the technique portion.</p>
-<p>Aleve and icing it is.</p></p>
+<p><a href="/2013/10/23-note"><strong>Wednesday, October 23 2013</strong></a></p>
+  <p>Americana and crossover choke at <span class="caps"><span class="caps">BJJ</span></span>. The forearm pain that took me out on Saturday is still there. Not sure if it&#8217;s tendonitis or what but lizard crawls, the scissor-leg hopping drill just kind of sucked. I ended up mostly watching the technique portion.</p>
+<p>Aleve and icing it is.</p>
 
 <img src="/images/notes/IMG_0346.png">
 
-  <p><a href="/2013/10/note"><strong>Sunday, October 20 2013</strong></a></p>
-  <p><p>Incredibly foggy this morning.</p>
+<p><a href="/2013/10/20-note"><strong>Sunday, October 20 2013</strong></a></p>
+  <p>Incredibly foggy this morning.</p>
 <p><a href="http://hackaday.com/2009/09/22/introduction-to-ftdi-bitbang-mode/">Found a Hackadday Intro to <span class="caps"><span class="caps">FTDI</span></span> tutorial</a> for bitbang mode.</p>
-<p>These were the instructions that finally worked: <a href="http://developer.intra2net.com/mailarchive/html/libftdi/2013/msg00014.html">libftdi</a></p></p>
+<p>These were the instructions that finally worked: <a href="http://developer.intra2net.com/mailarchive/html/libftdi/2013/msg00014.html">libftdi</a></p>
 
 <img src="/images/notes/false">
 
-  <p><a href="/2013/10/note"><strong>Saturday, October 19 2013</strong></a></p>
-  <p><p>I still liked the website layout this morning. I haven&#8217;t checked it on anything but Firefox&#8230;</p>
+<p><a href="/2013/10/19-note"><strong>Saturday, October 19 2013</strong></a></p>
+  <p>I still liked the website layout this morning. I haven&#8217;t checked it on anything but Firefox&#8230;</p>
 <p>I&#8217;m using the <a
 href="http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-communication-fpga-debug-module/54-de0-nano-serial-communications-tutorial">DE0-Nano Serial Communications Protocol from ReconTech</a> to get the DE0-Nano talking over serial.</p>
 <p>Knee bars and ankle locks at <span class="caps"><span class="caps">BJJ</span></span> today. My gym is the opposite of macho so there was a lot of emphasis on communication with your partner and training safely without ego. I felt safe even when we were moving quickly.</p>
-<p>I feel terrible at writing. My words are all clunky. But I guess getting over that is one point of this daily note thing. The other is to keep a quick written record so I can be accurate when I look back to see how long a project took or so I can easily find a paper I referenced. We&#8217;ll see how it goes.</p></p>
+<p>I feel terrible at writing. My words are all clunky. But I guess getting over that is one point of this daily note thing. The other is to keep a quick written record so I can be accurate when I look back to see how long a project took or so I can easily find a paper I referenced. We&#8217;ll see how it goes.</p>
 
 <img src="/images/notes/false">
 
-  <p><a href="/2013/10/note"><strong>Friday, October 18 2013</strong></a></p>
-  <p><p>I&#8217;m a note</p></p>
+<p><a href="/2013/10/18-note"><strong>Friday, October 18 2013</strong></a></p>
+  <p>I&#8217;m a note!</p>
 
       </article>
 

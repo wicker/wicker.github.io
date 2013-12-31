@@ -4,7 +4,7 @@
 		<title>Wickerbox</title>
 		<description>Adventures of an aerospace geek in Portland, Oregon.</description>
 		<link></link>
-		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>29 Dec 2013</title>
@@ -16,8 +16,8 @@
 &lt;p&gt;I stacked the motor driver board and the XBee-bearing protoshield on top of my Arduino and was able to control the steering of the Foxcar by way of characters typed in minicom on my laptop through another XBee. I also investigated robot libraries and realized I should really be using &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt;, not ChibiOS, which is the Robot Operating System.&lt;/p&gt;
 &lt;p&gt;I have an STM32F Discovery board so I&amp;#8217;m going to put &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt; on that next.&lt;/p&gt;</description>
 				<pubDate>Sun, 29 Dec 2013</pubDate>
-				<link>{ site.base }}//2013/12/note</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/note</guid>
+				<link>http://www.wickerbox.net//2013/12/29-note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/29-note</guid>
 			</item>
 		
 			<item>
@@ -25,8 +25,8 @@
 				<description>&lt;p&gt;Spent a couple days in a cabin at Kalaloch Lodge on the Olympic Peninsula. I edited some posts and got everything ready for when I get home to just push the site.&lt;/p&gt;
 &lt;p&gt;I have a couple interesting projects in the pipeline, including the RF board and an implementation of Timo Bergmann&amp;#8217;s Sound of Sorting. I never had the algorithms class at school so writing fifteen sorts with the help of the Intro to Algorithms, 3rd Ed, has introduced me to a bunch of concepts &amp;#8211; optimization among them.&lt;/p&gt;</description>
 				<pubDate>Fri, 27 Dec 2013</pubDate>
-				<link>{ site.base }}//2013/12/note</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/note</guid>
+				<link>http://www.wickerbox.net//2013/12/27-note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/27-note</guid>
 			</item>
 		
 			<item>
@@ -40,8 +40,8 @@
 &lt;p&gt;And here it is. Yay for lowering transaction costs.&lt;/p&gt;
 &lt;p&gt;I also figured out a way to add image to posts but they only show up on the notebook page, not the &lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; feed, because they&amp;#8217;re slid in from the yaml header and sit above the title. They look nice so I&amp;#8217;m calling it good.&lt;/p&gt;</description>
 				<pubDate>Wed, 25 Dec 2013</pubDate>
-				<link>{ site.base }}//2013/12/note</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/note</guid>
+				<link>http://www.wickerbox.net//2013/12/25-note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/25-note</guid>
 			</item>
 		
 			<item>
@@ -70,8 +70,8 @@
 &lt;p&gt;The final 4-layer board comes out to 3.5&amp;#215;2.2 inches for an OSHPark cost of $77 for three.&lt;/p&gt;
 &lt;img src=&quot;/images/project/foxcar/oshpark-ship.png&quot;&gt;</description>
 				<pubDate>Sun, 15 Dec 2013</pubDate>
-				<link>{ site.base }}//2013/12/custom-foxcar-control-board</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/custom-foxcar-control-board</guid>
+				<link>http://www.wickerbox.net//2013/12/custom-foxcar-control-board</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/custom-foxcar-control-board</guid>
 			</item>
 		
 			<item>
@@ -98,8 +98,8 @@
 &lt;p&gt;Then the board should be programmed correctly.&lt;/p&gt;
 &lt;p&gt;Huge thanks to Kay and Dave for helping me get started.&lt;/p&gt;</description>
 				<pubDate>Wed, 11 Dec 2013</pubDate>
-				<link>{ site.base }}//2013/12/getting-started-with-psas-chibios</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/getting-started-with-psas-chibios</guid>
+				<link>http://www.wickerbox.net//2013/12/getting-started-with-psas-chibios</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/getting-started-with-psas-chibios</guid>
 			</item>
 		
 			<item>
@@ -144,8 +144,8 @@
 &lt;p&gt;Github serves wickerbox.net from &lt;a href=&quot;http://github.com/wicker/wicker.github.com/&quot;&gt;the wicker.github.com repo&lt;/a&gt; but I still keep the back-end of the site under version control by using &lt;a href=&quot;http://github.com/wicker/wickerbox-jekyll-backend&quot;&gt;wickerbox-jekyll-backend&lt;/a&gt; and I serve the site using a script from my command line.&lt;/p&gt;
 &lt;p&gt;I serve the site using a script which I wrote about &lt;a href=&quot;http://localhost:4000/2012/03/wickerbox-net-with-jekyll/&quot;&gt;in my original Making Wickerbox v1 post&lt;/a&gt; and which is basically unchanged.&lt;/p&gt;</description>
 				<pubDate>Tue, 10 Dec 2013</pubDate>
-				<link>{ site.base }}//2013/12/wickerbox-with-jekyll-v2</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/wickerbox-with-jekyll-v2</guid>
+				<link>http://www.wickerbox.net//2013/12/wickerbox-with-jekyll-v2</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/wickerbox-with-jekyll-v2</guid>
 			</item>
 		
 			<item>
@@ -158,8 +158,8 @@
 &lt;p&gt;Annnd the Foxcar control board schematic is done and I pushed to github. I started on the layout, started the trace calculations, and then reinstalled Starcraft II. I can&amp;#8217;t stop thinking about playing it.  I think I might be slightly burned out&amp;#8230;&lt;/p&gt;
 &lt;p&gt;Tonight I cleaned up little things on the website that were bothering me, including the Endurance Days part, and now I&amp;#8217;m going to go home and hunt me some Zerg.&lt;/p&gt;</description>
 				<pubDate>Tue, 10 Dec 2013</pubDate>
-				<link>{ site.base }}//2013/12/note</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/note</guid>
+				<link>http://www.wickerbox.net//2013/12/10-note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/10-note</guid>
 			</item>
 		
 			<item>
@@ -221,16 +221,16 @@
 &lt;p&gt;&lt;a href=&quot;https://github.com/wicker/ardu-midi-ping/blob/master/results/wicker.mid?raw=true&quot;&gt;Song is here&lt;/a&gt; (&lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt;)&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://github.com/wicker/ardu-midi-ping/&quot;&gt;Code is here&lt;/a&gt; (Github)&lt;/p&gt;</description>
 				<pubDate>Sun, 01 Dec 2013</pubDate>
-				<link>{ site.base }}//2013/12/arduino-rangefinder</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/12/arduino-rangefinder</guid>
+				<link>http://www.wickerbox.net//2013/12/arduino-rangefinder</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/arduino-rangefinder</guid>
 			</item>
 		
 			<item>
 				<title>22 Nov 2013</title>
 				<description>&lt;p&gt;Found Sumana&amp;#8217;s blog this week and I keep returning to it. I&amp;#8217;m afraid of writing the wrong thing and so I don&amp;#8217;t write at all, but it&amp;#8217;s like there&amp;#8217;s this idea of what I&amp;#8217;ll write and how I&amp;#8217;ll feel writing it that when I don&amp;#8217;t achieve that headspace then I&amp;#8217;m like &amp;#8220;oops, can&amp;#8217;t write today, oh well&amp;#8221; and blow it off. I&amp;#8217;d like to stop doing that. Just write.&lt;/p&gt;</description>
 				<pubDate>Fri, 22 Nov 2013</pubDate>
-				<link>{ site.base }}//2013/11/note</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/11/note</guid>
+				<link>http://www.wickerbox.net//2013/11/22-note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2013/11/22-note</guid>
 			</item>
 		
 			<item>
@@ -250,8 +250,8 @@
 &lt;p&gt;Now I want to see that I can send strings to the Arduino-based XBee from Minicom and read them on the Arduino&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt; Serial Monitor. Success!&lt;/p&gt;
 &lt;img src=&quot;/images/project/networks/xbee-tx.png&quot;&gt;</description>
 				<pubDate>Sat, 16 Nov 2013</pubDate>
-				<link>{ site.base }}//2013/11/wireless-control-with-xbees</link>
-				<guid isPermaLink="true">http://www.wickerbox.net///2013/11/wireless-control-with-xbees</guid>
+				<link>http://www.wickerbox.net//2013/11/wireless-control-with-xbees</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2013/11/wireless-control-with-xbees</guid>
 			</item>
 		
 	</channel>
