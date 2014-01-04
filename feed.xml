@@ -7,6 +7,105 @@
 		<atom:link href="feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>4 Jan 2014</title>
+				<description>&lt;p&gt;I wrote a nice, long note last night but with today&amp;#8217;s date about my process for designing PCBs and then blew it away this morning by running the makenote script for today. Argh. Well, it had occurred to me that I should add a line to the makenote script to prompt me about the overwrite if a post already exists.&lt;/p&gt;
+&lt;p&gt;It turns out that&amp;#8217;s as easy as adding -i to the cp command and, as a bonus, if I tell it &amp;#8216;n&amp;#8217; (I don&amp;#8217;t want it to overwrite) then the script executes the next line which is opening the file so I can edit. I can live with that.&lt;/p&gt;
+&lt;p&gt;A couple random notes about sed to add at the beginning and end of a line:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;s/$/text/&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;s/^/text/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In other news, I came across &lt;a href=&quot;http://www.davehylands.com/Wood-Working/Electronics-Workbench/&quot;&gt;Dave Hyland&amp;#8217;s Electronics Workbench&lt;/a&gt; via StackExchange because I&amp;#8217;ve been inventorying my piles of components. I kind of want to do this as a SolidWorks project. I do have a closet in my office&amp;#8230; I&amp;#8217;ve been making a database on summerisle with an inventory of all the parts I have at home. I&amp;#8217;m tired of trying to match them up. I&amp;#8217;m going to get a trial of Illustrator and mock up an interface or something to drop on top of it, mostly because the Adobe stuff is so shiny.&lt;/p&gt;
+&lt;p&gt;But I&amp;#8217;ve been going through a ton of old photos and organizing all my photo albums on one hard drive. It&amp;#8217;s pretty cool to look at photos I took in 2000 as a fifteen-year old. They&amp;#8217;re mostly crap, but their value to me is mostly in memories so that&amp;#8217;s all right.&lt;/p&gt;
+&lt;p&gt;The title photo from today is the first photo I took on the X100S back in June.&lt;/p&gt;
+&lt;p&gt;I did add several outdoor posts from last year, including &lt;a href=&quot;/2013/08/tualatin-wildlife-refuge-evening/&quot;&gt;Tualatin Wildlife Refuge&lt;/a&gt;, &lt;a href=&quot;/2012/09/dismal-nitch&quot;&gt;Dismal Nitch&lt;/a&gt;, &lt;a href=&quot;/2012/08/badger-creek&quot;&gt;Badger Creek&lt;/a&gt;, and &lt;a href=&quot;/2012/08/callahans-to-green-springs-inn&quot;&gt;Callahan&amp;#8217;s to Green Springs Inn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And I got the photos from Kalaloch up, which I had to take with my iPhone because I left my camera battery (!!!!!) in Portland. But it was gorgeous up there anyway, I just think the X100S would have given me more control over the light. The beach, ocean, and sky all turn the same sort of gray when it&amp;#8217;s overcast.&lt;/p&gt;</description>
+				<pubDate>Sat, 04 Jan 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/01/04-note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/01/04-note</guid>
+			</item>
+		
+			<item>
+				<title>3 Jan 2014</title>
+				<description>&lt;p&gt;Caution: contents contain notes about the Eagle &lt;span class=&quot;caps&quot;&gt;CAD&lt;/span&gt; program. Readers allergic to Eagle should skip it.&lt;/p&gt;
+&lt;p&gt;I use the standard version of Eagle for making printed circuit boards. It&amp;#8217;s basically a cad program you can use to draw the schematic and then route the layout of the final board. I usually take my files and send them off to OSHPark to be made into real physical boards.&lt;/p&gt;
+&lt;p&gt;I don&amp;#8217;t recommend Eagle anymore; I&amp;#8217;ve heard too many good things about KiCad, which is open source and free. Go learn that instead if you haven&amp;#8217;t already put time and money into Eagle. I&amp;#8217;ve had customer support problems and nobody ever actually gave me a copy of the Eagle license that they made me pay money for. They also misrepresented what an academic license consisted of. So go to KiCad.&lt;/p&gt;
+&lt;p&gt;This note&amp;#8217;s about the eagle.scr startup script which sets default values for things like via diameter, wire size, and grid size. I look to OSHPark&amp;#8217;s design rules to find out what these values ought to be. The fab houses that receive my design files and fabricate my boards for me set the minimum widths, distances, diameters, etc that their machinery can accommodate considering how much money I want to give them. I like to set my minimum settings a little larger so I don&amp;#8217;t run the risk of small inaccuracies breaking my design but I can go smaller if I need to. (I don&amp;#8217;t usually need to.)&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve been experimenting a little with the Eagle startup script. I was using semi-colons inconsistently and it turns out if you have multiple statements on one line, you need to separate them with a semi-colon. Either a semi-colon or a newline appear to work for statements in list form. For example, this works fine:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;change drill 0.013; change diameter 0.027&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change shape round;  &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This doesn&amp;#8217;t:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;change drill 0.013 change diameter 0.027&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;But this does:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;change drill 0.013&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change diameter 0.027&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The script allows you to set default values for the board, schematic, device, symbol, package, and general library editing screens. The package screen is basically the same as board except there&amp;#8217;s no need to specify the route width because there isn&amp;#8217;t any routing.&lt;/p&gt;
+&lt;p&gt;I work in inches because that&amp;#8217;s how I started out and the important thing is just to be consistent with grid sizes and measurement system.&lt;/p&gt;
+&lt;p&gt;My script looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;OVERALL&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;GRID IN 0.0125 DOTS ON ALT IN 0.025;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;BOARD&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change drill 0.013      # drill/hold diameter&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change diameter 0.027   # via pad diameter&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change shape round      # via shape&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change width 0.01       # route width&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change size 0.50        # text size&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SCH&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change width 0.006      # wire width&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change size 0.50        # text size&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;No changes needed for library or device&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SYM&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change length middle    # default pin length&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change visible both     # pin and pad number&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;PAC&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change shape round      # via shape&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change diameter 0.027   # via pad diameter&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change drill 0.013      # drill/hold diameter&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change size 0.050&lt;/code&gt;&lt;/p&gt;</description>
+				<pubDate>Fri, 03 Jan 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/01/03-note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/01/03-note</guid>
+			</item>
+		
+			<item>
+				<title>Kalaloch Lodge</title>
+				<description>&lt;p&gt;I drove up to Beach 4 and walked up to the tide pools.&lt;/p&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-toz8wCZHBto/UshTuiY-WqI/AAAAAAAAF0A/UwfmWDsFUb8/s600/IMG_0503.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-zrLOhNpqdYY/UshTvWFgzPI/AAAAAAAAF0g/MCgSsR0mXBE/s640/IMG_0518.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-_-i_MoqK0bI/UshTvaOVWAI/AAAAAAAAF0Y/PObOfqTNJ40/s800/IMG_0511.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-0IKt0sJloCE/UshTwm77cBI/AAAAAAAAF0o/ngmEZpe60RY/s800/IMG_0538.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-DsOneoJnDVQ/UshTv3Pp70I/AAAAAAAAF0c/HskEOBRZN10/s800/IMG_0533.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-eVLmkPb-Cls/UshTxSrf5iI/AAAAAAAAF08/tYFSc5NlkfQ/s800/IMG_0541.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-XfGj-X8KdaU/UshTxZfqQcI/AAAAAAAAF1A/zl8W9-v3LTE/s640/IMG_0542.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-qgerbfMCJ0M/UshTxz-8I8I/AAAAAAAAF1E/ul6G5rCWwKA/s800/IMG_0547.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-B_RQw5GAb6Q/UshTyp9PD8I/AAAAAAAAF1Y/0MDjkwwKk6Q/s600/IMG_0581.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-o7xSKC72CYk/UshTyAMAfzI/AAAAAAAAF1U/p1kjgpJQaBs/s600/IMG_0574.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-WJsLV1opb4o/UshTzziijHI/AAAAAAAAF1o/e5mHpcJFntQ/s600/IMG_0591.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-kE9_YbaJojk/UshTz8-069I/AAAAAAAAF1s/Wh7ZD_AT1_s/s600/IMG_0601.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-qinyiCcw5Mg/UshT0re1NGI/AAAAAAAAF2I/bG0LtrG0woM/s600/IMG_0606.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-SwfQTv6zJ-U/UshT08lvxJI/AAAAAAAAF2A/dNQnnSG2cEc/s600/IMG_0614.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-FQlT3bLCTDk/UshT1dbpe-I/AAAAAAAAF2M/G5vUr6XocM0/s800/IMG_0615.png&quot;&gt;
+&lt;p&gt;On the Oregon coast heading up.&lt;/p&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/--N3x2-1Is3s/UshTsoVNNQI/AAAAAAAAFzc/nIw9qeCToQs/s800/IMG_0460.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-Nc1xkk5Xxc4/UshTtCduPDI/AAAAAAAAFzk/-BGpnh0dv-s/s800/IMG_0461.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-n4GRgEjRgAs/UshTtYVjjlI/AAAAAAAAFzo/0NKStYaJoVI/s800/IMG_0462.png&quot;&gt;
+&lt;p&gt;One of the attractions in the rainforest north of Kalaloch Lodge is the Big Cedar.&lt;/p&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-3APUufL00Ng/UshTupLehCI/AAAAAAAAF0E/otvMb3rtgfQ/s640/IMG_0476.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-O1krN-ceOck/UshTulWmLZI/AAAAAAAAFz8/E_shO8Lv1bY/s640/IMG_0486.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-zONZfwCjRho/UshTt2MhcVI/AAAAAAAAFzs/nW5w-_8MUQs/s640/IMG_0474.png&quot;&gt;
+&lt;p&gt;Kalaloch Lodge in the background. I stayed in a regular cabin.&lt;/p&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-g0eb7P7SeqE/UshTrXrKhXI/AAAAAAAAFy8/ViZ8Ji1iQmI/s800/009.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-MDbuDkBip48/UshTrasT-iI/AAAAAAAAFzI/kbxzM2bZ9DE/s800/010.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-rQOrxEsJ0go/UshTr1pZtVI/AAAAAAAAFzA/JU4bXne0DhQ/s800/013.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-HWYvYx9DGys/UshTsiNlsgI/AAAAAAAAFzQ/iaZq3iFVeXE/s800/016.png&quot;&gt;
+&lt;p&gt;They were clean with two queen beds, a futon, kitchenette, bathroom with shower, small eating table, and a fireplace. Not sure what else I could ask for at $100/night.&lt;/p&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-thZp_yJBT2g/UshTqv-aGXI/AAAAAAAAFyk/RhewVrH3b_4/s600/005.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-oxfR202O8j0/UshTqnqhlQI/AAAAAAAAFys/G9aT6eBH7SA/s600/006.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-pa8TXEMyqFw/UshTqoHRvHI/AAAAAAAAFyo/UotfafQTTrg/s800/008.png&quot;&gt;</description>
+				<pubDate>Wed, 01 Jan 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/01/kalaloch-lodge</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/01/kalaloch-lodge</guid>
+			</item>
+		
+			<item>
 				<title>29 Dec 2013</title>
 				<description>&lt;p&gt;This makenote script is nifty.&lt;/p&gt;
 &lt;p&gt;I finished the RF board layout this afternoon but need to review it tomorrow, particularly in the RF side around LNA2 and &lt;span class=&quot;caps&quot;&gt;ANTBIAS&lt;/span&gt;.&lt;/p&gt;
@@ -160,98 +259,6 @@
 				<pubDate>Tue, 10 Dec 2013</pubDate>
 				<link>http://www.wickerbox.net//2013/12/10-note</link>
 				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/10-note</guid>
-			</item>
-		
-			<item>
-				<title>Arduino and a Rangefinder</title>
-				<description>&lt;p&gt;So there&amp;#8217;s something like eighty years of history behind a theremin. This isn&amp;#8217;t a theremin. This is me fucking around on a sleepy Saturday in Seattle with an ultrasonic rangefinder, an Arduino, and &lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt; headers. But I got the idea because of theremins.&lt;/p&gt;
-&lt;p&gt;I basically wanted to use the Arduino to sample the rangefinder and produce musical notes.&lt;/p&gt;
-&lt;img src=&quot;/images/project/rangefinder/rangefinder.png&quot;&gt;
-&lt;p&gt;I needed a reference for what the text of a &lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt; file looks like in comma-separated values so I downloaded Avicii&amp;#8217;s Wake Me Up and used the midicsv script from Fourmilab to get the &lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt; file. Then I stripped out as much of the header as possible to see what it takes for timidity to still play it. Turns out a file with just this header will still play:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;0, 0, Header, 0, 1, 120&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;1, 0, Start_track&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;I wired the Maxbotix LV-EZ4 ultrasonic rangefinder to the Arduino via a protoshield and wrote a script to sample the rangefinder for a finite period of time and turn the distance measurements into octaves. I didn&amp;#8217;t make it output a file; you have to actually copy the results from the Arduino&amp;#8217;s serial monitor. Obviously it&amp;#8217;d be better to just get a file and script the whole process.&lt;/p&gt;
-&lt;div style=&quot;margin-left: 20px;&quot;&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;c++&quot;&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pwPin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pulse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  
-  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0, 0, Header, 0, 1, 120&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1, 0, Start_track&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;pinMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pwPin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  
-  &lt;span class=&quot;n&quot;&gt;pulse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pulseIn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pwPin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HIGH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pulse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;147&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;cm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.54&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;250&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    
-  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1, &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;, Note_on_c, 11, &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;, 127&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1, &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;, End_track&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0, 0, End_of_file&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;I took the &lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt; file I&amp;#8217;d made by copying and pasting and applied the csvmidi script in the other direction (&lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt;&amp;#8594;&lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt;). It&amp;#8217;s a pretty limited file, which you can play using timidity.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/wicker/ardu-midi-ping/blob/master/results/wicker.mid?raw=true&quot;&gt;Song is here&lt;/a&gt; (&lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://github.com/wicker/ardu-midi-ping/&quot;&gt;Code is here&lt;/a&gt; (Github)&lt;/p&gt;</description>
-				<pubDate>Sun, 01 Dec 2013</pubDate>
-				<link>http://www.wickerbox.net//2013/12/arduino-rangefinder</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/arduino-rangefinder</guid>
-			</item>
-		
-			<item>
-				<title>22 Nov 2013</title>
-				<description>&lt;p&gt;Found Sumana&amp;#8217;s blog this week and I keep returning to it. I&amp;#8217;m afraid of writing the wrong thing and so I don&amp;#8217;t write at all, but it&amp;#8217;s like there&amp;#8217;s this idea of what I&amp;#8217;ll write and how I&amp;#8217;ll feel writing it that when I don&amp;#8217;t achieve that headspace then I&amp;#8217;m like &amp;#8220;oops, can&amp;#8217;t write today, oh well&amp;#8221; and blow it off. I&amp;#8217;d like to stop doing that. Just write.&lt;/p&gt;</description>
-				<pubDate>Fri, 22 Nov 2013</pubDate>
-				<link>http://www.wickerbox.net//2013/11/22-note</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2013/11/22-note</guid>
-			</item>
-		
-			<item>
-				<title>Arduino Sketch with XBees</title>
-				<description>&lt;p&gt;Step three of Foxcar development came full circle and made the car once again remote controlled, this time with XBee. I stacked an XBee on the protoshield on top of the motor driver board on top of the Arduino Uno and connected the other XBee via a Sparkfun XBee Explorer Board to my laptop on port /dev/ttyUSB0. I came up with some commands and was able to wirelessly drive the motor and servo.&lt;/p&gt;
-&lt;p&gt;I found a couple of Series 2 XBees and an Explorer Board from Sparkfun.&lt;/p&gt;
-&lt;img src=&quot;/images/project/networks/xbee-mounted.png&quot;&gt;
-&lt;p&gt;I used the Explorer board to verify both XBees were on the same baud rate. Series 2 XBees are also called Zigbee Modules that use the ZNet 2.5 protocol. They&amp;#8217;re good for mesh networks.&lt;/p&gt;
-&lt;p&gt;A couple of tutorials were helpful:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.pjrc.com/teensy/td_uart.html&quot;&gt;Using the &lt;span class=&quot;caps&quot;&gt;UART&lt;/span&gt; (Real Serial Port)&lt;/a&gt; &amp;#8211; on the Teensy.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://arduino.cc/en/Reference/SoftwareSerial&quot;&gt;Arduino SoftwareSerial library&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The newest version of the SoftwareSerial library incorporates the best of NewSoftSerial so it&amp;#8217;s interrupt-driven and fast enough for my purposes. It supports 9600 baud so I set both XBees to 9600 using the command mode.&lt;/p&gt;
-&lt;p&gt;The two resources I used for setting commands were the XBee 2.5 Datasheet and User Manual.&lt;/p&gt;
-&lt;p&gt;I programmed one Arduino with Ladyada&amp;#8217;s ASCIITable test sketch and detached it from the laptop. I wired the 3V3, Rx, Tx, and Gnd connections from the Arduino to one of the XBees using the Protoshield.&lt;/p&gt;
-&lt;p&gt;Then I hooked up the XBee Explorer to my laptop and read the incoming &lt;span class=&quot;caps&quot;&gt;ASCII&lt;/span&gt; table on /dev/ttyUSB0. My XBee can receive!&lt;/p&gt;
-&lt;img src=&quot;/images/project/networks/xbee-rx.png&quot;&gt;
-&lt;p&gt;Now I want to see that I can send strings to the Arduino-based XBee from Minicom and read them on the Arduino&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt; Serial Monitor. Success!&lt;/p&gt;
-&lt;img src=&quot;/images/project/networks/xbee-tx.png&quot;&gt;</description>
-				<pubDate>Sat, 16 Nov 2013</pubDate>
-				<link>http://www.wickerbox.net//2013/11/wireless-control-with-xbees</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2013/11/wireless-control-with-xbees</guid>
 			</item>
 		
 	</channel>

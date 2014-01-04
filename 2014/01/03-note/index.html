@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>3 Jan 2014 | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2014/01/kalaloch-lodge">&laquo; Kalaloch Lodge</a></div>
+   
+   
+    <div style="float: right;"><a class="next" href="/2014/01/04-note">4 Jan 2014 &raquo;</a></div>
+   
+  <div style="clear:both;"></div>
+  </div>
+
+   
+  <img src="/images/notes/eagle.png"> 
+   
+
+<p><a href="/2014/01/03-note"><strong>Friday, January 3 2014</strong></a></p>
+
+<p>Caution: contents contain notes about the Eagle <span class="caps">CAD</span> program. Readers allergic to Eagle should skip it.</p>
+<p>I use the standard version of Eagle for making printed circuit boards. It&#8217;s basically a cad program you can use to draw the schematic and then route the layout of the final board. I usually take my files and send them off to OSHPark to be made into real physical boards.</p>
+<p>I don&#8217;t recommend Eagle anymore; I&#8217;ve heard too many good things about KiCad, which is open source and free. Go learn that instead if you haven&#8217;t already put time and money into Eagle. I&#8217;ve had customer support problems and nobody ever actually gave me a copy of the Eagle license that they made me pay money for. They also misrepresented what an academic license consisted of. So go to KiCad.</p>
+<p>This note&#8217;s about the eagle.scr startup script which sets default values for things like via diameter, wire size, and grid size. I look to OSHPark&#8217;s design rules to find out what these values ought to be. The fab houses that receive my design files and fabricate my boards for me set the minimum widths, distances, diameters, etc that their machinery can accommodate considering how much money I want to give them. I like to set my minimum settings a little larger so I don&#8217;t run the risk of small inaccuracies breaking my design but I can go smaller if I need to. (I don&#8217;t usually need to.)</p>
+<p>I&#8217;ve been experimenting a little with the Eagle startup script. I was using semi-colons inconsistently and it turns out if you have multiple statements on one line, you need to separate them with a semi-colon. Either a semi-colon or a newline appear to work for statements in list form. For example, this works fine:</p>
+<p><code>change drill 0.013; change diameter 0.027</code><br />
+<code>change shape round;  </code></p>
+<p>This doesn&#8217;t:</p>
+<p><code>change drill 0.013 change diameter 0.027</code></p>
+<p>But this does:</p>
+<p><code>change drill 0.013</code><br />
+<code>change diameter 0.027</code></p>
+<p>The script allows you to set default values for the board, schematic, device, symbol, package, and general library editing screens. The package screen is basically the same as board except there&#8217;s no need to specify the route width because there isn&#8217;t any routing.</p>
+<p>I work in inches because that&#8217;s how I started out and the important thing is just to be consistent with grid sizes and measurement system.</p>
+<p>My script looks like this:</p>
+<p><code>OVERALL</code><br />
+<code>GRID IN 0.0125 DOTS ON ALT IN 0.025;</code></p>
+<p><code>BOARD</code><br />
+<code>change drill 0.013      # drill/hold diameter</code><br />
+<code>change diameter 0.027   # via pad diameter</code><br />
+<code>change shape round      # via shape</code><br />
+<code>change width 0.01       # route width</code><br />
+<code>change size 0.50        # text size</code></p>
+<p><code>SCH</code><br />
+<code>change width 0.006      # wire width</code><br />
+<code>change size 0.50        # text size</code></p>
+<p>No changes needed for library or device</p>
+<p><code>SYM</code><br />
+<code>change length middle    # default pin length</code><br />
+<code>change visible both     # pin and pad number</code></p>
+<p><code>PAC</code><br />
+<code>change shape round      # via shape</code><br />
+<code>change diameter 0.027   # via pad diameter</code><br />
+<code>change drill 0.013      # drill/hold diameter</code><br />
+<code>change size 0.050</code></p>
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>

@@ -4,13 +4,112 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-01-01T16:27:59-08:00</updated>
+ <updated>2014-01-04T15:43:44-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>4 Jan 2014</title>
+   <link href="http://wickerbox.net/2014/01/04-note"/>
+   <updated>2014-01-04T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/01/04-note</id>
+   <content type="html">&lt;p&gt;I wrote a nice, long note last night but with today&amp;#8217;s date about my process for designing PCBs and then blew it away this morning by running the makenote script for today. Argh. Well, it had occurred to me that I should add a line to the makenote script to prompt me about the overwrite if a post already exists.&lt;/p&gt;
+&lt;p&gt;It turns out that&amp;#8217;s as easy as adding -i to the cp command and, as a bonus, if I tell it &amp;#8216;n&amp;#8217; (I don&amp;#8217;t want it to overwrite) then the script executes the next line which is opening the file so I can edit. I can live with that.&lt;/p&gt;
+&lt;p&gt;A couple random notes about sed to add at the beginning and end of a line:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;s/$/text/&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;s/^/text/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In other news, I came across &lt;a href=&quot;http://www.davehylands.com/Wood-Working/Electronics-Workbench/&quot;&gt;Dave Hyland&amp;#8217;s Electronics Workbench&lt;/a&gt; via StackExchange because I&amp;#8217;ve been inventorying my piles of components. I kind of want to do this as a SolidWorks project. I do have a closet in my office&amp;#8230; I&amp;#8217;ve been making a database on summerisle with an inventory of all the parts I have at home. I&amp;#8217;m tired of trying to match them up. I&amp;#8217;m going to get a trial of Illustrator and mock up an interface or something to drop on top of it, mostly because the Adobe stuff is so shiny.&lt;/p&gt;
+&lt;p&gt;But I&amp;#8217;ve been going through a ton of old photos and organizing all my photo albums on one hard drive. It&amp;#8217;s pretty cool to look at photos I took in 2000 as a fifteen-year old. They&amp;#8217;re mostly crap, but their value to me is mostly in memories so that&amp;#8217;s all right.&lt;/p&gt;
+&lt;p&gt;The title photo from today is the first photo I took on the X100S back in June.&lt;/p&gt;
+&lt;p&gt;I did add several outdoor posts from last year, including &lt;a href=&quot;/2013/08/tualatin-wildlife-refuge-evening/&quot;&gt;Tualatin Wildlife Refuge&lt;/a&gt;, &lt;a href=&quot;/2012/09/dismal-nitch&quot;&gt;Dismal Nitch&lt;/a&gt;, &lt;a href=&quot;/2012/08/badger-creek&quot;&gt;Badger Creek&lt;/a&gt;, and &lt;a href=&quot;/2012/08/callahans-to-green-springs-inn&quot;&gt;Callahan&amp;#8217;s to Green Springs Inn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And I got the photos from Kalaloch up, which I had to take with my iPhone because I left my camera battery (!!!!!) in Portland. But it was gorgeous up there anyway, I just think the X100S would have given me more control over the light. The beach, ocean, and sky all turn the same sort of gray when it&amp;#8217;s overcast.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>3 Jan 2014</title>
+   <link href="http://wickerbox.net/2014/01/03-note"/>
+   <updated>2014-01-03T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/01/03-note</id>
+   <content type="html">&lt;p&gt;Caution: contents contain notes about the Eagle &lt;span class=&quot;caps&quot;&gt;CAD&lt;/span&gt; program. Readers allergic to Eagle should skip it.&lt;/p&gt;
+&lt;p&gt;I use the standard version of Eagle for making printed circuit boards. It&amp;#8217;s basically a cad program you can use to draw the schematic and then route the layout of the final board. I usually take my files and send them off to OSHPark to be made into real physical boards.&lt;/p&gt;
+&lt;p&gt;I don&amp;#8217;t recommend Eagle anymore; I&amp;#8217;ve heard too many good things about KiCad, which is open source and free. Go learn that instead if you haven&amp;#8217;t already put time and money into Eagle. I&amp;#8217;ve had customer support problems and nobody ever actually gave me a copy of the Eagle license that they made me pay money for. They also misrepresented what an academic license consisted of. So go to KiCad.&lt;/p&gt;
+&lt;p&gt;This note&amp;#8217;s about the eagle.scr startup script which sets default values for things like via diameter, wire size, and grid size. I look to OSHPark&amp;#8217;s design rules to find out what these values ought to be. The fab houses that receive my design files and fabricate my boards for me set the minimum widths, distances, diameters, etc that their machinery can accommodate considering how much money I want to give them. I like to set my minimum settings a little larger so I don&amp;#8217;t run the risk of small inaccuracies breaking my design but I can go smaller if I need to. (I don&amp;#8217;t usually need to.)&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve been experimenting a little with the Eagle startup script. I was using semi-colons inconsistently and it turns out if you have multiple statements on one line, you need to separate them with a semi-colon. Either a semi-colon or a newline appear to work for statements in list form. For example, this works fine:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;change drill 0.013; change diameter 0.027&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change shape round;  &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This doesn&amp;#8217;t:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;change drill 0.013 change diameter 0.027&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;But this does:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;change drill 0.013&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change diameter 0.027&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The script allows you to set default values for the board, schematic, device, symbol, package, and general library editing screens. The package screen is basically the same as board except there&amp;#8217;s no need to specify the route width because there isn&amp;#8217;t any routing.&lt;/p&gt;
+&lt;p&gt;I work in inches because that&amp;#8217;s how I started out and the important thing is just to be consistent with grid sizes and measurement system.&lt;/p&gt;
+&lt;p&gt;My script looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;OVERALL&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;GRID IN 0.0125 DOTS ON ALT IN 0.025;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;BOARD&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change drill 0.013      # drill/hold diameter&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change diameter 0.027   # via pad diameter&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change shape round      # via shape&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change width 0.01       # route width&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change size 0.50        # text size&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SCH&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change width 0.006      # wire width&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change size 0.50        # text size&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;No changes needed for library or device&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SYM&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change length middle    # default pin length&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change visible both     # pin and pad number&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;PAC&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change shape round      # via shape&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change diameter 0.027   # via pad diameter&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change drill 0.013      # drill/hold diameter&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;change size 0.050&lt;/code&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Kalaloch Lodge</title>
+   <link href="http://wickerbox.net/2014/01/kalaloch-lodge"/>
+   <updated>2014-01-01T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/01/kalaloch-lodge</id>
+   <content type="html">&lt;p&gt;I drove up to Beach 4 and walked up to the tide pools.&lt;/p&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-toz8wCZHBto/UshTuiY-WqI/AAAAAAAAF0A/UwfmWDsFUb8/s600/IMG_0503.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-zrLOhNpqdYY/UshTvWFgzPI/AAAAAAAAF0g/MCgSsR0mXBE/s640/IMG_0518.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-_-i_MoqK0bI/UshTvaOVWAI/AAAAAAAAF0Y/PObOfqTNJ40/s800/IMG_0511.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-0IKt0sJloCE/UshTwm77cBI/AAAAAAAAF0o/ngmEZpe60RY/s800/IMG_0538.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-DsOneoJnDVQ/UshTv3Pp70I/AAAAAAAAF0c/HskEOBRZN10/s800/IMG_0533.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-eVLmkPb-Cls/UshTxSrf5iI/AAAAAAAAF08/tYFSc5NlkfQ/s800/IMG_0541.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-XfGj-X8KdaU/UshTxZfqQcI/AAAAAAAAF1A/zl8W9-v3LTE/s640/IMG_0542.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-qgerbfMCJ0M/UshTxz-8I8I/AAAAAAAAF1E/ul6G5rCWwKA/s800/IMG_0547.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-B_RQw5GAb6Q/UshTyp9PD8I/AAAAAAAAF1Y/0MDjkwwKk6Q/s600/IMG_0581.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-o7xSKC72CYk/UshTyAMAfzI/AAAAAAAAF1U/p1kjgpJQaBs/s600/IMG_0574.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-WJsLV1opb4o/UshTzziijHI/AAAAAAAAF1o/e5mHpcJFntQ/s600/IMG_0591.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-kE9_YbaJojk/UshTz8-069I/AAAAAAAAF1s/Wh7ZD_AT1_s/s600/IMG_0601.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-qinyiCcw5Mg/UshT0re1NGI/AAAAAAAAF2I/bG0LtrG0woM/s600/IMG_0606.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-SwfQTv6zJ-U/UshT08lvxJI/AAAAAAAAF2A/dNQnnSG2cEc/s600/IMG_0614.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-FQlT3bLCTDk/UshT1dbpe-I/AAAAAAAAF2M/G5vUr6XocM0/s800/IMG_0615.png&quot;&gt;
+&lt;p&gt;On the Oregon coast heading up.&lt;/p&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/--N3x2-1Is3s/UshTsoVNNQI/AAAAAAAAFzc/nIw9qeCToQs/s800/IMG_0460.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-Nc1xkk5Xxc4/UshTtCduPDI/AAAAAAAAFzk/-BGpnh0dv-s/s800/IMG_0461.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-n4GRgEjRgAs/UshTtYVjjlI/AAAAAAAAFzo/0NKStYaJoVI/s800/IMG_0462.png&quot;&gt;
+&lt;p&gt;One of the attractions in the rainforest north of Kalaloch Lodge is the Big Cedar.&lt;/p&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-3APUufL00Ng/UshTupLehCI/AAAAAAAAF0E/otvMb3rtgfQ/s640/IMG_0476.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-O1krN-ceOck/UshTulWmLZI/AAAAAAAAFz8/E_shO8Lv1bY/s640/IMG_0486.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-zONZfwCjRho/UshTt2MhcVI/AAAAAAAAFzs/nW5w-_8MUQs/s640/IMG_0474.png&quot;&gt;
+&lt;p&gt;Kalaloch Lodge in the background. I stayed in a regular cabin.&lt;/p&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-g0eb7P7SeqE/UshTrXrKhXI/AAAAAAAAFy8/ViZ8Ji1iQmI/s800/009.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-MDbuDkBip48/UshTrasT-iI/AAAAAAAAFzI/kbxzM2bZ9DE/s800/010.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-rQOrxEsJ0go/UshTr1pZtVI/AAAAAAAAFzA/JU4bXne0DhQ/s800/013.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-HWYvYx9DGys/UshTsiNlsgI/AAAAAAAAFzQ/iaZq3iFVeXE/s800/016.png&quot;&gt;
+&lt;p&gt;They were clean with two queen beds, a futon, kitchenette, bathroom with shower, small eating table, and a fireplace. Not sure what else I could ask for at $100/night.&lt;/p&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-thZp_yJBT2g/UshTqv-aGXI/AAAAAAAAFyk/RhewVrH3b_4/s600/005.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-oxfR202O8j0/UshTqnqhlQI/AAAAAAAAFys/G9aT6eBH7SA/s600/006.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-pa8TXEMyqFw/UshTqoHRvHI/AAAAAAAAFyo/UotfafQTTrg/s800/008.png&quot;&gt;</content>
+ </entry>
  
  <entry>
    <title>29 Dec 2013</title>
@@ -236,7 +335,8 @@
    <link href="http://wickerbox.net/2013/11/22-note"/>
    <updated>2013-11-22T00:00:00-08:00</updated>
    <id>http://wickerbox.net/2013/11/22-note</id>
-   <content type="html">&lt;p&gt;Found Sumana&amp;#8217;s blog this week and I keep returning to it. I&amp;#8217;m afraid of writing the wrong thing and so I don&amp;#8217;t write at all, but it&amp;#8217;s like there&amp;#8217;s this idea of what I&amp;#8217;ll write and how I&amp;#8217;ll feel writing it that when I don&amp;#8217;t achieve that headspace then I&amp;#8217;m like &amp;#8220;oops, can&amp;#8217;t write today, oh well&amp;#8221; and blow it off. I&amp;#8217;d like to stop doing that. Just write.&lt;/p&gt;</content>
+   <content type="html">&lt;p&gt;Found &lt;a href=&quot;http://www.harihareswara.net/ces.shtml&quot;&gt;Sumana&lt;/a&gt;&amp;#8216;s blog this week and I keep returning to it. I saw her keynote at Open Source Bridge and now she&amp;#8217;s taking a sabbatical from her post at Wikimedia to do Hacker School, which is cool to read about. I ended up reading her back entries and her blog&amp;#8217;s kind of the sort of thing I&amp;#8217;d like for mine &amp;#8212; technical stuff mixed with &amp;#8220;hey, this is what I did today&amp;#8221; with some observations.&lt;/p&gt;
+&lt;p&gt;The thing is, I think I&amp;#8217;m afraid of writing the wrong thing and so I don&amp;#8217;t write at all, but it&amp;#8217;s like there&amp;#8217;s this idea of what I&amp;#8217;ll write and how I&amp;#8217;ll feel writing it that when I don&amp;#8217;t achieve that headspace then I&amp;#8217;m like &amp;#8220;oops, can&amp;#8217;t write today, oh well&amp;#8221; and blow it off. I&amp;#8217;d like to stop doing that. Just write already.&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -496,6 +596,22 @@ href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-com
  </entry>
  
  <entry>
+   <title>Evening at the Tualatin Refuge</title>
+   <link href="http://wickerbox.net/2013/08/tualatin-wildlife-refuge-evening"/>
+   <updated>2013-08-09T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/08/tualatin-wildlife-refuge-evening</id>
+   <content type="html">&lt;img src=&quot;https://lh3.googleusercontent.com/-Z16_6gJQMD4/UgWmt0LaTVI/AAAAAAAAFgs/_upRGP0y0hA/s839/DSCF1919.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-Zdt5ifwcxNY/UgWmjhNCD_I/AAAAAAAAFfo/oPz4k250EKk/s839/DSCF1922.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-5RoJz1pmiHA/UgWmjqPqjNI/AAAAAAAAFfs/7wuYBUwbcCc/s839/DSCF1923.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-HRR_vCOJh0Y/UgWmkRd0tMI/AAAAAAAAFf4/b3aGX4RMv0Y/s839/DSCF1924.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-i3JQv-_liFE/UgWmknggOUI/AAAAAAAAFgA/i1TgNJU9EaU/s839/DSCF1933.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-FMsbId2hPWU/UgWmlGI3_lI/AAAAAAAAFgI/NitMC87piDk/s839/DSCF1938.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-t81XliENIps/UgWmly6h-zI/AAAAAAAAFgQ/pLmaw2vPciE/s640/DSCF1943.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-FVdGZC9nGF8/UgWml6x-ACI/AAAAAAAAFgY/udt9rtaov10/s839/DSCF1948.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-AZf30ZPAI20/UgWmmqGj-oI/AAAAAAAAFgg/vZyOXlMGbV4/s839/DSCF1969.png&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>PSAS Launch 10 and NXRS 2013</title>
    <link href="http://wickerbox.net/2013/07/psas-launch-10"/>
    <updated>2013-07-01T00:00:00-07:00</updated>
@@ -531,6 +647,36 @@ href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-com
  </entry>
  
  <entry>
+   <title>Printed Circuit Board Build Day</title>
+   <link href="http://wickerbox.net/2013/01/printed-circuit-board-build-day"/>
+   <updated>2013-01-01T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2013/01/printed-circuit-board-build-day</id>
+   <content type="html">&lt;img src=&quot;https://lh5.googleusercontent.com/-e_Q_ODQDrD8/UshXaHUcylI/AAAAAAAAF7Y/KbcKTfW-j3U/s800/DSCF4113.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-v4N0OkwWy1E/UshXaXo-wsI/AAAAAAAAF7c/hq0M1oHRZGo/s800/DSCF4114.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-rksu4d0fcXo/UshXaBPNklI/AAAAAAAAF7Q/guLCIds-4b0/s800/DSCF4119.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-a61eU3lItJs/UshXa5QuGpI/AAAAAAAAF7o/9QVegZ9-2GE/s800/DSCF4120.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-UQ9C3xrwFg0/UshXa_NAJ-I/AAAAAAAAF7s/k-a49PMfC6Y/s800/DSCF4122.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-XrY6bpmiciM/UshXbt5Z8fI/AAAAAAAAF74/BUBIrA3o__o/s800/DSCF4126.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-tE8GNU8L-RA/UshXcNC-j7I/AAAAAAAAF8E/SXifKH7BrNo/s800/DSCF4128.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-lbQ0m3mHvx8/UshXcGeY1LI/AAAAAAAAF8A/XWAQcs0-0pg/s640/IMG_0913.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-FYqRlST7hxE/UshXccHA4kI/AAAAAAAAF8Q/EMaO5EcW2ss/s640/IMG_0917.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-LfPNQJX42dk/UshXc-Q4f7I/AAAAAAAAF8Y/HlH2ISAR5_0/s640/IMG_0920.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-QlgZnw-sw0w/UshXdX2RimI/AAAAAAAAF8k/1-3BqYWvsYs/s800/IMG_0922.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-ygwt_JDE4eE/UshXdWVmBII/AAAAAAAAF8c/3ZdilPWfC1I/s800/IMG_0924.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-EvW3jy7bBgk/UshXd0YDnwI/AAAAAAAAF8w/qooO09ULo-Q/s800/IMG_0925.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-xK7FdP7wvRw/UshXeegYKGI/AAAAAAAAF9A/gKri5JKT02E/s800/IMG_0929.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-MJKwIyJPAEY/UshXea4nMhI/AAAAAAAAF84/U1CSPe9fxjc/s800/IMG_0930.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-C56yRa1GbFI/UshXe_E7u-I/AAAAAAAAF9E/6VIrVRbFuHQ/s800/IMG_0931.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-fkZd16Lt65k/UshXfSZVtYI/AAAAAAAAF9Q/PvLCxI4w8Ec/s800/IMG_0932.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-nFuQ9zmk08U/UshXfnCmvcI/AAAAAAAAF9U/nHIrHKbN758/s800/IMG_0935.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-nhQhzENg9Mg/UshXgCKen2I/AAAAAAAAF9c/YNrTa7M39kY/s800/IMG_0936.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-a5aeRQaR-4A/UshXgNPUVRI/AAAAAAAAF9o/h3YCXHef4sA/s800/IMG_0938.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-na7bgqShy3s/UshXgxHbjGI/AAAAAAAAF90/pEuzu0-y6oo/s800/IMG_0939.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-YI05L2GZzpU/UshXgxuVMKI/AAAAAAAAF9w/TWSM3XEAP3E/s800/IMG_0941.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-r7UIsKP1LdQ/UshXhdK3EKI/AAAAAAAAF98/dkEuSEvZjAE/s800/IMG_0943.png&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>Molalla River Trails</title>
    <link href="http://wickerbox.net/2013/01/molalla-river-trails"/>
    <updated>2013-01-01T00:00:00-08:00</updated>
@@ -542,6 +688,18 @@ href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-com
 &lt;img src=&quot;https://lh6.googleusercontent.com/-yFKF7nfB66k/UcZdOVYuFZI/AAAAAAAAFLI/SqeJTzEGD50/w664-h498-no/DSCF3805.postable.jpg&quot;&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-10t_f5x3Dlw/UcZdOQi8-sI/AAAAAAAAFLA/KIw45als2rU/w664-h498-no/DSCF3804.postable.jpg&quot;&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-68X_JbEVzww/UcZdOv9V6EI/AAAAAAAAFLM/DJEEJYTGRrI/w664-h498-no/DSCF3806.postable.jpg&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Snow in the Alps</title>
+   <link href="http://wickerbox.net/2012/12/deep-snow-alps"/>
+   <updated>2012-12-18T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2012/12/deep-snow-alps</id>
+   <content type="html">&lt;p&gt;You have to understand that I grew up in northwest Oregon, trained in the South, was stationed in Arizona, and deployed to Iraq. I&amp;#8217;m pretty familiar with ice but deep fluffy snow is still really, really cool.&lt;/p&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-B9troItSPbo/UshTJdOeYfI/AAAAAAAAFx8/pX1qJUn8tow/s640/DSCF3789.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-PCla64zW2JY/UshTJSc0wMI/AAAAAAAAFyA/3QV8W3jdCYw/s800/DSCF3793.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-FCgNU07_tZA/UshTKL9JZlI/AAAAAAAAFyE/PHc_Uqm1JVE/s600/DSCF3794.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-aMJRxVEg0xc/UsiIgVUnbkI/AAAAAAAAF-0/Myw-5Pbl7fo/s640/snow.png&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -557,6 +715,21 @@ href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-com
 &lt;img src=&quot;https://lh6.googleusercontent.com/-RgJL0Pw1Ntg/UcZivDcHcOI/AAAAAAAAFQ8/Tm9jZXqbj3k/w512-h384-no/IMG_0878.postable.jpg&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/-isNvladZfXI/UcZivHu4VII/AAAAAAAAFRE/c7JnnZrjzZ0/w512-h384-no/IMG_0889.postable.jpg&quot;&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-PBRmMiQt7VM/UcZivtrXuaI/AAAAAAAAFRM/S1twJD2pNsk/w512-h384-no/IMG_0890.postable.jpg&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Dismal Nitch</title>
+   <link href="http://wickerbox.net/2012/09/dismal-nitch"/>
+   <updated>2012-09-20T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2012/09/dismal-nitch</id>
+   <content type="html">&lt;p&gt;Dismal Nitch is a small state park on the Washington side of the Columbia River just east of the Astoria-Megler bridge.&lt;/p&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-kjhRCseMDTU/UshSl8TIwhI/AAAAAAAAFxM/expNISSFiwU/s800/DSCF3781.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-BIq9nKTwZnY/UshSkEWooQI/AAAAAAAAFws/ZahUpYAYO6I/s800/DSCF3768.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-EheDQehL0Aw/UshSkDSul0I/AAAAAAAAFw0/FD6x46D7q2k/s800/DSCF3769.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-AGhy1aH2MCI/UshSkNFq57I/AAAAAAAAFwo/g3vdLgn_DlU/s800/DSCF3770.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-eXtS1-DikEY/UshSknixqpI/AAAAAAAAFww/Bxy7xwts8d0/s800/DSCF3772.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-kB27kYRfiIU/UshSlvSsPFI/AAAAAAAAFxI/FXatLX08M3E/s800/DSCF3773.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-ca5tK8BIyGg/UshSltrCMtI/AAAAAAAAFxE/SxjUJfVJWmk/s800/DSCF3778.png&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -627,6 +800,54 @@ href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-com
 &lt;p&gt;There were also a couple guys up there and I asked them if they were headed back to Salem or Eugene, by any chance. Turns out they lived in Veneta and were heading back in a couple hours &amp;#8212; &amp;#8220;but you&amp;#8217;d have to hang out and stargaze with us, we&amp;#8217;re going to watch the fire as the sun sets&amp;#8221; &amp;#8212; so I told the ranger to pass on the message that I&amp;#8217;d call my ride the next morning from Eugene. I hung out with them and we spotted shooting stars and lightning, watched the stars come out and the fire&amp;#8217;s smoke change the sky, and generally talked a lot of politics.&lt;/p&gt;
 &lt;img style=&quot;width: 100%; max-width: 100%;&quot; class=&quot;post-photo&quot; src=&quot;https://lh5.googleusercontent.com/-5oM3OloLVk8/UFVIUBxkW8I/AAAAAAAAEjY/wQZWJHagdL4/w703-h527-no/DSCF0329.resized.JPG&quot;&gt;
 &lt;p&gt;I spent the night in Veneta and took the Amtrak back to Salem in the morning.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Callahan's to Green Springs Inn</title>
+   <link href="http://wickerbox.net/2012/08/callahans-to-green-springs-inn"/>
+   <updated>2012-08-20T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2012/08/callahans-to-green-springs-inn</id>
+   <content type="html">&lt;img src=&quot;https://lh3.googleusercontent.com/-ulY93JPhrLE/UshQV6HDfLI/AAAAAAAAFsc/PdxqpCkyaRE/s750/DSCF3666.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-c7lDIMPzLEQ/UshQV7GwczI/AAAAAAAAFsc/NUkFSL_0eI8/s750/DSCF3667.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-bYtqxKFe8Ts/UshQV6AMfJI/AAAAAAAAFsc/fP-e7GjxKz0/s750/DSCF3668.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-ch7r8z1N_60/UshQW_2VFPI/AAAAAAAAFsc/gafa4g3u1BY/s750/DSCF3670.png&quot;&gt;
+&lt;p&gt;I got a late start and didn&amp;#8217;t take a lot of photos as I climbed up above Callahan&amp;#8217;s, trying to make time.&lt;/p&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-2h31YHHTOhk/UshQXVYnziI/AAAAAAAAFsc/kMFEVGXUSCU/s750/DSCF3672.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-lt0_DykGaso/UshQXb8Hx5I/AAAAAAAAFsc/hcUwZvBcqN4/s750/DSCF3673.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-Yeil8vhDG58/UshQYJrnEzI/AAAAAAAAFsc/_6atZoe4eNY/s750/DSCF3674.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-lWXMZFW9WiU/UshQYompjVI/AAAAAAAAFsc/r3RRowKPsn4/s750/DSCF3675.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-Q1-YlC9bupo/UshQYqS09MI/AAAAAAAAFsc/31itTc1YBKU/s750/DSCF3676.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-tncdtXaFes4/UshQZI3pSQI/AAAAAAAAFsc/W6l4NPH1Bmk/s750/DSCF3678.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-HXdcrLRbmYo/UshQZIt6wYI/AAAAAAAAFsc/rgDL0GdH0Ps/s750/DSCF3679.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-K3aRiV-cZog/UshQaDPKQKI/AAAAAAAAFsc/DWf0aOv_A3k/s750/DSCF3680.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-CRsOLggBhXc/UshQaHcCChI/AAAAAAAAFsc/zhsVQVxYFgI/s750/DSCF3681.png&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Badger Creek</title>
+   <link href="http://wickerbox.net/2012/08/badger-creek"/>
+   <updated>2012-08-01T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2012/08/badger-creek</id>
+   <content type="html">&lt;img src=&quot;https://lh6.googleusercontent.com/-Yb2r9vbD1Fo/UshR5RxYIPI/AAAAAAAAFtQ/GvU-IPNdjuQ/s750/DSCF3682.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-E9rYXaj9tgU/UshR5Y_eqYI/AAAAAAAAFtI/pvM8iKwEAqg/s750/DSCF3683.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-FfHaQYKJXlE/UshR5gfUDNI/AAAAAAAAFtM/7KD8DoFLvZ4/s750/DSCF3685.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-LftBBokQe74/UshR6kCGTGI/AAAAAAAAFtg/y11AEBR2Yx4/s750/DSCF3687.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-NdT67sV2M6k/UshR6k_1m9I/AAAAAAAAFtk/KVgX7ATvDT4/s750/DSCF3688.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-K5RHgWTL2Bs/UshR64ML0wI/AAAAAAAAFts/a-ixbvSz3JI/s640/DSCF3689.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-ZPxF3ELmHBI/UshR7tWmv3I/AAAAAAAAFt0/mNCUocBogrI/s640/DSCF3692.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-pRl4MVfE3E8/UshR8IyOv6I/AAAAAAAAFt8/6WU_2sZ9XqE/s640/DSCF3693.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-NzkATiqy2hQ/UshR8LjNldI/AAAAAAAAFuI/tRlwVc2vguE/s640/DSCF3698.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-k_wCcFztdzc/UshR8p2vhzI/AAAAAAAAFuM/sHLjntBNsds/s750/DSCF3704.png&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-NaLcG-a-RYs/UshR84ZzZKI/AAAAAAAAFuU/djVYx9EDai8/s640/DSCF3705.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-zI9oLPaGoGc/UshR9vcSMGI/AAAAAAAAFuc/xgX34udZYjE/s750/DSCF3711.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-lQ51MzuDJ90/UshR-Jm7MBI/AAAAAAAAFus/q4rAzBUBEHQ/s750/DSCF3714.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-IOUx_GczbpA/UshR-Uf7lLI/AAAAAAAAFu0/uGi0Gn97SWA/s640/DSCF3718.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-Fni78RnQ6cQ/UshR_IO7kCI/AAAAAAAAFvA/j2gt1Xlgzv8/s750/DSCF3720.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-zhNvIjP1OBc/UshR_bzwvOI/AAAAAAAAFvI/Dd5iq37Wvic/s750/DSCF3721.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-hFuwPWIQKdo/UshR_xkwUgI/AAAAAAAAFvQ/oDWAWqPMCXE/s750/DSCF3734.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-7U88oiKoM_o/UshSAmXmBSI/AAAAAAAAFvk/rbehbmtxXmI/s750/DSCF3736.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-s-CGi2g8Q9I/UshSA8p97KI/AAAAAAAAFvo/QN6TxDbd7ZI/s750/DSCF3737.png&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-rM0hpr495Cg/UshSBxgoSII/AAAAAAAAFv0/lB1q81eVrzY/s750/DSCF3741.png&quot;&gt;</content>
  </entry>
  
  <entry>
