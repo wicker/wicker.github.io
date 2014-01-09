@@ -4,13 +4,30 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-01-04T15:43:44-08:00</updated>
+ <updated>2014-01-09T12:24:00-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>6 Jan 2014</title>
+   <link href="http://wickerbox.net/2014/01/06-note"/>
+   <updated>2014-01-06T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/01/06-note</id>
+   <content type="html">&lt;p&gt;Beautiful day doing flight test of our cameras for work.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve been looking at putting the Robot Operating System on the STM32F Discovery Board so I took a brief detour through basic toolchain review. A couple nice links are these at &lt;a href=&quot;http://elinux.org/Toolchains&quot;&gt;eLinux &amp;#8211; Toolchains&lt;/a&gt; and &lt;a href=&quot;http://www.kunen.org/uC/gnu_tool.html&quot;&gt;thing2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In general, paraphrasing from the article, I need disk space, decent &lt;span class=&quot;caps&quot;&gt;CPU&lt;/span&gt; and memory, recent gcc compiler and &lt;span class=&quot;caps&quot;&gt;GNU&lt;/span&gt; build utilities for the sort of stuff I do.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m prototyping on &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; processors so I build arm-none-eabi and newlib, which successfully can build the libraries; works with FreeRTOS, ChibiOS, and &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt;; and can make binaries for bare metal (no OS) software. I&amp;#8217;m not developing for embedded Linux targets so I don&amp;#8217;t have to build against glibc. I&amp;#8217;m not sure what an embedded Linux target really is, though.&lt;/p&gt;
+&lt;p&gt;Having an arm-x-eabi means it&amp;#8217;s for &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; with the &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; standard &lt;span class=&quot;caps&quot;&gt;EABI&lt;/span&gt;.&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;arm-none-eabi means it&amp;#8217;s not for a specific OS or build&lt;/li&gt;
+	&lt;li&gt;arm-psas-eabi means it expects the &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; environment&lt;/li&gt;
+	&lt;li&gt;arm-linux-eabi is designed to be used to build programs with glibc under Linux&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>4 Jan 2014</title>

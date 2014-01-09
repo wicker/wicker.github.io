@@ -7,6 +7,23 @@
 		<atom:link href="feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>6 Jan 2014</title>
+				<description>&lt;p&gt;Beautiful day doing flight test of our cameras for work.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve been looking at putting the Robot Operating System on the STM32F Discovery Board so I took a brief detour through basic toolchain review. A couple nice links are these at &lt;a href=&quot;http://elinux.org/Toolchains&quot;&gt;eLinux &amp;#8211; Toolchains&lt;/a&gt; and &lt;a href=&quot;http://www.kunen.org/uC/gnu_tool.html&quot;&gt;thing2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In general, paraphrasing from the article, I need disk space, decent &lt;span class=&quot;caps&quot;&gt;CPU&lt;/span&gt; and memory, recent gcc compiler and &lt;span class=&quot;caps&quot;&gt;GNU&lt;/span&gt; build utilities for the sort of stuff I do.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m prototyping on &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; processors so I build arm-none-eabi and newlib, which successfully can build the libraries; works with FreeRTOS, ChibiOS, and &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt;; and can make binaries for bare metal (no OS) software. I&amp;#8217;m not developing for embedded Linux targets so I don&amp;#8217;t have to build against glibc. I&amp;#8217;m not sure what an embedded Linux target really is, though.&lt;/p&gt;
+&lt;p&gt;Having an arm-x-eabi means it&amp;#8217;s for &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; with the &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; standard &lt;span class=&quot;caps&quot;&gt;EABI&lt;/span&gt;.&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;arm-none-eabi means it&amp;#8217;s not for a specific OS or build&lt;/li&gt;
+	&lt;li&gt;arm-psas-eabi means it expects the &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; environment&lt;/li&gt;
+	&lt;li&gt;arm-linux-eabi is designed to be used to build programs with glibc under Linux&lt;/li&gt;
+&lt;/ul&gt;</description>
+				<pubDate>Mon, 06 Jan 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/01/06-note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/01/06-note</guid>
+			</item>
+		
+			<item>
 				<title>4 Jan 2014</title>
 				<description>&lt;p&gt;I wrote a nice, long note last night but with today&amp;#8217;s date about my process for designing PCBs and then blew it away this morning by running the makenote script for today. Argh. Well, it had occurred to me that I should add a line to the makenote script to prompt me about the overwrite if a post already exists.&lt;/p&gt;
 &lt;p&gt;It turns out that&amp;#8217;s as easy as adding -i to the cp command and, as a bonus, if I tell it &amp;#8216;n&amp;#8217; (I don&amp;#8217;t want it to overwrite) then the script executes the next line which is opening the file so I can edit. I can live with that.&lt;/p&gt;
@@ -245,20 +262,6 @@
 				<pubDate>Tue, 10 Dec 2013</pubDate>
 				<link>http://www.wickerbox.net//2013/12/wickerbox-with-jekyll-v2</link>
 				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/wickerbox-with-jekyll-v2</guid>
-			</item>
-		
-			<item>
-				<title>10 Nov 2013</title>
-				<description>&lt;p&gt;Hahahaha, and then I didn&amp;#8217;t write at all again for three weeks.&lt;/p&gt;
-&lt;p&gt;I enjoyed the holiday and I&amp;#8217;ve been hacking away at this Foxcar control board. I&amp;#8217;ve started journaling in a real actual physical journal and I&amp;#8217;ve found it helpful to not have an audience to worry about.&lt;/p&gt;
-&lt;p&gt;The RF front-end board schematic is done, though I&amp;#8217;m still a little unhappy with the power section, but there&amp;#8217;s another &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; member who&amp;#8217;s working on a separate board that&amp;#8217;s also set up for the same power source so if he arrives at a nicer solution before I get the layout finished (I&amp;#8217;m starting from the RF side) then I&amp;#8217;ll change my choice of chips.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m unhappy because the current switching power supply is a 60-pin &lt;span class=&quot;caps&quot;&gt;LGA&lt;/span&gt; so you can&amp;#8217;t get to the traces once it&amp;#8217;s been soldered to the board. I&amp;#8217;m ordering the board through OSHPark then reflow it so probably everything will be fine but I still get worried about parts I only get one chance with.&lt;/p&gt;
-&lt;p&gt;Also, it&amp;#8217;s expensive, but it&amp;#8217;s designed to handle 20V on the rocket Power over Ethernet bus so I guess you get what you pay for. I have a micro-&lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; connector for at-laptop debug.&lt;/p&gt;
-&lt;p&gt;Annnd the Foxcar control board schematic is done and I pushed to github. I started on the layout, started the trace calculations, and then reinstalled Starcraft II. I can&amp;#8217;t stop thinking about playing it.  I think I might be slightly burned out&amp;#8230;&lt;/p&gt;
-&lt;p&gt;Tonight I cleaned up little things on the website that were bothering me, including the Endurance Days part, and now I&amp;#8217;m going to go home and hunt me some Zerg.&lt;/p&gt;</description>
-				<pubDate>Tue, 10 Dec 2013</pubDate>
-				<link>http://www.wickerbox.net//2013/12/10-note</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/10-note</guid>
 			</item>
 		
 	</channel>
