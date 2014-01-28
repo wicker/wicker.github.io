@@ -7,6 +7,36 @@
 		<atom:link href="feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Oven Control Board v1</title>
+				<description>&lt;p&gt;An ME capstone team at Portland State is working on an oven so we can cure our own composites. It&amp;#8217;s awesome. This oven control board was a five-day project that came out of nowhere this week on Tuesday and which I delivered on Sunday.&lt;/p&gt;
+&lt;p&gt;Tung, their electrical person, already had the design figured out and working with breadboard components and an Arduino. What he really wanted was an Arduino shield so we met, looked at what he had, and figured out how we&amp;#8217;d put it on the right footprint. This is the first time I&amp;#8217;d been able to sit with someone who was new to Eagle and really explain what makes a decent schematic, so it&amp;#8217;s pretty cool to see how much I&amp;#8217;ve learned in just a couple of years.&lt;/p&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard-schema.png&quot;&gt;
+&lt;p&gt;The layout was constrained by the shield but even moreso by our plan to use the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; router. It had to be a two-layer board that didn&amp;#8217;t have plated through-holes or vias. I managed to put all the traces except one on the bottom layer because all the components get soldered on the bottom side (they&amp;#8217;re all through-hole) and then I just made that a much wider polygon fill and dropped vias to get the top-trace signal connected down below.&lt;/p&gt;
+&lt;p&gt;Unfortunately, Arduino shields sit on top of the Arduino so I had to drop an extra via on each pad of the 0.1&amp;quot; headers so copper wire could be slid through and squashed, essentially plating them myself.&lt;/p&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard-layout.png&quot;&gt;
+&lt;p&gt;The final product doesn&amp;#8217;t look too shabby. Well, I take that back &amp;#8212; the isolation on the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; is so tiny (even at the double-width!) that I&amp;#8217;m terrified of putting too much solder on each pin and shorting it outside the pad. This is really crappy soldering but I ohmed everything out so electrically the joints are fine.&lt;/p&gt;
+&lt;p&gt;Definitely I&amp;#8217;ve been spoiled with OSHPark and $5/sq in board with plated through-holes and solder mask.&lt;/p&gt;
+&lt;p&gt;The libraries and everything are all up in the &lt;a href=&quot;https://github.com/wicker/oven-controller&quot;&gt;oven-controller Github repo&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard-top.png&quot;&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard-side.png&quot;&gt;</description>
+				<pubDate>Mon, 27 Jan 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/01/oven-control-board</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/01/oven-control-board</guid>
+			</item>
+		
+			<item>
+				<title>27 Jan 2014</title>
+				<description>&lt;p&gt;I got super busy with work but then this week have done a ton of rocket club stuff. The &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; RF board is still in design reviews but I think we&amp;#8217;ve got the RF side figured out.&lt;/p&gt;
+&lt;p&gt;I finished an oven control board &lt;span class=&quot;caps&quot;&gt;PCB&lt;/span&gt; layout and got it routed for the oven team. All the files are in the &lt;a href=&quot;http://github.com/wicker/oven-controller/&quot;&gt;Github repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We went up to Rocky Butte and shot wifi packets to Council Crest with the &lt;a href=&quot;http://github.com/psas/DxWiFi/&quot;&gt;DxWiFi team&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I think running around at full speed finally let the cold I&amp;#8217;ve been fighting hit me because I was already feeling like crap on Sunday and then I ended up sleeping til the afternoon today. Ugh. Tomorrow will be better.&lt;/p&gt;
+&lt;p&gt;I just got the email that says my Foxcar control board is in the mail so I guess I know what I&amp;#8217;m doing this weekend&amp;#8230;&lt;/p&gt;</description>
+				<pubDate>Mon, 27 Jan 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/01/27-note</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/01/27-note</guid>
+			</item>
+		
+			<item>
 				<title>6 Jan 2014</title>
 				<description>&lt;p&gt;Beautiful day doing flight test of our cameras for work.&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;ve been looking at putting the Robot Operating System on the STM32F Discovery Board so I took a brief detour through basic toolchain review. A couple nice links are these at &lt;a href=&quot;http://elinux.org/Toolchains&quot;&gt;eLinux &amp;#8211; Toolchains&lt;/a&gt; and &lt;a href=&quot;http://www.kunen.org/uC/gnu_tool.html&quot;&gt;thing2&lt;/a&gt;.&lt;/p&gt;
@@ -188,80 +218,6 @@
 				<pubDate>Sun, 15 Dec 2013</pubDate>
 				<link>http://www.wickerbox.net//2013/12/custom-foxcar-control-board</link>
 				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/custom-foxcar-control-board</guid>
-			</item>
-		
-			<item>
-				<title>Using ChibiOS and OpenOCD</title>
-				<description>&lt;p&gt;I chose ChibiOS for the &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; RF board because &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; has it set up. These are rough notes for myself for doing development on the &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; RF board.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&quot;http://psas.pdx.edu/avionics/av3_firmware/av3-stm32-openocd/&quot;&gt;stm32 section on the &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; wiki&lt;/a&gt; was useful.&lt;/p&gt;
-&lt;p&gt;/opt/psas is where I&amp;#8217;ve put all the psas ChibiOS stuff on my machine.&lt;/p&gt;
-&lt;p&gt;I put the following commands in ~/.bash_aliases:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;alias psas_stm=&quot;echo Path is $PATH &amp;amp;&amp;amp; export PATH=$PATH:/opt/psas/openocd/bin:/opt/psas/x-tools/stm32f407/arm-psas-eabi/bin:/opt/eclipse/ &amp;amp;&amp;amp; echo \nNew path is \$PATH&quot;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;alias gpsdev1=&quot;cd /opt/psas/openocd/bin &amp;amp;&amp;amp; ./openocd -f ../share/openocd/scripts/interface/stlink-v2.cfg -f ../share/openocd/scripts/target/stm32f4x_stlink.cfg&quot;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;alias gpsdev2=&quot;cd /opt/psas/openocd/bin &amp;amp;&amp;amp; telnet localhost 4444&quot;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;To program the board, first I make sure I&amp;#8217;ve updated the software in the main repo, which in &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; case is &lt;a href=&quot;http://github.com/psas/stm32/src/gps/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Not sure where my code is actually compiled but I&amp;#8217;m going to use the ch.hex that&amp;#8217;s created when I do compile to program the board.&lt;/p&gt;
-&lt;p&gt;Then I run psas_stm, which adds the paths I need.&lt;/p&gt;
-&lt;p&gt;Then I open two terminals.&lt;/p&gt;
-&lt;p&gt;In the first, I run gpsdev1 to run openocd on the config files.&lt;/p&gt;
-&lt;p&gt;In the second, I run gpsdev2 to open communication with the board.&lt;/p&gt;
-&lt;p&gt;The openocd commands to run inside the second terminal are&lt;/p&gt;
-&lt;div style=&quot;margin-left: 20px;&quot;&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;reset&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;halt&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;write&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;write_image&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;erase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;proj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;psas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stm32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hex&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;reset&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Then the board should be programmed correctly.&lt;/p&gt;
-&lt;p&gt;Huge thanks to Kay and Dave for helping me get started.&lt;/p&gt;</description>
-				<pubDate>Wed, 11 Dec 2013</pubDate>
-				<link>http://www.wickerbox.net//2013/12/getting-started-with-psas-chibios</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/getting-started-with-psas-chibios</guid>
-			</item>
-		
-			<item>
-				<title>Making Wickerbox - v2</title>
-				<description>&lt;p&gt;Wickerbox is a dynamically-generated static site served using Jekyll and Github Pages. I recently redesigned it with an eye to a more simple back-end and a minimum of Javascript. I ended up directly linking from Google+ Photos for photo posts and from Github for project posts.&lt;/p&gt;
-&lt;p&gt;Wickerbox is static in that it does not require a server-side database in order to serve up pages. I came from Wordpress using MySQL and &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; and wanted something simpler. (ha!) Also, I’m a big fan of git for revision control.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;What&amp;#8217;s a Post?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A post is a post is a post. I originally split posts into different layouts with photo posts containing a gallery sourced from a Picasa photo album so I could just put the userid and albumid in the header and it would automatically populate. That ended up being really awkward to browse and I prefer just putting the photos in the document. It works for projects, too.&lt;/p&gt;
-&lt;p&gt;I write the posts in Textile and save as .textile documents, which are then turned by Jekyll into &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; pages. Jekyll takes any otherwise-unmarked piece of text and renders it with paragraph tags, which I gave some padding to get the indented effect.&lt;/p&gt;
-&lt;img src=&quot;/images/project/wickerv2/indent-textile.png&quot;&gt;
-&lt;p&gt;By starting the line with two spaces, I can avoid wrapping my images in paragraph tags and make sure they take up the entire width of the content box.&lt;/p&gt;
-&lt;img src=&quot;/images/project/wickerv2/indent.png&quot;&gt;
-&lt;p&gt;Posts do need to be sorted for display purposes in the category and front pages, so I&amp;#8217;m still using a lot of header:&lt;/p&gt;
-&lt;div style=&quot;margin-left: 20px;&quot;&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;post&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Making Wickerbox - v2&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;software&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/images/thumbs/wickerbox-v2.png&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;all&lt;/span&gt;
-&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;jekyll&lt;/span&gt;
-&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sites&lt;/span&gt;
-&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;projects&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;purpose&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;project&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;2013&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Combination of content and design changes.&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Portland, Oregon&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Implementation&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I wrote the layout file to be as simple as possible. I&amp;#8217;m stopped using an out-of-the-box responsive framework and intend to just put in some mobile tweaks some time in the future. I&amp;#8217;m not too worried about making the site look fantastic on mobile because the photos are integral and they&amp;#8217;re huge, so I&amp;#8217;m not really sure who&amp;#8217;s spending a lot of time on mobile browsing.&lt;/p&gt;
-&lt;p&gt;I stopped using the Galleria plugin for photos but I did switch fonts to use Google.&lt;/p&gt;
-&lt;p&gt;My intent was to make posts as simple and standard as possible while putting the complicated sorting and display details on the front page and on the category pages. The goal was to lower the transaction cost of writing a post as much as possible.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;To Tag or Not To Tag&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m still adding tags to posts but I&amp;#8217;m not displaying them because there isn&amp;#8217;t a nice design-friendly place to put them. I used to love tag clouds; now I&amp;#8217;m sort of ambivalent.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Notebook&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The biggest thing I wanted was to make a blog-like page which would display all the posts under the &amp;#8216;notes&amp;#8217; category. It would be fine to drop photos here but the goal was to lower the transaction cost &lt;em&gt;even lower&lt;/em&gt; so I&amp;#8217;d err on the side of a quick post instead of letting all these ideas pile up until I burn the whole pile and vow to start over, which is basically what happened in 2013.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; Feed&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m using the basic template from &lt;a href=&quot;http://github.com/snaptortoise/jekyll-rss-feeds&quot;&gt;snaptortoise&amp;#8217;s Jekyll &lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; Feeds repo&lt;/a&gt; and it works fine.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Github serves wickerbox.net from &lt;a href=&quot;http://github.com/wicker/wicker.github.com/&quot;&gt;the wicker.github.com repo&lt;/a&gt; but I still keep the back-end of the site under version control by using &lt;a href=&quot;http://github.com/wicker/wickerbox-jekyll-backend&quot;&gt;wickerbox-jekyll-backend&lt;/a&gt; and I serve the site using a script from my command line.&lt;/p&gt;
-&lt;p&gt;I serve the site using a script which I wrote about &lt;a href=&quot;http://localhost:4000/2012/03/wickerbox-net-with-jekyll/&quot;&gt;in my original Making Wickerbox v1 post&lt;/a&gt; and which is basically unchanged.&lt;/p&gt;</description>
-				<pubDate>Tue, 10 Dec 2013</pubDate>
-				<link>http://www.wickerbox.net//2013/12/wickerbox-with-jekyll-v2</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2013/12/wickerbox-with-jekyll-v2</guid>
 			</item>
 		
 	</channel>

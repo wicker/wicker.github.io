@@ -4,13 +4,43 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-01-09T12:24:00-08:00</updated>
+ <updated>2014-01-27T19:40:13-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Oven Control Board v1</title>
+   <link href="http://wickerbox.net/2014/01/oven-control-board"/>
+   <updated>2014-01-27T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/01/oven-control-board</id>
+   <content type="html">&lt;p&gt;An ME capstone team at Portland State is working on an oven so we can cure our own composites. It&amp;#8217;s awesome. This oven control board was a five-day project that came out of nowhere this week on Tuesday and which I delivered on Sunday.&lt;/p&gt;
+&lt;p&gt;Tung, their electrical person, already had the design figured out and working with breadboard components and an Arduino. What he really wanted was an Arduino shield so we met, looked at what he had, and figured out how we&amp;#8217;d put it on the right footprint. This is the first time I&amp;#8217;d been able to sit with someone who was new to Eagle and really explain what makes a decent schematic, so it&amp;#8217;s pretty cool to see how much I&amp;#8217;ve learned in just a couple of years.&lt;/p&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard-schema.png&quot;&gt;
+&lt;p&gt;The layout was constrained by the shield but even moreso by our plan to use the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; router. It had to be a two-layer board that didn&amp;#8217;t have plated through-holes or vias. I managed to put all the traces except one on the bottom layer because all the components get soldered on the bottom side (they&amp;#8217;re all through-hole) and then I just made that a much wider polygon fill and dropped vias to get the top-trace signal connected down below.&lt;/p&gt;
+&lt;p&gt;Unfortunately, Arduino shields sit on top of the Arduino so I had to drop an extra via on each pad of the 0.1&amp;quot; headers so copper wire could be slid through and squashed, essentially plating them myself.&lt;/p&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard-layout.png&quot;&gt;
+&lt;p&gt;The final product doesn&amp;#8217;t look too shabby. Well, I take that back &amp;#8212; the isolation on the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; is so tiny (even at the double-width!) that I&amp;#8217;m terrified of putting too much solder on each pin and shorting it outside the pad. This is really crappy soldering but I ohmed everything out so electrically the joints are fine.&lt;/p&gt;
+&lt;p&gt;Definitely I&amp;#8217;ve been spoiled with OSHPark and $5/sq in board with plated through-holes and solder mask.&lt;/p&gt;
+&lt;p&gt;The libraries and everything are all up in the &lt;a href=&quot;https://github.com/wicker/oven-controller&quot;&gt;oven-controller Github repo&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard-top.png&quot;&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard-side.png&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>27 Jan 2014</title>
+   <link href="http://wickerbox.net/2014/01/27-note"/>
+   <updated>2014-01-27T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/01/27-note</id>
+   <content type="html">&lt;p&gt;I got super busy with work but then this week have done a ton of rocket club stuff. The &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; RF board is still in design reviews but I think we&amp;#8217;ve got the RF side figured out.&lt;/p&gt;
+&lt;p&gt;I finished an oven control board &lt;span class=&quot;caps&quot;&gt;PCB&lt;/span&gt; layout and got it routed for the oven team. All the files are in the &lt;a href=&quot;http://github.com/wicker/oven-controller/&quot;&gt;Github repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We went up to Rocky Butte and shot wifi packets to Council Crest with the &lt;a href=&quot;http://github.com/psas/DxWiFi/&quot;&gt;DxWiFi team&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I think running around at full speed finally let the cold I&amp;#8217;ve been fighting hit me because I was already feeling like crap on Sunday and then I ended up sleeping til the afternoon today. Ugh. Tomorrow will be better.&lt;/p&gt;
+&lt;p&gt;I just got the email that says my Foxcar control board is in the mail so I guess I know what I&amp;#8217;m doing this weekend&amp;#8230;&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>6 Jan 2014</title>
