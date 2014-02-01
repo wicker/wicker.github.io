@@ -4,13 +4,51 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-01-27T19:40:13-08:00</updated>
+ <updated>2014-02-01T14:30:07-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Oven Control Board v2</title>
+   <link href="http://wickerbox.net/2014/02/oven-control-board-v2"/>
+   <updated>2014-02-01T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/02/oven-control-board-v2</id>
+   <content type="html">&lt;p&gt;I worked with Tung as part of the ME capstone team at Portland State to update the oven controller Arduino shield I made last week. Tung had already updated the Eagle schematic so this time for me it was just layout, routing, and basic soldering. I fixed the one via problem but then promptly made the same mistake on the other set of headers, so I delivered the board last night and it should work fine but the soldering was trickier than I&amp;#8217;d like.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m still so spoiled by having OSHPark. The only Gerbers I give our lab&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; router are the Top Layer, Bottom Layer, Board Outline, and Unplated Drill. No silkscreen. I could solder mask but I haven&amp;#8217;t. Maybe next time. I used materials and headers I had on hand but even through OSHPark it&amp;#8217;d be just under $30 for three boards.&lt;/p&gt;
+&lt;p&gt;Here are the schematic, layout, and final photos. Eagle files are on the &lt;a href=&quot;http://github.com/wicker/oven-controller/&quot;&gt;Github repo&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard2-schema1.png&quot;&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard2-schema2.png&quot;&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard2-toplayout.png&quot;&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard2-botlayout.png&quot;&gt;
+&lt;img src=&quot;/images/project/oven-control-board/ovenboard2-top.png&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>1 Feb 2014</title>
+   <link href="http://wickerbox.net/2014/02/01-note"/>
+   <updated>2014-02-01T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/02/01-note</id>
+   <content type="html">&lt;p&gt;I was a little bummed this morning that January&amp;#8217;s over and I don&amp;#8217;t have any other hardware stuff to post about but I realized that I&amp;#8217;ve been super busy doing, you know, work for which I&amp;#8217;m paid and can&amp;#8217;t talk about. On the hobby hacking side, I&amp;#8217;ve done plenty of work this month between the oven controller, a couple of &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; RF board design reviews, the DxWiFi test, and my &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; habit. I&amp;#8217;ve also had four sessions of &lt;span class=&quot;caps&quot;&gt;EPL&lt;/span&gt; managing where other people came in to work on stuff.&lt;/p&gt;
+&lt;p&gt;One of my biggest reasons for having the site is to remind myself that I do things by posting pictures of the stuff I do. I tend to forget and then blame myself for being Not Productive Enough.&lt;/p&gt;
+&lt;p&gt;So looking back, I&amp;#8217;m delighted to remember that I had a really enjoyable January.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>28 Jan 2014</title>
+   <link href="http://wickerbox.net/2014/01/28-note"/>
+   <updated>2014-01-28T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/01/28-note</id>
+   <content type="html">&lt;p&gt;My library flow for Eagle is to work out of a single directory called ~/.eagle and have all my libraries, scripts, etc. to be in there. Anything that would be used by multiple designs.&lt;/p&gt;
+&lt;p&gt;I never, ever, ever use the epf files and I&amp;#8217;ve yet to meet anybody who does.&lt;/p&gt;
+&lt;p&gt;To start a new design, I make a repo on Github and clone it to my dev machine. I create a schematic and start working. At some point I&amp;#8217;ll make the board and work on that. Any changes to libraries happens in that default directory.&lt;/p&gt;
+&lt;p&gt;When I&amp;#8217;m reading to commit, I use the Eagle export function to create multiple library files into a local folder called &amp;#8216;lbr&amp;#8217; or &amp;#8216;libraries&amp;#8217; so anybody who forks the repo has all the parts they need.&lt;/p&gt;
+&lt;p&gt;When I git pull, I always check if I got updated libraries and I&amp;#8217;ll wrap them back into my default library. I&amp;#8217;m pretty sure I&amp;#8217;m running the risk of losing work in the overwriting/copying process but I&amp;#8217;m kind of stuck on what to do about it, except be very careful.&lt;/p&gt;
+&lt;p&gt;Eagle&amp;#8217;s libraries are basically just frustrating as hell.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Oven Control Board v1</title>
