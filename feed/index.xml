@@ -4,7 +4,7 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-02-14T19:05:53-08:00</updated>
+ <updated>2014-03-05T12:27:31-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
@@ -909,6 +909,43 @@ href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-com
 &lt;img src=&quot;https://lh4.googleusercontent.com/-DNnKwEI1L-8/Ub4YbU9mH1I/AAAAAAAAE6s/mV7rtYcEp9U/w640-h427-no/DSCF1845.thumb.postable.jpg&quot;&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-nWJNKlZPTBg/Ub4YbkenkHI/AAAAAAAAE6w/WYAaTlKF51Y/w640-h427-no/DSCF1846.thumb.postable.jpg&quot;&gt;
 &lt;img src=&quot;https://lh4.googleusercontent.com/-nnTN0sxBG_c/Ub4YbofbklI/AAAAAAAAE60/iKcf7iUuzvA/w640-h427-no/DSCF1848.thumb.postable.jpg&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Convolution in SystemVerilog</title>
+   <link href="http://wickerbox.net/2013/06/convolution-with-systemverilog"/>
+   <updated>2013-06-01T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2013/06/convolution-with-systemverilog</id>
+   <content type="html">&lt;h3 style=&quot;margin-top: 20px; text-align:center;&quot;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This project performs pixel-by-pixel convolution on a 2-dimensional image of any height and width. The goal was to compare combinations of convolution operations on the same image and to consider the relative effects of different convolution coefficients.&lt;/p&gt;
+&lt;p&gt;The design was simulated using the Mentor Questa and then synthesized on Veloce hardware emulator at Portland State.&lt;/p&gt;
+&lt;p&gt;SystemVerilog concepts used included procedural blocks, packages, interfaces, structs, parameters, enumerated types, assertions, a final block, checker, and randomization.&lt;/p&gt;
+&lt;p&gt;The deliverables are the script, the testbench, the synthesizable Veloce hardware code, and the set of input and output images with a discussion of the results.&lt;/p&gt;
+&lt;p&gt;Specific areas of interest included areas of high contrast such as horizons and bright lights in a night sky. Discuss the results.&lt;/p&gt;
+&lt;img src=&quot;/images/project/convolution/system-overview.png&quot;&gt;
+&lt;h3 style=&quot;margin-top: 20px; text-align:center;&quot;&gt;Prepare Image Input&lt;/h3&gt;
+&lt;p&gt;Using OpenCV.&lt;/p&gt;
+&lt;h3 style=&quot;margin-top: 20px; text-align:center;&quot;&gt;Pipeline Path and Timing&lt;/h3&gt;
+&lt;p&gt;A user-defined type pixel_t is a three-channel struct which is passed onto the data bus (modeled using an interface) and through the edge, blur, and emboss convolution modules.&lt;/p&gt;
+&lt;p&gt;Edge, blur, and emboss each contain a fixed-size array called &amp;#8216;image&amp;#8217; that is filled with the pixels as they are received on each clock edge. When the minimum necessary number of pixels has been read in to give enough information for the convolution kernel, the module calls the convolution function and returns that uppermost left pixel a modified value which is passed into the next module.&lt;/p&gt;
+&lt;p&gt;The next array waits on this pixel to begin filling up its own image array. When the minimum number of new, modified pixels have arrived, this module calls the convolution function to calculate its first pixel. The order of the modules can&amp;#8217;t change after compiling but latter modules do operate on the resulting blurred, embossed, or edged image.&lt;/p&gt;
+&lt;p&gt;Each pixel comes along with a struct of flags and a reset signal. When the reset is high, the saved image and flags of that module are reset and the module waits for the first pixel of the next test. Though the pixels travel through every module, each module checks to see if the module selection flag is set. If it isn&amp;#8217;t, each module simply asserts data ready and immediately passes on the pixel of interest on the next clock edge.&lt;/p&gt;
+&lt;img src=&quot;/images/project/convolution/dut.png&quot;&gt;
+&lt;h3 style=&quot;margin-top: 20px; text-align:center;&quot;&gt;Testbench&lt;/h3&gt;
+&lt;p&gt;The design contained a testbench and synthesizable design under test which were linked by a test bus. On each clock tick, the testbench loaded a 24-bit (3&amp;#215;8-bit logics) pixel_t struct onto the bus and set inrdy (input ready) signal high. At the same time, the testbench checked the outrdy (output ready) logic signal and received an output pixel if it was high.&lt;/p&gt;
+&lt;img src=&quot;/images/project/convolution/tb-dut.png&quot;&gt;
+&lt;h3 style=&quot;margin-top: 20px; text-align:center;&quot;&gt;OpenCV Processing&lt;/h3&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;h3 style=&quot;text-align:center;&quot;&gt;Run Script&lt;/h3&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;h3 style=&quot;text-align:center;&quot;&gt;Assertions&lt;/h3&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;h3 style=&quot;text-align:center;&quot;&gt;Randomization for Verification&lt;/h3&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;h3 style=&quot;text-align:center;&quot;&gt;Randomization for Convolution Effects&lt;/h3&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;h3 style=&quot;text-align:center;&quot;&gt;Comparison of Simulation and Synthesis Time&lt;/h3&gt;</content>
  </entry>
  
  <entry>
@@ -3568,14 +3605,6 @@ Bubbling springs, meet my delighted inner twelve-year old.&lt;/p&gt;
 &lt;img src=&quot;https://lh5.googleusercontent.com/-FF8hNwEUUec/T2Kw13Mv2pI/AAAAAAAADDs/XMk8jQ0PkmY/w600-h450-no/dscf1867.png&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/-KrvJtY_ozuo/T2Kw39lhA2I/AAAAAAAADEE/GwjZxSwi62E/w600-h450-no/dscf1870.png&quot;&gt;
 &lt;img src=&quot;https://lh5.googleusercontent.com/-jnvTvJkdrcA/T2Kw2_NLy4I/AAAAAAAADD8/pT2SgelCc2c/w600-h450-no/dscf1873.png&quot;&gt;</content>
- </entry>
- 
- <entry>
-   <title>What and Where was Al Asad?</title>
-   <link href="http://wickerbox.net/2006/10/what-was-al-asad"/>
-   <updated>2006-10-01T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2006/10/what-was-al-asad</id>
-   <content type="html"></content>
  </entry>
  
  <entry>

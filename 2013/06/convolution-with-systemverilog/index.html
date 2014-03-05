@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Convolution in SystemVerilog | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2013/01/printed-circuit-board-build-day">&laquo; Printed Circuit Board Build Day</a></div>
+   
+   
+    <div style="float: right;"><a class="next" href="/2013/06/camping-above-tumble-lake">Tumble Lake &raquo;</a></div>
+   
+  <div style="clear:both;"></div>
+  </div>
+
+  <div class="title">Convolution in SystemVerilog</div>
+  <p>June 2013 - Portland, Oregon</p>
+
+  <h3 style="margin-top: 20px; text-align:center;">Introduction</h3>
+<p>This project performs pixel-by-pixel convolution on a 2-dimensional image of any height and width. The goal was to compare combinations of convolution operations on the same image and to consider the relative effects of different convolution coefficients.</p>
+<p>The design was simulated using the Mentor Questa and then synthesized on Veloce hardware emulator at Portland State.</p>
+<p>SystemVerilog concepts used included procedural blocks, packages, interfaces, structs, parameters, enumerated types, assertions, a final block, checker, and randomization.</p>
+<p>The deliverables are the script, the testbench, the synthesizable Veloce hardware code, and the set of input and output images with a discussion of the results.</p>
+<p>Specific areas of interest included areas of high contrast such as horizons and bright lights in a night sky. Discuss the results.</p>
+<img src="/images/project/convolution/system-overview.png">
+<h3 style="margin-top: 20px; text-align:center;">Prepare Image Input</h3>
+<p>Using OpenCV.</p>
+<h3 style="margin-top: 20px; text-align:center;">Pipeline Path and Timing</h3>
+<p>A user-defined type pixel_t is a three-channel struct which is passed onto the data bus (modeled using an interface) and through the edge, blur, and emboss convolution modules.</p>
+<p>Edge, blur, and emboss each contain a fixed-size array called &#8216;image&#8217; that is filled with the pixels as they are received on each clock edge. When the minimum necessary number of pixels has been read in to give enough information for the convolution kernel, the module calls the convolution function and returns that uppermost left pixel a modified value which is passed into the next module.</p>
+<p>The next array waits on this pixel to begin filling up its own image array. When the minimum number of new, modified pixels have arrived, this module calls the convolution function to calculate its first pixel. The order of the modules can&#8217;t change after compiling but latter modules do operate on the resulting blurred, embossed, or edged image.</p>
+<p>Each pixel comes along with a struct of flags and a reset signal. When the reset is high, the saved image and flags of that module are reset and the module waits for the first pixel of the next test. Though the pixels travel through every module, each module checks to see if the module selection flag is set. If it isn&#8217;t, each module simply asserts data ready and immediately passes on the pixel of interest on the next clock edge.</p>
+<img src="/images/project/convolution/dut.png">
+<h3 style="margin-top: 20px; text-align:center;">Testbench</h3>
+<p>The design contained a testbench and synthesizable design under test which were linked by a test bus. On each clock tick, the testbench loaded a 24-bit (3&#215;8-bit logics) pixel_t struct onto the bus and set inrdy (input ready) signal high. At the same time, the testbench checked the outrdy (output ready) logic signal and received an output pixel if it was high.</p>
+<img src="/images/project/convolution/tb-dut.png">
+<h3 style="margin-top: 20px; text-align:center;">OpenCV Processing</h3>
+<p>Text.</p>
+<h3 style="text-align:center;">Run Script</h3>
+<p>Text.</p>
+<p>Text.</p>
+<h3 style="text-align:center;">Assertions</h3>
+<p>Text.</p>
+<h3 style="text-align:center;">Randomization for Verification</h3>
+<p>Text.</p>
+<h3 style="text-align:center;">Randomization for Convolution Effects</h3>
+<p>Text.</p>
+<h3 style="text-align:center;">Comparison of Simulation and Synthesis Time</h3>
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>
