@@ -4,13 +4,36 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-03-09T15:19:32-07:00</updated>
+ <updated>2014-03-11T20:17:46-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>GetPixels</title>
+   <link href="http://wickerbox.net/2014/03/getpixels"/>
+   <updated>2014-03-10T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2014/03/getpixels</id>
+   <content type="html">&lt;img src=&quot;/images/project/convolution/getpixels.png&quot;&gt;
+&lt;p&gt;GetPixels converts an image to a text file of grayscale pixel values and reconstructs the image. I wrote it so I could manipulate the value of an image&amp;#8217;s pixels using convolution kernels and easily look at the results.&lt;/p&gt;
+&lt;p&gt;Find the code at &lt;a href=&quot;http://github.com/wicker/getpixels&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;GetPixels is open source software licensed under the &lt;a href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;Creative Commons Attribution-ShareAlike International&lt;/a&gt; license. That means you can share and adapt the work for any purpose as long as you give me credit and share your work alike.&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;./GetPixels.o &amp;lt;op&amp;gt; &amp;lt;image.png&amp;gt; &amp;lt;pixels.txt&amp;gt; &amp;lt;width&amp;gt; &amp;lt;height&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;op&lt;/code&gt; is the desired operation. Use &amp;#8216;1&amp;#8217; for image&amp;#8594;pixels and &amp;#8216;2&amp;#8217; for pixels&amp;#8594;image.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;image.png&lt;/code&gt; is the relative file path to the image and &lt;code&gt;pixels.txt&lt;/code&gt; is the text file.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;height&lt;/code&gt; and &lt;code&gt;width&lt;/code&gt; are the values in pixels of the image.&lt;/p&gt;
+&lt;h3&gt;Build&lt;/h3&gt;
+&lt;p&gt;I used OpenCV 2.4.8 and g++ to compile on Linux Mint 15 (Olivia).&lt;/p&gt;
+&lt;h3&gt;Failure Cases&lt;/h3&gt;
+&lt;p&gt;The program will alert you if the height or width is less than 1, if the input image or input pixel file don&amp;#8217;t exist, or if the operation chosen is not 1 or 2.&lt;/p&gt;
+&lt;p&gt;Note: The output files will be created and overwrite any existing files without prompting!&lt;/p&gt;
+&lt;p&gt;If you give the program a portrait of dimensions 240&amp;#215;320 but you tell the program it&amp;#8217;s a landscape of dimensions 320&amp;#215;240, you&amp;#8217;ll get a broken reconstruction:&lt;/p&gt;
+&lt;img src=&quot;/images/project/convolution/landscape.png&quot;&gt;</content>
+ </entry>
  
  <entry>
    <title>Strain Gauge Amplifier Board v1</title>
@@ -47,7 +70,7 @@
 &lt;img src=&quot;https://lh5.googleusercontent.com/--vEKylhTCr8/UxzdYbpqfrI/AAAAAAAAGSs/eeQI4S9xxGE/w655-h491-no/A.png&quot;&gt;
 &lt;p&gt;Jack and Barett prep the rings.&lt;/p&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-7RJG1P8KL8w/UxzdY7q54fI/AAAAAAAAGS0/p6Uzi23VH34/w491-h655-no/B.png&quot;&gt;
-&lt;p&gt;Tung&amp;#8217;s cleaning and applying wax to the cylindrical molds.&lt;/p&gt;
+&lt;p&gt;Tung&amp;#8217;s cleaning and applying &lt;s&gt;wax&lt;/s&gt; liquid hybrid mold release to the cylindrical molds.&lt;/p&gt;
 &lt;img src=&quot;https://lh5.googleusercontent.com/-_xjnsnRRzoA/UxzdYm09qlI/AAAAAAAAGSw/8wYd4PqhtL8/w491-h655-no/C.png&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/-FF1yV9TBMy0/UxzdaMfzhqI/AAAAAAAAGS8/BgV_LB5nz-8/w655-h491-no/D.png&quot;&gt;
 &lt;p&gt;Not sure we have the hang of core seams yet&amp;#8230;&lt;/p&gt;

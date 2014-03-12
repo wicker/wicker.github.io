@@ -7,6 +7,29 @@
 		<atom:link href="feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>GetPixels</title>
+				<description>&lt;img src=&quot;/images/project/convolution/getpixels.png&quot;&gt;
+&lt;p&gt;GetPixels converts an image to a text file of grayscale pixel values and reconstructs the image. I wrote it so I could manipulate the value of an image&amp;#8217;s pixels using convolution kernels and easily look at the results.&lt;/p&gt;
+&lt;p&gt;Find the code at &lt;a href=&quot;http://github.com/wicker/getpixels&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;GetPixels is open source software licensed under the &lt;a href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;Creative Commons Attribution-ShareAlike International&lt;/a&gt; license. That means you can share and adapt the work for any purpose as long as you give me credit and share your work alike.&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;./GetPixels.o &amp;lt;op&amp;gt; &amp;lt;image.png&amp;gt; &amp;lt;pixels.txt&amp;gt; &amp;lt;width&amp;gt; &amp;lt;height&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;op&lt;/code&gt; is the desired operation. Use &amp;#8216;1&amp;#8217; for image&amp;#8594;pixels and &amp;#8216;2&amp;#8217; for pixels&amp;#8594;image.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;image.png&lt;/code&gt; is the relative file path to the image and &lt;code&gt;pixels.txt&lt;/code&gt; is the text file.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;height&lt;/code&gt; and &lt;code&gt;width&lt;/code&gt; are the values in pixels of the image.&lt;/p&gt;
+&lt;h3&gt;Build&lt;/h3&gt;
+&lt;p&gt;I used OpenCV 2.4.8 and g++ to compile on Linux Mint 15 (Olivia).&lt;/p&gt;
+&lt;h3&gt;Failure Cases&lt;/h3&gt;
+&lt;p&gt;The program will alert you if the height or width is less than 1, if the input image or input pixel file don&amp;#8217;t exist, or if the operation chosen is not 1 or 2.&lt;/p&gt;
+&lt;p&gt;Note: The output files will be created and overwrite any existing files without prompting!&lt;/p&gt;
+&lt;p&gt;If you give the program a portrait of dimensions 240&amp;#215;320 but you tell the program it&amp;#8217;s a landscape of dimensions 320&amp;#215;240, you&amp;#8217;ll get a broken reconstruction:&lt;/p&gt;
+&lt;img src=&quot;/images/project/convolution/landscape.png&quot;&gt;</description>
+				<pubDate>Mon, 10 Mar 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/03/getpixels</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/03/getpixels</guid>
+			</item>
+		
+			<item>
 				<title>Strain Gauge Amplifier Board v1</title>
 				<description>&lt;p&gt;Made in collaboration with Andrew Greenberg, who is awesome.&lt;/p&gt;
 &lt;p&gt;The quarter-bridge design uses the strain gauges as one of the four resistors in a Wheatstone bridge, references the bridge to 2.5V, and runs the output of the bridge through an INA125 Instrumentation Op-Amp IC which actually has three op amps in it. We&amp;#8217;re using Euroterminals for the strain gauge input and the sense signal outputs.&lt;/p&gt;
@@ -38,7 +61,7 @@
 &lt;img src=&quot;https://lh5.googleusercontent.com/--vEKylhTCr8/UxzdYbpqfrI/AAAAAAAAGSs/eeQI4S9xxGE/w655-h491-no/A.png&quot;&gt;
 &lt;p&gt;Jack and Barett prep the rings.&lt;/p&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-7RJG1P8KL8w/UxzdY7q54fI/AAAAAAAAGS0/p6Uzi23VH34/w491-h655-no/B.png&quot;&gt;
-&lt;p&gt;Tung&amp;#8217;s cleaning and applying wax to the cylindrical molds.&lt;/p&gt;
+&lt;p&gt;Tung&amp;#8217;s cleaning and applying &lt;s&gt;wax&lt;/s&gt; liquid hybrid mold release to the cylindrical molds.&lt;/p&gt;
 &lt;img src=&quot;https://lh5.googleusercontent.com/-_xjnsnRRzoA/UxzdYm09qlI/AAAAAAAAGSw/8wYd4PqhtL8/w491-h655-no/C.png&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/-FF1yV9TBMy0/UxzdaMfzhqI/AAAAAAAAGS8/BgV_LB5nz-8/w655-h491-no/D.png&quot;&gt;
 &lt;p&gt;Not sure we have the hang of core seams yet&amp;#8230;&lt;/p&gt;
@@ -166,24 +189,6 @@
 				<pubDate>Tue, 28 Jan 2014</pubDate>
 				<link>http://www.wickerbox.net//2014/01/28-note</link>
 				<guid isPermaLink="true">http://www.wickerbox.net//2014/01/28-note</guid>
-			</item>
-		
-			<item>
-				<title>Oven Control Board v1</title>
-				<description>&lt;p&gt;An ME capstone team at Portland State is working on an oven so we can cure our own composites. It&amp;#8217;s awesome. This oven control board was a five-day project that came out of nowhere this week on Tuesday and which I delivered on Sunday.&lt;/p&gt;
-&lt;p&gt;Tung, their electrical person, already had the design figured out and working with breadboard components and an Arduino. What he really wanted was an Arduino shield so we met, looked at what he had, and figured out how we&amp;#8217;d put it on the right footprint. This is the first time I&amp;#8217;d been able to sit with someone who was new to Eagle and really explain what makes a decent schematic, so it&amp;#8217;s pretty cool to see how much I&amp;#8217;ve learned in just a couple of years.&lt;/p&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard-schema.png&quot;&gt;
-&lt;p&gt;The layout was constrained by the shield but even moreso by our plan to use the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; router. It had to be a two-layer board that didn&amp;#8217;t have plated through-holes or vias. I managed to put all the traces except one on the bottom layer because all the components get soldered on the bottom side (they&amp;#8217;re all through-hole) and then I just made that a much wider polygon fill and dropped vias to get the top-trace signal connected down below.&lt;/p&gt;
-&lt;p&gt;Unfortunately, Arduino shields sit on top of the Arduino so I had to drop an extra via on each pad of the 0.1&amp;quot; headers so copper wire could be slid through and squashed, essentially plating them myself.&lt;/p&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard-layout.png&quot;&gt;
-&lt;p&gt;The final product doesn&amp;#8217;t look too shabby. Well, I take that back &amp;#8212; the isolation on the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; is so tiny (even at the double-width!) that I&amp;#8217;m terrified of putting too much solder on each pin and shorting it outside the pad. This is really crappy soldering but I ohmed everything out so electrically the joints are fine.&lt;/p&gt;
-&lt;p&gt;Definitely I&amp;#8217;ve been spoiled with OSHPark and $5/sq in board with plated through-holes and solder mask.&lt;/p&gt;
-&lt;p&gt;The libraries and everything are all up in the &lt;a href=&quot;https://github.com/wicker/oven-controller&quot;&gt;oven-controller Github repo&lt;/a&gt;.&lt;/p&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard-top.png&quot;&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard-side.png&quot;&gt;</description>
-				<pubDate>Mon, 27 Jan 2014</pubDate>
-				<link>http://www.wickerbox.net//2014/01/oven-control-board</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2014/01/oven-control-board</guid>
 			</item>
 		
 	</channel>
