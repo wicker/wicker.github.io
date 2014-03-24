@@ -4,13 +4,286 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-03-11T20:17:46-07:00</updated>
+ <updated>2014-03-23T17:19:05-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Building Raised Beds</title>
+   <link href="http://wickerbox.net/2014/03/raised-beds"/>
+   <updated>2014-03-16T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2014/03/raised-beds</id>
+   <content type="html">&lt;p&gt;Getting started with the garden this year. Last year I did all right with veggies but they were in the ground and it could have been better. Also, I have the smallest backyard ever.&lt;/p&gt;
+&lt;p&gt;There are three 3&amp;#8242;&amp;#215;6&amp;#8242; beds about 20&amp;quot; high. I used cedar fence boards and pine studs, then coated them with linseed oil. Total cost was about $100 and one day&amp;#8217;s work.&lt;/p&gt;
+&lt;img src=&quot;/images/project/raisedbeds/setup.png&quot;&gt;
+&lt;img src=&quot;/images/project/raisedbeds/second-box.png&quot;&gt;
+&lt;img src=&quot;/images/project/raisedbeds/left-finish.png&quot;&gt;
+&lt;img src=&quot;/images/project/raisedbeds/right-finish.png&quot;&gt;
+&lt;img src=&quot;/images/project/raisedbeds/cropped-pano.png&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Image Convolution in C</title>
+   <link href="http://wickerbox.net/2014/03/convolution-in-c"/>
+   <updated>2014-03-15T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2014/03/convolution-in-c</id>
+   <content type="html">&lt;h5&gt;Introduction&lt;/h5&gt;
+&lt;p&gt;This project performs pixel-by-pixel convolution on a 2-dimensional image of height and width less than 900 pixels. I wanted to really grok convolution and I wanted a program I could run on the command line with a script so I could compare different kernel matrices.&lt;/p&gt;
+&lt;p&gt;Apart from the convolution program itself, I wrote a small helper program called GetPixels that uses OpenCV to turn an image into a text file of grayscale pixel values and vice versa.&lt;/p&gt;
+&lt;p&gt;This project follows from my previous &lt;a href=&quot;#&quot;&gt;SystemVerilog&lt;/a&gt; implementation but I lack access to a decent SysV simulator and felt C would work just fine.&lt;/p&gt;
+&lt;p&gt;The code is available at &lt;a href=&quot;http://github.com/wicker/image-processing/&quot;&gt;my GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&quot;/images/project/convolution/c-introimg.png&quot;&gt;
+&lt;h5&gt;GetPixels&lt;/h5&gt;
+&lt;p&gt;First of all, the convolution program takes a text file of 8-bit grayscale pixel values with values between 0 (black) and 255 (white). GetPixels is a small OpenCV-based tool to turn a gray or color image into a text file of pixel values and back again. Check out &lt;a href=&quot;/2014/03/getpixels/&quot;&gt;the full GetPixels instructions here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Basically, GetPixels takes an input &lt;span class=&quot;caps&quot;&gt;PNG&lt;/span&gt; and outputs a text file with the grayscale value of the pixels separated by a space, like this:&lt;/p&gt;
+&lt;p&gt;164 165 165 165 165 164 165 165 165 164 165 166&lt;/p&gt;
+&lt;p&gt;At the end, once you&amp;#8217;ve performed convolution with your kernel, GetPixels can take the modified input text file with grayscale pixel values separated by spaces and returns an output image.&lt;/p&gt;
+&lt;p&gt;Usage: &lt;code&gt;./GetPixels.o &amp;lt;operation&amp;gt; &amp;lt;input file&amp;gt; &amp;lt;output file&amp;gt; &amp;lt;width&amp;gt; &amp;lt;height&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;operation&amp;gt; is 1 for image -&amp;gt; text file or 2 for text file -&amp;gt; image&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;&amp;lt;image file&amp;gt; is the relative path name to an image file&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;&amp;lt;pixel file&amp;gt; is the relative path name to a text file of pixels&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;&amp;lt;width&amp;gt; is the width of the image in pixels&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;&amp;lt;height&amp;gt; is the height of the image in pixels&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To get a text file of the pixels of a 800&amp;#215;600 mountain.png, try this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./GetPixels.o 1 mountain.png pixels.txt 800 600&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To reconstruct an image from that pixel file, try this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./GetPixels.o 2 mountainReconstructed.png pixels.txt 240 320&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Note: if you don&amp;#8217;t change the pixel values by convolution or other way, then mountain.png and mountainReconstructed.png should be identical. It&amp;#8217;s a good way to check that the program works.&lt;/p&gt;
+&lt;h5&gt;Convolution&lt;/h5&gt;
+&lt;p&gt;The convolution program works by shoving an image&amp;#8217;s pixel values into an array and iterating over them with a convolution kernel matrix. The program takes arguments to specify input and output file names along with the number of kernels (1 or 2), kernel size (odd numbers between 1 and 17), and kernel coefficients (integers).&lt;/p&gt;
+&lt;p&gt;Usage:  ./main.o &lt;input.txt&gt; &lt;width&gt; &lt;height&gt; &lt;op&gt; &lt;kernel&gt; &lt;norm&gt; &lt;output.txt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;input.txt&lt;/code&gt; is the text file containing grayscale image pixel values.  &lt;br /&gt;
+&lt;code&gt;width&lt;/code&gt; in pixels, same as number of columns in image.  &lt;br /&gt;
+&lt;code&gt;height&lt;/code&gt; in pixels, same as number of rows in image.  &lt;br /&gt;
+&lt;code&gt;op&lt;/code&gt; is (1) a horizontal 1d, (2) a vertical 1d, or (3) custom kernel to be entered by the user.  &lt;br /&gt;
+&lt;code&gt;kernel&lt;/code&gt; is the N in the NxN kernel matrix that must be an odd number between 1 and 17.  &lt;br /&gt;
+&lt;code&gt;norm&lt;/code&gt; is (0) no or (1) yes to normalize (divide by number of coefficients) the image.  &lt;br /&gt;
+&lt;code&gt;output.txt&lt;/code&gt; is the text file to store resulting grayscale image pixel values.&lt;/p&gt;
+&lt;p&gt;To perform a custom 2D operation on a 240&amp;#215;320 image with a 5&amp;#215;5 filter kernel that will be normalized:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./main.o input.txt 240 320 3 5 1 output.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To perform a 1D horizontal operation on the same 240&amp;#215;320 image with a 3&amp;#215;3 filter kernel that will not be normalized:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./main.o input.txt 240 320 1 3 0 output.txt&lt;/code&gt;&lt;/p&gt;
+&lt;h5&gt;Scripting Example&lt;/h5&gt;
+&lt;p&gt;I put the following in a script to run a bunch of kernels all in a row. I used the same input image (brokentop.txt) but saved the outputs to their own files so I could reconstruct them with GetPixels at the end. The image is a portrait size of 240&amp;#215;320. I chose to do a single custom 3&amp;#215;3 operation and none of them are to be normalized.&lt;/p&gt;
+&lt;p&gt;First, I turned the brokentop.png image into a text file.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./GetPixels.o 1 brokentop.png brokentop.txt 240 320&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then I performed the operations, creating six output text files with the results.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./main.o brokentop.txt 240 320 3 3 0 output-horz.txt&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;./main.o brokentop.txt 240 320 3 3 0 output-sobel-h.txt &lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;./main.o brokentop.txt 240 320 3 3 0 output-vert.txt&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;./main.o brokentop.txt 240 320 3 3 0 output-sobel-v.txt&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;./main.o brokentop.txt 240 320 3 3 0 output-45deg.txt&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;./main.o brokentop.txt 240 320 3 3 0 output-135deg.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Finally, I reconstructed images from the output files so I could look at them in an image viewer.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./GetPixels.o 2 output-horz.png output-horz.txt 240 320&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;./GetPixels.o 2 output-sobel-h.png output-sobel-h.txt 240 320&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;./GetPixels.o 2 output-vert.png output-vert.txt 240 320&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;./GetPixels.o 2 output-sobel-v.png output-sobel-v.txt 240 320&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;./GetPixels.o 2 output-45deg.png output-45deg.txt 240 320&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;./GetPixels.o 2 output-135deg.png output-135deg.txt 240 320&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;For each operation, the program prompted me to enter the coefficients from left to right by hand but I have a couple options for how to enter them. Using the kernel for a Sobel horizontal operator, I can enter the coefficients all on one line like this,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; +1 +2 +1 0 0 0 -1 -2 -1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;or I can enter them by lines like this,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;+1 +2 +1&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;0 0 0 &lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;-1 -2 -1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;which can be easier to read. Finally, I can enter them all like this,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;+1&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;+2  &lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;+1&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;0&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;0&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;0&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;-1&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;-2&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;-1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;so it really doesn&amp;#8217;t matter. I ended up writing them in the second form in a text file and copying/pasting. That way the test is built before I start and the results come out without needing editing.&lt;/p&gt;
+&lt;p&gt;The image on the left is the original brokentop.png. The image on the right is what it&amp;#8217;s turned into by GetPixels when the text file brokentop.txt is created.&lt;/p&gt;
+&lt;div class=&quot;convolution&quot;&gt;Original image&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/brokentop.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;GetPixels result&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/results-delta.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
+&lt;p&gt;The script lets you quickly do things like compare the six operations above when normalized (flag set to &amp;#8216;1&amp;#8217;) and not normalized (flag set to &amp;#8216;0&amp;#8217;). Here are the results of the convolution operations when they are not normalized. They&amp;#8217;re still very high noise, because the only filtering was high pass, which is effectively trying to find every edge in the image.&lt;/p&gt;
+&lt;div class=&quot;convolution&quot;&gt;Horizontal Filter&lt;br /&gt;
+-1 -1 -1 &lt;br /&gt;
+2 2 2&lt;br /&gt;
+-1 -1 -1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/not-normed/output-horz.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Sobel Horizontal Filter&lt;br /&gt;
+-1 -2 -1&lt;br /&gt;
+0 0 0 &lt;br /&gt;
+1 2 1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/not-normed/output-sobel-h.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Vertical Filter&lt;br /&gt;
+-1 2 -1&lt;br /&gt;
+-1 2 -1&lt;br /&gt;
+-1 2 -1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/not-normed/output-vert.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Sobel Vertical Filter&lt;br /&gt;
+-1 0 1 &lt;br /&gt;
+-2 0 2&lt;br /&gt;
+-1 0 1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/not-normed/output-sobel-v.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;45 Degrees&lt;br /&gt;
+-1 -1 2&lt;br /&gt;
+-1 2 -1&lt;br /&gt;
+2 -1 -1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/not-normed/output-45deg.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;135 Degrees&lt;br /&gt;
+2 -1 -1&lt;br /&gt;
+-1 2 -1&lt;br /&gt;
+-1 -1 2&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/not-normed/output-135deg.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Normalizing, on the other hand, provides a low pass effect and helps to smooth out the resulting image. These images were normalized after the filter. I ran the script in a fresh directory but passed a &amp;#8216;1&amp;#8217; to the &lt;code&gt;&amp;lt;norm&amp;gt;&lt;/code&gt; flag instead of a 0. You can tell these are much more useful images.&lt;/p&gt;
+&lt;div class=&quot;convolution&quot;&gt;Horizontal Filter&lt;br /&gt;
+-1 -1 -1 &lt;br /&gt;
+2 2 2&lt;br /&gt;
+-1 -1 -1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/normed/output-horz.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Sobel Horizontal Filter&lt;br /&gt;
+-1 -2 -1&lt;br /&gt;
+0 0 0 &lt;br /&gt;
+1 2 1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/normed/output-sobel-h.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Vertical Filter&lt;br /&gt;
+-1 2 -1&lt;br /&gt;
+-1 2 -1&lt;br /&gt;
+-1 2 -1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/normed/output-vert.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Sobel Vertical Filter&lt;br /&gt;
+-1 0 1 &lt;br /&gt;
+-2 0 2&lt;br /&gt;
+-1 0 1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/normed/output-sobel-v.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;45 Degrees&lt;br /&gt;
+-1 -1 2&lt;br /&gt;
+-1 2 -1&lt;br /&gt;
+2 -1 -1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/normed/output-45deg.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;135 Degrees&lt;br /&gt;
+2 -1 -1&lt;br /&gt;
+-1 2 -1&lt;br /&gt;
+-1 -1 2&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/normed/output-135deg.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
+&lt;h5&gt;How Convolution Works&lt;/h5&gt;
+&lt;p&gt;Pixel by pixel, the kernel matrix is placed with the pixel of interest in the center. Each coefficient in the matrix is multiplied by the neighboring pixel it covers. The values are then added up and may or may not normalized.&lt;/p&gt;
+&lt;p&gt;Choose the kernel matrix wisely! Kernel matrices are the discrete version of a continuous filtering function and you can develop your own or adapt the common ones.&lt;/p&gt;
+&lt;p&gt;In edge cases where the some of the coefficients in the kernel matrix fall off the edge of the image and don&amp;#8217;t have corresponding pixels to multiply against, this program tracks how many coefficients weren&amp;#8217;t used and only adds and/or calculates an average for the ones which were. There is no wrapping, mirroring, or other border tricks. The pixels are just ignored.&lt;/p&gt;
+&lt;p&gt;The program also checks if a value is greater than 255 or less than zero, and bounds the value accordingly.&lt;/p&gt;
+&lt;h5&gt;Delta Function&lt;/h5&gt;
+&lt;p&gt;To produce a control image for each set run, use a delta function. The delta function multiplies all the other pixels by zero so the only value to be output is the pixel itself. Obviously, a delta function should not be normalized.&lt;/p&gt;
+&lt;div class=&quot;convolution&quot;&gt;Original image&lt;br /&gt;
+&amp;nbsp;&lt;br /&gt;
+&amp;nbsp;&lt;br /&gt;
+&amp;nbsp;&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/brokentop.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Delta function&lt;br /&gt;
+0 0 0&lt;br /&gt;
+0 1 0 &lt;br /&gt;
+0 0 0&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/results-delta.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
+&lt;h5&gt;Common Kernels &amp;#8211; Rabbit Example&lt;/h5&gt;
+&lt;p&gt;This is a set of examples showing high and low pass kernels from &lt;a href=&quot;http://en.wikipedia.org/wiki/Kernel_%28image_processing%29&quot;&gt;the Wikipedia image processing kernel page&lt;/a&gt; on a Wikipedia Creative Commons-licensed rabbit image.&lt;/p&gt;
+&lt;p&gt;The delta image is the original image in grayscale.&lt;/p&gt;
+&lt;div class=&quot;convolution&quot;&gt;Delta&lt;br /&gt;
+0 0 0&lt;br /&gt;
+0 1 0 &lt;br /&gt;
+0 0 0&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/rabbit-kernel-delta.png&quot;&gt;&lt;/div&gt;
+&lt;h5&gt;Rabbit Example &amp;#8211; Low Pass Filters&lt;/h5&gt;
+&lt;p&gt;Low pass filters like a blur are generally normalized. The most common is a Gaussian distribution, which these are not. To get more of a blur, just enlarge the kernel.&lt;/p&gt;
+&lt;div class=&quot;convolution&quot;&gt;Blur #1 (Normalized)&lt;br /&gt;
+1 2 1 &lt;br /&gt;
+2 4 2&lt;br /&gt;
+1 2 1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/output-blur1.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Blur #2 (Normalized)&lt;br /&gt;
+1 1 1 &lt;br /&gt;
+1 1 1 &lt;br /&gt;
+1 1 1 &lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/output-blur2.png&quot;&gt;&lt;/div&gt;
+&lt;h5&gt;Rabbit Example &amp;#8211; High Pass Filters&lt;/h5&gt;
+&lt;p&gt;High Pass filters are used for edge enhancement, edge detection, embossing, sharpening, or any operation where you want to bring attention to the difference between two pixels. The sharpen operation below is not normalized; the others are.&lt;/p&gt;
+&lt;div class=&quot;convolution&quot;&gt;Sharpen&lt;br /&gt;
+0 -1 0 &lt;br /&gt;
+-1 5 -1&lt;br /&gt;
+0 -1 0&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/sharpen.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Edge #1&lt;br /&gt;
+1 0 -1&lt;br /&gt;
+0 0 0 &lt;br /&gt;
+-1 0 1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/rabbit-kernel-edge1.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Edge #2&lt;br /&gt;
+0 1 0 &lt;br /&gt;
+1 -4 1 &lt;br /&gt;
+0 1 0&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/rabbit-kernel-edge2.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Edge #3&lt;br /&gt;
+-1 -1 -1 &lt;br /&gt;
+-1 8 -1 &lt;br /&gt;
+-1 -1 -1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/rabbit-kernel-edge3.png&quot;&gt;&lt;/div&gt;
+&lt;h5&gt;Kernel Sum (Brightness)&lt;/h5&gt;
+&lt;p&gt;There are three things &amp;#8211; luminance (brightness), hue, and saturation. We&amp;#8217;re working with grayscale values so we ignore hue and saturation. We&amp;#8217;re left with an 8-bit brightness value. That means that if the sum of our kernel is greater than one, we&amp;#8217;re going to get pixel values at greater than we started with, which is a brighter image. If the kernel is less than one, we&amp;#8217;ll get a darker image.&lt;/p&gt;
+&lt;div class=&quot;convolution&quot;&gt;Edge (Sum = -2)&lt;br /&gt;
+0 1 0 &lt;br /&gt;
+1 -6 1 &lt;br /&gt;
+0 1 0&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-m2.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Edge (Sum = -1)&lt;br /&gt;
+0 1 0 &lt;br /&gt;
+1 -5 1 &lt;br /&gt;
+0 1 0&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-m1.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Edge (Sum = 0)&lt;br /&gt;
+0 1 0 &lt;br /&gt;
+1 -4 1 &lt;br /&gt;
+0 1 0&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-0.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Edge (Sum = 1)&lt;br /&gt;
+0 1 0 &lt;br /&gt;
+1 -3 1 &lt;br /&gt;
+0 1 0&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-p1.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Edge (Sum = 2)&lt;br /&gt;
+0 1 0 &lt;br /&gt;
+1 -2 1 &lt;br /&gt;
+0 1 0&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-p2.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;Edge (Sum = 3)&lt;br /&gt;
+0 1 0 &lt;br /&gt;
+1 -1 1  &lt;br /&gt;
+0 1 0&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-p3.png&quot;&gt;&lt;/div&gt;
+&lt;h5&gt;1D Examples&lt;/h5&gt;
+&lt;p&gt;These two images just have the 1-dimensional horizontal matrix specified. The left image is a blur and the right is a 3&amp;#215;3 edge.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./GetPixels.o 1 brokentop.png brokentop.txt&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;./main.o brokentop.txt 240 320 1 9 1 1d-blur.txt&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;./main.o brokentop.txt 240 320 1 3 1 1d-edge.txt&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;./GetPixels.o 2 1d-blur.png 1d-blur.txt 240 320&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;./GetPixels.o 2 1d-edge.png 1d-edge.txt 240 320&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;convolution&quot;&gt;9&amp;#215;9 Blur (Normalized)&lt;br /&gt;
+1 1 1 1 1 1 1 1 1 &lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/1d-blur.png&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;convolution&quot;&gt;3&amp;#215;3 Edge (Normalized)&lt;br /&gt;
+-1 0 1&lt;br /&gt;
+&lt;img src=&quot;/images/project/convolution/results/1d-edge.png&quot;&gt;&lt;/div&gt;</content>
+ </entry>
  
  <entry>
    <title>GetPixels</title>
@@ -41,6 +314,7 @@
    <updated>2014-03-09T00:00:00-08:00</updated>
    <id>http://wickerbox.net/2014/03/strain-gauge-interconnect-board</id>
    <content type="html">&lt;p&gt;Made in collaboration with Andrew Greenberg, who is awesome.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: the schematic below is wrong in that the &lt;span class=&quot;caps&quot;&gt;FET&lt;/span&gt; is backwards. The board is wrong in that the IC footprint is the wrong width. Verify both for yourself if you use the design!&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The quarter-bridge design uses the strain gauges as one of the four resistors in a Wheatstone bridge, references the bridge to 2.5V, and runs the output of the bridge through an INA125 Instrumentation Op-Amp IC which actually has three op amps in it. We&amp;#8217;re using Euroterminals for the strain gauge input and the sense signal outputs.&lt;/p&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/pcdcpBJTOS9orbW-b-UthrrfCHo7wxRd7bw91--ptA=w1022-h627-no&quot;&gt;
 &lt;p&gt;This is a non-intuitive approach but bear with me. Everything on the board except the purple reversed lettering is on the top side of the board. The reversed purple lettering is on the bottom. I made the boards on the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; router that doesn&amp;#8217;t actually make two sides of a hole connect electrically &amp;#8230; so we&amp;#8217;re soldering all the components, including the legs of the connectors, on the top side. The connectors are actually accessible on the bottom side. Just their pins are sticking through to the top layer.&lt;/p&gt;
@@ -57,7 +331,9 @@
 &lt;p&gt;What it&amp;#8217;ll look like.&lt;/p&gt;
 &lt;img src=&quot;https://lh5.googleusercontent.com/-fu1c-1Ga-Ak/Uxzk4KLJHjI/AAAAAAAAGVU/IzbgZR9EksI/w764-h461-no/G.png&quot;&gt;
 &lt;p&gt;All ten boards, ten carrier boards, and the parchment stencil.&lt;/p&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-fTQEHqwPUYw/Uxzk3ulJQaI/AAAAAAAAGVQ/MGKQaDK_GxQ/w764-h437-no/H.png&quot;&gt;</content>
+&lt;img src=&quot;https://lh4.googleusercontent.com/-fTQEHqwPUYw/Uxzk3ulJQaI/AAAAAAAAGVQ/MGKQaDK_GxQ/w764-h437-no/H.png&quot;&gt;
+&lt;p&gt;I was out of town for the stress tests but the team took a ton of photos.&lt;/p&gt;
+&lt;img src=&quot;/images/project/straingauge/gaugeinuse.png&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -290,6 +566,18 @@ Exposure Bias: +2 EV&lt;/p&gt;
    <content type="html">&lt;p&gt;I was a little bummed this morning that January&amp;#8217;s over and I don&amp;#8217;t have any other hardware stuff to post about but I realized that I&amp;#8217;ve been super busy doing, you know, work for which I&amp;#8217;m paid and can&amp;#8217;t talk about. On the hobby hacking side, I&amp;#8217;ve done plenty of work this month between the oven controller, a couple of &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; RF board design reviews, the DxWiFi test, and my &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; habit. I&amp;#8217;ve also had four sessions of &lt;span class=&quot;caps&quot;&gt;EPL&lt;/span&gt; managing where other people came in to work on stuff.&lt;/p&gt;
 &lt;p&gt;One of my biggest reasons for having the site is to remind myself that I do things by posting pictures of the stuff I do. I tend to forget and then blame myself for being Not Productive Enough.&lt;/p&gt;
 &lt;p&gt;So looking back, I&amp;#8217;m delighted to remember that I had a really enjoyable January.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>29 Jan 2014</title>
+   <link href="http://wickerbox.net/2014/01/29-note"/>
+   <updated>2014-01-29T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/01/29-note</id>
+   <content type="html">&lt;p&gt;Some notes to myself about Eagle, Gerbers, layers, and what to use with the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; and what to use with OSHPark.&lt;/p&gt;
+&lt;p&gt;http://dorkbotpdx.org/wiki/pcb_order  silkscreens, etc.&lt;br /&gt;
+what is silkscreen, tcream, what are the layers &amp;#8212; what is OSHPark doing for me with the gerbers&lt;br /&gt;
+and what would I have to do differently if I was using PCBExpress or another fab house ordering system&lt;/p&gt;
+&lt;p&gt;They&amp;#8217;ve automated nearly everything and I&amp;#8217;m afraid I won&amp;#8217;t understand what&amp;#8217;s actually there if I tried to do my own boards. All these layers take some getting used to.&lt;/p&gt;</content>
  </entry>
  
  <entry>

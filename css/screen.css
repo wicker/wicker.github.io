@@ -212,6 +212,19 @@ article h3 {
   line-height: 1.3em;
   overflow: hidden;
 }
+article h5 {
+  font-family: 'Belleza', sans-serif;
+  font-size: 1.1em;
+  text-align:center;
+  margin: 20px 0 0 0;
+  width: 100%;
+  line-height: 1.3em;
+  overflow: hidden;
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 10px 0 10px 0;
+}
+
 
 article img {
   width: 100%;
@@ -219,3 +232,16 @@ article img {
   margin: 0px auto;
 }
 
+.convolution {
+  float: left;
+  display: inline-block;
+  width: 45%;
+  text-align:center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.convolution img {
+  margin: 0px auto;
+  width: 50%;
+}
