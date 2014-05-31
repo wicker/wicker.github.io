@@ -34,6 +34,8 @@
           <ul>
             <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
             <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+ <br />
+            <li><a href="/chronological/">All Posts by Date</a></li>
             
           </ul>
         </nav>
@@ -48,9 +50,10 @@
             <li><a href="/travels/europe/">Europe</a></li>
             <li><a href="/travels/southwest/">Desert Southwest</a></li>
             <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/travels/east-coast/">East Coast</a></li>
             <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
             <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
-            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
             <li><a href="/private-pilot/">Private Pilot</a></li>
           </ul>
           <h4>Projects</h4>
@@ -63,7 +66,7 @@
           </ul>
           <h4>Other Stuff</h4>
           <ul> 
-            <li><a href="/writing/">Writing</a></li>
+            <li><a href="/writing/">Writing & Talks</a></li>
             <li><a href="/photography/">Photography</a></li>
             <li><a href="/garden/">Garden</a></li>
           </ul>
@@ -106,7 +109,7 @@
 <code>1, 0, Start_track</code></p>
 <p>I wired the Maxbotix LV-EZ4 ultrasonic rangefinder to the Arduino via a protoshield and wrote a script to sample the rangefinder for a finite period of time and turn the distance measurements into octaves. I didn&#8217;t make it output a file; you have to actually copy the results from the Arduino&#8217;s serial monitor. Obviously it&#8217;d be better to just get a file and script the whole process.</p>
 <div style="margin-left: 20px;">
-<div class="highlight"><pre><code class="c++"><span class="k">const</span> <span class="kt">int</span> <span class="n">pwPin</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+<div class="highlight"><pre><code class="c"><span class="k">const</span> <span class="kt">int</span> <span class="n">pwPin</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
 
 <span class="kt">long</span> <span class="n">pulse</span><span class="p">,</span> <span class="n">inches</span><span class="p">,</span> <span class="n">cm</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">outOctave</span><span class="p">,</span> <span class="n">count</span><span class="p">;</span>
@@ -150,7 +153,9 @@
   <span class="p">}</span>
   <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">100</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div>
+</code></pre>
+</div>
+</div>
 <p>I took the <span class="caps">CSV</span> file I&#8217;d made by copying and pasting and applied the csvmidi script in the other direction (<span class="caps">CSV</span>&#8594;<span class="caps">MIDI</span>). It&#8217;s a pretty limited file, which you can play using timidity.</p>
 <p><a href="https://github.com/wicker/ardu-midi-ping/blob/master/results/wicker.mid?raw=true">Song is here</a> (<span class="caps">MIDI</span>)</p>
 <p><a href="http://github.com/wicker/ardu-midi-ping/">Code is here</a> (Github)</p>

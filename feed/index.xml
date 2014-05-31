@@ -4,13 +4,112 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-03-26T11:42:13-07:00</updated>
+ <updated>2014-05-31T09:54:56-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>STM32F4-Discovery Breakout Board</title>
+   <link href="http://wickerbox.net/2014/05/stm32f4-discovery-breakout"/>
+   <updated>2014-05-24T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2014/05/stm32f4-discovery-breakout</id>
+   <content type="html">&lt;p&gt;The STM32F4-Discovery board is a really great dev board that breaks out all the pins to, unfortunately, male headers. All of my sensors have male pins so I finally gave up daisy-chaining female-to-male jumpers and decided to make a breakout board on the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; router in the Electronics Prototyping Lab.&lt;/p&gt;
+&lt;p&gt;I was lucky enough to find Jason Lopez&amp;#8217;s Eagle schematic and footprint but I had trouble with the drills so I changed the drill size. Otherwise it saved me a ton of time and effort. Thanks, Jason!&lt;/p&gt;
+&lt;p&gt;This is the schematic and board layout for the two-layer board. It&amp;#8217;s really a one-layer board, as the vias aren&amp;#8217;t plated. I ran all the traces on the bottom side of the board so I could place the female headers through from the top.&lt;/p&gt;
+&lt;img src=&quot;/images/project/stm32f4discovery/discovery-breakout-sch.png&quot;&gt;
+&lt;img src=&quot;/images/project/stm32f4discovery/discovery-breakout-brd.png&quot;&gt;
+&lt;p&gt;There are four female headers so the dev board doesn&amp;#8217;t have to be soldered in and four more for the jumpers to attach.&lt;/p&gt;
+&lt;img src=&quot;/images/project/stm32f4discovery/IMG_1838.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/stm32f4discovery/IMG_1839.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/stm32f4discovery/IMG_1840.JPG&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Garden Update</title>
+   <link href="http://wickerbox.net/2014/05/garden-update"/>
+   <updated>2014-05-20T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2014/05/garden-update</id>
+   <content type="html">&lt;p&gt;We&amp;#8217;re having our usual scattered, unpredictable mix of thunderstorms, warm rain, hail, brilliant sunshine, and blue skies, so the garden has exploded in size over the last couple of weeks.&lt;/p&gt;
+&lt;p&gt;The irrigation stuff arrived. My cat approves.&lt;/p&gt;
+&lt;img src=&quot;/images/project/garden2/IMG_1663_crop.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/garden2/IMG_1669.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/garden2/IMG_1670.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/garden2/IMG_1673.JPG&quot;&gt;
+&lt;p&gt;My boss started tomatoes from seed and ended up with too many so I now have way more tomatoes than I know what to do with. I&amp;#8217;m going to move over some of the broccoli and cabbage from the right-hand box to the tomato box to make some room.&lt;/p&gt;
+&lt;img src=&quot;/images/project/garden2/IMG_1674.JPG&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>McCall Point</title>
+   <link href="http://wickerbox.net/2014/05/mccall-point"/>
+   <updated>2014-05-11T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2014/05/mccall-point</id>
+   <content type="html">&lt;p&gt;I went with some friends up to McCall Point on the plateau east of Mosier, Oregon, for a Mother&amp;#8217;s Day hike.&lt;/p&gt;
+&lt;p&gt;First we stopped briefly in Mosier.&lt;/p&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-H_UvL1FRdNs/U3PC2K_G4eI/AAAAAAAAGck/FFVHPUI-h78/w489-h652-no/095.JPG&quot;&gt;
+&lt;p&gt;Then we headed up to the plateau and started off towards McCall Point. It&amp;#8217;s a little less than 1100&amp;#8217; elevation gain over two miles.&lt;/p&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-bw4YYg-c3-g/U3PC3ffKuvI/AAAAAAAAGdA/x1I9dhGV08w/w800-h600-no/113.JPG&quot;&gt;
+&lt;p&gt;Looking back at the Washington State town of Lyle.&lt;/p&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-JDlC8gnmnAo/U3PC3YJQoBI/AAAAAAAAGc0/i7Jh3ZLCLD0/w800-h600-no/120.JPG&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-TteVE4zTmsc/U3PC34ktqKI/AAAAAAAAGc4/k3nYr6KLS68/w800-h600-no/130.JPG&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-6oDnMIwBvJQ/U3PC5rkpcoI/AAAAAAAAGdg/TPSz1uBi0jg/w800-h600-no/134.JPG&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-j-fCJoHO3e8/U3PC6NAXWsI/AAAAAAAAGdc/FZcglWMF9-Q/w800-h600-no/150.JPG&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-xL7BFwxpQwg/U3PC7MBwPqI/AAAAAAAAGdw/5TALuso2sQk/w800-h600-no/151.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/misc/mccall-blended.png&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-ED8ngLYasLU/U3PC8tzai_I/AAAAAAAAGeM/7KhnsUncAZs/w800-h600-no/156.JPG&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-u1Ofr4DYDcI/U3PC8i27lyI/AAAAAAAAGeE/CmKm3Gi8srw/w800-h600-no/157.JPG&quot;&gt;
+&lt;p&gt;The trail loops around the meadow at the top, perfect for a picnic.&lt;/p&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-2zWNs0tTXsI/U3PC9PuxTWI/AAAAAAAAGeU/ECckBPTZR5c/w800-h600-no/178.JPG&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-oVFJnsVkiPo/U3PC9vuc20I/AAAAAAAAGeg/MTvZQFSPc94/w800-h600-no/183.JPG&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-C-dwR9EvHTQ/U3PC-fGlT_I/AAAAAAAAGec/5D8WwKxgGfw/w800-h600-no/184.JPG&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Marlboro College</title>
+   <link href="http://wickerbox.net/2014/05/marlboro-college-vermont"/>
+   <updated>2014-05-05T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2014/05/marlboro-college-vermont</id>
+   <content type="html">&lt;p&gt;A friend of mine went off to a tiny liberal arts college on a hilltop in Vermont to get a philosophy and literature degree, which might be the exact opposite of what I&amp;#8217;ve done in every way, so I went out to visit him shortly before graduation. I arrived in Boston just after midnight, rented a car, and drove through New Hampshire to Vermont.&lt;/p&gt;
+&lt;p&gt;These are just some photos for my own memories. The woods in particular were beautiful. Marlboro, like the rest of the East Coast, experienced a super cold winter that lingered into May, though I guess the snow had melted right before I got there. Walking and talking on the trails was satisfying, and everywhere there were glimpses of other people having been there: sculptures, little shrines, art.&lt;/p&gt;
+&lt;img src=&quot;/images/travels/marlboro/007.JPG&quot;&gt;
+&lt;img src=&quot;/images/travels/marlboro/012.JPG&quot;&gt;
+&lt;p&gt;Dalrymple and the back of the library. I didn&amp;#8217;t take many photos since I was too busy hanging out, but I wanted to have something visual to remember.&lt;/p&gt;
+&lt;img src=&quot;/images/travels/marlboro/022.JPG&quot;&gt;
+&lt;img src=&quot;/images/travels/marlboro/023.JPG&quot;&gt;
+&lt;p&gt;Googly eyes stuck on National Geographic cut-outs around the house.&lt;/p&gt;
+&lt;img src=&quot;/images/travels/marlboro/024.JPG&quot;&gt;
+&lt;img src=&quot;/images/travels/marlboro/032.JPG&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Square Foot Plan</title>
+   <link href="http://wickerbox.net/2014/04/square-foot-plan"/>
+   <updated>2014-04-30T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2014/04/square-foot-plan</id>
+   <content type="html">&lt;p&gt;This is the layout of the beds:&lt;/p&gt;
+&lt;p&gt;I planted in the right-hand two beds. They&amp;#8217;re each 3 feet wide by 6 feet long by 2 feet high. I bought a couple of blueberries and potted them in between the raised beds. I&amp;#8217;m watering by hand until the irrigation stuff arrives.&lt;/p&gt;
+&lt;img src=&quot;/images/project/garden1/IMG_1607.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/garden1/IMG_1608.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/garden1/IMG_1610.JPG&quot;&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Foxcar Board Build</title>
+   <link href="http://wickerbox.net/2014/04/foxcar-board-build"/>
+   <updated>2014-04-30T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2014/04/foxcar-board-build</id>
+   <content type="html">&lt;img src=&quot;/images/project/foxcar/controlboardv1-oshpark.png&quot;&gt;
+&lt;p&gt;Just a quick update to say the Foxcar Control Board is built! I left the &lt;span class=&quot;caps&quot;&gt;ENABLE&lt;/span&gt; pin unconnected on the voltage regulator (this is what I get for not seeking out a design review&amp;#8230;) so I had to short that pin to &lt;span class=&quot;caps&quot;&gt;VCC&lt;/span&gt;. With that done, plugging into the &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; successfully illuminated the 3.3V and &lt;span class=&quot;caps&quot;&gt;VIN&lt;/span&gt; LEDs, so power is theoretically available to both the STM32F4 and the motor driver chip.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/IMG_1830.JPG&quot;&gt;
+&lt;p&gt;I did tear off the microUSB when trying to disconnect the &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; cable so I resolve from now on to always choose &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; packages with anchoring slots. I had to &lt;span class=&quot;caps&quot;&gt;RTV&lt;/span&gt; it down, resolder, and then just ripped it up again so I gave up and switched over to providing power from the 7V LiPo directly.&lt;/p&gt;
+&lt;p&gt;Turns out that worked fine too, at least at first, so the LEDs for &lt;span class=&quot;caps&quot;&gt;VIN&lt;/span&gt; and 3.3V were lit as expected but I definitely had a short from 3.3V to &lt;span class=&quot;caps&quot;&gt;GND&lt;/span&gt; somewhere and I made a little volcano in the middle of my STM32F4 chip.&lt;/p&gt;
+&lt;p&gt;While I wait to get a chance to rework, including remove/replacing that chip, I&amp;#8217;m going back to prototyping on the STM32F4 Discovery board.&lt;/p&gt;
+&lt;img src=&quot;/images/project/foxcar/IMG_1847.JPG&quot;&gt;</content>
+ </entry>
  
  <entry>
    <title>Cape Lookout</title>
@@ -858,7 +957,9 @@ and what would I have to do differently if I was using PCBExpress or another fab
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;reset&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;halt&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;write&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;write_image&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;erase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;proj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;psas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stm32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hex&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;reset&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;p&gt;Then the board should be programmed correctly.&lt;/p&gt;
 &lt;p&gt;Huge thanks to Kay and Dave for helping me get started.&lt;/p&gt;</content>
  </entry>
@@ -878,22 +979,8 @@ and what would I have to do differently if I was using PCBExpress or another fab
 &lt;img src=&quot;/images/project/wickerv2/indent.png&quot;&gt;
 &lt;p&gt;Posts do need to be sorted for display purposes in the category and front pages, so I&amp;#8217;m still using a lot of header:&lt;/p&gt;
 &lt;div style=&quot;margin-left: 20px;&quot;&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;post&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Making Wickerbox - v2&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;software&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/images/thumbs/wickerbox-v2.png&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;all&lt;/span&gt;
-&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;jekyll&lt;/span&gt;
-&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sites&lt;/span&gt;
-&lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;projects&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;purpose&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;project&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;2013&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Combination of content and design changes.&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Portland, Oregon&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Liquid error: Flag value is invalid: -O &amp;quot;&amp;quot;&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Implementation&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I wrote the layout file to be as simple as possible. I&amp;#8217;m stopped using an out-of-the-box responsive framework and intend to just put in some mobile tweaks some time in the future. I&amp;#8217;m not too worried about making the site look fantastic on mobile because the photos are integral and they&amp;#8217;re huge, so I&amp;#8217;m not really sure who&amp;#8217;s spending a lot of time on mobile browsing.&lt;/p&gt;
 &lt;p&gt;I stopped using the Galleria plugin for photos but I did switch fonts to use Google.&lt;/p&gt;
@@ -936,7 +1023,7 @@ and what would I have to do differently if I was using PCBExpress or another fab
 &lt;code&gt;1, 0, Start_track&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;I wired the Maxbotix LV-EZ4 ultrasonic rangefinder to the Arduino via a protoshield and wrote a script to sample the rangefinder for a finite period of time and turn the distance measurements into octaves. I didn&amp;#8217;t make it output a file; you have to actually copy the results from the Arduino&amp;#8217;s serial monitor. Obviously it&amp;#8217;d be better to just get a file and script the whole process.&lt;/p&gt;
 &lt;div style=&quot;margin-left: 20px;&quot;&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;c++&quot;&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pwPin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pwPin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pulse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outOctave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -980,7 +1067,9 @@ and what would I have to do differently if I was using PCBExpress or another fab
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;p&gt;I took the &lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt; file I&amp;#8217;d made by copying and pasting and applied the csvmidi script in the other direction (&lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt;&amp;#8594;&lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt;). It&amp;#8217;s a pretty limited file, which you can play using timidity.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/wicker/ardu-midi-ping/blob/master/results/wicker.mid?raw=true&quot;&gt;Song is here&lt;/a&gt; (&lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt;)&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://github.com/wicker/ardu-midi-ping/&quot;&gt;Code is here&lt;/a&gt; (Github)&lt;/p&gt;</content>
