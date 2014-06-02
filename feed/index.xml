@@ -4,13 +4,34 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-05-31T09:54:56-07:00</updated>
+ <updated>2014-06-01T17:15:42-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Opal Creek</title>
+   <link href="http://wickerbox.net/2014/05/opal-creek"/>
+   <updated>2014-05-25T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2014/05/opal-creek</id>
+   <content type="html">&lt;p&gt;I went down to Salem for breakfast and then headed up through Elkhorn Valley to the Opal Creek Trailhead. Way too many people around and the bridge was out in Jawbone Flats so I hiked just about to the loop trail fork and then went back. I took more time to check out the mine entrances and to explore down by the river. Found a millipede and had some fun thinking of millipede robots.&lt;/p&gt;
+&lt;p&gt;The best part of this hike is definitely past Jawbone Flats at the Opal pools but the whole area is beautiful so it was a nice day.&lt;/p&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/7QkvHKyEzLC_TIuRWkoEapAu1578x0GLKp5M7n5tFw=w900-h242-no&quot;&gt;
+&lt;img src=&quot;/images/travels/opalcreek/1.png&quot;&gt;
+&lt;img src=&quot;/images/travels/opalcreek/2.png&quot;&gt;
+&lt;img src=&quot;/images/travels/opalcreek/3.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-jc73ihRtR_M/U4oT3mDddZI/AAAAAAAAGiQ/0hAENfU5eEQ/w900-h288-no/IMG_1786.JPG&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-LM8Gj6qXppw/U4oTaKZQB_I/AAAAAAAAGg0/YMbSuUSeGRU/w869-h652-no/IMG_1789.JPG&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-bgpJt-uVtuk/U4oTa9rGnsI/AAAAAAAAGh4/vQKGWsVrfJM/w869-h652-no/IMG_1792.JPG&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-QwdT59CWGUw/U4oTbDeYYvI/AAAAAAAAGhw/1jYyXSjRJM4/w869-h652-no/IMG_1797.JPG&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-cB_IHyScM58/U4oTbQ8m0rI/AAAAAAAAGhM/ysW_77xWZLQ/w869-h652-no/IMG_1801.JPG&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-HNeba0H35FU/U4oTb1hvwFI/AAAAAAAAGhY/brOFi5YVy4U/w869-h652-no/IMG_1807.JPG&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-ZXi8cFiltzY/U4oTcL3vwPI/AAAAAAAAGhc/PG6d9qLLj84/w869-h652-no/IMG_1809.JPG&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-1KVHcrx-ioA/U4oTcnXKpjI/AAAAAAAAGho/nB7GCx80WVQ/w869-h652-no/IMG_1810.JPG&quot;&gt;</content>
+ </entry>
  
  <entry>
    <title>STM32F4-Discovery Breakout Board</title>

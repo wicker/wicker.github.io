@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Strain Gauge Amplifier Board v1 | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+ <br />
+            <li><a href="/chronological/">All Posts by Date</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/travels/east-coast/">East Coast</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing & Talks</a></li>
+            <li><a href="/photography/">Photography</a></li>
+            <li><a href="/garden/">Garden</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2014/03/carbon-fiber-rocket-layup">&laquo; Carbon Fiber Airframe Layup</a></div>
+   
+   
+    <div style="float: right;"><a class="next" href="/2014/03/getpixels">GetPixels &raquo;</a></div>
+   
+  <div style="clear:both;"></div>
+  </div>
+
+  <div class="title">Strain Gauge Amplifier Board v1</div>
+  <p>March 2014 - Portland, Oregon</p>
+
+  <p>Made in collaboration with Andrew Greenberg, who is awesome.</p>
+<p><em>Note: the schematic below is wrong in that the <span class="caps">FET</span> is backwards. The board is wrong in that the IC footprint is the wrong width. Verify both for yourself if you use the design!</em></p>
+<p>The quarter-bridge design uses the strain gauges as one of the four resistors in a Wheatstone bridge, references the bridge to 2.5V, and runs the output of the bridge through an INA125 Instrumentation Op-Amp IC which actually has three op amps in it. We&#8217;re using Euroterminals for the strain gauge input and the sense signal outputs.</p>
+<img src="https://lh3.googleusercontent.com/pcdcpBJTOS9orbW-b-UthrrfCHo7wxRd7bw91--ptA=w1022-h627-no">
+<p>This is a non-intuitive approach but bear with me. Everything on the board except the purple reversed lettering is on the top side of the board. The reversed purple lettering is on the bottom. I made the boards on the <span class="caps">LPKF</span> router that doesn&#8217;t actually make two sides of a hole connect electrically &#8230; so we&#8217;re soldering all the components, including the legs of the connectors, on the top side. The connectors are actually accessible on the bottom side. Just their pins are sticking through to the top layer.</p>
+<p>We&#8217;ll turn the top side towards the bamboo carrier and use washers to make space so the components aren&#8217;t touching the bamboo.</p>
+<img src="https://lh4.googleusercontent.com/-vig-wAqcexM/Uxzkz2jrWKI/AAAAAAAAGUk/7HY84ylSMB0/w694-h557-no/B-board.png">
+<p>Using a laser cutter to make the bamboo carrier boards.</p>
+<img src="https://lh5.googleusercontent.com/-jxNoSg2JDU0/Uxzk0sWf7yI/AAAAAAAAGUs/ieOmJ7MriWg/w655-h491-no/C.png">
+<p>Our <span class="caps">PCB</span> router. Alas, no time lapse.</p>
+<img src="https://lh5.googleusercontent.com/-KHFipRPrkLc/Uxzk1wQO4RI/AAAAAAAAGU4/Wb4PHqvnLXM/w655-h491-no/D.png">
+<p>This is the top side of the board.</p>
+<img src="https://lh6.googleusercontent.com/-DkIvQxC6YGg/Uxzk1wQ2TWI/AAAAAAAAGU8/6jYPbQyGs_E/w764-h413-no/E.png">
+<p>And the bottom side.</p>
+<img src="https://lh6.googleusercontent.com/-FCzkG7s02ug/Uxzk2ZKOvlI/AAAAAAAAGVE/7A6P27Hd2Eg/w764-h369-no/F.png">
+<p>What it&#8217;ll look like.</p>
+<img src="https://lh5.googleusercontent.com/-fu1c-1Ga-Ak/Uxzk4KLJHjI/AAAAAAAAGVU/IzbgZR9EksI/w764-h461-no/G.png">
+<p>All ten boards, ten carrier boards, and the parchment stencil.</p>
+<img src="https://lh4.googleusercontent.com/-fTQEHqwPUYw/Uxzk3ulJQaI/AAAAAAAAGVQ/MGKQaDK_GxQ/w764-h437-no/H.png">
+<p>I was out of town for the stress tests but the team took a ton of photos.</p>
+<img src="/images/project/straingauge/gaugeinuse.png">
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>

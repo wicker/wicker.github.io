@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Replacing the IMEX Firefox guts | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+ <br />
+            <li><a href="/chronological/">All Posts by Date</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/travels/east-coast/">East Coast</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing & Talks</a></li>
+            <li><a href="/photography/">Photography</a></li>
+            <li><a href="/garden/">Garden</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2013/10/26-note">&laquo; 26 Oct 2013</a></div>
+   
+   
+    <div style="float: right;"><a class="next" href="/2013/11/03-note">3 Nov 2013 &raquo;</a></div>
+   
+  <div style="clear:both;"></div>
+  </div>
+
+  <div class="title">Replacing the IMEX Firefox guts</div>
+  <p>October 2013 - Portland, Oregon</p>
+
+  <p>The Open Tech Lab just bought an <span class="caps">IMEX</span> Firefox brushed 1/10th RC truck. I want to make an autonomous RC car that can be a vision testing platform for our quadcopter.</p>
+<p>I&#8217;m calling this project the Foxcar.</p>
+<img src="/images/project/foxcar/IMG_0385.png">
+<p>I opened up the truck to see if I could solder my Raspberry Pi directly to the motor controller board but there were a couple chips I couldn&#8217;t identify, one of which looked like the microcontroller, so I decided to rip the guts out and replace them with my own electronics.</p>
+<img src="/images/project/foxcar/IMEXBoard.png">
+<p>The Firefox has a single DC RC 550 motor and a 5-wire servo, running on a single 7.6V NiMH 1800 mAh battery. Probably this means the motor is a 6V motor. The parts were:</p>
+<p>1x AT1206 74C02N 8-pin <span class="caps">DIP</span> Probably a Quad 2-input <span class="caps">NAND</span>, <span class="caps">NOR</span>, or Hex Inverter<br />
+6x 531 T70 3-pin 72 A 25V N-channel Power MOSFETs. <br />
+1x MC34063 8-pin <span class="caps">DIP</span> 1.5A Inverted Switching Regulator which is for the DC-DC converters. <br />
+1x D1116 16-pin <span class="caps">DIP</span> unknown<br />
+1x LM339L 14-pin <span class="caps">DIP</span> Quad-Differential Comparator<br />
+1x AMP26002 25-pin square unknown<br />
+1x MX117 8-pin <span class="caps">DIP</span> Electric Toy DC Motor Drive Circuit H-Bridge Drive</p>
+<p>I took a good look at the configuration of the car. I didn&#8217;t want to replace the motor unless I had to, but the servo had to go.</p>
+<img src="/images/project/foxcar/IMG_0377.png">
+<p>This is the board. I was surprised that the antenna is just a long piece of wire tucked up inside the antenna cover. The car ran great when I tested it back before I tore it apart. Hopefully it&#8217;ll work great after it&#8217;s all put back together&#8230;</p>
+<img src="/images/project/foxcar/IMG_0384.png">
+<p>I already had an Adafruit Motor Shield and an Arduino. I hooked up a 6V DC motor and a 3-wire servo just to be sure it worked. I swapped servos on the car and hooked up the Arduino.</p>
+<img src="/images/project/foxcar/IMG_0380.png">
+<p>My other 6V DC motor ran happily on the Adafruit example sketch but this motor just clicks in one direction or the other. I tried swapping the red and black wires (though it&#8217;s bi-directional, so not sure why that would make a difference) and I checked to be sure it has the three capacitors soldered to the motor itself for noise control.</p>
+<p>So figuring out the DC motor is the next piece. My three-wire servo works great, though.</p>
+<img src="/images/project/foxcar/foxcar_turns.gif">
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>

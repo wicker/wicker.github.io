@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Making Wickerbox - v1 | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+ <br />
+            <li><a href="/chronological/">All Posts by Date</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/travels/east-coast/">East Coast</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing & Talks</a></li>
+            <li><a href="/photography/">Photography</a></li>
+            <li><a href="/garden/">Garden</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2012/03/quadcopter-control-board">&laquo; Quadcopter Control Board</a></div>
+   
+   
+    <div style="float: right;"><a class="next" href="/2012/04/multnomah-falls-wahkneena-loop">Multnomah-Wahkeena Loop &raquo;</a></div>
+   
+  <div style="clear:both;"></div>
+  </div>
+
+  <div class="title">Making Wickerbox - v1</div>
+  <p>March 2012 - Portland, Oregon</p>
+
+  <p>Wickerbox is a dynamically-generated static site served to you using Jekyll and Github Pages.</p>
+<p>Originally a place to store my travel photos so I could pass the link around to family and friends, Wickerbox didn&#8217;t become a proper portfolio until I realized much of my schoolwork at Portland State was already digital and therefore easy to display.</p>
+<p>Wickerbox is static in that it does not require a server-side database in order to serve up pages. I came from Wordpress using MySQL and <span class="caps">PHP</span> and wanted something simpler. (ha!) Also, I&#8217;m a big fan of git for revision control.</p>
+<p><strong>Requirements</strong></p>
+<p>Wickerbox will be&#8230;</p>
+<p>- a static site<br />
+- support tagged entries<br />
+- support photo posts, project posts, and writing posts<br />
+- have two layout files (default.html, post.html)<br />
+- have a single custom.css after the gridwork css files are in place<br />
+- updated by adding a .textile file to _posts and running a single script<br />
+- utilize two github repositories: one backend, one to serve frontend</p>
+<p>Photo posts will</p>
+<p>- contain a gallery box that will source photos from Picasa<br />
+- allow for text after the gallery box<br />
+- be collected on their own page<br />
+- be tagged<br />
+- have a very short descriptor for the travel page</p>
+<p>Project posts will</p>
+<p>- optionally contain a gallery to source photos from Picasa   <br />
+- support in-line photos sourced from images folder<br />
+- collected on their own page<br />
+- be tagged<br />
+- optionally call the MathJax script</p>
+<p>Writing posts will</p>
+<p>- not contain a gallery<br />
+- be text-only blog posts<br />
+- collected on their own page<br />
+- be tagged</p>
+<p><strong>Implementation</strong></p>
+<p>I wrote the layout files to include:</p>
+<p>&#8230; a <span class="caps">CSS</span> framework called <a href="http://www.columnal.com/">Columnal</a> on a 960px grid to make the site fluid and mobile-friendly.</p>
+<p>&#8230; a gallery setup called <a href="http://galleria.io/">Galleria</a> to display the photos. It doesn&#8217;t automatically resize so it&#8217;s not an ideal solution.</p>
+<p>&#8230; the free version of <a href="https://typekit.com/fonts">Typekit</a> to provide the title fonts over the web.</p>
+<p>I also used the <a href="http://www.picasaweb.google.com">Picasa Web Albums</a> albumid and userid to identify from which album to source images. This was all external so those albums had to be marked ‘public&#8217; to be seen.</p>
+<p>The source files were collected as shown below. _folders are standard folders required by Jekyll. The _config.yml file ignores the drafts and scripts folder. Drafts/ contains unfinished posts with proper headers. Scripts contains the wickerbox script to update with one input line in a terminal with internet access.</p>
+<div class="code">css/ <br />
+drafts/ <br />
+images/ <br />
+_layouts/ <br />
+_plugins/ <br />
+_posts/ <br />
+scripts/ <br />
+_site/</div> 
+<p>The html files below are the main pages of the site that you see linked in the menu above.</p>
+<div class="code">about.html<br />
+index.html<br />
+projects.html<br />
+travels.html<br />
+two-cats.html<br />
+writing.html</div>
+<p>The configuration file gives Jekyll its rules for the actual generation of the site files which are stored in _site.</p>
+<div class="code">_config.yml</div>
+<p><strong>Tags</strong></p>
+<p>I&#8217;m using a <a href="http://recursive-design.com/projects/jekyll-plugins/">Jekyll page tag generator</a> written by Dave Perrett which Just Works.</p>
+<p><strong><span class="caps">YAML</span> Header</strong></p>
+<p>All posts, no matter the type, contain the layout, title, tags, purpose, year, description, and location lines. Description is served up in the header as well as on social networking sites like Google Plus. The section pages collect their lists of posts by testing category.</p>
+<p>Photos additionally contain the albumid and userid of the associated Picasa album.</p>
+<p>Photo and project posts both contain an image tag which calls a thumbnail for display on travels.html and projects.html.</p>
+<p>Any post which contains explicitly sets comments:true will place a Disqus comment thread following the text and images of the post.</p>
+<div class="code">- &#8211; -<br />
+layout: post<br />
+title: Making Wickerbox<br />
+category: project<br />
+tags:<br />
+- all<br />
+- jekyll<br />
+- sites<br />
+- projects<br />
+purpose: project<br />
+year: 2012<br />
+description: Building Wickerbox as a dynamically-generated static site.<br />
+location: Portland, Oregon<br />
+<br />
+image: /images/thumbs/wickerbox.png<br />
+<br />
+userid: 117081002500022017940<br />
+useralbum: FlyingOshkosh030708<br />
+<br />
+comments: true<br />
+- &#8211; -</div>
+<p><strong>_config.yml</strong></p>
+<p>This is a standard setup for Jekyll sites.</p>
+<p>I test updates locally by running jekyll &#8212;server in the base back-end directory. This applies all the posts to the layout files and puts the generated pages into _site, then serves up _site to a local webserver instance which can be viewed by entering http://localhost:4000/ into a browser.</p>
+<p>This allows for local fixes before pushing to Github. Typekit and Disqus do not display on my local server instance so I found it necessary to do some live testing.</p>
+<div class="code">safe:        false<br />
+auto:        false<br />
+server:      false<br />
+server_port:     4000<br />
+<br />
+source:      .<br />
+destination:     ./<em>site<br />
+plugins:     ./</em>plugins<br />
+<br />
+future:      true<br />
+lsi:             false<br />
+pygments:    false<br />
+markdown:    liquid<br />
+permalink:       /:categories/:title<br />
+<br />
+title:           Wickerbox<br />
+description:     World travel photos, airplanes, avionics, rockets, robots, linux, and two cats.<br />
+base:        http://www.wickerbox.net/<br />
+author:      Jenner &#8216;wicker&#8217; Hanni<br />
+email:       jeh.wicker@gmail.com<br />
+<br />
+disqus_id:       wickerbox<br />
+<br />
+exclude:     [drafts, endurance-days, _site, scripts]</div>
+<p><strong>The idea behind the script</strong></p>
+<p>I&#8217;ve since put up a Gitolite instance on my own webserver but I haven&#8217;t got around to moving away from Github yet. I&#8217;m deeply in debt to Charlie Park for his <a href="http://charliepark.org/jekyll-with-plugins/">Jekyll with Plugins</a> approach that splits the frontend and backend into two separate directories and scripts the update.</p>
+<p>I created the two repositories on Github and keep a local copy of them both. The first, wicker.github.com.raw, contains all the files above. I write a new post and save it in _posts/. I test with jekyll &#8212;server and then (from any directory) I run ./wickerbox and pass a string that will be my git comment.</p>
+<p>I have two github repositories associated with the site<br />
+wicker.github.com.raw holds the backend files to put through jekyll<br />
+wicker.github.com holds the actual site pointed to by wickerbox.net</p>
+<p>This script may be run in any directory because <span class="caps">SRCDIR</span> and <span class="caps">PUSHDIR</span> are defined below.<br />
+It pushes to the backend repo, runs the jekyll gem, rsyncs the _site<br />
+output to the frontend directory, and pushes to the frontend repo.</p>
+<p>Pass a single argument enclosed in double quotes for the comment. For example:</p>
+<div class="code">./wickerbox &#8220;Updated two-cats.html, testing the script.&#8221;</div>
+<p>Warning; you must have _site/ specifically excluded in your $<span class="caps">SRCDIR</span><br />
+_config.yml file or this will push the contents of _site to the your backend repo.</p>
+<p><strong>The script itself</strong></p>
+<div class="code"><span class="caps">SRCDIR</span>=/home/wicker/proj/wicker.github.com.raw/<br />
+<span class="caps">PUSHDIR</span>=/home/wicker/proj/wicker.github.com/</div>
+<p>Start in the backend directory</p>
+<div class="code">cd $<span class="caps">SRCDIR</span>/</div>
+<p>Add backend files, commit, push to backend Github repo</p>
+<div class="code">git add -A<br />
+git commit -m &#8220;$1&#8221;<br />
+git push origin master</div>
+<p>Once working files are done, use them to generate the site</p>
+<div class="code">jekyll</div>
+<p>Output of the rubygem is put into the _site directory</p>
+<div class="code">cd $<span class="caps">SRCDIR</span>/_site/</div>
+<p>Rsync the contents of the backend _site to the frontend directory</p>
+<div class="code">rsync -avz . $<span class="caps">PUSHDIR</span><br />
+<br />
+cd $<span class="caps">PUSHDIR</span></div>
+<p>Add new files, commit with message, push to frontend repo<br />
+Github pages will send a note to you when they&#8217;ve built the new page.</p>
+<div class="code">git add -A<br />
+git commit -m &#8220;$1&#8221;<br />
+git push origin master</div>
+<p><strong>Further reading&#8230;</strong></p>
+<p>Jekyll was created by <a href="https://github.com/mojombo/">Tom Preston-Warner</a> at Github. The wiki for the project is useful, but I&#8217;d recommend starting at the <a href="https://github.com/mojombo/jekyll/wiki/Sites">Sites</a> page first to see the many, many varied implementations.</p>
+<p>Klepas has a nice <a href="http://klepas.org/jekyll-a-static-site-generator/">longer-form explanation</a> of how to get started.</p>
+<p>The source of my two repositories is freely available at my <a href="http://github.com/wicker">Github</a>.</p>
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>

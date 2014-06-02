@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Quadcopter Control Board | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+ <br />
+            <li><a href="/chronological/">All Posts by Date</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/travels/east-coast/">East Coast</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing & Talks</a></li>
+            <li><a href="/photography/">Photography</a></li>
+            <li><a href="/garden/">Garden</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2012/03/l2-cache-simulator">&laquo; L2 Cache Simulator</a></div>
+   
+   
+    <div style="float: right;"><a class="next" href="/2012/03/wickerbox-net-with-jekyll">Making Wickerbox - v1 &raquo;</a></div>
+   
+  <div style="clear:both;"></div>
+  </div>
+
+  <div class="title">Quadcopter Control Board</div>
+  <p>March 2012 - Portland State University</p>
+
+  <p>I was responsible for designing and laying out the control board for an autonomous quadcopter built by the <a href="http://psu-avt.github.com">Portland State Autonomous Vehicles Team</a>.</p>
+<p>Final schema, layout, and Gerber files are available <a href="http://github.com/wicker/Quadcopter-Control-Board">at my Github</a>.</p>
+<p><strong>Board Specs</strong></p>
+<p>I used the standard version of Eagle to create a four-layer board with internal ground and power planes. The board carries an LPC1343 microprocessor which takes input from an onboard sensor stick containing accelerometer, compass, and gyro chips. After some sensor fusion and optionally in response to joystick input, the board provides <span class="caps">PWM</span> signals to four brushless DC motor controllers at a rate of 200Hz.</p>
+<p>An onboard XBee communicates over wireless serial to a second XBee at an accompanying laptop control station. The mini-<span class="caps">USB</span> connector is connected to the chip’s <span class="caps">USB</span> 2.0 Full-Speed <span class="caps">PHY</span> and  a voltage regulator breaks out the 5V to provide 3.3V to the rest of the board’s components.</p>
+<p>The board can be programmed by wiring the laptop to the board’s <span class="caps">ISP</span>/<span class="caps">JTAG</span> port and simultaneously pressing the reset and <span class="caps">ISP</span> button to boot into <span class="caps">ISP</span> mode. The sensors are brought out on an <span class="caps">FTDI</span> header as an alternative to the wireless connection for debugging.</p>
+<div align="center" style="margin-top: 10px;"> <img src="/images/project/quadcontrol/v1-protoboard.png"></div>
+<p><strong>Initial Design</strong></p>
+<p>The initial schema followed exactly from the existing protoboard above because the quadcopter could fly under remote control and was able to hover.</p>
+<p>An LPCXpresso development board from <span class="caps">NXP</span> Semiconductors was used because it came with a free development environment called CodeRed. The resulting soldered protoboard was bulky and too large for the frame so we wanted to replace the entire protoboard and its mounted components while duplicating the debug/programming functionality of the LPCXpresso dev board.</p>
+<p>The end result was hopefully to be able to easily add/remove custom sensor packages so it was decided that all possible <span class="caps">GPIO</span> pins were to be brought out to header pins.</p>
+<div align="center" style="margin-top: 10px;"> <img src="/images/project/quadcontrol/v1-controlboard-schematic.png"></div>
+<p>This is the original basic connections from the LPCXpresso (center) to the Xbee, <span class="caps">PWM</span> signals, and 9DOF sensor stick. These needed to remain the same to ensure functionality.</p>
+<p>The initial schema was a compilation of work by myself (<a href="https://github.com/wicker">Jenner Hanni</a>), <a href="https://github.com/squidpie">Camille Huffman</a>, and <a href="https://github.com/greghaynes">Greg Haynes</a>. We relied heavily on LPC1343 and related documentation from <a href="http://microbuilder.eu">Microbuilder.eu</a>, including their Eagle footprint library. There were several design reviews with all of us and the team at large.</p>
+<div align="center" style="margin-top: 10px;"><a href="/images/project/quadcontrol/v2-schema-firstreview.png"> <img src="/images/project/quadcontrol/v2-schema-firstreview_th.png"></a></div>
+<p>The version above was reviewed by the invaluable Andrew Greenberg at Portland State Aerospace Society and he strongly recommended the use of buses.</p>
+<div align="center" style="margin-top: 10px;"><a href="/images/project/quadcontrol/v2-schema-final.png"> <img src="/images/project/quadcontrol/v2-schema-final_th.png"></a></div>
+<p><strong>Board Layout Decisions</strong></p>
+<p>Initially I attempted to lay out the board by considering the header pinouts from the user’s point of view, but quickly ran into problems when I started routing from the processor. I had to go back and determine the header pinouts based on pinning out the microprocessor. That led to the basic design below, concentrating the parts to be reflowed in one part of the board.</p>
+<p>I also decided to make as much of it through-hole soldering as possible since I’d have to build the board myself. The central placement of the sensor stick was due to needing the sensors as close to the center of the quadcopter as possible. Trace widths of 8 mils were smaller than probably entirely necessary but the overall size of the board was to be kept as small as possible for weight and space considerations.</p>
+<div align="center" style="margin-top: 10px;"> <img src="/images/project/quadcontrol/v2-layout-firstreview.png"></div>
+<p>The initial board layout above actually contained a full DB-9 connector but that was quickly considered to be overkill in terms of space, weight, and the availability of <span class="caps">USB</span>-to-<span class="caps">FTDI</span>/serial cables. This was replaced by a simple 7-pin header.</p>
+<p>I’d also only put one button in above and we needed two for both reset and <span class="caps">ISP</span>, though we didn’t have <span class="caps">USB</span> in this version. The basic header pinouts stayed the same. Finally, I added a ground plane on the entire top plane and stapled it to the internal ground layer using vias to minimize impedance as much as possible.</p>
+<p>I used the <a href="http://www.sparkfun.com/tutorials/114">locking header footprints from Sparkfun</a> because the staggered holes hold the header pins in place close to the board during soldering, there’s no cost difference, and I think it&#8217;s a great, simple solution to a common problem.</p>
+<div align="center" style="margin-top: 10px;"> <img src="/images/project/quadcontrol/v2-layout-final.png"></div>
+<p><strong>Results of First Fab Run</strong></p>
+<p>We were able to order these boards for free through a contact at the fab house, which was great because there were a handful of issues that required a revision. The board came out looking great in terms of size and weight, though.</p>
+<div align="center" style="margin-top: 10px;"> <img src="/images/project/quadcontrol/v2-actualboard.png"></div>
+<p>As part of the design review through our contact, I hadn’t actually sent Gerbers. I sent the schema and board files so they could make Gerbers. Unfortunately, I was still using Eagle 5 and there was a problem in the power layer when they opened the files in Eagle 6. We weren’t getting voltage anywhere else on the board when we hooked it up to a signal generator. It turned out that the isolation defaults were different between versions so the power layer wasn’t actually connected to any of the power pins.</p>
+<p>The image below shows the constructed board with all its ninety-degree pinouts. We’re sliding this in between plates on the quadcopter so it’s. The sensor stick will actually be seated flush against the board itself but we have it broken out this way for easy removal so we can swap it back and forth between testing this board and actually flying on the quadcopter.</p>
+<div align="center" style="margin-top: 10px;"> <img src="/images/project/quadcontrol/board2.jpg"></div>
+<p><strong>Schema Revision</strong></p>
+<p>I used a bunch of mod wires on the bottom layer to create a power plane so we could test the rest of it. The RxD/TxD wires were backwards between the <span class="caps">FTDI</span> pinout on the right end of the board, but the XBee RxD/TxD were correct. The clock lines were of different length and we decided, even though we weren’t seeing problems, we might as well fix it since we were running a corrected version anyway.</p>
+<p>The full-sized schema really is too large for this post. Click it to enlarge.</p>
+<div align="center" style="margin-top: 10px;"><a href="/images/project/quadcontrol/v3-schema-final.png"> <img src="/images/project/quadcontrol/v3-schema-final_th.png"></a></div>
+<p>We decided to add the mini-<span class="caps">USB</span> and voltage regulator, the second button for <span class="caps">ISP</span> mode, fix the power plane and fix the receive/transmit traces. I was able to do this just by ripping up a relatively small part of the board and rerouting those wires. Like the first version, I didn’t use autoroute for any of the layout, preferring to do the work by hand, because I really enjoy the layout process.</p>
+<p>I find that the schema process is broken up between creating footprints, researching and designing, then just quickly hooking up the pieces. The board layout can be done entirely on its own without any context shifts, and working to fit all the pieces together within the constraints is really fun.</p>
+<p>The revised schema was again put through design review and then I laid out the board. I got several pairs of eyes to check the final Gerbers to see if we&#8217;ve solved the power plane issue. Now the Gerbers are on their way to the fab house. We’ll put it together when it gets back and see what we’ve got.</p>
+<div align="center" style="margin-top: 10px;"> <img src="/images/project/quadcontrol/v3-layout-final.png"></div>
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Oven Control Board v1 | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+ <br />
+            <li><a href="/chronological/">All Posts by Date</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/travels/east-coast/">East Coast</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing & Talks</a></li>
+            <li><a href="/photography/">Photography</a></li>
+            <li><a href="/garden/">Garden</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2014/01/27-note">&laquo; 27 Jan 2014</a></div>
+   
+   
+    <div style="float: right;"><a class="next" href="/2014/01/28-note">28 Jan 2014 &raquo;</a></div>
+   
+  <div style="clear:both;"></div>
+  </div>
+
+  <div class="title">Oven Control Board v1</div>
+  <p>January 2014 - Portland, Oregon</p>
+
+  <p>An ME capstone team at Portland State is working on an oven so we can cure our own composites. It&#8217;s awesome. This oven control board was a five-day project that came out of nowhere this week on Tuesday and which I delivered on Sunday.</p>
+<p>Tung, their electrical person, already had the design figured out and working with breadboard components and an Arduino. What he really wanted was an Arduino shield so we met, looked at what he had, and figured out how we&#8217;d put it on the right footprint. This is the first time I&#8217;d been able to sit with someone who was new to Eagle and really explain what makes a decent schematic, so it&#8217;s pretty cool to see how much I&#8217;ve learned in just a couple of years.</p>
+<img src="/images/project/oven-control-board/ovenboard-schema.png">
+<p>The layout was constrained by the shield but even moreso by our plan to use the <span class="caps">LPKF</span> router. It had to be a two-layer board that didn&#8217;t have plated through-holes or vias. I managed to put all the traces except one on the bottom layer because all the components get soldered on the bottom side (they&#8217;re all through-hole) and then I just made that a much wider polygon fill and dropped vias to get the top-trace signal connected down below.</p>
+<p>Unfortunately, Arduino shields sit on top of the Arduino so I had to drop an extra via on each pad of the 0.1&quot; headers so copper wire could be slid through and squashed, essentially plating them myself.</p>
+<img src="/images/project/oven-control-board/ovenboard-layout.png">
+<p>The final product doesn&#8217;t look too shabby. Well, I take that back &#8212; the isolation on the <span class="caps">LPKF</span> is so tiny (even at the double-width!) that I&#8217;m terrified of putting too much solder on each pin and shorting it outside the pad. This is really crappy soldering but I ohmed everything out so electrically the joints are fine.</p>
+<p>Definitely I&#8217;ve been spoiled with OSHPark and $5/sq in board with plated through-holes and solder mask.</p>
+<p>The libraries and everything are all up in the <a href="https://github.com/wicker/oven-controller">oven-controller Github repo</a>.</p>
+<img src="/images/project/oven-control-board/ovenboard-top.png">
+<img src="/images/project/oven-control-board/ovenboard-side.png">
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>

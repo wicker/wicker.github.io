@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Foxcar Control Board v1 | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+ <br />
+            <li><a href="/chronological/">All Posts by Date</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/travels/east-coast/">East Coast</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing & Talks</a></li>
+            <li><a href="/photography/">Photography</a></li>
+            <li><a href="/garden/">Garden</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2013/12/getting-started-with-psas-chibios">&laquo; Using ChibiOS and OpenOCD</a></div>
+   
+   
+    <div style="float: right;"><a class="next" href="/2013/12/25-note">25 Dec 2013 &raquo;</a></div>
+   
+  <div style="clear:both;"></div>
+  </div>
+
+  <div class="title">Foxcar Control Board v1</div>
+  <p>December 2013 - Portland, Oregon</p>
+
+  <p>It&#8217;s time to add a control board to my RC car. My goal is a car that does basically everything by itself so I looked into robot exploration algorithms and figured out I need to have localization (where am I?), mapping (what&#8217;s around me?), and planning (where am I going?). I broke up the design of the control board into four parts: power and motors, microcontroller, networking and logging, and all the sensor inputs.</p>
+<p>I scrounged up sensors in the Open Tech Lab, where I originally scrounged up the car, and came up with a couple of rangefinders, a PX4FLOW, a 9DOF sensor stick with accel/gyro/mag, and a <span class="caps">CMOS</span> camera which has no markings except for its chip, a VC0706.</p>
+<img src="/images/project/foxcar/sensors.png">
+<p>I knew I&#8217;d want an output for the servo now but I also wanted to provide the same interface for <span class="caps">ESC</span> <span class="caps">PWM</span> signals as I had on my previous quadcopter control board. Ideally this board could go on a quad without any modifications. As for power, I already knew that the VNH5019 carrier board from Pololu works fine for my car so I designed the board for over 20A of stall current.</p>
+<p>I added a micro-<span class="caps">USB</span> connector and hooked the 5V through a diode to the linear regulator so I can&#8217;t power the car from <span class="caps">USB</span> (it&#8217;s not big enough to carry a laptop anyway) but I&#8217;ll be able to debug directly.</p>
+<p>I decided I&#8217;d also want logging via a microSD card and networked control over XBees I also have on hand. Overall, the system looks like this.</p>
+<img src="/images/project/foxcar/v1-system.png">
+
+<p>I chose the STM32F4 because <span class="caps">PSAS</span> is using it so one of my other boards is using it, I&#8217;ve already got a dev environment for it, I&#8217;d like to use ChibiOS, and it&#8217;s basically capable of anything I would want for its size. It&#8217;s also ubiquitous so there are tons of help forums and it&#8217;s got all the pins, <span class="caps">DAC</span>, and memory I could want.</p>
+<p>I got this far and was looking into which <span class="caps">IMU</span> sensors to buy when I talked to a guy who does IMUs who flipped out when I suggested writing a Kalman filter. He stressed that I could do whatever the hell I wanted but he asked if what I really wanted was really to actually spend a year writing a decent <span class="caps">IMU</span>, really? <em>really? think hard now&#8230;</em> and I agreed, okay, no, I want to make my car drive around and get into trouble.</p>
+<p>I also realized a basic requirement of this car is to use optical flow instead of <span class="caps">GPS</span> for absolute position correction. This is the root problem I&#8217;m interested in and I&#8217;ve started to read up on possible solutions.</p>
+<p>I went looking at the other autopilot boards to find out which sensors they&#8217;re using, then I looked up open source IMUs which already have ports to the STM32F4, and I decided to use FreeIMU with the MPU6000 and HMC5883L. Note that originally I figured I&#8217;d use the MPU6050 and then realized that the 6000 comes with <span class="caps">SPI</span> as well as I2C so the 6000 is the better deal for the faster speed.</p>
+<img src="/images/project/foxcar/autopilots.png">
+<p>I went back to my pile of sensors, took the STM32F4, broke out all the peripherals I could use, and matched up sensors to the chip. I hooked up the compass and Invensense gyro/accelometer chip, then broke all the other <span class="caps">GPIO</span> points left over into as many header as I could. Finally, I worked up a schematic using my proven previous design for the XBee, <span class="caps">USB</span>, and SD card.</p>
+<img src="/images/project/foxcar/foxcar-control-board-v1-sch-sheet1.png">
+
+<img src="/images/project/foxcar/foxcar-control-board-v1-sch-sheet2.png">
+
+<p>I started the schematic on November 22nd and finished on December 15th, which was exactly on target. I worked in two crunch weeks, the first for the schematic and the second for layout, with a break between them to let the schematic linger a little.</p>
+<img src="/images/project/foxcar/foxcar-control-board-v1-brd.png">
+<p>The <a href="http://github.com/wicker/Self-Driving-RC-Car/">final schematics and boards are up on Github</a>.</p>
+<p>The final 4-layer board comes out to 3.5&#215;2.2 inches for an OSHPark cost of $77 for three.</p>
+<img src="/images/project/foxcar/oshpark-ship.png">
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>

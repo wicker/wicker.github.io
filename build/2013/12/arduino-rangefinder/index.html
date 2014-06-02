@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>Arduino and a Rangefinder | Wickerbox</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">Wickerbox</a> <span style="font-size: 0.6em">by Jenner Hanni</span></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.</div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+ <br />
+            <li><a href="/chronological/">All Posts by Date</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/travels/east-coast/">East Coast</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing & Talks</a></li>
+            <li><a href="/photography/">Photography</a></li>
+            <li><a href="/garden/">Garden</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2013/11/22-note">&laquo; 22 Nov 2013</a></div>
+   
+   
+    <div style="float: right;"><a class="next" href="/2013/12/10-note">10 Nov 2013 &raquo;</a></div>
+   
+  <div style="clear:both;"></div>
+  </div>
+
+  <div class="title">Arduino and a Rangefinder</div>
+  <p>December 2013 - Portland, Oregon</p>
+
+  <p>So there&#8217;s something like eighty years of history behind a theremin. This isn&#8217;t a theremin. This is me fucking around on a sleepy Saturday in Seattle with an ultrasonic rangefinder, an Arduino, and <span class="caps">MIDI</span> headers. But I got the idea because of theremins.</p>
+<p>I basically wanted to use the Arduino to sample the rangefinder and produce musical notes.</p>
+<img src="/images/project/rangefinder/rangefinder.png">
+<p>I needed a reference for what the text of a <span class="caps">MIDI</span> file looks like in comma-separated values so I downloaded Avicii&#8217;s Wake Me Up and used the midicsv script from Fourmilab to get the <span class="caps">CSV</span> file. Then I stripped out as much of the header as possible to see what it takes for timidity to still play it. Turns out a file with just this header will still play:</p>
+<p><code>0, 0, Header, 0, 1, 120</code><br />
+<code>1, 0, Start_track</code></p>
+<p>I wired the Maxbotix LV-EZ4 ultrasonic rangefinder to the Arduino via a protoshield and wrote a script to sample the rangefinder for a finite period of time and turn the distance measurements into octaves. I didn&#8217;t make it output a file; you have to actually copy the results from the Arduino&#8217;s serial monitor. Obviously it&#8217;d be better to just get a file and script the whole process.</p>
+<div style="margin-left: 20px;">
+<div class="highlight"><pre><code class="c"><span class="k">const</span> <span class="kt">int</span> <span class="n">pwPin</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+
+<span class="kt">long</span> <span class="n">pulse</span><span class="p">,</span> <span class="n">inches</span><span class="p">,</span> <span class="n">cm</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">outOctave</span><span class="p">,</span> <span class="n">count</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;0, 0, Header, 0, 1, 120&quot;</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;1, 0, Start_track&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">pwPin</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  
+  <span class="n">pulse</span> <span class="o">=</span> <span class="n">pulseIn</span><span class="p">(</span><span class="n">pwPin</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+  <span class="n">inches</span> <span class="o">=</span> <span class="n">pulse</span><span class="o">/</span><span class="mi">147</span><span class="p">;</span>
+  <span class="n">cm</span> <span class="o">=</span> <span class="n">inches</span> <span class="o">*</span> <span class="mf">2.54</span><span class="p">;</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+  
+  <span class="k">if</span> <span class="p">(</span><span class="n">inches</span> <span class="o">&lt;=</span> <span class="mi">7</span><span class="p">)</span>
+    <span class="n">outOctave</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">inches</span> <span class="o">&gt;=</span> <span class="mi">24</span><span class="p">)</span>
+    <span class="n">outOctave</span> <span class="o">=</span> <span class="mi">120</span><span class="p">;</span>
+  <span class="k">else</span>
+    <span class="n">outOctave</span> <span class="o">=</span> <span class="n">inches</span><span class="o">*</span><span class="mi">5</span><span class="p">;</span>
+    
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;1, &quot;</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">count</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;, Note_on_c, 11, &quot;</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">outOctave</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;, 127&quot;</span><span class="p">);</span>
+  
+  <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">2000</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;1, &quot;</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">50</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;, End_track&quot;</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;0, 0, End_of_file&quot;</span><span class="p">);</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">100</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+</div>
+<p>I took the <span class="caps">CSV</span> file I&#8217;d made by copying and pasting and applied the csvmidi script in the other direction (<span class="caps">CSV</span>&#8594;<span class="caps">MIDI</span>). It&#8217;s a pretty limited file, which you can play using timidity.</p>
+<p><a href="https://github.com/wicker/ardu-midi-ping/blob/master/results/wicker.mid?raw=true">Song is here</a> (<span class="caps">MIDI</span>)</p>
+<p><a href="http://github.com/wicker/ardu-midi-ping/">Code is here</a> (Github)</p>
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>
