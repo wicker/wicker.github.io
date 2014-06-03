@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Wickerbox</title>
+		<title>Jenner Hanni</title>
 		<description>Adventures of an aerospace geek in Portland, Oregon.</description>
 		<link></link>
 		<atom:link href="feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Opal Creek</title>
+				<description>&lt;p&gt;I went down to Salem for breakfast and then headed up through Elkhorn Valley to the Opal Creek Trailhead. Way too many people around and the bridge was out in Jawbone Flats so I hiked just about to the loop trail fork and then went back. I took more time to check out the mine entrances and to explore down by the river. Found a millipede and had some fun thinking of millipede robots.&lt;/p&gt;
+&lt;p&gt;The best part of this hike is definitely past Jawbone Flats at the Opal pools but the whole area is beautiful so it was a nice day.&lt;/p&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/7QkvHKyEzLC_TIuRWkoEapAu1578x0GLKp5M7n5tFw=w900-h242-no&quot;&gt;
+&lt;img src=&quot;/images/travels/opalcreek/1.png&quot;&gt;
+&lt;img src=&quot;/images/travels/opalcreek/2.png&quot;&gt;
+&lt;img src=&quot;/images/travels/opalcreek/3.png&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-jc73ihRtR_M/U4oT3mDddZI/AAAAAAAAGiQ/0hAENfU5eEQ/w900-h288-no/IMG_1786.JPG&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-LM8Gj6qXppw/U4oTaKZQB_I/AAAAAAAAGg0/YMbSuUSeGRU/w869-h652-no/IMG_1789.JPG&quot;&gt;
+&lt;img src=&quot;https://lh3.googleusercontent.com/-bgpJt-uVtuk/U4oTa9rGnsI/AAAAAAAAGh4/vQKGWsVrfJM/w869-h652-no/IMG_1792.JPG&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-QwdT59CWGUw/U4oTbDeYYvI/AAAAAAAAGhw/1jYyXSjRJM4/w869-h652-no/IMG_1797.JPG&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-cB_IHyScM58/U4oTbQ8m0rI/AAAAAAAAGhM/ysW_77xWZLQ/w869-h652-no/IMG_1801.JPG&quot;&gt;
+&lt;img src=&quot;https://lh4.googleusercontent.com/-HNeba0H35FU/U4oTb1hvwFI/AAAAAAAAGhY/brOFi5YVy4U/w869-h652-no/IMG_1807.JPG&quot;&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-ZXi8cFiltzY/U4oTcL3vwPI/AAAAAAAAGhc/PG6d9qLLj84/w869-h652-no/IMG_1809.JPG&quot;&gt;
+&lt;img src=&quot;https://lh6.googleusercontent.com/-1KVHcrx-ioA/U4oTcnXKpjI/AAAAAAAAGho/nB7GCx80WVQ/w869-h652-no/IMG_1810.JPG&quot;&gt;</description>
+				<pubDate>Sun, 25 May 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/05/opal-creek</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/05/opal-creek</guid>
+			</item>
 		
 			<item>
 				<title>STM32F4-Discovery Breakout Board</title>
@@ -404,29 +425,6 @@
 				<pubDate>Sat, 15 Mar 2014</pubDate>
 				<link>http://www.wickerbox.net//2014/03/convolution-in-c</link>
 				<guid isPermaLink="true">http://www.wickerbox.net//2014/03/convolution-in-c</guid>
-			</item>
-		
-			<item>
-				<title>GetPixels</title>
-				<description>&lt;img src=&quot;/images/project/convolution/getpixels.png&quot;&gt;
-&lt;p&gt;GetPixels converts an image to a text file of grayscale pixel values and reconstructs the image. I wrote it so I could manipulate the value of an image&amp;#8217;s pixels using convolution kernels and easily look at the results.&lt;/p&gt;
-&lt;p&gt;Find the code at &lt;a href=&quot;http://github.com/wicker/getpixels&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;GetPixels is open source software licensed under the &lt;a href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;Creative Commons Attribution-ShareAlike International&lt;/a&gt; license. That means you can share and adapt the work for any purpose as long as you give me credit and share your work alike.&lt;/p&gt;
-&lt;h3&gt;Usage&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;./GetPixels.o &amp;lt;op&amp;gt; &amp;lt;image.png&amp;gt; &amp;lt;pixels.txt&amp;gt; &amp;lt;width&amp;gt; &amp;lt;height&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;op&lt;/code&gt; is the desired operation. Use &amp;#8216;1&amp;#8217; for image&amp;#8594;pixels and &amp;#8216;2&amp;#8217; for pixels&amp;#8594;image.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;image.png&lt;/code&gt; is the relative file path to the image and &lt;code&gt;pixels.txt&lt;/code&gt; is the text file.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;height&lt;/code&gt; and &lt;code&gt;width&lt;/code&gt; are the values in pixels of the image.&lt;/p&gt;
-&lt;h3&gt;Build&lt;/h3&gt;
-&lt;p&gt;I used OpenCV 2.4.8 and g++ to compile on Linux Mint 15 (Olivia).&lt;/p&gt;
-&lt;h3&gt;Failure Cases&lt;/h3&gt;
-&lt;p&gt;The program will alert you if the height or width is less than 1, if the input image or input pixel file don&amp;#8217;t exist, or if the operation chosen is not 1 or 2.&lt;/p&gt;
-&lt;p&gt;Note: The output files will be created and overwrite any existing files without prompting!&lt;/p&gt;
-&lt;p&gt;If you give the program a portrait of dimensions 240&amp;#215;320 but you tell the program it&amp;#8217;s a landscape of dimensions 320&amp;#215;240, you&amp;#8217;ll get a broken reconstruction:&lt;/p&gt;
-&lt;img src=&quot;/images/project/convolution/landscape.png&quot;&gt;</description>
-				<pubDate>Mon, 10 Mar 2014</pubDate>
-				<link>http://www.wickerbox.net//2014/03/getpixels</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2014/03/getpixels</guid>
 			</item>
 		
 	</channel>
