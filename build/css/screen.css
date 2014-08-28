@@ -3,10 +3,15 @@
 Grey Box Method - Layout CSS
 ----------------------------------------------- */
 
+html {
+  width: 100%;
+}
+
 body {
 	background: #efefef;
   color: #000;
 	font-size: 100%;
+  width: 100%;
   font-family: 'Trebuchet MS', sans-serif;
   padding: 0px;
   margin: 0px;
@@ -230,6 +235,15 @@ article img {
   width: 100%;
   padding: 0px;
   margin: 0px auto;
+}
+
+.vertimg {
+  width: 50%;
+  float: left;
+}
+
+.clear {
+  clear:both;
 }
 
 .convolution {
