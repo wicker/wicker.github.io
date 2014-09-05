@@ -117,12 +117,9 @@
 <p>In the second, I run gpsdev2 to open communication with the board.</p>
 <p>The openocd commands to run inside the second terminal are</p>
 <div style="margin-left: 20px;">
-<div class="highlight"><pre><code class="c"><span class="n">reset</span> <span class="n">halt</span>
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">reset</span> <span class="n">halt</span>
 <span class="n">flash</span> <span class="n">write</span> <span class="n">write_image</span> <span class="n">erase</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">wicker</span><span class="o">/</span><span class="n">proj</span><span class="o">/</span><span class="n">psas</span><span class="o">/</span><span class="n">stm32</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">ch</span><span class="p">.</span><span class="n">hex</span>
-<span class="n">reset</span>
-</code></pre>
-</div>
-</div>
+<span class="n">reset</span></code></pre></div></div>
 <p>Then the board should be programmed correctly.</p>
 <p>Huge thanks to Kay and Dave for helping me get started.</p>
 

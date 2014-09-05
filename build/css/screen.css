@@ -15,6 +15,7 @@ body {
   font-family: 'Trebuchet MS', sans-serif;
   padding: 0px;
   margin: 0px;
+  min-width: 980px;
 }
 
 p {
@@ -52,7 +53,8 @@ a:hover {
 ----------------------------------------------- */
 
 header {
-  width: 100%;
+  width:100%;
+  min-width: 980px;
   margin: 0px auto;
   background-color:#2b3f56;
   background-size: 100%;

@@ -7,6 +7,44 @@
 		<atom:link href="feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>DIY Cellphone 3G Build</title>
+				<description>&lt;p&gt;David A Mellis designed a &lt;a href=&quot;http://web.media.mit.edu/%7Emellis/gsm/&quot;&gt;cellphone module&lt;/a&gt; using the &lt;a href=&quot;http://www.quectel.com/product/prodetail.aspx?id=14&quot;&gt;Quectel &lt;span class=&quot;caps&quot;&gt;GSM&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;GPRS&lt;/span&gt; M10 2G module&lt;/a&gt; and the Arduino &lt;span class=&quot;caps&quot;&gt;GSM&lt;/span&gt; Shield library. The 2G networks in Portland are on their way out so I updated David&amp;#8217;s design with his permission and replaced the M10 with a &lt;a href=&quot;http://www.quectel.com/product/prodetail.aspx?id=64&quot;&gt;Quectel &lt;span class=&quot;caps&quot;&gt;UMTS&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;HSDPA&lt;/span&gt; UC15 3G module&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The modules have different pinouts, slightly different packages, and the UC15 takes 3.3V-4.3V while the M10 took 3.3V-4.6V, which is still fine for a 3.7V standard LiPo battery.&lt;/p&gt;
+&lt;p&gt;I got the boards back and did an initial build last week; I&amp;#8217;m working with a software dev so we&amp;#8217;re going to try to spin it up this week and see where we get.&lt;/p&gt;
+&lt;p&gt;The currently &lt;em&gt;untested&lt;/em&gt; hardware is available &lt;em&gt;for reference&lt;/em&gt; at the &lt;a href=&quot;http://github.com/wicker/cellphone3g&quot;&gt;GitHub repo&lt;/a&gt; and released as open hardware under the &lt;span class=&quot;caps&quot;&gt;MIT&lt;/span&gt; license. I will update this when it works.&lt;/p&gt;
+&lt;img src=&quot;/images/project/cellphone3g/finalboard.jpg&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Vocabulary&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;GSM&lt;/span&gt; &amp;#8211; Global System for Mobile Communications, 2G&lt;br /&gt;
+&lt;span class=&quot;caps&quot;&gt;GPRS&lt;/span&gt; &amp;#8211; General Packet Radio Services, packet data service on 2G and 3G&lt;br /&gt;
+&lt;span class=&quot;caps&quot;&gt;UMTS&lt;/span&gt; &amp;#8211; Universal Mobile Telecommunications System, 3G&lt;br /&gt;
+&lt;span class=&quot;caps&quot;&gt;HSDPA&lt;/span&gt; &amp;#8211; High-Speed Downlink Packet Access, allows higher speeds 3G speeds**&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;&lt;span class=&quot;caps&quot;&gt;GSM&lt;/span&gt; (Global System for Mobile Communications, originally Groupe Spécial Mobile), is a standard developed by the European Telecommunications Standards Institute (&lt;span class=&quot;caps&quot;&gt;ETSI&lt;/span&gt;) to describe protocols for second generation (2G) digital cellular networks used by mobile phones.&amp;#8221; &lt;a href=&quot;http://en.wikipedia.org/wiki/GSM&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;General packet radio service (&lt;span class=&quot;caps&quot;&gt;GPRS&lt;/span&gt;) is a packet oriented mobile data service on the 2G and 3G cellular communication system&amp;#8217;s global system for mobile communications (&lt;span class=&quot;caps&quot;&gt;GSM&lt;/span&gt;).&amp;#8221; &lt;a href=&quot;http://en.wikipedia.org/wiki/General_Packet_Radio_Service&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;&lt;span class=&quot;caps&quot;&gt;UMTS&lt;/span&gt; specifies a complete network system, which includes the radio access network (&lt;span class=&quot;caps&quot;&gt;UMTS&lt;/span&gt; Terrestrial Radio Access Network, or &lt;span class=&quot;caps&quot;&gt;UTRAN&lt;/span&gt;), the core network (Mobile Application Part, or &lt;span class=&quot;caps&quot;&gt;MAP&lt;/span&gt;) and the authentication of users via &lt;span class=&quot;caps&quot;&gt;SIM&lt;/span&gt; (subscriber identity module) cards.&amp;#8221; &lt;a href=&quot;http://en.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;High-Speed Downlink Packet Access (&lt;span class=&quot;caps&quot;&gt;HSDPA&lt;/span&gt;) is an enhanced 3G (third-generation) mobile-telephony communications protocol in the High-Speed Packet Access (&lt;span class=&quot;caps&quot;&gt;HSPA&lt;/span&gt;) family, also dubbed 3.5G, 3G+, or Turbo 3G, which allows networks based on Universal Mobile Telecommunications System (&lt;span class=&quot;caps&quot;&gt;UMTS&lt;/span&gt;) to have higher data-transfer speeds and capacity.&amp;#8221; &lt;a href=&quot;https://github.com/wicker/cellphone3g/blob/master/en.wikipedia.org/wiki/High-Speed_Downlink_Packet_Access&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;</description>
+				<pubDate>Fri, 05 Sep 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/09/cellphone-3g-dev-board</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/09/cellphone-3g-dev-board</guid>
+			</item>
+		
+			<item>
+				<title>Oven Control Board v3</title>
+				<description>&lt;p&gt;This is the final version of the oven controller installed on a 4&amp;#8242;&amp;#215;8&amp;#8242;&amp;#215;4&amp;#8242; curing oven at Portland State in the Mechanical Engineering department.&lt;/p&gt;
+&lt;p&gt;The blue case is 3D printed and gets attached to the side of the oven. The electronics are a three-board stack with an Arduino Uno R3 on the bottom; a custom oven control board set up in the middle with screw-in Euroterminals for start switch, relay, and thermocouple wires; and a 1.8&amp;quot; &lt;span class=&quot;caps&quot;&gt;TFT&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; Shield from Adafruit for the display on top.&lt;/p&gt;
+&lt;p&gt;The display allows the user to program up to nine steps in a temperature profile. Each step lets the user specify a ramp rate, hold temperature, and hold time. Once all the steps are set, the user should set the relay enable switch to ON and then tell the program to begin running the profile.&lt;/p&gt;
+&lt;p&gt;The program automatically detects which thermocouples are present and uses the temperature as input to a &lt;span class=&quot;caps&quot;&gt;PID&lt;/span&gt; loop which controls ramp rate by turning on and off up to four relays which are, for our configuration, two heaters, one fan, and one vent.&lt;/p&gt;
+&lt;p&gt;The code and hardware is available &lt;a href=&quot;https://github.com/psas/mme-capstone/&quot;&gt;on Github in the &amp;#8216;oven-controller&amp;#8217;&lt;/a&gt; directory.&lt;/p&gt;
+&lt;img src=&quot;/images/project/ovenboardv3/067_1.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/ovenboardv3/068_1.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/ovenboardv3/088_1.JPG&quot;&gt;
+&lt;img class=&quot;vertimg&quot; src=&quot;/images/project/ovenboardv3/IMG_1836.JPG&quot;&gt;</description>
+				<pubDate>Mon, 01 Sep 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/09/oven-control-board-v3</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/09/oven-control-board-v3</guid>
+			</item>
+		
+			<item>
 				<title>L1 at NXRS 2014</title>
 				<description>&lt;p&gt;I went out to Brothers, Oregon, to Oregon Rocketry&amp;#8217;s annual Northwest Xtreme Rocket Show in hopes of getting my Level 1 and Level 2 certs with my black and yellow 4&amp;quot; Sentinel on a 38mm motor I intended to buy out there. It turns out I forget to take pictures when I&amp;#8217;m busy chasing rockets, but these are a few right before the first flight.&lt;/p&gt;
 &lt;img class=&quot;vertimg&quot; src=&quot;https://lh4.googleusercontent.com/-fZB1zFGWsmw/U7NhnJTOUFI/AAAAAAAAGlw/Bfmzf32N7s8/w484-h645-no/sentinel-nxrs2014.jpg&quot;&gt; &lt;img class=&quot;vertimg&quot; src=&quot;https://lh6.googleusercontent.com/-hF7FB7399kY/U7Nhc80VVPI/AAAAAAAAGlU/zEeG5qpA2dI/w484-h645-no/photo5.png&quot;&gt; &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
@@ -159,47 +197,6 @@
 				<pubDate>Tue, 20 May 2014</pubDate>
 				<link>http://www.wickerbox.net//2014/05/garden-update</link>
 				<guid isPermaLink="true">http://www.wickerbox.net//2014/05/garden-update</guid>
-			</item>
-		
-			<item>
-				<title>McCall Point</title>
-				<description>&lt;p&gt;I went with some friends up to McCall Point on the plateau east of Mosier, Oregon, for a Mother&amp;#8217;s Day hike.&lt;/p&gt;
-&lt;p&gt;First we stopped briefly in Mosier.&lt;/p&gt;
-&lt;img class=&quot;vertimg&quot; src=&quot;https://lh3.googleusercontent.com/-H_UvL1FRdNs/U3PC2K_G4eI/AAAAAAAAGck/FFVHPUI-h78/w489-h652-no/095.JPG&quot;&gt; &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
-&lt;p&gt;Then we headed up to the plateau and started off towards McCall Point. It&amp;#8217;s a little less than 1100&amp;#8217; elevation gain over two miles.&lt;/p&gt;
-&lt;img src=&quot;https://lh6.googleusercontent.com/-bw4YYg-c3-g/U3PC3ffKuvI/AAAAAAAAGdA/x1I9dhGV08w/w800-h600-no/113.JPG&quot;&gt;
-&lt;p&gt;Looking back at the Washington State town of Lyle.&lt;/p&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-JDlC8gnmnAo/U3PC3YJQoBI/AAAAAAAAGc0/i7Jh3ZLCLD0/w800-h600-no/120.JPG&quot;&gt;
-&lt;img src=&quot;https://lh3.googleusercontent.com/-TteVE4zTmsc/U3PC34ktqKI/AAAAAAAAGc4/k3nYr6KLS68/w800-h600-no/130.JPG&quot;&gt;
-&lt;img src=&quot;https://lh6.googleusercontent.com/-6oDnMIwBvJQ/U3PC5rkpcoI/AAAAAAAAGdg/TPSz1uBi0jg/w800-h600-no/134.JPG&quot;&gt;
-&lt;img src=&quot;https://lh6.googleusercontent.com/-j-fCJoHO3e8/U3PC6NAXWsI/AAAAAAAAGdc/FZcglWMF9-Q/w800-h600-no/150.JPG&quot;&gt;
-&lt;img src=&quot;https://lh3.googleusercontent.com/-xL7BFwxpQwg/U3PC7MBwPqI/AAAAAAAAGdw/5TALuso2sQk/w800-h600-no/151.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/misc/mccall-blended.png&quot;&gt;
-&lt;img src=&quot;https://lh5.googleusercontent.com/-ED8ngLYasLU/U3PC8tzai_I/AAAAAAAAGeM/7KhnsUncAZs/w800-h600-no/156.JPG&quot;&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-u1Ofr4DYDcI/U3PC8i27lyI/AAAAAAAAGeE/CmKm3Gi8srw/w800-h600-no/157.JPG&quot;&gt;
-&lt;p&gt;The trail loops around the meadow at the top, perfect for a picnic.&lt;/p&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-2zWNs0tTXsI/U3PC9PuxTWI/AAAAAAAAGeU/ECckBPTZR5c/w800-h600-no/178.JPG&quot;&gt;
-&lt;img src=&quot;https://lh5.googleusercontent.com/-oVFJnsVkiPo/U3PC9vuc20I/AAAAAAAAGeg/MTvZQFSPc94/w800-h600-no/183.JPG&quot;&gt;
-&lt;img src=&quot;https://lh5.googleusercontent.com/-C-dwR9EvHTQ/U3PC-fGlT_I/AAAAAAAAGec/5D8WwKxgGfw/w800-h600-no/184.JPG&quot;&gt;</description>
-				<pubDate>Sun, 11 May 2014</pubDate>
-				<link>http://www.wickerbox.net//2014/05/mccall-point</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2014/05/mccall-point</guid>
-			</item>
-		
-			<item>
-				<title>Marlboro College</title>
-				<description>&lt;p&gt;A friend of mine went off to a tiny liberal arts college on a hilltop in Vermont to get a philosophy and literature degree, which might be the exact opposite of what I&amp;#8217;ve done in every way, so I went out to visit him shortly before graduation. I arrived in Boston just after midnight, rented a car, and drove through New Hampshire to Vermont.&lt;/p&gt;
-&lt;p&gt;These are just some photos for my own memories. The woods in particular were beautiful. Marlboro, like the rest of the East Coast, experienced a super cold winter that lingered into May, though I guess the snow had melted right before I got there. Walking and talking on the trails was satisfying, and everywhere there were glimpses of other people having been there: sculptures, little shrines, art.&lt;/p&gt;
-&lt;img src=&quot;/images/travels/marlboro/007.JPG&quot;&gt;
-&lt;img src=&quot;/images/travels/marlboro/012.JPG&quot;&gt;
-&lt;p&gt;Dalrymple and the back of the library. I didn&amp;#8217;t take many photos since I was too busy hanging out, but I wanted to have something visual to remember.&lt;/p&gt;
-&lt;img src=&quot;/images/travels/marlboro/022.JPG&quot;&gt;
-&lt;img src=&quot;/images/travels/marlboro/023.JPG&quot;&gt;
-&lt;p&gt;Googly eyes stuck on National Geographic cut-outs around the house.&lt;/p&gt;
-&lt;img class=&quot;vertimg&quot; src=&quot;/images/travels/marlboro/024.JPG&quot;&gt; &lt;img class=&quot;vertimg&quot; src=&quot;/images/travels/marlboro/032.JPG&quot;&gt; &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;</description>
-				<pubDate>Mon, 05 May 2014</pubDate>
-				<link>http://www.wickerbox.net//2014/05/marlboro-college-vermont</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2014/05/marlboro-college-vermont</guid>
 			</item>
 		
 	</channel>

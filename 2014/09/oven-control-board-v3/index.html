@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     
-      <title>Tag: 'oven' | Jenner Hanni</title>
+      <title>Oven Control Board v3 | Jenner Hanni</title>
     
 
     
@@ -89,39 +89,28 @@
       <article class="border">
       
 
-          
-  <div style="padding: 10px 10px 10px 10px; width: 90%; float: left; text-align:left;">
-    <a href="/2014/09/oven-control-board-v3" title="Oven Control Board v3" class="white">
-       <img src="/images/thumbs/ovenboard3.png" class="front" style="float: left; width: 25%; padding-top: 5px; margin-right: 10px; float: left;"/>
-    </a>
-      <a href="/2014/09/oven-control-board-v3">Oven Control Board v3</a><br />
-      Final product to make the oven more appliance-like.
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2014/06/nxrs-2014">&laquo; L1 at NXRS 2014</a></div>
+   
+   
+    <div style="float: right;"><a class="next" href="/2014/09/cellphone-3g-dev-board">DIY Cellphone 3G Build &raquo;</a></div>
+   
+  <div style="clear:both;"></div>
   </div>
-  
-  <div style="padding: 10px 10px 10px 10px; width: 90%; float: left; text-align:left;">
-    <a href="/2014/06/rocket-manufacturing-capstone" title="Rocket Manufacturing Capstone" class="white">
-       <img src="/images/thumbs/mmecapstone.png" class="front" style="float: left; width: 25%; padding-top: 5px; margin-right: 10px; float: left;"/>
-    </a>
-      <a href="/2014/06/rocket-manufacturing-capstone">Rocket Manufacturing Capstone</a><br />
-      Checking out the rocket club's capstone deliverables.
-  </div>
-  
-  <div style="padding: 10px 10px 10px 10px; width: 90%; float: left; text-align:left;">
-    <a href="/2014/02/oven-control-board-v2" title="Oven Control Board v2" class="white">
-       <img src="/images/thumbs/ovenboard2.png" class="front" style="float: left; width: 25%; padding-top: 5px; margin-right: 10px; float: left;"/>
-    </a>
-      <a href="/2014/02/oven-control-board-v2">Oven Control Board v2</a><br />
-      Updating the previous controller.
-  </div>
-  
-  <div style="padding: 10px 10px 10px 10px; width: 90%; float: left; text-align:left;">
-    <a href="/2014/01/oven-control-board" title="Oven Control Board v1" class="white">
-       <img src="/images/thumbs/ovenboard.png" class="front" style="float: left; width: 25%; padding-top: 5px; margin-right: 10px; float: left;"/>
-    </a>
-      <a href="/2014/01/oven-control-board">Oven Control Board v1</a><br />
-      Layout design, routing, and build of an oven controller.
-  </div>
-  
+
+  <div class="title">Oven Control Board v3</div>
+  <p>September 2014 - Portland, Oregon</p>
+
+  <p>This is the final version of the oven controller installed on a 4&#8242;&#215;8&#8242;&#215;4&#8242; curing oven at Portland State in the Mechanical Engineering department.</p>
+<p>The blue case is 3D printed and gets attached to the side of the oven. The electronics are a three-board stack with an Arduino Uno R3 on the bottom; a custom oven control board set up in the middle with screw-in Euroterminals for start switch, relay, and thermocouple wires; and a 1.8&quot; <span class="caps">TFT</span> <span class="caps">LCD</span> Shield from Adafruit for the display on top.</p>
+<p>The display allows the user to program up to nine steps in a temperature profile. Each step lets the user specify a ramp rate, hold temperature, and hold time. Once all the steps are set, the user should set the relay enable switch to ON and then tell the program to begin running the profile.</p>
+<p>The program automatically detects which thermocouples are present and uses the temperature as input to a <span class="caps">PID</span> loop which controls ramp rate by turning on and off up to four relays which are, for our configuration, two heaters, one fan, and one vent.</p>
+<p>The code and hardware is available <a href="https://github.com/psas/mme-capstone/">on Github in the &#8216;oven-controller&#8217;</a> directory.</p>
+<img src="/images/project/ovenboardv3/067_1.JPG">
+<img src="/images/project/ovenboardv3/068_1.JPG">
+<img src="/images/project/ovenboardv3/088_1.JPG">
+<img class="vertimg" src="/images/project/ovenboardv3/IMG_1836.JPG">
 
 
 

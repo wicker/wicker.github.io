@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>DIY Cellphone 3G Build | Jenner Hanni</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+
+  </head>
+
+	<body>
+
+
+    <header>
+      <div class="title"><a href="/">JennerHanni.net</a></div>
+      <div class="desc">Adventures of an aerospace geek in Portland, Oregon.<br />
+      If you're looking for freelance software, hardware, or web design, see <a href="http://wickerbox.net/">wickerbox.net</a></div>
+      <div style="clear:both;"></div>
+    </header> 
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <nav class="inside">
+          <ul>
+            <li><a href="/about/">About</a> - <a href="/notebook/">Notebook</a></li>
+            <li><a href="http://github.com/wicker/">Github</a> - <a href="/feed.xml">RSS Feed</a></li>
+ <br />
+            <li><a href="/chronological/">All Posts by Date</a></li>
+            
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <img src="/images/cyl-patch-antenna.png">
+        </nav>
+
+        <nav class="inside">
+          <h4>Travels</h4>
+          <ul>
+            <li><a href="/travels/europe/">Europe</a></li>
+            <li><a href="/travels/southwest/">Desert Southwest</a></li>
+            <li><a href="/travels/northwest/">Pacific Northwest</a></li>
+            <li><a href="/travels/rocky-mountains/">Rocky Mountains</a></li>
+            <li><a href="/travels/east-coast/">East Coast</a></li>
+            <li><a href="/travels/al-asad-iraq/">Al Asad, Iraq</a></li>
+            <li><a href="/travels/uss-tarawa/">USS Tarawa</a></li>
+            <li><a href="/private-pilot/">Private Pilot</a></li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="/projects/geology/">Geology</a></li>
+            <li><a href="/projects/software/">Software</a></li>
+            <li><a href="/projects/hardware/">Hardware</a></li>
+            <li><a href="/projects/rockets/">Rockets</a></li>
+            <li><a href="/projects/foxcar/">Foxcar</a></li>
+          </ul>
+          <h4>Other Stuff</h4>
+          <ul> 
+            <li><a href="/writing/">Writing & Talks</a></li>
+            <li><a href="/photography/">Photography</a></li>
+            <li><a href="/garden/">Garden</a></li>
+          </ul>
+        </nav>
+
+        <nav class="inside">
+          <a href="/endurance-days/">The <em>City of Yuma</em><br />1949 World Record<br />Endurance Flight
+          <img src="/images/endurance-days.png" style="margin: 10px auto;">
+          Photo Archive</a>
+        </nav>
+          
+        <nav class="inside">
+          <a href="http://www.oshwa.org/definition/"><img src="/images/ohw.png" style="margin: 10px auto;"></a>
+        </nav>
+          
+      </div>    
+
+      
+      <article class="border">
+      
+
+          <div style="padding: 20px; border-bottom: 1px solid #c0c0c0;">
+   
+    <div style="float: left;"><a class="prev" href="/2014/09/oven-control-board-v3">&laquo; Oven Control Board v3</a></div>
+   
+   
+  <div style="clear:both;"></div>
+  </div>
+
+  <div class="title">DIY Cellphone 3G Build</div>
+  <p>September 2014 - Portland, Oregon</p>
+
+  <p>David A Mellis designed a <a href="http://web.media.mit.edu/%7Emellis/gsm/">cellphone module</a> using the <a href="http://www.quectel.com/product/prodetail.aspx?id=14">Quectel <span class="caps">GSM</span>/<span class="caps">GPRS</span> M10 2G module</a> and the Arduino <span class="caps">GSM</span> Shield library. The 2G networks in Portland are on their way out so I updated David&#8217;s design with his permission and replaced the M10 with a <a href="http://www.quectel.com/product/prodetail.aspx?id=64">Quectel <span class="caps">UMTS</span>/<span class="caps">HSDPA</span> UC15 3G module</a>.</p>
+<p>The modules have different pinouts, slightly different packages, and the UC15 takes 3.3V-4.3V while the M10 took 3.3V-4.6V, which is still fine for a 3.7V standard LiPo battery.</p>
+<p>I got the boards back and did an initial build last week; I&#8217;m working with a software dev so we&#8217;re going to try to spin it up this week and see where we get.</p>
+<p>The currently <em>untested</em> hardware is available <em>for reference</em> at the <a href="http://github.com/wicker/cellphone3g">GitHub repo</a> and released as open hardware under the <span class="caps">MIT</span> license. I will update this when it works.</p>
+<img src="/images/project/cellphone3g/finalboard.jpg">
+<p><strong>Vocabulary</strong></p>
+<p><span class="caps">GSM</span> &#8211; Global System for Mobile Communications, 2G<br />
+<span class="caps">GPRS</span> &#8211; General Packet Radio Services, packet data service on 2G and 3G<br />
+<span class="caps">UMTS</span> &#8211; Universal Mobile Telecommunications System, 3G<br />
+<span class="caps">HSDPA</span> &#8211; High-Speed Downlink Packet Access, allows higher speeds 3G speeds**</p>
+<p><strong>Reference</strong></p>
+<p>&#8220;<span class="caps">GSM</span> (Global System for Mobile Communications, originally Groupe Spécial Mobile), is a standard developed by the European Telecommunications Standards Institute (<span class="caps">ETSI</span>) to describe protocols for second generation (2G) digital cellular networks used by mobile phones.&#8221; <a href="http://en.wikipedia.org/wiki/GSM">Wikipedia</a></p>
+<p>&#8220;General packet radio service (<span class="caps">GPRS</span>) is a packet oriented mobile data service on the 2G and 3G cellular communication system&#8217;s global system for mobile communications (<span class="caps">GSM</span>).&#8221; <a href="http://en.wikipedia.org/wiki/General_Packet_Radio_Service">Wikipedia</a></p>
+<p>&#8220;<span class="caps">UMTS</span> specifies a complete network system, which includes the radio access network (<span class="caps">UMTS</span> Terrestrial Radio Access Network, or <span class="caps">UTRAN</span>), the core network (Mobile Application Part, or <span class="caps">MAP</span>) and the authentication of users via <span class="caps">SIM</span> (subscriber identity module) cards.&#8221; <a href="http://en.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System">Wikipedia</a></p>
+<p>&#8220;High-Speed Downlink Packet Access (<span class="caps">HSDPA</span>) is an enhanced 3G (third-generation) mobile-telephony communications protocol in the High-Speed Packet Access (<span class="caps">HSPA</span>) family, also dubbed 3.5G, 3G+, or Turbo 3G, which allows networks based on Universal Mobile Telecommunications System (<span class="caps">UMTS</span>) to have higher data-transfer speeds and capacity.&#8221; <a href="https://github.com/wicker/cellphone3g/blob/master/en.wikipedia.org/wiki/High-Speed_Downlink_Packet_Access">Wikipedia</a></p>
+
+
+
+      </article>
+
+      <div style="clear: both;"></div>
+
+    </section>
+
+	</body>
+</html>
