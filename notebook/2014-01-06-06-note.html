@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>6 Jan 2014 | Jenner Hanni</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+
+  </head>
+
+	<body style="background-color: #fff;">
+
+    
+    
+
+    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
+      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - Notebook - &c<div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
+    </div>
+
+    <div style="margin: 0 auto; width: 70%; text-align:center;">
+      <article>
+
+  <div style="padding: 20px; border: 1px solid #c0c0c0;">
+     
+     
+    <div style="clear:both;"></div>
+  </div>
+
+   
+  <img src="/images/notes/flying6jan.png"> 
+   
+
+  <div class="title"></div>
+
+  <p>Beautiful day doing flight test of our cameras for work.</p>
+<p>I&#8217;ve been looking at putting the Robot Operating System on the STM32F Discovery Board so I took a brief detour through basic toolchain review. A couple nice links are these at <a href="http://elinux.org/Toolchains">eLinux &#8211; Toolchains</a> and <a href="http://www.kunen.org/uC/gnu_tool.html">thing2</a>.</p>
+<p>In general, paraphrasing from the article, I need disk space, decent <span class="caps">CPU</span> and memory, recent gcc compiler and <span class="caps">GNU</span> build utilities for the sort of stuff I do.</p>
+<p>I&#8217;m prototyping on <span class="caps">ARM</span> processors so I build arm-none-eabi and newlib, which successfully can build the libraries; works with FreeRTOS, ChibiOS, and <span class="caps">ROS</span>; and can make binaries for bare metal (no OS) software. I&#8217;m not developing for embedded Linux targets so I don&#8217;t have to build against glibc. I&#8217;m not sure what an embedded Linux target really is, though.</p>
+<p>Having an arm-x-eabi means it&#8217;s for <span class="caps">ARM</span> with the <span class="caps">ARM</span> standard <span class="caps">EABI</span>.</p>
+<ul>
+	<li>arm-none-eabi means it&#8217;s not for a specific OS or build</li>
+	<li>arm-psas-eabi means it expects the <span class="caps">PSAS</span> environment</li>
+	<li>arm-linux-eabi is designed to be used to build programs with glibc under Linux</li>
+</ul>
+
+</article>
+
+    </div>
+
+    <div style="clear:both;"></div>
+
+    
+    
+
+	</body>
+</html>

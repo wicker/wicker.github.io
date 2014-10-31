@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	background: #efefef;
+	background: #8ea0b4;
   color: #000;
 	font-size: 100%;
   width: 100%;
@@ -27,15 +27,24 @@ p {
   padding: 20px;
 }
 
+#bg {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+#bg img {
+    width:100%;
+    height:100%;
+}
+
 /* anchors
 ----------------------------------------------- */
 
-a {
-	color: #033e6b;
-	text-decoration: none;
-}
-
-a:visited {
+a, a:visited {
 	color: #033e6b;
 	text-decoration: none;
 }
@@ -47,66 +56,78 @@ a:hover {
 .code {
   font-family: "Courier New", Courier, monospace;
   margin-left: 40px;
+  text-align: left;
 }
 
 /* header
 ----------------------------------------------- */
 
 header {
-  width:100%;
-  min-width: 980px;
-  margin: 0px auto;
-  background-color:#2b3f56;
-  background-size: 100%;
-  position: relative;
-  color: #fff;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  color: #000;
 }
 
 header .title {
-  font-family: 'Belleza', sans-serif;
-  font-size: 2em;
-  text-align:left;
-  width: 980px;
-  margin: 0px auto 10px auto;
+  padding: 12px;
+  font-family: 'Belleza', serif;
+  text-align: left;
+  float:left;
+  font-size: 24px;
+  font-variant: small-caps;
 }
 
 header .desc {
-  text-align:left;
-  padding: 10px;
-  margin: 0px auto; 
-  width: 980px;
+  text-align: left;
+  font-family: 'Belleza', serif;
+  padding: 20px 0 10px 12px;
+  font-weight: normal;
 }
 
+header h2 {
+  font-size: 20px;
+  font-family: 'Belleza', serif;
+}
 
 header a,
 header a:visited {
-  color: #c1aa87;
+  color: #000;
 	font-weight:bold;
 	text-decoration: none;
 }
 
 header a:hover {
-	color:#fff;
+	color:#f0f0f0;
 }
 
 /* nav is the horizontal nav bar in theader
 ----------------------------------------------- */
 
 nav {
+  float: right;
   text-align: center;
   padding: 0px;
-  margin: 0 0 10px 0;
+  margin: 0 auto 10px;
   color: #000;
-  background-color: #fff;
-  border: 1px solid #696969
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 nav ul {
   text-align: center;
   list-style: none;
-  margin: 10px 0 10px 0;
+  margin: 10px auto;
   padding: 0px;
+}
+
+nav li {
+  float: left;
+  margin: 10px 10px 10px 10px;
+  text-shadow: 1px 1px #c0c0c0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 
 nav h4 {
@@ -118,19 +139,66 @@ nav h4 {
   color: #000;
 }
 
+/* thumbs display
+----------------------------------------------- */
+
+h1 {
+  padding: 12px;
+  font-family: 'Belleza', serif;
+  text-align: center;
+  font-size: 24px;
+  font-variant: small-caps;
+  margin: 0 auto;
+}
+
+.thumbs-display {
+  text-align:left;
+  float:right; 
+  width: 85%;
+  margin-bottom: 20px;
+}
+
+.thumbs-display img {
+  width: 100%;
+}
+
+.thumbs-indiv {
+  width: 250px; 
+  background-color: #fff; 
+  text-align:center; 
+  display:inline-block; 
+  margin: 1% auto;  
+  vertical-align: top;
+}
+
+.thumbs-text {
+  font-size:0.8em; 
+  height: 0.9em; 
+  padding: 5px 0; 
+  overflow: hidden;
+}
+
 /* section is the entire white content area
 ----------------------------------------------- */
 
 section {
   margin: 0px auto;
-  padding: 0px;
+  padding: 20px 0 20px 0px;
   color: #000;
   clear:both;
-  width: 980px;
+  background-color: #fff;
+  min-height: 100%;
 }
 
 h2 {
   text-align: center;
+  margin: 10px auto 12px auto;
+  text-shadow: 1px 1px #c0c0c0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 
 /* sidebar
@@ -147,10 +215,9 @@ h2 {
 ----------------------------------------------- */
 
 article {
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px; 
   width: 700px;
-  float: right;
 }
 
 .border {
@@ -158,6 +225,15 @@ article {
   background: #fff;
   padding: 0px;
   margin: 10px;
+}
+
+/* frontpage icons */
+article .frontpage {
+  text-align:center;
+  width: 24%;
+  margin: 10px 2px;
+  float: left;
+  font-size: 12px;
 }
 
 article .title {
@@ -169,11 +245,10 @@ article .title {
 }
 
 article .item {
-  width: 45%;
-  float: left;
   text-align: left;
-  line-height: 1.2em;
   color: #000;
+  float: left;
+  width: 30%;
 }
 
 article .item h3 {
@@ -186,14 +261,13 @@ article .item h3 {
   margin-top: 0px;
 }
 
-
 article .date {
   height: 1.2em;
   margin: 5px 0 5px 0;
 }
 
 article .desc {
-  height: 2.4em; 
+  height: 1.2em; 
   line-height: 1.2em;
   overflow: hidden;
   margin: 10px 0 10px 0;

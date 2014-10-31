@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      <title>3 Jan 2014 | Jenner Hanni</title>
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+
+  </head>
+
+	<body style="background-color: #fff;">
+
+    
+    
+
+    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
+      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - Notebook - &c<div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
+    </div>
+
+    <div style="margin: 0 auto; width: 70%; text-align:center;">
+      <article>
+
+  <div style="padding: 20px; border: 1px solid #c0c0c0;">
+     
+     
+    <div style="clear:both;"></div>
+  </div>
+
+   
+  <img src="/images/notes/eagle.png"> 
+   
+
+  <div class="title"></div>
+
+  <p>Caution: contents contain notes about the Eagle <span class="caps">CAD</span> program. Readers allergic to Eagle should skip it.</p>
+<p>I use the standard version of Eagle for making printed circuit boards. It&#8217;s basically a cad program you can use to draw the schematic and then route the layout of the final board. I usually take my files and send them off to OSHPark to be made into real physical boards.</p>
+<p>I don&#8217;t recommend Eagle anymore; I&#8217;ve heard too many good things about KiCad, which is open source and free. Go learn that instead if you haven&#8217;t already put time and money into Eagle. I&#8217;ve had customer support problems and nobody ever actually gave me a copy of the Eagle license that they made me pay money for. They also misrepresented what an academic license consisted of. So go to KiCad.</p>
+<p>This note&#8217;s about the eagle.scr startup script which sets default values for things like via diameter, wire size, and grid size. I look to OSHPark&#8217;s design rules to find out what these values ought to be. The fab houses that receive my design files and fabricate my boards for me set the minimum widths, distances, diameters, etc that their machinery can accommodate considering how much money I want to give them. I like to set my minimum settings a little larger so I don&#8217;t run the risk of small inaccuracies breaking my design but I can go smaller if I need to. (I don&#8217;t usually need to.)</p>
+<p>I&#8217;ve been experimenting a little with the Eagle startup script. I was using semi-colons inconsistently and it turns out if you have multiple statements on one line, you need to separate them with a semi-colon. Either a semi-colon or a newline appear to work for statements in list form. For example, this works fine:</p>
+<p><code>change drill 0.013; change diameter 0.027</code><br />
+<code>change shape round;  </code></p>
+<p>This doesn&#8217;t:</p>
+<p><code>change drill 0.013 change diameter 0.027</code></p>
+<p>But this does:</p>
+<p><code>change drill 0.013</code><br />
+<code>change diameter 0.027</code></p>
+<p>The script allows you to set default values for the board, schematic, device, symbol, package, and general library editing screens. The package screen is basically the same as board except there&#8217;s no need to specify the route width because there isn&#8217;t any routing.</p>
+<p>I work in inches because that&#8217;s how I started out and the important thing is just to be consistent with grid sizes and measurement system.</p>
+<p>My script looks like this:</p>
+<p><code>OVERALL</code><br />
+<code>GRID IN 0.0125 DOTS ON ALT IN 0.025;</code></p>
+<p><code>BOARD</code><br />
+<code>change drill 0.013      # drill/hold diameter</code><br />
+<code>change diameter 0.027   # via pad diameter</code><br />
+<code>change shape round      # via shape</code><br />
+<code>change width 0.01       # route width</code><br />
+<code>change size 0.50        # text size</code></p>
+<p><code>SCH</code><br />
+<code>change width 0.006      # wire width</code><br />
+<code>change size 0.50        # text size</code></p>
+<p>No changes needed for library or device</p>
+<p><code>SYM</code><br />
+<code>change length middle    # default pin length</code><br />
+<code>change visible both     # pin and pad number</code></p>
+<p><code>PAC</code><br />
+<code>change shape round      # via shape</code><br />
+<code>change diameter 0.027   # via pad diameter</code><br />
+<code>change drill 0.013      # drill/hold diameter</code><br />
+<code>change size 0.050</code></p>
+
+</article>
+
+    </div>
+
+    <div style="clear:both;"></div>
+
+    
+    
+
+	</body>
+</html>

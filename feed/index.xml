@@ -4,7 +4,7 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-09-05T11:54:25-07:00</updated>
+ <updated>2014-10-31T14:13:45-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
@@ -842,41 +842,6 @@ Exposure Bias: +2 EV&lt;/p&gt;
  </entry>
  
  <entry>
-   <title>1 Feb 2014</title>
-   <link href="http://wickerbox.net/2014/02/01-note"/>
-   <updated>2014-02-01T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2014/02/01-note</id>
-   <content type="html">&lt;p&gt;I was a little bummed this morning that January&amp;#8217;s over and I don&amp;#8217;t have any other hardware stuff to post about but I realized that I&amp;#8217;ve been super busy doing, you know, work for which I&amp;#8217;m paid and can&amp;#8217;t talk about. On the hobby hacking side, I&amp;#8217;ve done plenty of work this month between the oven controller, a couple of &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; RF board design reviews, the DxWiFi test, and my &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; habit. I&amp;#8217;ve also had four sessions of &lt;span class=&quot;caps&quot;&gt;EPL&lt;/span&gt; managing where other people came in to work on stuff.&lt;/p&gt;
-&lt;p&gt;One of my biggest reasons for having the site is to remind myself that I do things by posting pictures of the stuff I do. I tend to forget and then blame myself for being Not Productive Enough.&lt;/p&gt;
-&lt;p&gt;So looking back, I&amp;#8217;m delighted to remember that I had a really enjoyable January.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>29 Jan 2014</title>
-   <link href="http://wickerbox.net/2014/01/29-note"/>
-   <updated>2014-01-29T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2014/01/29-note</id>
-   <content type="html">&lt;p&gt;Some notes to myself about Eagle, Gerbers, layers, and what to use with the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; and what to use with OSHPark.&lt;/p&gt;
-&lt;p&gt;http://dorkbotpdx.org/wiki/pcb_order  silkscreens, etc.&lt;br /&gt;
-what is silkscreen, tcream, what are the layers &amp;#8212; what is OSHPark doing for me with the gerbers&lt;br /&gt;
-and what would I have to do differently if I was using PCBExpress or another fab house ordering system&lt;/p&gt;
-&lt;p&gt;They&amp;#8217;ve automated nearly everything and I&amp;#8217;m afraid I won&amp;#8217;t understand what&amp;#8217;s actually there if I tried to do my own boards. All these layers take some getting used to.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>28 Jan 2014</title>
-   <link href="http://wickerbox.net/2014/01/28-note"/>
-   <updated>2014-01-28T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2014/01/28-note</id>
-   <content type="html">&lt;p&gt;My library flow for Eagle is to work out of a single directory called ~/.eagle and have all my libraries, scripts, etc. to be in there. Anything that would be used by multiple designs.&lt;/p&gt;
-&lt;p&gt;I never, ever, ever use the epf files and I&amp;#8217;ve yet to meet anybody who does.&lt;/p&gt;
-&lt;p&gt;To start a new design, I make a repo on Github and clone it to my dev machine. I create a schematic and start working. At some point I&amp;#8217;ll make the board and work on that. Any changes to libraries happens in that default directory.&lt;/p&gt;
-&lt;p&gt;When I&amp;#8217;m reading to commit, I use the Eagle export function to create multiple library files into a local folder called &amp;#8216;lbr&amp;#8217; or &amp;#8216;libraries&amp;#8217; so anybody who forks the repo has all the parts they need.&lt;/p&gt;
-&lt;p&gt;When I git pull, I always check if I got updated libraries and I&amp;#8217;ll wrap them back into my default library. I&amp;#8217;m pretty sure I&amp;#8217;m running the risk of losing work in the overwriting/copying process but I&amp;#8217;m kind of stuck on what to do about it, except be very careful.&lt;/p&gt;
-&lt;p&gt;Eagle&amp;#8217;s libraries are basically just frustrating as hell.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
    <title>Oven Control Board v1</title>
    <link href="http://wickerbox.net/2014/01/oven-control-board"/>
    <updated>2014-01-27T00:00:00-08:00</updated>
@@ -892,94 +857,6 @@ and what would I have to do differently if I was using PCBExpress or another fab
 &lt;p&gt;The libraries and everything are all up in the &lt;a href=&quot;https://github.com/wicker/oven-controller&quot;&gt;oven-controller Github repo&lt;/a&gt;.&lt;/p&gt;
 &lt;img src=&quot;/images/project/oven-control-board/ovenboard-top.png&quot;&gt;
 &lt;img src=&quot;/images/project/oven-control-board/ovenboard-side.png&quot;&gt;</content>
- </entry>
- 
- <entry>
-   <title>27 Jan 2014</title>
-   <link href="http://wickerbox.net/2014/01/27-note"/>
-   <updated>2014-01-27T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2014/01/27-note</id>
-   <content type="html">&lt;p&gt;I got super busy with work but then this week have done a ton of rocket club stuff. The &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; RF board is still in design reviews but I think we&amp;#8217;ve got the RF side figured out.&lt;/p&gt;
-&lt;p&gt;I finished an oven control board &lt;span class=&quot;caps&quot;&gt;PCB&lt;/span&gt; layout and got it routed for the oven team. All the files are in the &lt;a href=&quot;http://github.com/wicker/oven-controller/&quot;&gt;Github repo&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We went up to Rocky Butte and shot wifi packets to Council Crest with the &lt;a href=&quot;http://github.com/psas/DxWiFi/&quot;&gt;DxWiFi team&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I think running around at full speed finally let the cold I&amp;#8217;ve been fighting hit me because I was already feeling like crap on Sunday and then I ended up sleeping til the afternoon today. Ugh. Tomorrow will be better.&lt;/p&gt;
-&lt;p&gt;I just got the email that says my Foxcar control board is in the mail so I guess I know what I&amp;#8217;m doing this weekend&amp;#8230;&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>6 Jan 2014</title>
-   <link href="http://wickerbox.net/2014/01/06-note"/>
-   <updated>2014-01-06T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2014/01/06-note</id>
-   <content type="html">&lt;p&gt;Beautiful day doing flight test of our cameras for work.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ve been looking at putting the Robot Operating System on the STM32F Discovery Board so I took a brief detour through basic toolchain review. A couple nice links are these at &lt;a href=&quot;http://elinux.org/Toolchains&quot;&gt;eLinux &amp;#8211; Toolchains&lt;/a&gt; and &lt;a href=&quot;http://www.kunen.org/uC/gnu_tool.html&quot;&gt;thing2&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In general, paraphrasing from the article, I need disk space, decent &lt;span class=&quot;caps&quot;&gt;CPU&lt;/span&gt; and memory, recent gcc compiler and &lt;span class=&quot;caps&quot;&gt;GNU&lt;/span&gt; build utilities for the sort of stuff I do.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m prototyping on &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; processors so I build arm-none-eabi and newlib, which successfully can build the libraries; works with FreeRTOS, ChibiOS, and &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt;; and can make binaries for bare metal (no OS) software. I&amp;#8217;m not developing for embedded Linux targets so I don&amp;#8217;t have to build against glibc. I&amp;#8217;m not sure what an embedded Linux target really is, though.&lt;/p&gt;
-&lt;p&gt;Having an arm-x-eabi means it&amp;#8217;s for &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; with the &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; standard &lt;span class=&quot;caps&quot;&gt;EABI&lt;/span&gt;.&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;arm-none-eabi means it&amp;#8217;s not for a specific OS or build&lt;/li&gt;
-	&lt;li&gt;arm-psas-eabi means it expects the &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; environment&lt;/li&gt;
-	&lt;li&gt;arm-linux-eabi is designed to be used to build programs with glibc under Linux&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>4 Jan 2014</title>
-   <link href="http://wickerbox.net/2014/01/04-note"/>
-   <updated>2014-01-04T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2014/01/04-note</id>
-   <content type="html">&lt;p&gt;I wrote a nice, long note last night but with today&amp;#8217;s date about my process for designing PCBs and then blew it away this morning by running the makenote script for today. Argh. Well, it had occurred to me that I should add a line to the makenote script to prompt me about the overwrite if a post already exists.&lt;/p&gt;
-&lt;p&gt;It turns out that&amp;#8217;s as easy as adding -i to the cp command and, as a bonus, if I tell it &amp;#8216;n&amp;#8217; (I don&amp;#8217;t want it to overwrite) then the script executes the next line which is opening the file so I can edit. I can live with that.&lt;/p&gt;
-&lt;p&gt;A couple random notes about sed to add at the beginning and end of a line:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;s/$/text/&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;s/^/text/&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;In other news, I came across &lt;a href=&quot;http://www.davehylands.com/Wood-Working/Electronics-Workbench/&quot;&gt;Dave Hyland&amp;#8217;s Electronics Workbench&lt;/a&gt; via StackExchange because I&amp;#8217;ve been inventorying my piles of components. I kind of want to do this as a SolidWorks project. I do have a closet in my office&amp;#8230; I&amp;#8217;ve been making a database on summerisle with an inventory of all the parts I have at home. I&amp;#8217;m tired of trying to match them up. I&amp;#8217;m going to get a trial of Illustrator and mock up an interface or something to drop on top of it, mostly because the Adobe stuff is so shiny.&lt;/p&gt;
-&lt;p&gt;But I&amp;#8217;ve been going through a ton of old photos and organizing all my photo albums on one hard drive. It&amp;#8217;s pretty cool to look at photos I took in 2000 as a fifteen-year old. They&amp;#8217;re mostly crap, but their value to me is mostly in memories so that&amp;#8217;s all right.&lt;/p&gt;
-&lt;p&gt;The title photo from today is the first photo I took on the X100S back in June.&lt;/p&gt;
-&lt;p&gt;I did add several outdoor posts from last year, including &lt;a href=&quot;/2013/08/tualatin-wildlife-refuge-evening/&quot;&gt;Tualatin Wildlife Refuge&lt;/a&gt;, &lt;a href=&quot;/2012/09/dismal-nitch&quot;&gt;Dismal Nitch&lt;/a&gt;, &lt;a href=&quot;/2012/08/badger-creek&quot;&gt;Badger Creek&lt;/a&gt;, and &lt;a href=&quot;/2012/08/callahans-to-green-springs-inn&quot;&gt;Callahan&amp;#8217;s to Green Springs Inn&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;And I got the photos from Kalaloch up, which I had to take with my iPhone because I left my camera battery (!!!!!) in Portland. But it was gorgeous up there anyway, I just think the X100S would have given me more control over the light. The beach, ocean, and sky all turn the same sort of gray when it&amp;#8217;s overcast.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>3 Jan 2014</title>
-   <link href="http://wickerbox.net/2014/01/03-note"/>
-   <updated>2014-01-03T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2014/01/03-note</id>
-   <content type="html">&lt;p&gt;Caution: contents contain notes about the Eagle &lt;span class=&quot;caps&quot;&gt;CAD&lt;/span&gt; program. Readers allergic to Eagle should skip it.&lt;/p&gt;
-&lt;p&gt;I use the standard version of Eagle for making printed circuit boards. It&amp;#8217;s basically a cad program you can use to draw the schematic and then route the layout of the final board. I usually take my files and send them off to OSHPark to be made into real physical boards.&lt;/p&gt;
-&lt;p&gt;I don&amp;#8217;t recommend Eagle anymore; I&amp;#8217;ve heard too many good things about KiCad, which is open source and free. Go learn that instead if you haven&amp;#8217;t already put time and money into Eagle. I&amp;#8217;ve had customer support problems and nobody ever actually gave me a copy of the Eagle license that they made me pay money for. They also misrepresented what an academic license consisted of. So go to KiCad.&lt;/p&gt;
-&lt;p&gt;This note&amp;#8217;s about the eagle.scr startup script which sets default values for things like via diameter, wire size, and grid size. I look to OSHPark&amp;#8217;s design rules to find out what these values ought to be. The fab houses that receive my design files and fabricate my boards for me set the minimum widths, distances, diameters, etc that their machinery can accommodate considering how much money I want to give them. I like to set my minimum settings a little larger so I don&amp;#8217;t run the risk of small inaccuracies breaking my design but I can go smaller if I need to. (I don&amp;#8217;t usually need to.)&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ve been experimenting a little with the Eagle startup script. I was using semi-colons inconsistently and it turns out if you have multiple statements on one line, you need to separate them with a semi-colon. Either a semi-colon or a newline appear to work for statements in list form. For example, this works fine:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;change drill 0.013; change diameter 0.027&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change shape round;  &lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This doesn&amp;#8217;t:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;change drill 0.013 change diameter 0.027&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;But this does:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;change drill 0.013&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change diameter 0.027&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;The script allows you to set default values for the board, schematic, device, symbol, package, and general library editing screens. The package screen is basically the same as board except there&amp;#8217;s no need to specify the route width because there isn&amp;#8217;t any routing.&lt;/p&gt;
-&lt;p&gt;I work in inches because that&amp;#8217;s how I started out and the important thing is just to be consistent with grid sizes and measurement system.&lt;/p&gt;
-&lt;p&gt;My script looks like this:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;OVERALL&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;GRID IN 0.0125 DOTS ON ALT IN 0.025;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;BOARD&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change drill 0.013      # drill/hold diameter&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change diameter 0.027   # via pad diameter&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change shape round      # via shape&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change width 0.01       # route width&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change size 0.50        # text size&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;SCH&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change width 0.006      # wire width&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change size 0.50        # text size&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;No changes needed for library or device&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;SYM&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change length middle    # default pin length&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change visible both     # pin and pad number&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;PAC&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change shape round      # via shape&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change diameter 0.027   # via pad diameter&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change drill 0.013      # drill/hold diameter&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;change size 0.050&lt;/code&gt;&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -1020,44 +897,6 @@ and what would I have to do differently if I was using PCBExpress or another fab
 &lt;img src=&quot;https://lh5.googleusercontent.com/-thZp_yJBT2g/UshTqv-aGXI/AAAAAAAAFyk/RhewVrH3b_4/s600/005.png&quot;&gt;
 &lt;img src=&quot;https://lh4.googleusercontent.com/-oxfR202O8j0/UshTqnqhlQI/AAAAAAAAFys/G9aT6eBH7SA/s600/006.png&quot;&gt;
 &lt;img src=&quot;https://lh4.googleusercontent.com/-pa8TXEMyqFw/UshTqoHRvHI/AAAAAAAAFyo/UotfafQTTrg/s800/008.png&quot;&gt;</content>
- </entry>
- 
- <entry>
-   <title>29 Dec 2013</title>
-   <link href="http://wickerbox.net/2013/12/29-note"/>
-   <updated>2013-12-29T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/12/29-note</id>
-   <content type="html">&lt;p&gt;This makenote script is nifty.&lt;/p&gt;
-&lt;p&gt;I finished the RF board layout this afternoon but need to review it tomorrow, particularly in the RF side around LNA2 and &lt;span class=&quot;caps&quot;&gt;ANTBIAS&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;I stayed in Ocean City last night and came home today through Astoria and Forest Grove and the valley, sneaking into Newberg the back way. Much better than I-5 and not all that much longer a drive.&lt;/p&gt;
-&lt;p&gt;There&amp;#8217;s a This American Life story where one of the editors has her mom on the show to talk about her seven (or however many) things nobody wants to hear about in conversation when you show up for a dinner party. I&amp;#8217;m pretty sure the weather and the route are two of the however many.&lt;/p&gt;
-&lt;p&gt;We had a nice sunset, anyway. And it&amp;#8217;s nice to be home. I&amp;#8217;m always kind of overwhelmed by how beautiful the forests and coast can be.&lt;/p&gt;
-&lt;p&gt;I stacked the motor driver board and the XBee-bearing protoshield on top of my Arduino and was able to control the steering of the Foxcar by way of characters typed in minicom on my laptop through another XBee. I also investigated robot libraries and realized I should really be using &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt;, not ChibiOS, which is the Robot Operating System.&lt;/p&gt;
-&lt;p&gt;I have an STM32F Discovery board so I&amp;#8217;m going to put &lt;span class=&quot;caps&quot;&gt;ROS&lt;/span&gt; on that next.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>27 Dec 2013</title>
-   <link href="http://wickerbox.net/2013/12/27-note"/>
-   <updated>2013-12-27T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/12/27-note</id>
-   <content type="html">&lt;p&gt;Spent a couple days in a cabin at Kalaloch Lodge on the Olympic Peninsula. I edited some posts and got everything ready for when I get home to just push the site.&lt;/p&gt;
-&lt;p&gt;I have a couple interesting projects in the pipeline, including the RF board and an implementation of Timo Bergmann&amp;#8217;s Sound of Sorting. I never had the algorithms class at school so writing fifteen sorts with the help of the Intro to Algorithms, 3rd Ed, has introduced me to a bunch of concepts &amp;#8211; optimization among them.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>25 Dec 2013</title>
-   <link href="http://wickerbox.net/2013/12/25-note"/>
-   <updated>2013-12-25T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/12/25-note</id>
-   <content type="html">&lt;p&gt;This note is trying out my new script. It first gets the current date in the right format.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;NAME=$(date +&quot;%Y-%m-%d&quot;)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Then it copies a template I made in _layouts/ and names it using that date output.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;cp $SRCDIR/_layouts/note_  .textile $SRCDIR/_posts/$NAME-note.textile&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Then it opens it for editing so I can do my thing.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;vim $SRCDIR/_posts/$NAME-note.textile&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;And here it is. Yay for lowering transaction costs.&lt;/p&gt;
-&lt;p&gt;I also figured out a way to add image to posts but they only show up on the notebook page, not the &lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; feed, because they&amp;#8217;re slid in from the yaml header and sit above the title. They look nice so I&amp;#8217;m calling it good.&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -1163,20 +1002,6 @@ and what would I have to do differently if I was using PCBExpress or another fab
  </entry>
  
  <entry>
-   <title>10 Nov 2013</title>
-   <link href="http://wickerbox.net/2013/12/10-note"/>
-   <updated>2013-12-10T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/12/10-note</id>
-   <content type="html">&lt;p&gt;Hahahaha, and then I didn&amp;#8217;t write at all again for three weeks.&lt;/p&gt;
-&lt;p&gt;I enjoyed the holiday and I&amp;#8217;ve been hacking away at this Foxcar control board. I&amp;#8217;ve started journaling in a real actual physical journal and I&amp;#8217;ve found it helpful to not have an audience to worry about.&lt;/p&gt;
-&lt;p&gt;The RF front-end board schematic is done, though I&amp;#8217;m still a little unhappy with the power section, but there&amp;#8217;s another &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; member who&amp;#8217;s working on a separate board that&amp;#8217;s also set up for the same power source so if he arrives at a nicer solution before I get the layout finished (I&amp;#8217;m starting from the RF side) then I&amp;#8217;ll change my choice of chips.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m unhappy because the current switching power supply is a 60-pin &lt;span class=&quot;caps&quot;&gt;LGA&lt;/span&gt; so you can&amp;#8217;t get to the traces once it&amp;#8217;s been soldered to the board. I&amp;#8217;m ordering the board through OSHPark then reflow it so probably everything will be fine but I still get worried about parts I only get one chance with.&lt;/p&gt;
-&lt;p&gt;Also, it&amp;#8217;s expensive, but it&amp;#8217;s designed to handle 20V on the rocket Power over Ethernet bus so I guess you get what you pay for. I have a micro-&lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; connector for at-laptop debug.&lt;/p&gt;
-&lt;p&gt;Annnd the Foxcar control board schematic is done and I pushed to github. I started on the layout, started the trace calculations, and then reinstalled Starcraft II. I can&amp;#8217;t stop thinking about playing it.  I think I might be slightly burned out&amp;#8230;&lt;/p&gt;
-&lt;p&gt;Tonight I cleaned up little things on the website that were bothering me, including the Endurance Days part, and now I&amp;#8217;m going to go home and hunt me some Zerg.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
    <title>Arduino and a Rangefinder</title>
    <link href="http://wickerbox.net/2013/12/arduino-rangefinder"/>
    <updated>2013-12-01T00:00:00-08:00</updated>
@@ -1239,15 +1064,6 @@ and what would I have to do differently if I was using PCBExpress or another fab
  </entry>
  
  <entry>
-   <title>22 Nov 2013</title>
-   <link href="http://wickerbox.net/2013/11/22-note"/>
-   <updated>2013-11-22T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2013/11/22-note</id>
-   <content type="html">&lt;p&gt;Found &lt;a href=&quot;http://www.harihareswara.net/ces.shtml&quot;&gt;Sumana&lt;/a&gt;&amp;#8216;s blog this week and I keep returning to it. I saw her keynote at Open Source Bridge and now she&amp;#8217;s taking a sabbatical from her post at Wikimedia to do Hacker School, which is cool to read about. I ended up reading her back entries and her blog&amp;#8217;s kind of the sort of thing I&amp;#8217;d like for mine &amp;#8212; technical stuff mixed with &amp;#8220;hey, this is what I did today&amp;#8221; with some observations.&lt;/p&gt;
-&lt;p&gt;The thing is, I think I&amp;#8217;m afraid of writing the wrong thing and so I don&amp;#8217;t write at all, but it&amp;#8217;s like there&amp;#8217;s this idea of what I&amp;#8217;ll write and how I&amp;#8217;ll feel writing it that when I don&amp;#8217;t achieve that headspace then I&amp;#8217;m like &amp;#8220;oops, can&amp;#8217;t write today, oh well&amp;#8221; and blow it off. I&amp;#8217;d like to stop doing that. Just write already.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
    <title>Arduino Sketch with XBees</title>
    <link href="http://wickerbox.net/2013/11/wireless-control-with-xbees"/>
    <updated>2013-11-16T00:00:00-08:00</updated>
@@ -1282,22 +1098,6 @@ and what would I have to do differently if I was using PCBExpress or another fab
  </entry>
  
  <entry>
-   <title>3 Nov 2013</title>
-   <link href="http://wickerbox.net/2013/11/03-note"/>
-   <updated>2013-11-03T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/11/03-note</id>
-   <content type="html">&lt;p&gt;Drove over to Cape Lookout on the coast for the morning. Low fog in the valleys and it&amp;#8217;s finally tilted over into &lt;em&gt;cold&lt;/em&gt;. Turned the heat on when I realized the cats were cuddling a little more desperately than normal.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ve focused on work and &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; this week but I bought the Pololu VNH5019 motor driver shield which can handle over 10 A for a single motor. I figured out the wiring I&amp;#8217;ll need for the Foxcar once that gets here. I&amp;#8217;m probably going to do a custom board with:&lt;/p&gt;
-&lt;p&gt;- an STM32F4 processor&lt;/p&gt;
-&lt;p&gt;- XBee wireless (need to explore RF transceivers &amp;#8211; I know nothing about RC hobby RF stuff, except that there&amp;#8217;s a ton of it out there and has been forever.&lt;/p&gt;
-&lt;p&gt;- camera that&amp;#8217;s fast enough for real-time analysis, so I had to discard a couple I found through Adafruit and Sparkfun.&lt;/p&gt;
-&lt;p&gt;- 9DOF Sparkfun sensor board&lt;/p&gt;
-&lt;p&gt;- micro SD card for data logging or image logging&lt;/p&gt;
-&lt;p&gt;- micro-&lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;JTAG&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Actually, putting a Node 6 from &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; on it might be a good idea.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
    <title>Replacing the IMEX Firefox guts</title>
    <link href="http://wickerbox.net/2013/10/replacing-imex-firefox-guts"/>
    <updated>2013-10-27T00:00:00-07:00</updated>
@@ -1327,26 +1127,6 @@ and what would I have to do differently if I was using PCBExpress or another fab
  </entry>
  
  <entry>
-   <title>26 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/26-note"/>
-   <updated>2013-10-26T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/26-note</id>
-   <content type="html">&lt;p&gt;Still foggy but the afternoons have been clear blue sky.&lt;/p&gt;
-&lt;p&gt;I drove in to downtown to hack with greh at Portland State. Started out by putting Raspbian on my Raspberry Pi. I&amp;#8217;ve exhausted Wicker Man references for my servers so on greh&amp;#8217;s advice, I&amp;#8217;m calling it rasputin. At least this way, I should be unable to kill it.&lt;/p&gt;
-&lt;p&gt;I picked up the &lt;span class=&quot;caps&quot;&gt;IMEX&lt;/span&gt; Firefox that showed up in the lab and ripped the guts out, replacing the &lt;span class=&quot;caps&quot;&gt;IMEX&lt;/span&gt; control board with an Arduino and Adafruit motor shield. The motor clicks but I swapped servos as well and that works great.&lt;/p&gt;
-&lt;p&gt;My cat has decided that waking at 3am and show me affection by licking my head until I get out of bed is an A++ way to contribute to a happy and functioning household. I&amp;#8217;m not sure how to convince my cat that it&amp;#8217;s pretty fucking wrong.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>25 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/25-note"/>
-   <updated>2013-10-25T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/25-note</id>
-   <content type="html">&lt;p&gt;Not only did I not write for this day, I have only the foggiest memories of what I did.&lt;/p&gt;
-&lt;p&gt;Went to work, sure. Apparently not much else.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
    <title>Building the 38mm Sentinel Rocket</title>
    <link href="http://wickerbox.net/2013/10/building-the-sentinel-38mm"/>
    <updated>2013-10-24T00:00:00-07:00</updated>
@@ -1359,58 +1139,6 @@ and what would I have to do differently if I was using PCBExpress or another fab
 &lt;img src=&quot;https://lh6.googleusercontent.com/-9VXvOeBSOYk/Umnm8WL69nI/AAAAAAAAFlk/-72Ahy16YUE/w611-h815-no/IMG_0311.png&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/--tXFt6fFQU4/Umnm8abDXmI/AAAAAAAAFls/JRsfQ8xn_WI/w611-h815-no/IMG_0312.png&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/-YbWAvCl71sA/Umnm9RkV5dI/AAAAAAAAFlo/zxf7uWVN5bY/w855-h437-no/IMG_0360.JPG&quot;&gt;</content>
- </entry>
- 
- <entry>
-   <title>24 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/24-note"/>
-   <updated>2013-10-24T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/24-note</id>
-   <content type="html">&lt;p&gt;Still foggy.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m still having some forearm pain so I skipped &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; and came home to figure out how to break the reading-of-articles that I want to do away from my compulsive browsing-of-Reddit. I have a wifi-only, first-gen iPad for reading and a first-gen (I think) Kindle for reading on backpacking/hiking trips. I added Instapaper to my Firefox on all my computers (work, home desktop, laptop) and dropped all pending bookmarks in there.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m using Trello for a general tracking-of-everything and I don&amp;#8217;t want this to be a part of that at all. I also can email PDFs to myself to get them into the Kindle App. That should be enough to make this stuff available to me. And I can save links from Ars or Reddit or whatever for later, without wasting cycles worrying that I&amp;#8217;ll never see it again.&lt;/p&gt;
-&lt;p&gt;Hopefully this&amp;#8217;ll help clear my head. I have a pile of autonomous quadcopter papers I want to read.&lt;/p&gt;
-&lt;p&gt;I posted the photos from building my 38mm Sentinel rocket from Binder Designs.&lt;/p&gt;
-&lt;p&gt;I made lemon poppyseed scones that were actually pretty amazing. Also have discovered lemon curd.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>23 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/23-note"/>
-   <updated>2013-10-23T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/23-note</id>
-   <content type="html">&lt;p&gt;Americana and crossover choke at &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt;. The forearm pain that took me out on Saturday is still there. Not sure if it&amp;#8217;s tendonitis or what but lizard crawls, the scissor-leg hopping drill just kind of sucked. I ended up mostly watching the technique portion.&lt;/p&gt;
-&lt;p&gt;Aleve and icing it is.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>20 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/20-note"/>
-   <updated>2013-10-20T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/20-note</id>
-   <content type="html">&lt;p&gt;Incredibly foggy this morning.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://hackaday.com/2009/09/22/introduction-to-ftdi-bitbang-mode/&quot;&gt;Found a Hackadday Intro to &lt;span class=&quot;caps&quot;&gt;FTDI&lt;/span&gt; tutorial&lt;/a&gt; for bitbang mode.&lt;/p&gt;
-&lt;p&gt;These were the instructions that finally worked: &lt;a href=&quot;http://developer.intra2net.com/mailarchive/html/libftdi/2013/msg00014.html&quot;&gt;libftdi&lt;/a&gt;&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>19 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/19-note"/>
-   <updated>2013-10-19T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/19-note</id>
-   <content type="html">&lt;p&gt;I still liked the website layout this morning. I haven&amp;#8217;t checked it on anything but Firefox&amp;#8230;&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m using the &lt;a
-href=&quot;http://www.recontech.co.uk/index.php/tutorial/tutorial-1-a-serial-communication-fpga-debug-module/54-de0-nano-serial-communications-tutorial&quot;&gt;DE0-Nano Serial Communications Protocol from ReconTech&lt;/a&gt; to get the DE0-Nano talking over serial.&lt;/p&gt;
-&lt;p&gt;Knee bars and ankle locks at &lt;span class=&quot;caps&quot;&gt;BJJ&lt;/span&gt; today. My gym is the opposite of macho so there was a lot of emphasis on communication with your partner and training safely without ego. I felt safe even when we were moving quickly.&lt;/p&gt;
-&lt;p&gt;I feel terrible at writing. My words are all clunky. But I guess getting over that is one point of this daily note thing. The other is to keep a quick written record so I can be accurate when I look back to see how long a project took or so I can easily find a paper I referenced. We&amp;#8217;ll see how it goes.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>18 Oct 2013</title>
-   <link href="http://wickerbox.net/2013/10/18-note"/>
-   <updated>2013-10-18T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2013/10/18-note</id>
-   <content type="html">&lt;p&gt;I&amp;#8217;m a note!&lt;/p&gt;</content>
  </entry>
  
  <entry>
