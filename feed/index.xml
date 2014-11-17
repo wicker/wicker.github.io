@@ -4,7 +4,7 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-11-16T19:43:18-08:00</updated>
+ <updated>2014-11-16T21:51:20-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
@@ -18,7 +18,8 @@
    <updated>2014-11-10T00:00:00-08:00</updated>
    <id>http://wickerbox.net/2014/11/carb-sync-shield</id>
    <content type="html">&lt;p&gt;I worked with Tom Hogue (&lt;a href=&quot;http://www.venturerider.org/forum/showthread.php?73158-Built-a-digital-carb-sync&quot;&gt;tz89 from the Venture Rider forum&lt;/a&gt;) to translate his prototyped design onto a printed circuit board.&lt;/p&gt;
-&lt;p&gt;The Carb Sync Shield lets the user digitally sync motorcycle carbs by displaying the realtime sensed &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; from up to six pneumatic pressure sensors.&lt;/p&gt;
+&lt;p&gt;The Carb Sync Shield monitors the up to six carburetors and displays the vacuum pressure in realtime on an &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; display so the user can make adjustments to the air/fuel mix in each cylinder.&lt;/p&gt;
+&lt;p&gt;There&amp;#8217;s an additional &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; feature that will be useful to set and monitor the idle speed on bikes that don&amp;#8217;t have a tachometer.&lt;/p&gt;
 &lt;img src=&quot;/images/project/carbshield/IMG_2433.JPG&quot;&gt;
 &lt;p&gt;The kit can be assembled by a novice using a basic soldering iron. The pressure sensors have extra-large surface mount pads and all other components are through-hole.&lt;/p&gt;
 &lt;img src=&quot;/images/project/carbshield/IMG_2304.JPG&quot;&gt;
