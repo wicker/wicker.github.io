@@ -7,6 +7,25 @@
 		<atom:link href="feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Carb Sync Shield</title>
+				<description>&lt;p&gt;I worked with Tom Hogue (&lt;a href=&quot;http://www.venturerider.org/forum/showthread.php?73158-Built-a-digital-carb-sync&quot;&gt;tz89 from the Venture Rider forum&lt;/a&gt;) to translate his prototyped design onto a printed circuit board.&lt;/p&gt;
+&lt;p&gt;The Carb Sync Shield lets the user digitally sync motorcycle carbs by displaying the realtime sensed &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; from up to six pneumatic pressure sensors.&lt;/p&gt;
+&lt;img src=&quot;/images/project/carbshield/IMG_2433.JPG&quot;&gt;
+&lt;p&gt;The kit can be assembled by a novice using a basic soldering iron. The pressure sensors have extra-large surface mount pads and all other components are through-hole.&lt;/p&gt;
+&lt;img src=&quot;/images/project/carbshield/IMG_2304.JPG&quot;&gt;
+&lt;p&gt;The shield is compatible with both the &lt;a href=&quot;http://store.arduino.cc/product/A000066&quot;&gt;Arduino Uno v3&lt;/a&gt; and the Bluetooth-capable &lt;a href=&quot;http://redbearlab.com/blend/&quot;&gt;RedBear Blend v1&lt;/a&gt;. It displays the &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; calculated from each of up to six simultaneous 3.3V or 5V pressure sensors on an &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; display which can be mounted directly or connected with the rainbow jumpers as shown above.&lt;/p&gt;
+&lt;img src=&quot;/images/project/carbshield/ardblend.png&quot;&gt;
+&lt;p&gt;The board draws power from the carrier Uno or Blend board, which in turn can run off a 9V battery or a &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; plug. The blue trim potentiometer controls the brightness of the &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; so it&amp;#8217;s visible indoors or outdoors. The large switch sets the analog pressure sensor reference voltage to 3.3V or 5V. In the final version of the board, the switch is replaced with a 3-pin header and jumper cap.&lt;/p&gt;
+&lt;p&gt;Three digital I/O lines are broken out along with dedicated 5V or 3.3V pins to support extra sensors. It&amp;#8217;s up to the user to match the sensor voltage on the digital line to the expected operating voltage of the Uno or Blend.&lt;/p&gt;
+&lt;p&gt;We had the boards fabricated through &lt;a href=&quot;http://oshpark.com&quot;&gt;OSHPark&lt;/a&gt;, a local batch &lt;span class=&quot;caps&quot;&gt;PCB&lt;/span&gt; service based in Oregon, and did a successful test in early November on Tom&amp;#8217;s bike.&lt;/p&gt;
+&lt;img src=&quot;/images/project/carbshield/IMG_2436.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/carbshield/IMG_2438.JPG&quot;&gt;</description>
+				<pubDate>Mon, 10 Nov 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/11/carb-sync-shield</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/11/carb-sync-shield</guid>
+			</item>
+		
+			<item>
 				<title>DIY Cellphone 3G Build</title>
 				<description>&lt;p&gt;David A Mellis designed a &lt;a href=&quot;http://web.media.mit.edu/%7Emellis/gsm/&quot;&gt;cellphone module&lt;/a&gt; using the &lt;a href=&quot;http://www.quectel.com/product/prodetail.aspx?id=14&quot;&gt;Quectel &lt;span class=&quot;caps&quot;&gt;GSM&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;GPRS&lt;/span&gt; M10 2G module&lt;/a&gt; and the Arduino &lt;span class=&quot;caps&quot;&gt;GSM&lt;/span&gt; Shield library. The 2G networks in Portland are on their way out so I updated David&amp;#8217;s design with his permission and replaced the M10 with a &lt;a href=&quot;http://www.quectel.com/product/prodetail.aspx?id=64&quot;&gt;Quectel &lt;span class=&quot;caps&quot;&gt;UMTS&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;HSDPA&lt;/span&gt; UC15 3G module&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The modules have different pinouts, slightly different packages, and the UC15 takes 3.3V-4.3V while the M10 took 3.3V-4.6V, which is still fine for a 3.7V standard LiPo battery.&lt;/p&gt;
@@ -83,7 +102,7 @@
 			</item>
 		
 			<item>
-				<title>GPS RF Front-end Board</title>
+				<title>GPS RF Front-end Board v2</title>
 				<description>&lt;p&gt;Portland State University&amp;#8217;s Maseeh College of Engineering and Computer Science runs an innovation program that awards small thousand-dollar grants to students working on interesting projects. In 2011 there were a handful of &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt;-related projects that needed a way to work directly with the raw I/Q data coming from the &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; satellites before any processing or correlating had been done.&lt;/p&gt;
 &lt;p&gt;Commercial off-the-shelf &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; receivers are cheap and ubiquitous but they don&amp;#8217;t expose that data. One of my mentors, Andrew Greenberg, developed an open source &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; receiver for his Masters thesis in 2005 and suggested I take a look at doing the same thing with current hardware. I said I would if he would help, so together we built a board, built a revision, and are in the process of figuring out what modifications will be needed for a third.&lt;/p&gt;
 &lt;p&gt;The board isn&amp;#8217;t a full &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; receiver. Instead, it&amp;#8217;s an &amp;#8220;RF front end&amp;#8221; board that has a MAX2769 Universal &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; Receiver chip to read the &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; signals and pass them out over something that looks a lot like &lt;span class=&quot;caps&quot;&gt;SPI&lt;/span&gt; but isn&amp;#8217;t. We chose to place an STM32F407 microcontroller running the ChibiOS embedded operating system on the board to support streaming the data out over Ethernet and &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt;. We exposed the raw pins over a header between the MAX2769 and STM32F407 to allow a user to skip the microcontroller entirely. We also included an SD card to log the data.&lt;/p&gt;
@@ -106,6 +125,7 @@
 &lt;p&gt;The micro-SD card is available for data logging.&lt;/p&gt;
 &lt;p&gt;The serial breakout is two 1&amp;#215;11 0.1&amp;quot; headers which we also used for debug. We ran traces between the two breakouts because we were unsure about some of the pinouts from the MAX2769 and wanted to be sure we could cut traces and easily run modwire.&lt;/p&gt;
 &lt;h3&gt;Build&lt;/h3&gt;
+&lt;img src=&quot;/images/project/gpsboard/gpsboard-v2-board.png&quot;&gt;
 &lt;img src=&quot;/images/project/gpsboard/gpsboard-v2-build.png&quot;&gt;
 &lt;p&gt;This is the board installed on the avionics module that carries the flight computer, sensor packages, and battery packs. The green board on top is the commercial Crescent &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; unit. The purple board down below is the JennerGPS. They&amp;#8217;re both connected to the splitter in the middle, which runs off to the cylindrical patch antenna on the skin of the rocket.&lt;/p&gt;
 &lt;img class=&quot;vertimg&quot; src=&quot;/images/project/gpsboard/gpssystem.png&quot;&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
@@ -182,21 +202,6 @@
 				<pubDate>Sat, 24 May 2014</pubDate>
 				<link>http://www.wickerbox.net//2014/05/stm32f4-discovery-breakout</link>
 				<guid isPermaLink="true">http://www.wickerbox.net//2014/05/stm32f4-discovery-breakout</guid>
-			</item>
-		
-			<item>
-				<title>Garden Update</title>
-				<description>&lt;p&gt;We&amp;#8217;re having our usual scattered, unpredictable mix of thunderstorms, warm rain, hail, brilliant sunshine, and blue skies, so the garden has exploded in size over the last couple of weeks.&lt;/p&gt;
-&lt;p&gt;The irrigation stuff arrived. My cat approves.&lt;/p&gt;
-&lt;img src=&quot;/images/project/garden2/IMG_1663_crop.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/garden2/IMG_1669.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/garden2/IMG_1670.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/garden2/IMG_1673.JPG&quot;&gt;
-&lt;p&gt;My boss started tomatoes from seed and ended up with too many so I now have way more tomatoes than I know what to do with. I&amp;#8217;m going to move over some of the broccoli and cabbage from the right-hand box to the tomato box to make some room.&lt;/p&gt;
-&lt;img src=&quot;/images/project/garden2/IMG_1674.JPG&quot;&gt;</description>
-				<pubDate>Tue, 20 May 2014</pubDate>
-				<link>http://www.wickerbox.net//2014/05/garden-update</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2014/05/garden-update</guid>
 			</item>
 		
 	</channel>

@@ -4,13 +4,32 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-10-31T14:13:45-07:00</updated>
+ <updated>2014-11-16T19:37:41-08:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Carb Sync Shield</title>
+   <link href="http://wickerbox.net/2014/11/carb-sync-shield"/>
+   <updated>2014-11-10T00:00:00-08:00</updated>
+   <id>http://wickerbox.net/2014/11/carb-sync-shield</id>
+   <content type="html">&lt;p&gt;I worked with Tom Hogue (&lt;a href=&quot;http://www.venturerider.org/forum/showthread.php?73158-Built-a-digital-carb-sync&quot;&gt;tz89 from the Venture Rider forum&lt;/a&gt;) to translate his prototyped design onto a printed circuit board.&lt;/p&gt;
+&lt;p&gt;The Carb Sync Shield lets the user digitally sync motorcycle carbs by displaying the realtime sensed &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; from up to six pneumatic pressure sensors.&lt;/p&gt;
+&lt;img src=&quot;/images/project/carbshield/IMG_2433.JPG&quot;&gt;
+&lt;p&gt;The kit can be assembled by a novice using a basic soldering iron. The pressure sensors have extra-large surface mount pads and all other components are through-hole.&lt;/p&gt;
+&lt;img src=&quot;/images/project/carbshield/IMG_2304.JPG&quot;&gt;
+&lt;p&gt;The shield is compatible with both the &lt;a href=&quot;http://store.arduino.cc/product/A000066&quot;&gt;Arduino Uno v3&lt;/a&gt; and the Bluetooth-capable &lt;a href=&quot;http://redbearlab.com/blend/&quot;&gt;RedBear Blend v1&lt;/a&gt;. It displays the &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; calculated from each of up to six simultaneous 3.3V or 5V pressure sensors on an &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; display which can be mounted directly or connected with the rainbow jumpers as shown above.&lt;/p&gt;
+&lt;img src=&quot;/images/project/carbshield/ardblend.png&quot;&gt;
+&lt;p&gt;The board draws power from the carrier Uno or Blend board, which in turn can run off a 9V battery or a &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; plug. The blue trim potentiometer controls the brightness of the &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; so it&amp;#8217;s visible indoors or outdoors. The large switch sets the analog pressure sensor reference voltage to 3.3V or 5V. In the final version of the board, the switch is replaced with a 3-pin header and jumper cap.&lt;/p&gt;
+&lt;p&gt;Three digital I/O lines are broken out along with dedicated 5V or 3.3V pins to support extra sensors. It&amp;#8217;s up to the user to match the sensor voltage on the digital line to the expected operating voltage of the Uno or Blend.&lt;/p&gt;
+&lt;p&gt;We had the boards fabricated through &lt;a href=&quot;http://oshpark.com&quot;&gt;OSHPark&lt;/a&gt;, a local batch &lt;span class=&quot;caps&quot;&gt;PCB&lt;/span&gt; service based in Oregon, and did a successful test in early November on Tom&amp;#8217;s bike.&lt;/p&gt;
+&lt;img src=&quot;/images/project/carbshield/IMG_2436.JPG&quot;&gt;
+&lt;img src=&quot;/images/project/carbshield/IMG_2438.JPG&quot;&gt;</content>
+ </entry>
  
  <entry>
    <title>DIY Cellphone 3G Build</title>
@@ -89,7 +108,7 @@
  </entry>
  
  <entry>
-   <title>GPS RF Front-end Board</title>
+   <title>GPS RF Front-end Board v2</title>
    <link href="http://wickerbox.net/2014/06/gps-board-v2"/>
    <updated>2014-06-15T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2014/06/gps-board-v2</id>
@@ -115,6 +134,7 @@
 &lt;p&gt;The micro-SD card is available for data logging.&lt;/p&gt;
 &lt;p&gt;The serial breakout is two 1&amp;#215;11 0.1&amp;quot; headers which we also used for debug. We ran traces between the two breakouts because we were unsure about some of the pinouts from the MAX2769 and wanted to be sure we could cut traces and easily run modwire.&lt;/p&gt;
 &lt;h3&gt;Build&lt;/h3&gt;
+&lt;img src=&quot;/images/project/gpsboard/gpsboard-v2-board.png&quot;&gt;
 &lt;img src=&quot;/images/project/gpsboard/gpsboard-v2-build.png&quot;&gt;
 &lt;p&gt;This is the board installed on the avionics module that carries the flight computer, sensor packages, and battery packs. The green board on top is the commercial Crescent &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; unit. The purple board down below is the JennerGPS. They&amp;#8217;re both connected to the splitter in the middle, which runs off to the cylindrical patch antenna on the skin of the rocket.&lt;/p&gt;
 &lt;img class=&quot;vertimg&quot; src=&quot;/images/project/gpsboard/gpssystem.png&quot;&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
