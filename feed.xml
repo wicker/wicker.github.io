@@ -8,7 +8,7 @@
 		
 			<item>
 				<title>Carb Sync Shield</title>
-				<description>&lt;p&gt;I worked with Tom Hogue (&lt;a href=&quot;http://www.venturerider.org/forum/showthread.php?73158-Built-a-digital-carb-sync&quot;&gt;tz89 from the Venture Rider forum&lt;/a&gt;) to translate his prototyped design onto a printed circuit board.&lt;/p&gt;
+				<description>&lt;p&gt;I worked with Tom Hogue (&lt;a href=&quot;http://www.venturerider.org/forum/showthread.php?73158-Built-a-digital-carb-sync&quot;&gt;tz89 from the Venture Rider forum&lt;/a&gt;) to translate his prototyped design onto a printed circuit board. He&amp;#8217;s done all of the software; my contributions were entirely in hardware.&lt;/p&gt;
 &lt;p&gt;The Carb Sync Shield monitors the up to six carburetors and displays the vacuum pressure in realtime on an &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; display so the user can make adjustments to the air/fuel mix in each cylinder.&lt;/p&gt;
 &lt;p&gt;There&amp;#8217;s an additional &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; feature that will be useful to set and monitor the idle speed on bikes that don&amp;#8217;t have a tachometer.&lt;/p&gt;
 &lt;img src=&quot;/images/project/carbshield/IMG_2433.JPG&quot;&gt;
