@@ -1,80 +1,65 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Jenner Hanni</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-      <title>Oven Control Board v3 | Jenner Hanni</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <link href="/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+  <link href="/css/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github-prettify-theme.css">
 
-  </head>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<body style="background-color: #fff;">
+</head>
 
-    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-    </div>
 
-    
-    
 
-    <div style="margin: 0 auto; width: 70%; text-align:center;">
-      <article>
+<body class="code-snippets-visible has-docked-nav">
 
-  <div style="padding: 20px; clear:both; border: 1px solid #c0c0c0;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/06/nxrs-2014">&laquo; L1 at NXRS 2014</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2014/09/cellphone-3g-dev-board">DIY Cellphone 3G Build &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+  <div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/making/">Making</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/thinking/">Thinking</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/traveling/">Traveling</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/collecting/">Collecting</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="title">Oven Control Board v3</div>
-  <p>September 2014 - Portland, Oregon</p>
+    <div class="docs-section">
+      <div class="row">
 
-  <p>This is the final version of the oven controller installed on a 4&#8242;&#215;8&#8242;&#215;4&#8242; curing oven at Portland State in the Mechanical Engineering department.</p>
+        
+        <div class="twelve columns"><h3>Oven Control Board v3</h3>
+
+<p>This is the final version of the oven controller installed on a 4&#8242;&#215;8&#8242;&#215;4&#8242; curing oven at Portland State in the Mechanical Engineering department.</p>
 <p>The blue case is 3D printed and gets attached to the side of the oven. The electronics are a three-board stack with an Arduino Uno R3 on the bottom; a custom oven control board set up in the middle with screw-in Euroterminals for start switch, relay, and thermocouple wires; and a 1.8&quot; <span class="caps">TFT</span> <span class="caps">LCD</span> Shield from Adafruit for the display on top.</p>
 <p>The display allows the user to program up to nine steps in a temperature profile. Each step lets the user specify a ramp rate, hold temperature, and hold time. Once all the steps are set, the user should set the relay enable switch to ON and then tell the program to begin running the profile.</p>
 <p>The program automatically detects which thermocouples are present and uses the temperature as input to a <span class="caps">PID</span> loop which controls ramp rate by turning on and off up to four relays which are, for our configuration, two heaters, one fan, and one vent.</p>
 <p>The code and hardware is available <a href="https://github.com/psas/mme-capstone/">on Github in the &#8216;oven-controller&#8217;</a> directory.</p>
-<img src="/images/project/ovenboardv3/067_1.JPG">
-<img src="/images/project/ovenboardv3/068_1.JPG">
-<img src="/images/project/ovenboardv3/088_1.JPG">
-<img class="vertimg" src="/images/project/ovenboardv3/IMG_1836.JPG">
+<img src="/img/project/ovenboardv3/067_1.JPG">
+<img src="/img/project/ovenboardv3/068_1.JPG">
+<img src="/img/project/ovenboardv3/088_1.JPG">
+<img class="vertimg" src="/img/project/ovenboardv3/IMG_1836.JPG">
+</div>
+        
 
-  <div style="padding: 20px; border: 1px solid #c0c0c0; clear:both;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/06/nxrs-2014">&laquo; L1 at NXRS 2014</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2014/09/cellphone-3g-dev-board">DIY Cellphone 3G Build &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+      </div> <!-- end row -->
+    </div> <!-- end docs-section -->
 
-</article>
-
-    </div>
-
-    <div style="clear:both;"></div>
-
-    
-      <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-      </div>
-    <div style="clear:both;"></div>
-
-    
-
-	</body>
-</html>
+  </div> 
+  
+</body></html>

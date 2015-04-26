@@ -1,82 +1,67 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Jenner Hanni</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-      <title>Catacombs Database | Jenner Hanni</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <link href="/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+  <link href="/css/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github-prettify-theme.css">
 
-  </head>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<body style="background-color: #fff;">
+</head>
 
-    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-    </div>
 
-    
-    
 
-    <div style="margin: 0 auto; width: 70%; text-align:center;">
-      <article>
+<body class="code-snippets-visible has-docked-nav">
 
-  <div style="padding: 20px; clear:both; border: 1px solid #c0c0c0;">
-     
-      <div style="float: left;"><a class="prev" href="/2011/11/AVT-poster-innovation-presentation">&laquo; Quadcopter Poster</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2012/03/l2-cache-simulator">L2 Cache Simulator &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+  <div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/making/">Making</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/thinking/">Thinking</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/traveling/">Traveling</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/collecting/">Collecting</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="title">Catacombs Database</div>
-  <p>January 2012 - Portland State University</p>
+    <div class="docs-section">
+      <div class="row">
 
-  <p>The Computer Action Team at Portland State runs an annual sysadmin training program that includes four hours weekly help desk duty, four hours weekly Friday night lectures, and tiered access to actual college servers. The CATacombs are a training room full of servers where new CATs select a box and start familiarizing themselves with services by installing them from scratch.</p>
+        
+        <div class="twelve columns"><h3>Catacombs Database</h3>
+
+<p>The Computer Action Team at Portland State runs an annual sysadmin training program that includes four hours weekly help desk duty, four hours weekly Friday night lectures, and tiered access to actual college servers. The CATacombs are a training room full of servers where new CATs select a box and start familiarizing themselves with services by installing them from scratch.</p>
 <p>Students have the choice of Windows or Unix/Linux. With upwards of seventy people in an annual program, the catacombs can be a confusing and complicated place to keep track of. Boxes are frequently abandoned as students move on to bigger and better things. The combs database is a MySQL db with a <span class="caps">PHP</span> web interface to help the combs denizens organize themselves.</p>
 <p>I hosted the database on my own server instance because the catacombs are always in flux and boxes are constantly reloaded. I got together with the current combs elf to figure out how best to complement the documentation being written for 2012&#8217;s combs group and came away with a few requirements.</p>
 <p>First, there needed to be a splash page with instructions, on the off chance that somebody would read it. I took it as a chance to flex my documentation-writing and sarcasm muscles, which were out of shape.</p>
-<img src="/images/project/combsdb/combs_intro.png">
+<img src="/img/project/combsdb/combs_intro.png">
 <p>Second, the combs had two VLANs and needed two separate tables. I called the tables for these VLANs &#8216;combs_vlan_noobz&#8217; and &#8216;combs_vlan_projects&#8217;. I made the two tables and indexed them by IP address, then decided to have a single combs login and password with the ability to update but not add or remove any of items. That way the list would be consistent.</p>
-<img src="/images/project/combsdb/combs_vlan.png">
+<img src="/img/project/combsdb/combs_vlan.png">
 <p>Third, this being a training ground for <s>hackers</s> baby sysadmins keen on proving themselves, I did my best to sanitize my inputs and then invited some of my peers to mess with it. They were mostly unsuccessful and I made corrections where necessary.</p>
-<img src="/images/project/combsdb/combs_form.png">
+<img src="/img/project/combsdb/combs_form.png">
 <p>Once the tables were built and the user accounts created, I built the web front-end using <span class="caps">HTML</span> and <span class="caps">PHP</span>. I password-protected the entire directory using .htaccess so only combs residents could see it. I whipped up some very simple custom <span class="caps">CSS</span> and released the database to the wilds.</p>
 <p>It hasn&#8217;t been used much recently because of the nature of the combs but it was a good experience for me and I was able to give out admin accounts to my peers who wanted to do things like implement a <a href="https://github.com/Whopper92/CombsBot">CombsBot</a> for <span class="caps">IRC</span> that could be queried for who owned what IP address. I&#8217;m pretty happy with it.</p>
+</div>
+        
 
-  <div style="padding: 20px; border: 1px solid #c0c0c0; clear:both;">
-     
-      <div style="float: left;"><a class="prev" href="/2011/11/AVT-poster-innovation-presentation">&laquo; Quadcopter Poster</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2012/03/l2-cache-simulator">L2 Cache Simulator &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+      </div> <!-- end row -->
+    </div> <!-- end docs-section -->
 
-</article>
-
-    </div>
-
-    <div style="clear:both;"></div>
-
-    
-      <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-      </div>
-    <div style="clear:both;"></div>
-
-    
-
-	</body>
-</html>
+  </div> 
+  
+</body></html>

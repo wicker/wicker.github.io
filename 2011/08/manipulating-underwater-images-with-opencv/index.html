@@ -1,49 +1,52 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Jenner Hanni</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-      <title>Underwater Vision System | Jenner Hanni</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <link href="/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+  <link href="/css/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github-prettify-theme.css">
 
-  </head>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<body style="background-color: #fff;">
+</head>
 
-    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-    </div>
 
-    
-    
 
-    <div style="margin: 0 auto; width: 70%; text-align:center;">
-      <article>
+<body class="code-snippets-visible has-docked-nav">
 
-  <div style="padding: 20px; clear:both; border: 1px solid #c0c0c0;">
-     
-      <div style="float: left;"><a class="prev" href="/2011/08/surface-water-streamforms-flooding">&laquo; Streamforms and flooding</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2011/08/mate-competition">MATE ROV Competition &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+  <div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/making/">Making</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/thinking/">Thinking</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/traveling/">Traveling</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/collecting/">Collecting</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="title">Underwater Vision System</div>
-  <p>August 2011 - Portland, Oregon</p>
+    <div class="docs-section">
+      <div class="row">
 
-  <p>The Marine Advanced Technology Education (<span class="caps">MATE</span>) Center in Monterey Bay coordinates an annual international robotics competition open to student teams of all academic levels from elementary schools to university. <span class="caps">MATE</span> designs a new underwater obstacle course consisting of mission tasks to be navigated and completed by a tethered underwater vehicle remotely-operated from a driver station on the surface. Missions are chosen to imitate real-world events in ROVs and judges are solicited from oceanography and commercial <span class="caps">ROV</span> companies.</p>
-<div align="center"> <img src="/images/project/underwater/bot.png"><img src="/images/project/underwater/bot2.png"><br />
+        
+        <div class="twelve columns"><h3>Underwater Vision System</h3>
+
+<p>The Marine Advanced Technology Education (<span class="caps">MATE</span>) Center in Monterey Bay coordinates an annual international robotics competition open to student teams of all academic levels from elementary schools to university. <span class="caps">MATE</span> designs a new underwater obstacle course consisting of mission tasks to be navigated and completed by a tethered underwater vehicle remotely-operated from a driver station on the surface. Missions are chosen to imitate real-world events in ROVs and judges are solicited from oceanography and commercial <span class="caps">ROV</span> companies.</p>
+<div align="center"> <img src="/img/project/underwater/bot.png"><img src="/img/project/underwater/bot2.png"><br />
 Lincoln High School Competition Bots in 2010</div>
 <p><br /></p>
 <p>K-12 teams (Scout and Ranger class) are required to compete at regional competitions. The winner from each attends the international competition. University teams are only required to attend regionals to demonstrate safety awareness and the ability to maneuver in the water. There are twenty regional competitions in the world; the five non-U.S. locations are in Scotland, Hong Kong, Japan, Newfoundland, and Nova Scotia.</p>
@@ -68,9 +71,9 @@ $20 EasyCap DC60 Capture Card Surveillance Dongle</p>
 <p>The team wanted to adapt their existing Harbor Freight Underwater Camera to send composite video to a laptop running Ubuntu 10.04 (Lucid Lynx). The laptop in question had no <span class="caps">PCI</span> slot so it was decided to find an external capture card with a <span class="caps">USB</span> connector. The EasyCap DC60 was inexpensive and open-source drivers for Linux were available from SourceForge.</p>
 <p>It seems redundant to have the video monitor when streaming video to a laptop would be more simple but the other camera options were not satisfactory. A webcam’s wireless signal does not penetrate more than a few feet into the water; a <span class="caps">USB</span> signal will follow a tether but will not sustain the needed signal strength for sixty feet. An attempt was made to waterproof wired webcams but the common methods (filling the housing in oil, waterproof sealant, sealing entirely in plastic sealant) did not hold up to the 20 psi of pressure at fifteen feet deep. The buoyancy pool at <span class="caps">NASA</span> Johnson is forty feet deep (about 50 psi) so the decision was made to use a warrantied, guaranteed underwater camera.</p>
 <p>Harbor Freight’s camera includes a 12V rechargeable lead-acid battery, battery cable, camera monitor, 60’ steel mesh cable, watersealed camera, and a metal ballast weight. Everything except the underwater camera is meant to be used at the driver’s station on the surface.</p>
-<div align="center"> <img src="/images/project/underwater/figure1.gif"><br />
+<div align="center"> <img src="/img/project/underwater/figure1.gif"><br />
 <br />
- <img src="/images/project/underwater/figure2.gif"> <img src="/images/project/underwater/figure3.gif"></div>
+ <img src="/img/project/underwater/figure2.gif"> <img src="/img/project/underwater/figure3.gif"></div>
 <p><strong>Setting up the EasyCap DC60</strong></p>
 <p>There are two models (DC60 and DC60+) of the EasyCap made by three manufacturers and distributed by at least four companies under similar names on Amazon for prices ranging from $5 to $20. Unfortunately, there doesn’t seem to be any way to determine which one you’ll receive in advance without contacting the particular company. For this, the DC60 made by Syntek is supported.</p>
 <p>First, it’s necessary to determine which EasyCap is present by plugging it into the <span class="caps">USB</span> slot and running the following command,</p>
@@ -111,7 +114,7 @@ lsmod | grep easycap</div>
 <p><strong>Mission Task Props</strong></p>
 <p>The <span class="caps">MATE</span> Center releases complete descriptions so that props for that a replica field may be built by a team for practice; a sample are shown below. The upper-leftmost and upper-rightmost props require the robot to locate ellipsoids autonomously and then the operator would take over to manipulate the wellcap or collect the agar sample using a specially manipulator arm with pneumatic controls. There will be three identical props, as shown in the bottom left, scattered about the mission field. The <span class="caps">ROV</span> will be required to identify the one that is vibrating, which can be done easily using the EasyCap DC60 because it supports and audio input from a hydrophone attached to the robot.</p>
 <p>The center prop emits hot water from each ‘vent’. The long, straight lines of this prop set it apart visually, making it easily identifiable. An <span class="caps">ROV</span> could easily approach and await the operator’s takeover to get temperature readings at each vent. The last task, as shown in the bottom right, is the collection of ‘grubs’, gummy fishing lures. They are irregularly shaped and may be hidden or entwined but will show on images in stark contrast to the long, narrow, dark cave so they should be easily identifiable.</p>
-<div align="center"> <img src="/images/project/underwater/figure5.gif"></div>
+<div align="center"> <img src="/img/project/underwater/figure5.gif"></div>
 <p><strong>Canny Edge Detection</strong></p>
 <p>Edge detection is a fundamental first step in image processing. An edge is not essentially a tangible element. It is instead the relationship between two neighboring blocks of pixels of different colors. These neighboring blocks of pixels may be lines or they may be large blocks with irregular borders. In either case, the simple edge.c program applied the cvSmooth, cvNot, and cvCanny functions as shown in the following code selection:</p>
 <div class="code">cvSmooth( gray, edge, CV_BLUR, 3, 3, 0, 0 );<br />
@@ -122,7 +125,7 @@ cvCanny(gray, edge, (float)edge_thresh, (float)edge_thresh*3, 3);</div>
 <p>Next, cvNot is used to invert the image colors on each pixel in the array created by cvSmooth, in this case to produce an image with white pixels on a black background.</p>
 <p>Finally, cvCanny takes this inverted, convoluted image and compares each pixel in turn to each of its neighbors to identify the edges according to the threshold values as determined by the user. The level of threshold is used to limit how much linking can occur between possibly-unrelated edges. This is particularly noticeable in the figure below.</p>
 <p>Because an edge could occur at any angle, the vertical and horizontal derivatives of each set of identified edge components are used to calculate the angle and set a tracked ridge. All pixels not on the tracked ridge are set to zero. Because of the way light breaks in water and because the <span class="caps">PVC</span> can curve, there needs to be hysteresis applied to follow the lines as far as they are continuous, but that was not called for in this simple program.</p>
-<div align="center"> <img src="/images/project/underwater/figure6.gif"></div>
+<div align="center"> <img src="/img/project/underwater/figure6.gif"></div>
 <p><strong>Hough Lines</strong></p>
 <p>Where cvCanny identifies edges, the relationships of blocks to other blocks, the Hough transform uses the image that has been processed with Canny edge detection and inverted so that the background is black; by checking each pixel for color value, the Hough transform identifies the non-black pixels (for i = 0) and plots their slope and intercept data in gradient space where slope is the y-axis and y-intercept is the x-axis.</p>
 <p>Though the relationships of pixels can be realized graphically in this gradient space, all of the data is actually passed from the previous array produced by the Canny edge detect into a new accumulator array of dimensions slope (m) and intercept (b). The transform samples each pixel and sorts it into a cell of a new array based on its slope and intercept parameters. Once all of the pixels in the source image have been slotted into new cells, those cells with the highest number of pixels are identified as lines. The minimum number of necessary pixels in a cell to generate a line (in red, see below) is determined in the program code.</p>
@@ -153,10 +156,10 @@ CvPoint* line = (CvPoint*)cvGetSeqElem(lines,i);<br />
 cvLine( color_dst, line0, line1, CV_RGB(255,0,0), 3, CV_AA, 0 );</div>
 <p>The figures below indicate that distance underwater and the irregularities of complex <span class="caps">PVC</span> structures has a significant deletrious effect on the Canny edge detection. This is more apparent when Hough is applied to the images because human eyes automatically fill in gaps. In the case of the first image, the <span class="caps">ROV</span> itself would provide a better, more defined geometric shape if it were a box instead of an open frame, but it’s unlikely that two ROVs will be in close proximity to each other.</p>
 <p>The imagery is better at close-up. Notice how well the lines of the pool walls and lanes show up clearly. These could be very useful in navigation and, eventually, mapping. Similarly, the definitive shape of this <span class="caps">ROV</span> is immediately recognizable with the edge detection but the excessive use of plumber’s tape and the chicken mesh yielded a mess of lines that would need significant additional parameters to clarify.</p>
-<div align="center"> <img src="/images/project/underwater/figure7.gif"><br />
+<div align="center"> <img src="/img/project/underwater/figure7.gif"><br />
 <br /><br />
 <br />
- <img src="/images/project/underwater/figure8.gif"></div>
+ <img src="/img/project/underwater/figure8.gif"></div>
 <p><strong>Additional Hough Geometry</strong></p>
 <p>The problem of irregular shapes can be solved by applying transform functions like cvFindContours, cvHoughCircles, and cvFitEllipse2. Adding contours (a curved edge where the function is continuous) requires creating memory storage in the form of cvSeq, which creates a linked list of related pixels. cvThreshold is used to binarize the image by creating a trackbar in the same way as in houghlines.c and edge.c, because cvFindContours requires pixels of value 0 or 1 only. The following code from fitellipse.c demonstrates this sequence of steps.</p>
 <div class="code">storage = cvCreateMemStorage(0);<br />
@@ -165,10 +168,10 @@ cvThreshold( image03, image02, slider_pos, 255, CV_THRESH_BINARY );<br />
 cvFindContours( image02, storage, &amp;contour, sizeof(CvContour),<br />
 CV_RETR_LIST, CV_CHAIN_APPROX_NONE, cvPoint(0,0));</div>
 <p>As shown in the figures below, different retrieval options makes a significant difference in returned image at the same threshold. CV_RETR_LIST retrieves all the contours and organizes them in the linked list; CV_RETR_EXTERNAL returns only the extreme outer contours. Other options are to retrieve all contours but rank them into an inner/outer hierarchy or a more complete hierarchy.</p>
-<div align="center"> <img src="/images/project/underwater/figure9.gif"><br />
+<div align="center"> <img src="/img/project/underwater/figure9.gif"><br />
 cvFitEllipse2 applied with CV_RETR_LIST<br />
 <br />
- <img src="/images/project/underwater/figure11.gif"><br />
+ <img src="/img/project/underwater/figure11.gif"><br />
 cvFitEllipse2 applied with CV_RETR_EXTERNAL</div>
 <p>This result leads to the question of whether it would be worth redesigning the <span class="caps">MATE</span> Center’s props to be more friendly to image processing. The answer is likely ‘no’ and more effort should be put into refining the geometry-detecting algorithms. This may be application-dependent: AUVs being designed for the sealife surveys will need more refined algorithms but AUVs designed to crawl pipelines and service deep-sea drilling stations would benefit from a structure built as simple geometrically as possible.</p>
 <p><strong>Conclusion</strong></p>
@@ -197,30 +200,12 @@ cvFitEllipse2 applied with CV_RETR_EXTERNAL</div>
 <p>Harsamizadeh Tehrani, N.; Heidari, M.; Zakeri, Y.; Ghaisari, J.; , “Development, depth control and stability analysis of an underwater Remotely Operated Vehicle (<span class="caps">ROV</span>),” Control and Automation (<span class="caps">ICCA</span>), 2010 8th <span class="caps">IEEE</span> International Conference on , vol., no., pp.814-819, 9-11 June 2010</p>
 <p>Mariette, Jerome. Segmentation of Objects in Underwater Video. University of Poitiers, 2005.</p>
 <p>Narimani, M.; Nazem, S.; Loueipour, M.; , “Robotics vision-based system for an underwater pipeline and cable tracker,” <span class="caps">OCEANS</span> 2009 – <span class="caps">EUROPE</span> , vol., no., pp.1-6, 11-14 May 2009</p>
+</div>
+        
 
-  <div style="padding: 20px; border: 1px solid #c0c0c0; clear:both;">
-     
-      <div style="float: left;"><a class="prev" href="/2011/08/surface-water-streamforms-flooding">&laquo; Streamforms and flooding</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2011/08/mate-competition">MATE ROV Competition &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+      </div> <!-- end row -->
+    </div> <!-- end docs-section -->
 
-</article>
-
-    </div>
-
-    <div style="clear:both;"></div>
-
-    
-      <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-      </div>
-    <div style="clear:both;"></div>
-
-    
-
-	</body>
-</html>
+  </div> 
+  
+</body></html>

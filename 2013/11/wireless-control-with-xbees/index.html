@@ -1,50 +1,53 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Jenner Hanni</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-      <title>Arduino Sketch with XBees | Jenner Hanni</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <link href="/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+  <link href="/css/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github-prettify-theme.css">
 
-  </head>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<body style="background-color: #fff;">
+</head>
 
-    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-    </div>
 
-    
-    
 
-    <div style="margin: 0 auto; width: 70%; text-align:center;">
-      <article>
+<body class="code-snippets-visible has-docked-nav">
 
-  <div style="padding: 20px; clear:both; border: 1px solid #c0c0c0;">
-     
-      <div style="float: left;"><a class="prev" href="/2013/11/basic-driving-demo">&laquo; Foxcar Drive and Turn Demo</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2013/12/arduino-rangefinder">Arduino and a Rangefinder &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+  <div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/making/">Making</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/thinking/">Thinking</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/traveling/">Traveling</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/collecting/">Collecting</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="title">Arduino Sketch with XBees</div>
-  <p>November 2013 - Portland, Oregon</p>
+    <div class="docs-section">
+      <div class="row">
 
-  <p>Step three of Foxcar development came full circle and made the car once again remote controlled, this time with XBee. I stacked an XBee on the protoshield on top of the motor driver board on top of the Arduino Uno and connected the other XBee via a Sparkfun XBee Explorer Board to my laptop on port /dev/ttyUSB0. I came up with some commands and was able to wirelessly drive the motor and servo.</p>
+        
+        <div class="twelve columns"><h3>Arduino Sketch with XBees</h3>
+
+<p>Step three of Foxcar development came full circle and made the car once again remote controlled, this time with XBee. I stacked an XBee on the protoshield on top of the motor driver board on top of the Arduino Uno and connected the other XBee via a Sparkfun XBee Explorer Board to my laptop on port /dev/ttyUSB0. I came up with some commands and was able to wirelessly drive the motor and servo.</p>
 <p>I found a couple of Series 2 XBees and an Explorer Board from Sparkfun.</p>
-<img src="/images/project/networks/xbee-mounted.png">
+<img src="/img/project/networks/xbee-mounted.png">
 <p>I used the Explorer board to verify both XBees were on the same baud rate. Series 2 XBees are also called Zigbee Modules that use the ZNet 2.5 protocol. They&#8217;re good for mesh networks.</p>
 <p>A couple of tutorials were helpful:</p>
 <p><a href="http://www.pjrc.com/teensy/td_uart.html">Using the <span class="caps">UART</span> (Real Serial Port)</a> &#8211; on the Teensy.</p>
@@ -53,33 +56,15 @@
 <p>The two resources I used for setting commands were the XBee 2.5 Datasheet and User Manual.</p>
 <p>I programmed one Arduino with Ladyada&#8217;s ASCIITable test sketch and detached it from the laptop. I wired the 3V3, Rx, Tx, and Gnd connections from the Arduino to one of the XBees using the Protoshield.</p>
 <p>Then I hooked up the XBee Explorer to my laptop and read the incoming <span class="caps">ASCII</span> table on /dev/ttyUSB0. My XBee can receive!</p>
-<img src="/images/project/networks/xbee-rx.png">
+<img src="/img/project/networks/xbee-rx.png">
 <p>Now I want to see that I can send strings to the Arduino-based XBee from Minicom and read them on the Arduino&#8217;s <span class="caps">IDE</span> Serial Monitor. Success!</p>
-<img src="/images/project/networks/xbee-tx.png">
+<img src="/img/project/networks/xbee-tx.png">
+</div>
+        
 
-  <div style="padding: 20px; border: 1px solid #c0c0c0; clear:both;">
-     
-      <div style="float: left;"><a class="prev" href="/2013/11/basic-driving-demo">&laquo; Foxcar Drive and Turn Demo</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2013/12/arduino-rangefinder">Arduino and a Rangefinder &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+      </div> <!-- end row -->
+    </div> <!-- end docs-section -->
 
-</article>
-
-    </div>
-
-    <div style="clear:both;"></div>
-
-    
-      <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-      </div>
-    <div style="clear:both;"></div>
-
-    
-
-	</body>
-</html>
+  </div> 
+  
+</body></html>

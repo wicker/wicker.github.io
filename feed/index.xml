@@ -4,13 +4,21 @@
  <title>Wickerbox | Jenner Hanni</title>
  <link href="http://wickerbox.net/feed/" rel="self"/>
  <link href="http://wickerbox.net/"/>
- <updated>2014-11-16T21:53:05-08:00</updated>
+ <updated>2015-04-25T21:54:37-07:00</updated>
  <id>http://wickerbox.net/</id>
  <author>
    <name>Wickerbox</name>
    <email>jeh.wicker@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Zen</title>
+   <link href="http://wickerbox.net/2015/04/zen"/>
+   <updated>2015-04-15T00:00:00-07:00</updated>
+   <id>http://wickerbox.net/2015/04/zen</id>
+   <content type="html">&lt;p&gt;&amp;#8220;Enlightenment is a lofty word, but its reality is something quite ordinary. Th enlightened person is simply the person who isn&amp;#8217;t selfish, who sees things as they really are, loves them, and acts out of that love. With zazen practice we see a world that is lovely, and that calls out to us to participate in it. We are glad to do it. We can&amp;#8217;t not do it.&amp;#8221; (pg xxix)&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Carb Sync Shield</title>
@@ -20,16 +28,16 @@
    <content type="html">&lt;p&gt;I worked with Tom Hogue (&lt;a href=&quot;http://www.venturerider.org/forum/showthread.php?73158-Built-a-digital-carb-sync&quot;&gt;tz89 from the Venture Rider forum&lt;/a&gt;) to translate his prototyped design onto a printed circuit board. He&amp;#8217;s done all of the software; my contributions were entirely in hardware.&lt;/p&gt;
 &lt;p&gt;The Carb Sync Shield monitors the up to six carburetors and displays the vacuum pressure in realtime on an &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; display so the user can make adjustments to the air/fuel mix in each cylinder.&lt;/p&gt;
 &lt;p&gt;There&amp;#8217;s an additional &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; feature that will be useful to set and monitor the idle speed on bikes that don&amp;#8217;t have a tachometer.&lt;/p&gt;
-&lt;img src=&quot;/images/project/carbshield/IMG_2433.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/carbshield/IMG_2433.JPG&quot;&gt;
 &lt;p&gt;The kit can be assembled by a novice using a basic soldering iron. The pressure sensors have extra-large surface mount pads and all other components are through-hole.&lt;/p&gt;
-&lt;img src=&quot;/images/project/carbshield/IMG_2304.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/carbshield/IMG_2304.JPG&quot;&gt;
 &lt;p&gt;The shield is compatible with both the &lt;a href=&quot;http://store.arduino.cc/product/A000066&quot;&gt;Arduino Uno v3&lt;/a&gt; and the Bluetooth-capable &lt;a href=&quot;http://redbearlab.com/blend/&quot;&gt;RedBear Blend v1&lt;/a&gt;. It displays the &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; calculated from each of up to six simultaneous 3.3V or 5V pressure sensors on an &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; display which can be mounted directly or connected with the rainbow jumpers as shown above.&lt;/p&gt;
-&lt;img src=&quot;/images/project/carbshield/ardblend.png&quot;&gt;
+&lt;img src=&quot;/img/project/carbshield/ardblend.png&quot;&gt;
 &lt;p&gt;The board draws power from the carrier Uno or Blend board, which in turn can run off a 9V battery or a &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; plug. The blue trim potentiometer controls the brightness of the &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; so it&amp;#8217;s visible indoors or outdoors. The large switch sets the analog pressure sensor reference voltage to 3.3V or 5V. In the final version of the board, the switch is replaced with a 3-pin header and jumper cap.&lt;/p&gt;
 &lt;p&gt;Three digital I/O lines are broken out along with dedicated 5V or 3.3V pins to support extra sensors. It&amp;#8217;s up to the user to match the sensor voltage on the digital line to the expected operating voltage of the Uno or Blend.&lt;/p&gt;
 &lt;p&gt;We had the boards fabricated through &lt;a href=&quot;http://oshpark.com&quot;&gt;OSHPark&lt;/a&gt;, a local batch &lt;span class=&quot;caps&quot;&gt;PCB&lt;/span&gt; service based in Oregon, and did a successful test in early November on Tom&amp;#8217;s bike.&lt;/p&gt;
-&lt;img src=&quot;/images/project/carbshield/IMG_2436.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/carbshield/IMG_2438.JPG&quot;&gt;</content>
+&lt;img src=&quot;/img/project/carbshield/IMG_2436.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/carbshield/IMG_2438.JPG&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -41,7 +49,7 @@
 &lt;p&gt;The modules have different pinouts, slightly different packages, and the UC15 takes 3.3V-4.3V while the M10 took 3.3V-4.6V, which is still fine for a 3.7V standard LiPo battery.&lt;/p&gt;
 &lt;p&gt;I got the boards back and did an initial build last week; I&amp;#8217;m working with a software dev so we&amp;#8217;re going to try to spin it up this week and see where we get.&lt;/p&gt;
 &lt;p&gt;The currently &lt;em&gt;untested&lt;/em&gt; hardware is available &lt;em&gt;for reference&lt;/em&gt; at the &lt;a href=&quot;http://github.com/wicker/cellphone3g&quot;&gt;GitHub repo&lt;/a&gt; and released as open hardware under the &lt;span class=&quot;caps&quot;&gt;MIT&lt;/span&gt; license. I will update this when it works.&lt;/p&gt;
-&lt;img src=&quot;/images/project/cellphone3g/finalboard.jpg&quot;&gt;
+&lt;img src=&quot;/img/project/cellphone3g/finalboard.jpg&quot;&gt;
 &lt;p&gt;&lt;strong&gt;Vocabulary&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;caps&quot;&gt;GSM&lt;/span&gt; &amp;#8211; Global System for Mobile Communications, 2G&lt;br /&gt;
 &lt;span class=&quot;caps&quot;&gt;GPRS&lt;/span&gt; &amp;#8211; General Packet Radio Services, packet data service on 2G and 3G&lt;br /&gt;
@@ -64,10 +72,10 @@
 &lt;p&gt;The display allows the user to program up to nine steps in a temperature profile. Each step lets the user specify a ramp rate, hold temperature, and hold time. Once all the steps are set, the user should set the relay enable switch to ON and then tell the program to begin running the profile.&lt;/p&gt;
 &lt;p&gt;The program automatically detects which thermocouples are present and uses the temperature as input to a &lt;span class=&quot;caps&quot;&gt;PID&lt;/span&gt; loop which controls ramp rate by turning on and off up to four relays which are, for our configuration, two heaters, one fan, and one vent.&lt;/p&gt;
 &lt;p&gt;The code and hardware is available &lt;a href=&quot;https://github.com/psas/mme-capstone/&quot;&gt;on Github in the &amp;#8216;oven-controller&amp;#8217;&lt;/a&gt; directory.&lt;/p&gt;
-&lt;img src=&quot;/images/project/ovenboardv3/067_1.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/ovenboardv3/068_1.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/ovenboardv3/088_1.JPG&quot;&gt;
-&lt;img class=&quot;vertimg&quot; src=&quot;/images/project/ovenboardv3/IMG_1836.JPG&quot;&gt;</content>
+&lt;img src=&quot;/img/project/ovenboardv3/067_1.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/ovenboardv3/068_1.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/ovenboardv3/088_1.JPG&quot;&gt;
+&lt;img class=&quot;vertimg&quot; src=&quot;/img/project/ovenboardv3/IMG_1836.JPG&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -120,14 +128,14 @@
 &lt;p&gt;This project is open hardware and software licensed under the 3-clause &lt;span class=&quot;caps&quot;&gt;BSD&lt;/span&gt; license and maintained on the &lt;a href=&quot;http://psas.pdx.edu/&quot;&gt;Portland State Aerospace Society&lt;/a&gt;&amp;#8217;s &lt;a href=&quot;http://github.com/psas/&quot;&gt;Github account&lt;/a&gt;. You can find the bill of materials and Eagle schematics at &lt;a href=&quot;http://github.com/psas/gps-rf-board/&quot;&gt;psas/gps-rf-board&lt;/a&gt; and the software as part of &lt;a href=&quot;http://githbu.com/psas/stm32/&quot;&gt;psas/stm32&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It&amp;#8217;s been a big group effort in the push to get it talking; Andrew, K, Theo, and Kenny at least have helped out with software and modwire soldering, and I might have missed someone.&lt;/p&gt;
 &lt;h3&gt;Board Layout Overview&lt;/h3&gt;
-&lt;img src=&quot;/images/project/gpsboard/functional-block.png&quot;&gt;
+&lt;img src=&quot;/img/project/gpsboard/functional-block.png&quot;&gt;
 &lt;p&gt;The board has four layers and was ordered from &lt;a href=&quot;http://oshpark.com&quot;&gt;OSHPark&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Power&lt;/h3&gt;
 &lt;p&gt;We can power the board from Rocketnet Ethernet (up to 20V) or over &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; (about 5V) so we used an LMZ12001 switching regulator with an input voltage range from 4.5V to 20V to output 3.3V for the digital side of the board. We then used two ultra-low noise MAX8510 &lt;span class=&quot;caps&quot;&gt;LDO&lt;/span&gt; linear regulators to provide 2.85V on separate digital and analog supply lines for the RF side of the board.&lt;/p&gt;
 &lt;h3&gt;&lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;The &lt;a href=&quot;http://datasheets.maximintegrated.com/en/ds/MAX2769.pdf&quot;&gt;MAX2769&lt;/a&gt; is a tiny 28-pin universal &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; Receiver with a 1.4dB noise figure. The datasheet says we don&amp;#8217;t need external &lt;span class=&quot;caps&quot;&gt;SAW&lt;/span&gt; filters but we used them anyway. The chip has two &lt;span class=&quot;caps&quot;&gt;LNA&lt;/span&gt; inputs and the eval kit is set up for to support both passive and active antennas. We used the &lt;a href=&quot;http://datasheets.maximintegrated.com/en/ds/MAX2769EVKIT.pdf&quot;&gt;MAX2769 Eval Kit&lt;/a&gt; as a reference but it was a particularly difficult schematic to work with.&lt;/p&gt;
 &lt;p&gt;Our board has a single antenna attachment point with a couple of optional circuits that the user chooses by where you populate capacitors and resistors. Option #1 is whether or not to have an LNA1 and its &lt;span class=&quot;caps&quot;&gt;ANTBIAS&lt;/span&gt;-pin power circuit. Option #2 is whether to put into LNA1 or LNA2 on the chip.&lt;/p&gt;
-&lt;img src=&quot;/images/project/gpsboard/v2-rf-section.png&quot;&gt;
+&lt;img src=&quot;/img/project/gpsboard/v2-rf-section.png&quot;&gt;
 &lt;h3&gt;Output&lt;/h3&gt;
 &lt;p&gt;We use a 100-pin &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; Cortex-M3 STM32F407 running the Portland State Aerospace Society&amp;#8217;s version of ChibiOS to program the MAX2769 and to support &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt;, Ethernet, and an SD card. We also break out raw data signals at pin test points.&lt;/p&gt;
 &lt;p&gt;Ethernet requires the Portland State Aerospace Society&amp;#8217;s Rocketnet connector for programming, data streaming, and power.&lt;/p&gt;
@@ -135,10 +143,10 @@
 &lt;p&gt;The micro-SD card is available for data logging.&lt;/p&gt;
 &lt;p&gt;The serial breakout is two 1&amp;#215;11 0.1&amp;quot; headers which we also used for debug. We ran traces between the two breakouts because we were unsure about some of the pinouts from the MAX2769 and wanted to be sure we could cut traces and easily run modwire.&lt;/p&gt;
 &lt;h3&gt;Build&lt;/h3&gt;
-&lt;img src=&quot;/images/project/gpsboard/gpsboard-v2-board.png&quot;&gt;
-&lt;img src=&quot;/images/project/gpsboard/gpsboard-v2-build.png&quot;&gt;
+&lt;img src=&quot;/img/project/gpsboard/gpsboard-v2-board.png&quot;&gt;
+&lt;img src=&quot;/img/project/gpsboard/gpsboard-v2-build.png&quot;&gt;
 &lt;p&gt;This is the board installed on the avionics module that carries the flight computer, sensor packages, and battery packs. The green board on top is the commercial Crescent &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; unit. The purple board down below is the JennerGPS. They&amp;#8217;re both connected to the splitter in the middle, which runs off to the cylindrical patch antenna on the skin of the rocket.&lt;/p&gt;
-&lt;img class=&quot;vertimg&quot; src=&quot;/images/project/gpsboard/gpssystem.png&quot;&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;img class=&quot;vertimg&quot; src=&quot;/img/project/gpsboard/gpssystem.png&quot;&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
 &lt;h3&gt;Current Status&lt;/h3&gt;
 &lt;p&gt;The board was flown on the Portland State Aerospace Society&amp;#8217;s LV2.3 airframe for Launch 11 on July 20th, 2014, in Brothers, Oregon, to an altitude of 15,000 feet. The hardware was complete but the software on the board was not entirely ready for launch and, anyway, the entire &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; system failed so no data was retrieved.&lt;/p&gt;
 &lt;p&gt;More information on the launch is available at &lt;a href=&quot;http://psas.pdx.edu/launch11/&quot;&gt;the &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; Launch 11 page&lt;/a&gt;.&lt;/p&gt;
@@ -146,18 +154,6 @@
 &lt;p&gt;The &lt;a href=&quot;http://github.com/psas/gps-rf-board/&quot;&gt;Github repository&lt;/a&gt; has all the schematics. The current version is v2. We welcome collaboration but do please contact us before using the schematics because the repo may not have all current modifications.&lt;/p&gt;
 &lt;p&gt;It was super helpful to reference &lt;a href=&quot;http://swift-nav.com/piksi.html&quot;&gt;Swift Navigation&amp;#8217;s Piksi &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; Receiver&lt;/a&gt; which uses the MAX2769 chip with an STM32F407 and &lt;span class=&quot;caps&quot;&gt;FPGA&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;The first version of this board was funded by the &lt;a href=&quot;http://www.pdx.edu/cecs/innovation-program&quot;&gt;&lt;span class=&quot;caps&quot;&gt;MCECS&lt;/span&gt; Innovation Program&lt;/a&gt;.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Rocket Manufacturing Capstone</title>
-   <link href="http://wickerbox.net/2014/06/rocket-manufacturing-capstone"/>
-   <updated>2014-06-12T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2014/06/rocket-manufacturing-capstone</id>
-   <content type="html">&lt;p&gt;The Portland State Aerospace Society is a fifteen-year old rocket club that puts really interesting, sophisticated electronics to stream back live rocket flight data and video in a thick, heavy, over-engineered metal airframe. It&amp;#8217;s occasionally been nice to have an overly durable airframe but most of the time it&amp;#8217;s just a pain.&lt;/p&gt;
-&lt;p&gt;We got lucky enough this year to convince veterans of Portland State&amp;#8217;s Formula &lt;span class=&quot;caps&quot;&gt;SAE&lt;/span&gt; team to not only design a carbon fiber rocket for their senior year mechanical engineering capstone, but to develop a manufacturing process for us electrical engineers and document the hell out of it.&lt;/p&gt;
-&lt;p&gt;As far as we&amp;#8217;re concerned, it turned into basically the best capstone ever. Their deliverables included a layup table, a 4&amp;#8242;&amp;#215;4&amp;#8242;&amp;#215;8&amp;#8242; curing oven, smaller mandrels for testing, lots of crushed and nearly-crushed modules from their strength tests, full-sized final mandrels for the final six-inch rocket, several regular rocket sections, one motor section, the retaining rings, an electronics carrier insert, prototype fins, a block of super-dense foam for the nose cone, and thousands of dollars in layup materials.&lt;/p&gt;
-&lt;p&gt;I worked with the team to develop the oven control box and I&amp;#8217;m working with them into the summer to develop the &lt;a href=&quot;http://psas.github.io/mme-capstone/&quot;&gt;rocket manufacturing page&lt;/a&gt; to store all the documentation. We&amp;#8217;re releasing everything as open source hardware.&lt;/p&gt;
-&lt;p&gt;They brought all their deliverables out to the Engineering Building plaza for the final capstone shindig right before graduation so I went down to check it out.&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -182,9 +178,9 @@
    <content type="html">&lt;p&gt;I went down to Salem for breakfast and then headed up through Elkhorn Valley to the Opal Creek Trailhead. Way too many people around and the bridge was out in Jawbone Flats so I hiked just about to the loop trail fork and then went back. I took more time to check out the mine entrances and to explore down by the river. Found a millipede and had some fun thinking of millipede robots.&lt;/p&gt;
 &lt;p&gt;The best part of this hike is definitely past Jawbone Flats at the Opal pools but the whole area is beautiful so it was a nice day.&lt;/p&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/7QkvHKyEzLC_TIuRWkoEapAu1578x0GLKp5M7n5tFw=w900-h242-no&quot;&gt;
-&lt;img src=&quot;/images/travels/opalcreek/1.png&quot;&gt;
-&lt;img src=&quot;/images/travels/opalcreek/2.png&quot;&gt;
-&lt;img src=&quot;/images/travels/opalcreek/3.png&quot;&gt;
+&lt;img src=&quot;/img/travels/opalcreek/1.png&quot;&gt;
+&lt;img src=&quot;/img/travels/opalcreek/2.png&quot;&gt;
+&lt;img src=&quot;/img/travels/opalcreek/3.png&quot;&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-jc73ihRtR_M/U4oT3mDddZI/AAAAAAAAGiQ/0hAENfU5eEQ/w900-h288-no/IMG_1786.JPG&quot;&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-LM8Gj6qXppw/U4oTaKZQB_I/AAAAAAAAGg0/YMbSuUSeGRU/w869-h652-no/IMG_1789.JPG&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/-bgpJt-uVtuk/U4oTa9rGnsI/AAAAAAAAGh4/vQKGWsVrfJM/w869-h652-no/IMG_1792.JPG&quot;&gt;
@@ -196,34 +192,18 @@
  </entry>
  
  <entry>
-   <title>STM32F4-Discovery Breakout Board</title>
-   <link href="http://wickerbox.net/2014/05/stm32f4-discovery-breakout"/>
-   <updated>2014-05-24T00:00:00-07:00</updated>
-   <id>http://wickerbox.net/2014/05/stm32f4-discovery-breakout</id>
-   <content type="html">&lt;p&gt;The STM32F4-Discovery board is a really great dev board that breaks out all the pins to, unfortunately, male headers. All of my sensors have male pins so I finally gave up daisy-chaining female-to-male jumpers and decided to make a breakout board on the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; router in the Electronics Prototyping Lab.&lt;/p&gt;
-&lt;p&gt;I was lucky enough to find Jason Lopez&amp;#8217;s Eagle schematic and footprint but I had trouble with the drills so I changed the drill size. Otherwise it saved me a ton of time and effort. Thanks, Jason!&lt;/p&gt;
-&lt;p&gt;This is the schematic and board layout for the two-layer board. It&amp;#8217;s really a one-layer board, as the vias aren&amp;#8217;t plated. I ran all the traces on the bottom side of the board so I could place the female headers through from the top.&lt;/p&gt;
-&lt;img src=&quot;/images/project/stm32f4discovery/discovery-breakout-sch.png&quot;&gt;
-&lt;img src=&quot;/images/project/stm32f4discovery/discovery-breakout-brd.png&quot;&gt;
-&lt;p&gt;There are four female headers so the dev board doesn&amp;#8217;t have to be soldered in and four more for the jumpers to attach.&lt;/p&gt;
-&lt;img src=&quot;/images/project/stm32f4discovery/IMG_1838.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/stm32f4discovery/IMG_1839.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/stm32f4discovery/IMG_1840.JPG&quot;&gt;</content>
- </entry>
- 
- <entry>
    <title>Garden Update</title>
    <link href="http://wickerbox.net/2014/05/garden-update"/>
    <updated>2014-05-20T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2014/05/garden-update</id>
    <content type="html">&lt;p&gt;We&amp;#8217;re having our usual scattered, unpredictable mix of thunderstorms, warm rain, hail, brilliant sunshine, and blue skies, so the garden has exploded in size over the last couple of weeks.&lt;/p&gt;
 &lt;p&gt;The irrigation stuff arrived. My cat approves.&lt;/p&gt;
-&lt;img src=&quot;/images/project/garden2/IMG_1663_crop.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/garden2/IMG_1669.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/garden2/IMG_1670.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/garden2/IMG_1673.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/garden2/IMG_1663_crop.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/garden2/IMG_1669.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/garden2/IMG_1670.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/garden2/IMG_1673.JPG&quot;&gt;
 &lt;p&gt;My boss started tomatoes from seed and ended up with too many so I now have way more tomatoes than I know what to do with. I&amp;#8217;m going to move over some of the broccoli and cabbage from the right-hand box to the tomato box to make some room.&lt;/p&gt;
-&lt;img src=&quot;/images/project/garden2/IMG_1674.JPG&quot;&gt;</content>
+&lt;img src=&quot;/img/project/garden2/IMG_1674.JPG&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -242,7 +222,7 @@
 &lt;img src=&quot;https://lh6.googleusercontent.com/-6oDnMIwBvJQ/U3PC5rkpcoI/AAAAAAAAGdg/TPSz1uBi0jg/w800-h600-no/134.JPG&quot;&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-j-fCJoHO3e8/U3PC6NAXWsI/AAAAAAAAGdc/FZcglWMF9-Q/w800-h600-no/150.JPG&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/-xL7BFwxpQwg/U3PC7MBwPqI/AAAAAAAAGdw/5TALuso2sQk/w800-h600-no/151.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/misc/mccall-blended.png&quot;&gt;
+&lt;img src=&quot;/img/project/misc/mccall-blended.png&quot;&gt;
 &lt;img src=&quot;https://lh5.googleusercontent.com/-ED8ngLYasLU/U3PC8tzai_I/AAAAAAAAGeM/7KhnsUncAZs/w800-h600-no/156.JPG&quot;&gt;
 &lt;img src=&quot;https://lh4.googleusercontent.com/-u1Ofr4DYDcI/U3PC8i27lyI/AAAAAAAAGeE/CmKm3Gi8srw/w800-h600-no/157.JPG&quot;&gt;
 &lt;p&gt;The trail loops around the meadow at the top, perfect for a picnic.&lt;/p&gt;
@@ -258,13 +238,13 @@
    <id>http://wickerbox.net/2014/05/marlboro-college-vermont</id>
    <content type="html">&lt;p&gt;A friend of mine went off to a tiny liberal arts college on a hilltop in Vermont to get a philosophy and literature degree, which might be the exact opposite of what I&amp;#8217;ve done in every way, so I went out to visit him shortly before graduation. I arrived in Boston just after midnight, rented a car, and drove through New Hampshire to Vermont.&lt;/p&gt;
 &lt;p&gt;These are just some photos for my own memories. The woods in particular were beautiful. Marlboro, like the rest of the East Coast, experienced a super cold winter that lingered into May, though I guess the snow had melted right before I got there. Walking and talking on the trails was satisfying, and everywhere there were glimpses of other people having been there: sculptures, little shrines, art.&lt;/p&gt;
-&lt;img src=&quot;/images/travels/marlboro/007.JPG&quot;&gt;
-&lt;img src=&quot;/images/travels/marlboro/012.JPG&quot;&gt;
+&lt;img src=&quot;/img/travels/marlboro/007.JPG&quot;&gt;
+&lt;img src=&quot;/img/travels/marlboro/012.JPG&quot;&gt;
 &lt;p&gt;Dalrymple and the back of the library. I didn&amp;#8217;t take many photos since I was too busy hanging out, but I wanted to have something visual to remember.&lt;/p&gt;
-&lt;img src=&quot;/images/travels/marlboro/022.JPG&quot;&gt;
-&lt;img src=&quot;/images/travels/marlboro/023.JPG&quot;&gt;
+&lt;img src=&quot;/img/travels/marlboro/022.JPG&quot;&gt;
+&lt;img src=&quot;/img/travels/marlboro/023.JPG&quot;&gt;
 &lt;p&gt;Googly eyes stuck on National Geographic cut-outs around the house.&lt;/p&gt;
-&lt;img class=&quot;vertimg&quot; src=&quot;/images/travels/marlboro/024.JPG&quot;&gt; &lt;img class=&quot;vertimg&quot; src=&quot;/images/travels/marlboro/032.JPG&quot;&gt; &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;</content>
+&lt;img class=&quot;vertimg&quot; src=&quot;/img/travels/marlboro/024.JPG&quot;&gt; &lt;img class=&quot;vertimg&quot; src=&quot;/img/travels/marlboro/032.JPG&quot;&gt; &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -274,9 +254,9 @@
    <id>http://wickerbox.net/2014/04/square-foot-plan</id>
    <content type="html">&lt;p&gt;This is the layout of the beds:&lt;/p&gt;
 &lt;p&gt;I planted in the right-hand two beds. They&amp;#8217;re each 3 feet wide by 6 feet long by 2 feet high. I bought a couple of blueberries and potted them in between the raised beds. I&amp;#8217;m watering by hand until the irrigation stuff arrives.&lt;/p&gt;
-&lt;img src=&quot;/images/project/garden1/IMG_1607.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/garden1/IMG_1608.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/garden1/IMG_1610.JPG&quot;&gt;</content>
+&lt;img src=&quot;/img/project/garden1/IMG_1607.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/garden1/IMG_1608.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/garden1/IMG_1610.JPG&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -284,13 +264,13 @@
    <link href="http://wickerbox.net/2014/04/foxcar-board-build"/>
    <updated>2014-04-30T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2014/04/foxcar-board-build</id>
-   <content type="html">&lt;img src=&quot;/images/project/foxcar/controlboardv1-oshpark.png&quot;&gt;
+   <content type="html">&lt;img src=&quot;/img/project/foxcar/controlboardv1-oshpark.png&quot;&gt;
 &lt;p&gt;Just a quick update to say the Foxcar Control Board is built! I left the &lt;span class=&quot;caps&quot;&gt;ENABLE&lt;/span&gt; pin unconnected on the voltage regulator (this is what I get for not seeking out a design review&amp;#8230;) so I had to short that pin to &lt;span class=&quot;caps&quot;&gt;VCC&lt;/span&gt;. With that done, plugging into the &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; successfully illuminated the 3.3V and &lt;span class=&quot;caps&quot;&gt;VIN&lt;/span&gt; LEDs, so power is theoretically available to both the STM32F4 and the motor driver chip.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/IMG_1830.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/IMG_1830.JPG&quot;&gt;
 &lt;p&gt;I did tear off the microUSB when trying to disconnect the &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; cable so I resolve from now on to always choose &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; packages with anchoring slots. I had to &lt;span class=&quot;caps&quot;&gt;RTV&lt;/span&gt; it down, resolder, and then just ripped it up again so I gave up and switched over to providing power from the 7V LiPo directly.&lt;/p&gt;
 &lt;p&gt;Turns out that worked fine too, at least at first, so the LEDs for &lt;span class=&quot;caps&quot;&gt;VIN&lt;/span&gt; and 3.3V were lit as expected but I definitely had a short from 3.3V to &lt;span class=&quot;caps&quot;&gt;GND&lt;/span&gt; somewhere and I made a little volcano in the middle of my STM32F4 chip.&lt;/p&gt;
 &lt;p&gt;While I wait to get a chance to rework, including remove/replacing that chip, I&amp;#8217;m going back to prototyping on the STM32F4 Discovery board.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/IMG_1847.JPG&quot;&gt;</content>
+&lt;img src=&quot;/img/project/foxcar/IMG_1847.JPG&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -328,11 +308,11 @@
    <id>http://wickerbox.net/2014/03/raised-beds</id>
    <content type="html">&lt;p&gt;Getting started with the garden this year. Last year I did all right with veggies but they were in the ground and it could have been better. Also, I have the smallest backyard ever.&lt;/p&gt;
 &lt;p&gt;There are three 3&amp;#8242;&amp;#215;6&amp;#8242; beds about 20&amp;quot; high. I used cedar fence boards and pine studs, then coated them with linseed oil. Total cost was about $100 and one day&amp;#8217;s work.&lt;/p&gt;
-&lt;img src=&quot;/images/project/raisedbeds/setup.png&quot;&gt;
-&lt;img src=&quot;/images/project/raisedbeds/second-box.png&quot;&gt;
-&lt;img src=&quot;/images/project/raisedbeds/left-finish.png&quot;&gt;
-&lt;img src=&quot;/images/project/raisedbeds/right-finish.png&quot;&gt;
-&lt;img src=&quot;/images/project/raisedbeds/cropped-pano.png&quot;&gt;</content>
+&lt;img src=&quot;/img/project/raisedbeds/setup.png&quot;&gt;
+&lt;img src=&quot;/img/project/raisedbeds/second-box.png&quot;&gt;
+&lt;img src=&quot;/img/project/raisedbeds/left-finish.png&quot;&gt;
+&lt;img src=&quot;/img/project/raisedbeds/right-finish.png&quot;&gt;
+&lt;img src=&quot;/img/project/raisedbeds/cropped-pano.png&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -345,7 +325,7 @@
 &lt;p&gt;Apart from the convolution program itself, I wrote a small helper program called GetPixels that uses OpenCV to turn an image into a text file of grayscale pixel values and vice versa.&lt;/p&gt;
 &lt;p&gt;This project follows from my previous &lt;a href=&quot;#&quot;&gt;SystemVerilog&lt;/a&gt; implementation but I lack access to a decent SysV simulator and felt C would work just fine.&lt;/p&gt;
 &lt;p&gt;The code is available at &lt;a href=&quot;http://github.com/wicker/image-processing/&quot;&gt;my GitHub repository&lt;/a&gt;.&lt;/p&gt;
-&lt;img src=&quot;/images/project/convolution/c-introimg.png&quot;&gt;
+&lt;img src=&quot;/img/project/convolution/c-introimg.png&quot;&gt;
 &lt;h5&gt;GetPixels&lt;/h5&gt;
 &lt;p&gt;First of all, the convolution program takes a text file of 8-bit grayscale pixel values with values between 0 (black) and 255 (white). GetPixels is a small OpenCV-based tool to turn a gray or color image into a text file of pixel values and back again. Check out &lt;a href=&quot;/2014/03/getpixels/&quot;&gt;the full GetPixels instructions here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Basically, GetPixels takes an input &lt;span class=&quot;caps&quot;&gt;PNG&lt;/span&gt; and outputs a text file with the grayscale value of the pixels separated by a space, like this:&lt;/p&gt;
@@ -414,78 +394,78 @@
 &lt;p&gt;The image on the left is the original brokentop.png. The image on the right is what it&amp;#8217;s turned into by GetPixels when the text file brokentop.txt is created.&lt;/p&gt;
 &lt;div class=&quot;convolution&quot;&gt;Original image&lt;br /&gt;
 &lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/brokentop.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/brokentop.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;GetPixels result&lt;br /&gt;
 &lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/results-delta.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/results-delta.png&quot;&gt;&lt;/div&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
 &lt;p&gt;The script lets you quickly do things like compare the six operations above when normalized (flag set to &amp;#8216;1&amp;#8217;) and not normalized (flag set to &amp;#8216;0&amp;#8217;). Here are the results of the convolution operations when they are not normalized. They&amp;#8217;re still very high noise, because the only filtering was high pass, which is effectively trying to find every edge in the image.&lt;/p&gt;
 &lt;div class=&quot;convolution&quot;&gt;Horizontal Filter&lt;br /&gt;
 -1 -1 -1 &lt;br /&gt;
 2 2 2&lt;br /&gt;
 -1 -1 -1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/not-normed/output-horz.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/not-normed/output-horz.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Sobel Horizontal Filter&lt;br /&gt;
 -1 -2 -1&lt;br /&gt;
 0 0 0 &lt;br /&gt;
 1 2 1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/not-normed/output-sobel-h.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/not-normed/output-sobel-h.png&quot;&gt;&lt;/div&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Vertical Filter&lt;br /&gt;
 -1 2 -1&lt;br /&gt;
 -1 2 -1&lt;br /&gt;
 -1 2 -1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/not-normed/output-vert.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/not-normed/output-vert.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Sobel Vertical Filter&lt;br /&gt;
 -1 0 1 &lt;br /&gt;
 -2 0 2&lt;br /&gt;
 -1 0 1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/not-normed/output-sobel-v.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/not-normed/output-sobel-v.png&quot;&gt;&lt;/div&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;45 Degrees&lt;br /&gt;
 -1 -1 2&lt;br /&gt;
 -1 2 -1&lt;br /&gt;
 2 -1 -1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/not-normed/output-45deg.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/not-normed/output-45deg.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;135 Degrees&lt;br /&gt;
 2 -1 -1&lt;br /&gt;
 -1 2 -1&lt;br /&gt;
 -1 -1 2&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/not-normed/output-135deg.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/not-normed/output-135deg.png&quot;&gt;&lt;/div&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
 &lt;p&gt;Normalizing, on the other hand, provides a low pass effect and helps to smooth out the resulting image. These images were normalized after the filter. I ran the script in a fresh directory but passed a &amp;#8216;1&amp;#8217; to the &lt;code&gt;&amp;lt;norm&amp;gt;&lt;/code&gt; flag instead of a 0. You can tell these are much more useful images.&lt;/p&gt;
 &lt;div class=&quot;convolution&quot;&gt;Horizontal Filter&lt;br /&gt;
 -1 -1 -1 &lt;br /&gt;
 2 2 2&lt;br /&gt;
 -1 -1 -1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/normed/output-horz.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/normed/output-horz.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Sobel Horizontal Filter&lt;br /&gt;
 -1 -2 -1&lt;br /&gt;
 0 0 0 &lt;br /&gt;
 1 2 1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/normed/output-sobel-h.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/normed/output-sobel-h.png&quot;&gt;&lt;/div&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Vertical Filter&lt;br /&gt;
 -1 2 -1&lt;br /&gt;
 -1 2 -1&lt;br /&gt;
 -1 2 -1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/normed/output-vert.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/normed/output-vert.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Sobel Vertical Filter&lt;br /&gt;
 -1 0 1 &lt;br /&gt;
 -2 0 2&lt;br /&gt;
 -1 0 1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/normed/output-sobel-v.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/normed/output-sobel-v.png&quot;&gt;&lt;/div&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;45 Degrees&lt;br /&gt;
 -1 -1 2&lt;br /&gt;
 -1 2 -1&lt;br /&gt;
 2 -1 -1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/normed/output-45deg.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/normed/output-45deg.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;135 Degrees&lt;br /&gt;
 2 -1 -1&lt;br /&gt;
 -1 2 -1&lt;br /&gt;
 -1 -1 2&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/normed/output-135deg.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/normed/output-135deg.png&quot;&gt;&lt;/div&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
 &lt;h5&gt;How Convolution Works&lt;/h5&gt;
 &lt;p&gt;Pixel by pixel, the kernel matrix is placed with the pixel of interest in the center. Each coefficient in the matrix is multiplied by the neighboring pixel it covers. The values are then added up and may or may not normalized.&lt;/p&gt;
@@ -498,12 +478,12 @@
 &amp;nbsp;&lt;br /&gt;
 &amp;nbsp;&lt;br /&gt;
 &amp;nbsp;&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/brokentop.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/brokentop.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Delta function&lt;br /&gt;
 0 0 0&lt;br /&gt;
 0 1 0 &lt;br /&gt;
 0 0 0&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/results-delta.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/results-delta.png&quot;&gt;&lt;/div&gt;
 &lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
 &lt;h5&gt;Common Kernels &amp;#8211; Rabbit Example&lt;/h5&gt;
 &lt;p&gt;This is a set of examples showing high and low pass kernels from &lt;a href=&quot;http://en.wikipedia.org/wiki/Kernel_%28image_processing%29&quot;&gt;the Wikipedia image processing kernel page&lt;/a&gt; on a Wikipedia Creative Commons-licensed rabbit image.&lt;/p&gt;
@@ -512,73 +492,73 @@
 0 0 0&lt;br /&gt;
 0 1 0 &lt;br /&gt;
 0 0 0&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/rabbit-kernel-delta.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/rabbit-kernel-delta.png&quot;&gt;&lt;/div&gt;
 &lt;h5&gt;Rabbit Example &amp;#8211; Low Pass Filters&lt;/h5&gt;
 &lt;p&gt;Low pass filters like a blur are generally normalized. The most common is a Gaussian distribution, which these are not. To get more of a blur, just enlarge the kernel.&lt;/p&gt;
 &lt;div class=&quot;convolution&quot;&gt;Blur #1 (Normalized)&lt;br /&gt;
 1 2 1 &lt;br /&gt;
 2 4 2&lt;br /&gt;
 1 2 1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/output-blur1.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/output-blur1.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Blur #2 (Normalized)&lt;br /&gt;
 1 1 1 &lt;br /&gt;
 1 1 1 &lt;br /&gt;
 1 1 1 &lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/output-blur2.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/output-blur2.png&quot;&gt;&lt;/div&gt;
 &lt;h5&gt;Rabbit Example &amp;#8211; High Pass Filters&lt;/h5&gt;
 &lt;p&gt;High Pass filters are used for edge enhancement, edge detection, embossing, sharpening, or any operation where you want to bring attention to the difference between two pixels. The sharpen operation below is not normalized; the others are.&lt;/p&gt;
 &lt;div class=&quot;convolution&quot;&gt;Sharpen&lt;br /&gt;
 0 -1 0 &lt;br /&gt;
 -1 5 -1&lt;br /&gt;
 0 -1 0&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/sharpen.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/sharpen.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Edge #1&lt;br /&gt;
 1 0 -1&lt;br /&gt;
 0 0 0 &lt;br /&gt;
 -1 0 1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/rabbit-kernel-edge1.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/rabbit-kernel-edge1.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Edge #2&lt;br /&gt;
 0 1 0 &lt;br /&gt;
 1 -4 1 &lt;br /&gt;
 0 1 0&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/rabbit-kernel-edge2.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/rabbit-kernel-edge2.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Edge #3&lt;br /&gt;
 -1 -1 -1 &lt;br /&gt;
 -1 8 -1 &lt;br /&gt;
 -1 -1 -1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/rabbit-kernel-edge3.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/rabbit-kernel-edge3.png&quot;&gt;&lt;/div&gt;
 &lt;h5&gt;Kernel Sum (Brightness)&lt;/h5&gt;
 &lt;p&gt;There are three things &amp;#8211; luminance (brightness), hue, and saturation. We&amp;#8217;re working with grayscale values so we ignore hue and saturation. We&amp;#8217;re left with an 8-bit brightness value. That means that if the sum of our kernel is greater than one, we&amp;#8217;re going to get pixel values at greater than we started with, which is a brighter image. If the kernel is less than one, we&amp;#8217;ll get a darker image.&lt;/p&gt;
 &lt;div class=&quot;convolution&quot;&gt;Edge (Sum = -2)&lt;br /&gt;
 0 1 0 &lt;br /&gt;
 1 -6 1 &lt;br /&gt;
 0 1 0&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-m2.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/laplace-pos/output-sum-m2.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Edge (Sum = -1)&lt;br /&gt;
 0 1 0 &lt;br /&gt;
 1 -5 1 &lt;br /&gt;
 0 1 0&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-m1.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/laplace-pos/output-sum-m1.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Edge (Sum = 0)&lt;br /&gt;
 0 1 0 &lt;br /&gt;
 1 -4 1 &lt;br /&gt;
 0 1 0&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-0.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/laplace-pos/output-sum-0.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Edge (Sum = 1)&lt;br /&gt;
 0 1 0 &lt;br /&gt;
 1 -3 1 &lt;br /&gt;
 0 1 0&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-p1.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/laplace-pos/output-sum-p1.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Edge (Sum = 2)&lt;br /&gt;
 0 1 0 &lt;br /&gt;
 1 -2 1 &lt;br /&gt;
 0 1 0&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-p2.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/laplace-pos/output-sum-p2.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;Edge (Sum = 3)&lt;br /&gt;
 0 1 0 &lt;br /&gt;
 1 -1 1  &lt;br /&gt;
 0 1 0&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/laplace-pos/output-sum-p3.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/laplace-pos/output-sum-p3.png&quot;&gt;&lt;/div&gt;
 &lt;h5&gt;1D Examples&lt;/h5&gt;
 &lt;p&gt;These two images just have the 1-dimensional horizontal matrix specified. The left image is a blur and the right is a 3&amp;#215;3 edge.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;./GetPixels.o 1 brokentop.png brokentop.txt&lt;/code&gt;&lt;br /&gt;
@@ -588,10 +568,10 @@
 &lt;code&gt;./GetPixels.o 2 1d-edge.png 1d-edge.txt 240 320&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;convolution&quot;&gt;9&amp;#215;9 Blur (Normalized)&lt;br /&gt;
 1 1 1 1 1 1 1 1 1 &lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/1d-blur.png&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;/img/project/convolution/results/1d-blur.png&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;convolution&quot;&gt;3&amp;#215;3 Edge (Normalized)&lt;br /&gt;
 -1 0 1&lt;br /&gt;
-&lt;img src=&quot;/images/project/convolution/results/1d-edge.png&quot;&gt;&lt;/div&gt;</content>
+&lt;img src=&quot;/img/project/convolution/results/1d-edge.png&quot;&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -599,7 +579,7 @@
    <link href="http://wickerbox.net/2014/03/getpixels"/>
    <updated>2014-03-10T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2014/03/getpixels</id>
-   <content type="html">&lt;img src=&quot;/images/project/convolution/getpixels.png&quot;&gt;
+   <content type="html">&lt;img src=&quot;/img/project/convolution/getpixels.png&quot;&gt;
 &lt;p&gt;GetPixels converts an image to a text file of grayscale pixel values and reconstructs the image. I wrote it so I could manipulate the value of an image&amp;#8217;s pixels using convolution kernels and easily look at the results.&lt;/p&gt;
 &lt;p&gt;Find the code at &lt;a href=&quot;http://github.com/wicker/getpixels&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;GetPixels is open source software licensed under the &lt;a href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;Creative Commons Attribution-ShareAlike International&lt;/a&gt; license. That means you can share and adapt the work for any purpose as long as you give me credit and share your work alike.&lt;/p&gt;
@@ -614,7 +594,7 @@
 &lt;p&gt;The program will alert you if the height or width is less than 1, if the input image or input pixel file don&amp;#8217;t exist, or if the operation chosen is not 1 or 2.&lt;/p&gt;
 &lt;p&gt;Note: The output files will be created and overwrite any existing files without prompting!&lt;/p&gt;
 &lt;p&gt;If you give the program a portrait of dimensions 240&amp;#215;320 but you tell the program it&amp;#8217;s a landscape of dimensions 320&amp;#215;240, you&amp;#8217;ll get a broken reconstruction:&lt;/p&gt;
-&lt;img src=&quot;/images/project/convolution/landscape.png&quot;&gt;</content>
+&lt;img src=&quot;/img/project/convolution/landscape.png&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -642,7 +622,7 @@
 &lt;p&gt;All ten boards, ten carrier boards, and the parchment stencil.&lt;/p&gt;
 &lt;img src=&quot;https://lh4.googleusercontent.com/-fTQEHqwPUYw/Uxzk3ulJQaI/AAAAAAAAGVQ/MGKQaDK_GxQ/w764-h437-no/H.png&quot;&gt;
 &lt;p&gt;I was out of town for the stress tests but the team took a ton of photos.&lt;/p&gt;
-&lt;img src=&quot;/images/project/straingauge/gaugeinuse.png&quot;&gt;</content>
+&lt;img src=&quot;/img/project/straingauge/gaugeinuse.png&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -703,114 +683,6 @@
  </entry>
  
  <entry>
-   <title>ISO Shutter Speed Example</title>
-   <link href="http://wickerbox.net/2014/02/iso-example"/>
-   <updated>2014-02-12T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2014/02/iso-example</id>
-   <content type="html">&lt;p&gt;This is a shutter speed example using an X100S in snow at Tualatin Wildlife Refuge on Sunday, February 9th, 2014.&lt;/p&gt;
-&lt;p&gt;I wanted to get a sense for &lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;, aperture, exposure time, and brightness of the resulting image. All photos were taken with +2 EV exposure bias with the mode on auto. I didn&amp;#8217;t control for aperture. The results make sense because as the shutter is open longer, more light is captured.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/4000 &lt;br /&gt;
-Brightness: 9.75&lt;br /&gt;
-Aperture: F2&lt;br /&gt;
-Shutter Speed: 1/4096s = 244 microseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-EdwJmfrpZ-I/UvwXlpdAcjI/AAAAAAAAGJI/xZ-CMS3uQ9E/w1118-h746-no/iso-4000.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/2000s&lt;br /&gt;
-Brightness: 9.94&lt;br /&gt;
-Aperture: F2.8&lt;br /&gt;
-Shutter Speed: 1/2048s = 488 microseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh6.googleusercontent.com/-I1CXlYJT6DE/UvwXkAcgccI/AAAAAAAAGIc/ud90oq6ocjE/w1118-h746-no/iso-2000.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/1000s&lt;br /&gt;
-Brightness: 9.87&lt;br /&gt;
-Aperture: F4&lt;br /&gt;
-Shutter Speed: 1/1024s = 976 microseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh6.googleusercontent.com/-iwVF7gDKlRI/UvwXjHWe1FI/AAAAAAAAGIQ/W8uGLYGbtk4/w1118-h746-no/iso-1000.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/500s&lt;br /&gt;
-Brightness: 9.86&lt;br /&gt;
-Aperture: F4.9&lt;br /&gt;
-Shutter Speed: 1/512s = 1.95 milliseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-FHPt7zExbCw/UvwXmcknjBI/AAAAAAAAGI8/gT7bMQ9nnvc/w1118-h746-no/iso-500.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/250s&lt;br /&gt;
-Brightness: 9.74&lt;br /&gt;
-Aperture: F7.2&lt;br /&gt;
-Shutter Speed: 1/250s = 4 milliseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh5.googleusercontent.com/-SK5yYr-cNHs/UvwXkcaEXTI/AAAAAAAAGI0/Xy83lwML30M/w1118-h746-no/iso-250.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/125s&lt;br /&gt;
-Brightness: 9.7&lt;br /&gt;
-Aperture: F9.8&lt;br /&gt;
-Shutter Speed: 1/128s = 7.81 milliseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh3.googleusercontent.com/-hzMyH5lOXlw/UvwXjVSonBI/AAAAAAAAGIg/WK_kULWwz9g/w1118-h746-no/iso-125.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/60s&lt;br /&gt;
-Brightness: 9.52&lt;br /&gt;
-Aperture: F13&lt;br /&gt;
-Shutter Speed: 1/64s = 15.6 milliseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh6.googleusercontent.com/-qSiBU_CYVWg/UvwXmltaKaI/AAAAAAAAGJM/qdj-kMmLuLQ/w1118-h746-no/iso-60.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/30s&lt;br /&gt;
-Brightness: 9.4&lt;br /&gt;
-Aperture: F16&lt;br /&gt;
-Shutter Speed: 1/32s = 31.25 milliseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-TWTcpNXsmTo/UvwXkmOGyKI/AAAAAAAAGIU/xIonIR0sejE/w1118-h746-no/iso-30.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/15s&lt;br /&gt;
-Brightness: 9.4&lt;br /&gt;
-Aperture: F16&lt;br /&gt;
-Shutter Speed: 1/16s = 62.5 milliseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh6.googleusercontent.com/-BJAq8YMIWjA/UvwXjHlM6mI/AAAAAAAAGIY/eK5j1lVFxqc/w1118-h746-no/iso-15.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/8s&lt;br /&gt;
-Brightness: 9.32&lt;br /&gt;
-Aperture: F16&lt;br /&gt;
-Shutter Speed: 1/8s = 125 milliseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh3.googleusercontent.com/-TpLg8eBJwrI/UvwXmmfXniI/AAAAAAAAGJQ/pqOc9TIMuvU/w1118-h746-no/iso-8.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/4s&lt;br /&gt;
-Brightness: 9.54&lt;br /&gt;
-Aperture: F16&lt;br /&gt;
-Shutter Speed: 1/4s = 250 milliseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-CfT5NgvoAgo/UvwXlNK-ZXI/AAAAAAAAGI4/v0B9kzJv_mc/w1118-h746-no/iso-4.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/2s&lt;br /&gt;
-Brightness: 9.54&lt;br /&gt;
-Aperture: F16&lt;br /&gt;
-Shutter Speed: 1/2s = 500 milliseconds&lt;/p&gt;
-&lt;img src=&quot;https://lh6.googleusercontent.com/-ZQSdtWLxbo0/UvwXj-1vliI/AAAAAAAAGIE/obAL_-3jFeU/w1118-h746-no/iso-2.png&quot;&gt;</content>
- </entry>
- 
- <entry>
-   <title>Exposure Example</title>
-   <link href="http://wickerbox.net/2014/02/exposure-example"/>
-   <updated>2014-02-12T00:00:00-08:00</updated>
-   <id>http://wickerbox.net/2014/02/exposure-example</id>
-   <content type="html">&lt;p&gt;This is an exposure example using an X100S in snow at Tualatin Wildlife Refuge on Sunday, February 9th, 2014.&lt;/p&gt;
-&lt;p&gt;I wanted to get a sense for &lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;, aperture, exposure time, and brightness of the resulting image when stepping from -2 to +2 EV exposure bias with the mode on auto. I didn&amp;#8217;t control for aperture. I didn&amp;#8217;t control for anything, really, I&amp;#8217;m just playing around. The results make sense because as the shutter is open longer, more light is captured.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/950s&lt;br /&gt;
-Brightness: 8.94&lt;br /&gt;
-Aperture: F11&lt;br /&gt;
-Shutter Speed: 1/969s =  1.03 milliseconds&lt;br /&gt;
-Exposure Bias: -2 EV&lt;/p&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-5HrCtE_auCc/UvwfSBNdKGI/AAAAAAAAGKw/55Jbig787vo/w1536-h1025-no/exposure-minus2.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/850s&lt;br /&gt;
-Brightness: 8.79&lt;br /&gt;
-Aperture: F8&lt;br /&gt;
-Shutter Speed: 1/873s =  1.14 milliseconds&lt;br /&gt;
-Exposure Bias: -1 EV&lt;/p&gt;
-&lt;img src=&quot;https://lh3.googleusercontent.com/-Y3dOV6eP7jA/UvwfSI-U1XI/AAAAAAAAGKI/Alc8F_wZ-rg/w1536-h1025-no/exposure-minus1.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/900s&lt;br /&gt;
-Brightness: 8.83&lt;br /&gt;
-Aperture: F5.7&lt;br /&gt;
-Shutter Speed: 1/891s = 1.12 milliseconds&lt;br /&gt;
-Exposure Bias: 0 EV&lt;/p&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-xpgopwOxiG0/UvwfSIvBBgI/AAAAAAAAGK0/icHjtcBNiW4/w1536-h1025-no/exposure-neutral.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/640s&lt;br /&gt;
-Brightness: 9.37&lt;br /&gt;
-Aperture: F5.7&lt;br /&gt;
-Shutter Speed: 1/648s = 1.54 milliseconds&lt;br /&gt;
-Exposure Bias: +1 EV&lt;/p&gt;
-&lt;img src=&quot;https://lh5.googleusercontent.com/-OoMX4XyJ8UY/UvwfTN1WNLI/AAAAAAAAGKc/LU0iqG7-oew/w1536-h1025-no/exposure-plus1.png&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;ISO&lt;/span&gt;: 1/450s&lt;br /&gt;
-Brightness: 9.87&lt;br /&gt;
-Aperture: F5.7&lt;br /&gt;
-Shutter Speed: 1/458s =  2.18 milliseconds&lt;br /&gt;
-Exposure Bias: +2 EV&lt;/p&gt;
-&lt;img src=&quot;https://lh5.googleusercontent.com/-1_RVJOKa4W4/UvwfTHC655I/AAAAAAAAGK4/YlyTKklPFBM/w1536-h1025-no/exposure-plus2.png&quot;&gt;</content>
- </entry>
- 
- <entry>
    <title>124km DxWifi Flight Test</title>
    <link href="http://wickerbox.net/2014/02/dxwifi-124km-flight-test"/>
    <updated>2014-02-02T00:00:00-08:00</updated>
@@ -855,11 +727,11 @@ Exposure Bias: +2 EV&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;m still so spoiled by having OSHPark. The only Gerbers I give our lab&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; router are the Top Layer, Bottom Layer, Board Outline, and Unplated Drill. No silkscreen. I could solder mask but I haven&amp;#8217;t. Maybe next time. I used materials and headers I had on hand but even through OSHPark it&amp;#8217;d be just under $30 for three boards.&lt;/p&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-P-nseB4dS4Y/UxzddPMySEI/AAAAAAAAGTk/LwZbcyJE3lU/w655-h491-no/I.png&quot;&gt;
 &lt;p&gt;Here are the schematic, layout, and final photos. Eagle files are on the &lt;a href=&quot;http://github.com/wicker/oven-controller/&quot;&gt;Github repo&lt;/a&gt;.&lt;/p&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard2-schema1.png&quot;&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard2-schema2.png&quot;&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard2-toplayout.png&quot;&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard2-botlayout.png&quot;&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard2-top.png&quot;&gt;</content>
+&lt;img src=&quot;/img/project/oven-control-board/ovenboard2-schema1.png&quot;&gt;
+&lt;img src=&quot;/img/project/oven-control-board/ovenboard2-schema2.png&quot;&gt;
+&lt;img src=&quot;/img/project/oven-control-board/ovenboard2-toplayout.png&quot;&gt;
+&lt;img src=&quot;/img/project/oven-control-board/ovenboard2-botlayout.png&quot;&gt;
+&lt;img src=&quot;/img/project/oven-control-board/ovenboard2-top.png&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -869,15 +741,15 @@ Exposure Bias: +2 EV&lt;/p&gt;
    <id>http://wickerbox.net/2014/01/oven-control-board</id>
    <content type="html">&lt;p&gt;An ME capstone team at Portland State is working on an oven so we can cure our own composites. It&amp;#8217;s awesome. This oven control board was a five-day project that came out of nowhere this week on Tuesday and which I delivered on Sunday.&lt;/p&gt;
 &lt;p&gt;Tung, their electrical person, already had the design figured out and working with breadboard components and an Arduino. What he really wanted was an Arduino shield so we met, looked at what he had, and figured out how we&amp;#8217;d put it on the right footprint. This is the first time I&amp;#8217;d been able to sit with someone who was new to Eagle and really explain what makes a decent schematic, so it&amp;#8217;s pretty cool to see how much I&amp;#8217;ve learned in just a couple of years.&lt;/p&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard-schema.png&quot;&gt;
+&lt;img src=&quot;/img/project/oven-control-board/ovenboard-schema.png&quot;&gt;
 &lt;p&gt;The layout was constrained by the shield but even moreso by our plan to use the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; router. It had to be a two-layer board that didn&amp;#8217;t have plated through-holes or vias. I managed to put all the traces except one on the bottom layer because all the components get soldered on the bottom side (they&amp;#8217;re all through-hole) and then I just made that a much wider polygon fill and dropped vias to get the top-trace signal connected down below.&lt;/p&gt;
 &lt;p&gt;Unfortunately, Arduino shields sit on top of the Arduino so I had to drop an extra via on each pad of the 0.1&amp;quot; headers so copper wire could be slid through and squashed, essentially plating them myself.&lt;/p&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard-layout.png&quot;&gt;
+&lt;img src=&quot;/img/project/oven-control-board/ovenboard-layout.png&quot;&gt;
 &lt;p&gt;The final product doesn&amp;#8217;t look too shabby. Well, I take that back &amp;#8212; the isolation on the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; is so tiny (even at the double-width!) that I&amp;#8217;m terrified of putting too much solder on each pin and shorting it outside the pad. This is really crappy soldering but I ohmed everything out so electrically the joints are fine.&lt;/p&gt;
 &lt;p&gt;Definitely I&amp;#8217;ve been spoiled with OSHPark and $5/sq in board with plated through-holes and solder mask.&lt;/p&gt;
 &lt;p&gt;The libraries and everything are all up in the &lt;a href=&quot;https://github.com/wicker/oven-controller&quot;&gt;oven-controller Github repo&lt;/a&gt;.&lt;/p&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard-top.png&quot;&gt;
-&lt;img src=&quot;/images/project/oven-control-board/ovenboard-side.png&quot;&gt;</content>
+&lt;img src=&quot;/img/project/oven-control-board/ovenboard-top.png&quot;&gt;
+&lt;img src=&quot;/img/project/oven-control-board/ovenboard-side.png&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -927,27 +799,27 @@ Exposure Bias: +2 EV&lt;/p&gt;
    <id>http://wickerbox.net/2013/12/custom-foxcar-control-board</id>
    <content type="html">&lt;p&gt;It&amp;#8217;s time to add a control board to my RC car. My goal is a car that does basically everything by itself so I looked into robot exploration algorithms and figured out I need to have localization (where am I?), mapping (what&amp;#8217;s around me?), and planning (where am I going?). I broke up the design of the control board into four parts: power and motors, microcontroller, networking and logging, and all the sensor inputs.&lt;/p&gt;
 &lt;p&gt;I scrounged up sensors in the Open Tech Lab, where I originally scrounged up the car, and came up with a couple of rangefinders, a PX4FLOW, a 9DOF sensor stick with accel/gyro/mag, and a &lt;span class=&quot;caps&quot;&gt;CMOS&lt;/span&gt; camera which has no markings except for its chip, a VC0706.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/sensors.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/sensors.png&quot;&gt;
 &lt;p&gt;I knew I&amp;#8217;d want an output for the servo now but I also wanted to provide the same interface for &lt;span class=&quot;caps&quot;&gt;ESC&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;PWM&lt;/span&gt; signals as I had on my previous quadcopter control board. Ideally this board could go on a quad without any modifications. As for power, I already knew that the VNH5019 carrier board from Pololu works fine for my car so I designed the board for over 20A of stall current.&lt;/p&gt;
 &lt;p&gt;I added a micro-&lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; connector and hooked the 5V through a diode to the linear regulator so I can&amp;#8217;t power the car from &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; (it&amp;#8217;s not big enough to carry a laptop anyway) but I&amp;#8217;ll be able to debug directly.&lt;/p&gt;
 &lt;p&gt;I decided I&amp;#8217;d also want logging via a microSD card and networked control over XBees I also have on hand. Overall, the system looks like this.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/v1-system.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/v1-system.png&quot;&gt;
 
 &lt;p&gt;I chose the STM32F4 because &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; is using it so one of my other boards is using it, I&amp;#8217;ve already got a dev environment for it, I&amp;#8217;d like to use ChibiOS, and it&amp;#8217;s basically capable of anything I would want for its size. It&amp;#8217;s also ubiquitous so there are tons of help forums and it&amp;#8217;s got all the pins, &lt;span class=&quot;caps&quot;&gt;DAC&lt;/span&gt;, and memory I could want.&lt;/p&gt;
 &lt;p&gt;I got this far and was looking into which &lt;span class=&quot;caps&quot;&gt;IMU&lt;/span&gt; sensors to buy when I talked to a guy who does IMUs who flipped out when I suggested writing a Kalman filter. He stressed that I could do whatever the hell I wanted but he asked if what I really wanted was really to actually spend a year writing a decent &lt;span class=&quot;caps&quot;&gt;IMU&lt;/span&gt;, really? &lt;em&gt;really? think hard now&amp;#8230;&lt;/em&gt; and I agreed, okay, no, I want to make my car drive around and get into trouble.&lt;/p&gt;
 &lt;p&gt;I also realized a basic requirement of this car is to use optical flow instead of &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; for absolute position correction. This is the root problem I&amp;#8217;m interested in and I&amp;#8217;ve started to read up on possible solutions.&lt;/p&gt;
 &lt;p&gt;I went looking at the other autopilot boards to find out which sensors they&amp;#8217;re using, then I looked up open source IMUs which already have ports to the STM32F4, and I decided to use FreeIMU with the MPU6000 and HMC5883L. Note that originally I figured I&amp;#8217;d use the MPU6050 and then realized that the 6000 comes with &lt;span class=&quot;caps&quot;&gt;SPI&lt;/span&gt; as well as I2C so the 6000 is the better deal for the faster speed.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/autopilots.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/autopilots.png&quot;&gt;
 &lt;p&gt;I went back to my pile of sensors, took the STM32F4, broke out all the peripherals I could use, and matched up sensors to the chip. I hooked up the compass and Invensense gyro/accelometer chip, then broke all the other &lt;span class=&quot;caps&quot;&gt;GPIO&lt;/span&gt; points left over into as many header as I could. Finally, I worked up a schematic using my proven previous design for the XBee, &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt;, and SD card.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/foxcar-control-board-v1-sch-sheet1.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/foxcar-control-board-v1-sch-sheet1.png&quot;&gt;
 
-&lt;img src=&quot;/images/project/foxcar/foxcar-control-board-v1-sch-sheet2.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/foxcar-control-board-v1-sch-sheet2.png&quot;&gt;
 
 &lt;p&gt;I started the schematic on November 22nd and finished on December 15th, which was exactly on target. I worked in two crunch weeks, the first for the schematic and the second for layout, with a break between them to let the schematic linger a little.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/foxcar-control-board-v1-brd.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/foxcar-control-board-v1-brd.png&quot;&gt;
 &lt;p&gt;The &lt;a href=&quot;http://github.com/wicker/Self-Driving-RC-Car/&quot;&gt;final schematics and boards are up on Github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The final 4-layer board comes out to 3.5&amp;#215;2.2 inches for an OSHPark cost of $77 for three.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/oshpark-ship.png&quot;&gt;</content>
+&lt;img src=&quot;/img/project/foxcar/oshpark-ship.png&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -987,22 +859,22 @@ Exposure Bias: +2 EV&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What&amp;#8217;s a Post?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;A post is a post is a post. I originally split posts into different layouts with photo posts containing a gallery sourced from a Picasa photo album so I could just put the userid and albumid in the header and it would automatically populate. That ended up being really awkward to browse and I prefer just putting the photos in the document. It works for projects, too.&lt;/p&gt;
 &lt;p&gt;I write the posts in Textile and save as .textile documents, which are then turned by Jekyll into &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; pages. Jekyll takes any otherwise-unmarked piece of text and renders it with paragraph tags, which I gave some padding to get the indented effect.&lt;/p&gt;
-&lt;img src=&quot;/images/project/wickerv2/indent-textile.png&quot;&gt;
+&lt;img src=&quot;/img/project/wickerv2/indent-textile.png&quot;&gt;
 &lt;p&gt;By starting the line with two spaces, I can avoid wrapping my images in paragraph tags and make sure they take up the entire width of the content box.&lt;/p&gt;
-&lt;img src=&quot;/images/project/wickerv2/indent.png&quot;&gt;
+&lt;img src=&quot;/img/project/wickerv2/indent.png&quot;&gt;
 &lt;p&gt;Posts do need to be sorted for display purposes in the category and front pages, so I&amp;#8217;m still using a lot of header:&lt;/p&gt;
 &lt;div style=&quot;margin-left: 20px;&quot;&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;post&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Making Wickerbox - v2&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;software&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/images/thumbs/wickerbox-v2.png&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;subcat&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;software&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/img/thumbs/wickerbox-v2.png&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
 &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;all&lt;/span&gt;
 &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;jekyll&lt;/span&gt;
 &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sites&lt;/span&gt;
 &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;projects&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;purpose&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;project&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;making&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;2013&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Combination of content and design changes.&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Portland, Oregon&lt;/span&gt;
@@ -1029,7 +901,7 @@ Exposure Bias: +2 EV&lt;/p&gt;
    <id>http://wickerbox.net/2013/12/arduino-rangefinder</id>
    <content type="html">&lt;p&gt;So there&amp;#8217;s something like eighty years of history behind a theremin. This isn&amp;#8217;t a theremin. This is me fucking around on a sleepy Saturday in Seattle with an ultrasonic rangefinder, an Arduino, and &lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt; headers. But I got the idea because of theremins.&lt;/p&gt;
 &lt;p&gt;I basically wanted to use the Arduino to sample the rangefinder and produce musical notes.&lt;/p&gt;
-&lt;img src=&quot;/images/project/rangefinder/rangefinder.png&quot;&gt;
+&lt;img src=&quot;/img/project/rangefinder/rangefinder.png&quot;&gt;
 &lt;p&gt;I needed a reference for what the text of a &lt;span class=&quot;caps&quot;&gt;MIDI&lt;/span&gt; file looks like in comma-separated values so I downloaded Avicii&amp;#8217;s Wake Me Up and used the midicsv script from Fourmilab to get the &lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt; file. Then I stripped out as much of the header as possible to see what it takes for timidity to still play it. Turns out a file with just this header will still play:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;0, 0, Header, 0, 1, 120&lt;/code&gt;&lt;br /&gt;
 &lt;code&gt;1, 0, Start_track&lt;/code&gt;&lt;/p&gt;
@@ -1091,7 +963,7 @@ Exposure Bias: +2 EV&lt;/p&gt;
    <id>http://wickerbox.net/2013/11/wireless-control-with-xbees</id>
    <content type="html">&lt;p&gt;Step three of Foxcar development came full circle and made the car once again remote controlled, this time with XBee. I stacked an XBee on the protoshield on top of the motor driver board on top of the Arduino Uno and connected the other XBee via a Sparkfun XBee Explorer Board to my laptop on port /dev/ttyUSB0. I came up with some commands and was able to wirelessly drive the motor and servo.&lt;/p&gt;
 &lt;p&gt;I found a couple of Series 2 XBees and an Explorer Board from Sparkfun.&lt;/p&gt;
-&lt;img src=&quot;/images/project/networks/xbee-mounted.png&quot;&gt;
+&lt;img src=&quot;/img/project/networks/xbee-mounted.png&quot;&gt;
 &lt;p&gt;I used the Explorer board to verify both XBees were on the same baud rate. Series 2 XBees are also called Zigbee Modules that use the ZNet 2.5 protocol. They&amp;#8217;re good for mesh networks.&lt;/p&gt;
 &lt;p&gt;A couple of tutorials were helpful:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.pjrc.com/teensy/td_uart.html&quot;&gt;Using the &lt;span class=&quot;caps&quot;&gt;UART&lt;/span&gt; (Real Serial Port)&lt;/a&gt; &amp;#8211; on the Teensy.&lt;/p&gt;
@@ -1100,9 +972,9 @@ Exposure Bias: +2 EV&lt;/p&gt;
 &lt;p&gt;The two resources I used for setting commands were the XBee 2.5 Datasheet and User Manual.&lt;/p&gt;
 &lt;p&gt;I programmed one Arduino with Ladyada&amp;#8217;s ASCIITable test sketch and detached it from the laptop. I wired the 3V3, Rx, Tx, and Gnd connections from the Arduino to one of the XBees using the Protoshield.&lt;/p&gt;
 &lt;p&gt;Then I hooked up the XBee Explorer to my laptop and read the incoming &lt;span class=&quot;caps&quot;&gt;ASCII&lt;/span&gt; table on /dev/ttyUSB0. My XBee can receive!&lt;/p&gt;
-&lt;img src=&quot;/images/project/networks/xbee-rx.png&quot;&gt;
+&lt;img src=&quot;/img/project/networks/xbee-rx.png&quot;&gt;
 &lt;p&gt;Now I want to see that I can send strings to the Arduino-based XBee from Minicom and read them on the Arduino&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt; Serial Monitor. Success!&lt;/p&gt;
-&lt;img src=&quot;/images/project/networks/xbee-tx.png&quot;&gt;</content>
+&lt;img src=&quot;/img/project/networks/xbee-tx.png&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -1112,7 +984,7 @@ Exposure Bias: +2 EV&lt;/p&gt;
    <id>http://wickerbox.net/2013/11/basic-driving-demo</id>
    <content type="html">&lt;p&gt;I bought a Pololu VNH5019 Dual Motor Driver Carrier Shield for Arduino and wired in the DC motor. With stacking headers I could use pin 2 for the servo and control both from the Arduino. I&amp;#8217;m using &lt;a href=&quot;http://forum.arduino.cc/index.php/topic,21975.0.html&quot;&gt;mem&amp;#8217;s ServoTimer2&lt;/a&gt; and &lt;a href=&quot;https://github.com/pololu/dual-vnh5019-motor-shield&quot;&gt;Pololu&amp;#8217;s VNH5019 Motor Driver Shield&lt;/a&gt; libraries.&lt;/p&gt;
 &lt;p&gt;The code&amp;#8217;s in the &lt;a href=&quot;https://github.com/wicker/Self-Driving-RC-Car&quot;&gt;Github repo&lt;/a&gt; under &amp;#8216;hardware-test&amp;#8217;.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/foxcar-drive.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/foxcar-drive.png&quot;&gt;
 &lt;p&gt;This is the hardware test. You can see in the video that I&amp;#8217;m driving a servo to turn the front wheels and a heavy-duty motor to roll the wheels forward and backward.&lt;/p&gt;
 &lt;p&gt;Next step: custom control board.&lt;/p&gt;
   &lt;div style=&quot;width: 100%; margin: 0px auto;&quot;&gt;&lt;iframe width=&quot;100%&quot; height=&quot;480&quot;src=&quot;//www.youtube.com/embed/N1pncB94zRU&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</content>
@@ -1125,9 +997,9 @@ Exposure Bias: +2 EV&lt;/p&gt;
    <id>http://wickerbox.net/2013/10/replacing-imex-firefox-guts</id>
    <content type="html">&lt;p&gt;The Open Tech Lab just bought an &lt;span class=&quot;caps&quot;&gt;IMEX&lt;/span&gt; Firefox brushed 1/10th RC truck. I want to make an autonomous RC car that can be a vision testing platform for our quadcopter.&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;m calling this project the Foxcar.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/IMG_0385.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/IMG_0385.png&quot;&gt;
 &lt;p&gt;I opened up the truck to see if I could solder my Raspberry Pi directly to the motor controller board but there were a couple chips I couldn&amp;#8217;t identify, one of which looked like the microcontroller, so I decided to rip the guts out and replace them with my own electronics.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/IMEXBoard.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/IMEXBoard.png&quot;&gt;
 &lt;p&gt;The Firefox has a single DC RC 550 motor and a 5-wire servo, running on a single 7.6V NiMH 1800 mAh battery. Probably this means the motor is a 6V motor. The parts were:&lt;/p&gt;
 &lt;p&gt;1x AT1206 74C02N 8-pin &lt;span class=&quot;caps&quot;&gt;DIP&lt;/span&gt; Probably a Quad 2-input &lt;span class=&quot;caps&quot;&gt;NAND&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;NOR&lt;/span&gt;, or Hex Inverter&lt;br /&gt;
 6x 531 T70 3-pin 72 A 25V N-channel Power MOSFETs. &lt;br /&gt;
@@ -1137,14 +1009,14 @@ Exposure Bias: +2 EV&lt;/p&gt;
 1x AMP26002 25-pin square unknown&lt;br /&gt;
 1x MX117 8-pin &lt;span class=&quot;caps&quot;&gt;DIP&lt;/span&gt; Electric Toy DC Motor Drive Circuit H-Bridge Drive&lt;/p&gt;
 &lt;p&gt;I took a good look at the configuration of the car. I didn&amp;#8217;t want to replace the motor unless I had to, but the servo had to go.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/IMG_0377.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/IMG_0377.png&quot;&gt;
 &lt;p&gt;This is the board. I was surprised that the antenna is just a long piece of wire tucked up inside the antenna cover. The car ran great when I tested it back before I tore it apart. Hopefully it&amp;#8217;ll work great after it&amp;#8217;s all put back together&amp;#8230;&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/IMG_0384.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/IMG_0384.png&quot;&gt;
 &lt;p&gt;I already had an Adafruit Motor Shield and an Arduino. I hooked up a 6V DC motor and a 3-wire servo just to be sure it worked. I swapped servos on the car and hooked up the Arduino.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/IMG_0380.png&quot;&gt;
+&lt;img src=&quot;/img/project/foxcar/IMG_0380.png&quot;&gt;
 &lt;p&gt;My other 6V DC motor ran happily on the Adafruit example sketch but this motor just clicks in one direction or the other. I tried swapping the red and black wires (though it&amp;#8217;s bi-directional, so not sure why that would make a difference) and I checked to be sure it has the three capacitors soldered to the motor itself for noise control.&lt;/p&gt;
 &lt;p&gt;So figuring out the DC motor is the next piece. My three-wire servo works great, though.&lt;/p&gt;
-&lt;img src=&quot;/images/project/foxcar/foxcar_turns.gif&quot;&gt;</content>
+&lt;img src=&quot;/img/project/foxcar/foxcar_turns.gif&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -1170,9 +1042,9 @@ Exposure Bias: +2 EV&lt;/p&gt;
    <content type="html">&lt;p&gt;Just screwing around with circuits.&lt;/p&gt;
 &lt;p&gt;I recently bought a house and set up a little home office. In the process, I found a bunch of through-hole components that I got from parts unknown and ended up sorting and messing around with them. All of this high-level ChibiOS stuff has been stressing me out so I did something I haven&amp;#8217;t done in maybe forever &amp;#8212; made a bunch of little circuits for the hell of it.&lt;/p&gt;
 &lt;p&gt;(Parts Unknown would be an awesome name for an electronics component business.)&lt;/p&gt;
-&lt;img src=&quot;/images/project/blinky/IMG_0187.png&quot;&gt;
+&lt;img src=&quot;/img/project/blinky/IMG_0187.png&quot;&gt;
 &lt;p&gt;The first question I asked was hey, does this potentiometer work? Do these LEDs? It&amp;#8217;s a three-pin pot powered off a 9V with output voltage over the &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt;.&lt;/p&gt;
-&lt;img src=&quot;/images/project/blinky/IMG_0194a.png&quot;&gt;
+&lt;img src=&quot;/img/project/blinky/IMG_0194a.png&quot;&gt;
 &lt;p&gt;I wanted some sort of switch to turn off all power without having to keep unsnapping the 9V header but all I could come up with in my box of parts was a 8-pin switch.&lt;/p&gt;
 &lt;p&gt;I went through all my through-hole ICs and found that I&amp;#8217;ve accumulated all the usual: logic gates, comparators, muxes, op amps&amp;#8230; and 555 timers, which I know of but have never actually used.&lt;/p&gt;
 &lt;p&gt;I used a schematic from Forrest Mims&amp;#8217; 555 Timer cookbook and wired it up. Then I looked into how to make a gif to post here so it&amp;#8217;s clear the light is blinking. I figured ffmpeg would work but it&amp;#8217;s got a note that this feature is deprecated and to use avconv instead. I tried with ffmpeg anyway and got a 141 MB file.&lt;/p&gt;
@@ -1182,19 +1054,19 @@ Exposure Bias: +2 EV&lt;/p&gt;
 &lt;p&gt;Then I used Scott&amp;#8217;s instructions to make what turned out to be a pretty crappy gif, through no fault of his. I didn&amp;#8217;t realize that having fewer frames in an animation means you really have to hold the camera very still, which I didn&amp;#8217;t.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;mogrify -resize 640x480 *.jpg&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;convert -delay 20 -loop 0 *.jpg 555blink.gif&lt;/code&gt;&lt;/p&gt;
-&lt;img src=&quot;/images/project/blinky/555blink1.gif&quot;&gt;
+&lt;img src=&quot;/img/project/blinky/555blink1.gif&quot;&gt;
 &lt;p&gt;Lesson learned: I need a camera tripod and also to automate this process. I looked around and found another movie that was much longer, so I repeated the process and took the first eight frames.&lt;/p&gt;
-&lt;img src=&quot;/images/project/blinky/555blink2.gif&quot;&gt;
+&lt;img src=&quot;/img/project/blinky/555blink2.gif&quot;&gt;
 &lt;p&gt;&lt;code&gt; mogrify -resize 640x480 *.jpg&lt;/p&gt;
 &lt;p&gt;convert -delay 30 -loop 0 *.jpg 555blink1.gif&lt;/p&gt;
 &lt;p&gt;avconv -i IMG_0196.&lt;span class=&quot;caps&quot;&gt;MOV&lt;/span&gt; -vsync 1 -r 2 -an -y &amp;#8216;frame%d.jpg&amp;#8217;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;I should probably have taken twice as many frames per second in the avconv process because it doesn&amp;#8217;t show that the light should be on the same amount of time each blink. So I did that on the longer movie and ended up selecting the first 10 frames in the sequence, which includes two cycles of the blinking &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt;.&lt;/p&gt;
-&lt;img src=&quot;/images/project/blinky/555blink3.gif&quot;&gt;
+&lt;img src=&quot;/img/project/blinky/555blink3.gif&quot;&gt;
 &lt;p&gt;I kept going for the hell of it, since I had 8 switches to work with. I added a little push-button switch to turn on the &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt; on the button press. Having both hooked up at the same time meant the &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt; up top was blinking as per the 555 timer but pressing the button down below sunk all current through the bottom &lt;span class=&quot;caps&quot;&gt;LED&lt;/span&gt;.&lt;/p&gt;
-&lt;img src=&quot;/images/project/blinky/IMG_0199.png&quot;&gt;
+&lt;img src=&quot;/img/project/blinky/IMG_0199.png&quot;&gt;
 &lt;p&gt;It seems like it&amp;#8217;d be pretty easy to fake a &lt;span class=&quot;caps&quot;&gt;GIF&lt;/span&gt;, to do sleight of hand, and to demonstrate performance or meeting a spec that isn&amp;#8217;t actually there. This last gif is the longest, the largest, with 2fps to pull the still images, but it&amp;#8217;s still not anywhere near acceptable.&lt;/p&gt;
 &lt;p&gt;Kind of a cool thing to think about.&lt;/p&gt;
-&lt;img src=&quot;/images/project/blinky/buttonblink.gif&quot;&gt;</content>
+&lt;img src=&quot;/img/project/blinky/buttonblink.gif&quot;&gt;</content>
  </entry>
  
  <entry>
@@ -1649,7 +1521,7 @@ Exposure Bias: +2 EV&lt;/p&gt;
 &lt;p&gt;The source files were collected as shown below. _folders are standard folders required by Jekyll. The _config.yml file ignores the drafts and scripts folder. Drafts/ contains unfinished posts with proper headers. Scripts contains the wickerbox script to update with one input line in a terminal with internet access.&lt;/p&gt;
 &lt;div class=&quot;code&quot;&gt;css/ &lt;br /&gt;
 drafts/ &lt;br /&gt;
-images/ &lt;br /&gt;
+img/ &lt;br /&gt;
 _layouts/ &lt;br /&gt;
 _plugins/ &lt;br /&gt;
 _posts/ &lt;br /&gt;
@@ -1674,18 +1546,18 @@ writing.html&lt;/div&gt;
 &lt;div class=&quot;code&quot;&gt;- &amp;#8211; -&lt;br /&gt;
 layout: post&lt;br /&gt;
 title: Making Wickerbox&lt;br /&gt;
-category: project&lt;br /&gt;
+subcat: project&lt;br /&gt;
 tags:&lt;br /&gt;
 - all&lt;br /&gt;
 - jekyll&lt;br /&gt;
 - sites&lt;br /&gt;
 - projects&lt;br /&gt;
-purpose: project&lt;br /&gt;
+category: making&lt;br /&gt;
 year: 2012&lt;br /&gt;
 description: Building Wickerbox as a dynamically-generated static site.&lt;br /&gt;
 location: Portland, Oregon&lt;br /&gt;
 &lt;br /&gt;
-image: /images/thumbs/wickerbox.png&lt;br /&gt;
+image: /img/thumbs/wickerbox.png&lt;br /&gt;
 &lt;br /&gt;
 userid: 117081002500022017940&lt;br /&gt;
 useralbum: FlyingOshkosh030708&lt;br /&gt;
@@ -1772,39 +1644,39 @@ git push origin master&lt;/div&gt;
 &lt;p&gt;I used the standard version of Eagle to create a four-layer board with internal ground and power planes. The board carries an LPC1343 microprocessor which takes input from an onboard sensor stick containing accelerometer, compass, and gyro chips. After some sensor fusion and optionally in response to joystick input, the board provides &lt;span class=&quot;caps&quot;&gt;PWM&lt;/span&gt; signals to four brushless DC motor controllers at a rate of 200Hz.&lt;/p&gt;
 &lt;p&gt;An onboard XBee communicates over wireless serial to a second XBee at an accompanying laptop control station. The mini-&lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; connector is connected to the chip’s &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; 2.0 Full-Speed &lt;span class=&quot;caps&quot;&gt;PHY&lt;/span&gt; and  a voltage regulator breaks out the 5V to provide 3.3V to the rest of the board’s components.&lt;/p&gt;
 &lt;p&gt;The board can be programmed by wiring the laptop to the board’s &lt;span class=&quot;caps&quot;&gt;ISP&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;JTAG&lt;/span&gt; port and simultaneously pressing the reset and &lt;span class=&quot;caps&quot;&gt;ISP&lt;/span&gt; button to boot into &lt;span class=&quot;caps&quot;&gt;ISP&lt;/span&gt; mode. The sensors are brought out on an &lt;span class=&quot;caps&quot;&gt;FTDI&lt;/span&gt; header as an alternative to the wireless connection for debugging.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/images/project/quadcontrol/v1-protoboard.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/img/project/quadcontrol/v1-protoboard.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Initial Design&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The initial schema followed exactly from the existing protoboard above because the quadcopter could fly under remote control and was able to hover.&lt;/p&gt;
 &lt;p&gt;An LPCXpresso development board from &lt;span class=&quot;caps&quot;&gt;NXP&lt;/span&gt; Semiconductors was used because it came with a free development environment called CodeRed. The resulting soldered protoboard was bulky and too large for the frame so we wanted to replace the entire protoboard and its mounted components while duplicating the debug/programming functionality of the LPCXpresso dev board.&lt;/p&gt;
 &lt;p&gt;The end result was hopefully to be able to easily add/remove custom sensor packages so it was decided that all possible &lt;span class=&quot;caps&quot;&gt;GPIO&lt;/span&gt; pins were to be brought out to header pins.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/images/project/quadcontrol/v1-controlboard-schematic.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/img/project/quadcontrol/v1-controlboard-schematic.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;This is the original basic connections from the LPCXpresso (center) to the Xbee, &lt;span class=&quot;caps&quot;&gt;PWM&lt;/span&gt; signals, and 9DOF sensor stick. These needed to remain the same to ensure functionality.&lt;/p&gt;
 &lt;p&gt;The initial schema was a compilation of work by myself (&lt;a href=&quot;https://github.com/wicker&quot;&gt;Jenner Hanni&lt;/a&gt;), &lt;a href=&quot;https://github.com/squidpie&quot;&gt;Camille Huffman&lt;/a&gt;, and &lt;a href=&quot;https://github.com/greghaynes&quot;&gt;Greg Haynes&lt;/a&gt;. We relied heavily on LPC1343 and related documentation from &lt;a href=&quot;http://microbuilder.eu&quot;&gt;Microbuilder.eu&lt;/a&gt;, including their Eagle footprint library. There were several design reviews with all of us and the team at large.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt;&lt;a href=&quot;/images/project/quadcontrol/v2-schema-firstreview.png&quot;&gt; &lt;img src=&quot;/images/project/quadcontrol/v2-schema-firstreview_th.png&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt;&lt;a href=&quot;/img/project/quadcontrol/v2-schema-firstreview.png&quot;&gt; &lt;img src=&quot;/img/project/quadcontrol/v2-schema-firstreview_th.png&quot;&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;p&gt;The version above was reviewed by the invaluable Andrew Greenberg at Portland State Aerospace Society and he strongly recommended the use of buses.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt;&lt;a href=&quot;/images/project/quadcontrol/v2-schema-final.png&quot;&gt; &lt;img src=&quot;/images/project/quadcontrol/v2-schema-final_th.png&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt;&lt;a href=&quot;/img/project/quadcontrol/v2-schema-final.png&quot;&gt; &lt;img src=&quot;/img/project/quadcontrol/v2-schema-final_th.png&quot;&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Board Layout Decisions&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Initially I attempted to lay out the board by considering the header pinouts from the user’s point of view, but quickly ran into problems when I started routing from the processor. I had to go back and determine the header pinouts based on pinning out the microprocessor. That led to the basic design below, concentrating the parts to be reflowed in one part of the board.&lt;/p&gt;
 &lt;p&gt;I also decided to make as much of it through-hole soldering as possible since I’d have to build the board myself. The central placement of the sensor stick was due to needing the sensors as close to the center of the quadcopter as possible. Trace widths of 8 mils were smaller than probably entirely necessary but the overall size of the board was to be kept as small as possible for weight and space considerations.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/images/project/quadcontrol/v2-layout-firstreview.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/img/project/quadcontrol/v2-layout-firstreview.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;The initial board layout above actually contained a full DB-9 connector but that was quickly considered to be overkill in terms of space, weight, and the availability of &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt;-to-&lt;span class=&quot;caps&quot;&gt;FTDI&lt;/span&gt;/serial cables. This was replaced by a simple 7-pin header.&lt;/p&gt;
 &lt;p&gt;I’d also only put one button in above and we needed two for both reset and &lt;span class=&quot;caps&quot;&gt;ISP&lt;/span&gt;, though we didn’t have &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; in this version. The basic header pinouts stayed the same. Finally, I added a ground plane on the entire top plane and stapled it to the internal ground layer using vias to minimize impedance as much as possible.&lt;/p&gt;
 &lt;p&gt;I used the &lt;a href=&quot;http://www.sparkfun.com/tutorials/114&quot;&gt;locking header footprints from Sparkfun&lt;/a&gt; because the staggered holes hold the header pins in place close to the board during soldering, there’s no cost difference, and I think it&amp;#8217;s a great, simple solution to a common problem.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/images/project/quadcontrol/v2-layout-final.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/img/project/quadcontrol/v2-layout-final.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Results of First Fab Run&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We were able to order these boards for free through a contact at the fab house, which was great because there were a handful of issues that required a revision. The board came out looking great in terms of size and weight, though.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/images/project/quadcontrol/v2-actualboard.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/img/project/quadcontrol/v2-actualboard.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;As part of the design review through our contact, I hadn’t actually sent Gerbers. I sent the schema and board files so they could make Gerbers. Unfortunately, I was still using Eagle 5 and there was a problem in the power layer when they opened the files in Eagle 6. We weren’t getting voltage anywhere else on the board when we hooked it up to a signal generator. It turned out that the isolation defaults were different between versions so the power layer wasn’t actually connected to any of the power pins.&lt;/p&gt;
 &lt;p&gt;The image below shows the constructed board with all its ninety-degree pinouts. We’re sliding this in between plates on the quadcopter so it’s. The sensor stick will actually be seated flush against the board itself but we have it broken out this way for easy removal so we can swap it back and forth between testing this board and actually flying on the quadcopter.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/images/project/quadcontrol/board2.jpg&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/img/project/quadcontrol/board2.jpg&quot;&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Schema Revision&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I used a bunch of mod wires on the bottom layer to create a power plane so we could test the rest of it. The RxD/TxD wires were backwards between the &lt;span class=&quot;caps&quot;&gt;FTDI&lt;/span&gt; pinout on the right end of the board, but the XBee RxD/TxD were correct. The clock lines were of different length and we decided, even though we weren’t seeing problems, we might as well fix it since we were running a corrected version anyway.&lt;/p&gt;
 &lt;p&gt;The full-sized schema really is too large for this post. Click it to enlarge.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt;&lt;a href=&quot;/images/project/quadcontrol/v3-schema-final.png&quot;&gt; &lt;img src=&quot;/images/project/quadcontrol/v3-schema-final_th.png&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt;&lt;a href=&quot;/img/project/quadcontrol/v3-schema-final.png&quot;&gt; &lt;img src=&quot;/img/project/quadcontrol/v3-schema-final_th.png&quot;&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;p&gt;We decided to add the mini-&lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; and voltage regulator, the second button for &lt;span class=&quot;caps&quot;&gt;ISP&lt;/span&gt; mode, fix the power plane and fix the receive/transmit traces. I was able to do this just by ripping up a relatively small part of the board and rerouting those wires. Like the first version, I didn’t use autoroute for any of the layout, preferring to do the work by hand, because I really enjoy the layout process.&lt;/p&gt;
 &lt;p&gt;I find that the schema process is broken up between creating footprints, researching and designing, then just quickly hooking up the pieces. The board layout can be done entirely on its own without any context shifts, and working to fit all the pieces together within the constraints is really fun.&lt;/p&gt;
 &lt;p&gt;The revised schema was again put through design review and then I laid out the board. I got several pairs of eyes to check the final Gerbers to see if we&amp;#8217;ve solved the power plane issue. Now the Gerbers are on their way to the fab house. We’ll put it together when it gets back and see what we’ve got.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/images/project/quadcontrol/v3-layout-final.png&quot;&gt;&lt;/div&gt;</content>
+&lt;div align=&quot;center&quot; style=&quot;margin-top: 10px;&quot;&gt; &lt;img src=&quot;/img/project/quadcontrol/v3-layout-final.png&quot;&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -1857,9 +1729,9 @@ make all&lt;br /&gt;
 ./main&lt;br /&gt;
 cat display.txt&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Sample Input&lt;/strong&gt;&lt;/p&gt;
-&lt;img src=&quot;/images/project/l2cache/l2cache-input.png&quot;&gt;
+&lt;img src=&quot;/img/project/l2cache/l2cache-input.png&quot;&gt;
 &lt;p&gt;&lt;strong&gt;Sample Output&lt;/strong&gt;&lt;/p&gt;
-&lt;img src=&quot;/images/project/l2cache/l2cache-output.png&quot;&gt;
+&lt;img src=&quot;/img/project/l2cache/l2cache-output.png&quot;&gt;
 </content>
  </entry>
  
@@ -1872,11 +1744,11 @@ cat display.txt&lt;/div&gt;
 &lt;p&gt;Students have the choice of Windows or Unix/Linux. With upwards of seventy people in an annual program, the catacombs can be a confusing and complicated place to keep track of. Boxes are frequently abandoned as students move on to bigger and better things. The combs database is a MySQL db with a &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; web interface to help the combs denizens organize themselves.&lt;/p&gt;
 &lt;p&gt;I hosted the database on my own server instance because the catacombs are always in flux and boxes are constantly reloaded. I got together with the current combs elf to figure out how best to complement the documentation being written for 2012&amp;#8217;s combs group and came away with a few requirements.&lt;/p&gt;
 &lt;p&gt;First, there needed to be a splash page with instructions, on the off chance that somebody would read it. I took it as a chance to flex my documentation-writing and sarcasm muscles, which were out of shape.&lt;/p&gt;
-&lt;img src=&quot;/images/project/combsdb/combs_intro.png&quot;&gt;
+&lt;img src=&quot;/img/project/combsdb/combs_intro.png&quot;&gt;
 &lt;p&gt;Second, the combs had two VLANs and needed two separate tables. I called the tables for these VLANs &amp;#8216;combs_vlan_noobz&amp;#8217; and &amp;#8216;combs_vlan_projects&amp;#8217;. I made the two tables and indexed them by IP address, then decided to have a single combs login and password with the ability to update but not add or remove any of items. That way the list would be consistent.&lt;/p&gt;
-&lt;img src=&quot;/images/project/combsdb/combs_vlan.png&quot;&gt;
+&lt;img src=&quot;/img/project/combsdb/combs_vlan.png&quot;&gt;
 &lt;p&gt;Third, this being a training ground for &lt;s&gt;hackers&lt;/s&gt; baby sysadmins keen on proving themselves, I did my best to sanitize my inputs and then invited some of my peers to mess with it. They were mostly unsuccessful and I made corrections where necessary.&lt;/p&gt;
-&lt;img src=&quot;/images/project/combsdb/combs_form.png&quot;&gt;
+&lt;img src=&quot;/img/project/combsdb/combs_form.png&quot;&gt;
 &lt;p&gt;Once the tables were built and the user accounts created, I built the web front-end using &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt;. I password-protected the entire directory using .htaccess so only combs residents could see it. I whipped up some very simple custom &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; and released the database to the wilds.&lt;/p&gt;
 &lt;p&gt;It hasn&amp;#8217;t been used much recently because of the nature of the combs but it was a good experience for me and I was able to give out admin accounts to my peers who wanted to do things like implement a &lt;a href=&quot;https://github.com/Whopper92/CombsBot&quot;&gt;CombsBot&lt;/a&gt; for &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; that could be queried for who owned what IP address. I&amp;#8217;m pretty happy with it.&lt;/p&gt;</content>
  </entry>
@@ -1887,8 +1759,8 @@ cat display.txt&lt;/div&gt;
    <updated>2011-11-30T00:00:00-08:00</updated>
    <id>http://wickerbox.net/2011/11/AVT-poster-innovation-presentation</id>
    <content type="html">&lt;p&gt;The &lt;a href=&quot;http://www.pdx.edu/cecs/innovation-program&quot;&gt;Engineering Innovation Program at Portland State&lt;/a&gt; accepts student proposals on a quarterly basis and funds successful proposals at first $1,000 and then $3,000. The program also offers mentoring, a place to work, and tools. The program expects its participants to attend the Innovation Program&amp;#8217;s annual poster presentations in November.&lt;/p&gt;
-&lt;p&gt;We displayed both our poster and our quadcopter in November 2011. (&lt;a href=&quot;/images/project/avtposter/avtposter.pdf&quot;&gt;&lt;span class=&quot;caps&quot;&gt;PDF&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
-&lt;div style=&quot;margin: 0 auto; width: 681px; text-align:center;&quot;&gt; &lt;img src=&quot;/images/project/avtposter/avtposter.png&quot;&gt;&lt;/div&gt;</content>
+&lt;p&gt;We displayed both our poster and our quadcopter in November 2011. (&lt;a href=&quot;/img/project/avtposter/avtposter.pdf&quot;&gt;&lt;span class=&quot;caps&quot;&gt;PDF&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
+&lt;div style=&quot;margin: 0 auto; width: 681px; text-align:center;&quot;&gt; &lt;img src=&quot;/img/project/avtposter/avtposter.png&quot;&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -1930,18 +1802,18 @@ cat display.txt&lt;/div&gt;
    <updated>2011-08-28T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2011/08/mate-competition</id>
    <content type="html">&lt;p&gt;The Marine Advanced Technology Education (&lt;span class=&quot;caps&quot;&gt;MATE&lt;/span&gt;) Center in Monterey Bay coordinates an annual international robotics competition open to student teams of all academic levels from elementary schools to university. &lt;span class=&quot;caps&quot;&gt;MATE&lt;/span&gt; designs a new underwater obstacle course consisting of mission tasks to be navigated and completed by a tethered underwater vehicle remotely-operated from a driver station on the surface. Missions are chosen to imitate real-world events in ROVs and judges are solicited from oceanography and commercial &lt;span class=&quot;caps&quot;&gt;ROV&lt;/span&gt; companies.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/underwater/figure5.gif&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/underwater/figure5.gif&quot;&gt;&lt;/div&gt;
 &lt;p&gt;K-12 teams (Scout and Ranger class) are required to compete at regional competitions. The winner from each attends the international competition. University teams are only required to attend regionals to demonstrate safety awareness and the ability to maneuver in the water. There are twenty regional competitions in the world; the five non-U.S. locations are in Scotland, Hong Kong, Japan, Newfoundland, and Nova Scotia.&lt;/p&gt;
 &lt;p&gt;The Lincoln High School robotics team has competed in this competition since 2008, when they won the Pacific Northwest regional and took fourth place in the international competition at University of California San Diego.&lt;/p&gt;
 &lt;p&gt;I joined the team as the assistant coach in 2010 and attended the Northwest regional in 2010 and 2011. The team is very self-directed so coaches and mentors were mostly there to give advice. The team I ended up supporting the most with project management, organization, programming, and electronics was the junior Sea Dawgs team with their bot, the &lt;em&gt;Sea Pup&lt;/em&gt;.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/mate-bots/sea-pup.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/mate-bots/sea-pup.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;The students received the mission in December and designed the entire underwater vehicle by May when they went to Federal Way. The design decisions usually came down to simplicity and cost. The frame was &lt;span class=&quot;caps&quot;&gt;PVC&lt;/span&gt; with a mesh-floored center to scoop up the gummy &amp;#8216;crustaceans&amp;#8217;. The bot was made neutrally buoyant by attaching styrofoam and empty water bottles. The vertical maneuvering was pneumatic tubing fed down the tether into duct-taped ziploc bags attached to the frame. It was discovered that expensive Nalgene bottles were far superior to regular water bottles, which crushed under the pressure of fifteen feet of water, but filling the ziploc bags with air was a surprisingly effective solution.&lt;/p&gt;
 &lt;p&gt;All the electronics were kept on the surface and the underwater cameras we used were manufactured for the purpose so we avoided issues of waterproofing. The lengths to which the team went to avoid programming was impressive. They solved the lateral maneuvering problem with a brilliantly simple solution: two rocker switches that corresponded to one modified bilge pump on each corner of the frame. Rocking both switches forward activated the two rear-facing pumps and pushed the bot forward; rocking them both back activated the two in front and pushed the bot to the rear.&lt;/p&gt;
 &lt;p&gt;Alternating the forward-left and rear-right made the bot turn to the left and vice-versa for turning the bot to the right. The system had the advantage of being intuitive for the pilot.&lt;/p&gt;
 &lt;p&gt;Because of this aversity to coding and limited experience with &lt;span class=&quot;caps&quot;&gt;CAD&lt;/span&gt;, most of the missions were impossible for the bot to accomplish &amp;#8212; but this was a common theme across all the teams at the high school level. No team successfully recovered agar and, like our team, several tried the route of attaching various analog sensors in view of the underwater cameras. The inevitable visibility problems were enough to convince several frustrated students to give coding a try. Our team did have a hydrophone for finding a &amp;#8220;rumbling sea vent&amp;#8221; and we were able to make a temperature graph by hovering by different vents and checking a meat thermometer, but this is a still captured from one of the cameras showing their gummy crustacean catch that shows what kind of view they were up against.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/mate-bots/visibility.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/mate-bots/visibility.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;In retrospect, the biggest assumption that prevented the Sea Pup from success was that of &amp;#8220;what an underwater robot ought to look like&amp;#8221;. As proto-engineers, they just hadn&amp;#8217;t developed the staying power to compare multiple potential ideas. They would grab one idea and never look back. In comparison, the senior bot below was able to simultaneously look more polished and handle more of the missions. That the senior team had three years experience was clear in all aspects of their design and build process. They assumed a lot less in the earlier stages and built much faster, to have more time testing and reworking. They were much more on the path to rapid prototyping, they were more flexible as to what skills they would need, and they could bounce back from failure.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/mate-bots/senior-bot.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/mate-bots/senior-bot.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;I hugely recommend the competition for high school robotics programs. The experience of seven months designing, building, and testing an underwater bot, which brings unique problems to remotely controlled vehicles, turned out to be immensely rewarding for our students. Most of the team came away wanting to major in engineering in college and all of them took away lessons for all sorts of future projects.&lt;/p&gt;</content>
  </entry>
  
@@ -1951,7 +1823,7 @@ cat display.txt&lt;/div&gt;
    <updated>2011-08-26T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2011/08/manipulating-underwater-images-with-opencv</id>
    <content type="html">&lt;p&gt;The Marine Advanced Technology Education (&lt;span class=&quot;caps&quot;&gt;MATE&lt;/span&gt;) Center in Monterey Bay coordinates an annual international robotics competition open to student teams of all academic levels from elementary schools to university. &lt;span class=&quot;caps&quot;&gt;MATE&lt;/span&gt; designs a new underwater obstacle course consisting of mission tasks to be navigated and completed by a tethered underwater vehicle remotely-operated from a driver station on the surface. Missions are chosen to imitate real-world events in ROVs and judges are solicited from oceanography and commercial &lt;span class=&quot;caps&quot;&gt;ROV&lt;/span&gt; companies.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/underwater/bot.png&quot;&gt;&lt;img src=&quot;/images/project/underwater/bot2.png&quot;&gt;&lt;br /&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/underwater/bot.png&quot;&gt;&lt;img src=&quot;/img/project/underwater/bot2.png&quot;&gt;&lt;br /&gt;
 Lincoln High School Competition Bots in 2010&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;K-12 teams (Scout and Ranger class) are required to compete at regional competitions. The winner from each attends the international competition. University teams are only required to attend regionals to demonstrate safety awareness and the ability to maneuver in the water. There are twenty regional competitions in the world; the five non-U.S. locations are in Scotland, Hong Kong, Japan, Newfoundland, and Nova Scotia.&lt;/p&gt;
@@ -1976,9 +1848,9 @@ $20 EasyCap DC60 Capture Card Surveillance Dongle&lt;/p&gt;
 &lt;p&gt;The team wanted to adapt their existing Harbor Freight Underwater Camera to send composite video to a laptop running Ubuntu 10.04 (Lucid Lynx). The laptop in question had no &lt;span class=&quot;caps&quot;&gt;PCI&lt;/span&gt; slot so it was decided to find an external capture card with a &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; connector. The EasyCap DC60 was inexpensive and open-source drivers for Linux were available from SourceForge.&lt;/p&gt;
 &lt;p&gt;It seems redundant to have the video monitor when streaming video to a laptop would be more simple but the other camera options were not satisfactory. A webcam’s wireless signal does not penetrate more than a few feet into the water; a &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; signal will follow a tether but will not sustain the needed signal strength for sixty feet. An attempt was made to waterproof wired webcams but the common methods (filling the housing in oil, waterproof sealant, sealing entirely in plastic sealant) did not hold up to the 20 psi of pressure at fifteen feet deep. The buoyancy pool at &lt;span class=&quot;caps&quot;&gt;NASA&lt;/span&gt; Johnson is forty feet deep (about 50 psi) so the decision was made to use a warrantied, guaranteed underwater camera.&lt;/p&gt;
 &lt;p&gt;Harbor Freight’s camera includes a 12V rechargeable lead-acid battery, battery cable, camera monitor, 60’ steel mesh cable, watersealed camera, and a metal ballast weight. Everything except the underwater camera is meant to be used at the driver’s station on the surface.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/underwater/figure1.gif&quot;&gt;&lt;br /&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/underwater/figure1.gif&quot;&gt;&lt;br /&gt;
 &lt;br /&gt;
- &lt;img src=&quot;/images/project/underwater/figure2.gif&quot;&gt; &lt;img src=&quot;/images/project/underwater/figure3.gif&quot;&gt;&lt;/div&gt;
+ &lt;img src=&quot;/img/project/underwater/figure2.gif&quot;&gt; &lt;img src=&quot;/img/project/underwater/figure3.gif&quot;&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Setting up the EasyCap DC60&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;There are two models (DC60 and DC60+) of the EasyCap made by three manufacturers and distributed by at least four companies under similar names on Amazon for prices ranging from $5 to $20. Unfortunately, there doesn’t seem to be any way to determine which one you’ll receive in advance without contacting the particular company. For this, the DC60 made by Syntek is supported.&lt;/p&gt;
 &lt;p&gt;First, it’s necessary to determine which EasyCap is present by plugging it into the &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; slot and running the following command,&lt;/p&gt;
@@ -2019,7 +1891,7 @@ lsmod | grep easycap&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Mission Task Props&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;span class=&quot;caps&quot;&gt;MATE&lt;/span&gt; Center releases complete descriptions so that props for that a replica field may be built by a team for practice; a sample are shown below. The upper-leftmost and upper-rightmost props require the robot to locate ellipsoids autonomously and then the operator would take over to manipulate the wellcap or collect the agar sample using a specially manipulator arm with pneumatic controls. There will be three identical props, as shown in the bottom left, scattered about the mission field. The &lt;span class=&quot;caps&quot;&gt;ROV&lt;/span&gt; will be required to identify the one that is vibrating, which can be done easily using the EasyCap DC60 because it supports and audio input from a hydrophone attached to the robot.&lt;/p&gt;
 &lt;p&gt;The center prop emits hot water from each ‘vent’. The long, straight lines of this prop set it apart visually, making it easily identifiable. An &lt;span class=&quot;caps&quot;&gt;ROV&lt;/span&gt; could easily approach and await the operator’s takeover to get temperature readings at each vent. The last task, as shown in the bottom right, is the collection of ‘grubs’, gummy fishing lures. They are irregularly shaped and may be hidden or entwined but will show on images in stark contrast to the long, narrow, dark cave so they should be easily identifiable.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/underwater/figure5.gif&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/underwater/figure5.gif&quot;&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Canny Edge Detection&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Edge detection is a fundamental first step in image processing. An edge is not essentially a tangible element. It is instead the relationship between two neighboring blocks of pixels of different colors. These neighboring blocks of pixels may be lines or they may be large blocks with irregular borders. In either case, the simple edge.c program applied the cvSmooth, cvNot, and cvCanny functions as shown in the following code selection:&lt;/p&gt;
 &lt;div class=&quot;code&quot;&gt;cvSmooth( gray, edge, CV_BLUR, 3, 3, 0, 0 );&lt;br /&gt;
@@ -2030,7 +1902,7 @@ cvCanny(gray, edge, (float)edge_thresh, (float)edge_thresh*3, 3);&lt;/div&gt;
 &lt;p&gt;Next, cvNot is used to invert the image colors on each pixel in the array created by cvSmooth, in this case to produce an image with white pixels on a black background.&lt;/p&gt;
 &lt;p&gt;Finally, cvCanny takes this inverted, convoluted image and compares each pixel in turn to each of its neighbors to identify the edges according to the threshold values as determined by the user. The level of threshold is used to limit how much linking can occur between possibly-unrelated edges. This is particularly noticeable in the figure below.&lt;/p&gt;
 &lt;p&gt;Because an edge could occur at any angle, the vertical and horizontal derivatives of each set of identified edge components are used to calculate the angle and set a tracked ridge. All pixels not on the tracked ridge are set to zero. Because of the way light breaks in water and because the &lt;span class=&quot;caps&quot;&gt;PVC&lt;/span&gt; can curve, there needs to be hysteresis applied to follow the lines as far as they are continuous, but that was not called for in this simple program.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/underwater/figure6.gif&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/underwater/figure6.gif&quot;&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Hough Lines&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Where cvCanny identifies edges, the relationships of blocks to other blocks, the Hough transform uses the image that has been processed with Canny edge detection and inverted so that the background is black; by checking each pixel for color value, the Hough transform identifies the non-black pixels (for i = 0) and plots their slope and intercept data in gradient space where slope is the y-axis and y-intercept is the x-axis.&lt;/p&gt;
 &lt;p&gt;Though the relationships of pixels can be realized graphically in this gradient space, all of the data is actually passed from the previous array produced by the Canny edge detect into a new accumulator array of dimensions slope (m) and intercept (b). The transform samples each pixel and sorts it into a cell of a new array based on its slope and intercept parameters. Once all of the pixels in the source image have been slotted into new cells, those cells with the highest number of pixels are identified as lines. The minimum number of necessary pixels in a cell to generate a line (in red, see below) is determined in the program code.&lt;/p&gt;
@@ -2061,10 +1933,10 @@ CvPoint* line = (CvPoint*)cvGetSeqElem(lines,i);&lt;br /&gt;
 cvLine( color_dst, line0, line1, CV_RGB(255,0,0), 3, CV_AA, 0 );&lt;/div&gt;
 &lt;p&gt;The figures below indicate that distance underwater and the irregularities of complex &lt;span class=&quot;caps&quot;&gt;PVC&lt;/span&gt; structures has a significant deletrious effect on the Canny edge detection. This is more apparent when Hough is applied to the images because human eyes automatically fill in gaps. In the case of the first image, the &lt;span class=&quot;caps&quot;&gt;ROV&lt;/span&gt; itself would provide a better, more defined geometric shape if it were a box instead of an open frame, but it’s unlikely that two ROVs will be in close proximity to each other.&lt;/p&gt;
 &lt;p&gt;The imagery is better at close-up. Notice how well the lines of the pool walls and lanes show up clearly. These could be very useful in navigation and, eventually, mapping. Similarly, the definitive shape of this &lt;span class=&quot;caps&quot;&gt;ROV&lt;/span&gt; is immediately recognizable with the edge detection but the excessive use of plumber’s tape and the chicken mesh yielded a mess of lines that would need significant additional parameters to clarify.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/underwater/figure7.gif&quot;&gt;&lt;br /&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/underwater/figure7.gif&quot;&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;br /&gt;
 &lt;br /&gt;
- &lt;img src=&quot;/images/project/underwater/figure8.gif&quot;&gt;&lt;/div&gt;
+ &lt;img src=&quot;/img/project/underwater/figure8.gif&quot;&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Additional Hough Geometry&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The problem of irregular shapes can be solved by applying transform functions like cvFindContours, cvHoughCircles, and cvFitEllipse2. Adding contours (a curved edge where the function is continuous) requires creating memory storage in the form of cvSeq, which creates a linked list of related pixels. cvThreshold is used to binarize the image by creating a trackbar in the same way as in houghlines.c and edge.c, because cvFindContours requires pixels of value 0 or 1 only. The following code from fitellipse.c demonstrates this sequence of steps.&lt;/p&gt;
 &lt;div class=&quot;code&quot;&gt;storage = cvCreateMemStorage(0);&lt;br /&gt;
@@ -2073,10 +1945,10 @@ cvThreshold( image03, image02, slider_pos, 255, CV_THRESH_BINARY );&lt;br /&gt;
 cvFindContours( image02, storage, &amp;amp;contour, sizeof(CvContour),&lt;br /&gt;
 CV_RETR_LIST, CV_CHAIN_APPROX_NONE, cvPoint(0,0));&lt;/div&gt;
 &lt;p&gt;As shown in the figures below, different retrieval options makes a significant difference in returned image at the same threshold. CV_RETR_LIST retrieves all the contours and organizes them in the linked list; CV_RETR_EXTERNAL returns only the extreme outer contours. Other options are to retrieve all contours but rank them into an inner/outer hierarchy or a more complete hierarchy.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/underwater/figure9.gif&quot;&gt;&lt;br /&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/underwater/figure9.gif&quot;&gt;&lt;br /&gt;
 cvFitEllipse2 applied with CV_RETR_LIST&lt;br /&gt;
 &lt;br /&gt;
- &lt;img src=&quot;/images/project/underwater/figure11.gif&quot;&gt;&lt;br /&gt;
+ &lt;img src=&quot;/img/project/underwater/figure11.gif&quot;&gt;&lt;br /&gt;
 cvFitEllipse2 applied with CV_RETR_EXTERNAL&lt;/div&gt;
 &lt;p&gt;This result leads to the question of whether it would be worth redesigning the &lt;span class=&quot;caps&quot;&gt;MATE&lt;/span&gt; Center’s props to be more friendly to image processing. The answer is likely ‘no’ and more effort should be put into refining the geometry-detecting algorithms. This may be application-dependent: AUVs being designed for the sealife surveys will need more refined algorithms but AUVs designed to crawl pipelines and service deep-sea drilling stations would benefit from a structure built as simple geometrically as possible.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
@@ -2113,7 +1985,7 @@ cvFitEllipse2 applied with CV_RETR_EXTERNAL&lt;/div&gt;
    <updated>2011-08-12T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2011/08/surface-water-streamforms-flooding</id>
    <content type="html">&lt;p&gt;This project used ArcGIS to identify stream landforms on the Snoqualmie River for my physical geology lab at Portland State.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/geolab/hydrologic.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/geolab/hydrologic.png&quot;&gt;&lt;/div&gt;
 &lt;h2&gt;Stream and River Geomorphology&lt;/h2&gt;
 &lt;p&gt;The prominent natural features are the Snoqualmie River and its valley, with hills to either side. There&amp;#8217;s an interconnected hooked lake system with oxbows and a couple of solitary lakes. The contour interval of the map is 10 feet. Maximum elevation is 669 feet and minimum elevation is 20 feet. The prominent anthropogenic feature is the town of Carnation and the highway. There&amp;#8217;s a sewage disposal plant and a couple of farms, as well as a fill.&lt;/p&gt;
 &lt;p&gt;The figure below includes specific hydrologic features. Stream morphology is defined as the way the stream changes over time. The stream gradient affects this because gradient correlates to gravity. Streams with steeper slopes will have a higher speed, thus allowing a higher sediment load as well as having a faster rate of erosion, cutting ever-deeper channels into the bedrock. These streams are less likely to meander and more likely to turn into braided streams.&lt;/p&gt;
@@ -2132,20 +2004,20 @@ cvFitEllipse2 applied with CV_RETR_EXTERNAL&lt;/div&gt;
    <id>http://wickerbox.net/2011/08/playing-with-mars-maps-with-pigwad-and-arcgis</id>
    <content type="html">&lt;p&gt;I took a year of geology courses in hopes of getting a second Bachelor&amp;#8217;s in geology but eventually had to abandon it to focus full-time on the Master&amp;#8217;s in Computer Engineering. We had an assignment to use a program called ArcGIS (&lt;span class=&quot;caps&quot;&gt;GIS&lt;/span&gt; stands for geographic information system and ArcGIS is an excellent tool for analyzing data) and I decided to do something with Mars.&lt;/p&gt;
 &lt;p&gt;Olympus Mons is the most massive of the five shield volcanoes in the northwest region of Mars, called the Tharsis Bulge, which is thought to have been tectonically active until about twelve million years ago. The region is geologically the youngest on Mars and also includes Valles Marineris, a four thousand kilometer-long canyon. Because Olympus Mons perches on the northwest rim of this bulged, elevated region, the bedrock beneath the layers of lava forms a downslope from SE to NW.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin: 0 auto; width:260px;&quot;&gt; &lt;img src=&quot;/images/project/olympusmons/fossaesulci.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin: 0 auto; width:260px;&quot;&gt; &lt;img src=&quot;/img/project/olympusmons/fossaesulci.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;I&amp;#8217;m fascinated by the exploration of our solar system and yet I had no idea how much data is publicly available online. I chose this project to explore that data for my G207 Computer Based Physical Geology Laboratory at Portland State. I used maps of Olympus Mons from Google Mars and the U.S. Geological Service (&lt;span class=&quot;caps&quot;&gt;USGS&lt;/span&gt;) to determine a study area, create a topographic profile for that downslope, highlight and label the structure of the shield volcano itself, and examine the outflow areas for indicators of compressional and extensional faulting that would have occurred because of the bedrock tilt.&lt;/p&gt;
 &lt;p&gt;First, the four million square kilometers of study area included both Olympus Mons itself and the area of flow deposits to the northwest. Shield volcanoes are common on Earth and form when magma breaks through the Earth&amp;#8217;s crust and successive eruptions lay down ever-thicker layers of basalt material to form the mountain. On Earth, our shield volcanoes generally form as part of a string because our plates move and each successive eruption occurs when another thin point in the layer is broken through. The hotspot doesn&amp;#8217;t move, only the plate above. This process is what formed, for example, the Hawaiian island chain.&lt;/p&gt;
 &lt;p&gt;It&amp;#8217;s important to get a sense of scale because the region is impressive compared to any feature on Earth. At 21 km (65,000 ft or nearly 16 miles) tall and 500 km (1500 miles) wide, Olympus Mons is the tallest shield volcano in the solar system. It achieved this height in part because Mars lacks recent tectonic activity so there was no moving plate to carry Olympus Mons away from its hotspot. Mars also has negligible atmosphere, a third of our gravity, and is primarily affected by wind erosion instead of precipitation.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin: 0 auto; width:310px;&quot;&gt; &lt;img src=&quot;/images/project/olympusmons/materialstructure.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin: 0 auto; width:310px;&quot;&gt; &lt;img src=&quot;/img/project/olympusmons/materialstructure.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;Olympus Mons is a classic example of a shield volcano. The magma it produces is low-silica, high-temperature mafic lava, in this case basalt. The basalt is very thin and travels very far, forming lava channels and then tabular sheets past the steep cliffs called the scarp.&lt;/p&gt;
 &lt;p&gt;I was unable to find a &lt;span class=&quot;caps&quot;&gt;DEM&lt;/span&gt; image which retained its elevation data but the combination of Google Earth and some math yielded the topo line and profile below. The southeastern beginning of the line is at an elevation of about 1 km while the northwestern end is at about -3 km, a difference of 4 km (12 miles) in base elevation.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin: 0 auto; width: 260px;&quot;&gt; &lt;img src=&quot;/images/project/olympusmons/topoline.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin: 0 auto; width: 260px;&quot;&gt; &lt;img src=&quot;/img/project/olympusmons/topoline.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;I produced a structural map to see if I could find wrinkle ridges to the southeast and graben to the northwest. Both were present in their expected areas, so I concentrated on the northwest aureole, highlighting the graben and slide zones that occur with a downslope tile, and created the map shown in Figure 4. There were two reasons to look at the geologic units for the region. First, there are clearly landforms rising out of lava and glacier flows that appeared to predate the volcanic activity of Olympus Mons. Second, looking at the type of bedrock or soils would give further clues about tendency to slide. The problem with Mars is that the data is still being collected with regard to bedrock but I first took the &lt;span class=&quot;caps&quot;&gt;USGS&lt;/span&gt; map of geologic material and mapped it into my hillshade, limiting the study area to Olympus Mons and its aureole, but including more to the southeast against the ridge.&lt;/p&gt;
 &lt;p&gt;This map was the &lt;span class=&quot;caps&quot;&gt;USGS&lt;/span&gt; i-1083 geologic map, which is a large-scale older map from the Viking orbiter/lander era of the 1970s, to identify the difference between regions. Figure 5 shows the different geologic units. Avy is young volcanic material with a fine striated texture. Hpr is rolling plains material, relatively level except at the contact zones where it meets the aureole material of AHa, in the form of hills and ridges. AHa is formed by formed by basalt flow from the volcano and local vents and fissures. Aps is smooth plains material, burying most underline topography. The map also showed clear fractures where the plains meet the hills.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin: 0 auto; width: 310px;&quot;&gt; &lt;img src=&quot;/images/project/olympusmons/geologic-map.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin: 0 auto; width: 310px;&quot;&gt; &lt;img src=&quot;/img/project/olympusmons/geologic-map.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;The second set of data I used defined the aureole and the plains more closely, which have already been established to contain graben, but was valuable for showing the southeast section of the flows where material has clearly fractured upon impact with the ridge. The fracture lines can be seen in Figure 5 as well, but here the hillshade delineates the edge of the flow very clearly.&lt;/p&gt;
 &lt;p&gt;The floodplain of this aureole is very clear.&lt;/p&gt;
-&lt;div align=&quot;center&quot; style=&quot;margin: 0 auto; width: 430px&quot;&gt; &lt;img src=&quot;/images/project/olympusmons/study-area2.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot; style=&quot;margin: 0 auto; width: 430px&quot;&gt; &lt;img src=&quot;/img/project/olympusmons/study-area2.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;This project gave me an introduction to using ArcGIS layers to examine geologic features. The extensive data can be used to calculate the extent of the flows, such as that of the aureole above; the size of lava and glacial lobes, the ratio of dimensions can be clues to flow speed; the location of lava tubes and caves, which influences flow patterns; and the underlying sediment and bedrock, which holds clues to the geochronology of the region.&lt;/p&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&quot;caps&quot;&gt;USGS&lt;/span&gt; Planetary &lt;span class=&quot;caps&quot;&gt;GIS&lt;/span&gt; Web Server (&lt;span class=&quot;caps&quot;&gt;PIGWAD&lt;/span&gt;)&lt;br /&gt;
@@ -2162,19 +2034,19 @@ cvFitEllipse2 applied with CV_RETR_EXTERNAL&lt;/div&gt;
    <updated>2011-08-12T00:00:00-07:00</updated>
    <id>http://wickerbox.net/2011/08/pdx-geology-portland-landslides</id>
    <content type="html">&lt;p&gt;This was a project for my computer-based physical geology lab at Portland State. The idea was to use ArcMap to identify and describe controlling factors, specifically bedrock type and soil type, which contributed to the landslides that occurred in and around the Portland area during 1996-1997.&lt;/p&gt;
-&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/images/project/geolab/landslides-1.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/img/project/geolab/landslides-1.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;The first possible contributing factor to the landslides in this report is bedrock type. Figure 2 shows landslide distribution in the study area against the bedrock types. Table 1 presents the relative number. The two most common geologic types on which landslides occurred were Tc and Qs.&lt;/p&gt;
-&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/images/project/geolab/landslides-2.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/img/project/geolab/landslides-2.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;The following bedrock type descriptions were taken from the &lt;a href=&quot;http://nwdata.geol.pdx.edu/OR-Geology/explanation.php&quot;&gt;Portland State University Geology Department&lt;/a&gt;. [the system has since broken; some information was lost. QTba is from Wikipedia.]&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Tc Columbia River Basalt Group and related flows from the Miocene. Subaerial basalt and minor andesite lava flows and flow breccia; locally may include invasive basalt flows. Flows locally grade laterally into subaqueous pillow-palagonite complexes and bedded palagonitic tuff and breccia. In places includes tuffaceous sedimentary interbeds. Joints commonly coated with nontronite and other clayey alteration products. Locally deeply weathered to lateritic soil. Occurs principally in the Willamette Valley from Salem north to the Columbia River and eastward into the Cascade Range. Unit includes correlative Stayton Lavas of Thayer (1936, 1939). See also description of unit for eastern Oregon. Swanson and others (1979) and Swanson and others (1981) locally separated rocks into: Wanapum Basalt (Tcw) and Grande Ronde Basalt (Tcg).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;QTba describes quaternary basaltic andesite is a black volcanic rock containing about 55% silica. Minerals in basaltic andesite include olivine, augite and plagioclase.&lt;/em&gt;&lt;/p&gt;
-&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/images/project/geolab/landslides-3.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/img/project/geolab/landslides-3.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;The second contributing factor to the landslides was soil type. Figure 3 and Table 2 show the frequency of landslides and the soil types where they occurred. The most landslides occurred in soil types 17E and 56E, which are both loams. The following descriptions are from Survey of Multnomah County, Oregon.&lt;/p&gt;
-&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/images/project/geolab/landslides-4.png&quot;&gt;&lt;/div&gt;
-&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/images/project/geolab/landslides-5.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/img/project/geolab/landslides-4.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/img/project/geolab/landslides-5.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;&lt;em&gt;17E Goble silt loam &amp;#8230; This steep, moderately drained soil is on convex side slopes of ridgetops. This soil formed in silty materials mixed with volcanic ash &amp;#8230; Increased population growth has resulted in increased home construction on this soil. This soil has severe limitations for dwellings and roads because of steep slopes. Other limitations are the seasonal high water table, low bearing strength, and the slowly permeable fragipan at a depth of 30 to 45 inches. Excavating during summer is difficult because of the strongly compacted fragipan. Slumping is possible in areas of cut and fill, and additional maintenance of banks, roads, and building foundations is required. A seasonal water table is perched on top of the fragipan, and drainage is required for best results with basements.&lt;/p&gt;
 &lt;p&gt;56E Wauld gravelly loam &amp;#8230; typically, the surface layer is very dark brown very gravelly loam about 6 inches thick. The subsoil is very dark grayish brown and dark brown very gravelly clay loam about 24 inches thick. Depth to basalt is 30 inches. &amp;#8230; This soil has severe limitations for homesites and other uses. The major limitations for urban development are depth to bedrock, high concentration of coarse fragments, and slopes of 30 to 70 percent.&lt;/em&gt;&lt;/p&gt;
-&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/images/project/geolab/landslides-6.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/img/project/geolab/landslides-6.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;The final contributing factor to consider is the steepness of the slopes where landslides occurred. The loam deposits 17E and 56E were described as occurring on slopes of 30 to 70 percent, which is also where the landslides occur on Figure 4. The landslides occur on the slopes of greater than 15 percent.&lt;/p&gt;</content>
  </entry>
  
@@ -2185,11 +2057,11 @@ cvFitEllipse2 applied with CV_RETR_EXTERNAL&lt;/div&gt;
    <id>http://wickerbox.net/2011/08/groundwater-path</id>
    <content type="html">&lt;p&gt;This was another project in my computer-based physical geology lab at Portland State. We were given a map of five potential farm sites near Umatilla, Oregon, and told to use ArcGIS to determine based on bedrock permeability, porosity, and slope which farm location would be better-suited in case of a chemical spill at either local munitions bunker.&lt;/p&gt;
 &lt;p&gt;The study area is south of the city of Umatilla, Oregon. The four main rock types present on the land of the proposed farms, as shown in Figure 1, are as follows: glaciofluvial, lacustrine, and pediment sedimentary deposits (Qgs) from the Pleistocene; Wanapum basalt (Tcw) from the middle Miocene; Loess (Ql) from the Holocene and Pleistocene; and tuffaceous sedimentary rocks and tuff (Ts) from the Pliocene and Miocene.&lt;/p&gt;
-&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/images/project/geolab/spillanalysis-1.png&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/img/project/geolab/spillanalysis-1.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;Figure 2 shows the potentiometric map. If the chemical weapons release did occur from Bunker One, the contamination would likely travel to the northeast (10°) and to the southwest (250°). The northeast flow would be routed directly to Farm 3 and then Farm 1, and contaminate the sedimentary deposits (Qgs) which make up the larger aquifer there.&lt;/p&gt;
 &lt;p&gt;If the weapons release occurred from Bunker Two, the contamination would likely travel to the northwest (325°) directly into the path of Farm 5. As Farm 2 is somewhat far away from Bunker Two, it is at somewhat lower risk for contamination. The flow would take a longer period of time to affect the very local groundwater, long enough that other farms would be affected first and farmers may win a lawsuit so they can move somewhere else.&lt;/p&gt;
 &lt;p&gt;Farm 4 is the likely candidate to avoid the concern of spill completely, the water table being at higher elevation than the contamination sources, and has the added bonus of being situated on loess (Ql) which is an excellent aquifer material because it contains local interbedded layers of soil, caliche, and water-laid silt and gravel. Farm 4 is the most attractive location, with Farm 2 a close second. Farm 1 is at greater distance from a potential spill but will eventually be severely affected. Farms 3 and 5 are in immediate danger.&lt;/p&gt;
-&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/images/project/geolab/spillanalysis-2.png&quot;&gt;&lt;/div&gt;</content>
+&lt;div style=&quot;margin: 0 auto; text-align:center;&quot;&gt; &lt;img src=&quot;/img/project/geolab/spillanalysis-2.png&quot;&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -2199,7 +2071,7 @@ cvFitEllipse2 applied with CV_RETR_EXTERNAL&lt;/div&gt;
    <id>http://wickerbox.net/2011/08/bull-run-reservoir-watershed-analysis</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Bull Run Watershed is the primary source of drinking water for the city of Portland, Oregon. Bull Run Lake contains the headwaters for the Bull Run mainstem, which collects tributary inflow from approximately 277 sq. km. on its way to two city-operated reservoirs, #1 and #2. Rain provides 90-95% of the water in the watershed (Portland Water Bureau, 2010) so an understanding of both rivers and groundwater in this system is critical for managing the flow to the city&amp;#8217;s customers; this lab investigated how to map tributaries, measure annual precipitation, and identify surface permeability of fine sand and gravel to predict how much water can be expected in the system at any time of year and by what path it will arrive in the reservoirs. The flow rates are important because all water flows carry sediment which can have a negative long-term affect on the reservoirs. The annual sediment rate for the Bull Run Watershed is 20 tons per sq. km. per year.&lt;/p&gt;
-&lt;div style=&quot;width: 400px; margin: 0 auto;&quot;&gt; &lt;img src=&quot;/images/project/bullrunreservoir/bullrun.png&quot;&gt;&lt;br /&gt;
+&lt;div style=&quot;width: 400px; margin: 0 auto;&quot;&gt; &lt;img src=&quot;/img/project/bullrunreservoir/bullrun.png&quot;&gt;&lt;br /&gt;
 &lt;small&gt;Fig. 1. Aerial view of Bull Run Watershed. Dense forest surround the lakes. Activities like recreational use and logging are restricted as part of the management plan. Picture taken by Jen Hanni, September, 2010.&lt;/small&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Tributaries can be separated into sections called reaches. Each reach will be assigned a number order, starting with a &amp;#8216;1&amp;#8217; for reaches with no tributaries. When two first-order streams meet, the next reach will be a second-order because the orders are summed downstream; if that second-order reach is joined by another second-order reach, the subsequent reach will be fourth-order. (Shreve, 1966) Drainage frequency is the ratio of first-order reaches to total ordered reaches in the drainage basin as a percentage. Stream density, \(D\), is the number of streams per kilometer and can be calculated by dividing the sum total length in km. of all reaches by the drainage area in sq. km. The overall discharge, \(Q\), of a watershed can be found utilizing&lt;/p&gt;
@@ -2213,12 +2085,12 @@ cvFitEllipse2 applied with CV_RETR_EXTERNAL&lt;/div&gt;
 &lt;p&gt;Permeability increases with increasing grain size because small grains are more likely to fill in all open spaces; for example, gravel will have a higher permeability coefficient than fine sand because there is more room between gravel grains for the water to flow. The experiment conducted used a Ward&amp;#8217;s Constant Head Permeability meter. A vertical cylinder with the lower end wrapped in cheesecloth was filled with the material to test. A length of rubber tubing was used to run water into the top of the cylinder at a constant rate. Three trials were conducted where the water that permeated the material was collected and measured over a pre-determined period of time to find the water&amp;#8217;s velocity.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The drainage relief from the highest point (1448 &lt;span class=&quot;caps&quot;&gt;MSL&lt;/span&gt;) to the lowest point (300 &lt;span class=&quot;caps&quot;&gt;MSL&lt;/span&gt;, at the Headworks) was found to be 3.86 degrees, which is relatively flat and likely contributed to the dendritic flow pattern seen in Figure 1; the thirty-three first-order reaches highlighted in red represent 55% of the sixty-one total reaches in the watershed. The watershed is 25km at its longest and 15km at its widest, yielding a total length/width ratio of 1.67 and a total stream density of 0.5 streams per km.&lt;/p&gt;
-&lt;div style=&quot;width:510px; margin: 0 auto;&quot;&gt; &lt;img src=&quot;/images/project/bullrunreservoir/firstorderstreams.png&quot;&gt;&lt;br /&gt;&lt;small&gt;Fig. 2. Steam ordering of the Bull Run drainage basin utilizing the Shreve method (Shreve, 1967) with first-order streams in red; the order of other reaches are noted by number. Flow direction is from east to west and the highest order in the basin is reached by the Bull Run mainstem in the west half of Reservoir #2. Red are modifications on top of base image from lab packet.&lt;/small&gt; &lt;/div&gt;
+&lt;div style=&quot;width:510px; margin: 0 auto;&quot;&gt; &lt;img src=&quot;/img/project/bullrunreservoir/firstorderstreams.png&quot;&gt;&lt;br /&gt;&lt;small&gt;Fig. 2. Steam ordering of the Bull Run drainage basin utilizing the Shreve method (Shreve, 1967) with first-order streams in red; the order of other reaches are noted by number. Flow direction is from east to west and the highest order in the basin is reached by the Bull Run mainstem in the west half of Reservoir #2. Red are modifications on top of base image from lab packet.&lt;/small&gt; &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Figure 3 presents the cumulative total precipitation for all days in 2003 and Figure 4 presents the actual daily centimeters of rain. The two graphs are complimentary; the steepest slopes on the total precipitation curve represent periods when daily rainfall added rapidly to the total; the shallower slope in summer correlates to the many days on which no precipitation was recorded.&lt;/p&gt;
-&lt;div style=&quot;width:472px; margin: 0 auto;&quot;&gt; &lt;img src=&quot;/images/project/bullrunreservoir/totalprecip.png&quot;&gt;&lt;br /&gt;&lt;small&gt;Fig. 3. Cumulative precipitation shown over 365 days from 2003 data for South Bull Run Fork. Steepness of slope indicates periods of time with near-daily rainfall, thereby increasing total precipitation year-to-date. The flat section in the center of the graph describes the dry summer months of June, July, and August. Short dry periods in the first part of February and October are seasonally consistent with the region. Data obtained from Snotel.&lt;/small&gt;&lt;/div&gt;
+&lt;div style=&quot;width:472px; margin: 0 auto;&quot;&gt; &lt;img src=&quot;/img/project/bullrunreservoir/totalprecip.png&quot;&gt;&lt;br /&gt;&lt;small&gt;Fig. 3. Cumulative precipitation shown over 365 days from 2003 data for South Bull Run Fork. Steepness of slope indicates periods of time with near-daily rainfall, thereby increasing total precipitation year-to-date. The flat section in the center of the graph describes the dry summer months of June, July, and August. Short dry periods in the first part of February and October are seasonally consistent with the region. Data obtained from Snotel.&lt;/small&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;div style=&quot;width:566px; margin: 0 auto;&quot;&gt; &lt;img src=&quot;/images/project/bullrunreservoir/dailyprecip.png&quot;&gt;&lt;br /&gt;&lt;small&gt;Fig. 4. Daily precipitation. The highest values occur in January and February and the lowest occur in the summer months of June, July, and August. The magnitude of these values are proportional to slope magnitude in Figure 2. Data obtained from Snotel.&lt;/small&gt;&lt;/div&gt;
+&lt;div style=&quot;width:566px; margin: 0 auto;&quot;&gt; &lt;img src=&quot;/img/project/bullrunreservoir/dailyprecip.png&quot;&gt;&lt;br /&gt;&lt;small&gt;Fig. 4. Daily precipitation. The highest values occur in January and February and the lowest occur in the summer months of June, July, and August. The magnitude of these values are proportional to slope magnitude in Figure 2. Data obtained from Snotel.&lt;/small&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;As noted, the summer months of June, July, and August experienced the least total rainfall; precipitation was measured only on six days in the month of June for a monthly total of 5.2 cm. This value was averaged over thirty days for a mean daily precipitation rate, IP, of 0.17 cm. An average June day would see the 277 sq. km. of the Bull Run Watershed discharge 4.7 million cubic meters of water, according to the following sample calculation utilizing Equation 1.&lt;/p&gt;
 &lt;p&gt;$$I_p = 0.17 cm = 1.7&amp;#215;10-2 m$$&lt;br /&gt;
@@ -2244,17 +2116,17 @@ $$A = \pi r^2 = \pi (1.75 cm^2) = 9.62 cm^2$$&lt;/p&gt;
    <id>http://wickerbox.net/2011/08/yuma-endurance-days-articles</id>
    <content type="html">&lt;div style=&quot;margin: 0 auto; padding-top: 5px; text-align:center; width: 640px&quot;&gt;
 &lt;div style=&quot;float: left; text-align: center; width: 210px;&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;/endurance-days/1949-highways.pdf&quot;&gt; &lt;img src=&quot;/images/yed/articles/1949-highways.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;/endurance-days/1949-highways.pdf&quot;&gt; &lt;img src=&quot;/img/yed/articles/1949-highways.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
 Flight of the City of Yuma&lt;br /&gt;
 &lt;a href=&quot;/endurance-days/1949-highways.pdf&quot;&gt;Highways Magazine, 1949&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div style=&quot;float: left; text-align: center; width: 210px;&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;/endurance-days/1950-ontour.pdf/&quot;&gt; &lt;img src=&quot;/images/yed/articles/1950-ontour.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;/endurance-days/1950-ontour.pdf/&quot;&gt; &lt;img src=&quot;/img/yed/articles/1950-ontour.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
 On Tour&lt;br /&gt;
 &lt;a href=&quot;/endurance-days/1950-ontour.pdf&quot;&gt;Unknown, 1950&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div style=&quot;float: left; text-align: center; width: 210px;&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;/endurance-days/1999-flyways.pdf&quot;&gt; &lt;img src=&quot;/images/yed/articles/1999-flyways.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;/endurance-days/1999-flyways.pdf&quot;&gt; &lt;img src=&quot;/img/yed/articles/1999-flyways.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
 Yuma&amp;#8217;s PR Rainbow&lt;br /&gt;
 &lt;a href=&quot;/endurance-days/1999-flyways.pdf&quot;&gt;Flyways Magazine&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -2262,17 +2134,17 @@ Yuma&amp;#8217;s PR Rainbow&lt;br /&gt;
 &lt;/div&gt;
 &lt;div style=&quot;margin: 0 auto; padding-top: 10px; text-align:center; width: 640px&quot;&gt;
 &lt;div style=&quot;float: left; text-align: center; width: 210px;&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;/endurance-days/1999-jayceeflyer.pdf&quot;&gt; &lt;img src=&quot;/images/yed/articles/1999-jayceeflyer.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;/endurance-days/1999-jayceeflyer.pdf&quot;&gt; &lt;img src=&quot;/img/yed/articles/1999-jayceeflyer.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
 Promotional Flyer&lt;br /&gt;
 &lt;a href=&quot;/endurance-days/1999-jayceeflyer.pdf&quot;&gt;Yuma Jaycees, 1999&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div style=&quot;float: left; text-align: center; width: 210px;&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;/endurance-days/2000-flying-hangtime.pdf&quot;&gt; &lt;img src=&quot;/images/yed/articles/2000-flying-hangtime.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;/endurance-days/2000-flying-hangtime.pdf&quot;&gt; &lt;img src=&quot;/img/yed/articles/2000-flying-hangtime.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
 &amp;#8220;Hang Time&amp;#8221;&lt;br /&gt;
 &lt;a href=&quot;/endurance-days/2000-flying-hangtime.pdf&quot;&gt;Flying Magazine, 2000&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div style=&quot;float: left; text-align: center; width: 210px;&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;/endurance-days/2000-jimsiemens.pdf&quot;&gt; &lt;img src=&quot;/images/yed/articles/2000-jimsiemens.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;/endurance-days/2000-jimsiemens.pdf&quot;&gt; &lt;img src=&quot;/img/yed/articles/2000-jimsiemens.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
 Pilot Profile: Jim Siemens&lt;br /&gt;
 &lt;a href=&quot;/endurance-days/2000-jimsiemens.pdf&quot;&gt;Unknown, 2000&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -2280,17 +2152,17 @@ Pilot Profile: Jim Siemens&lt;br /&gt;
 &lt;/div&gt;
 &lt;div style=&quot;margin: 0 auto; padding-top: 10px; text-align:center; width: 640px&quot;&gt;
 &lt;div style=&quot;float: left; text-align: center; width: 210px;&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;/endurance-days/2003-airclassics-oleary.pdf&quot;&gt; &lt;img src=&quot;/images/yed/articles/2003-airclassics-oleary.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;/endurance-days/2003-airclassics-oleary.pdf&quot;&gt; &lt;img src=&quot;/img/yed/articles/2003-airclassics-oleary.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
 City of Yuma&lt;br /&gt;
 &lt;a href=&quot;/endurance-days/2003-airclassics-oleary.pdf&quot;&gt;Air Classics, 2003&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div style=&quot;float: left; text-align: center; width: 210px;&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;/endurance-days/2004-inventletter.pdf&quot;&gt; &lt;img src=&quot;/images/yed/articles/2004-inventletter.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;/endurance-days/2004-inventletter.pdf&quot;&gt; &lt;img src=&quot;/img/yed/articles/2004-inventletter.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
 Letter to the Editor&lt;br /&gt;
 &lt;a href=&quot;/endurance-days/2004-inventletter.pdf&quot;&gt;Inventions and Tech, 2004&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div style=&quot;float: left; text-align: center; width: 210px;&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;/endurance-days/2006-yuma-crossing-legacy.pdf&quot;&gt; &lt;img src=&quot;/images/yed/articles/yuma-crossing-legacy.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;/endurance-days/2006-yuma-crossing-legacy.pdf&quot;&gt; &lt;img src=&quot;/img/yed/articles/yuma-crossing-legacy.jpg&quot;&gt;&lt;/a&gt;&lt;br /&gt;
 The Yuma Crossing Legacy&lt;br /&gt;
 &lt;a href=&quot;/endurance-days/2006-yuma-crossing-legacy.pdf&quot;&gt;Yuma Jaycees, 2006&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -2763,12 +2635,12 @@ Bubbling springs, meet my delighted inner twelve-year old.&lt;/p&gt;
    <updated>2011-02-01T00:00:00-08:00</updated>
    <id>http://wickerbox.net/2011/02/marie-curie-bot</id>
    <content type="html">&lt;p&gt;The Intelligent Robotics Lab at Portland State has a robot theater which uses a variety of human and animal faces on mobile bases. Students focus on implementing speech, vision, and decision-making so that the robots perform plays. The idea is to have intelligence such that the robots never perform the play in the same way twice, but currently the robots are all on script.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/marie-curie/cybertheater.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/marie-curie/cybertheater.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;Still, creating a robot head that sees and speaks is not particularly easy. I chose Marie Curie as my project because I wanted to add a woman to our lineup of otherwise famous scientists (Bohr, Schroedinger Cat, and Einstein) who are all used in the robot theater. The problem with animatronic faces is that people are trained over a lifetime to detect the slightest hints of facial movement and draw conclusions about a person’s emotional state. Animatronic faces just aren’t capable of making the fluid, minute changes which are necessary to communicating the sense of being a real person. They tend to end up with that waxy robotic look. However, at this level in the lab, there’s not a lot to be done about that.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/marie-curie/marie1.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/marie-curie/marie1.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;A servo is essentially an actuator that contains a gear with an attached wire rod. The wire rod moves back and forth over a predetermined distance as the gear turns a limited number of degrees. The idea behind attaching servos to a face is to have the servo move back and forth to twitch the latex, so the latex must be compromise between being thin and light enough that facial expressions are made without tearing the latex. We use servos from Pololu in the lab.&lt;/p&gt;
 &lt;p&gt;We use Brookshire Sotware’s Visual Show Automation program to predetermine a routine. It’s a graphical interface that presents a timeline and allows servo movements to be indicated visually. Audio files can be synced as well so testing can be done on the computer before downloading.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/marie-curie/marie3.png&quot;&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/marie-curie/marie3.png&quot;&gt;&lt;/div&gt;
 &lt;p&gt;When I got her, she had a ripped latex face connected from behind to fourteen servos, some of them inoperable, wired to an ASC16 microcontroller on a wooden base. The ASC16 wasn’t supported by Medonis anymore (the software won’t work on anything past Windows 2000) so we switched to the MiniSSC II serial servo controller and installed two of them on a plate behind her head. MiniSSC II cards are one of the oldest servo controllers on the market but they work for this simple application. I mapped the mess of fourteen servo wires between the &lt;span class=&quot;caps&quot;&gt;PWM&lt;/span&gt; slots, servos, and her face points. She’s wired so her forehead wrinkles in four places and the latex around her mouth flexes at six points. She can nod, shake her head, and move her eyes both up/down and left/right; I’d like to make her able to blink.&lt;/p&gt;
 &lt;p&gt;Her latex face is ripped along her mouth because her jaw is actually structurally broken. I wanted to make a new mold for a new latex face. She looks very classically pin-up beautiful now, very long face with long eyelashes, and I’d like to make her a little closer to the pictures of Marie that I’ve found. Marie was beautiful, too.&lt;/p&gt;
 &lt;p&gt;I soon discovered that the other reason she would benefit from a completely new latex face is that her facial expressions (determined by the servo wire contact points chosen behind her face) were badly designed. Not only that but the tear in the corner of her mouth meant a part of her face had lost tension and the whole face would need to be replaced. There isn’t any easy way to repair that tear while maintaining her ability to make faces and the lab priority was not in making another latex face so I moved on to another project.&lt;/p&gt;
@@ -2778,7 +2650,7 @@ Bubbling springs, meet my delighted inner twelve-year old.&lt;/p&gt;
 &lt;p&gt;Once these choices have been made and the face has been drawn out for the record, they will need to make a new mold, pour a new latex face, reattach the servos, and develop the order of servo movements in &lt;span class=&quot;caps&quot;&gt;VSA&lt;/span&gt; to match an audio file.&lt;/p&gt;
 &lt;p&gt;Once she’s capable of speaking and making fairly simple expressions, she would benefit from a wheeled base and robot arm so she can interact with the other scientist-robots (high-fiving Bohr?). Adding a webcam and integrating vision would let her tailor responses to particular faces — thought at this point Visual Show Automation would need to be exchanged for C++ — and be capable of navigating without bumping into things.&lt;/p&gt;
 &lt;p&gt;A platform capable of all these things with a platform microcontroller capable of higher-level logic could probably be handed off to a graduate student for a thesis.&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/images/project/marie-curie/marie2.png&quot;&gt;&lt;/div&gt;</content>
+&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;/img/project/marie-curie/marie2.png&quot;&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>

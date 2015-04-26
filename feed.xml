@@ -2,25 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Jenner Hanni</title>
-		<description>Adventures of an aerospace geek in Portland, Oregon.</description>
+		<description>Electrical Engineer and Open Hardware Hacker</description>
 		<link></link>
 		<atom:link href="feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Zen</title>
+				<description>&lt;p&gt;&amp;#8220;Enlightenment is a lofty word, but its reality is something quite ordinary. Th enlightened person is simply the person who isn&amp;#8217;t selfish, who sees things as they really are, loves them, and acts out of that love. With zazen practice we see a world that is lovely, and that calls out to us to participate in it. We are glad to do it. We can&amp;#8217;t not do it.&amp;#8221; (pg xxix)&lt;/p&gt;</description>
+				<pubDate>Wed, 15 Apr 2015</pubDate>
+				<link>http://www.wickerbox.net//2015/04/zen</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2015/04/zen</guid>
+			</item>
 		
 			<item>
 				<title>Carb Sync Shield</title>
 				<description>&lt;p&gt;I worked with Tom Hogue (&lt;a href=&quot;http://www.venturerider.org/forum/showthread.php?73158-Built-a-digital-carb-sync&quot;&gt;tz89 from the Venture Rider forum&lt;/a&gt;) to translate his prototyped design onto a printed circuit board. He&amp;#8217;s done all of the software; my contributions were entirely in hardware.&lt;/p&gt;
 &lt;p&gt;The Carb Sync Shield monitors the up to six carburetors and displays the vacuum pressure in realtime on an &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; display so the user can make adjustments to the air/fuel mix in each cylinder.&lt;/p&gt;
 &lt;p&gt;There&amp;#8217;s an additional &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; feature that will be useful to set and monitor the idle speed on bikes that don&amp;#8217;t have a tachometer.&lt;/p&gt;
-&lt;img src=&quot;/images/project/carbshield/IMG_2433.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/carbshield/IMG_2433.JPG&quot;&gt;
 &lt;p&gt;The kit can be assembled by a novice using a basic soldering iron. The pressure sensors have extra-large surface mount pads and all other components are through-hole.&lt;/p&gt;
-&lt;img src=&quot;/images/project/carbshield/IMG_2304.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/carbshield/IMG_2304.JPG&quot;&gt;
 &lt;p&gt;The shield is compatible with both the &lt;a href=&quot;http://store.arduino.cc/product/A000066&quot;&gt;Arduino Uno v3&lt;/a&gt; and the Bluetooth-capable &lt;a href=&quot;http://redbearlab.com/blend/&quot;&gt;RedBear Blend v1&lt;/a&gt;. It displays the &lt;span class=&quot;caps&quot;&gt;RPM&lt;/span&gt; calculated from each of up to six simultaneous 3.3V or 5V pressure sensors on an &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; display which can be mounted directly or connected with the rainbow jumpers as shown above.&lt;/p&gt;
-&lt;img src=&quot;/images/project/carbshield/ardblend.png&quot;&gt;
+&lt;img src=&quot;/img/project/carbshield/ardblend.png&quot;&gt;
 &lt;p&gt;The board draws power from the carrier Uno or Blend board, which in turn can run off a 9V battery or a &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; plug. The blue trim potentiometer controls the brightness of the &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; so it&amp;#8217;s visible indoors or outdoors. The large switch sets the analog pressure sensor reference voltage to 3.3V or 5V. In the final version of the board, the switch is replaced with a 3-pin header and jumper cap.&lt;/p&gt;
 &lt;p&gt;Three digital I/O lines are broken out along with dedicated 5V or 3.3V pins to support extra sensors. It&amp;#8217;s up to the user to match the sensor voltage on the digital line to the expected operating voltage of the Uno or Blend.&lt;/p&gt;
 &lt;p&gt;We had the boards fabricated through &lt;a href=&quot;http://oshpark.com&quot;&gt;OSHPark&lt;/a&gt;, a local batch &lt;span class=&quot;caps&quot;&gt;PCB&lt;/span&gt; service based in Oregon, and did a successful test in early November on Tom&amp;#8217;s bike.&lt;/p&gt;
-&lt;img src=&quot;/images/project/carbshield/IMG_2436.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/carbshield/IMG_2438.JPG&quot;&gt;</description>
+&lt;img src=&quot;/img/project/carbshield/IMG_2436.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/carbshield/IMG_2438.JPG&quot;&gt;</description>
 				<pubDate>Mon, 10 Nov 2014</pubDate>
 				<link>http://www.wickerbox.net//2014/11/carb-sync-shield</link>
 				<guid isPermaLink="true">http://www.wickerbox.net//2014/11/carb-sync-shield</guid>
@@ -32,7 +40,7 @@
 &lt;p&gt;The modules have different pinouts, slightly different packages, and the UC15 takes 3.3V-4.3V while the M10 took 3.3V-4.6V, which is still fine for a 3.7V standard LiPo battery.&lt;/p&gt;
 &lt;p&gt;I got the boards back and did an initial build last week; I&amp;#8217;m working with a software dev so we&amp;#8217;re going to try to spin it up this week and see where we get.&lt;/p&gt;
 &lt;p&gt;The currently &lt;em&gt;untested&lt;/em&gt; hardware is available &lt;em&gt;for reference&lt;/em&gt; at the &lt;a href=&quot;http://github.com/wicker/cellphone3g&quot;&gt;GitHub repo&lt;/a&gt; and released as open hardware under the &lt;span class=&quot;caps&quot;&gt;MIT&lt;/span&gt; license. I will update this when it works.&lt;/p&gt;
-&lt;img src=&quot;/images/project/cellphone3g/finalboard.jpg&quot;&gt;
+&lt;img src=&quot;/img/project/cellphone3g/finalboard.jpg&quot;&gt;
 &lt;p&gt;&lt;strong&gt;Vocabulary&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;caps&quot;&gt;GSM&lt;/span&gt; &amp;#8211; Global System for Mobile Communications, 2G&lt;br /&gt;
 &lt;span class=&quot;caps&quot;&gt;GPRS&lt;/span&gt; &amp;#8211; General Packet Radio Services, packet data service on 2G and 3G&lt;br /&gt;
@@ -55,10 +63,10 @@
 &lt;p&gt;The display allows the user to program up to nine steps in a temperature profile. Each step lets the user specify a ramp rate, hold temperature, and hold time. Once all the steps are set, the user should set the relay enable switch to ON and then tell the program to begin running the profile.&lt;/p&gt;
 &lt;p&gt;The program automatically detects which thermocouples are present and uses the temperature as input to a &lt;span class=&quot;caps&quot;&gt;PID&lt;/span&gt; loop which controls ramp rate by turning on and off up to four relays which are, for our configuration, two heaters, one fan, and one vent.&lt;/p&gt;
 &lt;p&gt;The code and hardware is available &lt;a href=&quot;https://github.com/psas/mme-capstone/&quot;&gt;on Github in the &amp;#8216;oven-controller&amp;#8217;&lt;/a&gt; directory.&lt;/p&gt;
-&lt;img src=&quot;/images/project/ovenboardv3/067_1.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/ovenboardv3/068_1.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/ovenboardv3/088_1.JPG&quot;&gt;
-&lt;img class=&quot;vertimg&quot; src=&quot;/images/project/ovenboardv3/IMG_1836.JPG&quot;&gt;</description>
+&lt;img src=&quot;/img/project/ovenboardv3/067_1.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/ovenboardv3/068_1.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/ovenboardv3/088_1.JPG&quot;&gt;
+&lt;img class=&quot;vertimg&quot; src=&quot;/img/project/ovenboardv3/IMG_1836.JPG&quot;&gt;</description>
 				<pubDate>Mon, 01 Sep 2014</pubDate>
 				<link>http://www.wickerbox.net//2014/09/oven-control-board-v3</link>
 				<guid isPermaLink="true">http://www.wickerbox.net//2014/09/oven-control-board-v3</guid>
@@ -111,14 +119,14 @@
 &lt;p&gt;This project is open hardware and software licensed under the 3-clause &lt;span class=&quot;caps&quot;&gt;BSD&lt;/span&gt; license and maintained on the &lt;a href=&quot;http://psas.pdx.edu/&quot;&gt;Portland State Aerospace Society&lt;/a&gt;&amp;#8217;s &lt;a href=&quot;http://github.com/psas/&quot;&gt;Github account&lt;/a&gt;. You can find the bill of materials and Eagle schematics at &lt;a href=&quot;http://github.com/psas/gps-rf-board/&quot;&gt;psas/gps-rf-board&lt;/a&gt; and the software as part of &lt;a href=&quot;http://githbu.com/psas/stm32/&quot;&gt;psas/stm32&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It&amp;#8217;s been a big group effort in the push to get it talking; Andrew, K, Theo, and Kenny at least have helped out with software and modwire soldering, and I might have missed someone.&lt;/p&gt;
 &lt;h3&gt;Board Layout Overview&lt;/h3&gt;
-&lt;img src=&quot;/images/project/gpsboard/functional-block.png&quot;&gt;
+&lt;img src=&quot;/img/project/gpsboard/functional-block.png&quot;&gt;
 &lt;p&gt;The board has four layers and was ordered from &lt;a href=&quot;http://oshpark.com&quot;&gt;OSHPark&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Power&lt;/h3&gt;
 &lt;p&gt;We can power the board from Rocketnet Ethernet (up to 20V) or over &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; (about 5V) so we used an LMZ12001 switching regulator with an input voltage range from 4.5V to 20V to output 3.3V for the digital side of the board. We then used two ultra-low noise MAX8510 &lt;span class=&quot;caps&quot;&gt;LDO&lt;/span&gt; linear regulators to provide 2.85V on separate digital and analog supply lines for the RF side of the board.&lt;/p&gt;
 &lt;h3&gt;&lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;The &lt;a href=&quot;http://datasheets.maximintegrated.com/en/ds/MAX2769.pdf&quot;&gt;MAX2769&lt;/a&gt; is a tiny 28-pin universal &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; Receiver with a 1.4dB noise figure. The datasheet says we don&amp;#8217;t need external &lt;span class=&quot;caps&quot;&gt;SAW&lt;/span&gt; filters but we used them anyway. The chip has two &lt;span class=&quot;caps&quot;&gt;LNA&lt;/span&gt; inputs and the eval kit is set up for to support both passive and active antennas. We used the &lt;a href=&quot;http://datasheets.maximintegrated.com/en/ds/MAX2769EVKIT.pdf&quot;&gt;MAX2769 Eval Kit&lt;/a&gt; as a reference but it was a particularly difficult schematic to work with.&lt;/p&gt;
 &lt;p&gt;Our board has a single antenna attachment point with a couple of optional circuits that the user chooses by where you populate capacitors and resistors. Option #1 is whether or not to have an LNA1 and its &lt;span class=&quot;caps&quot;&gt;ANTBIAS&lt;/span&gt;-pin power circuit. Option #2 is whether to put into LNA1 or LNA2 on the chip.&lt;/p&gt;
-&lt;img src=&quot;/images/project/gpsboard/v2-rf-section.png&quot;&gt;
+&lt;img src=&quot;/img/project/gpsboard/v2-rf-section.png&quot;&gt;
 &lt;h3&gt;Output&lt;/h3&gt;
 &lt;p&gt;We use a 100-pin &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; Cortex-M3 STM32F407 running the Portland State Aerospace Society&amp;#8217;s version of ChibiOS to program the MAX2769 and to support &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt;, Ethernet, and an SD card. We also break out raw data signals at pin test points.&lt;/p&gt;
 &lt;p&gt;Ethernet requires the Portland State Aerospace Society&amp;#8217;s Rocketnet connector for programming, data streaming, and power.&lt;/p&gt;
@@ -126,10 +134,10 @@
 &lt;p&gt;The micro-SD card is available for data logging.&lt;/p&gt;
 &lt;p&gt;The serial breakout is two 1&amp;#215;11 0.1&amp;quot; headers which we also used for debug. We ran traces between the two breakouts because we were unsure about some of the pinouts from the MAX2769 and wanted to be sure we could cut traces and easily run modwire.&lt;/p&gt;
 &lt;h3&gt;Build&lt;/h3&gt;
-&lt;img src=&quot;/images/project/gpsboard/gpsboard-v2-board.png&quot;&gt;
-&lt;img src=&quot;/images/project/gpsboard/gpsboard-v2-build.png&quot;&gt;
+&lt;img src=&quot;/img/project/gpsboard/gpsboard-v2-board.png&quot;&gt;
+&lt;img src=&quot;/img/project/gpsboard/gpsboard-v2-build.png&quot;&gt;
 &lt;p&gt;This is the board installed on the avionics module that carries the flight computer, sensor packages, and battery packs. The green board on top is the commercial Crescent &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; unit. The purple board down below is the JennerGPS. They&amp;#8217;re both connected to the splitter in the middle, which runs off to the cylindrical patch antenna on the skin of the rocket.&lt;/p&gt;
-&lt;img class=&quot;vertimg&quot; src=&quot;/images/project/gpsboard/gpssystem.png&quot;&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;img class=&quot;vertimg&quot; src=&quot;/img/project/gpsboard/gpssystem.png&quot;&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
 &lt;h3&gt;Current Status&lt;/h3&gt;
 &lt;p&gt;The board was flown on the Portland State Aerospace Society&amp;#8217;s LV2.3 airframe for Launch 11 on July 20th, 2014, in Brothers, Oregon, to an altitude of 15,000 feet. The hardware was complete but the software on the board was not entirely ready for launch and, anyway, the entire &lt;span class=&quot;caps&quot;&gt;GPS&lt;/span&gt; system failed so no data was retrieved.&lt;/p&gt;
 &lt;p&gt;More information on the launch is available at &lt;a href=&quot;http://psas.pdx.edu/launch11/&quot;&gt;the &lt;span class=&quot;caps&quot;&gt;PSAS&lt;/span&gt; Launch 11 page&lt;/a&gt;.&lt;/p&gt;
@@ -140,18 +148,6 @@
 				<pubDate>Sun, 15 Jun 2014</pubDate>
 				<link>http://www.wickerbox.net//2014/06/gps-board-v2</link>
 				<guid isPermaLink="true">http://www.wickerbox.net//2014/06/gps-board-v2</guid>
-			</item>
-		
-			<item>
-				<title>Rocket Manufacturing Capstone</title>
-				<description>&lt;p&gt;The Portland State Aerospace Society is a fifteen-year old rocket club that puts really interesting, sophisticated electronics to stream back live rocket flight data and video in a thick, heavy, over-engineered metal airframe. It&amp;#8217;s occasionally been nice to have an overly durable airframe but most of the time it&amp;#8217;s just a pain.&lt;/p&gt;
-&lt;p&gt;We got lucky enough this year to convince veterans of Portland State&amp;#8217;s Formula &lt;span class=&quot;caps&quot;&gt;SAE&lt;/span&gt; team to not only design a carbon fiber rocket for their senior year mechanical engineering capstone, but to develop a manufacturing process for us electrical engineers and document the hell out of it.&lt;/p&gt;
-&lt;p&gt;As far as we&amp;#8217;re concerned, it turned into basically the best capstone ever. Their deliverables included a layup table, a 4&amp;#8242;&amp;#215;4&amp;#8242;&amp;#215;8&amp;#8242; curing oven, smaller mandrels for testing, lots of crushed and nearly-crushed modules from their strength tests, full-sized final mandrels for the final six-inch rocket, several regular rocket sections, one motor section, the retaining rings, an electronics carrier insert, prototype fins, a block of super-dense foam for the nose cone, and thousands of dollars in layup materials.&lt;/p&gt;
-&lt;p&gt;I worked with the team to develop the oven control box and I&amp;#8217;m working with them into the summer to develop the &lt;a href=&quot;http://psas.github.io/mme-capstone/&quot;&gt;rocket manufacturing page&lt;/a&gt; to store all the documentation. We&amp;#8217;re releasing everything as open source hardware.&lt;/p&gt;
-&lt;p&gt;They brought all their deliverables out to the Engineering Building plaza for the final capstone shindig right before graduation so I went down to check it out.&lt;/p&gt;</description>
-				<pubDate>Thu, 12 Jun 2014</pubDate>
-				<link>http://www.wickerbox.net//2014/06/rocket-manufacturing-capstone</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2014/06/rocket-manufacturing-capstone</guid>
 			</item>
 		
 			<item>
@@ -173,9 +169,9 @@
 				<description>&lt;p&gt;I went down to Salem for breakfast and then headed up through Elkhorn Valley to the Opal Creek Trailhead. Way too many people around and the bridge was out in Jawbone Flats so I hiked just about to the loop trail fork and then went back. I took more time to check out the mine entrances and to explore down by the river. Found a millipede and had some fun thinking of millipede robots.&lt;/p&gt;
 &lt;p&gt;The best part of this hike is definitely past Jawbone Flats at the Opal pools but the whole area is beautiful so it was a nice day.&lt;/p&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/7QkvHKyEzLC_TIuRWkoEapAu1578x0GLKp5M7n5tFw=w900-h242-no&quot;&gt;
-&lt;img src=&quot;/images/travels/opalcreek/1.png&quot;&gt;
-&lt;img src=&quot;/images/travels/opalcreek/2.png&quot;&gt;
-&lt;img src=&quot;/images/travels/opalcreek/3.png&quot;&gt;
+&lt;img src=&quot;/img/travels/opalcreek/1.png&quot;&gt;
+&lt;img src=&quot;/img/travels/opalcreek/2.png&quot;&gt;
+&lt;img src=&quot;/img/travels/opalcreek/3.png&quot;&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-jc73ihRtR_M/U4oT3mDddZI/AAAAAAAAGiQ/0hAENfU5eEQ/w900-h288-no/IMG_1786.JPG&quot;&gt;
 &lt;img src=&quot;https://lh6.googleusercontent.com/-LM8Gj6qXppw/U4oTaKZQB_I/AAAAAAAAGg0/YMbSuUSeGRU/w869-h652-no/IMG_1789.JPG&quot;&gt;
 &lt;img src=&quot;https://lh3.googleusercontent.com/-bgpJt-uVtuk/U4oTa9rGnsI/AAAAAAAAGh4/vQKGWsVrfJM/w869-h652-no/IMG_1792.JPG&quot;&gt;
@@ -190,19 +186,18 @@
 			</item>
 		
 			<item>
-				<title>STM32F4-Discovery Breakout Board</title>
-				<description>&lt;p&gt;The STM32F4-Discovery board is a really great dev board that breaks out all the pins to, unfortunately, male headers. All of my sensors have male pins so I finally gave up daisy-chaining female-to-male jumpers and decided to make a breakout board on the &lt;span class=&quot;caps&quot;&gt;LPKF&lt;/span&gt; router in the Electronics Prototyping Lab.&lt;/p&gt;
-&lt;p&gt;I was lucky enough to find Jason Lopez&amp;#8217;s Eagle schematic and footprint but I had trouble with the drills so I changed the drill size. Otherwise it saved me a ton of time and effort. Thanks, Jason!&lt;/p&gt;
-&lt;p&gt;This is the schematic and board layout for the two-layer board. It&amp;#8217;s really a one-layer board, as the vias aren&amp;#8217;t plated. I ran all the traces on the bottom side of the board so I could place the female headers through from the top.&lt;/p&gt;
-&lt;img src=&quot;/images/project/stm32f4discovery/discovery-breakout-sch.png&quot;&gt;
-&lt;img src=&quot;/images/project/stm32f4discovery/discovery-breakout-brd.png&quot;&gt;
-&lt;p&gt;There are four female headers so the dev board doesn&amp;#8217;t have to be soldered in and four more for the jumpers to attach.&lt;/p&gt;
-&lt;img src=&quot;/images/project/stm32f4discovery/IMG_1838.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/stm32f4discovery/IMG_1839.JPG&quot;&gt;
-&lt;img src=&quot;/images/project/stm32f4discovery/IMG_1840.JPG&quot;&gt;</description>
-				<pubDate>Sat, 24 May 2014</pubDate>
-				<link>http://www.wickerbox.net//2014/05/stm32f4-discovery-breakout</link>
-				<guid isPermaLink="true">http://www.wickerbox.net//2014/05/stm32f4-discovery-breakout</guid>
+				<title>Garden Update</title>
+				<description>&lt;p&gt;We&amp;#8217;re having our usual scattered, unpredictable mix of thunderstorms, warm rain, hail, brilliant sunshine, and blue skies, so the garden has exploded in size over the last couple of weeks.&lt;/p&gt;
+&lt;p&gt;The irrigation stuff arrived. My cat approves.&lt;/p&gt;
+&lt;img src=&quot;/img/project/garden2/IMG_1663_crop.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/garden2/IMG_1669.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/garden2/IMG_1670.JPG&quot;&gt;
+&lt;img src=&quot;/img/project/garden2/IMG_1673.JPG&quot;&gt;
+&lt;p&gt;My boss started tomatoes from seed and ended up with too many so I now have way more tomatoes than I know what to do with. I&amp;#8217;m going to move over some of the broccoli and cabbage from the right-hand box to the tomato box to make some room.&lt;/p&gt;
+&lt;img src=&quot;/img/project/garden2/IMG_1674.JPG&quot;&gt;</description>
+				<pubDate>Tue, 20 May 2014</pubDate>
+				<link>http://www.wickerbox.net//2014/05/garden-update</link>
+				<guid isPermaLink="true">http://www.wickerbox.net//2014/05/garden-update</guid>
 			</item>
 		
 	</channel>

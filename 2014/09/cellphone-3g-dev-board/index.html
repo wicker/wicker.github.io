@@ -1,52 +1,55 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Jenner Hanni</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-      <title>DIY Cellphone 3G Build | Jenner Hanni</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <link href="/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+  <link href="/css/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github-prettify-theme.css">
 
-  </head>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<body style="background-color: #fff;">
+</head>
 
-    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-    </div>
 
-    
-    
 
-    <div style="margin: 0 auto; width: 70%; text-align:center;">
-      <article>
+<body class="code-snippets-visible has-docked-nav">
 
-  <div style="padding: 20px; clear:both; border: 1px solid #c0c0c0;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/09/oven-control-board-v3">&laquo; Oven Control Board v3</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2014/11/carb-sync-shield">Carb Sync Shield &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+  <div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/making/">Making</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/thinking/">Thinking</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/traveling/">Traveling</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/collecting/">Collecting</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="title">DIY Cellphone 3G Build</div>
-  <p>September 2014 - Portland, Oregon</p>
+    <div class="docs-section">
+      <div class="row">
 
-  <p>David A Mellis designed a <a href="http://web.media.mit.edu/%7Emellis/gsm/">cellphone module</a> using the <a href="http://www.quectel.com/product/prodetail.aspx?id=14">Quectel <span class="caps">GSM</span>/<span class="caps">GPRS</span> M10 2G module</a> and the Arduino <span class="caps">GSM</span> Shield library. The 2G networks in Portland are on their way out so I updated David&#8217;s design with his permission and replaced the M10 with a <a href="http://www.quectel.com/product/prodetail.aspx?id=64">Quectel <span class="caps">UMTS</span>/<span class="caps">HSDPA</span> UC15 3G module</a>.</p>
+        
+        <div class="twelve columns"><h3>DIY Cellphone 3G Build</h3>
+
+<p>David A Mellis designed a <a href="http://web.media.mit.edu/%7Emellis/gsm/">cellphone module</a> using the <a href="http://www.quectel.com/product/prodetail.aspx?id=14">Quectel <span class="caps">GSM</span>/<span class="caps">GPRS</span> M10 2G module</a> and the Arduino <span class="caps">GSM</span> Shield library. The 2G networks in Portland are on their way out so I updated David&#8217;s design with his permission and replaced the M10 with a <a href="http://www.quectel.com/product/prodetail.aspx?id=64">Quectel <span class="caps">UMTS</span>/<span class="caps">HSDPA</span> UC15 3G module</a>.</p>
 <p>The modules have different pinouts, slightly different packages, and the UC15 takes 3.3V-4.3V while the M10 took 3.3V-4.6V, which is still fine for a 3.7V standard LiPo battery.</p>
 <p>I got the boards back and did an initial build last week; I&#8217;m working with a software dev so we&#8217;re going to try to spin it up this week and see where we get.</p>
 <p>The currently <em>untested</em> hardware is available <em>for reference</em> at the <a href="http://github.com/wicker/cellphone3g">GitHub repo</a> and released as open hardware under the <span class="caps">MIT</span> license. I will update this when it works.</p>
-<img src="/images/project/cellphone3g/finalboard.jpg">
+<img src="/img/project/cellphone3g/finalboard.jpg">
 <p><strong>Vocabulary</strong></p>
 <p><span class="caps">GSM</span> &#8211; Global System for Mobile Communications, 2G<br />
 <span class="caps">GPRS</span> &#8211; General Packet Radio Services, packet data service on 2G and 3G<br />
@@ -57,30 +60,12 @@
 <p>&#8220;General packet radio service (<span class="caps">GPRS</span>) is a packet oriented mobile data service on the 2G and 3G cellular communication system&#8217;s global system for mobile communications (<span class="caps">GSM</span>).&#8221; <a href="http://en.wikipedia.org/wiki/General_Packet_Radio_Service">Wikipedia</a></p>
 <p>&#8220;<span class="caps">UMTS</span> specifies a complete network system, which includes the radio access network (<span class="caps">UMTS</span> Terrestrial Radio Access Network, or <span class="caps">UTRAN</span>), the core network (Mobile Application Part, or <span class="caps">MAP</span>) and the authentication of users via <span class="caps">SIM</span> (subscriber identity module) cards.&#8221; <a href="http://en.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System">Wikipedia</a></p>
 <p>&#8220;High-Speed Downlink Packet Access (<span class="caps">HSDPA</span>) is an enhanced 3G (third-generation) mobile-telephony communications protocol in the High-Speed Packet Access (<span class="caps">HSPA</span>) family, also dubbed 3.5G, 3G+, or Turbo 3G, which allows networks based on Universal Mobile Telecommunications System (<span class="caps">UMTS</span>) to have higher data-transfer speeds and capacity.&#8221; <a href="https://github.com/wicker/cellphone3g/blob/master/en.wikipedia.org/wiki/High-Speed_Downlink_Packet_Access">Wikipedia</a></p>
+</div>
+        
 
-  <div style="padding: 20px; border: 1px solid #c0c0c0; clear:both;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/09/oven-control-board-v3">&laquo; Oven Control Board v3</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2014/11/carb-sync-shield">Carb Sync Shield &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+      </div> <!-- end row -->
+    </div> <!-- end docs-section -->
 
-</article>
-
-    </div>
-
-    <div style="clear:both;"></div>
-
-    
-      <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-      </div>
-    <div style="clear:both;"></div>
-
-    
-
-	</body>
-</html>
+  </div> 
+  
+</body></html>

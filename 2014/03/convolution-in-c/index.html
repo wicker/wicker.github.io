@@ -1,53 +1,56 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Jenner Hanni</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-      <title>Image Convolution in C | Jenner Hanni</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <link href="/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+  <link href="/css/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github-prettify-theme.css">
 
-  </head>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<body style="background-color: #fff;">
+</head>
 
-    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-    </div>
 
-    
-    
 
-    <div style="margin: 0 auto; width: 70%; text-align:center;">
-      <article>
+<body class="code-snippets-visible has-docked-nav">
 
-  <div style="padding: 20px; clear:both; border: 1px solid #c0c0c0;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/03/getpixels">&laquo; GetPixels</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2014/03/raised-beds">Building Raised Beds &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+  <div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/making/">Making</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/thinking/">Thinking</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/traveling/">Traveling</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/collecting/">Collecting</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="title">Image Convolution in C</div>
-  <p>March 2014 - Portland, Oregon</p>
+    <div class="docs-section">
+      <div class="row">
 
-  <h5>Introduction</h5>
+        
+        <div class="twelve columns"><h3>Image Convolution in C</h3>
+
+<h5>Introduction</h5>
 <p>This project performs pixel-by-pixel convolution on a 2-dimensional image of height and width less than 900 pixels. I wanted to really grok convolution and I wanted a program I could run on the command line with a script so I could compare different kernel matrices.</p>
 <p>Apart from the convolution program itself, I wrote a small helper program called GetPixels that uses OpenCV to turn an image into a text file of grayscale pixel values and vice versa.</p>
 <p>This project follows from my previous <a href="#">SystemVerilog</a> implementation but I lack access to a decent SysV simulator and felt C would work just fine.</p>
 <p>The code is available at <a href="http://github.com/wicker/image-processing/">my GitHub repository</a>.</p>
-<img src="/images/project/convolution/c-introimg.png">
+<img src="/img/project/convolution/c-introimg.png">
 <h5>GetPixels</h5>
 <p>First of all, the convolution program takes a text file of 8-bit grayscale pixel values with values between 0 (black) and 255 (white). GetPixels is a small OpenCV-based tool to turn a gray or color image into a text file of pixel values and back again. Check out <a href="/2014/03/getpixels/">the full GetPixels instructions here</a>.</p>
 <p>Basically, GetPixels takes an input <span class="caps">PNG</span> and outputs a text file with the grayscale value of the pixels separated by a space, like this:</p>
@@ -116,78 +119,78 @@
 <p>The image on the left is the original brokentop.png. The image on the right is what it&#8217;s turned into by GetPixels when the text file brokentop.txt is created.</p>
 <div class="convolution">Original image<br />
 <br />
-<img src="/images/project/convolution/results/brokentop.png"></div>
+<img src="/img/project/convolution/results/brokentop.png"></div>
 <div class="convolution">GetPixels result<br />
 <br />
-<img src="/images/project/convolution/results/results-delta.png"></div>
+<img src="/img/project/convolution/results/results-delta.png"></div>
 <div style="clear:both;"></div>
 <p>The script lets you quickly do things like compare the six operations above when normalized (flag set to &#8216;1&#8217;) and not normalized (flag set to &#8216;0&#8217;). Here are the results of the convolution operations when they are not normalized. They&#8217;re still very high noise, because the only filtering was high pass, which is effectively trying to find every edge in the image.</p>
 <div class="convolution">Horizontal Filter<br />
 -1 -1 -1 <br />
 2 2 2<br />
 -1 -1 -1<br />
-<img src="/images/project/convolution/not-normed/output-horz.png"></div>
+<img src="/img/project/convolution/not-normed/output-horz.png"></div>
 <div class="convolution">Sobel Horizontal Filter<br />
 -1 -2 -1<br />
 0 0 0 <br />
 1 2 1<br />
-<img src="/images/project/convolution/not-normed/output-sobel-h.png"></div>
+<img src="/img/project/convolution/not-normed/output-sobel-h.png"></div>
 <div style="clear:both;"></div>
 <div class="convolution">Vertical Filter<br />
 -1 2 -1<br />
 -1 2 -1<br />
 -1 2 -1<br />
-<img src="/images/project/convolution/not-normed/output-vert.png"></div>
+<img src="/img/project/convolution/not-normed/output-vert.png"></div>
 <div class="convolution">Sobel Vertical Filter<br />
 -1 0 1 <br />
 -2 0 2<br />
 -1 0 1<br />
-<img src="/images/project/convolution/not-normed/output-sobel-v.png"></div>
+<img src="/img/project/convolution/not-normed/output-sobel-v.png"></div>
 <div style="clear:both;"></div>
 <div class="convolution">45 Degrees<br />
 -1 -1 2<br />
 -1 2 -1<br />
 2 -1 -1<br />
-<img src="/images/project/convolution/not-normed/output-45deg.png"></div>
+<img src="/img/project/convolution/not-normed/output-45deg.png"></div>
 <div class="convolution">135 Degrees<br />
 2 -1 -1<br />
 -1 2 -1<br />
 -1 -1 2<br />
-<img src="/images/project/convolution/not-normed/output-135deg.png"></div>
+<img src="/img/project/convolution/not-normed/output-135deg.png"></div>
 <div style="clear:both;"></div>
 <p>Normalizing, on the other hand, provides a low pass effect and helps to smooth out the resulting image. These images were normalized after the filter. I ran the script in a fresh directory but passed a &#8216;1&#8217; to the <code>&lt;norm&gt;</code> flag instead of a 0. You can tell these are much more useful images.</p>
 <div class="convolution">Horizontal Filter<br />
 -1 -1 -1 <br />
 2 2 2<br />
 -1 -1 -1<br />
-<img src="/images/project/convolution/normed/output-horz.png"></div>
+<img src="/img/project/convolution/normed/output-horz.png"></div>
 <div class="convolution">Sobel Horizontal Filter<br />
 -1 -2 -1<br />
 0 0 0 <br />
 1 2 1<br />
-<img src="/images/project/convolution/normed/output-sobel-h.png"></div>
+<img src="/img/project/convolution/normed/output-sobel-h.png"></div>
 <div style="clear:both;"></div>
 <div class="convolution">Vertical Filter<br />
 -1 2 -1<br />
 -1 2 -1<br />
 -1 2 -1<br />
-<img src="/images/project/convolution/normed/output-vert.png"></div>
+<img src="/img/project/convolution/normed/output-vert.png"></div>
 <div class="convolution">Sobel Vertical Filter<br />
 -1 0 1 <br />
 -2 0 2<br />
 -1 0 1<br />
-<img src="/images/project/convolution/normed/output-sobel-v.png"></div>
+<img src="/img/project/convolution/normed/output-sobel-v.png"></div>
 <div style="clear:both;"></div>
 <div class="convolution">45 Degrees<br />
 -1 -1 2<br />
 -1 2 -1<br />
 2 -1 -1<br />
-<img src="/images/project/convolution/normed/output-45deg.png"></div>
+<img src="/img/project/convolution/normed/output-45deg.png"></div>
 <div class="convolution">135 Degrees<br />
 2 -1 -1<br />
 -1 2 -1<br />
 -1 -1 2<br />
-<img src="/images/project/convolution/normed/output-135deg.png"></div>
+<img src="/img/project/convolution/normed/output-135deg.png"></div>
 <div style="clear:both;"></div>
 <h5>How Convolution Works</h5>
 <p>Pixel by pixel, the kernel matrix is placed with the pixel of interest in the center. Each coefficient in the matrix is multiplied by the neighboring pixel it covers. The values are then added up and may or may not normalized.</p>
@@ -200,12 +203,12 @@
 &nbsp;<br />
 &nbsp;<br />
 &nbsp;<br />
-<img src="/images/project/convolution/results/brokentop.png"></div>
+<img src="/img/project/convolution/results/brokentop.png"></div>
 <div class="convolution">Delta function<br />
 0 0 0<br />
 0 1 0 <br />
 0 0 0<br />
-<img src="/images/project/convolution/results/results-delta.png"></div>
+<img src="/img/project/convolution/results/results-delta.png"></div>
 <div style="clear:both;"></div>
 <h5>Common Kernels &#8211; Rabbit Example</h5>
 <p>This is a set of examples showing high and low pass kernels from <a href="http://en.wikipedia.org/wiki/Kernel_%28image_processing%29">the Wikipedia image processing kernel page</a> on a Wikipedia Creative Commons-licensed rabbit image.</p>
@@ -214,73 +217,73 @@
 0 0 0<br />
 0 1 0 <br />
 0 0 0<br />
-<img src="/images/project/convolution/results/rabbit-kernel-delta.png"></div>
+<img src="/img/project/convolution/results/rabbit-kernel-delta.png"></div>
 <h5>Rabbit Example &#8211; Low Pass Filters</h5>
 <p>Low pass filters like a blur are generally normalized. The most common is a Gaussian distribution, which these are not. To get more of a blur, just enlarge the kernel.</p>
 <div class="convolution">Blur #1 (Normalized)<br />
 1 2 1 <br />
 2 4 2<br />
 1 2 1<br />
-<img src="/images/project/convolution/results/output-blur1.png"></div>
+<img src="/img/project/convolution/results/output-blur1.png"></div>
 <div class="convolution">Blur #2 (Normalized)<br />
 1 1 1 <br />
 1 1 1 <br />
 1 1 1 <br />
-<img src="/images/project/convolution/results/output-blur2.png"></div>
+<img src="/img/project/convolution/results/output-blur2.png"></div>
 <h5>Rabbit Example &#8211; High Pass Filters</h5>
 <p>High Pass filters are used for edge enhancement, edge detection, embossing, sharpening, or any operation where you want to bring attention to the difference between two pixels. The sharpen operation below is not normalized; the others are.</p>
 <div class="convolution">Sharpen<br />
 0 -1 0 <br />
 -1 5 -1<br />
 0 -1 0<br />
-<img src="/images/project/convolution/results/sharpen.png"></div>
+<img src="/img/project/convolution/results/sharpen.png"></div>
 <div class="convolution">Edge #1<br />
 1 0 -1<br />
 0 0 0 <br />
 -1 0 1<br />
-<img src="/images/project/convolution/results/rabbit-kernel-edge1.png"></div>
+<img src="/img/project/convolution/results/rabbit-kernel-edge1.png"></div>
 <div class="convolution">Edge #2<br />
 0 1 0 <br />
 1 -4 1 <br />
 0 1 0<br />
-<img src="/images/project/convolution/results/rabbit-kernel-edge2.png"></div>
+<img src="/img/project/convolution/results/rabbit-kernel-edge2.png"></div>
 <div class="convolution">Edge #3<br />
 -1 -1 -1 <br />
 -1 8 -1 <br />
 -1 -1 -1<br />
-<img src="/images/project/convolution/results/rabbit-kernel-edge3.png"></div>
+<img src="/img/project/convolution/results/rabbit-kernel-edge3.png"></div>
 <h5>Kernel Sum (Brightness)</h5>
 <p>There are three things &#8211; luminance (brightness), hue, and saturation. We&#8217;re working with grayscale values so we ignore hue and saturation. We&#8217;re left with an 8-bit brightness value. That means that if the sum of our kernel is greater than one, we&#8217;re going to get pixel values at greater than we started with, which is a brighter image. If the kernel is less than one, we&#8217;ll get a darker image.</p>
 <div class="convolution">Edge (Sum = -2)<br />
 0 1 0 <br />
 1 -6 1 <br />
 0 1 0<br />
-<img src="/images/project/convolution/laplace-pos/output-sum-m2.png"></div>
+<img src="/img/project/convolution/laplace-pos/output-sum-m2.png"></div>
 <div class="convolution">Edge (Sum = -1)<br />
 0 1 0 <br />
 1 -5 1 <br />
 0 1 0<br />
-<img src="/images/project/convolution/laplace-pos/output-sum-m1.png"></div>
+<img src="/img/project/convolution/laplace-pos/output-sum-m1.png"></div>
 <div class="convolution">Edge (Sum = 0)<br />
 0 1 0 <br />
 1 -4 1 <br />
 0 1 0<br />
-<img src="/images/project/convolution/laplace-pos/output-sum-0.png"></div>
+<img src="/img/project/convolution/laplace-pos/output-sum-0.png"></div>
 <div class="convolution">Edge (Sum = 1)<br />
 0 1 0 <br />
 1 -3 1 <br />
 0 1 0<br />
-<img src="/images/project/convolution/laplace-pos/output-sum-p1.png"></div>
+<img src="/img/project/convolution/laplace-pos/output-sum-p1.png"></div>
 <div class="convolution">Edge (Sum = 2)<br />
 0 1 0 <br />
 1 -2 1 <br />
 0 1 0<br />
-<img src="/images/project/convolution/laplace-pos/output-sum-p2.png"></div>
+<img src="/img/project/convolution/laplace-pos/output-sum-p2.png"></div>
 <div class="convolution">Edge (Sum = 3)<br />
 0 1 0 <br />
 1 -1 1  <br />
 0 1 0<br />
-<img src="/images/project/convolution/laplace-pos/output-sum-p3.png"></div>
+<img src="/img/project/convolution/laplace-pos/output-sum-p3.png"></div>
 <h5>1D Examples</h5>
 <p>These two images just have the 1-dimensional horizontal matrix specified. The left image is a blur and the right is a 3&#215;3 edge.</p>
 <p><code>./GetPixels.o 1 brokentop.png brokentop.txt</code><br />
@@ -290,34 +293,16 @@
 <code>./GetPixels.o 2 1d-edge.png 1d-edge.txt 240 320</code></p>
 <div class="convolution">9&#215;9 Blur (Normalized)<br />
 1 1 1 1 1 1 1 1 1 <br />
-<img src="/images/project/convolution/results/1d-blur.png"></div>
+<img src="/img/project/convolution/results/1d-blur.png"></div>
 <div class="convolution">3&#215;3 Edge (Normalized)<br />
 -1 0 1<br />
-<img src="/images/project/convolution/results/1d-edge.png"></div>
+<img src="/img/project/convolution/results/1d-edge.png"></div>
+</div>
+        
 
-  <div style="padding: 20px; border: 1px solid #c0c0c0; clear:both;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/03/getpixels">&laquo; GetPixels</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2014/03/raised-beds">Building Raised Beds &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+      </div> <!-- end row -->
+    </div> <!-- end docs-section -->
 
-</article>
-
-    </div>
-
-    <div style="clear:both;"></div>
-
-    
-      <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-      </div>
-    <div style="clear:both;"></div>
-
-    
-
-	</body>
-</html>
+  </div> 
+  
+</body></html>

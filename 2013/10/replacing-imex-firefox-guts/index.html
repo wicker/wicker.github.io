@@ -1,52 +1,55 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Jenner Hanni</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-      <title>Replacing the IMEX Firefox guts | Jenner Hanni</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <link href="/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+  <link href="/css/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github-prettify-theme.css">
 
-  </head>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<body style="background-color: #fff;">
+</head>
 
-    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-    </div>
 
-    
-    
 
-    <div style="margin: 0 auto; width: 70%; text-align:center;">
-      <article>
+<body class="code-snippets-visible has-docked-nav">
 
-  <div style="padding: 20px; clear:both; border: 1px solid #c0c0c0;">
-     
-      <div style="float: left;"><a class="prev" href="/2013/10/building-the-sentinel-38mm">&laquo; Building the 38mm Sentinel Rocket</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2013/11/basic-driving-demo">Foxcar Drive and Turn Demo &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+  <div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/making/">Making</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/thinking/">Thinking</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/traveling/">Traveling</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/collecting/">Collecting</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="title">Replacing the IMEX Firefox guts</div>
-  <p>October 2013 - Portland, Oregon</p>
+    <div class="docs-section">
+      <div class="row">
 
-  <p>The Open Tech Lab just bought an <span class="caps">IMEX</span> Firefox brushed 1/10th RC truck. I want to make an autonomous RC car that can be a vision testing platform for our quadcopter.</p>
+        
+        <div class="twelve columns"><h3>Replacing the IMEX Firefox guts</h3>
+
+<p>The Open Tech Lab just bought an <span class="caps">IMEX</span> Firefox brushed 1/10th RC truck. I want to make an autonomous RC car that can be a vision testing platform for our quadcopter.</p>
 <p>I&#8217;m calling this project the Foxcar.</p>
-<img src="/images/project/foxcar/IMG_0385.png">
+<img src="/img/project/foxcar/IMG_0385.png">
 <p>I opened up the truck to see if I could solder my Raspberry Pi directly to the motor controller board but there were a couple chips I couldn&#8217;t identify, one of which looked like the microcontroller, so I decided to rip the guts out and replace them with my own electronics.</p>
-<img src="/images/project/foxcar/IMEXBoard.png">
+<img src="/img/project/foxcar/IMEXBoard.png">
 <p>The Firefox has a single DC RC 550 motor and a 5-wire servo, running on a single 7.6V NiMH 1800 mAh battery. Probably this means the motor is a 6V motor. The parts were:</p>
 <p>1x AT1206 74C02N 8-pin <span class="caps">DIP</span> Probably a Quad 2-input <span class="caps">NAND</span>, <span class="caps">NOR</span>, or Hex Inverter<br />
 6x 531 T70 3-pin 72 A 25V N-channel Power MOSFETs. <br />
@@ -56,38 +59,20 @@
 1x AMP26002 25-pin square unknown<br />
 1x MX117 8-pin <span class="caps">DIP</span> Electric Toy DC Motor Drive Circuit H-Bridge Drive</p>
 <p>I took a good look at the configuration of the car. I didn&#8217;t want to replace the motor unless I had to, but the servo had to go.</p>
-<img src="/images/project/foxcar/IMG_0377.png">
+<img src="/img/project/foxcar/IMG_0377.png">
 <p>This is the board. I was surprised that the antenna is just a long piece of wire tucked up inside the antenna cover. The car ran great when I tested it back before I tore it apart. Hopefully it&#8217;ll work great after it&#8217;s all put back together&#8230;</p>
-<img src="/images/project/foxcar/IMG_0384.png">
+<img src="/img/project/foxcar/IMG_0384.png">
 <p>I already had an Adafruit Motor Shield and an Arduino. I hooked up a 6V DC motor and a 3-wire servo just to be sure it worked. I swapped servos on the car and hooked up the Arduino.</p>
-<img src="/images/project/foxcar/IMG_0380.png">
+<img src="/img/project/foxcar/IMG_0380.png">
 <p>My other 6V DC motor ran happily on the Adafruit example sketch but this motor just clicks in one direction or the other. I tried swapping the red and black wires (though it&#8217;s bi-directional, so not sure why that would make a difference) and I checked to be sure it has the three capacitors soldered to the motor itself for noise control.</p>
 <p>So figuring out the DC motor is the next piece. My three-wire servo works great, though.</p>
-<img src="/images/project/foxcar/foxcar_turns.gif">
+<img src="/img/project/foxcar/foxcar_turns.gif">
+</div>
+        
 
-  <div style="padding: 20px; border: 1px solid #c0c0c0; clear:both;">
-     
-      <div style="float: left;"><a class="prev" href="/2013/10/building-the-sentinel-38mm">&laquo; Building the 38mm Sentinel Rocket</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2013/11/basic-driving-demo">Foxcar Drive and Turn Demo &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+      </div> <!-- end row -->
+    </div> <!-- end docs-section -->
 
-</article>
-
-    </div>
-
-    <div style="clear:both;"></div>
-
-    
-      <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-      </div>
-    <div style="clear:both;"></div>
-
-    
-
-	</body>
-</html>
+  </div> 
+  
+</body></html>

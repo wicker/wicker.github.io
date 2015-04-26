@@ -1,80 +1,69 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Jenner Hanni</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-      <title>Carb Sync Shield | Jenner Hanni</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <link href="/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+  <link href="/css/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github-prettify-theme.css">
 
-  </head>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<body style="background-color: #fff;">
+</head>
 
-    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-    </div>
 
-    
-    
 
-    <div style="margin: 0 auto; width: 70%; text-align:center;">
-      <article>
+<body class="code-snippets-visible has-docked-nav">
 
-  <div style="padding: 20px; clear:both; border: 1px solid #c0c0c0;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/09/cellphone-3g-dev-board">&laquo; DIY Cellphone 3G Build</a></div>
-     
-     
-    <div style="clear:both;"></div>
-  </div>
+  <div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/making/">Making</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/thinking/">Thinking</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/traveling/">Traveling</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/collecting/">Collecting</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="title">Carb Sync Shield</div>
-  <p>November 2014 - Portland, Oregon</p>
+    <div class="docs-section">
+      <div class="row">
 
-  <p>I worked with Tom Hogue (<a href="http://www.venturerider.org/forum/showthread.php?73158-Built-a-digital-carb-sync">tz89 from the Venture Rider forum</a>) to translate his prototyped design onto a printed circuit board. He&#8217;s done all of the software; my contributions were entirely in hardware.</p>
+        
+        <div class="twelve columns"><h3>Carb Sync Shield</h3>
+
+<p>I worked with Tom Hogue (<a href="http://www.venturerider.org/forum/showthread.php?73158-Built-a-digital-carb-sync">tz89 from the Venture Rider forum</a>) to translate his prototyped design onto a printed circuit board. He&#8217;s done all of the software; my contributions were entirely in hardware.</p>
 <p>The Carb Sync Shield monitors the up to six carburetors and displays the vacuum pressure in realtime on an <span class="caps">LCD</span> display so the user can make adjustments to the air/fuel mix in each cylinder.</p>
 <p>There&#8217;s an additional <span class="caps">RPM</span> feature that will be useful to set and monitor the idle speed on bikes that don&#8217;t have a tachometer.</p>
-<img src="/images/project/carbshield/IMG_2433.JPG">
+<img src="/img/project/carbshield/IMG_2433.JPG">
 <p>The kit can be assembled by a novice using a basic soldering iron. The pressure sensors have extra-large surface mount pads and all other components are through-hole.</p>
-<img src="/images/project/carbshield/IMG_2304.JPG">
+<img src="/img/project/carbshield/IMG_2304.JPG">
 <p>The shield is compatible with both the <a href="http://store.arduino.cc/product/A000066">Arduino Uno v3</a> and the Bluetooth-capable <a href="http://redbearlab.com/blend/">RedBear Blend v1</a>. It displays the <span class="caps">RPM</span> calculated from each of up to six simultaneous 3.3V or 5V pressure sensors on an <span class="caps">LCD</span> display which can be mounted directly or connected with the rainbow jumpers as shown above.</p>
-<img src="/images/project/carbshield/ardblend.png">
+<img src="/img/project/carbshield/ardblend.png">
 <p>The board draws power from the carrier Uno or Blend board, which in turn can run off a 9V battery or a <span class="caps">USB</span> plug. The blue trim potentiometer controls the brightness of the <span class="caps">LCD</span> so it&#8217;s visible indoors or outdoors. The large switch sets the analog pressure sensor reference voltage to 3.3V or 5V. In the final version of the board, the switch is replaced with a 3-pin header and jumper cap.</p>
 <p>Three digital I/O lines are broken out along with dedicated 5V or 3.3V pins to support extra sensors. It&#8217;s up to the user to match the sensor voltage on the digital line to the expected operating voltage of the Uno or Blend.</p>
 <p>We had the boards fabricated through <a href="http://oshpark.com">OSHPark</a>, a local batch <span class="caps">PCB</span> service based in Oregon, and did a successful test in early November on Tom&#8217;s bike.</p>
-<img src="/images/project/carbshield/IMG_2436.JPG">
-<img src="/images/project/carbshield/IMG_2438.JPG">
+<img src="/img/project/carbshield/IMG_2436.JPG">
+<img src="/img/project/carbshield/IMG_2438.JPG">
+</div>
+        
 
-  <div style="padding: 20px; border: 1px solid #c0c0c0; clear:both;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/09/cellphone-3g-dev-board">&laquo; DIY Cellphone 3G Build</a></div>
-     
-     
-    <div style="clear:both;"></div>
-  </div>
+      </div> <!-- end row -->
+    </div> <!-- end docs-section -->
 
-</article>
-
-    </div>
-
-    <div style="clear:both;"></div>
-
-    
-      <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-      </div>
-    <div style="clear:both;"></div>
-
-    
-
-	</body>
-</html>
+  </div> 
+  
+</body></html>

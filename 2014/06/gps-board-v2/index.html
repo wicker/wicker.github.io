@@ -1,62 +1,65 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Jenner Hanni</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-      <title>GPS RF Front-end Board v2 | Jenner Hanni</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <link href="/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+  <link href="/css/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github-prettify-theme.css">
 
-  </head>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<body style="background-color: #fff;">
+</head>
 
-    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-    </div>
 
-    
-    
 
-    <div style="margin: 0 auto; width: 70%; text-align:center;">
-      <article>
+<body class="code-snippets-visible has-docked-nav">
 
-  <div style="padding: 20px; clear:both; border: 1px solid #c0c0c0;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/06/rocket-manufacturing-capstone">&laquo; Rocket Manufacturing Capstone</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2014/06/osbridge-open-hardware">From Breadboard to PCB &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+  <div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/making/">Making</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/thinking/">Thinking</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/traveling/">Traveling</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/collecting/">Collecting</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="title">GPS RF Front-end Board v2</div>
-  <p>June 2014 - Portland, Oregon</p>
+    <div class="docs-section">
+      <div class="row">
 
-  <p>Portland State University&#8217;s Maseeh College of Engineering and Computer Science runs an innovation program that awards small thousand-dollar grants to students working on interesting projects. In 2011 there were a handful of <span class="caps">GPS</span>-related projects that needed a way to work directly with the raw I/Q data coming from the <span class="caps">GPS</span> satellites before any processing or correlating had been done.</p>
+        
+        <div class="twelve columns"><h3>GPS RF Front-end Board v2</h3>
+
+<p>Portland State University&#8217;s Maseeh College of Engineering and Computer Science runs an innovation program that awards small thousand-dollar grants to students working on interesting projects. In 2011 there were a handful of <span class="caps">GPS</span>-related projects that needed a way to work directly with the raw I/Q data coming from the <span class="caps">GPS</span> satellites before any processing or correlating had been done.</p>
 <p>Commercial off-the-shelf <span class="caps">GPS</span> receivers are cheap and ubiquitous but they don&#8217;t expose that data. One of my mentors, Andrew Greenberg, developed an open source <span class="caps">GPS</span> receiver for his Masters thesis in 2005 and suggested I take a look at doing the same thing with current hardware. I said I would if he would help, so together we built a board, built a revision, and are in the process of figuring out what modifications will be needed for a third.</p>
 <p>The board isn&#8217;t a full <span class="caps">GPS</span> receiver. Instead, it&#8217;s an &#8220;RF front end&#8221; board that has a MAX2769 Universal <span class="caps">GPS</span> Receiver chip to read the <span class="caps">GPS</span> signals and pass them out over something that looks a lot like <span class="caps">SPI</span> but isn&#8217;t. We chose to place an STM32F407 microcontroller running the ChibiOS embedded operating system on the board to support streaming the data out over Ethernet and <span class="caps">USB</span>. We exposed the raw pins over a header between the MAX2769 and STM32F407 to allow a user to skip the microcontroller entirely. We also included an SD card to log the data.</p>
 <p>The board does not currently support a battery so it must be powered over <span class="caps">USB</span> or Ethernet at all times.</p>
 <p>This project is open hardware and software licensed under the 3-clause <span class="caps">BSD</span> license and maintained on the <a href="http://psas.pdx.edu/">Portland State Aerospace Society</a>&#8217;s <a href="http://github.com/psas/">Github account</a>. You can find the bill of materials and Eagle schematics at <a href="http://github.com/psas/gps-rf-board/">psas/gps-rf-board</a> and the software as part of <a href="http://githbu.com/psas/stm32/">psas/stm32</a>.</p>
 <p>It&#8217;s been a big group effort in the push to get it talking; Andrew, K, Theo, and Kenny at least have helped out with software and modwire soldering, and I might have missed someone.</p>
 <h3>Board Layout Overview</h3>
-<img src="/images/project/gpsboard/functional-block.png">
+<img src="/img/project/gpsboard/functional-block.png">
 <p>The board has four layers and was ordered from <a href="http://oshpark.com">OSHPark</a>.</p>
 <h3>Power</h3>
 <p>We can power the board from Rocketnet Ethernet (up to 20V) or over <span class="caps">USB</span> (about 5V) so we used an LMZ12001 switching regulator with an input voltage range from 4.5V to 20V to output 3.3V for the digital side of the board. We then used two ultra-low noise MAX8510 <span class="caps">LDO</span> linear regulators to provide 2.85V on separate digital and analog supply lines for the RF side of the board.</p>
 <h3><span class="caps">GPS</span></h3>
 <p>The <a href="http://datasheets.maximintegrated.com/en/ds/MAX2769.pdf">MAX2769</a> is a tiny 28-pin universal <span class="caps">GPS</span> Receiver with a 1.4dB noise figure. The datasheet says we don&#8217;t need external <span class="caps">SAW</span> filters but we used them anyway. The chip has two <span class="caps">LNA</span> inputs and the eval kit is set up for to support both passive and active antennas. We used the <a href="http://datasheets.maximintegrated.com/en/ds/MAX2769EVKIT.pdf">MAX2769 Eval Kit</a> as a reference but it was a particularly difficult schematic to work with.</p>
 <p>Our board has a single antenna attachment point with a couple of optional circuits that the user chooses by where you populate capacitors and resistors. Option #1 is whether or not to have an LNA1 and its <span class="caps">ANTBIAS</span>-pin power circuit. Option #2 is whether to put into LNA1 or LNA2 on the chip.</p>
-<img src="/images/project/gpsboard/v2-rf-section.png">
+<img src="/img/project/gpsboard/v2-rf-section.png">
 <h3>Output</h3>
 <p>We use a 100-pin <span class="caps">ARM</span> Cortex-M3 STM32F407 running the Portland State Aerospace Society&#8217;s version of ChibiOS to program the MAX2769 and to support <span class="caps">USB</span>, Ethernet, and an SD card. We also break out raw data signals at pin test points.</p>
 <p>Ethernet requires the Portland State Aerospace Society&#8217;s Rocketnet connector for programming, data streaming, and power.</p>
@@ -64,10 +67,10 @@
 <p>The micro-SD card is available for data logging.</p>
 <p>The serial breakout is two 1&#215;11 0.1&quot; headers which we also used for debug. We ran traces between the two breakouts because we were unsure about some of the pinouts from the MAX2769 and wanted to be sure we could cut traces and easily run modwire.</p>
 <h3>Build</h3>
-<img src="/images/project/gpsboard/gpsboard-v2-board.png">
-<img src="/images/project/gpsboard/gpsboard-v2-build.png">
+<img src="/img/project/gpsboard/gpsboard-v2-board.png">
+<img src="/img/project/gpsboard/gpsboard-v2-build.png">
 <p>This is the board installed on the avionics module that carries the flight computer, sensor packages, and battery packs. The green board on top is the commercial Crescent <span class="caps">GPS</span> unit. The purple board down below is the JennerGPS. They&#8217;re both connected to the splitter in the middle, which runs off to the cylindrical patch antenna on the skin of the rocket.</p>
-<img class="vertimg" src="/images/project/gpsboard/gpssystem.png"><div class="clear"></div>
+<img class="vertimg" src="/img/project/gpsboard/gpssystem.png"><div class="clear"></div>
 <h3>Current Status</h3>
 <p>The board was flown on the Portland State Aerospace Society&#8217;s LV2.3 airframe for Launch 11 on July 20th, 2014, in Brothers, Oregon, to an altitude of 15,000 feet. The hardware was complete but the software on the board was not entirely ready for launch and, anyway, the entire <span class="caps">GPS</span> system failed so no data was retrieved.</p>
 <p>More information on the launch is available at <a href="http://psas.pdx.edu/launch11/">the <span class="caps">PSAS</span> Launch 11 page</a>.</p>
@@ -75,30 +78,12 @@
 <p>The <a href="http://github.com/psas/gps-rf-board/">Github repository</a> has all the schematics. The current version is v2. We welcome collaboration but do please contact us before using the schematics because the repo may not have all current modifications.</p>
 <p>It was super helpful to reference <a href="http://swift-nav.com/piksi.html">Swift Navigation&#8217;s Piksi <span class="caps">GPS</span> Receiver</a> which uses the MAX2769 chip with an STM32F407 and <span class="caps">FPGA</span>.</p>
 <p>The first version of this board was funded by the <a href="http://www.pdx.edu/cecs/innovation-program"><span class="caps">MCECS</span> Innovation Program</a>.</p>
+</div>
+        
 
-  <div style="padding: 20px; border: 1px solid #c0c0c0; clear:both;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/06/rocket-manufacturing-capstone">&laquo; Rocket Manufacturing Capstone</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2014/06/osbridge-open-hardware">From Breadboard to PCB &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+      </div> <!-- end row -->
+    </div> <!-- end docs-section -->
 
-</article>
-
-    </div>
-
-    <div style="clear:both;"></div>
-
-    
-      <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-      </div>
-    <div style="clear:both;"></div>
-
-    
-
-	</body>
-</html>
+  </div> 
+  
+</body></html>

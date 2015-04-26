@@ -1,48 +1,51 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Jenner Hanni</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-      <title>From Breadboard to PCB | Jenner Hanni</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <link href="/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Belleza">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" >
+  <link href="/css/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github-prettify-theme.css">
 
-  </head>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<body style="background-color: #fff;">
+</head>
 
-    <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-    </div>
 
-    
-    
 
-    <div style="margin: 0 auto; width: 70%; text-align:center;">
-      <article>
+<body class="code-snippets-visible has-docked-nav">
 
-  <div style="padding: 20px; clear:both; border: 1px solid #c0c0c0;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/06/gps-board-v2">&laquo; GPS RF Front-end Board v2</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2014/06/nxrs-2014">L1 at NXRS 2014 &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+  <div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="/about/">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/making/">Making</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/thinking/">Thinking</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/traveling/">Traveling</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/collecting/">Collecting</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="title">From Breadboard to PCB</div>
-  <p>June 2014 - Portland, Oregon</p>
+    <div class="docs-section">
+      <div class="row">
 
-  <div style="margin-left: 20px; padding: 20px; float: left; background-color: #f5b400; color: #fff;"><b><span class="caps">COOKING</span></b></div>
+        
+        <div class="twelve columns"><h3>From Breadboard to PCB</h3>
+
+<div style="margin-left: 20px; padding: 20px; float: left; background-color: #f5b400; color: #fff;"><b><span class="caps">COOKING</span></b></div>
 <div style="float:left; padding: 20px;"><b>Open Hardware from Breadboard to <span class="caps">PCB</span></b></div>
 <div class="clear"></div>
 <p>This is the <a href="http://opensourcebridge.org/sessions/1314">conference talk I gave at Open Source Bridge 2014</a> on June 26, 2014, at the Eliot Center in Portland, Oregon. I brought a handful of random printed circuit boards I&#8217;ve built in the last year and used a lot of photos to walk through the process of drawing the circuit, routing the board, and assembling the finished product. It was meant to be for people who&#8217;ve built breadboard circuits but would like to do their own printed circuit boards; the idea was to at least walk through the process once to introduce some Googleable vocabulary.</p>
@@ -55,30 +58,12 @@
 <p>I’ll walk you through the hardware development process. I made two revisions of through-hole printed circuit boards using the router at the Electronics Prototyping Lab at Portland State. Then I modified the design to interface between an Arduino and an Adafruit display shield. The final surface mount version went off to OSHPark, a locally-run <span class="caps">PCB</span> service.</p>
 <p>I’ll bring all three versions of the boards and we’ll talk through what, how, and why they turned out the way they did — particularly why I used Eagle instead of the open source KiCad, when to use surface mount vs through-hole parts, the trade-offs in quality of circuit boards and when to make the jump to OSHPark, cost of components, how to navigate Mouser or Digikey as opposed to Adafruit or Sparkfun, what open source license to use, and further resources for open hardware in the Portland area.</p>
 <p>I’m not evangelizing the Arduino, only using it as an example, so I’ll bring and briefly introduce it but you don’t have to be familiar. The talk will be friendly to complete beginners but it’s intended to be very useful to anyone with some experience building breadboard circuits who wants to take the next step.</p>
+</div>
+        
 
-  <div style="padding: 20px; border: 1px solid #c0c0c0; clear:both;">
-     
-      <div style="float: left;"><a class="prev" href="/2014/06/gps-board-v2">&laquo; GPS RF Front-end Board v2</a></div>
-     
-     
-      <div style="float: right;"><a class="next" href="/2014/06/nxrs-2014">L1 at NXRS 2014 &raquo;</a></div>
-     
-    <div style="clear:both;"></div>
-  </div>
+      </div> <!-- end row -->
+    </div> <!-- end docs-section -->
 
-</article>
-
-    </div>
-
-    <div style="clear:both;"></div>
-
-    
-      <div style="margin: 20px auto; width: 80%; text-align:center; border-top: #c0c0c0 solid 1px; border-bottom: #c0c0c0 solid 1px; font-family: 'Belleza', serif; font-size: 1em; line-height: 3em;" >
-      <div style="float: left;"><a href="/">JennerHanni.net</a></div><a href="/about/">About</a> - <a href="/travels/">Travels</a> - <a href="/projects/">Projects</a> - <s>Notebook</s> - <a href="/endurance-days/">Etc</a><div style="float:right;"><a href="/feed.xml">RSS Feed</a> - <a href="http://github.com/wicker/">GitHub</a> - <a href="https://www.linkedin.com/profile/view?id=43039351">LinkedIn</a> - <a href="mailto:jeh.wicker@gmail.com">Email</a></div>
-      </div>
-    <div style="clear:both;"></div>
-
-    
-
-	</body>
-</html>
+  </div> 
+  
+</body></html>
