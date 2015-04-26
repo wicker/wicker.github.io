@@ -115,15 +115,6 @@
     color: #222; }
   .navbar-link.active {
     color: #33C3F0; }
-  .has-docked-nav .navbar {
-    position: fixed;
-    top: 0;
-    left: 0; }
-  .has-docked-nav .navbar-spacer {
-    display: block; }
-  /* Re-overiding the width 100% declaration to match size of % based container */
-  .has-docked-nav .navbar > .container {
-    width: 80%; }
 
 /* Larger than phone */
 @media (min-width: 550px) {
