@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% if page.splashpage %}
+    <title>{{ site.title }}</title>
+  {% else %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+  {% endif %}
+  
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/prettify.css">
+
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="row" style="margin: 10px 0;">
+      <div class="two columns center"><strong><a href="/">Home</a></strong></div>
+      <div class="two columns center"><strong><a href="/projects/">Projects</a></strong></div>
+      <div class="two columns center"><strong><a href="/travels/">Travels</a></strong></div>
+      <div class="two columns center"><strong><a href="/writing/">Writing</a></strong></div>
+      <div class="two columns center"><strong><a href="/other/">Other</a></strong></div>
+      <div class="two columns center"><strong><a href="/notes/">Notes</a></strong></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" style="margin: 50px 0;">
+      <div class="twelve columns">
+        <h4 style="text-align:center;">{{ site.title }}</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="two columns">&nbsp;</div>
+      <div class="eight columns">
+        {{ content }}
+      </div>
+      <div class="two columns">&nbsp;</div>
+    </div>
+  </div>
+
+</body>
+</html>
