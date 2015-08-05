@@ -1,0 +1,21 @@
+safe:        false
+port:        4000
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+
+future:      true
+lsi:         false
+highlighter: pygments
+markdown:    liquid
+permalink:   /:year/:month/:title
+
+title:       Jenner Hanni
+description: Electrical Engineer and Open Hardware Hacker
+base:        http://www.jennerhanni.net/
+author:      Jenner Hanni
+email:       jeh.wicker@gmail.com
+
+exclude:     [drafts, _site, scripts]
+
