@@ -1,0 +1,62 @@
+---
+layout: post
+title: Printed Circuit Board Build Day
+subcat: hardware
+image: /img/thumbs/pcb-build.png
+tags:
+- all
+- projects
+- hardware
+category: making
+year: 2013
+description: Making a stencil, board prep, solder paste, and reflow.
+location: Portland, Oregon
+---
+
+  <img src="https://lh5.googleusercontent.com/-e_Q_ODQDrD8/UshXaHUcylI/AAAAAAAAF7Y/KbcKTfW-j3U/s800/DSCF4113.png">
+
+  <img src="https://lh4.googleusercontent.com/-v4N0OkwWy1E/UshXaXo-wsI/AAAAAAAAF7c/hq0M1oHRZGo/s800/DSCF4114.png">
+
+  <img src="https://lh6.googleusercontent.com/-rksu4d0fcXo/UshXaBPNklI/AAAAAAAAF7Q/guLCIds-4b0/s800/DSCF4119.png">
+
+  <img src="https://lh6.googleusercontent.com/-a61eU3lItJs/UshXa5QuGpI/AAAAAAAAF7o/9QVegZ9-2GE/s800/DSCF4120.png">
+
+  <img src="https://lh4.googleusercontent.com/-UQ9C3xrwFg0/UshXa_NAJ-I/AAAAAAAAF7s/k-a49PMfC6Y/s800/DSCF4122.png">
+
+  <img src="https://lh4.googleusercontent.com/-XrY6bpmiciM/UshXbt5Z8fI/AAAAAAAAF74/BUBIrA3o__o/s800/DSCF4126.png">
+
+  <img src="https://lh3.googleusercontent.com/-tE8GNU8L-RA/UshXcNC-j7I/AAAAAAAAF8E/SXifKH7BrNo/s800/DSCF4128.png">
+
+  <img src="https://lh5.googleusercontent.com/-lbQ0m3mHvx8/UshXcGeY1LI/AAAAAAAAF8A/XWAQcs0-0pg/s640/IMG_0913.png">
+
+  <img src="https://lh6.googleusercontent.com/-FYqRlST7hxE/UshXccHA4kI/AAAAAAAAF8Q/EMaO5EcW2ss/s640/IMG_0917.png">
+
+  <img src="https://lh4.googleusercontent.com/-LfPNQJX42dk/UshXc-Q4f7I/AAAAAAAAF8Y/HlH2ISAR5_0/s640/IMG_0920.png">
+
+  <img src="https://lh3.googleusercontent.com/-QlgZnw-sw0w/UshXdX2RimI/AAAAAAAAF8k/1-3BqYWvsYs/s800/IMG_0922.png">
+
+  <img src="https://lh4.googleusercontent.com/-ygwt_JDE4eE/UshXdWVmBII/AAAAAAAAF8c/3ZdilPWfC1I/s800/IMG_0924.png">
+
+  <img src="https://lh3.googleusercontent.com/-EvW3jy7bBgk/UshXd0YDnwI/AAAAAAAAF8w/qooO09ULo-Q/s800/IMG_0925.png">
+
+  <img src="https://lh6.googleusercontent.com/-xK7FdP7wvRw/UshXeegYKGI/AAAAAAAAF9A/gKri5JKT02E/s800/IMG_0929.png">
+
+  <img src="https://lh5.googleusercontent.com/-MJKwIyJPAEY/UshXea4nMhI/AAAAAAAAF84/U1CSPe9fxjc/s800/IMG_0930.png">
+
+  <img src="https://lh3.googleusercontent.com/-C56yRa1GbFI/UshXe_E7u-I/AAAAAAAAF9E/6VIrVRbFuHQ/s800/IMG_0931.png">
+
+  <img src="https://lh3.googleusercontent.com/-fkZd16Lt65k/UshXfSZVtYI/AAAAAAAAF9Q/PvLCxI4w8Ec/s800/IMG_0932.png">
+
+  <img src="https://lh5.googleusercontent.com/-nFuQ9zmk08U/UshXfnCmvcI/AAAAAAAAF9U/nHIrHKbN758/s800/IMG_0935.png">
+
+  <img src="https://lh3.googleusercontent.com/-nhQhzENg9Mg/UshXgCKen2I/AAAAAAAAF9c/YNrTa7M39kY/s800/IMG_0936.png">
+
+  <img src="https://lh5.googleusercontent.com/-a5aeRQaR-4A/UshXgNPUVRI/AAAAAAAAF9o/h3YCXHef4sA/s800/IMG_0938.png">
+
+  <img src="https://lh3.googleusercontent.com/-na7bgqShy3s/UshXgxHbjGI/AAAAAAAAF90/pEuzu0-y6oo/s800/IMG_0939.png">
+
+  <img src="https://lh5.googleusercontent.com/-YI05L2GZzpU/UshXgxuVMKI/AAAAAAAAF9w/TWSM3XEAP3E/s800/IMG_0941.png">
+
+  <img src="https://lh5.googleusercontent.com/-r7UIsKP1LdQ/UshXhdK3EKI/AAAAAAAAF98/dkEuSEvZjAE/s800/IMG_0943.png">
+
+

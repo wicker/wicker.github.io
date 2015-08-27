@@ -1,0 +1,136 @@
+--- 
+layout: post
+title: Deserts of the World 
+tags: 
+- all
+- desert
+- travels
+- marine corps
+- flying
+- yuma
+- sonora
+- colorado
+- arizona
+- california
+- utah
+subcat: western-states
+image: /img/thumbs/coloradoriver.png
+location: The World
+year: 2006-2011
+category: traveling
+userid: 117081002500022017940
+useralbum: DesertsOfTheWorld
+description: A selection of my deserts. More to come.
+comments: true
+key: Deserts
+---
+
+I'm from lush old growth forests full of ferns but I fell in love with fairydusters and ocotillo and the wide open expanse of the desert. Good flying weather and you can see where you're going. These are from North America and the Middle East. 
+
+ <img src="https://lh3.googleusercontent.com/-W6LOhcgZIeQ/T2KtgM88owI/AAAAAAAACck/zpQRvkwsO4s/w600-h450-no/desert-alasad-drybed.png">
+
+A river in July near Al Asad Air Base in Iraq
+
+ <img src="https://lh4.googleusercontent.com/-gNvbEf7REN0/T2KtgAOlzxI/AAAAAAAACco/Equlbk_WDs4/w600-h450-no/desert-alasad-endless.png">
+
+No really, it goes on forever. Al Asad Air Base, Iraq.
+
+ <img src="https://lh5.googleusercontent.com/-tcw9DtCM1FM/T2KtgYY1A6I/AAAAAAAACcw/ATQxa-hfdTQ/w600-h450-no/desert-alasad-palmgrove.png">
+
+Not Abraham's Palm Grove, Al Asad Air Base, Iraq.
+
+ <img src="https://lh3.googleusercontent.com/-h-2KE1KK_Js/T2Kthb3n2QI/AAAAAAAACdA/GOL8sy-vUEk/w600-h450-no/desert-alasad-rainstorm.png">
+
+The sky after an epic rainstorm. Al Asad Air Base, Iraq.
+
+ <img src="https://lh5.googleusercontent.com/-L5p4AEMIAzs/UdTI9rDVCJI/AAAAAAAAFYw/a1FCN2NeWvc/w695-h521-no/DSCF0031.JPG"> 
+
+Combined Scaled Career Day and Plane Crazy Saturday at Mojave Airport in California
+
+ <img src="https://lh3.googleusercontent.com/-w1z7o3C6Lio/T2KthaQx6RI/AAAAAAAACc8/sT79ZCeNx_g/w600-h450-no/desert-allamcanal.png">
+
+The All-American Canal that moves water from the Colorado River for Los Angeles.
+
+ <img src="https://lh5.googleusercontent.com/-5gDEnXexkMU/T2KthcIGnjI/AAAAAAAACdE/8PAYPl-EBsg/w600-h280-no/desert-coriver.png">
+
+Kayaking on the Colorado River near Yuma, Arizona
+
+ <img src="https://lh3.googleusercontent.com/-NLLwGaZ6WIg/T2KtiQ6bINI/AAAAAAAACdc/7OBCJ1M1YGU/w600-h450-no/desert-doha-outsidewalls.png">
+
+Outside the city walls of Doha, Qatar
+
+ <img src="https://lh4.googleusercontent.com/-yetE3f4UydY/T2Ktitr3D8I/AAAAAAAACdU/jopTLTeCL6g/w600-h450-no/desert-euphrates.png">
+
+Euphrates River in July, Al Asad Air Base, Iraq.
+
+ <img src="https://lh3.googleusercontent.com/-ntvIuUPBEYc/T2Kti9QD0dI/AAAAAAAACdk/d5MFNm99x5E/w600-h450-no/desert-flooded-fields.png">
+
+Date fields flooded in the evening for more efficient irrigation. Yuma, Arizona.
+
+ <img src="https://lh4.googleusercontent.com/-wgg5bG4r_oY/T2KtjcymyUI/AAAAAAAACds/vbSNuM_2rQU/w600-h450-no/desert-hazy.png">
+
+A hazy afternoon in flight. Arizona.
+
+ <img src="https://lh5.googleusercontent.com/-GW8hetlf1ns/T2KtjmOYLhI/AAAAAAAACd0/JQ549UZhyXc/w600-h450-no/desert-kittpeak.png">
+
+Looking toward Kitt Peak. Tucson, Arizona.
+
+ <img src="https://lh6.googleusercontent.com/-h1cgtzRsm6E/T2Ktjm9iVCI/AAAAAAAACdw/R_0TvM9N62I/w600-h237-no/desert-kofa-screeocotillo.png">
+
+A lone Ocotillo in Kofa National Wildlife Refuge, Arizona.
+
+ <img src="https://lh4.googleusercontent.com/-AWQvR2wR2mM/T2Ktj_zaUbI/AAAAAAAACeE/TtIh6oLMRoo/w600-h450-no/desert-mexico.png">
+
+That there way lies Mexico. Taken over Tucson? Or was it Nogales?
+
+ <img src="https://lh3.googleusercontent.com/-eP75fQYYRz8/T2KtksOOvaI/AAAAAAAACeM/fq4DrRhfS_Y/w600-h450-no/desert-mittry-lake.png">
+
+Mittry Lake north of Yuma, Arizona.
+
+ <img src="https://lh3.googleusercontent.com/-kApf06RnWi0/T2Ktkgyo2oI/AAAAAAAACeQ/X09I1bxSY20/w600-h450-no/desert-mittry-redpond.png">
+
+A small pond, likely high in iron, near Mittry Lake, Arizona.
+
+ <img src="https://lh6.googleusercontent.com/-uF8pe4YSklc/T2KtlFOlIII/AAAAAAAACec/ZVLyfj21_qs/w600-h450-no/desert-mojave-bubbledcliffs.png">
+
+Air pockets from hot lava blew out holes in the rock. Mojave National Preserve
+
+ <img src="https://lh5.googleusercontent.com/-8ugPLCVZNYM/T2KtlqWsrJI/AAAAAAAACeo/gqp7OeuGDuQ/w600-h450-no/desert-mojave.png">
+
+Mojave National Preserve, California
+
+ <img src="https://lh6.googleusercontent.com/-T80lt7pXTL0/T2KtloabAfI/AAAAAAAACek/N3sBf53w73s/w600-h450-no/desert-palmcanyon.png">
+
+Palm Canyon contains Arizona's only native palms. Kofa National Wildlife Refuge.
+
+ <img src="https://lh6.googleusercontent.com/-Td0ldyTQjIg/T2KtmMGvzvI/AAAAAAAACe0/r_Zc6qHC4R8/w600-h450-no/desert-phoenix-chihuly.png">
+
+Dale Chihuly blown-glass installation at the Phoenix Desert Botanical Garden
+
+ <img src="https://lh4.googleusercontent.com/-ywaPjRzdvBI/T2Ktmp7N3iI/AAAAAAAACe8/ysLYyWDhRxo/w600-h450-no/desert-stockyards.png">
+
+Stockyards and farmland on the desert floor. Near Mohawk and Wells, Arizona.
+
+ <img src="https://lh6.googleusercontent.com/-EHm7npm6kD4/T2KtmgOludI/AAAAAAAACfE/oLfh2uDGVKk/w600-h450-no/desert-tucson.png">
+
+Cactus in the West Saguaro National Park. Tucson, Arizona.
+
+ <img src="https://lh3.googleusercontent.com/-YGamDawLCp0/T2KtnHBoBhI/AAAAAAAACfM/9sfAjfxIdyo/w600-h450-no/desert-yodaville.png">
+
+Yodaville in the wide expanse of the Barry Goldwater Bombing Range, Arizona.
+
+ <img src="https://lh6.googleusercontent.com/-wnpvQ1H_uHU/T2KtnLzf_iI/AAAAAAAACfU/vtGL7sDrU2s/w600-h450-no/desert-yuma-bridge.png">
+
+Swastika-inscribed bridge beside a defunct USRS 1930s dam near Mittry Lake, Arizona.
+
+ <img src="https://lh5.googleusercontent.com/-icHZsD0q82g/T2KtnWmVL7I/AAAAAAAACfY/r4_vtd1pMVA/w600-h450-no/desert-yuma-water.png">
+
+Running water hidden from the main road near Mittry Lake, Arizona.
+
+ <img src="https://lh5.googleusercontent.com/z5mTsw3hSd-3HWzXbfXqtVQMg3p5I65jNE3AlnvgMg=w695-h521-no">
+
+Northbound freight along the Deschutes River in Oregon's high desert.
+
+ <img src="https://lh3.googleusercontent.com/-sw9NWr5sW38/UdTLah6EnLI/AAAAAAAAFbI/JAy7bvBjvUc/w600-h450-no/DSCF3399.JPG">
+
+Launching a rocket near Brothers, Oregon

@@ -1,0 +1,35 @@
+---
+layout: post
+title: Oven Control Board v3
+subcat: hardware
+image: /img/thumbs/ovenboard3.png
+tags:
+- all
+- projects
+- hardware
+- oven
+category: making
+year: 2014
+description: Final product to make the oven more appliance-like.
+location: Portland, Oregon
+---
+
+This is the final version of the oven controller installed on a 4'x8'x4' curing oven at Portland State in the Mechanical Engineering department. 
+
+The blue case is 3D printed and gets attached to the side of the oven. The electronics are a three-board stack with an Arduino Uno R3 on the bottom; a custom oven control board set up in the middle with screw-in Euroterminals for start switch, relay, and thermocouple wires; and a 1.8" TFT LCD Shield from Adafruit for the display on top. 
+
+The display allows the user to program up to nine steps in a temperature profile. Each step lets the user specify a ramp rate, hold temperature, and hold time. Once all the steps are set, the user should set the relay enable switch to ON and then tell the program to begin running the profile. 
+
+The program automatically detects which thermocouples are present and uses the temperature as input to a PID loop which controls ramp rate by turning on and off up to four relays which are, for our configuration, two heaters, one fan, and one vent.
+
+The code and hardware is available <a href="https://github.com/psas/mme-capstone/">on Github in the 'oven-controller'</a> directory.
+  
+  <img src="/img/project/ovenboardv3/067_1.JPG">
+
+  <img src="/img/project/ovenboardv3/068_1.JPG">
+
+  <img src="/img/project/ovenboardv3/088_1.JPG">
+
+  <img class="vertimg" src="/img/project/ovenboardv3/IMG_1836.JPG">
+
+
