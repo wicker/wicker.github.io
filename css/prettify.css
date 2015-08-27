@@ -3,6 +3,7 @@ html, body {
 }
 
 .rounded {
+    margin: 0 auto; width: 80%;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
