@@ -3,6 +3,11 @@
   margin: 0 0 15px 0; 
   font-size: 13px;
 }
+.vertimg {
+  width: 50%;
+  float: left;
+}
+
 .convolution {
   text-align:center; width: 45%; margin: 10px;float: left;
 }
