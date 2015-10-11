@@ -1,0 +1,73 @@
+---
+layout: post
+title: Oven Control Board
+subcat: hardware
+image: /img/thumbs/ovenboard3.png
+description: Final product to make the oven more appliance-like.
+num: 20
+status: Complete
+---
+
+An ME capstone team at Portland State is working on an oven so we can cure our own composites. It's awesome. This oven control board was a five-day project that came out of nowhere this week on Tuesday and which I delivered on Sunday.  
+
+Tung, their electrical person, already had the design figured out and working with breadboard components and an Arduino. What he really wanted was an Arduino shield so we met, looked at what he had, and figured out how we'd put it on the right footprint. This is the first time I'd been able to sit with someone who was new to Eagle and really explain what makes a decent schematic, so it's pretty cool to see how much I've learned in just a couple of years.
+
+  <img src="/img/project/oven-control-board/ovenboard-schema.png">
+
+The layout was constrained by the shield but even moreso by our plan to use the LPKF router. It had to be a two-layer board that didn't have plated through-holes or vias. I managed to put all the traces except one on the bottom layer because all the components get soldered on the bottom side (they're all through-hole) and then I just made that a much wider polygon fill and dropped vias to get the top-trace signal connected down below.
+
+Unfortunately, Arduino shields sit on top of the Arduino so I had to drop an extra via on each pad of the 0.1" headers so copper wire could be slid through and squashed, essentially plating them myself. 
+
+  <img src="/img/project/oven-control-board/ovenboard-layout.png">
+
+The final product doesn't look too shabby. Well, I take that back -- the isolation on the LPKF is so tiny (even at the double-width!) that I'm terrified of putting too much solder on each pin and shorting it outside the pad. This is really crappy soldering but I ohmed everything out so electrically the joints are fine. 
+
+Definitely I've been spoiled with OSHPark and $5/sq in board with plated through-holes and solder mask. 
+
+The libraries and everything are all up in the <a href="https://github.com/wicker/oven-controller">oven-controller Github repo</a>.
+
+  <img src="/img/project/oven-control-board/ovenboard-top.png">
+
+  <img src="/img/project/oven-control-board/ovenboard-side.png">
+
+----
+
+I worked with Tung as part of the ME capstone team at Portland State to update the oven controller Arduino shield I made last week. Tung had already updated the Eagle schematic so this time for me it was just layout, routing, and basic soldering. I fixed the one via problem but then promptly made the same mistake on the other set of headers, so I delivered the board last night and it should work fine but the soldering was trickier than I'd like. 
+
+I'm still so spoiled by having OSHPark. The only Gerbers I give our lab's LPKF router are the Top Layer, Bottom Layer, Board Outline, and Unplated Drill. No silkscreen. I could solder mask but I haven't. Maybe next time. I used materials and headers I had on hand but even through OSHPark it'd be just under $30 for three boards. 
+
+  <img src="https://lh6.googleusercontent.com/-P-nseB4dS4Y/UxzddPMySEI/AAAAAAAAGTk/LwZbcyJE3lU/w655-h491-no/I.png">
+
+Here are the schematic, layout, and final photos. Eagle files are on the <a href="http://github.com/wicker/oven-controller/">Github repo</a>.
+
+  <img src="/img/project/oven-control-board/ovenboard2-schema1.png">
+
+  <img src="/img/project/oven-control-board/ovenboard2-schema2.png">
+
+  <img src="/img/project/oven-control-board/ovenboard2-toplayout.png">
+
+  <img src="/img/project/oven-control-board/ovenboard2-botlayout.png">
+
+  <img src="/img/project/oven-control-board/ovenboard2-top.png">
+
+
+----
+This is the final version of the oven controller installed on a 4'x8'x4' curing oven at Portland State in the Mechanical Engineering department. 
+
+The blue case is 3D printed and gets attached to the side of the oven. The electronics are a three-board stack with an Arduino Uno R3 on the bottom; a custom oven control board set up in the middle with screw-in Euroterminals for start switch, relay, and thermocouple wires; and a 1.8" TFT LCD Shield from Adafruit for the display on top. 
+
+The display allows the user to program up to nine steps in a temperature profile. Each step lets the user specify a ramp rate, hold temperature, and hold time. Once all the steps are set, the user should set the relay enable switch to ON and then tell the program to begin running the profile. 
+
+The program automatically detects which thermocouples are present and uses the temperature as input to a PID loop which controls ramp rate by turning on and off up to four relays which are, for our configuration, two heaters, one fan, and one vent.
+
+The code and hardware is available <a href="https://github.com/psas/mme-capstone/">on Github in the 'oven-controller'</a> directory.
+  
+  <img src="/img/project/ovenboardv3/067_1.JPG">
+
+  <img src="/img/project/ovenboardv3/068_1.JPG">
+
+  <img src="/img/project/ovenboardv3/088_1.JPG">
+
+  <img class="vertimg" src="/img/project/ovenboardv3/IMG_1836.JPG">
+
+

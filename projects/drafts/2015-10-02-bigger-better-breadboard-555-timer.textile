@@ -1,0 +1,48 @@
+---
+layout: post
+title: 555 Timer for the Bigger, Better Breadboard
+subcat: hardware
+image: /img/thumbs/carbsync.png
+description:
+num: 40
+status: Unfinished
+---
+
+Boostrappish page for the whole project
+Single Eagle Library with all components you need
+Eagle and KiCAD
+Bamboo, pine, or paper construction
+
+Adding your own components
+
+**Op Amp**
+
+**555 Timer**
+10uF 
+100k
+1.1 second
+
+10uF
+500k
+5.5 second
+
+4.7uF
+100k
+0.5 second
+
+4.7uF
+500k
+2.6 second
+
+47uF
+10uF
+4.7uF
+2.2uF
+10nF
+
+490k
+200k
+100k
+49k
+10k
+2k

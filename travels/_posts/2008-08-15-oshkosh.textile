@@ -1,0 +1,76 @@
+--- 
+layout: post
+title: Oshkosh Airshow
+subcat: Flying
+image: /img/thumbs/oshkosh.png
+location: Wisconsin
+year: 2008
+description: Attending the biggest general aviation airshow in the world. 
+---
+
+ <img src="https://lh5.googleusercontent.com/-URjSsgqjVVU/T2KyTDASr9I/AAAAAAAADXU/PzaPQDdhGPo/w550-h377-no/alphaposing.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-ZM-QZ3WhMFU/T2KyTGEVOfI/AAAAAAAADXc/HRZKgf1nrkk/w550-h350-no/alphalost.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-nn6fKHA2_3A/T2KyTFua7gI/AAAAAAAADXY/nF3zzFz-AuY/w550-h385-no/bobhoover.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-nc8Eu0gSRNY/T2KyTissCuI/AAAAAAAADX8/NA0Qy3PErps/w550-h386-no/canteencone.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-tECqRagwvrk/T2KyTibP5WI/AAAAAAAADXs/SDB8a0-W9LQ/w550-h385-no/line.jpg">
+
+ <img src="ihttps://lh4.googleusercontent.com/-ofSeBP-C_ys/T2KyTjNtW4I/AAAAAAAADXw/Sibwn0piV8I/w550-h355-no/nbb-all.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-1vAsrcq34Io/T2KyT0zZwWI/AAAAAAAADYE/yx5oHlszw04/w550-h355-no/nbb-alpha.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-vXq_mn_PbSo/T2KyUD_Q_-I/AAAAAAAADYI/LqBk6nmVh3I/w550-h352-no/othirst.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-9AEpngOhF2c/T2KyUHK-5BI/AAAAAAAADYM/lc99IaTqVPc/w550-h376-no/rutanlecture.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-j0e2niFctEg/T2KyU1F38fI/AAAAAAAADYg/McYV-soplaI/w550-h363-no/tbirdold.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-_HGyL6e1Drc/T2KyUlWkT0I/AAAAAAAADYY/3N1lxFLQzCM/w355-h498-no/watchingairshow.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-XwxxAPEoyac/T2KyU--SwKI/AAAAAAAADYo/usTwaP-YyNE/w304-h498-no/watermelon.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-kqXXQ7BFZoo/T2KyVbJkpEI/AAAAAAAADY0/wYa52xEW2wY/w550-h322-no/zebra.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-ws8B5RCWdvk/T2KyXeZRIxI/AAAAAAAADZQ/LIFAhuWckqg/w640-h480-no/15.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-t1CnWUOcz8k/T2KyXAwuePI/AAAAAAAADZE/xJ-U1L7c6NY/w640-h480-no/16.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-vnJLKuDDMxU/T2KyXI8233I/AAAAAAAADZA/e7LAzZez4ic/w640-h480-no/23.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-ANrfJwBZ9y0/T2KyYJTYvMI/AAAAAAAADZk/k5LR28c_w1w/w640-h480-no/24.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-9Ls3d3awWhg/T2KyXgEyQSI/AAAAAAAADZU/RdDyHpMR1tc/w640-h480-no/26.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-VZdyXtCQUDo/T2KyX0HJHII/AAAAAAAADZg/3xUpstE7vwQ/w640-h480-no/27.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-tz_cKsKnEoY/T2KyYZfKliI/AAAAAAAADZw/ZlzsZkPjNr4/w640-h480-no/28.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-BnUUVR4AGEo/T2KyYSbxDvI/AAAAAAAADZ0/BhOE7sKaxcw/w640-h480-no/29.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-Jx2w86fnUcs/T2KyYRgRtBI/AAAAAAAADZ4/4YLoO-cTOCU/w640-h480-no/30.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-13ANn7HdDGg/T2KyYqLE7jI/AAAAAAAADaE/AZVOcCnivTU/w640-h480-no/31.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-cao1JnYzhQ4/T2KyYypKNbI/AAAAAAAADaQ/5HeYzpGHYhw/w640-h480-no/33.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-L9uYNseyuxY/T2KyY1kYrrI/AAAAAAAADaM/Nl0vLbxD9DA/w640-h480-no/4.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-O7OPM4Xk4e0/T2KyajPS-JI/AAAAAAAADaw/5GBZYnwWph4/w600-h450-no/dscf0961.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-lpOG7bYJmyU/T2KyasoqwwI/AAAAAAAADak/tOSNvlN4NFY/w600-h450-no/dscf0968.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-p6XiuZpdgXw/T2KyaoQ1ZrI/AAAAAAAADao/D2LPWbbATJI/w600-h450-no/dscf0969.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-ll6y8EIhG80/T2KybDrFa6I/AAAAAAAADa4/yHVPyna5aCY/w600-h450-no/dscf0970.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-rfIJnLtNg_0/T2KybdTCYdI/AAAAAAAADbg/wNcFkUXtkPc/w600-h450-no/dscf0971.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-S6u98-GPQ6o/T2KybEACv1I/AAAAAAAADbE/kO2SOLp7lOU/w600-h450-no/dscf0973.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-_rROhCMxeLo/T2Kybf0tI3I/AAAAAAAADbU/4E82aBhZk8E/w600-h450-no/dscf0978.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-aPzLZQUv8BY/T2Kyb1letsI/AAAAAAAADbQ/SoTFjjn6r8s/w600-h450-no/dscf0992.jpg">
+

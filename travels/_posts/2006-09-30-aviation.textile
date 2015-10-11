@@ -1,0 +1,26 @@
+--- 
+layout: post
+title: Aviation
+subcat: Marine Corps
+image: /img/thumbs/aviation.png
+location: Iraq
+year: 2006
+description: Life in the air wing at Al Asad in 2006.
+---
+
+ <img src="https://lh4.googleusercontent.com/DTs7fPVChuY9SykjSdRkub_J4dU_OBqtbkczPBqjQQ=w600-h387-no">
+
+ <img src="https://lh6.googleusercontent.com/-Asbdb9b7GhE/TwzU2xBiHqI/AAAAAAAAAz0/iggdtRXgnVA/w600-h450-no/00364.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-2cm_vQ-Ssls/TwzU2cjU0DI/AAAAAAAAAzo/iuaUuMSVBEM/w600-h450-no/00443.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-JelAPg3OkoM/TwzU2aDe15I/AAAAAAAAAzk/0Qt3g_CoAc4/w600-h450-no/00445.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-ToyK82gcrvU/TwzU3X2vDfI/AAAAAAAAAz8/zvh8hvtixYY/w600-h450-no/00467.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-YiuawE2kB58/TwzU3sxca4I/AAAAAAAAA0E/9Vw64RqKIuQ/w389-h521-no/00472.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-ruYostwidaw/TwzU37gIJZI/AAAAAAAAA0Q/xznqj12nh3w/w600-h450-no/00484.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-JpURODIZNG0/TwzU361e7cI/AAAAAAAAA0I/wfQT4nkcTlk/w600-h450-no/img_1272.jpg">
+

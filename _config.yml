@@ -7,15 +7,13 @@ plugins:     ./_plugins
 
 future:      true
 lsi:         false
-highlighter: pygments
-markdown:    liquid
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink:   /:year/:month/:title
 
-title:       Jenner Hanni
-description: Electrical Engineer and Open Hardware Hacker
-base:        http://www.jennerhanni.net/
+title:       Engineer an Open World
+description: Notebooks 
 author:      Jenner Hanni
 email:       jeh.wicker@gmail.com
 
-exclude:     [drafts, _site, scripts]
+exclude:     [writing, drafts, _site, scripts, zim]
 

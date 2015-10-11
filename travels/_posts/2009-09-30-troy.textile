@@ -1,0 +1,46 @@
+--- 
+layout: post
+title: Generally accepted location of Troy
+subcat: Backpacking
+image: /img/thumbs/troy.png
+location: Turkey
+year: 2009
+description: Troy or not, it's not complete without a wooden horse.
+---
+
+ <img src="https://lh3.googleusercontent.com/-cltq8FHHYrs/T1vb0IqfhaI/AAAAAAAABno/gtMyVuz7m5c/w372-h498-no/DSCF2498.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-tAU6GfBzotE/T1vb0DnKOmI/AAAAAAAABnk/QdZV5xoHfKU/w600-h450-no/DSCF2503.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-4Uui3NsGh1M/T1vb0CzUaXI/AAAAAAAABns/3ZEXNDKIkUw/w372-h498-no/DSCF2505.JPG">
+
+ <img src="https://lh5.googleusercontent.com/-AL_U3o9tJJU/T1vb0aAQRhI/AAAAAAAABn8/DFCD5BZ1GT8/w372-h498-no/DSCF2507.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-ryG1KMAwW-Q/T1vb1I6_HGI/AAAAAAAABoY/tsVllu-HFIk/w600-h450-no/DSCF2510.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-Ax-s9Jt3_AI/T1vb0uqIYlI/AAAAAAAABoA/S75aIm440RQ/w600-h450-no/DSCF2511.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-5uIBR-V6kBM/T1vb090x-bI/AAAAAAAABoM/Cb_Zr1ed2FI/w600-h450-no/DSCF2513.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-uBM6gd33TiY/T1vb1JNQ0oI/AAAAAAAABoQ/K-nYG4ywlF0/w600-h450-no/DSCF2515.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-wNd_9pyS_PE/T1vb1Q8RLzI/AAAAAAAABog/97Mt55BTvzA/w600-h450-no/DSCF2521.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-rRiocO9gAak/T1vb1bHl7VI/AAAAAAAABok/vNHqKstCkMA/w372-h498-no/DSCF2522.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-L6mYDrCpoEE/T1vb1wttBuI/AAAAAAAABo0/2DQwea6Lhbs/w600-h450-no/DSCF2524.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-H8Q_UqBwiTo/T1vb18QgI-I/AAAAAAAABo4/f8CWjfyUhes/w600-h450-no/DSCF2530.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-GkGzfnSX69k/T1vb17V0A6I/AAAAAAAABpE/HyJiXsenFGg/w600-h450-no/DSCF2531.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-BYeauGVwjbY/T1vb2IG6HFI/AAAAAAAABpM/tpF1kYz_7sg/w600-h450-no/DSCF2542.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-xtEHikLxvNQ/T1vb2Gxs6_I/AAAAAAAABpI/a6umMZ1mtEA/w600-h450-no/DSCF2544.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-nAvBGb2Vi1s/T1vb22Zv4UI/AAAAAAAABpg/hd751rX8iVI/w600-h450-no/DSCF2546.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-46q3_ad7GzQ/T1vb2jnYa8I/AAAAAAAABpY/o7N3Fs59S00/w600-h450-no/DSCF2549.JPG">
+
+
+

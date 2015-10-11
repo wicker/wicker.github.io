@@ -1,0 +1,30 @@
+--- 
+layout: post
+title: Birthplace of Heraclitus
+subcat: Backpacking
+image: /img/thumbs/ephesus.png
+location: Turkey
+year: 2009
+description: Ruins of an ancient city and library.
+---
+
+ <img src="https://lh5.googleusercontent.com/-z7fVHAmj7MA/T1vc0O99IVI/AAAAAAAAB6Y/nOUJ6JtcSig/w600-h450-no/DSCF2719.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-mQmCTgqPLTI/T1vc0FHuewI/AAAAAAAAB6M/Y0WIS64o0dE/w600-h450-no/DSCF2721.JPG">
+
+ <img src="https://lh5.googleusercontent.com/-qr2mpePqQ18/T1vc0ATt3iI/AAAAAAAAB6Q/4ke_5v9zKy4/w600-h450-no/DSCF2760.JPG">
+
+ <img src="https://lh5.googleusercontent.com/-jiP76YUZ75w/T1vc075SY1I/AAAAAAAAB6w/6zdjp6YZoJE/w600-h450-no/DSCF2772.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-O5vlFZ88wn4/T1vc1benmNI/AAAAAAAAB6k/IRmckEW3Zi4/w600-h450-no/DSCF2774.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-Ne_x832JkaY/T1vc2E07ZUI/AAAAAAAAB68/PCbWDZVK-XU/w600-h450-no/DSCF2780.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-gkgLrsn5ClM/T1vc2DZ4ydI/AAAAAAAAB7E/mQgvYAeLsmg/w600-h450-no/DSCF2781.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-ZsVBB_FQb44/T1vc3OCED9I/AAAAAAAAB70/Of5Y17ThKMg/w600-h450-no/DSCF2795.JPG">
+
+ <img src="https://lh5.googleusercontent.com/-v-1w_Xo4x6Q/T1vc3di0dYI/AAAAAAAAB78/M1ECaD85hZE/w600-h450-no/DSCF2799.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-J5OtxgSdLHg/T1vc33WZR7I/AAAAAAAAB8U/ygYNkiQ6RRQ/w600-h450-no/DSCF2806.JPG">
+

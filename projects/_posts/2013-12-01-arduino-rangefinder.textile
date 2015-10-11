@@ -1,0 +1,78 @@
+---
+layout: post
+title: Arduino and a Rangefinder
+subcat: hardware
+image: /img/thumbs/rangefinder.png
+description: Making MIDI files from sampled rangefinder values using csvmidi.
+num: 14
+status: Unfinished
+---
+
+So there's something like eighty years of history behind a theremin. This isn't a theremin. This is me fucking around on a sleepy Saturday in Seattle with an ultrasonic rangefinder, an Arduino, and MIDI headers. But I got the idea because of theremins.
+
+I wanted to use the Arduino to sample the rangefinder and produce musical notes. 
+
+ <img src="https://jenner.smugmug.com/JennerHanniNet/i-2kCk4dv/0/M/rangefinder-M.png">
+
+I needed a reference for what the text of a MIDI file looks like in comma-separated values so I downloaded Avicii's Wake Me Up and used the midicsv script from Fourmilab to get the CSV file. Then I stripped out as much of the header as possible to see what it takes for timidity to still play it. Turns out a file with just this header will still play:
+
+<code>0, 0, Header, 0, 1, 120</code>
+<code>1, 0, Start_track</code>
+
+I wired the Maxbotix LV-EZ4 ultrasonic rangefinder to the Arduino via a protoshield and wrote a script to sample the rangefinder for a finite period of time and turn the distance measurements into octaves. I didn't make it output a file; you have to actually copy the results from the Arduino's serial monitor. Obviously it'd be better to just get a file and script the whole process.
+
+<div style="margin-left: 20px;">
+{% highlight c++  %}
+const int pwPin = 7;
+
+long pulse, inches, cm;
+int outOctave, count;
+
+void setup() {
+  count = 0;
+  
+  Serial.begin(9600);
+  Serial.println("0, 0, Header, 0, 1, 120");
+  Serial.println("1, 0, Start_track");
+}
+
+void loop() {
+  pinMode(pwPin, INPUT);
+  
+  pulse = pulseIn(pwPin, HIGH);
+  inches = pulse/147;
+  cm = inches * 2.54;
+  delay(250);
+  
+  if (inches <= 7)
+    outOctave = 10;
+  else if (inches >= 24)
+    outOctave = 120;
+  else
+    outOctave = inches*5;
+    
+  Serial.print("1, ");
+  Serial.print(count);
+  Serial.print(", Note_on_c, 11, ");
+  Serial.print(outOctave);
+  Serial.println(", 127");
+  
+  if (count > 2000)
+  {
+    Serial.print("1, ");
+    Serial.print(count + 50);
+    Serial.println(", End_track");
+    Serial.println("0, 0, End_of_file");
+    return;
+  }
+  count = count + 100;
+}
+{% endhighlight %}
+</div>
+
+I took the CSV file I'd made by copying and pasting and applied the csvmidi script in the other direction (CSV->MIDI). It's a pretty limited file, which you can play using timidity. 
+
+<a href="https://github.com/wicker/ardu-midi-ping/blob/master/results/wicker.mid?raw=true">Song is here</a> (MIDI)
+
+<a href="http://github.com/wicker/ardu-midi-ping/">Code is here</a> (Github)
+

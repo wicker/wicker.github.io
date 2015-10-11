@@ -1,0 +1,27 @@
+--- 
+layout: post
+title: Ship Life
+subcat: Marine Corps
+image: /img/thumbs/shiplife.png
+location: USS Tarawa
+year: 2008
+description: Passing the time aboard ship.
+---
+
+
+ <img src="https://lh5.googleusercontent.com/-S3qRmwpVV4g/T1W3XulVOMI/AAAAAAAABMU/a7UMDyIbA4I/w595-h446-no/dscf0035.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-_DiwBrl-zLA/T1W3XqrsquI/AAAAAAAABMY/UmANmPkM-MM/w391-h521-no/dscf0040.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-gr0rv_P5Qfs/T1W3YTBkDkI/AAAAAAAABM4/1m9jMcCTObg/w595-h446-no/dscf0627.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-hqDBXI8c23U/T1W3YyuV7QI/AAAAAAAABNY/csiItqXITK4/w595-h446-no/dscf0662.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-xKPhvMzLVQQ/T1W3Y4U_BEI/AAAAAAAABNU/wbv5HQXsYNw/w391-h521-no/dscf0775.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-4Nnf02dfScs/T1W3ZdfWnUI/AAAAAAAABOA/nvwbLNmeEnQ/w595-h446-no/dscf0820.jpg">
+
+ <img src="https://lh4.googleusercontent.com/--DI9KA3cswE/T1W3Zc-RYbI/AAAAAAAABN0/fnUm-qjUnp4/w595-h446-no/dscf0834.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-1uvVOua4IUk/T1W3ZYdUjII/AAAAAAAABNs/BkThR1CaDoM/w595-h446-no/dscf0807.jpg">
+

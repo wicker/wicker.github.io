@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  {% if page.splashpage %}
-    <title>{{ site.title }}</title>
-  {% else %}
-    <title>{{ page.title }} - {{ site.title }}</title>
-  {% endif %}
-  
+
   <meta charset="utf-8">
+  <title>{{ site.title }}</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% if page.mathjax %}
+  <script
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+type="text/javascript">
+</script>
+  {% endif %}
+
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/skeleton.css">
-  <link rel="stylesheet" href="/css/prettify.css">
-
-  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="/css/custom.css">
 
 </head>
-<body>
+<body class="code-snippets-visible">
 
-  <div class="container whitebg" style="margin-top: 20px;">
+  <div class="container outer">
+    {% if page.special %}
+    <section class="header" style="background-image: url(/img/mccall.png); background-size: cover; min-height: 400px;">
+    {% else %}
+    <section class="header" style="background-image: url(/img/coast.png); background-size: cover; min-height: 200px;">
+    {% endif %}
+      <a class="button button-primary" href="/" style="float:left;">Jenner Hanni</a>
+      <a class="button button-primary" href="/wickerbox/" style="float:right;">Wickerbox Electronics</a>
+    </section>
 
-    <div class="value-props row"> 
-      <section class="four columns value-prop" style="text-align:center;">
-        <strong>Jenner Hanni</strong><br />
-        <a href="/">About</a> - <a href="/projects/">Projects</a> - <a href="/travels/">Travels</a>
-        <br /><br />
-        <img src="/img/banner2.png" class="rounded">
-      </section>
-      <section class="seven columns value-prop" style="text-align:justify;">
-        {{ content }}
-      </section>
-      <section class="one column value-prop">&nbsp;</section>
-    </div>
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="/about/">About</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="/blog/">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="/projects/">Projects</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="/travels/">Travels</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
+    {% if page.special %}
+    {% else %}
+    <div style="text-align:justify;">{{ content }}</div>
+    {% endif %}
   </div>
 
 </body>

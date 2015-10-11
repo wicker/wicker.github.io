@@ -1,0 +1,46 @@
+--- 
+layout: post
+title: Ruins of Miletus
+subcat: Backpacking
+image: /img/thumbs/miletus.png
+location: Turkey
+year: 2009
+description: Ancient and influential city in western Turkey.
+---
+
+ <img src="https://lh6.googleusercontent.com/-BywDz4bH3SM/T1vcgn3M9cI/AAAAAAAAB10/hUPm6ufjeII/w600-h450-no/DSCF2637.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-mn-7TTAOTbE/T1vcg9EFjQI/AAAAAAAAB14/-HGkApvSJ7c/w600-h450-no/DSCF2638.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-Y04wjhft5dg/T1vchJd3yPI/AAAAAAAAB2M/FuPaSjKsOWY/w600-h450-no/DSCF2640.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-bUfz--SxRv0/T1vcgnrk6DI/AAAAAAAAB18/mPM6fiWdbxQ/w600-h450-no/DSCF2639.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-RWLtTA6exCM/T1vchWl-8EI/AAAAAAAAB2U/27ecw-MKHys/w600-h450-no/DSCF2641.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-V4i1T1Vjj2A/T1vchW0-C2I/AAAAAAAAB2w/kw28KPBc3Lg/w600-h450-no/DSCF2643.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-b1lPTOxfz3k/T1vchZkxd-I/AAAAAAAAB2c/AJodVFxCq0I/w600-h450-no/DSCF2644.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-ATu4r9ri0Y4/T1vchqVhU0I/AAAAAAAAB2k/1oie2nsAb3E/w600-h450-no/DSCF2645.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-pH5WwXyStnY/T1vch9SPl6I/AAAAAAAAB2s/La-Gu1W0zsQ/w600-h450-no/DSCF2646.JPG">
+
+ <img src="https://lh5.googleusercontent.com/-lDBKeYfZ2Ns/T1vciNQJ57I/AAAAAAAAB20/BCXt0LJxT2w/w600-h450-no/DSCF2648.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-a7OsRVgIUxU/T1vcidFvXrI/AAAAAAAAB3A/VIj6-JAGZrU/w406-h544-no/DSCF2655.JPG">
+
+ <img src="https://lh5.googleusercontent.com/-vGVeEUmYD98/T1vciQT0uZI/AAAAAAAAB3I/xCClkpMmg9w/w600-h450-no/DSCF2660.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-T9wNuPOSX54/T1vcit9B3bI/AAAAAAAAB3U/09LQDIL_dPA/w600-h450-no/DSCF2662.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-Jt-FP2JsdOc/T1vcinjkF6I/AAAAAAAAB3Y/NVoe8i9wbno/w600-h450-no/DSCF2664.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-2eqAjvwaY2M/T1vci2tddnI/AAAAAAAAB3c/n4py5mmtge0/w600-h450-no/DSCF2667.JPG">
+
+ <img src="https://lh5.googleusercontent.com/-5Ac8X_S0yM4/T1vcjc9Io5I/AAAAAAAAB3s/dULZ-VOzqs8/w600-h450-no/DSCF2672.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-3WFKIVfpMd4/T1vcjpOKTVI/AAAAAAAAB38/FyJnzdBD3pw/w600-h450-no/DSCF2673.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-Jv8AjcNySrE/T1vcjx9OtSI/AAAAAAAAB4A/7GCbRwRykdU/w406-h544-no/DSCF2678.JPG">
+

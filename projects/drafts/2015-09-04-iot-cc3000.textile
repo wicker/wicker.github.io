@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: IoT CC3000 Stack
+subcat: hardware 
+image: /img/thumbs/carbsync.png
+description:  
+num: 34
+status: Unfinished
+---
+
+Can I find a better WiFi chip that's not freaking $30?
+

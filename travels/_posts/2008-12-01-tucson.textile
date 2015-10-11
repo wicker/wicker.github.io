@@ -1,0 +1,33 @@
+--- 
+layout: post
+title: Ajo, Ryan, Pinal, Nogales
+subcat: Flying
+image: /img/thumbs/tucsontrip.png
+location: Arizona
+year: 2008
+description: A Saturday morning fly-out across southern Arizona.
+---
+
+ <img src="https://lh5.googleusercontent.com/R24NmW0agS3MMYnF0sKrCE3rxdI2Vj2h3ehlte8xhg=w600-h450-no">
+
+ <img src="https://lh4.googleusercontent.com/-esQi9LtBScA/T2KyHXNA-aI/AAAAAAAADUQ/iqjLCUfxK28/w600-h450-no/ajo-perpective.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-fbcks3foMHc/T2KyHZ7i7nI/AAAAAAAADUM/BmUADP_gJTQ/w600-h397-no/ajo-minebighole.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-E-1KDOsg-gI/T2KyHz7DGRI/AAAAAAAADUs/mVM8U7U_OO0/w600-h450-no/ajomine.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-6oYHmGq0EbI/T2KyIUKo-AI/AAAAAAAADVA/CwQUVw6n1gA/w600-h450-no/interesting.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-7LbeSFZbHig/T2KyISCHhbI/AAAAAAAADU4/VSGnM6CJytA/w600-h450-no/fields-flood.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-fv_x-c5Xei4/T2KyI8bjryI/AAAAAAAADVY/sNDMs1uh9Qc/w600-h450-no/pinal-bluejet.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-8uWwYIIB2nk/T2KyJV4q5HI/AAAAAAAADV0/l7n5gU649EE/w600-h450-no/pinal-yellow.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-Z61LhTZATdo/T2KyJXGaWFI/AAAAAAAADVw/Mvd64yjSi_8/w600-h450-no/pinal-jet.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-HGT_v4GOCFU/T2KyJjDzwEI/AAAAAAAADWE/xFjm-AWXEGI/w600-h450-no/ricksaves.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-uXu2sMTNvmA/T2KyJwD2wxI/AAAAAAAADWQ/GfZ0etEn91o/w600-h450-no/rickryan-me.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-pKye-M554Ek/T2KyKKeSF7I/AAAAAAAADWY/9EJDDibnauA/w600-h450-no/ryan-marinvy.jpg">

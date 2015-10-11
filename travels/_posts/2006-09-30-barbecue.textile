@@ -1,0 +1,23 @@
+--- 
+layout: post
+title: Downtime
+subcat: Marine Corps
+image: /img/thumbs/barbecue.png
+location: Iraq
+year: 2006
+description: Taking advantage of downtime.
+---
+
+ <img src="https://lh3.googleusercontent.com/-T7_GoTUoHow/TwzZ9sXEBmI/AAAAAAAAA58/TW0uthx2o-A/w391-h521-no/00069.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-dL1XNEL4GH8/TwzZ977cxhI/AAAAAAAAA6o/9MoaBPgd4zc/w600-h450-no/avisupp.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-_AWAubri4io/TwzZ9mrrBwI/AAAAAAAAA6A/XiyKxgDq8Z8/w600-h450-no/ballbounce.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-FNZIYm_1aj4/TwzZ-D0WQSI/AAAAAAAAA6M/beIjKch7hOc/w600-h450-no/helosinbound.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-0xUKI0YlYT4/TwzZ-EG8TWI/AAAAAAAAA6I/o8V3sqqNGLM/w600-h450-no/kirbycook.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-boqb9T8BIFc/TwzZ-hlVlxI/AAAAAAAAA6c/m5Q6eQivxTU/w500-h375-no/monopoly.jpg">
+
+

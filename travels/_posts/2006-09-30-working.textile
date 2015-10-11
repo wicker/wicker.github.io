@@ -1,0 +1,31 @@
+--- 
+layout: post
+title: Caution, Marines at Work
+subcat: Marine Corps
+image: /img/thumbs/working.png
+location: Iraq
+year: 2006
+description: Deployed as a hazmat technician serving the flying squadrons.
+---
+
+Hazardous materials work, mostly.
+
+ <img src="https://lh4.googleusercontent.com/-QZ3vc9puXY0/TwzRoLAvPLI/AAAAAAAAAuE/n7ADNEJRbMk/w600-h450-no/00033.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-w1cBz-_SVtc/TwzRqahI5TI/AAAAAAAAAvI/eDbC2TPvX1M/w600-h450-no/00035.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-ZG7ZfanDuzQ/TwzRoEBmALI/AAAAAAAAAuI/oU1k0E80gYU/w600-h450-no/00041.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-6YndnnQzR5k/TwzRoiushHI/AAAAAAAAAuU/_pcj6zMlXKU/w600-h450-no/00350.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-KgNTgGJGfMk/TwzRqTVUy-I/AAAAAAAAAvE/Oa6FPvbHkrA/w600-h450-no/motoboy.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-SfCtFOcNzLU/TwzRp2Nx0UI/AAAAAAAAAu0/-ayKBgsP0PA/w600-h450-no/kam.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-MYurET4oPrg/TwzRpSALByI/AAAAAAAAAuk/SoYitMSzYQk/w391-h521-no/inspectingthehole.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-1_LKi9_5_6w/TwzRo_ZMseI/AAAAAAAAAuY/kaavcMXO1w0/w600-h450-no/bighangar.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-cYiu9TRIv1k/TwzRpWodCdI/AAAAAAAAAuo/QAoMNBIvJ1U/w600-h450-no/fueltruck.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-B43BIdNlrA0/TwzRp0dh5II/AAAAAAAAAu4/_WzmvqYiVsc/w600-h450-no/lookoutwithmoon.jpg">

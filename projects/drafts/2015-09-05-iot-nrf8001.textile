@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: IoT NRF8001 Stack
+subcat: hardware 
+image: /img/thumbs/carbsync.png
+description:  
+num: 35
+status: Unfinished
+---
+

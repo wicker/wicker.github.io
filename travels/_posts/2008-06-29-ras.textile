@@ -1,0 +1,34 @@
+--- 
+layout: post
+title: Replenishment at Sea
+subcat: Marine Corps
+image: /img/thumbs/ras.png
+location: USS Tarawa
+year: 2008
+description: Fuel and food being transferred from a supply ship at sea
+---
+
+ <img src="https://lh3.googleusercontent.com/-dC7jODrdDxs/T1W3Os8LFXI/AAAAAAAABKI/5T-tc4XFmH0/w595-h446-no/dscf0215.jpg">
+
+ <img src="https://lh3.googleusercontent.com/--4eF8kDvdPg/T1W3O1TqsUI/AAAAAAAABKg/uZGKvKopIQM/w595-h446-no/dscf0246.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-UQcf4Pkpl04/T1W3PK4_B7I/AAAAAAAABKY/3yBwI1ohXE0/w595-h446-no/dscf0244.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-vmdoDnAtMQM/T1W3PYlsGoI/AAAAAAAABKo/hV6QlzHtKcQ/w595-h446-no/dscf0248.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-xdjhAnfKa6o/T1W3PqnNHDI/AAAAAAAABK0/m0luTSQ4qg0/w391-h521-no/dscf0256.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-cPh3SGWMVwI/T1W3QRuajmI/AAAAAAAABLA/fLgDdwpv6q8/w391-h521-no/dscf0865.jpg">
+
+ <img src="https://lh4.googleusercontent.com/--4Afn0y-4p8/T1W3QhVcPvI/AAAAAAAABK8/LWlPw0k4T0E/w391-h521-no/dscf0870.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-qR8QSyoyKQo/T1W3QvBpEEI/AAAAAAAABLU/IDh-98ZH_l8/w391-h521-no/dscf0872.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-k7AdwJ-D9FQ/T1W3Q07LtVI/AAAAAAAABLg/2CHf3vliKL0/w595-h446-no/dscf0875.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-hK5pbajicWA/T1W3Q3yCt2I/AAAAAAAABLQ/HWRvuhT4JUU/w595-h446-no/dscf0876.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-SpWZk9oadSU/T1W3RqjLmCI/AAAAAAAABLk/DtQZYY6-COc/w595-h446-no/dscf0880.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-xwqmpR08DyM/T1W3RlHikiI/AAAAAAAABLs/ozIAK4kurII/w391-h521-no/dscf0878.jpg">
+

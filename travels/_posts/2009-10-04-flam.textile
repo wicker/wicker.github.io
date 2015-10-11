@@ -1,0 +1,35 @@
+--- 
+layout: post
+title: Flam, Norway
+subcat: Backpacking
+image: /img/thumbs/flam.png
+location:  Norway
+year: 2009
+description: Hiking above the fjords. 
+---
+
+ <img src="https://lh4.googleusercontent.com/-oiqji1tekgI/T1vboH1IKQI/AAAAAAAABlU/usVa181urHA/w600-h450-no/DSCF3178.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-uljJVsRn2BU/T1vbn_F4LMI/AAAAAAAABlM/vnD47eJ6i7E/w600-h450-no/DSCF3185.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-nFxRIioH8LY/T1vbn4fYS0I/AAAAAAAABlQ/ujVbkDmmbSE/w600-h450-no/DSCF3191.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-shKvCYhA8S4/T1vbo59TTlI/AAAAAAAABlk/adwPICV7Ans/w600-h450-no/DSCF3197.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-ZGEPhGbsFoE/T1vbo0_1-6I/AAAAAAAABls/ja6vlLXIcP8/w600-h450-no/DSCF3200.JPG">
+
+ <img src="https://lh5.googleusercontent.com/-YbPrhUwRgqQ/T1vbpVCsJOI/AAAAAAAABl8/8GXeD5MndKc/w600-h450-no/DSCF3226.JPG">
+
+ <img src="https://lh3.googleusercontent.com/-8kMiKQkPESk/T1vbphnVZNI/AAAAAAAABmM/30sLhwjc5pk/w600-h450-no/DSCF3228.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-Pxcdw9BnSmo/T1vbp6LTvNI/AAAAAAAABmY/PPNYq9u4HfI/w600-h450-no/DSCF3232.JPG">
+
+ <img src="https://lh6.googleusercontent.com/-e5DB2AahNLc/T1vbpwsz8CI/AAAAAAAABmU/ol0PkwgNVmU/w600-h450-no/DSCF3233.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-G7Z-zS5LRLk/T1vbqJeYqJI/AAAAAAAABmk/JP3naLzH9hQ/w600-h450-no/DSCF3241.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-1oqS349zqbA/T1vbqLPkCtI/AAAAAAAABmo/Qk-mj3inR-g/w600-h450-no/DSCF3242.JPG">
+
+ <img src="https://lh4.googleusercontent.com/-cgB0pyeWDlw/T1vbqdcHfHI/AAAAAAAABm4/9gkWNqYbwcs/w600-h450-no/DSCF3244.JPG">
+
+

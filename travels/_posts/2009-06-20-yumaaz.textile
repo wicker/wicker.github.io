@@ -1,0 +1,30 @@
+--- 
+layout: post
+title: Flying near MCAS Yuma
+subcat: Flying
+image: /img/thumbs/yumaaz.png
+location: Arizona
+year: 2009
+description: My stomping grounds for four years in the Marine Corps.
+---
+
+ <img src="https://lh6.googleusercontent.com/-ILPT8qhII4c/T2KxGD-3tRI/AAAAAAAADGg/1uKqoxmePkA/w600-h450-no/dscf2060.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-lh90_AxW8jM/T2KxF13WEgI/AAAAAAAADGY/AM3_2IFKZ7k/w600-h450-no/dscf2063.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-kTZclhphM3A/T2KxGluIHcI/AAAAAAAADGw/6ZY4FROr-EQ/w600-h450-no/dscf2069.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-EjbfOZuN6bQ/T2KxHX3-BBI/AAAAAAAADHA/hIL8MIpeu7I/w600-h450-no/dscf2082.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-LqaaGMnyKuk/T2KxH1PiaVI/AAAAAAAADHc/bPnr1eTfHdQ/w600-h450-no/dscf2085.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-pQCdZR1RxTA/T2KxH71Ra_I/AAAAAAAADHY/_FVKTkpYXCE/w600-h450-no/dscf2086.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-JUZu1BuCazg/T2KxFaUSvpI/AAAAAAAADGE/lEEfl7K63to/w550-h413-no/collegef14.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-f62I7gZv0Rg/T2KxIjT7GlI/AAAAAAAADIM/iHSLHrsjfog/w550-h413-no/paulwithbird.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-ndgXmXgRtWM/T2KxIgsRuRI/AAAAAAAADIg/YAsbUERspEQ/w550-h413-no/landingelcentro2.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-o7CVActCMmo/T2KxJGglzoI/AAAAAAAADIc/zoTJNsDaZ4Q/w550-h413-no/sonorandunes.jpg">
+

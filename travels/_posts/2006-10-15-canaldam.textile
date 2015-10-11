@@ -1,0 +1,43 @@
+--- 
+layout: post
+title: Canal Dam
+subcat: Southwest
+image: /img/thumbs/canaldam.png
+location: Arizona
+year: 2006
+description: Herons, an abandoned canal dam, and a sunset.
+---
+
+ <img src="https://lh6.googleusercontent.com/-93GnO-uW04A/T2Kwy7S21EI/AAAAAAAADCU/nhxVuJECRvY/w374-h498-no/dscf1840.png">
+
+ <img src="https://lh5.googleusercontent.com/-adF0vnWA1tA/T2Kwyu0wXPI/AAAAAAAADCM/tU_jin-04kE/w600-h450-no/dscf1844.png">
+
+ <img src="https://lh3.googleusercontent.com/-XZhNPU9bqu0/T2Kwy_I_djI/AAAAAAAADCY/KfWjTeUtO90/w374-h498-no/dscf1847.png">
+
+ <img src="https://lh6.googleusercontent.com/-xSrnJkDH0EA/T2KwzYa6-CI/AAAAAAAADCk/yCDSuCEi3Lk/w600-h450-no/dscf1848.png">
+
+ <img src="https://lh6.googleusercontent.com/-6Ivo0eeJp5g/T2Kwzsx7vZI/AAAAAAAADCs/0sgzRl5evzs/w374-h498-no/dscf1849.png">
+
+ <img src="https://lh6.googleusercontent.com/-2mEjYVhCO6A/T2Kwz_XinwI/AAAAAAAADC0/tMOmGeMczQM/w374-h498-no/dscf1852.png">
+
+ <img src="https://lh5.googleusercontent.com/-f2yaIBzHvWo/T2Kw0JFC39I/AAAAAAAADC8/jl6ElyZMr8c/w600-h450-no/dscf1853.png">
+
+ <img src="https://lh4.googleusercontent.com/-WuJNG0GpF9k/T2Kw0VgC80I/AAAAAAAADDE/oI1X_HlunkY/w374-h498-no/dscf1855.png">
+
+ <img src="https://lh4.googleusercontent.com/-wfZqShX_0UY/T2Kw0tiDHbI/AAAAAAAADDM/ZcR_IlfIJYI/w600-h450-no/dscf1858.png">
+
+ <img src="https://lh3.googleusercontent.com/-GuVk646AeaA/T2Kw0ywB7WI/AAAAAAAADDQ/Ttes8wSnjXg/w600-h450-no/dscf1859.png">
+
+ <img src="https://lh4.googleusercontent.com/-yQiGF1w-sIU/T2Kw1OIjhYI/AAAAAAAADDY/1w_wG7K5XgM/w374-h498-no/dscf1860.png">
+
+ <img src="https://lh3.googleusercontent.com/-ryXAUPqLHcA/T2Kw1ybhnZI/AAAAAAAADD0/pUF7dUrxXY4/w600-h450-no/dscf1863.png">
+
+ <img src="https://lh6.googleusercontent.com/-MyF23n7WVNk/T2Kw1cFKMeI/AAAAAAAADDk/nz9zrfrPl7M/w600-h450-no/dscf1865.png">
+
+ <img src="https://lh5.googleusercontent.com/-FF8hNwEUUec/T2Kw13Mv2pI/AAAAAAAADDs/XMk8jQ0PkmY/w600-h450-no/dscf1867.png">
+
+ <img src="https://lh3.googleusercontent.com/-KrvJtY_ozuo/T2Kw39lhA2I/AAAAAAAADEE/GwjZxSwi62E/w600-h450-no/dscf1870.png">
+
+ <img src="https://lh5.googleusercontent.com/-jnvTvJkdrcA/T2Kw2_NLy4I/AAAAAAAADD8/pT2SgelCc2c/w600-h450-no/dscf1873.png">
+
+

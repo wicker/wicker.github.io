@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: LiDAR Inventory Device
+subcat: hardware 
+image: /img/thumbs/carbsync.png
+description: 
+num: 31
+status: Unfinished
+---
+
+

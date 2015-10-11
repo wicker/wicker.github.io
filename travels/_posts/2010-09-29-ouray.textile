@@ -1,0 +1,23 @@
+--- 
+layout: post
+title: Ouray
+subcat: rocky-mountains
+image: /img/thumbs/ouray.png
+location: Colorado
+year: 2010
+description: They call it the Switzerland of America.
+---
+
+ <img src="https://lh4.googleusercontent.com/pXDJX7ydtVywE6ydJaScA8-FHFeCI93jM7ykEYS7lQ=w600-h450-no">
+
+ <img src="https://lh6.googleusercontent.com/-_leeteoJvOo/T2KuPwPwIMI/AAAAAAAACjk/PNmrItwD014/w600-h450-no/DSCF3618.png">
+
+ <img src="https://lh5.googleusercontent.com/-2xGrnI9TphI/T2KuPzWnbhI/AAAAAAAACjo/-3HIN6wz5r4/w600-h450-no/DSCF3627.png">
+
+ <img src="https://lh3.googleusercontent.com/-vLCtxmt8lAs/T2KuP9fpE9I/AAAAAAAACj0/dAiWrSuiJso/w600-h450-no/DSCF3630.png">
+
+ <img src="https://lh5.googleusercontent.com/-DzVV2t--0nM/T2KuQoC8MsI/AAAAAAAACkE/9SXAQpaL_gc/w600-h450-no/DSCF3636.png">
+
+ <img src="https://lh3.googleusercontent.com/-lCQYSqnwXMc/T2KuQ-RVteI/AAAAAAAACkM/-Ndj4yjS-HY/w600-h450-no/DSCF3640.png">
+
+

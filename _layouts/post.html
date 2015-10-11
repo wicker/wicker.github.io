@@ -2,7 +2,17 @@
 layout: default
 ---
 
-<div style="margin-top: 20px; font-size: 2em;">{{ page.title }}</div>
-{{ page.date | date: "%B %Y"}} - {{ page.description }} 
-<br /><br />
-{{ content }}
+  <div class="container">
+  <div class="value-props row">
+  <div class="twelve columns value-prop">
+
+
+<div class="inside" style="text-align:justify;">
+  <div style="text-align:center;margin-bottom: 0px; text-transform: capitalize;">{{ page.categories }}</div>
+  <h4 style="text-align:center;">{{ page.title }}</h4>
+  {{ content }}
+</div>
+
+
+  </div></div></div>
+

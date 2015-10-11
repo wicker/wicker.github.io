@@ -1,0 +1,34 @@
+--- 
+layout: post
+title: Copperstate Fly-In
+subcat: Private Pilot
+image: /img/thumbs/copperstate.png
+location: Arizona
+year: 2005
+description: Driving up from Yuma for the annual Copperstate Airshow
+---
+
+ <img src="https://lh4.googleusercontent.com/pVzvVgleo62nB-G-FXa2AbVkvHn7VditMaAfxRSWDg=w394-h185-p-no">
+
+ <img src="https://lh3.googleusercontent.com/-IDGv1gzQX4E/T2KyuZGTL6I/AAAAAAAADgU/rWUTCSGlbi8/w550-h339-no/glider.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-v6mYAAVH8pw/T2KyvXkJ1EI/AAAAAAAADgk/PG7pBvF6xjM/w550-h232-no/longline.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-KiW77cUyRlg/T2KyvYvw-kI/AAAAAAAADgw/bxPi5Pmsfzo/w550-h421-no/longez.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-qdDi-v8ndvg/T2Kyvn-boRI/AAAAAAAADg0/XuenvZvbfMs/w391-h521-no/redwhite-jim.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-mJwG3GDna7g/T2KywYZJgUI/AAAAAAAADhk/MK3hnocr9ug/w550-h413-no/symmetrylong.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-ZLMLzSN_o4Q/T2Kyw9cwNTI/AAAAAAAADh0/i16BzVk4lIs/w550-h214-no/transients.jpg">
+
+ <img src="https://lh6.googleusercontent.com/-2dh5l7QB3hE/T2KyxT1p_cI/AAAAAAAADiE/T0NnSg0s-lc/w550-h413-no/whale-front.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-blezEBxfY9w/T2KyxWvclbI/AAAAAAAADh8/nKcHorBUugM/w550-h413-no/whale.jpg">
+
+ <img src="https://lh4.googleusercontent.com/-9NS9RWLc64M/T2KyxclPx2I/AAAAAAAADiA/s-4uol-o6r8/w550-h347-no/variez.jpg">
+
+ <img src="https://lh5.googleusercontent.com/-KB0P0vsSaHk/T2KyxqJdP1I/AAAAAAAADic/NBL_K61g3ZQ/w550-h374-no/yellow.jpg">
+
+ <img src="https://lh3.googleusercontent.com/-EMyprZ2BsV8/T2KyxiJJr1I/AAAAAAAADiU/v83pFQdLZPY/w550-h413-no/wingdesign.jpg">
+

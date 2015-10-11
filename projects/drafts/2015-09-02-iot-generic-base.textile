@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: IoT Generic Base
+subcat: hardware 
+image: /img/thumbs/carbsync.png
+description: 
+num: 32
+status: Unfinished
+---
+
