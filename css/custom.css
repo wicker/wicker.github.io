@@ -1,11 +1,72 @@
+.sandbox {
+  border: 1px solid #d4d4d4;
+	border-radius: 5px;
+	padding: 0px;
+	width: 140px;
+	height: 30px;
+	line-height: 30px;
+	text-align:center;
+	display:inline-block;
+}
+
+.blogthumb {
+  border: 1px solid #d3d3d3;
+	border-radius: 5px;
+	padding-bottom: 10px;
+}
+
+.blogthumb a { text-decoration: none;}
+
+li {
+  list-style-type: square;
+}
+
+a.sandbox { text-decoration: none; color: #000}
+a:hover.sandbox { color: #000; opacity: 0.4; border: 1px solid #000;}
+
+a.sandbox.earth0 { background-color: #493829; }
+a.sandbox.earth1 { background-color: #816C5B; }
+a.sandbox.earth2 { background-color: #A9A18C; }
+a.sandbox.earth3 { background-color: #613318; }
+a.sandbox.earth4 { background-color: #855723; }
+a.sandbox.earth5 { background-color: #B99C6B; }
+a.sandbox.earth6 { background-color: #8F3B1B; }
+a.sandbox.earth7 { background-color: #D57500; }
+a.sandbox.earth8 { background-color: #DBCA69; }
+a.sandbox.earth9 { background-color: #404F24; }
+a.sandbox.earth10 { background-color: #668D3C; }
+a.sandbox.earth11 { background-color: #BDD09F; }
+a.sandbox.earth12 { background-color: #4E6172; }
+a.sandbox.earth13 { background-color: #83929F; }
+a.sandbox.earth14 { background-color: #A3AdB8; }
+
+
 .code {
   font-family: courier, monospace; 
   margin: 0 0 15px 0; 
   font-size: 13px;
 }
 .vertimg {
-  width: 50%;
+	width: 50%;
   float: left;
+}
+
+.thumbnail {
+  margin: 0px;
+	padding: 0px;
+}
+.banneryear {
+  width: 100%; 
+	margin: 0px;
+	padding: 0px;
+  font-size: 20px; 
+  height: 40px;
+	text-align: center;
+  line-height: 40px; 
+  opacity: 0.6; 
+  filter: alpha(opacity=60); 
+  background-color:#000; 
+  color: #fff;
 }
 
 .convolution {

@@ -33,30 +33,7 @@ type="text/javascript">
       <a class="button button-primary" href="http://wickerbox.net" style="float:right;">Wickerbox Electronics</a>
     </section>
 
-    <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a class="navbar-link" href="/about/">About</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="/blog/">Blog</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="/projects/">Projects</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="/travels/">Travels</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    {% if page.special %}
-    {% else %}
-    <div style="text-align:justify;">{{ content }}</div>
-    {% endif %}
+    {{ content }}
   </div>
 
 </body>
