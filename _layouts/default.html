@@ -24,13 +24,19 @@ type="text/javascript">
 <body class="code-snippets-visible">
 
   <div class="container outer">
+		<nav style="width: 100%; background-color: #fff;">
+			<div style="float:left; padding-left: 20px;"><a href="/">Home</a></div>
+			<div style="float:right; padding-right: 20px;"><a href="/blog/">Blog</a> &nbsp; &nbsp; <a href="/travels/">Travels</a> &nbsp; &nbsp; <a href="/#projects">Projects</a></div>
+			<div style="clear:both;"></div>
+		</nav>
+
     {% if page.special %}
     <section class="header" style="background-image: url(/img/mccall.png); background-size: cover; min-height: 400px;">
     {% else %}
-    <section class="header" style="background-image: url(/img/coast.png); background-size: cover; min-height: 200px;">
+    <section class="header" style="background-image: url(/img/refuge.png); background-size: cover; min-height: 200px;">
     {% endif %}
-      <a class="button button-primary" href="/" style="float:left;">Jenner Hanni</a>
-      <a class="button button-primary" href="http://wickerbox.net" style="float:right;">Wickerbox Electronics</a>
+<!--      <a class="button button-primary" href="/" style="float:left;">Jenner Hanni</a>
+      <a class="button button-primary" href="http://wickerbox.net" style="float:right;">Wickerbox Electronics</a>-->
     </section>
 
     {{ content }}

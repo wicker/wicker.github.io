@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Touring Camp Cupcake
+title: Al Asad, Iraq
 subcat: Marine Corps
 image: /img/thumbs/camp-cupcake.png
 location: Iraq

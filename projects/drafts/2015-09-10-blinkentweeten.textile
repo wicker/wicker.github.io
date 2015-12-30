@@ -1,9 +1,0 @@
---- 
-layout: post
-title: Blinkentweeten Box
-subcat: hardware 
-image: /img/thumbs/carbsync.png
-description: 
-num: 37
-status: Unfinished
----

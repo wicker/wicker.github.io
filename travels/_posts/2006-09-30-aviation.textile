@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Aviation
+title: Flying near Al Asad
 subcat: Marine Corps
 image: /img/thumbs/aviation.png
 location: Iraq

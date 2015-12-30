@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Caution, Marines at Work
+title: Hazmat Duty at Al Asad
 subcat: Marine Corps
 image: /img/thumbs/working.png
 location: Iraq
