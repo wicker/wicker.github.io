@@ -1,9 +1,8 @@
 --- 
-layout: post
+layout: travels
 title: Yellowstone Park
 subcat: rocky-mountains
 image: /img/thumbs/yellowstone.png
-category: traveling
 location: Colorado
 year: 2011
 description: Road trip through Yellowstone Park in June.

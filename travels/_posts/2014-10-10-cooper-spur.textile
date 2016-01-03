@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Cooper Spur
 subcat: Northwest 
 image: /img/thumbs/cooperspur.png

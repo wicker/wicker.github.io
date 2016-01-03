@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: McCall Point
 subcat: northwest
 image: /img/thumbs/mccall.png

@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Young Eagles
 subcat: Flying
 image: /img/thumbs/youngeagles.png

@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Oshkosh Airshow
 subcat: Flying
 image: /img/thumbs/oshkosh.png
@@ -7,6 +7,12 @@ location: Wisconsin
 year: 2008
 description: Attending the biggest general aviation airshow in the world. 
 ---
+
+Home from the deployment, I took leave and spent a week at Oshkosh for the biggest general aviation airshow in the world. It was the third time I'd attended. The first time I went as a Civil Air Patrol cadet as part of the Blue Beret program, and it's instrumental in showing me I wasn't alone in loving flight.
+
+In particular, that first time, I got to watch Burt Rutan lecture about <em>SpaceShipOne</em> and Neil Armstrong tell us flying stories in the Theater in the Woods.
+
+<h5>National Blue Beret</h5>
 
  <img src="https://lh5.googleusercontent.com/-URjSsgqjVVU/T2KyTDASr9I/AAAAAAAADXU/PzaPQDdhGPo/w550-h377-no/alphaposing.jpg">
 
@@ -18,7 +24,7 @@ description: Attending the biggest general aviation airshow in the world.
 
  <img src="https://lh3.googleusercontent.com/-tECqRagwvrk/T2KyTibP5WI/AAAAAAAADXs/SDB8a0-W9LQ/w550-h385-no/line.jpg">
 
- <img src="ihttps://lh4.googleusercontent.com/-ofSeBP-C_ys/T2KyTjNtW4I/AAAAAAAADXw/Sibwn0piV8I/w550-h355-no/nbb-all.jpg">
+ <img src="https://lh4.googleusercontent.com/-ofSeBP-C_ys/T2KyTjNtW4I/AAAAAAAADXw/Sibwn0piV8I/w550-h355-no/nbb-all.jpg">
 
  <img src="https://lh3.googleusercontent.com/-1vAsrcq34Io/T2KyT0zZwWI/AAAAAAAADYE/yx5oHlszw04/w550-h355-no/nbb-alpha.jpg">
 
@@ -33,6 +39,10 @@ description: Attending the biggest general aviation airshow in the world.
  <img src="https://lh3.googleusercontent.com/-XwxxAPEoyac/T2KyU--SwKI/AAAAAAAADYo/usTwaP-YyNE/w304-h498-no/watermelon.jpg">
 
  <img src="https://lh6.googleusercontent.com/-kqXXQ7BFZoo/T2KyVbJkpEI/AAAAAAAADY0/wYa52xEW2wY/w550-h322-no/zebra.jpg">
+
+<h5>Attending in 2007</h5>
+
+My first float plane flight! I went with friends and we camped on the green under the wing of their Cessna 195. Their other friends brought a Woody Pusher and passed it off as a C-195 replica next to us, which we found hilarious. I started getting really interested in ultralights about this time, mostly because they were financially accessible.
 
  <img src="https://lh6.googleusercontent.com/-ws8B5RCWdvk/T2KyXeZRIxI/AAAAAAAADZQ/LIFAhuWckqg/w640-h480-no/15.jpg">
 
@@ -57,6 +67,10 @@ description: Attending the biggest general aviation airshow in the world.
  <img src="https://lh5.googleusercontent.com/-cao1JnYzhQ4/T2KyYypKNbI/AAAAAAAADaQ/5HeYzpGHYhw/w640-h480-no/33.jpg">
 
  <img src="https://lh3.googleusercontent.com/-L9uYNseyuxY/T2KyY1kYrrI/AAAAAAAADaM/Nl0vLbxD9DA/w640-h480-no/4.jpg">
+
+<h5>Attending in 2008</h5>
+
+Again, I camped right on the flightline under the wing of my friends' Cessna 195 and had a great time. I'd just returned from my USS Tarawa deployment and had some money, and I <em>almost</em> bought the kit for a Sonex. I still wonder how different my life would have been if I had...
 
  <img src="https://lh3.googleusercontent.com/-O7OPM4Xk4e0/T2KyajPS-JI/AAAAAAAADaw/5GBZYnwWph4/w600-h450-no/dscf0961.jpg">
 

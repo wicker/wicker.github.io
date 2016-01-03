@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Suburban Hot-Air Ballooning
 subcat: Flying
 image: /img/thumbs/ballooning.png

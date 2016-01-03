@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Badger Creek
 subcat: northwest
 image: /img/thumbs/badgercreek.png

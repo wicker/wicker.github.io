@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Flying near Al Asad
 subcat: Marine Corps
 image: /img/thumbs/aviation.png

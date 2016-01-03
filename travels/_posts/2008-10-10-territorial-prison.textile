@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Arizona's Territorial Prison
 subcat: southwest
 image: /img/thumbs/prison.png

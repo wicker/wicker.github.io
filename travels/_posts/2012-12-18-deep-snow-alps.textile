@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Snow in the Alps
 subcat: Backpacking
 image: /img/thumbs/alps-snow.png

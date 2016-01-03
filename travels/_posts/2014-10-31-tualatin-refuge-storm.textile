@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Tualatin Refuge Sunset
 subcat: northwest
 image: /img/thumbs/tualatin-storm.png

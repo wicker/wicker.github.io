@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Copperstate Fly-In
 subcat: Private Pilot
 image: /img/thumbs/copperstate.png

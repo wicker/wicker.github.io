@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: West Saguaro National Park
 subcat: southwest
 image: /img/thumbs/saguaro.png

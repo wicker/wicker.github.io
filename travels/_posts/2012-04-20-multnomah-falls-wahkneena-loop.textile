@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Multnomah-Wahkeena Loop
 subcat: northwest
 image: /img/thumbs/multnomahwahkeena.png

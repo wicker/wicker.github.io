@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Callahan's to Green Springs Inn
 subcat: northwest
 image: /img/thumbs/ashland.png

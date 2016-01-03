@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Marlboro College
 subcat: east-coast
 image: /img/thumbs/marlboro.png

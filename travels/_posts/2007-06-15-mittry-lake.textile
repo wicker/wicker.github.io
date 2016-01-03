@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Mittry Lake
 subcat: southwest
 image: /img/thumbs/mittry.png

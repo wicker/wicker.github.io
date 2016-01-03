@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Kalaloch Lodge
 subcat: northwest
 image: /img/thumbs/kalaloch.png

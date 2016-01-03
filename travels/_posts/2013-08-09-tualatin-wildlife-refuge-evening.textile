@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Evening at the Tualatin Refuge
 subcat: northwest
 image: /img/thumbs/tualatin-evening.png

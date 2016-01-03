@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Chihuly Desert Garden Glass
 subcat: southwest
 image: /img/thumbs/chihuly.png

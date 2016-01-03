@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Kelso Depot
 subcat: southwest
 image: /img/thumbs/kelsodepot.png

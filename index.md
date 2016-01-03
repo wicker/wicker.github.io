@@ -15,14 +15,13 @@ The best way to contact me is at <a href="mailto:jeh.wicker@gmail.com">jeh.wicke
 <hr>
 
 ##### <a id="projects" style="color: #000;">Project Pages</a>
-<div style="width: 10%; float:left;"><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
-- <a href="/lakebot/">LakeBot</a> - Exploring rivers and lakes with an underwater robot.  
+<!--- <a href="/lakebot/">LakeBot</a> - Exploring rivers and lakes with an underwater robot.  -->
 - <a href="http://wickerbox.net/">Wickerbox Electronics</a> - Open source hardware projects.  
-- <a href="/the-weekly-circuit/">The Weekly Circuit</a> - Playing around with electronics.  
+<!--- <a href="/the-weekly-circuit/">The Weekly Circuit</a> - Playing around with electronics.  -->
 - <a href="http://docs.oshpark.com/">OSH Docs</a> - Helping write the OSH Park documentation.
-- <a href="/advent-of-code/">Advent of Code</a> - Programming challenge solution log in Python.  
-- <a href="/geo-labs/">Geology Labs</a> - Simple geology visualization with ArcGIS.
-- <a href="/endurance-days">Endurance Days</a> - The <em>City of Yuma</em>'s world record flight.
+<!--- <a href="/advent-of-code/">Advent of Code</a> - Programming challenge solution log in Python.  -->
+<!--- <a href="/geo-labs/">Geology Labs</a> - Simple geology visualization with ArcGIS.-->
+- <a href="/endurance-days">Endurance Days</a> - Celebrating the <em>City of Yuma</em>'s 1949 world record flight.
 <hr>
 
 ##### Travels

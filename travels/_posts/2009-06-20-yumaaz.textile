@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Flying near MCAS Yuma
 subcat: Flying
 image: /img/thumbs/yumaaz.png

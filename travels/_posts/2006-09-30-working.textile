@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Hazmat Duty at Al Asad
 subcat: Marine Corps
 image: /img/thumbs/working.png

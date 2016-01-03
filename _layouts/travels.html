@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<nav style="width: 100%; background-color: #fff;" class="value-props row">
+<div class="three columns">&nbsp;
+	{% if page.previous and page.previous.categories contains "travels" %}
+	<a href="{{ page.previous.url }}">Previous</a> 
+	{% endif %}
+</div>
+<div class="six columns"><a href="/travels/">Travels</a></div>
+<div class="three columns">
+	{% if page.next and page.next.categories contains "travels" %}
+	<a href="{{ page.next.url }}">Next</a> 
+	{% endif %}
+</div>
+</nav>
+																					
+<div class="container">
+<div class="value-props row">
+<div class="twelve columns value-prop">
+
+	<div class="inside" style="margin-top: 20px; padding-top: 0px; text-align:justify">
+  <h4 style="text-align:center; margin-bottom: 0px;">{{ page.title }}</h4>
+	<h5 style="font-weight: normal;">{{ page.location }} - {{ page.date | date: "%B %Y" }}</h5>
+  {{ content }}
+	</div>
+
+</div>
+</div>
+</div>
+
+<nav style="width: 100%; background-color: #fff;" class="value-props row">
+<div class="three columns">&nbsp;
+	{% if page.previous and page.previous.categories contains "travels" %}
+	<a href="{{ page.previous.url }}">Previous</a> 
+	{% endif %}
+</div>
+<div class="six columns"><a href="/travels/">Travels</a></div>
+<div class="three columns">
+	{% if page.next and page.next.categories contains "travels" %}
+	<a href="{{ page.next.url }}">Next</a> 
+	{% endif %}
+</div>
+</nav>

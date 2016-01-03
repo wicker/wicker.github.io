@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Flam, Norway
 subcat: Backpacking
 image: /img/thumbs/flam.png

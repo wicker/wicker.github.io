@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Downtime at Al Asad
 subcat: Marine Corps
 image: /img/thumbs/barbecue.png

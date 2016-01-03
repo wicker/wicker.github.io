@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Al Asad, Iraq
 subcat: Marine Corps
 image: /img/thumbs/camp-cupcake.png

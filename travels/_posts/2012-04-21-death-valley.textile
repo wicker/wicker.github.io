@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Death Valley
 subcat: southwest
 image: /img/thumbs/deathvalley.png

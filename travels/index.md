@@ -9,7 +9,7 @@ permalink: /travels/
 {% assign firstyear = true %}
 {% assign counter = 0 %}
 
-{% for post in site.categories.travels %}
+{% for post in site.categories.travels reversed %}
 	{% assign last_post_year = thisyear %}
 	{% assign thisyear = post.date | date: "%Y" %}
 	{% assign counter = counter | plus: 1 %}
@@ -24,31 +24,32 @@ permalink: /travels/
 		{% endif %}
 
 		<div class="value-props row" style="margin-top: 20px;">
-			<h4>{{ thisyear }}</h4>
+			<h4><a id="{{thisyear}}" style="color: #000;">{{ thisyear }}</a></h4>
 			{% if thisyear == '2005' %}
-				NAS Pensacola, Cherry Point, and on to Yuma. 
-			{% elsif thisyear == '2006' %}
-				Went to Iraq in February through September, working hazmat at Al Asad. I got back and went on a huge Amtrak trip.
-			{% elsif thisyear == '2007' %}
-				In the spring, I finished up my Certificate of Aviation Maintenance Technology, with the hopes that I'd be able to get an Airframes & Powerplant certification. I made it to Oshkosh with Jason's family and then deployed in the winter on the USS Tarawa.
+				I enlisted in the Marine Corps in 2004 as an avionics technician and arrived in Yuma, Arizona, in the summer of 2005. My squadron supported the AV-8B Harrier jump jets. I'd been in Civil Air Patrol and learned to fly as a teenager, and upon arriving I called up the local EAA chapter and started going to meetings with these guys that flew and built their own airplanes. 
+				{% elsif thisyear == '2006' %}
+				I deployed to Iraq in February through September, working in avionics and hazmat at Al Asad. I got back, bought a truck with cash, and took a thirty-day leave by traveling in a big loop by Amtrak and Via through the US and Canada.				  {% elsif thisyear == '2007' %}
+				I was exploring Arizona, hanging out with the EAA guys and the local El Centro Ninety-Nines, flying and occasionally helping turn a wrench, and in the spring I finished up my Certificate of Aviation Maintenance Technology from Embry Riddle with the hopes that I'd be able to get an Airframes & Powerplant certification. I went to the big Oshkosh airshow with a friend and then deployed in the winter on the USS Tarawa for seven months.
 			{% elsif thisyear == '2008' %}
-				I spent the first six months on the USS Tarawa. When I got home, I rented a room from LeeAnne to stay out of the barracks, went to Oshkosh, and worked on my degree. I worked night crew.
+			  The first six months were spent at sea aboard the USS Tarawa as an avionics technician and quality inspector. When I got home, I rented a room off-base and buckled down on an engineering technology degree. 
 			{% elsif thisyear == '2009' %}
-				Ended up having ankle surgery in California, then graduated from Old Dominion University with a Bachelor's in Engineering Technology, with a minor in Engineering Management. In July, I got out of the Marine Corps, left the cats with LeeAnne, and went off to Europe for three months. I met Tori in Coventry and realized how mentally ill she was. I went on through Paris to Switzerland, then from there to Istanbul by train, then up to Sweden by train. I hiked eight days on the Kungsleden.
+				I worked night crew and finished up my degree before I got out of the Marines, graduating in May from Old Dominion University with a Bachelor's in Engineering Technology and a minor in Engineering Management. When I got out, I took off to backpack around Europe for three months. I made my way from London to Switzerland, then on by train to Istanbul and back via Samos and Athens. I took the train up to Sweden and Norway, hiked from Abisko to Nikkaluokta on the Kungsleden, and headed home once I ran out of backpacking money. 
 			{% elsif thisyear == '2010' %}
-				I started classes at Portland State. What a fucking nightmare of a place.
+				Back home, I found an apartment in Goose Hollow and started post-bac, pre-grad engineering classes at Portland State. I started out doing the systems administrator course with the Computer Action Team and learned a ton about how Linux and systems actually work. <br /><br />
+				I tried to keep up with the airplane flying and building, but there was really no way with the financial and time stress of grad school. I took four weeks between the summer and fall terms to road trip all over the western states, and to visit Yuma to see my friends. 
 			{% elsif thisyear == '2011' %}
-				Doing stuff with Portland State Aerospace Society, getting the innovation grant and getting a proper Eagle license. Making the GPS board v1. Working with the Autonomous Vehicles Team and building the quadcopter. Met Bart Massey.
+				This is the year I found the Portland State Aerospace Society. They pushed me to take on projects I felt were out of my reach, and mostly I did OK. I got an innovation grant and started learning proper printed circuit board design of mixed analog/digital designs. I met a particular professor and started working in his Open Technology lab.
 			{% elsif thisyear == '2012' %}
-				Started working in Bart's lab and then was a TA for him. I changed my name to Jenner Ellis Hanni, got the last surgeries I'll get, and switched the gender marker on my driver's license and birth certificate. Went to see Eric in winter and it was really not a good visit. 
+				I worked as a Teaching Assistant and interned at Boeing Insitu, which makes drones in Hood River. I did some work with the Autonomus Vehicles Team at Portland State and kept building stuff. I spent Christmas in Switzerland with family and was able to see my grandpa one last time before he passed. 
+<br /><br />In the gap between the summer and fall terms, I hiked on the Pacific Crest Trail between Willamette Pass and McKenzie Pass through the Three Sisters Wilderness. I met a lady there who was 78 and had hiked the PCT from Mexico; she was way better at hiking than me.
 			{% elsif thisyear == '2013' %}
-				Got hired at Max-Viz, bought my huse in Newberg, and graduated grad school with a Master's in Electrical and Computer Engineering from Portland State. 
+				I got my first proper design engineer job while finishing up grad school by getting hired at Astronics Max-Viz, a company making Enhanced Vision Systems for small commercial aircraft to see at night, and through smoke and fog. I bought a house in a small town outside of Portland and graduated in summer from Portland State with a Master's in Electrical and Computer Engineering. 
 			{% elsif thisyear == '2014' %}
-				Working at Max-Viz. Not sure where this year went. Went to a meditation retreat the end of the year. 
+				I spent the year starting to take independent consulting jobs for small hardware prototype designs. I got wrapped up in work and did less hiking than I would have liked; in the winer, I attended an insight meditation retreat that was really cool, and kickstarted my interest in how my mind actually works.  
 			{% elsif thisyear == '2015' %}
-				I did the ADF Dedicant Program and that helped give me confidence to do my own thing. Kept on doing the insight meditation and blew up some fundamental issues with my world. Relieved a lot of suffering, at least. Started blacksmithing and doing the archery. Figured out a lot of things related to meds, effects, scheduling, and what things really feel like. 
+				I never really slowed down after grad school and hadn't figured out how to manage the work/life balance, so I hit a rough patch of burnout in the spring. I finished up the project through first article and then moved on from my aircraft camera job about halfway through the year, joining the support team full time as a remote worker at OSH Park. 
+				<br /><br />I had excellent timing without knowing it. In July I was invited as a last-minute addition to a fourteen-day Grand Canyon paddle-rafting trip. I met a lot of great people and came back energized. I spent the rest of the year working, hiking, kayaking, and building personal projects. 
 			{% elsif thisyear == '2016' %}
-				This is the year I want to weave together everything into one narrative, instead of several, and make peace with how I feel about life so far. I'm going to try and get my consulting business off the ground, and to find the magic in the world again. And get better at syncing up with the stream. There's a lot I regret about how I felt, was treated, experienced the world, and the relationships with people. I want to have better experiences this year. This is the year I get back to 150 lbs and get fit with my 1BWxbench, 2BWxsquat, 3xBW dead, and sub-25 minute 3-mile.
 			{% endif %}
 			{% assign firstyear = false %}
 		</div>

@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Canal Dam
 subcat: Southwest
 image: /img/thumbs/canaldam.png

@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Elk Rock Garden
 subcat: northwest
 image: /img/thumbs/elkrock.png

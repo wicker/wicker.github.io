@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Model Train Stills
 subcat: northwest
 image: /img/thumbs/modeltrain.png

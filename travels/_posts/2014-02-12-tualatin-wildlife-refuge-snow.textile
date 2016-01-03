@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Snow at the Tualatin Refuge
 subcat: northwest
 image: /img/thumbs/tualatin-snow.png

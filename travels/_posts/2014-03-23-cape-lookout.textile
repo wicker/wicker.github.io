@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Cape Lookout
 subcat: northwest
 image: /img/thumbs/capelookout.png

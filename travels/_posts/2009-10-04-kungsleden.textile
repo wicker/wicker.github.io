@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Eight days on the Kungsleden
 subcat: Backpacking
 image: /img/thumbs/kungsleden.png

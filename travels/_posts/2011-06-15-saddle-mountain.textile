@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Saddle Mountain
 subcat: northwest
 image: /img/thumbs/saddlemt.png

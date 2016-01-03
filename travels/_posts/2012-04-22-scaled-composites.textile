@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Scaled Career Day
 subcat: southwest
 image: /img/thumbs/scaled.png

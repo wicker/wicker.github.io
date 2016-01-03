@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Fort Clatsop
 subcat: northwest
 image: /img/thumbs/fortclatsop.png

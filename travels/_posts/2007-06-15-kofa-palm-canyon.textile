@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Palm Canyon in Kofa NWR
 subcat: southwest
 image: /img/thumbs/palmcanyon.png

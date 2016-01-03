@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Arizona-Sonora Desert Museum
 subcat: southwest
 image: /img/thumbs/asdm.png

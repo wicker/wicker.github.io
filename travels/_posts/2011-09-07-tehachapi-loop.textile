@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: The Tehachapi Loop
 subcat: southwest
 image: /img/thumbs/tehachloop.png

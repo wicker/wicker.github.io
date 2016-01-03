@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Ajo, Ryan, Pinal, Nogales
 subcat: Flying
 image: /img/thumbs/tucsontrip.png

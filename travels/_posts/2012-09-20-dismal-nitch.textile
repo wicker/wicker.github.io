@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: travels
 title: Dismal Nitch
 subcat: northwest
 image: /img/thumbs/dismal-nitch.png

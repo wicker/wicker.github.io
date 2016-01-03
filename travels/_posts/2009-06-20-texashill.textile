@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: travels
 title: Fly-out to Texas Hill
 subcat: Flying 
 image: /img/thumbs/texashill.png
