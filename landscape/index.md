@@ -8,7 +8,10 @@ landscape: true
 <div class="container">
 
 <div class="value-props row">
-<div class="twelve columns">Landscape studies, cultural geography, physical geography, and geology -- with a side dash of wilderness, wildness, and wild ethics.</div></div>
+<div class="twelve columns">Landscape studies, cultural geography, physical geography, and geology -- with a side dash of wilderness, wildness, and wild ethics.
+<br /><br />
+For now, these are geology lab writeups using ArcGIS for basic geology coursework at Portland State in 2010. 
+</div></div>
 </div>
 
 <div class="container" style="margin-top: 20px;"> 
