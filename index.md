@@ -22,6 +22,7 @@ The best way to contact me is at <a href="mailto:jeh.wicker@gmail.com">jeh.wicke
 - <a href="http://docs.oshpark.com/">OSH Docs</a> - Helping write the OSH Park documentation.
 - <a href="/advent-of-code/">Advent of Code</a> - Programming challenge solution log in Python.  
 - <a href="/geo-labs/">Geology Labs</a> - Simple geology visualization with ArcGIS.
+- <a href="/endurance-days">Endurance Days</a> - The <em>City of Yuma</em>'s world record flight.
 <hr>
 
 ##### Travels
