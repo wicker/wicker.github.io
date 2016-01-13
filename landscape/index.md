@@ -1,6 +1,6 @@
 ---
 layout: landscape
-title: Landscape Lab
+title: Landscape Studies
 permalink: /landscape/
 landscape: true
 ---

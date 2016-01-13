@@ -20,7 +20,7 @@ The best way to contact me is at <a href="mailto:jeh.wicker@gmail.com">jeh.wicke
 <!--- <a href="/the-weekly-circuit/">The Weekly Circuit</a> - Playing around with electronics.  -->
 - <a href="http://docs.oshpark.com/">OSH Docs</a> - Helping write the OSH Park documentation.  
 <!--- <a href="/advent-of-code/">Advent of Code</a> - Programming challenge solution log in Python.  -->
-- <a href="/landscape/">Landscape Labs</a> - Ways of looking at the world around us.  
+- <a href="/landscape/">Landscape Studies</a> - Ways of looking at the world around us.  
 - <a href="/endurance-days">Endurance Days</a> - Celebrating the <em>City of Yuma</em>'s 1949 world record flight.
 <hr>
 
