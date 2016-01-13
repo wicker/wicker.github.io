@@ -28,24 +28,24 @@ The best way to contact me is at <a href="mailto:jeh.wicker@gmail.com">jeh.wicke
 
 <div class="container" style="text-align:center;">
   <div class="value-props row" style="margin-top: 10px;">
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2005"><img style="width: 100%; margin: 0px;" src="/img/thumbs/copperstate.png">2005</a></div>
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2006"><img style="width: 100%; margin: 0px;" src="/img/thumbs/alasad.png">2006</a></div>
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2007"><img style="width: 100%; margin: 0px;" src="/img/thumbs/asdm.png">2007</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2005"><img style="width: 100%; margin: 0px;" src="/img/thumbs/copperstate.png">2005</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2006"><img style="width: 100%; margin: 0px;" src="/img/thumbs/alasad.png">2006</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2007"><img style="width: 100%; margin: 0px;" src="/img/thumbs/asdm.png">2007</a></div>
 	</div>
   <div class="value-props row" style="margin-top: 10px;">
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2008"><img style="width: 100%; margin: 0px;" src="/img/thumbs/flightops.png">2008</a></div>
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2009"><img style="width: 100%; margin: 0px;" src="/img/thumbs/istanbul.png">2009</a></div>
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2010"><img style="width: 100%; margin: 0px;" src="/img/thumbs/brycecanyon.png">2010</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2008"><img style="width: 100%; margin: 0px;" src="/img/thumbs/flightops.png">2008</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2009"><img style="width: 100%; margin: 0px;" src="/img/thumbs/istanbul.png">2009</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2010"><img style="width: 100%; margin: 0px;" src="/img/thumbs/brycecanyon.png">2010</a></div>
 	</div>
   <div class="value-props row" style="margin-top: 10px;">
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2011"><img style="width: 100%; margin: 0px;" src="/img/thumbs/kelsodepot.png">2011</a></div>
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2012"><img style="width: 100%; margin: 0px;" src="/img/thumbs/polecreek.png">2012</a></div>
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2013"><img style="width: 100%; margin: 0px;" src="/img/thumbs/tumble.png">2013</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2011"><img style="width: 100%; margin: 0px;" src="/img/thumbs/kelsodepot.png">2011</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2012"><img style="width: 100%; margin: 0px;" src="/img/thumbs/polecreek.png">2012</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2013"><img style="width: 100%; margin: 0px;" src="/img/thumbs/tumble.png">2013</a></div>
 	</div>
   <div class="value-props row" style="margin-top: 10px;">
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2014"><img style="width: 100%; margin: 0px;" src="/img/thumbs/cooperspur.png">2014</a></div>
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2015"><img style="width: 100%; margin: 0px;" src="/img/thumbs/kayaking.png">2015</a></div>
-	  <div class="four columns blogthumb"><a href="/travels/index.html#2016"><img style="width: 100%; margin: 0px;" src="/img/thumbs/refuge-flooded.png">2016</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2014"><img style="width: 100%; margin: 0px;" src="/img/thumbs/cooperspur.png">2014</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2015"><img style="width: 100%; margin: 0px;" src="/img/thumbs/kayaking.png">2015</a></div>
+	  <div class="four columns blogthumb"><a href="/blog/index.html#2016"><img style="width: 100%; margin: 0px;" src="/img/thumbs/refuge-flooded.png">2016</a></div>
 	</div>
 </div>
 <br />	

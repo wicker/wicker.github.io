@@ -30,7 +30,7 @@ Looking back at the Washington State town of Lyle.
 
   <img src="https://lh3.googleusercontent.com/-xL7BFwxpQwg/U3PC7MBwPqI/AAAAAAAAGdw/5TALuso2sQk/w800-h600-no/151.JPG">
 
-  <img src="/img/project/misc/mccall-blended.png">
+  <img src="/img/mccall-blended.png">
 
   <img src="https://lh5.googleusercontent.com/-ED8ngLYasLU/U3PC8tzai_I/AAAAAAAAGeM/7KhnsUncAZs/w800-h600-no/156.JPG">
 

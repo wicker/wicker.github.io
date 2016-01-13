@@ -12,18 +12,18 @@ A friend of mine went off to a tiny liberal arts college on a hilltop in Vermont
 
 These are just some photos for my own memories. The woods in particular were beautiful. Marlboro, like the rest of the East Coast, experienced a super cold winter that lingered into May, though I guess the snow had melted right before I got there. Walking and talking on the trails was satisfying, and everywhere there were glimpses of other people having been there: sculptures, little shrines, art. 
 
-  <img src="/img/travels/marlboro/007.JPG">
+  <img src="/img/marlboro/007.JPG">
 
-  <img src="/img/travels/marlboro/012.JPG">
+  <img src="/img/marlboro/012.JPG">
 
 Dalrymple and the back of the library. I didn't take many photos since I was too busy hanging out, but I wanted to have something visual to remember.
 
-  <img src="/img/travels/marlboro/022.JPG">
+  <img src="/img/marlboro/022.JPG">
 
-  <img src="/img/travels/marlboro/023.JPG">
+  <img src="/img/marlboro/023.JPG">
 
 Googly eyes stuck on National Geographic cut-outs around the house.
 
-  <img class="vertimg" src="/img/travels/marlboro/024.JPG"> <img class="vertimg" src="/img/travels/marlboro/032.JPG"> <div class="clear"></div>
+  <img class="vertimg" src="/img/marlboro/024.JPG"> <img class="vertimg" src="/img/marlboro/032.JPG"> <div class="clear"></div>
 
 
