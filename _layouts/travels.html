@@ -4,13 +4,13 @@ layout: default
 
 <nav style="width: 100%; background-color: #fff;" class="value-props row">
 <div class="three columns">&nbsp;
-	{% if page.previous and page.previous.categories contains "travels" %}
+	{% if page.previous and page.previous.categories contains "blog" %}
 	<a href="{{ page.previous.url }}">Previous</a> 
 	{% endif %}
 </div>
-<div class="six columns"><a href="/travels/">Travels</a></div>
+<div class="six columns"><a href="/blog/">Blog</a></div>
 <div class="three columns">
-	{% if page.next and page.next.categories contains "travels" %}
+	{% if page.next and page.next.categories contains "blog" %}
 	<a href="{{ page.next.url }}">Next</a> 
 	{% endif %}
 </div>
@@ -30,15 +30,15 @@ layout: default
 </div>
 </div>
 
-<nav style="width: 100%; background-color: #fff;" class="value-props row">
+<nav style="width: 100%; background-color: #fff; border-top: #c3c3c3;" class="value-props row">
 <div class="three columns">&nbsp;
-	{% if page.previous and page.previous.categories contains "travels" %}
+	{% if page.previous and page.previous.categories contains "blog" %}
 	<a href="{{ page.previous.url }}">Previous</a> 
 	{% endif %}
 </div>
-<div class="six columns"><a href="/travels/">Travels</a></div>
+<div class="six columns"><a href="/blog/">Blog</a></div>
 <div class="three columns">
-	{% if page.next and page.next.categories contains "travels" %}
+	{% if page.next and page.next.categories contains "blog" %}
 	<a href="{{ page.next.url }}">Next</a> 
 	{% endif %}
 </div>
