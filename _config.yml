@@ -3,7 +3,6 @@ port:        4000
 
 source:      .
 destination: ./_site
-plugins:     ./_plugins
 
 future:      true
 lsi:         false
@@ -11,7 +10,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink:   /:year/:month/:title
 
 title:       Jenner Hanni
-description: Notebooks 
+description: Electrical engineering and occasional adventures.
 author:      Jenner Hanni
 email:       jeh.wicker@gmail.com
 

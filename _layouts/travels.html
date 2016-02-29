@@ -2,44 +2,36 @@
 layout: default
 ---
 
-<nav style="width: 100%; background-color: #fff;" class="value-props row">
-<div class="three columns">&nbsp;
-	{% if page.previous and page.previous.categories contains "blog" %}
-	<a href="{{ page.previous.url }}">Previous</a> 
-	{% endif %}
-</div>
-<div class="six columns"><a href="/blog/">Blog</a></div>
-<div class="three columns">
-	{% if page.next and page.next.categories contains "blog" %}
-	<a href="{{ page.next.url }}">Next</a> 
-	{% endif %}
-</div>
+<nav style="width: 100%; margin-bottom: 20px; border-bottom: 1px solid #cfcfcf;">
+  {% if page.previous %}
+  <div style="float:left;">&nbsp; &laquo; <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+  {% else %}
+  <div style="float:left;">&laquo; <a href="/blog/">Blog Entries</a></div>
+  {% endif %}
+  {% if page.next %}
+  <div style="float:right;"><a href="{{ page.next.url }}">{{ page.next.title }}</a> &raquo; </div>
+  {% else %}
+  <div style="float:right;"><a href="/blog/">Blog Entries</a> &raquo;</div>
+  {% endif %}
+  <div style="clear:both;">&nbsp;</div>
 </nav>
-																					
-<div class="container">
-<div class="value-props row">
-<div class="twelve columns value-prop">
 
-	<div class="inside" style="margin-top: 20px; padding-top: 0px; text-align:justify">
-  <h4 style="text-align:center; margin-bottom: 0px;">{{ page.title }}</h4>
-	<h5 style="font-weight: normal;">{{ page.location }} - {{ page.date | date: "%B %Y" }}</h5>
-  {{ content }}
-	</div>
+<h1>{{ page.title }}</h1>
+{{ page.date | date: '%Y' }} - {{ page.location }}
+{{ content }}
 
-</div>
-</div>
-</div>
-
-<nav style="width: 100%; background-color: #fff; border-top: #c3c3c3;" class="value-props row">
-<div class="three columns">&nbsp;
-	{% if page.previous and page.previous.categories contains "blog" %}
-	<a href="{{ page.previous.url }}">Previous</a> 
-	{% endif %}
-</div>
-<div class="six columns"><a href="/blog/">Blog</a></div>
-<div class="three columns">
-	{% if page.next and page.next.categories contains "blog" %}
-	<a href="{{ page.next.url }}">Next</a> 
-	{% endif %}
-</div>
+<div style="clear:both;">&nbsp;</div>
+<nav style="width: 100%; margin-bottom: 20px; border-top: 1px solid #cfcfcf; padding-top: 20px">
+  {% if page.previous %}
+  <div style="float:left;">&nbsp; &laquo; <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+  {% else %}
+  <div style="float:left;">&laquo; <a href="/blog/">Blog Entries</a></div>
+  {% endif %}
+  {% if page.next %}
+  <div style="float:right;"><a href="{{ page.next.url }}">{{ page.next.title }}</a> &raquo; </div>
+  {% else %}
+  <div style="float:right;"><a href="/blog/">Blog Entries</a> &raquo;</div>
+  {% endif %}
+  <div style="clear:both;">&nbsp;</div>
 </nav>
+

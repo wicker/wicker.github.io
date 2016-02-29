@@ -1,46 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/custom.css" media="screen">
+  </head>
+  <body>
 
-  <meta charset="utf-8">
-  <title>{{ site.title }}</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {% if page.mathjax %}
-  <script
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-type="text/javascript">
-</script>
-  {% endif %}
-
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/skeleton.css">
-  <link rel="stylesheet" href="/css/custom.css">
-
-</head>
-<body class="code-snippets-visible">
-
-  <div class="container outer">
-		<nav style="width: 100%; background-color: #fff;">
-			<div style="float:left; padding-left: 20px;"><a href="/">Jenner Hanni</a></div>
-			<div style="float:right; padding-right: 20px;"><a href="/blog/">Blog</a> &nbsp; &nbsp; <a href="/#projects">Projects</a></div>
-			<div style="clear:both;"></div>
-		</nav>
-
-    {% if page.special %}
-    <section class="header" style="background-image: url(/img/mccall.png); background-size: cover; min-height: 400px;">
-    {% elsif page.yed %}
-    <section class="header" style="background-image: url(/img/yed.png); background-size: cover; min-height: 156px;">
-    {% else %}
-    <section class="header" style="background-image: url(/img/refuge.png); background-size: cover; min-height: 200px;">
-    {% endif %}
+    <section class="page-header">
+      <h1 class="project-name"><a href="/">{{ site.title }}</a></h1>
+      <h2 class="project-tagline">{{ site.description }}</h2>
+      <a href="/" class="btn">Home</a>
+      <a href="/blog" class="btn">Blog</a>
+      <a href="/projects" class="btn">Projects</a>
+      <a href="/license" class="btn">License</a>
     </section>
 
-    {{ content }}
-  </div>
-<br />
-</body>
+    <section class="main-content">
+      {{ content }}
+    </section>
+
+  </body>
 </html>
