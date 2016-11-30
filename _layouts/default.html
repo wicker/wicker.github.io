@@ -1,28 +1,48 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/normalize.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/custom.css" media="screen">
-  </head>
-  <body>
+<html lang="en">
+<head>
 
-    <section class="page-header">
-      <h1 class="project-name"><a href="/">{{ site.title }}</a></h1>
-      <h2 class="project-tagline">{{ site.description }}</h2>
-      <a href="/" class="btn">Home</a>
-      <a href="/blog" class="btn">Blog</a>
-      <a href="/projects" class="btn">Projects</a>
-      <a href="/license" class="btn">License</a>
-    </section>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="Personal content management system implementation.">
+  <meta name="author" content="Jenner Hanni">
 
-    <section class="main-content">
-      {{ content }}
-    </section>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </body>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns header">
+        <h1>{{ site.title }}</h1>
+      </div>
+    </div>
+    <div class="row" style="background-color: #c0a97d; min-height: 60px; line-height: 60px">
+      <div class="one column">&nbsp;</div>
+      <div class="one column nav">
+        <a href="/">Home</a>
+      </div>
+      <div class="four columns">&nbsp;</div>
+      <div class="one column nav">
+        <a href="/travels/">Travels</a>
+      </div>
+      <div class="one column nav">
+        <a href="/projects/">Projects</a>
+      </div>
+      <div class="four columns">&nbsp;</div>
+    </div>
+
+  </div>
+ 
+  <!--- the child page must create a new container --->
+  {{ content }}
+
+
+</body>
+
 </html>
