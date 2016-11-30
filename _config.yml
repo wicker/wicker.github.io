@@ -10,15 +10,9 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink:   /:year/:month/:title
 
 title:       Jenner Hanni
-description: Personal homepage and occasional blog.
+description: Electrical engineering and occasional adventures.
 author:      Jenner Hanni
 email:       jeh.wicker@gmail.com
 
-exclude:     [_site]
+exclude:     [writing, drafts, _site, scripts, zim]
 
-collections: 
-  travels:
-    name: Travels
-    url: /travels/
-    output: true
-    permalink: /travels/:title/

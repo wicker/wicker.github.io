@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<nav style="width: 100%; background-color: #fff;" class="value-props row">
+<div class="three columns">&nbsp;
+	{% if page.next and page.next.categories contains "landscape" %}
+	<a href="{{ page.next.url }}">Previous</a> 
+	{% endif %}
+</div>
+<div class="six columns"><a href="/landscape/">Landscape Lab</a></div>
+<div class="three columns">
+	{% if page.previous and page.previous.categories contains "landscape" %}
+	<a href="{{ page.previous.url }}">Next</a> 
+	{% endif %}
+</div>
+</nav>
+																					
+<div class="container">
+<div class="value-props row">
+<div class="twelve columns value-prop">
+
+	<div class="inside" style="margin-top: 20px; padding-top: 0px; text-align:justify">
+  <h5 style="text-align:center;">{{ page.title }}</h5>
+  {{ content }}
+	</div>
+
+</div>
+</div>
+</div>
+
+<nav style="width: 100%; background-color: #fff; border-top: 1px solid #c3c3c3" class="value-props row">
+<div class="three columns">&nbsp;
+	{% if page.next and page.next.categories contains "landscape" %}
+	<a href="{{ page.next.url }}">Previous</a> 
+	{% endif %}
+</div>
+<div class="six columns"><a href="/landscape/">Landscape Lab</a></div>
+<div class="three columns">
+	{% if page.previous and page.previous.categories contains "landscape" %}
+	<a href="{{ page.previous.url }}">Next</a> 
+	{% endif %}
+</div>
+</nav>
+
