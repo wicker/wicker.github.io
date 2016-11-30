@@ -1,0 +1,64 @@
+---
+layout: page
+title: Blog Entries
+permalink: /blog/toc.html
+---
+
+{% assign thisyear = 'now' | date: "%Y" %}
+{% assign firstyear = true %}
+{% assign counter = 0 %}
+
+{% for post in site.categories.blog reversed %}
+	{% assign last_post_year = thisyear %}
+	{% assign thisyear = post.date | date: "%Y" %}
+	{% assign counter = counter | plus: 1 %}
+	{% assign loopindex = counter | modulo: 2 %}
+
+	{% if firstyear == true or thisyear != last_post_year %}
+
+	  {% if thisyear != '2001' %}
+      <div class="clear">&nbsp;</div>
+    {% endif %}
+
+    In <a id="{{thisyear}}">{{ thisyear }}</a>,
+    {% if thisyear == '2005' %}
+      having just spent a year in avionics school, I finally reported to my first proper duty station at Marine Corps Air Station Yuma, Arizona, to repair AV8-B Harrier jump jets. I'd started learning to fly in Civil Air Patrol as a teenager, so I called up the local Experimental Aircraft Association chapter and started hanging out with the guys that built and flew their own airplanes.  
+      {% elsif thisyear == '2006' %}
+      I deployed to Iraq for seven months. The Marines allowed me to take my leave in one chunk when I got back, so I took the train in a big loop around the United States and Canada, visiting friends and family along the way. When I got back, I bought a beat-up truck and started taking flying lessons at Somerton Airport. 
+      {% elsif thisyear == '2007' %}
+      I made corporal and spent the year certifying repair work as an inspector. In my spare time, I explored Arizona and hung out with the local pilots in Yuma and nearby El Centro, flying and occasionally helping turn a wrench. I finished up my Certificate of Aviation Maintenance Technology from Embry Riddle with the hopes that I'd be able to get an Airframes and Powerplant certification. I went to the big Oshkosh airshow with a friend, and then in November I deployed on the <em>USS Tarawa</em>.
+    {% elsif thisyear == '2008' %}
+      the <em>USS Tarawa</em> made a port call at Singapore on her way to the Persian Gulf and the Gulf of Aden, and returned by way of Western Australia, Tasmania, and Hawaii. When I got home, I resumed work on my undergrad and rented a room off-base with a friend.
+    {% elsif thisyear == '2009' %}
+      a lot of things came together. I made sergeant, worked night crew, graduated from Old Dominion with a Bachelor's in Engineering Technology, and got out of the Marines. The next day, I dropped everything and flew to Europe, backpacking solo by train for three months from Switzerland to England, Turkey, and arctic Sweden. 
+    {% elsif thisyear == '2010' %}
+      back home in Portland, I found an apartment and started post-bac courses at Portland State University. I tried to keep up with the airplane building and flying, but was soon overwhelmed with graduate coursework. I think my life would have been very different if I'd stayed more active in aviation. 
+<br /><br />
+I took advantage of the four-week break between summer and fall terms to make a loop around the western United States, camping in National Parks and visiting friends. 
+    {% elsif thisyear == '2011' %}
+      I found the Portland State Aerospace Society, which pushed me to take on projects that I wouldn't otherwise have felt confident or capable of attempting. I earned an innovation grant and laid out my first printed circuit boards. 
+    {% elsif thisyear == '2012' %}
+      struggling with whether to find a thesis or get a coursework master's degree, I worked as a teaching assistant, interned at Boeing-owned dronemaker Insitu in Hood River, helped build a somewhat-stable quadcopter with the PSU Autonomous Vehicles Team, and wrote code for Google Summer of Code. 
+<br /><br />
+    Like a lot of grad students, I struggled with work/life balance, as well as with whether to stay in aviation or give up and focus on some element of hardware development that was more broadly applicable. In the summer break, I hiked two sections of the Pacific Crest Trail in Oregon, and over the winter break I spent Christmas with family in Switzerland.
+    {% elsif thisyear == '2013' %}
+      I got my first proper design engineer job for Astronics Max-Viz, which makes aircraft cameras that blend infrared and regular cameras to see at night, and through smoke and light fog. Work/life balance went completely out the window and I spent the year working full time, finishing up grad school, buying a house, learning to build high powered rockets, and finally graduating wth a Master's in Electrical and Computer Engineering. 
+    {% elsif thisyear == '2014' %}
+     I started designing circuit boards for my own projects and got sucked back into Portland State Aerospace Society, coordinating the flying side of a test to send packets over WiFi from a distance of 77 miles (124km). We were in the plane above Mt St Helens and transmitted to Rocky Butte in Portland. I also got back to some of the carbon fiber layup I'd done for aircraft by helping build an oven controller for a giant composites curing oven for the Aerospace Society. Late in the year, I attended a ten-day insight meditation retreat.
+    {% elsif thisyear == '2015' %}
+     fresh off some significant insights from meditation retreat, I transitioned from Max-Viz to OSH Park, which allowed me to work remotely and still do engineering design work. In July, I was invited as a last-minute addition to a fantastic fourteen-day Grand Canyon paddle-rafting trip. When I got back, I filed all the paperwork to give my consulting company a proper try.
+    {% elsif thisyear == '2016' %}
+    No idea yet. 
+    {% endif %}
+    {% assign firstyear = false %}
+	  <div class="clear">&nbsp;</div>
+	{% endif %}
+
+		<div class="blogthumb">
+      <a href="{{post.url}}"><img src="{{ post.image }}"></a>
+      <div class="blogthumb-link"><a href="{{post.url}}">{{ post.title }}</a></div>
+    </div>
+		
+{% endfor %}
+
+<div class="clear">&nbsp;</div>
