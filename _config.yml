@@ -1,0 +1,24 @@
+safe:        false
+port:        4000
+
+source:      .
+destination: ./_site
+
+future:      true
+lsi:         false
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+permalink:   /:year/:month/:title
+
+title:       Jenner Hanni
+description: Personal homepage and occasional blog.
+author:      Jenner Hanni
+email:       jeh.wicker@gmail.com
+
+exclude:     [_site]
+
+collections: 
+  travels:
+    name: Travels
+    url: /travels/
+    output: true
+    permalink: /travels/:title/
