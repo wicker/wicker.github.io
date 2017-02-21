@@ -4,14 +4,16 @@
 
   <meta charset="utf-8">
   <title>{{ site.title }}</title>
-  <meta name="description" content="Personal content management system implementation.">
-  <meta name="author" content="Jenner Hanni">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/skeleton.css">
-  <link rel="stylesheet" href="/css/custom.css">
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="{{site.baseurl}}/css/normalize.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/skeleton.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/custom.css">
 
 </head>
 <body>
@@ -20,23 +22,18 @@
     <div class="row">
       <div class="twelve columns header">
         <h1>{{ site.title }}</h1>
+        <h2>{{ site.description }}</h1>
       </div>
     </div>
-    <div class="row" style="background-color: #c0a97d; min-height: 60px; line-height: 60px">
-      <div class="one column">&nbsp;</div>
-      <div class="one column nav">
-        <a href="/">Home</a>
-      </div>
-      <div class="four columns">&nbsp;</div>
-      <div class="one column nav">
-        <a href="/travels/">Travels</a>
-      </div>
-      <div class="one column nav">
-        <a href="/projects/">Projects</a>
-      </div>
-      <div class="four columns">&nbsp;</div>
+    <div class="row rownav">
+      <ul class="twelve columns nav">
+        <li><a href="{{site.baseurl}}/">About</a></li>
+        <li><a href="{{site.baseurl}}/#projects">Projects</a></li>
+        <li><a href="{{site.baseurl}}/#travels">Travels</a></li>
+        <li><a href="{{site.baseurl}}/#writing">Writing</a></li>
+        <li><a href="{{site.baseurl}}/#other">Other</a></li>
+      </ul>
     </div>
-
   </div>
  
   <!--- the child page must create a new container --->
