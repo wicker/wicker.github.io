@@ -8,7 +8,17 @@ layout: default
   <div class="one column">&nbsp;</div>
   <div class="four columns" style="padding-top: 20px; text-align:justify">
 
+<em>Wildness reminds us what it means to be human, what we are connected to rather than what we are separate from.</em> <br />-- Terry Tempest Williams
+
+  <br /><br />
+
+<em>We are human only in contact, and conviviality, with what is not human.</em><br /> -- David Abram
+
+
   <h2 id="about">About Jenner</h2> 
+
+  <br /><br />
+
 
   Marines
   <br />Private Pilot
