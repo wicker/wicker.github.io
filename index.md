@@ -1,124 +1,39 @@
 ---
-layout: default
+layout: page
 ---
+<img src="{{site.baseurl}}/img/refuge.png">
+   
+<div style="margin: 0 auto 30px ;text-align:center; max-width: 450px;"><em>Wildness reminds us what it means to be human, what we are connected to rather than what we are separate from.</em> <br />-- Terry Tempest Williams</div>
 
-<div class="container" style="padding-bottom: 20px; border-bottom: 1px solid #cfcfcf">
-  <div class="row">
+#### About Jenner
 
-  <div class="one column">&nbsp;</div>
-  <div class="four columns" style="padding-top: 20px; text-align:justify">
+I'm an electrical engineer who takes freelance contract jobs to develop hardware prototypes. I want to create networked hardware to collect data and visualize it on the web, so I've got a couple of open source networked hardware projects in development and I'm trying my hand at website design. 
 
-<em>Wildness reminds us what it means to be human, what we are connected to rather than what we are separate from.</em> <br />-- Terry Tempest Williams
+I'm an outdoorsy Oregonian and I've been reading about deep ecology lately. I'm not on social media, but you can email me at jeh.wicker@gmail.com.
 
-  <br /><br />
+#### My Timeline
 
-<em>We are human only in contact, and conviviality, with what is not human.</em><br /> -- David Abram
+<div class="timeline-right" style="background-image: url(/img/blueberet.png)">
+2003 - Civil Air Patrol Cadet</div>
 
+<div class="timeline-left" style="background-image: url(/img/usmc.png)">2004 - US Marine Corps</div>
 
-  <h2 id="about">About Jenner</h2> 
+<div class="timeline-right" style="background-image: url(/img/alasad.png)">2006 - Iraq</div>
 
-  <br /><br />
+<div class="timeline-left" style="background-image: url(/img/privatepilot.png)">2007 - Private Pilot</div>
 
+<div class="timeline-right" style="background-image: url(/img/flightops.png)">2008 - USS Tarawa Westpac</div>
 
-  Marines
-  <br />Private Pilot
-  <br />Electrical Engineer (Max-Viz, OSH Park)
-  <br />Hardware Developer (chasing Ice, etc, open source)
-  <br />Hiker/Westerner/Reader
-  <br />I live in Oregon
-  <br /><br />
-  I'm a hardware developer trying his hand at website design. 
-  <br /><br />
-  I'm not on social media, but you can email me at jeh.wicker@gmail.com.
-  <br /><br />
-  I have a Github account for my code.
-  <br /><br />
-  I create networked hardware to collect data and visualize it on the web. 
-  <br /><br />
-  I'm hoping to showcase a handful of simple data viz web apps here.
+<div class="timeline-left" style="background-image: url(/img/portlandstate.png)">2010 - Portland State</div>
 
-  </div>
-  <div class="two columns">&nbsp;</div>
-  <div class="four columns"><img src="{{site.baseurl}}/img/me.png"></div>
-  <div class="one column">&nbsp;</div>
-  </div>
-</div>
+<div class="timeline-right" style="background-image: url(/img/lhsrobots.png)">2011 - FIRST Robotics Mentor</div>
 
-<div class="container" style="padding-top: 40px;">
-  <div class="row">
+<div class="timeline-left" style="background-image: url(/img/alasad.png)">2012 - Boeing Insitu</div>
 
-  <div class="two columns">&nbsp;</div>
-  <div class="eight columns">
+<div class="timeline-right" style="background-image: url(/img/alasad.png)">2013 - Astronics Max-Viz</div>
 
-  <h2 id="projects">Projects</h2> 
+<div class="timeline-left" style="background-image: url(/img/alasad.png)">2015 - OSH Park</div>
 
-  </div>
-  <div class="two columns">&nbsp;</div>
+<div class="timeline-right" style="background-image: url(/img/alasad.png)">2017 - Wickerbox Electronics</div>
 
-  </div>
-</div>
-<div class="container">
-  <div class="row" style="padding: 20px 0;">
-
-  <div class="two columns">&nbsp;</div>
-  <div class="two columns centered"><a href="http://192.155.84.92/tualatin-tribute/"><img src="{{site.baseurl}}/img/bird.png">Tribute Page</a></div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns">&nbsp;</div>
-
-  </div>
-</div>
-
-<div class="container" style="border-bottom: 1px solid #cfcfcf">
-  <div class="row" style="padding: 20px 0;">
-
-  <div class="two columns">&nbsp;</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns">&nbsp;</div>
-
-  </div>
-</div>
-<div class="container" style="padding-top: 40px;">
-  <div class="row">
-
-  <div class="two columns">&nbsp;</div>
-  <div class="eight columns">
-
-  <h2 id="travels">Travels</h2> 
-
-  </div>
-  <div class="two columns">&nbsp;</div>
-
-  </div>
-</div>
-<div class="container">
-  <div class="row" style="padding: 20px 0;">
-
-  <div class="two columns">&nbsp;</div>
-  <div class="two columns centered"><a href="http://192.155.84.92/tualatin-tribute/"><img src="{{site.baseurl}}/img/bird.png">Tribute Page</a></div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns">&nbsp;</div>
-
-  </div>
-</div>
-
-<div class="container">
-  <div class="row" style="padding: 20px 0;">
-
-  <div class="two columns">&nbsp;</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns centered"><img src="{{site.baseurl}}/img/test.png">Coming Soon</div>
-  <div class="two columns">&nbsp;</div>
-
-  </div>
-</div>
-
-
+<div style="clear:both; height: 100px;">&nbsp;</div>
