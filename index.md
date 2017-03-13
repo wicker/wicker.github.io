@@ -7,33 +7,56 @@ layout: page
 
 #### About Jenner
 
-I'm an electrical engineer who takes freelance contract jobs to develop hardware prototypes. I want to create networked hardware to collect data and visualize it on the web, so I've got a couple of open source networked hardware projects in development and I'm trying my hand at website design. 
+My goal is to build networked sensor hardware to collect data about the natural environment, and then visualize that data on the web or (eventually) in an immersive way through virtual or augmented reality so that people can better understand the effect of human development on the natural world. 
 
-I'm an outdoorsy Oregonian and I've been reading about deep ecology lately. I'm not on social media, but you can email me at jeh.wicker@gmail.com.
+Besides being a freelance hardware developer, I'm an outdoorsy Oregonian and I've been reading about deep ecology lately. 
+
+I'm not on social media, but you can email me at jeh.wicker@gmail.com.
 
 #### My Timeline
 
-<div class="timeline-right" style="background-image: url(/img/blueberet.png)">
-2003 - Civil Air Patrol Cadet</div>
+<div class="timeline-right">
+  <h3><span class="year">2003</span><span class="tl-title-right">Civil Air Patrol Cadet</span></h3>
+</div>
 
-<div class="timeline-left" style="background-image: url(/img/usmc.png)">2004 - US Marine Corps</div>
+<div class="timeline-left">
+  <h3><span class="tl-title-left">US Marine Corps</span><span class="year">2004</span></h3>
+</div>
 
-<div class="timeline-right" style="background-image: url(/img/alasad.png)">2006 - Iraq</div>
+<div class="timeline-right">
+  <h3><span class="year">2006</span><span class="tl-title-right">Iraq</span></h3>
+</div>
 
-<div class="timeline-left" style="background-image: url(/img/privatepilot.png)">2007 - Private Pilot</div>
+<div class="timeline-left">
+  <h3><span class="tl-title-left">Private Pilot</span><span class="year">2007</span></h3>
+</div>
 
-<div class="timeline-right" style="background-image: url(/img/flightops.png)">2008 - USS Tarawa Westpac</div>
+<div class="timeline-right">
+  <h3><span class="year">2008</span><span class="tl-title-right">USS Tarawa Westpac</span></h3>
+</div>
 
-<div class="timeline-left" style="background-image: url(/img/portlandstate.png)">2010 - Portland State</div>
+<div class="timeline-left">
+  <h3><span class="tl-title-left">Portland State</span><span class="year">2010</span></h3>
+</div>
 
-<div class="timeline-right" style="background-image: url(/img/lhsrobots.png)">2011 - FIRST Robotics Mentor</div>
+<div class="timeline-right">
+  <h3><span class="year">2011</span><span class="tl-title-right">FIRST Robotics Mentor</span></h3>
+</div>
 
-<div class="timeline-left" style="background-image: url(/img/alasad.png)">2012 - Boeing Insitu</div>
+<div class="timeline-left">
+  <h3><span class="tl-title-left">Boeing Insitu</span><span class="year">2012</span></h3>
+</div>
 
-<div class="timeline-right" style="background-image: url(/img/alasad.png)">2013 - Astronics Max-Viz</div>
+<div class="timeline-right">
+  <h3><span class="year">2013</span><span class="tl-title-right">Astronics Max-Viz</span></h3>
+</div>
 
-<div class="timeline-left" style="background-image: url(/img/alasad.png)">2015 - OSH Park</div>
+<div class="timeline-left">
+  <h3><span class="tl-title-left">OSH Park</span><span class="year">2015</span></h3>
+</div>
 
-<div class="timeline-right" style="background-image: url(/img/alasad.png)">2017 - Wickerbox Electronics</div>
+<div class="timeline-right">
+  <h3><span class="year">2017</span><span class="tl-title-right">Wickerbox Electronics</span></h3>
+</div>
 
 <div style="clear:both; height: 100px;">&nbsp;</div>
