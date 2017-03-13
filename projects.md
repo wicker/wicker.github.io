@@ -32,7 +32,7 @@ Here's some of what I do:
 - assemble boards by hand soldering, reflow oven, and hot air station
 - test and troubleshoot the boards
 
-Some recent work
+I'm <a href="mailto: jenner@wickerbox.net">available for hire</a> so most of my work is closed source and proprietary, but here's some of my open source work:
 
 - <a href="https://github.com/wickerbox/Basic-Breakout-Boards">Breakout Boards</a> - <em>Breadboard-compatible boards for prototyping.</em>
 - <a href="https://github.com/wickerbox/Teensy-Hats">Teensy Hats</a> - <em>Collection of daughter boards for the Teensy series.</em>
@@ -53,3 +53,4 @@ Lately, I've been trying my hand at building web apps using FreeCodeCamp.org's c
 
 - <a href="http://192.155.84.92/personal-portfolio/">FreeCodeCamp Portfolio</a> - <em>full-stack web development for a non-profit</em>
 
+<div style="clear: both; height: 100px;">&nbsp;</div>
