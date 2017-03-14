@@ -5,7 +5,7 @@ description: Anzac Cove, Shrapnel Valley, and Plugge's Plateau
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Backpacking
+subcat: Europe
 location: Turkey
 image: /img/thumbs/anzaccove.png
 permalink: 

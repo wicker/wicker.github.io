@@ -1,11 +1,11 @@
 ---
 layout: post
 title: All American Canal
-description: Checking out th All-American canal near Yuma
+description: Checking out the All-American canal near Yuma
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: 
+subcat: Southwest
 location: Arizona
 image: /img/thumbs/allamcanal.png
 publish: yes

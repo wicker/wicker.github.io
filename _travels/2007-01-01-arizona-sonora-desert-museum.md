@@ -5,7 +5,7 @@ description: An excellent outdoor desert 'museum' near Tucson.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: 
+subcat: Southwest
 location: Arizona
 image: /img/thumbs/asdm.png
 permalink: 

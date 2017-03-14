@@ -5,7 +5,7 @@ description: Medieval English castle.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Backpacking
+subcat: Europe
 location: England
 image: /img/thumbs/warwick.png
 permalink: 

@@ -5,7 +5,7 @@ description: The airport where I learned to fly.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Flying
+subcat: Private Pilot
 location: Arizona
 image: /img/thumbs/somerton.png
 permalink: 

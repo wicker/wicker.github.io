@@ -5,7 +5,7 @@ description: Traveling down the coast of Croatia.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Backpacking
+subcat: Europe
 location: Croatia
 image: /img/thumbs/soltasplit.png
 permalink: 

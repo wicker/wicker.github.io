@@ -5,7 +5,7 @@ description:
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: 
+subcat: Private Pilot
 location: California
 image: /img/thumbs/globalhawk.png
 permalink: 

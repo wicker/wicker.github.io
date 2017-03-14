@@ -5,7 +5,7 @@ description: Birthplace of Frank Whittle, inventor of the jet engine.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Backpacking
+subcat: Europe
 location: England
 image: /img/thumbs/midlandair.png
 permalink: 

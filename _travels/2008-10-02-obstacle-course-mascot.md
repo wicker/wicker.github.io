@@ -4,8 +4,8 @@ title: Obstacle Course Mascot
 description:
 type: photos
 destination: jenner-hanni
-category: marine-corps
-subcat: 
+category: travels
+subcat: Marine Corps
 location: Arizona
 image: /img/thumbs/ocourse.png
 permalink: 

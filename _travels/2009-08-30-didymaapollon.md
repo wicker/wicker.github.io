@@ -5,7 +5,7 @@ description: Ancient temple at Didyma in Turkey
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Backpacking
+subcat: Europe
 location: Turkey
 image: /img/thumbs/didymapollon.png
 permalink: 

@@ -5,7 +5,7 @@ description: Out for a Saturday morning walk in a regular Yuma neighborhood.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: flying
+subcat: Private Pilot
 location: Arizona
 image: /img/thumbs/ballooning.png
 permalink: 

@@ -5,7 +5,7 @@ description: A nearby lake, no really!, near Yuma.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: 
+subcat: Southwest
 location: Arizona
 image: /img/thumbs/mittry.png
 permalink: 

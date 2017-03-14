@@ -5,7 +5,7 @@ description: Not far from the Hole-in-the-Wall
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: southwest
+subcat: Southwest
 location: California
 image: /img/thumbs/mojave.png
 permalink: 

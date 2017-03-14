@@ -5,7 +5,7 @@ description: Ancient terraced travertine deposites near Hierapolis.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Backpacking
+subcat: Europe
 location: Turkey
 image: /img/thumbs/pamukkale.png
 permalink: 

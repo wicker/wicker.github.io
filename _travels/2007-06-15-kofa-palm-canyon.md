@@ -5,7 +5,7 @@ description: Only stand of native palms in Arizona.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: 
+subcat: Southwest
 location: Arizona
 image: /img/thumbs/palmcanyon.png
 permalink: 

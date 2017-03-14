@@ -5,7 +5,7 @@ description: Giving kids their first ride in a small aircraft.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Flying
+subcat: Private Pilot
 location: Arizona
 image: /img/thumbs/youngeagles.png
 permalink: 

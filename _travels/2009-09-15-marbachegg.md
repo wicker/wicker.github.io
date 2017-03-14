@@ -5,7 +5,7 @@ description: Renting a house in Marbach in the Swiss Alps.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Backpacking
+subcat: Europe
 location: Switzerland
 image: /img/thumbs/marbachegg.png
 permalink: 

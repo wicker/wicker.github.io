@@ -5,7 +5,7 @@ description: Hiking with my uncle in the mountains of Switzerland.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Backpacking
+subcat: Europe
 location: Switzerland
 image: /img/thumbs/bietschhorn.png
 permalink: 

@@ -5,7 +5,7 @@ description: Chasing the $100 breakfast burrito.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Flying 
+subcat: Private Pilot 
 location: Arizona
 image: /img/thumbs/texashill.png
 permalink: 

@@ -5,30 +5,50 @@ description: Taking my new X100S out to play at the wildlife refuge.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: northwest
+subcat: Northwest
 location: Oregon
 image: /img/thumbs/tualatin-evening.png
 permalink: 
 publish: yes
 ---
 
-<img src="https://lh3.googleusercontent.com/-Z16_6gJQMD4/UgWmt0LaTVI/AAAAAAAAFgs/_upRGP0y0hA/s839/DSCF1919.png">
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-LwRfs2s/0/M/photo3-M.jpg">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-LwRfs2s/0/M/photo3-M.jpg" alt=""></a></p>
 
-<img src="https://lh6.googleusercontent.com/-Zdt5ifwcxNY/UgWmjhNCD_I/AAAAAAAAFfo/oPz4k250EKk/s839/DSCF1922.png">
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-LCkmTFk/0/M/photo6-M.jpg">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-LCkmTFk/0/M/photo6-M.jpg" alt=""></a></p>
 
-<img src="https://lh6.googleusercontent.com/-5RoJz1pmiHA/UgWmjqPqjNI/AAAAAAAAFfs/7wuYBUwbcCc/s839/DSCF1923.png">
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-rpDpsnG/0/M/photo10-M.jpg">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-rpDpsnG/0/M/photo10-M.jpg" alt=""></a></p>
 
-<img src="https://lh3.googleusercontent.com/-HRR_vCOJh0Y/UgWmkRd0tMI/AAAAAAAAFf4/b3aGX4RMv0Y/s839/DSCF1924.png">
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-KwCsf6j/0/M/DSCF1919-M.png">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-KwCsf6j/0/M/DSCF1919-M.png" alt=""></a></p>
 
-<img src="https://lh4.googleusercontent.com/-i3JQv-_liFE/UgWmknggOUI/AAAAAAAAFgA/i1TgNJU9EaU/s839/DSCF1933.png">
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-TS4vvN2/0/M/DSCF1923-M.png">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-TS4vvN2/0/M/DSCF1923-M.png" alt=""></a></p>
 
-<img src="https://lh5.googleusercontent.com/-FMsbId2hPWU/UgWmlGI3_lI/AAAAAAAAFgI/NitMC87piDk/s839/DSCF1938.png">
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-BpP6gQR/0/M/DSCF1922-M.png">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-BpP6gQR/0/M/DSCF1922-M.png" alt=""></a></p>
 
-<img src="https://lh6.googleusercontent.com/-t81XliENIps/UgWmly6h-zI/AAAAAAAAFgQ/pLmaw2vPciE/s640/DSCF1943.png">
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-5WNKB5P/0/M/DSCF1943-M.png">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-5WNKB5P/0/M/DSCF1943-M.png" alt=""></a></p>
 
-<img src="https://lh3.googleusercontent.com/-FVdGZC9nGF8/UgWml6x-ACI/AAAAAAAAFgY/udt9rtaov10/s839/DSCF1948.png">
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-cW3cVf4/0/M/DSCF1969-M.png">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-cW3cVf4/0/M/DSCF1969-M.png" alt=""></a></p>
 
-<img src="https://lh3.googleusercontent.com/-AZf30ZPAI20/UgWmmqGj-oI/AAAAAAAAFgg/vZyOXlMGbV4/s839/DSCF1969.png">
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-bwzg5ZN/0/M/DSCF1978-M.png">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-bwzg5ZN/0/M/DSCF1978-M.png" alt=""></a></p>
 
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-Wr67n5N/0/M/DSCF1933-M.png">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-Wr67n5N/0/M/DSCF1933-M.png" alt=""></a></p>
+
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-H46cgK5/0/M/DSCF1924-M.png">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-H46cgK5/0/M/DSCF1924-M.png" alt=""></a></p>
+
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-3gDkfNw/0/M/DSCF1938-M.png">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-3gDkfNw/0/M/DSCF1938-M.png" alt=""></a></p>
+
+<p><a href="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-bGXbHT5/0/M/DSCF1948-M.png">
+<img src="https://jenner.smugmug.com/North-America/2013-Tualatin-Refuge/i-bGXbHT5/0/M/DSCF1948-M.png" alt=""></a></p>
 
 

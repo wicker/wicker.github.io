@@ -5,7 +5,7 @@ description:
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: 
+subcat: Southwest
 location: Arizona
 image: /img/thumbs/lakehavasu.png
 permalink: 

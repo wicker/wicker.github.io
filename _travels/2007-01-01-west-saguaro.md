@@ -5,7 +5,7 @@ description: Cactus, petroglyphs, and birds.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: 
+subcat: Southwest
 location: Arizona
 image: /img/thumbs/saguaro.png
 permalink: 

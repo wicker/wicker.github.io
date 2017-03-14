@@ -5,7 +5,7 @@ description: Historic prison from the late 1800s.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: southwest
+subcat: Southwest
 location: Arizona
 image: /img/thumbs/prison.png
 permalink: 

@@ -5,7 +5,7 @@ description: A shipping container city for bombing practice.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: 
+subcat: Private Pilot
 location: Arizona
 image: /img/thumbs/yodaville.png
 permalink: 

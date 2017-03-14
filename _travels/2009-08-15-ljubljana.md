@@ -5,7 +5,7 @@ description: Capital of Slovenia.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Backpacking
+subcat: Europe
 location: Slovenia
 image: /img/thumbs/ljubljana.png
 permalink: 

@@ -5,7 +5,7 @@ description: The Kungsleden, the Royal Trail, distance hiking in Sweden.
 type: photos
 destination: jenner-hanni
 category: travels
-subcat: Backpacking
+subcat: Europe
 location: Sweden
 image: /img/thumbs/kungsleden.png
 permalink: 
