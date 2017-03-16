@@ -8,7 +8,7 @@ I'm a hardware developer who focuses on building networks of sensors to collect 
 
 #### Wickerbox Electronics
 
-I develop both open and closed source hardware through <a href="http://wickerbox.net/">Wickerbox Electronics</a>, my company, but I prefer to develop in the open when I can. 
+I develop both open and closed source hardware as a freelancer through <a href="http://wickerbox.net/">Wickerbox Electronics</a>, my company, but I prefer to develop in the open whenever I can. 
 
 I wrote a series of articles called <a href="#">Setting up a KiCad Workflow</a> about using KiCad, a free and open source schematic capture tool. My libraries, tools, Pandoc and LaTeX templates, and all my KiCad-related scripts are public.
 
