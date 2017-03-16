@@ -30,13 +30,13 @@ Camping at Elk Meadow for the Perseid meteor shower.
 
 <img src="https://jenner.smugmug.com/Elk-Meadow/i-RkmRD5c/0/M/IMG_3263-M.jpg" class="vertimg">
 
-<img src="https://jenner.smugmug.com/Elk-Meadow/i-RcdB8Pj/0/M/IMG_3272-M.jpg" class="vertimg"><div style="clear:both;"></div>
+<img src="https://jenner.smugmug.com/Elk-Meadow/i-RcdB8Pj/0/M/IMG_3272-M.jpg" class="vertimg">
 
 <img src="https://jenner.smugmug.com/Elk-Meadow/i-SL4mHM9/0/L/IMG_3266-L.jpg">
 
 <img src="https://jenner.smugmug.com/Elk-Meadow/i-c4zBrjq/0/M/IMG_3288-M.jpg" class="vertimg">
 
-<img src="https://jenner.smugmug.com/Elk-Meadow/i-mgxqn2d/0/M/IMG_3291-M.jpg" class="vertimg"><div style="clear:both;"></div>
+<img src="https://jenner.smugmug.com/Elk-Meadow/i-mgxqn2d/0/M/IMG_3291-M.jpg" class="vertimg">
 
 <img src="https://jenner.smugmug.com/Elk-Meadow/i-hvt9qzt/0/L/IMG_3290-L.jpg">
 

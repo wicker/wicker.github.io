@@ -36,7 +36,7 @@ Photos from the Dee Wright Observatory at McKenzie Pass in Oregon.
 
 <img src="https://jenner.smugmug.com/Dee-Wright-Observatory-at/i-J5LhcVx/0/M/IMG_3075-M.jpg" class="vertimg">
 
-<img src="https://jenner.smugmug.com/Dee-Wright-Observatory-at/i-MWxjxhx/0/M/IMG_3076-M.jpg" class="vertimg"><div style="clear:both;"></div>
+<img src="https://jenner.smugmug.com/Dee-Wright-Observatory-at/i-MWxjxhx/0/M/IMG_3076-M.jpg" class="vertimg">
 
 <img src="https://jenner.smugmug.com/Dee-Wright-Observatory-at/i-vQbKHZp/0/L/IMG_3077-L.jpg">
 
