@@ -12,9 +12,9 @@ I develop both open and closed source hardware as a freelancer through <a href="
 
 <!--I wrote a series of articles called <a href="#">Setting up a KiCad Workflow</a> about using KiCad, a free and open source schematic capture tool. My libraries, tools, Pandoc and LaTeX templates, and all my KiCad-related scripts are public.-->
 
-#### Conference Talks
+<!--#### Conference Talks
 
-I talked at OpenSourceBridge about <a href="http://opensourcebridge.org/sessions/1365">Math vs Mathematics</a> and <a href="http://opensourcebridge.org/sessions/1618">Design from Breadboard to PCB</a> in 2014, and about <a href="http://opensourcebridge.org/sessions/1618">Getting Started with KiCad</a> in 2015.
+I talked at OpenSourceBridge about <a href="http://opensourcebridge.org/sessions/1365">Math vs Mathematics</a> and <a href="http://opensourcebridge.org/sessions/1618">Design from Breadboard to PCB</a> in 2014, and about <a href="http://opensourcebridge.org/sessions/1618">Getting Started with KiCad</a> in 2015.<-->
 
 #### Hardware 
 
