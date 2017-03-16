@@ -1,5 +1,5 @@
 safe:        false
-port:        4000
+port:        4002
 
 source:      .
 destination: ./_site
@@ -10,7 +10,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink:   /:year/:month/:title
 
 title:       Jenner Hanni
-description: Electrical engineering and occasional adventures.
+description: Hardware Developer
 author:      Jenner Hanni
 email:       jeh.wicker@gmail.com
 

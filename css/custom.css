@@ -1,13 +1,63 @@
+body { background-color: #eaeaea;  font-size: 16px;}
+
+h1,h2,h3,h4,h5 { text-align:center; }
+
+h1 {
+  margin: 40px 0 10px 0; 
+  font-size: 36px;
+  font-family: Lucida, serif;
+  font-weight: bold;
+}
+
+h2 {
+  text-align:center;
+  font-size: 18px;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.header h2 {
+  font-weight: normal;
+}
+
+.container { background-color :#fff; padding: 0px 0 20px}
+.padded { padding: 20px; }
+.clear {clear:both;}
+a, a:visited {color: #201da5; text-decoration: none; }
+
+a:hover {color: #1916dd}
+
+.rownav {
+  background: #fff;
+  margin: 20px 0;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  min-height: 60px; 
+  line-height: 60px;
+}
+
+.nav {
+  text-align: center;
+  font-size: 16px;
+  font-family: Georgia, serif;
+}
+
+.centered { text-align:center;}
+.header {
+  background-color: #fff;
+}
+
 .main-content { text-align:justify; }
 
 .inside { padding: 30px; }
 
 .blogthumb {
+  
   border: 1px solid #d3d3d3;
   border-radius: 5px;
   padding-bottom: 10px;
   text-align:center;
-  margin: 10px;
+  margin: 1%;
   width: 30%;
   float: left;
 }
@@ -18,16 +68,73 @@
   overflow: hidden;
 }
 
-.clear { clear:both; }
-
-img { width: 100%; }
-
-h5,h5 a,h5 a:hover,h4,h4 a,h4 a:hover {
-  font-size: 20px;
-  font-family: Georgia, serif;
-  text-align:center;
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
+.blogthumb img {
+  border-radius: 0px
 }
 
+.clear { clear:both; }
+
+img { width: 100%; border-radius: 20px; }
+
+li { padding-left: 20px; }
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+    line-height: 20px;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+
+.timeline-right {
+  border-left: thick solid #000;
+  border-bottom: thick solid #000;
+  padding: 10px;
+  width: 50%;
+  float: right;
+  text-align: left;
+}
+
+.timeline-left {
+  border-right: thick solid #000;
+  border-bottom: thick solid #000;
+  padding: 10px;
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+.timeline-right h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+.timeline-left h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  text-align: right;
+}
+
+.year {
+  border: thick solid #000;
+  margin: -15px;
+  padding: 10px;
+}
+
+.tl-title-left {
+  margin-right: 30px;
+}
+
+.tl-title-right {
+  margin-left: 30px;
+}

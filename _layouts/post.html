@@ -2,21 +2,8 @@
 layout: default
 ---
 
-<nav style="width: 100%; margin-bottom: 20px; border-bottom: 1px solid #cfcfcf;">
-  {% if page.next %}
-  <div style="float:left;">&nbsp; &laquo; <a href="{{ page.next.url }}">{{ page.next.title }}</a></div>
-  {% else %}
-  <div style="float:left;">&laquo; <a href="/">Front Page</a></div>
-  {% endif %}
-  {% if page.previous %}
-  <div style="float:right;"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a> &raquo; </div>
-  {% else %}
-  <div style="float:right;"><a href="/">Front Page</a> &raquo;</div>
-  {% endif %}
-  <div style="clear:both;">&nbsp;</div>
-</nav>
-
-<h1>{{ page.title }}</h1>
+<h4 style="margin-bottom: 0px;">{{ page.title }}</h4>
+<div style="text-align:center; padding: 0 0 30px 0">{{ page.location }} - {{ page.date | date: "%B %Y"}}</div>
 
 {{ content }}
 
