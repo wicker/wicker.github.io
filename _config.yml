@@ -14,5 +14,11 @@ description: Hardware Developer
 author:      Jenner Hanni
 email:       jeh.wicker@gmail.com
 
-exclude:     [writing, drafts, _site, scripts, zim]
+exclude:     [_site]
 
+collections:
+  travels:
+    name: Travels
+    url: /travels/
+    output: true
+    permalink: /travels/:title/
