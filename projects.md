@@ -3,8 +3,6 @@ layout: page
 permalink: /projects/
 title: Projects
 ---
-<div class="clear">&nbsp;</div>
-- <a href="http://wickerbox.net/">Wickerbox Electronics</a> - Open source hardware design. 
 
 I'm a hardware developer who focuses on building networks of sensors to collect environmental data, whether indoors, in a city, or in a river or forest. 
 
