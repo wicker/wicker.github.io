@@ -18,7 +18,7 @@
 </head>
 <body>
 
-  <div class="container" >
+  <div class="container">
     <div class="row">
       <div class="twelve columns header">
         <h1>{{ site.title }}</h1>
@@ -30,7 +30,7 @@
         <li><a href="{{site.baseurl}}/">About</a></li>
         <li><a href="{{site.baseurl}}/travels/">Travels</a></li>
         <li><a href="{{site.baseurl}}/projects/">Technical</a></li>
-        <li><a href="{{site.baseurl}}/thoughts/">Thoughts</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -38,7 +38,21 @@
   <!--- the child page must create a new container --->
   {{ content }}
 
-
+  <div class="container">
+    <div class="row" style="border-top: 1px solid #cfcfcf; padding: 20px 0">
+      <div class="two columns">&nbsp;</div>
+      <div class="four columns">
+        <a href="{{site.baseurl}}/">About</a> - <a href="{{site.baseurl}}/travels/">Travels</a> - 
+        <a href="{{site.baseurl}}/projects/">Technical</a>
+      </div>
+      <div id="contact" class="four columns" style="text-align:right;">
+        Design and content by 
+        <strong>Jenner Hanni</strong><br />
+        jenner@wickerbox.net
+      </div>
+      <div class="two columns">&nbsp;</div>
+    </div>
+  </div>
 </body>
 
 </html>

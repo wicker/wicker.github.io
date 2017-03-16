@@ -9,8 +9,7 @@ layout: page
 
 My goal is to build networked sensor hardware to collect data about the natural environment, and then visualize that data on the web or (eventually) in an immersive way through virtual or augmented reality so that people can better understand the effect of human development on the natural world. 
 
-Besides being a freelance hardware developer, I'm an outdoorsy Oregonian and I've been reading about deep ecology lately. 
+Besides being a freelance hardware developer, I'm an outdoorsy Oregonian. I'm really interested in taking lessons from ecology, philosophy, and natural history to figure out how to live more responsibly as we face the major social, political, and economic shifts coming from climate change.
 
-I'm not on social media, but you can email me at jeh.wicker@gmail.com.
+I'm not on social media, but you can email me at jenner@wickerbox.net.
 
-<div style="clear: both; height: 100px;">&nbsp;</div>

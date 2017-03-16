@@ -10,7 +10,7 @@ I'm a hardware developer who focuses on building networks of sensors to collect 
 
 I develop both open and closed source hardware as a freelancer through <a href="http://wickerbox.net/">Wickerbox Electronics</a>, my company, but I prefer to develop in the open whenever I can. 
 
-I wrote a series of articles called <a href="#">Setting up a KiCad Workflow</a> about using KiCad, a free and open source schematic capture tool. My libraries, tools, Pandoc and LaTeX templates, and all my KiCad-related scripts are public.
+<!--I wrote a series of articles called <a href="#">Setting up a KiCad Workflow</a> about using KiCad, a free and open source schematic capture tool. My libraries, tools, Pandoc and LaTeX templates, and all my KiCad-related scripts are public.-->
 
 #### Conference Talks
 
@@ -32,7 +32,7 @@ Here's some of what I do:
 - assemble boards by hand soldering, reflow oven, and hot air station
 - test and troubleshoot the boards
 
-I'm <a href="mailto: jenner@wickerbox.net">available for hire</a> so most of my work is closed source and proprietary, but here's some of my open source work:
+I'm <a href="http://www.wickerbox.net">available for hire</a> so most of my work is closed source and proprietary, but here's some of my open source work:
 
 - <a href="https://github.com/wickerbox/Basic-Breakout-Boards">Breakout Boards</a> - <em>Breadboard-compatible boards for prototyping.</em>
 - <a href="https://github.com/wickerbox/Teensy-Hats">Teensy Hats</a> - <em>Collection of daughter boards for the Teensy series.</em>
@@ -53,4 +53,3 @@ Lately, I've been trying my hand at building web apps using FreeCodeCamp.org's c
 
 - <a href="http://192.155.84.92/personal-portfolio/">FreeCodeCamp Portfolio</a> - <em>full-stack web development for a non-profit</em>
 
-<div style="clear: both; height: 100px;">&nbsp;</div>

@@ -20,7 +20,7 @@ h2 {
   font-weight: normal;
 }
 
-.container { background-color :#fff }
+.container { background-color :#fff; padding: 0px 0 20px}
 .padded { padding: 20px; }
 .clear {clear:both;}
 a, a:visited {color: #201da5; text-decoration: none; }
@@ -28,6 +28,7 @@ a, a:visited {color: #201da5; text-decoration: none; }
 a:hover {color: #1916dd}
 
 .rownav {
+  background: #fff;
   margin: 20px 0;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
@@ -51,11 +52,12 @@ a:hover {color: #1916dd}
 .inside { padding: 30px; }
 
 .blogthumb {
+  
   border: 1px solid #d3d3d3;
   border-radius: 5px;
   padding-bottom: 10px;
   text-align:center;
-  margin: 10px;
+  margin: 1%;
   width: 30%;
   float: left;
 }
@@ -64,6 +66,10 @@ a:hover {color: #1916dd}
   height: 40px;
   line-height: 20px;
   overflow: hidden;
+}
+
+.blogthumb img {
+  border-radius: 0px
 }
 
 .clear { clear:both; }
