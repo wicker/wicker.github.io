@@ -29,23 +29,27 @@
       <ul class="twelve columns nav">
         <li><a href="{{site.baseurl}}/">About</a></li>
         <li><a href="{{site.baseurl}}/travels/">Travels</a></li>
-        <li><a href="{{site.baseurl}}/projects/">Technical</a></li>
+        <li><a href="{{site.baseurl}}/hardware/">Hardware</a></li>
+        <li><a href="{{site.baseurl}}/software/">Software</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
  
-  <!--- the child page must create a new container --->
   {{ content }}
 
   <div class="container">
-    <div class="row" style="border-top: 1px solid #cfcfcf; padding: 20px 0">
+    <div class="row rownav" style="margin-top: 0px;">
+      <ul class="twelve columns nav">
+        <li><a href="{{site.baseurl}}/">About</a></li>
+        <li><a href="{{site.baseurl}}/travels/">Travels</a></li>
+        <li><a href="{{site.baseurl}}/hardware/">Hardware</a></li>
+        <li><a href="{{site.baseurl}}/software/">Software</a></li>
+      </ul>
+    </div>
+    <div class="row">
       <div class="two columns">&nbsp;</div>
-      <div class="four columns">
-        <a href="{{site.baseurl}}/">About</a> - <a href="{{site.baseurl}}/travels/">Travels</a> - 
-        <a href="{{site.baseurl}}/projects/">Technical</a>
-      </div>
-      <div id="contact" class="four columns" style="text-align:right;">
+      <div class="eight columns" id="contact" style="text-align:center;">
         Design and content by 
         <strong>Jenner Hanni</strong><br />
         jenner@wickerbox.net

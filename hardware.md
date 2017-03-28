@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /projects/
-title: Projects
+permalink: /hardware/
+title: Hardware Projects
 ---
 
 I'm a hardware developer who focuses on building networks of sensors to collect environmental data, whether indoors, in a city, or in a river or forest.
@@ -42,14 +42,4 @@ I'm <a href="http://www.wickerbox.net">available for hire</a> so most of my work
 - <a href="http://wickerbox.net/gps-rf-front-end/">GPS RF Front-end Board</a> - <em>For the Portland State Aerospace Society.</em>
 - <a href="http://wickerbox.net/reflow-oven-controller/">Reflow Oven Controller</a> - <em>For a composites curing oven at Portland State.</em>
 - <a href="http://wickerbox.net/quadcopter-control-board/">Quadcopter Control Board</a> - <em>With onboard 9DOF, XBee, and motor control.</em>
-
-#### Software
-
-I've written a lot of random scripts and programs, mostly to learn languages or explore ideas. I'm familiar with ARM Assembly, VHDL, Verilog, SystemVerilog, C, Python, Javascript, HTML, CSS, Markdown, and Liquid. 
-
-I use Git for version control, and I serve my websites with Jekyll on Github.  
-
-Lately, I've been trying my hand at building web apps using FreeCodeCamp.org's coursework. Here's what I've built so far:
-
-- <a href="http://192.155.84.92/personal-portfolio/">FreeCodeCamp Portfolio</a> - <em>full-stack web development for a non-profit</em>
 
