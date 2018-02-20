@@ -3,10 +3,19 @@ body { background-color: #eaeaea;  font-size: 16px;}
 h1,h2,h3,h4,h5 { text-align:center; }
 
 h1 {
-  margin: 40px 0 10px 0; 
+  line-height: 70px;
   font-size: 36px;
-  font-family: Lucida, serif;
+  font-family: Raleway;
   font-weight: bold;
+  color: #000;
+}
+
+h1 a, h1 a:visited { 
+  color: #000;
+}
+
+h1 a:hover {
+  color: #000;
 }
 
 h2 {
@@ -14,45 +23,72 @@ h2 {
   font-size: 18px;
   font-family: Verdana, sans-serif;
   font-weight: bold;
+  color: #000;
 }
 
 .header h2 {
   font-weight: normal;
 }
 
-.container { background-color :#fff; padding: 0px 0 20px}
-.padded { padding: 20px; }
+.container { padding: 0px 0 60px}
+.padded { padding: 30px 0 40px; }
 .clear {clear:both;}
 a, a:visited {color: #201da5; text-decoration: none; }
 
 a:hover {color: #1916dd}
 
 .rownav {
-  background: #fff;
-  margin: 20px 0;
-  border-top: 1px solid #cfcfcf;
-  border-bottom: 1px solid #cfcfcf;
-  min-height: 60px; 
-  line-height: 60px;
+  margin: 160px 0 0;
+  min-height: 50px; 
+  line-height: 50px;
 }
 
 .nav {
+  color: #fff;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-family: Georgia, serif;
+  display: inline;
+}
+
+.nav{
+    list-style:none;
+    margin-right: 30px;
+    padding:0;
+    float: right;
+}
+.nav li{
+    display:inline;
+    line-height: 20px;
+}
+.nav a{
+    font-family: Raleway;
+    font-weight: bold;
+    display:inline-block;
+    line-height: 45px;
+    height: 36px;
+    color: #000;
+}
+.nav a:hover {
+    text-decoration: underline;
 }
 
 .centered { text-align:center;}
 .header {
-  background-color: #fff;
+  height: 200px;
 }
 
 .main-content { text-align:justify; }
 
+.content {
+  border-radius: 20px;
+  padding-top: 30px;
+  background-color: #fff;
+}
+
 .inside { padding: 30px; }
 
 .blogthumb {
-  
   border: 1px solid #d3d3d3;
   border-radius: 5px;
   padding-bottom: 10px;
@@ -77,21 +113,6 @@ a:hover {color: #1916dd}
 img { width: 100%; border-radius: 20px; }
 
 li { padding-left: 20px; }
-
-.nav{
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
-.nav li{
-    display:inline;
-    line-height: 20px;
-}
-.nav a{
-    display:inline-block;
-    padding:10px;
-}
 
 .timeline-right {
   border-left: thick solid #000;

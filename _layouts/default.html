@@ -16,46 +16,24 @@
   <link rel="stylesheet" href="{{site.baseurl}}/css/custom.css">
 
 </head>
-<body>
+<body style="background-image: url('/img/IMG_2571-1600x400.png'); background-size: 100% 400px; background-repeat: no-repeat;">
 
   <div class="container">
-    <div class="row">
-      <div class="twelve columns header">
-        <h1>{{ site.title }}</h1>
-        <h2>{{ site.description }}</h1>
-      </div>
-    </div>
+  <h1 style="margin: 30px; text-align:justify; display: inline;">
+    <a href="/">{{ site.title }}</a>
+  </h1>
+  <ul class="nav">
+    <li><a href="{{site.baseurl}}/">About</a></li>
+    <li><a href="{{site.baseurl}}/travels/">Travels</a></li>
+    <li><a href="{{site.baseurl}}/portfolio/">Work</a></li>
+    <li><a href="{{site.baseurl}}/writing/">Writing</a></li>
+  </ul>
     <div class="row rownav">
-      <ul class="twelve columns nav">
-        <li><a href="{{site.baseurl}}/">About</a></li>
-        <li><a href="{{site.baseurl}}/travels/">Travels</a></li>
-        <li><a href="{{site.baseurl}}/hardware/">Hardware</a></li>
-        <li><a href="{{site.baseurl}}/software/">Software</a></li>
-      </ul>
     </div>
   </div>
  
   {{ content }}
 
-  <div class="container">
-    <div class="row rownav" style="margin-top: 0px;">
-      <ul class="twelve columns nav">
-        <li><a href="{{site.baseurl}}/">About</a></li>
-        <li><a href="{{site.baseurl}}/travels/">Travels</a></li>
-        <li><a href="{{site.baseurl}}/hardware/">Hardware</a></li>
-        <li><a href="{{site.baseurl}}/software/">Software</a></li>
-      </ul>
-    </div>
-    <div class="row" style="margin-bottom: 0px;padding-bottom: 30px;">
-      <div class="two columns">&nbsp;</div>
-      <div class="eight columns" id="contact" style="text-align:center;">
-        Design and content by 
-        <strong>Jenner Hanni</strong><br />
-        jenner@wickerbox.net
-      </div>
-      <div class="two columns">&nbsp;</div>
-    </div>
-  </div>
 </body>
 
 </html>
