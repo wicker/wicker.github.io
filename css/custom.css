@@ -88,7 +88,28 @@ a:hover {color: #1916dd}
 
 .inside { padding: 30px; }
 
-.blogthumb {
+.projthumb {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  text-align:center;
+  margin: 1%;
+  width: 30%;
+  float: left;
+  display: none;
+}
+
+.projthumb-link {
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+.projthumb img {
+  border-radius: 0px;
+}
+
+.travelthumb {
   border: 1px solid #d3d3d3;
   border-radius: 5px;
   padding-bottom: 10px;
@@ -98,16 +119,20 @@ a:hover {color: #1916dd}
   float: left;
 }
 
-.blogthumb-link {
+.travelthumb-link {
   height: 40px;
   line-height: 20px;
   overflow: hidden;
 }
 
-.blogthumb img {
+.travelthumb img {
   border-radius: 0px;
 }
 
+.show {
+  display: block;
+}
+    
 .clear { clear:both; }
 
 img { width: 100%; border-radius: 20px; }

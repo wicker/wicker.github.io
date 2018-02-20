@@ -26,9 +26,9 @@ I like to see things, do stuff, talk to people, and take pictures.
   <div class="clear">&nbsp;</div>
 {% endif %}
 
-  <div class="blogthumb">
+  <div class="travelthumb">
     <a href="{{post.url}}"><img src="{{ post.image }}"></a>
-    <div class="blogthumb-link"><a href="{{post.url}}">{{ post.title }}</a></div>
+    <div class="travelthumb-link"><a href="{{post.url}}">{{ post.title }}</a></div>
   </div>
     
 {% endfor %}
