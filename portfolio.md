@@ -7,17 +7,27 @@ jstrue: true
 
 ### Work
 
-<strong>I'm looking for a remote software engineering job with a small company. </strong>
+I'm a remote hardware and software developer available for part-time contract work through my prototyping company, <a href="http://wickerbox.net" target="_blank">Wickerbox Electronics</a>. 
 
 You can <a href="mailto:jenner@jennerhanni.net">email me</a>, check out my <a href="https://www.linkedin.com/in/jenner-hanni" target="_blank">resume on LinkedIn</a>, and see my code at <a href="https://github.com/wicker/" target="_blank">Github</a>. 
 
-I have customer support experience and I understand the importance of getting to and iterating on an MVP as soon as possible. I've developed hardware for a <a href="https://www.kickstarter.com/projects/browndoggadgets/crazy-circuits-unique-stem-projects-delivered-mont" target="_blank">successful Kickstarter campaign</a> and continued to help bring that product to market. 
+### Education
 
-I've written C and VHDL/Verilog for FAA-certified <a href="https://www.astronics.com/about/subsidiary?subsidiaryItem=astronics%20max-viz" target="_blank">aircraft cameras</a>; lately I've been writing Python, Bash, Javascript, and HTML/CSS for <a href="/portfolio">web applications</a>. 
+**React Nanodegree** from Udacity, 2018
 
-I have sysadmin experience and currently host sites with Apache/gunicorn on AWS and Linode. I've built public-facing sites using Flask, React, Jekyll, and Wordpress.
+**Master's in Electrical and Computer Engineering** from Portland State, 2013 
 
-I own a hardware prototyping business called <a href="http://wickerbox.net" target="_blank">Wickerbox Electronics</a> and I've developed software called KiFisher to automate managing and documenting hardware projects with KiCad. 
+**Bachelor's in Engineering Technology** from Old Dominion University, 2009
+
+### Experience
+
+I've written C and VHDL/Verilog for FAA-certified <a href="https://www.astronics.com/about/subsidiary?subsidiaryItem=astronics%20max-viz" target="_blank">aircraft cameras</a> but now I write web apps in Javascript (React on Node.js), Python (Flask), and PHP (Laravel), and I've worked with React Native, Bootstrap, Skeleton, and Material UI. I have some sysadmin/devops experience and currently maintain apps on Linode and AWS.  
+
+For databases, I've worked with PostgreSQL, MySQL, SQLite3, and MongoDB.
+
+I develop internal software tools. I wrote KiFisher to automate managing and documenting hardware projects built with KiCad, and I was a single-digit employee at <a href="http://oshpark.com" target="_blank">OSH Park</a> making tools to improve the customer support experience.
+
+I design and test hardware product prototypes, and I understand the importance of getting to and iterating on a minimum viable product (MVP) as soon as possible. You can see my <a href="https://github.com/BrownDogGadgets/CrazyCircuits">Github commits</a> designing the hardware for a <a href="https://www.kickstarter.com/projects/browndoggadgets/crazy-circuits-unique-stem-projects-delivered-mont" target="_blank">successful Kickstarter campaign</a> and I've continued to help bring that product to market.
 
 ### Sort Projects by Type
 
