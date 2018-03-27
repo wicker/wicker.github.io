@@ -6,7 +6,7 @@ title: Writing
 
 ### Writing
 
-I write a mix of poetry and creative non-fiction. I'm fascinated by the stories of people who feel like outsiders and turn away, choosing instead to empathize and find kinship with wild animals and the landscape.  
+I write a mix of poetry and creative non-fiction about people who feel like outsiders and turn away to form their own communities, especially those who choose instead to empathize and find kinship with wild animals and the natural world.  
 
 <a href="https://fishtrap.org/january-fishtrap-fireside/">Fishtrap</a> says,
 
