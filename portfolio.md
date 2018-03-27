@@ -5,7 +5,7 @@ title: Hardware and Software
 jstrue: true
 ---
 
-### Work
+### Hardware and Software Developer
 
 I'm a remote hardware and software developer available for part-time contract work through my prototyping company, <a href="http://wickerbox.net" target="_blank">Wickerbox Electronics</a>. 
 
