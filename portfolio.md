@@ -25,7 +25,7 @@ I've written C and VHDL/Verilog for FAA-certified <a href="https://www.astronics
 
 For databases, I've worked with PostgreSQL, MySQL, SQLite3, and MongoDB.
 
-I develop internal software tools. I wrote KiFisher to automate managing and documenting hardware projects built with KiCad, and I was a single-digit employee at <a href="http://oshpark.com" target="_blank">OSH Park</a> making tools to improve the customer support experience.
+I develop internal software tools. I wrote KiFisher to automate managing and documenting hardware projects built with KiCad, and I was a single-digit employee at <a href="http://oshpark.com" target="_blank">OSH Park</a> making internal tools to improve the customer support experience.
 
 I design and test hardware product prototypes, and I understand the importance of getting to and iterating on a minimum viable product (MVP) as soon as possible. You can see my <a href="https://github.com/BrownDogGadgets/CrazyCircuits">Github commits</a> designing the hardware for a <a href="https://www.kickstarter.com/projects/browndoggadgets/crazy-circuits-unique-stem-projects-delivered-mont" target="_blank">successful Kickstarter campaign</a> and I've continued to help bring that product to market.
 
