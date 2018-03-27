@@ -51,8 +51,8 @@ I design and test hardware product prototypes, and I understand the importance o
 </div>
 
 <div class="projthumb web js react">
-  <a href="https://github.com/wicker/" target="_blank"><img src="/img/thumbs/flashcards.png"></a>
-  <div class="projthumb-link"><a href="https://github.com/wicker/">Mobile Flashcards</a></div>
+  <a href="https://github.com/wicker/Udacicards" target="_blank"><img src="/img/thumbs/flashcards.png"></a>
+  <div class="projthumb-link"><a href="https://github.com/wicker/Udacicards">Mobile Flashcards</a></div>
 </div>
 <div class="projthumb web js react">
   <a href="https://github.com/wicker/Terrific-Tree-Frogs-Message-Board" target="_blank"><img src="/img/thumbs/frogs.png"></a>
