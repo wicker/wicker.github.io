@@ -2,6 +2,10 @@ body { background-color: #eaeaea;  font-size: 16px;}
 
 h1,h2,h3,h4,h5 { text-align:center; }
 
+p {
+  text-align: justify;
+}
+
 h1 {
   line-height: 70px;
   font-size: 36px;
@@ -28,6 +32,10 @@ h2 {
 
 .header h2 {
   font-weight: normal;
+}
+
+h4 {
+  font-weight: bold;
 }
 
 .container { padding: 0px 0 60px}
@@ -89,25 +97,35 @@ a:hover {color: #1916dd}
 
 .inside { padding: 30px; }
 
+.project {
+  display: none;
+  margin: 20px 0;
+}
+
+.project:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .projthumb {
   border: 1px solid #d3d3d3;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-bottom: 10px;
   text-align:center;
   margin: 1%;
-  width: 30%;
-  float: left;
-  display: none;
+  width: 100%;
 }
 
 .projthumb-link {
-  height: 40px;
-  line-height: 20px;
-  overflow: hidden;
+  width: 65%;
+  float: left;
 }
 
 .projthumb img {
-  border-radius: 0px;
+  border-radius: 0;
+  width: 40%;
+  float: left;
 }
 
 .travelthumb {
@@ -184,4 +202,17 @@ li { padding-left: 20px; }
 
 .tl-title-right {
   margin-left: 30px;
+}
+
+.projbtn {
+  color: #800000;
+  border: 0;
+  font-size: 1em;
+  text-transform: capitalize;
+  padding: 0;
+  display: block;
+}
+
+.subbtn {
+  padding-left: 20px;
 }
