@@ -8,7 +8,7 @@ title: Writing
 
 I write a mix of poetry and creative non-fiction about people who feel like outsiders and turn away to form their own communities, especially those who choose instead to empathize and find kinship with wild animals and the natural world.  
 
-<a href="https://fishtrap.org/january-fishtrap-fireside/">Fishtrap</a> says,
+<a href="https://fishtrap.org/for-wallowa-county/fishtrap-fireside/">Fishtrap</a> says,
 
 <blockquote>Jenner Hanni is a computer engineer and Marine veteran who thought he wanted to write creative nonfiction until someone at Summer Fishtrap’s Outpost told him about prose poems. 
 <br /><br />
