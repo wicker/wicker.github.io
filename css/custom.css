@@ -52,12 +52,11 @@ h4 {
 }
 
 .container { 
-  padding: 0px 0 60px;
   margin-top: 330px;
 }
 
 .padded { 
-  padding: 30px 0 40px; 
+  padding: 30px 0; 
 }
 
 .clear {
@@ -73,48 +72,37 @@ a:hover {
   color: #1916dd;
 }
 
-.rownav {
-  margin: 160px 0 0;
-  min-height: 50px; 
-  line-height: 50px;
-}
-
 .nav {
-  color: #fff;
   text-align: center;
   font-size: 18px;
   font-family: Georgia, serif;
   display: inline;
-}
-
-.nav {
-    list-style:none;
-    margin-top: 10px;
-    margin-right: 30px;
-    padding:0;
-    float: right;
+  list-style: none;
+  float: right;
 }
 
 .nav li {
-    display:inline;
-    line-height: 20px;
+  display: inline;
+  padding: 0 10px;
+  line-height: 80px;
 }
 
 .nav a {
-    font-family: Raleway;
-    font-weight: bold;
-    display:inline-block;
-    line-height: 60px;
-    height: 36px;
-    color: #000;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 36px;
+  height: 36px;
+  color: #000;
 }
 
 .nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .centered { 
-text-align: center;
+  text-align: center;
 }
 
 .header {
@@ -124,7 +112,7 @@ text-align: center;
 }
 
 .main-content { 
-text-align: justify; 
+  text-align: justify; 
 }
 
 .content {
@@ -256,7 +244,7 @@ li {
   border: 0;
   font-size: 1em;
   text-transform: capitalize;
-  padding: 0;
+  pading: 0;
   display: block;
 }
 
@@ -264,9 +252,26 @@ li {
   padding-left: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
-  .padded { padding: 30px 20px 40px 20px; }
+  h1 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .nav {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .nav li {
+    line-height: 36px;
+  }
+
+  .padded { 
+    padding: 30px 20px 40px 20px; 
+  }
 
   #myBtnContainer {
     margin: -40px 0;
