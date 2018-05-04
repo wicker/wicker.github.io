@@ -29,9 +29,9 @@ jstrue: true
 
     <div class="project summary">
 
-      <h4>Full Stack from Circuits to Web Apps</h4>
+      <h4>Full Stack Developer</h4>
 
-      <p>I'm a hardware and software developer available for freelancing through my prototyping company, <a href="http://wickerbox.net" target="_blank">Wickerbox Electronics</a>.</p>
+      <p>I'm a hardware and software engineer available for freelancing through my prototyping company, <a href="http://wickerbox.net" target="_blank">Wickerbox Electronics</a>.</p>
       <p><a href="mailto:jenner@jennerhanni.net">Email me</a>, check out my <a href="https://www.linkedin.com/in/jenner-hanni" target="_blank">resume on LinkedIn</a>, and see my code at <a href="https://github.com/wicker/" target="_blank">Github</a>.</p> 
 
     </div>

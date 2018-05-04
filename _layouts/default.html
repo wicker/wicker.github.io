@@ -16,26 +16,37 @@
   <link rel="stylesheet" href="{{site.baseurl}}/css/custom.css">
 
 </head>
-<body style="background-image: url('/img/IMG_2571-1600x400.png'); background-size: 100% 400px; background-repeat: no-repeat;">
 
-  <div class="container">
-  <h1 style="margin: 30px; text-align:justify; display: inline;">
-    <a href="/">{{ site.title }}</a>
-  </h1>
-  <ul class="nav">
-    <li><a href="{{site.baseurl}}/travels/">Travels</a></li>
-    <li><a href="{{site.baseurl}}/portfolio/">Work</a></li>
-    <li><a href="{{site.baseurl}}/writing/">Writing</a></li>
-  </ul>
-    <div class="row rownav">
-    </div>
-  </div>
+<body>
  
-  {{ content }}
+<div class="container">
 
-  {% if page.jstrue %}
-    <script type="text/javascript">{% include showhide.js %}</script>
-  {% endif %}
+  <div class="row header">
+    <h1>
+      <a href="/">{{ site.title }}</a>
+    </h1>
+    <ul class="nav">
+      <li><a href="{{site.baseurl}}/travels/">Travels</a></li>
+      <li><a href="{{site.baseurl}}/portfolio/">Work</a></li>
+      <li><a href="{{site.baseurl}}/writing/">Writing</a></li>
+    </ul>
+  </div>
+
+  <div class="row content">
+    <div class="two columns">&nbsp;</div>
+    <div class="eight columns padded">
+
+      {{ content }}
+
+    </div>
+    <div class="two columns">&nbsp;</div>
+  </div>
+
+</div>
+
+{% if page.jstrue %}
+  <script type="text/javascript">{% include showhide.js %}</script>
+{% endif %}
 
 
 </body>

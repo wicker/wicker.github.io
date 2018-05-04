@@ -1,8 +1,20 @@
-body { background-color: #eaeaea;  font-size: 16px;}
+body { 
+  background-color: #eaeaea;
+  background-image: url('/img/bg.png');
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+}
 
-h1,h2,h3,h4,h5 { text-align:center; }
+h1, h2, h3, h4, h5 { 
+  text-align: center; 
+}
 
 p {
+  text-align: justify;
+}
+
+blockquote {
   text-align: justify;
 }
 
@@ -12,6 +24,7 @@ h1 {
   font-family: Raleway;
   font-weight: bold;
   color: #000;
+  display: inline;
 }
 
 h1 a, h1 a:visited { 
@@ -38,12 +51,27 @@ h4 {
   font-weight: bold;
 }
 
-.container { padding: 0px 0 60px}
-.padded { padding: 30px 0 40px; }
-.clear {clear:both;}
-a, a:visited {color: #201da5; text-decoration: none; }
+.container { 
+  padding: 0px 0 60px;
+  margin-top: 330px;
+}
 
-a:hover {color: #1916dd}
+.padded { 
+  padding: 30px 0 40px; 
+}
+
+.clear {
+  clear:both;
+}
+
+a, a:visited {
+  color: #201da5; 
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #1916dd;
+}
 
 .rownav {
   margin: 160px 0 0;
@@ -59,43 +87,55 @@ a:hover {color: #1916dd}
   display: inline;
 }
 
-.nav{
+.nav {
     list-style:none;
     margin-top: 10px;
     margin-right: 30px;
     padding:0;
     float: right;
 }
-.nav li{
+
+.nav li {
     display:inline;
     line-height: 20px;
 }
-.nav a{
+
+.nav a {
     font-family: Raleway;
     font-weight: bold;
     display:inline-block;
-    line-height: 45px;
+    line-height: 60px;
     height: 36px;
     color: #000;
 }
+
 .nav a:hover {
     text-decoration: underline;
 }
 
-.centered { text-align:center;}
-.header {
-  height: 200px;
+.centered { 
+text-align: center;
 }
 
-.main-content { text-align:justify; }
+.header {
+  border-radius: 20px 20px 0 0;
+  background-color: #fff;
+  padding: 0 40px;
+}
+
+.main-content { 
+text-align: justify; 
+}
 
 .content {
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
   padding-top: 30px;
   background-color: #fff;
 }
 
-.inside { padding: 30px; }
+.inside { 
+  padding: 30px; 
+}
 
 .project {
   display: none;
@@ -152,11 +192,18 @@ a:hover {color: #1916dd}
   display: block;
 }
     
-.clear { clear:both; }
+.clear { 
+  clear: both; 
+}
 
-img { width: 100%; border-radius: 20px; }
+img { 
+  width: 100%; 
+  border-radius: 20px; 
+}
 
-li { padding-left: 20px; }
+li { 
+  padding-left: 20px; 
+}
 
 .timeline-right {
   border-left: thick solid #000;
@@ -215,4 +262,15 @@ li { padding-left: 20px; }
 
 .subbtn {
   padding-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .padded { padding: 30px 20px 40px 20px; }
+
+  #myBtnContainer {
+    margin: -40px 0;
+    padding: 20px;
+  }
+
 }
