@@ -76,6 +76,7 @@ a, a:visited {
 
 a:hover {
   color: #1916dd;
+  border-bottom: 1px solid #1916dd;
 }
 
 header {
@@ -129,7 +130,7 @@ header {
 
 .project {
   display: none;
-  margin: 20px 0;
+  margin: 0 0 40px 0;
 }
 
 .project:after {
@@ -242,16 +243,34 @@ li {
 }
 
 .projbtn {
-  color: #800000;
+  background-color: #fff;
+  color: #201da5;
   border: 0;
   font-size: 1em;
   text-transform: capitalize;
-  pading: 0;
   display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+  }
+
+.projbtn:hover, .active {
+  border: 1px solid #201da5;
 }
 
 .subbtn {
   padding-left: 20px;
+}
+
+#myBtnContainer {
+  float: left;
+  width: 100px;
+  margin: -40px 0;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -292,8 +311,9 @@ li {
   }
 
   #myBtnContainer {
-    margin: -40px 0;
+    margin: -40px auto 0 0;
     padding: 20px;
+    
   }
 
 }
