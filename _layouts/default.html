@@ -3,13 +3,18 @@
 <head>
 
   <meta charset="utf-8">
-  <title>{{ site.title }}</title>
+
+  {% if page.title %}
+    <title>{{ page.title }} | {{ site.title }}</title>
+  {% else %}
+    <title>{{ site.title }}</title>
+  {% endif %}
   <meta name="description" content="{{ site.description }}">
   <meta name="author" content="{{ site.author }}">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="{{site.baseurl}}/css/normalize.css">
   <link rel="stylesheet" href="{{site.baseurl}}/css/skeleton.css">
@@ -32,15 +37,7 @@
     </ul>
   </div>
 
-  <div class="row content">
-    <div class="two columns">&nbsp;</div>
-    <div class="eight columns padded">
-
-      {{ content }}
-
-    </div>
-    <div class="two columns">&nbsp;</div>
-  </div>
+  {{ content }}
 
 </div>
 

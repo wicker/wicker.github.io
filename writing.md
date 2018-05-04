@@ -4,7 +4,7 @@ permalink: /writing/
 title: Writing
 ---
 
-### Writing
+## Writing
 
 I write poetry and creative non-fiction about outsiders who reject mainstream society and turn away to form their own communities, particularly those who choose instead to empathize and find kinship with wild animals and the natural world.  
 

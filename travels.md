@@ -4,9 +4,9 @@ title: Travels
 permalink: /travels/
 ---
 
-### Travels
+## Travels
 
-I like to see things, do stuff, talk to people, and take pictures. 
+<p class="centered">I like to see things, do stuff, talk to people, and take pictures.</p> 
 
 {% assign thisyear = 'now' | date: "%Y" %}
 {% assign firstyear = true %}
