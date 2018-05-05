@@ -354,10 +354,11 @@ button::-moz-focus-inner {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 404px) {
 
   body {
     background-size: 100% 100px;
+    font-size: 16px;
   }
 
   .container {
@@ -365,11 +366,42 @@ button::-moz-focus-inner {
   }
 
   header {
-    height: 150px;
+    height: 200px;
   }
 
   header h1 {
-    font-size: 1.2em;
+    font-size: 1.6em;
+  }
+
+  .nav li {
+    display: block;
+  }
+
+  .content {
+    padding: 30px 20px 20px 20px;
+  }
+
+  .projthumb p {
+    margin: 10px;
+  }
+
+  .projthumb h5 {
+    width: 90%;
+    float: none;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+
+  #projbtncontainer {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .projbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
 }
