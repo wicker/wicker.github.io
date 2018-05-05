@@ -32,10 +32,12 @@ h1 {
 
 h1 a, h1 a:visited { 
   color: #000;
+  text-decoration: none;
 }
 
 h1 a:hover {
   color: #000;
+  border: 0;
 }
 
 h2 {
@@ -140,23 +142,32 @@ header {
 }
 
 .projthumb {
-  border: 1px solid #d3d3d3;
+  border: 1px solid #000;
   border-radius: 10px;
-  padding-bottom: 10px;
   text-align:center;
-  margin: 1%;
   width: 100%;
 }
 
-.projthumb-link {
-  width: 65%;
+.projthumb img {
+  border-radius: 9px 0 0 9px;
+  width: 40%;
   float: left;
 }
 
-.projthumb img {
-  border-radius: 0;
-  width: 40%;
-  float: left;
+.projthumb p {
+  color: #000;
+  width: 50%;
+  padding: 0 5%;
+  float: right;
+}
+
+.projthumb h5 {
+  width: 55%;
+  float: right;
+  text-align: left;
+  color: #000;
+  font-size: 1.1em;
+  margin: 10px;
 }
 
 .travelthumb {
@@ -242,14 +253,24 @@ li {
   margin-left: 30px;
 }
 
+.wrapper {
+  display: block;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#projbtncontainer {
+  text-align: left;
+  display: inline-block;
+}
+
 .projbtn {
   background-color: #fff;
   color: #201da5;
   border: 0;
   font-size: 1em;
   text-transform: capitalize;
-  display: block;
-  border-radius: 5px;
+  display: inline;
   cursor: pointer;
   border: 1px solid #fff;
 }
@@ -258,19 +279,12 @@ button::-moz-focus-inner {
     border: 0;
   }
 
-.projbtn:hover, .active {
-  border: 1px solid #201da5;
+.projbtn:hover {
+  text-decoration: underline;
 }
 
-.subbtn {
-  padding-left: 20px;
-}
-
-#myBtnContainer {
-  float: left;
-  width: 100px;
-  margin: -40px 0;
-  padding: 20px;
+.active {
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 700px) {
@@ -310,9 +324,7 @@ button::-moz-focus-inner {
     padding: 30px 20px 40px 20px; 
   }
 
-  #myBtnContainer {
-    margin: -40px auto 0 0;
-    padding: 20px;
+  #projbtncontainer {
     
   }
 
