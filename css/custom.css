@@ -293,6 +293,29 @@ button::-moz-focus-inner {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 1000px) {
+
+  .projthumb img {
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+    margin-bottom: 20px;
+  }
+
+  .projthumb h5 {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .projthumb p {
+    width: 80%;
+    display: block;
+    padding: 5%;
+    margin: 0 20px;
+    float: none;
+  }
+}
+
 @media only screen and (max-width: 700px) {
 
   body {
@@ -329,9 +352,4 @@ button::-moz-focus-inner {
   .padded { 
     padding: 30px 20px 40px 20px; 
   }
-
-  #projbtncontainer {
-    
-  }
-
 }
