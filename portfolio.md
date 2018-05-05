@@ -5,7 +5,7 @@ title: Portfolio
 jstrue: true
 ---
 
-<section class="content">
+<section class="content-middle">
 
   <div class="wrapper">
     <div id="projbtncontainer">
@@ -25,6 +25,10 @@ jstrue: true
     </div>
   </div>
 
+</section>
+
+<section class="content">
+
   <div class="padded">
     <div class="project summary">
 
@@ -40,7 +44,6 @@ jstrue: true
       <h4>Education</h4>
 
       <p><strong>React Nanodegree</strong><br />
-         <strong>Full Stack Web Developer Nanodegree</strong><br />
          Udacity, 2018</p>
       <p><strong>M.Eng. Electrical and Computer Engineering</strong><br />Portland State, 2013</p> 
       <p><strong>B.S. Engineering Technology</strong><br />Old Dominion University, 2009</p>
@@ -57,7 +60,7 @@ jstrue: true
     </div>
     </a>
 
-    <a href="https://github.com/wicker/" target="_blank">
+    <a href="https://github.com/wicker/Rider-Waite-Reader" target="_blank">
     <div class="projthumb project web js react">
       <img src="/img/thumbs/rider-waite.png">
       <h5>Rider-Waite Tarot Reader App</h5>
@@ -65,6 +68,7 @@ jstrue: true
     </div>
     </a>
 
+    <!--
     <a href="http://kifisher.io/" target="_blank">
     <div class="projthumb project web js python react">
       <img src="/img/thumbs/kifisher.png">
@@ -72,6 +76,7 @@ jstrue: true
       <p>Upload KiCad files and download formatted BOMs, images, and docs.</p>
     </div>
     </a>
+    -->
 
     <a href="https://github.com/wicker/Terrific-Tree-Frogs-Message-Board" target="_blank">
     <div class="projthumb project web js react">
@@ -89,6 +94,7 @@ jstrue: true
     </div>
     </a>
 
+    <!--
     <a href="https://github.com/wicker/Wallowa-Wildlife-Checklist-App" target="_blank">
     <div class="projthumb project web flask">
       <img src="/img/thumbs/wallowa.png">
@@ -96,7 +102,9 @@ jstrue: true
       <p>Python Flask app supports creating and saving wild animal checklists.</p>
     </div>
     </a>
+    -->
 
+    <!--
     <a href="http://www.wordpress.org/themes/river-house" target="_blank">
     <div class="projthumb project web wordpress">
       <img src="/img/thumbs/imnahariver.png">
@@ -104,6 +112,7 @@ jstrue: true
       <p>Wordpress theme for vacation rentals now available at wordpress.org.</p>
     </div>
     </a>
+    -->
 
     <a href="http://www.wmhcta.org" target="_blank">
     <div class="projthumb project web wordpress">
@@ -177,6 +186,7 @@ jstrue: true
     </div>
     </a>
 
+    <!--
     <a href="https://github.com/wicker" target="_blank">
     <div class="projthumb project web kivy">
       <img src="/img/thumbs/treecounter.png">
@@ -184,7 +194,9 @@ jstrue: true
       <p>Custom Android tablet app in Kivy for shade tree grading and inventory.</p>
     </div>
     </a>
+    -->
 
+    <!--
     <a href="https://github.com/wicker/" target="_blank">
     <div class="projthumb project web js">
       <img src="/img/thumbs/joseph.png">
@@ -192,6 +204,7 @@ jstrue: true
       <p>Javascript, AJAX, Google map powered app of my local town.</p>
     </div>
     </a>
+    -->
 
     <a href="http://wickerbox.net/projects/e202var-vlf-receiver/" target="_blank">
     <div class="projthumb project hardware otherhw">
@@ -202,7 +215,7 @@ jstrue: true
     </a>
 
     <a href="https://github.com/BrownDogGadgets/CrazyCircuits" target="_blank">
-    <div class="projthumb project hardware otherhw arduino">
+    <div class="projthumb project hardware otherhw">
       <img src="/img/thumbs/crazycircuits.png">
       <h5>CrazyCircuits Kits</h5>
       <p>Open source Lego-compatible circuit kits for kids and schools in KiCad. </p>
@@ -272,7 +285,16 @@ jstrue: true
       <p>Custom Arduino shield with GUI for control of composites reflow oven.</p>
     </div>
     </a>
+
+    <a href="https://github.com/wicker/Image-Processing-Pipeline" target="_blank">
+    <div class="projthumb project software clang verilog">
+      <img src="/img/thumbs/getpixels.png">
+      <h5>Image Processing Pipeline</h5>
+      <p>Perform pixel-by-pixel convolution of 2D images in SystemVerilog and C.</p>
+    </div>
+    </a>
    
+    <!--
     <a href="https://github.com/wicker/Advent-of-Code-Solutions" target="_blank">
     <div class="projthumb project software python">
       <img src="/img/thumbs/advent.png">
@@ -280,7 +302,9 @@ jstrue: true
       <p>Python to solve coding challenges with brief howto writeups.</p>
     </div>
     </a>
+    -->
 
+    <!--
     <a href="https://github.com/wicker/15-Sorting-Algorithms" target="_blank">
     <div class="projthumb project software clang">
       <img src="/img/thumbs/15algorithms.png">
@@ -288,6 +312,7 @@ jstrue: true
       <p>Python implementing the sorting algorithms in Timo Bingmann's video.</p>
     </div>
     </a>
+    -->
 
     <a href="https://github.com/wicker/L2-Cache-Simulator" target="_blank">
     <div class="projthumb project software clang">
@@ -321,14 +346,7 @@ jstrue: true
     </div>
     </a>
 
-    <a href="https://github.com/wicker/Image-Processing-Pipeline" target="_blank">
-    <div class="projthumb project software clang verilog">
-      <img src="/img/thumbs/getpixels.png">
-      <h5>Image Processing Pipeline</h5>
-      <p>Perform pixel-by-pixel convolution of 2D images in SystemVerilog and C.</p>
-    </div>
-    </a>
-
+    <!--
     <a href="http://kifisher.io/" target="_blank">
     <div class="projthumb project software python">
       <img src="/img/thumbs/kifisher.png">
@@ -336,6 +354,7 @@ jstrue: true
       <p>Python tools for KiCad to automate BOMs, board previews, and docs.</p>
     </div>
     </a>
+    -->
 
     <h4 class="clearfix project talks">Conference Talks</h4>
     <a href="https://github.com/wicker/Conference-Talks" target="_blank">
