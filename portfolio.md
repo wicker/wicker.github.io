@@ -14,7 +14,7 @@ jstrue: true
       <button class="projbtn" onclick="filterSelection('software')">Software</button>
       <button class="projbtn" onclick="filterSelection('talks')">Talks</button>
       <br />
-      <button class="projbtn" onclick="filterSelection('web')">Websites</button> : 
+      <button class="projbtn" onclick="filterSelection('web')">Web</button> : 
       <button class="projbtn subbtn" onclick="filterSelection('react')">React</button>
       <button class="projbtn subbtn" onclick="filterSelection('wordpress')">WordPress</button>
       <button class="projbtn subbtn" onclick="filterSelection('flask')">Flask</button>
