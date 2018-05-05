@@ -35,7 +35,19 @@ jstrue: true
       <h4>Full Stack Developer</h4>
 
       <p>I'm a hardware and software engineer available for freelance contracting through <a href="http://wickerbox.net" target="_blank">Wickerbox Electronics</a>.</p>
+
       <p><a href="mailto:jenner@jennerhanni.net">Email me</a>, check out my <a href="https://www.linkedin.com/in/jenner-hanni" target="_blank">resume</a>, or find my code at <a href="https://github.com/wicker/" target="_blank">Github</a>.</p> 
+
+      <h4>Summary</h4>
+
+      <p>I’ve written C and VHDL/Verilog for FAA-certified <a href="https://www.astronics.com/about/subsidiary?subsidiaryItem=astronics%20max-viz" target="_blank">aircraft cameras</a> but now I write web apps in Javascript (React on Node.js), Python (Flask), and PHP (Laravel), and I’ve worked with React Native, Bootstrap, Skeleton, and Material UI. I have some sysadmin/devops experience and currently maintain apps on Linode and AWS.</p>
+
+      <p>For databases, I’ve worked with PostgreSQL, MySQL, and SQLite3.</p>
+
+      <p>I enjoy building internal software tools to make dev life easier. I wrote KiFisher to automate managing and documenting hardware projects built with KiCad, and I was a single-digit employee at <a href="http://oshpark.com" target="_blank">OSH Park</a> making it easier for the support team to improve the customer experience.</p>
+
+      <p>For the last five years, I've been designing and testing hardware product prototypes, and I understand the importance of getting to and iterating on a minimum viable product (MVP) as soon as possible. You can see my <a href="https://github.com/BrownDogGadgets/CrazyCircuits">Github commits</a> designing the hardware for a <a href="https://www.kickstarter.com/projects/browndoggadgets/crazy-circuits-unique-stem-projects-delivered-mont" target="_blank">successful Kickstarter campaign</a> and I’ve continued to
+      help bring that product to market.</p>
 
     </div>
 
