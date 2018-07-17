@@ -22,3 +22,8 @@ collections:
     url: /travels/
     output: true
     permalink: /travels/:title/
+  writing:
+    name: Writing
+    url: /writing/
+    output: true
+    permalink: /writing/:title/

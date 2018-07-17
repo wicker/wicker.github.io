@@ -13,12 +13,10 @@ jstrue: true
       <button class="projbtn" onclick="filterSelection('education')">Education</button>
       <button class="projbtn" onclick="filterSelection('software')">Software</button>
       <button class="projbtn" onclick="filterSelection('talks')">Talks</button>
-      <br />
       <button class="projbtn" onclick="filterSelection('web')">Web</button> 
       <button class="projbtn subbtn" onclick="filterSelection('react')">React</button>
       <button class="projbtn subbtn" onclick="filterSelection('wordpress')">WordPress</button>
-      <button class="projbtn subbtn" onclick="filterSelection('flask')">Flask</button>
-      <br />
+      <!-- <button class="projbtn subbtn" onclick="filterSelection('flask')">Flask</button> -->
       <button class="projbtn" onclick="filterSelection('hardware')">Hardware</button> 
       <button class="projbtn subbtn" onclick="filterSelection('arduino')">Arduino</button>
       <button class="projbtn subbtn" onclick="filterSelection('other')">Other</button>
