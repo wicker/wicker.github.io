@@ -15,8 +15,8 @@ jstrue: true
       <button class="projbtn" onclick="filterSelection('talks')">Talks</button>
       <button class="projbtn" onclick="filterSelection('web')">Web</button> 
       <button class="projbtn subbtn" onclick="filterSelection('react')">React</button>
+      <button class="projbtn subbtn" onclick="filterSelection('flask')">Flask</button>
       <button class="projbtn subbtn" onclick="filterSelection('wordpress')">WordPress</button>
-      <!-- <button class="projbtn subbtn" onclick="filterSelection('flask')">Flask</button> -->
       <button class="projbtn" onclick="filterSelection('hardware')">Hardware</button> 
       <button class="projbtn subbtn" onclick="filterSelection('arduino')">Arduino</button>
       <button class="projbtn subbtn" onclick="filterSelection('other')">Other</button>
@@ -61,6 +61,22 @@ jstrue: true
     </div>
 
     <h4 class="clearfix project web js react flask wordpress hardware arduino otherhw software">Projects</h4>
+
+    <a href="https://github.com/wicker/Joseph-Oregon-Art-Walk" target="_blank">
+    <div class="clearfix projthumb project web js knockoutjs">
+      <img src="/img/thumbs/josephartwalk.png">
+      <h5>Joseph Art Walk</h5>
+      <p>KnockoutJS web app for tourists with artist/map info about local art.</p>
+    </div>
+    </a>
+
+    <a href="https://github.com/wicker/Wallowa-Wildlife-Checklist-App" target="_blank">
+    <div class="clearfix projthumb project web flask">
+      <img src="/img/thumbs/wallowawildlife.png">
+      <h5>Wallowa Wildlife</h5>
+      <p>Flask/Sqlite app allowing users to log in and maintain wildlife checklists.</p>
+    </div>
+    </a>
 
     <a href="https://github.com/wicker/Udacicards" target="_blank">
     <div class="clearfix projthumb project web js react">
