@@ -53,7 +53,7 @@ jstrue: true
 
       <h4>Education</h4>
 
-      <p><strong>React Nanodegree</strong><br />
+      <p><strong>React Nanodegree, Full Stack Developer Nanodegree</strong><br />
          Udacity, 2018</p>
       <p><strong>M.Eng. Electrical and Computer Engineering</strong><br />Portland State, 2013</p> 
       <p><strong>B.S. Engineering Technology</strong><br />Old Dominion University, 2009</p>
@@ -61,6 +61,14 @@ jstrue: true
     </div>
 
     <h4 class="clearfix project web js react flask wordpress hardware arduino otherhw software">Projects</h4>
+
+    <a href="https://amyirvine.com" target="_blank">
+    <div class="clearfix projthumb project web">
+      <img src="/img/thumbs/amyirvine.png">
+      <h5>Amy Irvine</h5>
+      <p>Wix-based site for an award-winning author.</p>
+    </div>
+    </a>
 
     <a href="https://github.com/wicker/Joseph-Oregon-Art-Walk" target="_blank">
     <div class="clearfix projthumb project web js knockoutjs">
