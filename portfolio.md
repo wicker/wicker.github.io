@@ -38,7 +38,7 @@ jstrue: true
 
       <h4>Summary</h4>
 
-      <p>I’ve written C and VHDL/Verilog for FAA-certified <a href="https://www.astronics.com/about/subsidiary?subsidiaryItem=astronics%20max-viz" target="_blank">aircraft cameras</a> but now I write web apps in Javascript (React on Node.js), Python (Flask), and PHP (Laravel), and I’ve worked with React Native, Bootstrap, Skeleton, and Material UI. I have some sysadmin/devops experience and currently maintain apps on Linode and AWS.</p>
+      <p>I’ve written C and VHDL/Verilog for FAA-certified <a href="https://www.astronics.com/about/subsidiary?subsidiaryItem=astronics%20max-viz" target="_blank">aircraft cameras</a> but now I write web apps in Javascript (React on Node.js) and Python (Flask), and I’ve worked with React Native, Bootstrap, Skeleton, and Material UI. I have some sysadmin/devops experience and currently maintain apps on Linode and AWS.</p>
 
       <p>For databases, I’ve worked with PostgreSQL, MySQL, and SQLite3.</p>
 
@@ -53,7 +53,7 @@ jstrue: true
 
       <h4>Education</h4>
 
-      <p><strong>React Nanodegree, Full Stack Developer Nanodegree</strong><br />
+      <p><strong>React Nanodegree<br />Full Stack Developer Nanodegree</strong><br />
          Udacity, 2018</p>
       <p><strong>M.Eng. Electrical and Computer Engineering</strong><br />Portland State, 2013</p> 
       <p><strong>B.S. Engineering Technology</strong><br />Old Dominion University, 2009</p>
@@ -66,7 +66,7 @@ jstrue: true
     <div class="clearfix projthumb project web">
       <img src="/img/thumbs/amyirvine.png">
       <h5>Amy Irvine</h5>
-      <p>Wix-based site for an award-winning author.</p>
+      <p>Wix-based site for an award-winning author of <em>Desert Cabal</em> and <em>Trespass</em>.</p>
     </div>
     </a>
 
