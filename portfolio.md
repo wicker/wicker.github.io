@@ -62,11 +62,11 @@ jstrue: true
 
     <h4 class="clearfix project web js react flask wordpress hardware arduino otherhw software">Projects</h4>
 
-    <a href="https://amyirvine.com" target="_blank">
-    <div class="clearfix projthumb project web">
-      <img src="/img/thumbs/amyirvine.png">
-      <h5>Amy Irvine</h5>
-      <p>Wix-based site for an award-winning author of <em>Desert Cabal</em> and <em>Trespass</em>.</p>
+    <a href="https://github.com/wicker/Terrific-Tree-Frogs-Message-Board" target="_blank">
+    <div class="projthumb project web js react">
+      <img src="/img/thumbs/frogs.png">
+      <h5>Tree Frogs Message Board</h5>
+      <p>React with Redux message board app. Supports posts and comments.</p>
     </div>
     </a>
 
@@ -102,6 +102,14 @@ jstrue: true
     </div>
     </a>
 
+    <a href="https://amyirvine.com" target="_blank">
+    <div class="clearfix projthumb project web">
+      <img src="/img/thumbs/amyirvine.png">
+      <h5>Amy Irvine</h5>
+      <p>Wix-based site for the award-winning author of <em>Desert Cabal</em> and <em>Trespass</em>.</p>
+    </div>
+    </a>
+
     <!--
     <a href="http://kifisher.io/" target="_blank">
     <div class="projthumb project web js python react">
@@ -111,14 +119,6 @@ jstrue: true
     </div>
     </a>
     -->
-
-    <a href="https://github.com/wicker/Terrific-Tree-Frogs-Message-Board" target="_blank">
-    <div class="projthumb project web js react">
-      <img src="/img/thumbs/frogs.png">
-      <h5>Tree Frogs Message Board</h5>
-      <p>React with Redux message board app. Supports posts and comments.</p>
-    </div>
-    </a>
 
     <a href="https://github.com/wicker/MyReads" target="_blank">
     <div class="projthumb project web js react">
