@@ -22,7 +22,7 @@ h1 {
   margin: 15px;
   font-size: 48px;
   font-weight: 500;
-  font-family: 'Caveat Brush', serif;
+  font-family: 'Caveat', serif;
 }
 
 h1 a, h1 a:visited { 
@@ -37,7 +37,7 @@ h2 {
   font-size: 30px;
   margin: 0;
   font-weight: 300;
-  font-family: 'Caveat Brush', serif;
+  font-family: 'Caveat', serif;
 }
 
 h3 {
@@ -157,10 +157,9 @@ img {
 }
 
 .about__figure img {
-  flex: 1 2 48%;
-  min-width: 300px;
+  flex: 1 1 48%;
+  min-width: 350px;
   align-self: stretch;
-  min-height: 0;
 }
 
 .about__figure figcaption {
