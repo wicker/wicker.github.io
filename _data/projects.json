@@ -1,0 +1,395 @@
+[
+  {
+    "title": "Blooming Junction",
+    "desc": "Garden center website built with WordPress and WooCommerce.",
+    "thumb": "/img/thumbs/bloomingjunction.png",
+    "year": "2019",
+    "tags": ["WordPress"],
+    "section": "website",
+    "urls": [{"linktext":"Website",
+              "address":"http://bloomingjunction.com/"}]
+  },{
+    "title": "Amy Irvine",
+    "desc": "Wix-based site for the award-winning author of Desert Cabal and Trespass.",
+    "thumb": "/img/thumbs/amyirvine.png",
+    "year": "2018",
+    "tags": ["WordPress"],
+    "section": "website",
+    "urls": [{"linktext":"Website",
+              "address":"http://amyirvine.com/"}]
+  },{
+    "title": "Anatomy",
+    "desc": "React on Rails for a Salesforce-connected business intelligence app.",
+    "thumb": "/img/thumbs/anatomy.png",
+    "year": "2018",
+    "tags": ["React","Rails","Salesforce"],
+    "section": "website",
+    "urls": [{"linktext":"Website",
+              "address":"http://anatomy.one/"}]
+  },{
+    "title": "Joseph Art Walk",
+    "desc": "KnockoutJS app for tourists with info on the bronze statues on Main Street.",
+    "thumb": "/img/thumbs/josephartwalk.png",
+    "year": "2018",
+    "tags": ["KnockoutJS","API Design"],
+    "section": "website",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/Joseph-Oregon-Art-Walk"},
+             {"linktext":"Website",
+              "address":"http://imnahariverhouse.com/"}]
+  },{
+    "title": "Imnaha River House",
+    "desc": "Vacation rental site with an emphasis on photography, built with WordPress.",
+    "thumb": "/img/thumbs/imnahariver.png",
+    "year": "2018",
+    "tags": ["WordPress"],
+    "section": "website",
+    "urls": [{"linktext":"Website",
+              "address":"http://imnahariverhouse.com/"}]
+  },{
+    "title": "PTSD in the Body",
+    "desc": "Talk given at Toorcamp on Orcas Island, Washington, about recent body-based PTSD therapy approaches.",
+    "thumb": "/img/thumbs/toorcamp18.png",
+    "year": "2018",
+    "tags": ["Conference","Mental Health"],
+    "section": "talk",
+    "urls": [{"linktext":"Event Site",
+              "address":"https://toorcamp.toorcon.net/"}]
+  },{
+    "title": "Wallowa Wildlife",
+    "desc": "Prototype for a wildlife checklists app based on Flask and an SQLite3 database with OAuth login.",
+    "thumb": "/img/thumbs/wallowawildlife.png",
+    "year": "2018",
+    "tags": ["Flask","Python","SQlite3"],
+    "section": "website",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/Wallowa-Wildlife-Checklist-App"}]
+  },{
+    "title": "MyReads",
+    "desc": "React app using Udacity BooksAPI to track books I've read, want to read, or am reading.",
+    "thumb": "/img/thumbs/myreads.png",
+    "year": "2018",
+    "tags": ["React","API"],
+    "section": "website",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/MyReads"}]
+  },{
+    "title": "Rider-Waite Reader",
+    "desc": "Generate and interpret tarot card readings built with ReactJS and CSS Flexbox.",
+    "thumb": "/img/thumbs/riderwaite.png",
+    "year": "2018",
+    "tags": ["React"],
+    "section": "website",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/Rider-Waite-Reader"}]
+  },{
+    "title": "Terrific Tree Frogs Message Board",
+    "desc": "React with Redux message board app which supports posts and comments.",
+    "thumb": "/img/thumbs/frogs.png",
+    "year": "2018",
+    "tags": ["React","Redux"],
+    "section": "website",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/Terrific-Tree-Frogs-Message-Board"}]
+  },{
+    "title": "Flashcards App",
+    "desc": "Android app to manage and study flashcards, built using React Native.",
+    "thumb": "/img/thumbs/flashcards.png",
+    "year": "2018",
+    "tags": ["Android","ReactNative"],
+    "section": "website",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/Mobile-Flashcards-Android-App"}]
+  },{
+    "title": "Corvid Clicker",
+    "desc": "VanillaJS, Flexbox, and Google Fonts for a silly bird counting page.",
+    "thumb": "/img/thumbs/corvidclicker.png",
+    "year": "2018",
+    "tags": ["VanillaJS","Flexbox"],
+    "section": "website",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/Corvid-Clicker"},
+             {"linktext":"Website",
+              "address":"http://jennerhanni.net/corvid-clicker/"}]
+  },{
+    "title": "CrazyCircuits Kits",
+    "desc": "Open source Lego-compatible circuit kits for kids and schools in KiCad.",
+    "thumb": "/img/thumbs/crazycircuits.png",
+    "year": "2017",
+    "tags": ["KiCad","PCB Design","Production"],
+    "section": "hardware",
+    "urls": [{"linktext": "Design Files",
+              "address": "https://github.com/browndoggadgets/CrazyCircuits"},
+             {"linktext": "Buy",
+              "address": "https://www.browndoggadgets.com/"}]
+  },{
+    "title": "KiFisher",
+    "desc": "Python program to autogenerate printed circuit board manufacturing files and documentation",
+    "thumb": "/img/thumbs/kifisher.png",
+    "year": "2017",
+    "tags": ["Python","KiCad","Automation"],
+    "section": "software",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wickerbox/KiFisher"}]
+  },{
+    "title": "Werewolf Films",
+    "desc": "Single static page dynamically generated by JSON and a Python module with OMDB API data. CSS grid to build a Masonry layout.",
+    "thumb": "/img/thumbs/werewolf.png",
+    "year": "2017",
+    "tags": ["API","Python"],
+    "section": "website",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/Werewolf-Films"},
+             {"linktext":"Website",
+              "address":"http://jennerhanni.net/werewolf-films/"}]
+  },{
+    "title": "WMHCTA",
+    "desc": "WordPress-based site for a local Trailkeepers group to share forms and trip reports.",
+    "thumb": "/img/thumbs/wmhcta.png",
+    "year": "2017",
+    "tags": ["WordPress"],
+    "section": "website",
+    "urls": [{"linktext":"Website",
+              "address":"https://wmhcta.org"}]
+  },{
+    "title": "Wickerlib",
+    "desc": "Collection of open source parts and templates for KiCad.",
+    "thumb": "/img/thumbs/wickerlib.png",
+    "year": "2016",
+    "tags": ["Python","KiCad","PCB Design"],
+    "section": "software",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wickerbox/wickerlib"}]
+  },{
+    "title": "E202 VLF Receiver",
+    "desc": "Very low frequency (under 10kHz) battery-powered receiver in KiCad.",
+    "thumb": "/img/thumbs/e202var.png",
+    "year": "2016",
+    "tags": ["KiCad","PCB Design","Analog","Prototype"],
+    "section": "hardware",
+    "urls": [{"linktext": "Design Files",
+              "address": "https://github.com/wickerbox/E202VAR-Natural-Radio-Receiver"}]
+  },{
+    "title": "Breakout Boards",
+    "desc": "Collection of open source breakout boards for components in KiCad.",
+    "thumb": "/img/thumbs/breakoutboards.png",
+    "year": "2016",
+    "tags": ["PCB Design","Arduino"],
+    "section": "hardware",
+    "urls": [{"linktext": "Collection",
+              "address": "https://wickerbox.net/hardware/breakout-boards/"}]
+  },{
+    "title": "Arduino Theremin",
+    "desc": "Shield uses a rangefinder to play notes. Supports touch and playback.",
+    "thumb": "/img/thumbs/arduinotheremin.png",
+    "year": "2016",
+    "tags": ["KiCad","PCB Design","Arduino"],
+    "section": "hardware",
+    "urls": [{"linktext":"Design Files",
+              "address":"https://wickerbox.net/projects/arduino-theremin/"}]
+  },{
+    "title": "OSH Park Docs",
+    "desc": "Support documentation site for the broader open source hardware community.",
+    "thumb": "/img/thumbs/oshdocs.png",
+    "year": "2016",
+    "tags": ["Technical Writing"],
+    "section": "website",
+    "urls": [{"linktext":"Website",
+              "address":"https://docs.oshpark.com/"}]
+  },{
+    "title": "Open Source Your Circuits with KiCad",
+    "desc": "Talk given at Open Source Bridge in Portland, Oregon.",
+    "thumb": "/img/thumbs/osb15kicad.png",
+    "year": "2015",
+    "tags": ["KiCad","Conference"],
+    "section": "talk",
+    "urls": [{"linktext": "Talk",
+              "address": "http://opensourcebridge.org/sessions/1618"}]
+  },{
+    "title": "Making Stuff",
+    "desc": "Talk given at Evergreen School District's Robotics Tournament Keynote in Vancouver, Washington, to high school students considering engineering careers.",
+    "thumb": "/img/thumbs/makingstuff.png",
+    "year": "2015",
+    "tags": ["Conference"],
+    "section": "talk",
+    "urls": [{"linktext": "Talk",
+              "address": "https://github.com/wicker/Conference-Talks/blob/master/2015-making-stuff.pdf"}]
+  },{
+    "title": "MV-1400",
+    "desc": "Hardware design for the single sensor Max-Viz 1400, a lightweight, solid-state, low power, uncooled thermal camera.",
+    "thumb": "/img/thumbs/mv1400.png",
+    "year": "2015",
+    "tags": ["PCB Design","Testing","Production"],
+    "section": "hardware",
+    "urls": [{"linktext": "Buy",
+              "address": "https://www.astronics.com/product?productgroup=Enhanced%20Vision%20Systems&subproduct=single%20sensor%20evs#Max-Viz%201400"}]
+  },{
+    "title": "From Prototype to PCB",
+    "desc": "Talk given at Open Source Bridge in Portland, Oregon.",
+    "thumb": "/img/thumbs/assembly.png",
+    "year": "2014",
+    "tags": ["Eagle","PCB Design","Conference"],
+    "section": "talk",
+    "urls": [{"linktext": "Talk",
+              "address": "http://opensourcebridge.org/sessions/1314"}]
+  },{
+    "title": "Math vs Mathematics",
+    "desc": "Talk given at Open Source Bridge in Portland, Oregon.",
+    "thumb": "/img/thumbs/osb14math.png",
+    "year": "2014",
+    "tags": ["Conference"],
+    "section": "talk",
+    "urls": [{"linktext": "Talk",
+              "address": "http://opensourcebridge.org/sessions/1365"}]
+  },{
+    "title": "3G Cellphone",
+    "desc": "Adapting David Mellis' 2G Arduino Cellphone to a 3G module in Eagle.",
+    "thumb": "/img/thumbs/3gcellphone.png",
+    "year": "2014",
+    "tags": ["Eagle","PCB Design","Prototype"],
+    "section": "hardware",
+    "urls": [{"linktext": "Design Files",
+              "address": "https://github.com/wickerbox/3G-DIY-Cellphone"},
+             {"linktext": "Article",
+              "address": "http://wickerbox.net/projects/cellphone-3g-dev-board/"}]
+  },{
+    "title": "DxWifi Test Flight",
+    "desc": "Flight test capturing WiFi packets over 124km distance.",
+    "thumb": "/img/thumbs/dxwifi.png",
+    "year": "2014",
+    "tags": ["Operations","Field Testing"],
+    "section": "hardware",
+    "urls": [{"linktext": "Article",
+              "address": "https://github.com/psas/DxWiFi/blob/master/FieldTest/2014-02-02-fieldtest.mdwn"}]
+  },{
+    "title": "Reflow Oven Controller",
+    "desc": "Custom Arduino shield with GUI for control of composites reflow oven.",
+    "thumb": "/img/thumbs/ovenboard3.png",
+    "year": "2014",
+    "tags": ["Eagle","PCB Design","Arduino","Prototype"],
+    "section": "hardware",
+    "urls": [{"linktext":"Design Files",
+              "address":"https://github.com/psas/mme-capstone/tree/master/oven-controller"},
+             {"linktext":"Article",
+              "address":"https://wickerbox.net/projects/oven-control-board/"}]
+  },{
+    "title": "EVS-600",
+    "desc": "wrote video processing algorithms and embedded systems code, and went through FAA testing and certification.",
+    "thumb": "/img/thumbs/evs600.png",
+    "year": "2014",
+    "tags": ["Hardware Language","C"],
+    "section": "software",
+    "urls": [{"linktext":"Buy",
+              "address":"https://www.astronics.com/product?productgroup=Enhanced%20Vision%20Systems&subproduct=dual%20sensor%20evs"}]
+  },{
+    "title": "Wickerbox Electronics",
+    "desc": "Business website with project portfolio and contact information, built with Jekyll.",
+    "thumb": "/img/thumbs/wickerbox18.png",
+    "year": "2014",
+    "tags": ["Jekyll"],
+    "section": "website",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wickerbox/wickerbox.github.io"},
+             {"linktext":"Website",
+              "address":"http://wickerbox.net/"}]
+  },{
+    "title": "GPS RF Receiver",
+    "desc": "Board in Eagle to provide access to raw I/Q GPS data using MAX2769.",
+    "thumb": "/img/thumbs/gpsboard.png",
+    "year": "2013",
+    "tags": ["Eagle","PCB Design","RF","Prototype"],
+    "section": "hardware",
+    "urls": [{"linktext": "Design Files",
+              "address": "https://github.com/psas/gps-rf-board"},
+             {"linktext": "Article",
+              "address": "https://wickerbox.net/projects/gps-board-v2/"}]
+  },{
+    "title": "Image Processing Pipeline",
+    "desc": "Perform pixel-by-pixel convolution of 2D images in SystemVerilog and C.",
+    "thumb": "/img/thumbs/convolution.png",
+    "year": "2013",
+    "tags": ["C","SystemVerilog"],
+    "section": "software",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/Image-Processing-Pipeline"}]
+  },{
+    "title": "Temp Sensor Driver",
+    "desc": "Assembly to handle an interrupt and drive an LED.",
+    "thumb": "/img/thumbs/tempsensor.png",
+    "year": "2013",
+    "tags": ["ARM Assembly"],
+    "section": "software",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/Temperature-Sensor-I2C-Driver"}]
+  },{
+    "title": "Digital Carb Sync",
+    "desc": "Arduino shield to synchronize motorcycle carburetors.",
+    "thumb": "/img/thumbs/carbsync.png",
+    "year": "2012",
+    "tags": ["Eagle","PCB Design","Arduino","Prototype"],
+    "section": "hardware",
+    "urls": [{"linktext": "Article",
+              "address": "https://wickerbox.net/projects/carb-sync-shield/"},
+             {"linktext": "Buy",
+              "address": "https://digitalcarbsync.com/"}]
+  },{
+    "title": "Quadcopter Control Board",
+    "desc": "LPC1343-based control board for autonomous quadcopter in Eagle.",
+    "thumb": "/img/thumbs/quadcoptercontrol.png",
+    "year": "2012",
+    "tags": ["Eagle","PCB Design","Prototype"],
+    "section": "hardware",
+    "urls": [{"linktext": "Design Files",
+              "address": "https://github.com/wickerbox/Quadcopter-Control-Board"},
+             {"linktext": "Article",
+              "address": "https://wickerbox.net/projects/quadcopter-control-board/"}]
+  },{
+    "title": "Skies of Dinotopia",
+    "desc": "Scraped a fan archive with permission and created a backup of fanworks.",
+    "thumb": "/img/thumbs/dinotopia.png",
+    "year": "2012",
+    "tags": ["Jekyll","Skeleton","Web Scraping","Python"],
+    "section": "website",
+    "urls": [{"linktext":"Website",
+              "address":"http://skiesofdinotopia.net/"}]
+  },{
+    "title": "JennerHanni.net",
+    "desc": "Personal homepage with photos and writing, built using Jekyll and Github.",
+    "thumb": "/img/thumbs/personal.png",
+    "year": "2012",
+    "tags": ["Jekyll","VanillaJS","CSS Grid"],
+    "section": "website",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/wicker.github.io"},
+             {"linktext":"Website",
+              "address":"http://jennerhanni.net/"}]
+  },{
+    "title": "L2 Cache Simulation",
+    "desc": "C simulating a write-allocate, MESI protocol, 4-way set-associative cache.",
+    "thumb": "/img/thumbs/l2cache.png",
+    "year": "2012",
+    "tags": ["C","L2 Cache"],
+    "section": "software",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/L2-Cache-Simulator"}]
+  },{
+    "title": "Text to Speech Driver",
+    "desc": "Assembly to turn text into speech with a RC8660 synthesizer chip.",
+    "thumb": "/img/thumbs/text2speech.png",
+    "year": "2012",
+    "tags": ["ARM Assembly"],
+    "section": "software",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/L2-Cache-Simulator"}]
+  },{
+    "title": "Endian Swap",
+    "desc": "Simple ARM assembly to receive a Big-Endian packet and provide a Little-Endian output.",
+    "thumb": "/img/thumbs/endianswap.png",
+    "year": "2011",
+    "tags": ["ARM Assembly"],
+    "section": "software",
+    "urls": [{"linktext":"Source",
+              "address":"https://github.com/wicker/L2-Cache-Simulator"}]
+  }
+]
+

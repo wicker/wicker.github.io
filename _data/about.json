@@ -1,0 +1,17 @@
+[
+  {
+    "img": "/img/about/knightpond.jpg",
+    "desc": "Born and raised in and around Portland, I now work as a remote software developer from the far northeast corner of Oregon, on the edge of the Wallowa Mountains.<br /><br />In 2014 I founded Wickerbox Electronics, a remote consulting company providing IoT and full stack web development services to startups and small businesses.<br /><br />My specialties are React, NodeJS, Flask, and WordPress, and administering Linux servers on AWS and Linode.",
+  },{
+    "img": "/img/about/deer.jpg",
+    "desc": "<strong>Education</strong><br /><br />&bull; ReactJS and Full Stack Nanodegrees<br />&nbsp; 2018, Udacity<br /><br />&bull; M.Eng. Electrical and Computer Engineering<br />&nbsp; 2013, Portland State University<br /><br />&bull; B.S. Engineering Technology<br />&nbsp; 2009, Old Dominion University",
+desc": "My poetry and photography has been shown at the Josephy Center in Joseph, Oregon.", 
+  },{
+    "img": "/img/about/iraq.jpg",
+    "desc": "I served five years in the U.S. Marine Corps as an avionics technician repairing helicopters and Harrier jump jets, finishing my term as a sergeant (E-5) at Marine Corps Air Station Yuma in Arizona.<br /><br />I deployed in Iraq in 2006 and at sea aboard the <em>USS Tarawa</em> for her 2007-08 Westpac cruise.",
+  },{
+    "img": "/img/about/merv9.jpg",
+    "desc": "While stationed at MCAS Yuma, I got my private pilot's license  and spent my off-duty hours helping build homebuilt experimental aircraft and flying forth in search of the $100 breakfast burrito.",
+  }
+]
+

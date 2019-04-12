@@ -2,7 +2,12 @@
 layout: default
 ---
 
-<section class="content">
-  {{ content }}
-</section>
+<div class="writing__page-header">
+  <h1>{{ page.title }}</h1>
+    <p class="summary">{{ page.summary }}</p>
+  </div>
+</div>
+
+{{ content }}
+
 

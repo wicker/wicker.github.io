@@ -1,11 +1,101 @@
-## jennerhanni.net
+# New-Portfolio
+Prototyping the new portfolio look in CSS
 
-This site is served with Jekyll through Github Pages. 
+## YAML Header
 
-## License
+|title|
+|description|
+|type|
+|destination|
+|category|
+|subcat|
+|location|
+|image|
+|permalink|
+|publish|
 
-Photography, site design, and written content are all licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. You may alter and pass along these works but you must not do so for money. You must also properly attribute them and allow them to be used by others in turn.
+## Web Design Data Model
 
-http://creativecommons.org/licenses/by-nc-sa/3.0/
+### JSON
 
+Separate JSON files for talks and projects in the `_data` folder. 
+
+Making the top-level object an array allows for the use of the Liquid for loop.
+
+`_data/projects.json `
+
+```
+[
+  {
+    "title": "",
+    "src": "",
+    "demo": "",
+    "desc": "",
+    "thumb": "",
+    "year": "",
+    "tags": [""],
+    "lang": [""]
+  }
+]
+```
+
+```
+{% for proj in site.data.projects %}
+  {{ proj.title }}
+{% endfor %}
+```
+
+Similarly, this is the format for the talks:
+
+```
+[
+  { 
+    "title": "",
+    "venue": "",
+    "src": "",
+    "video": "",
+    "year": "",
+    "tags": [""],
+    "lang": [""]
+  }
+]
+```
+
+WordPress
+Hardware
+
+### Languages
+
+javascript
+python
+assembly
+c
+vhdl
+system-verilog
+
+### Tags
+
+vanillajs
+react
+redux
+wordpress
+woocommerce
+css-grid
+html-css
+external-api
+internal-api
+rails
+flexbox
+react-native
+wix
+flask
+sqlite3
+postgresql
+pcb-design
+testing
+arduino
+kicad
+eaglecad
+teensy
+analog:
 

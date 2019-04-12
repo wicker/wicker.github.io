@@ -1,4 +1,4 @@
-safe:        false
+safe:        safe
 port:        4002
 
 source:      .
@@ -6,13 +6,14 @@ destination: ./_site
 
 future:      true
 lsi:         false
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown_ext: "md"
 permalink:   /:year/:month/:title
+strict_front_matter: true
 
 title:       Jenner Hanni
-description: Wallowa County, Oregon
+description: Personal website for writing, web design, and trip reports.
 author:      Jenner Hanni
-email:       jeh.wicker@gmail.com
+email:       jennerhanni@gmail.com
 
 exclude:     [_site]
 
