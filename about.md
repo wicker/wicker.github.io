@@ -9,11 +9,11 @@ permalink: /about/
 <h1 class="centered">{{ page.title }}</h1>
 
 <div class="about__button-container">
-   <a class="web-design__button" target="_blank"
+   <a class="portfolio__button" target="_blank"
       href="https://www.linkedin.com/in/jenner-hanni">LinkedIn</a>
-   <a class="web-design__button" target="_blank" 
+   <a class="portfolio__button" target="_blank" 
       href="https://www.github.com/wicker/">GitHub</a>
-   <a class="web-design__button" target="_blank"
+   <a class="portfolio__button" target="_blank"
       href="mailto:jennerhanni@gmail.com">Email</a>
 </div>
 

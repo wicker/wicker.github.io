@@ -9,19 +9,19 @@ permalink: /portfolio/
 
 <h1 class="centered">Portfolio</h1>
 
-<div class="web-design__button-container">
-  <button class="web-design__button" onclick="show('all')">Show All</button> 
-  <button class="web-design__button" onclick="show('hardware')">Hardware</button> 
-  <button class="web-design__button" onclick="show('software')">Software</button> 
-  <button class="web-design__button" onclick="show('website')">Websites</button> 
-  <button class="web-design__button" onclick="show('talk')">Talks</button> 
+<div class="portfolio__button-container">
+  <button class="portfolio__button" onclick="show('all')">Show All</button> 
+  <button class="portfolio__button" onclick="show('hardware')">Hardware</button> 
+  <button class="portfolio__button" onclick="show('software')">Software</button> 
+  <button class="portfolio__button" onclick="show('website')">Websites</button> 
+  <button class="portfolio__button" onclick="show('talk')">Talks</button> 
 </div>
 
-<div class="web-design__grid-container">
+<div class="portfolio__grid-container">
 
 {% for proj in site.data.projects %}
-  <div class="web-design__box web-design__box-vert web-design__box-{{ proj.section }}">
-    <span class="web-design__box-year">{{ proj.year }}</span>
+  <div class="portfolio__box portfolio__box-vert portfolio__box-{{ proj.section }}">
+    <span class="portfolio__box-year">{{ proj.year }}</span>
     {% if proj.thumb == '' %}<img src="/img/thumbs/e202var.png">
     {%- else -%}<img src="{{ proj.thumb }}">
     {% endif -%}
@@ -31,9 +31,9 @@ permalink: /portfolio/
       <p class="tags">{{ proj.tags | join: ", " }}</p>
     {%- endif -%}
     {% if proj.urls %}
-    <div class="web-design__box-links">
+    <div class="portfolio__box-links">
       {% for url in proj.urls -%}
-        <a class="web-design__button-link" href="{{ url.address }}">{{ url.linktext }}</a>
+        <a class="portfolio__button-link" href="{{ url.address }}">{{ url.linktext }}</a>
       {%- endfor %}
     </div>
     {%- endif %}
