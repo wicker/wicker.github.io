@@ -3,6 +3,7 @@ layout: default
 image_header: /img/about.jpg
 summary: Foo 
 title: About Jenner 
+permalink: /about/
 ---
 
 <h1 class="centered">{{ page.title }}</h1>

@@ -4,6 +4,7 @@ title: Front End Web Developer
 image_header: /img/portfolio.png
 summary: Remote front end developer with full stack experience specializing in React, NodeJS, Flask, and WordPress. Formerly a private pilot, avionics technician, and open source hardware developer. <br /><br />&bull; B.S. in Engineering Technology, 2009<br />&bull; M.Eng. in Electrical and Computer Engineering, 2013<br />&bull; ReactJS and Full Stack Nanodegrees from Udacity, 2018<br /><br />
 showhidejs: true
+permalink: /portfolio/
 ---
 
 <h1 class="centered">Portfolio</h1>
