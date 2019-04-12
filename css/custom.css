@@ -60,6 +60,12 @@ img {
   background-position: center center;
 }
 
+@media only screen and (max-width: 600px) {
+  .header__landing {
+    background-image: url(/img/exclosure-mobile.jpg);
+  }
+}
+
 .header__page {
   height: 60vh;
   background-size: cover;
