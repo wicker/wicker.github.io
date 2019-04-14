@@ -160,6 +160,7 @@ img {
   flex: 1 1 48%;
   min-width: 350px;
   align-self: stretch;
+  max-height: 600px;
 }
 
 .about__figure figcaption {

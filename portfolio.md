@@ -11,9 +11,9 @@ permalink: /portfolio/
 
 <div class="portfolio__button-container">
   <button class="portfolio__button" onclick="show('all')">Show All</button> 
+  <button class="portfolio__button" onclick="show('website')">Websites</button> 
   <button class="portfolio__button" onclick="show('hardware')">Hardware</button> 
   <button class="portfolio__button" onclick="show('software')">Software</button> 
-  <button class="portfolio__button" onclick="show('website')">Websites</button> 
   <button class="portfolio__button" onclick="show('talk')">Talks</button> 
 </div>
 
