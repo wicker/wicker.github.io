@@ -158,14 +158,13 @@ img {
 
 .about__figure img {
   flex: 1 1 48%;
-  min-width: 350px;
+  min-width: 250px;
   align-self: stretch;
-  max-height: 600px;
 }
 
 .about__figure figcaption {
   flex: 1 1 48%;
-  min-width: 300px;
+  min-width: 250px;
   align-self: center;
 }
 
