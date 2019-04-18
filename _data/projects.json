@@ -274,7 +274,7 @@
               "address":"https://wickerbox.net/projects/oven-control-board/"}]
   },{
     "title": "EVS-600",
-    "desc": "wrote video processing algorithms and embedded systems code, and went through FAA testing and certification.",
+    "desc": "Wrote video processing algorithms and embedded systems code, and went through FAA testing and certification.",
     "thumb": "/img/thumbs/evs600.png",
     "year": "2014",
     "tags": ["Hardware Language","C"],
