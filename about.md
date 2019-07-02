@@ -2,19 +2,17 @@
 layout: default
 image_header: /img/about.jpg
 summary: Foo 
-title: About Jenner 
+title: About Me 
 permalink: /about/
 ---
 
 <h1 class="centered">{{ page.title }}</h1>
 
 <div class="about__button-container">
-   <a class="portfolio__button" target="_blank"
-      href="https://www.linkedin.com/in/jenner-hanni">LinkedIn</a>
    <a class="portfolio__button" target="_blank" 
       href="https://www.github.com/wicker/">GitHub</a>
    <a class="portfolio__button" target="_blank"
-      href="mailto:jennerhanni@gmail.com">Email</a>
+      href="mailto:jeh.wicker@gmail.com">Email</a>
 </div>
 
 {% for card in site.data.about %}

@@ -10,21 +10,10 @@ markdown_ext: "md"
 permalink:   /:year/:month/:title
 strict_front_matter: true
 
-title:       Jenner Hanni
-description: Personal website for writing, web design, and trip reports.
-author:      Jenner Hanni
-email:       jennerhanni@gmail.com
+title:       Wicker
+description: Archived personal website and portfolio, active from 2011-2019.
+author:      Wicker
+email:       jeh.wicker@gmail.com
 
 exclude:     [_site]
 
-collections:
-  travels:
-    name: Travels
-    url: /travels/
-    output: true
-    permalink: /travels/:title/
-  writing:
-    name: Writing
-    url: /writing/
-    output: true
-    permalink: /writing/:title/

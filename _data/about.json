@@ -1,13 +1,6 @@
 [
   {
     "img": "/img/about/knightpond.jpg",
-    "desc": "Born and raised in and around Portland, I now work as a remote software developer from the far northeast corner of Oregon, on the edge of the Wallowa Mountains.",
-  },{
-    "img": "/img/about/imnaha.jpg",
-    "desc": "In 2014 I founded Wickerbox Electronics, a remote consulting company providing IoT and full stack web development services to startups and small businesses.",
-  },{
-    "img": "/img/about/iraq.jpg",
-    "desc": "My specialties are React, NodeJS, Flask, and WordPress, and administering Linux servers on AWS and Linode."
-  }
-]
+    "desc": "Born and raised in and around Portland, I worked as an avionics technician, an electrical engineer, and a software developer. I retired from technical work in 2019 and now focus on writing, hiking, and living in northeastern Oregon. This site is an archive and will not be updated.",
+  }]
 
