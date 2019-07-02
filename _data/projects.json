@@ -110,7 +110,7 @@
     "urls": [{"linktext":"Source",
               "address":"https://github.com/wicker/Corvid-Clicker"},
              {"linktext":"Website",
-              "address":"http://jennerhanni.net/corvid-clicker/"}]
+              "address":"http://wicker.github.io/corvid-clicker/"}]
   },{
     "title": "CrazyCircuits Kits",
     "desc": "Open source Lego-compatible circuit kits for kids and schools in KiCad.",
@@ -141,7 +141,7 @@
     "urls": [{"linktext":"Source",
               "address":"https://github.com/wicker/Werewolf-Films"},
              {"linktext":"Website",
-              "address":"http://jennerhanni.net/werewolf-films/"}]
+              "address":"http://wicker.github.io/werewolf-films/"}]
   },{
     "title": "WMHCTA",
     "desc": "WordPress-based site for a local Trailkeepers group to share forms and trip reports.",
